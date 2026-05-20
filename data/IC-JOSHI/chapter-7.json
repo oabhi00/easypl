@@ -1,0 +1,205 @@
+[
+  
+    {
+      "question": "Fog is reported when visibility is reduced to",
+      "options": [
+        "Less than 1000 m",
+        "≥ 1000 m",
+        "1000 to 2000 m"
+      ],
+      "answer": 0,
+      "explanation": "Fog is officially reported when horizontal visibility near the Earth's surface is reduced to less than 1000 meters."
+    },
+    {
+      "question": "RVR is reported when visibility falls below",
+      "options": [
+        "500 m",
+        "1000 m",
+        "1500 m",
+        "2000 m"
+      ],
+      "answer": 2,
+      "explanation": "Runway Visual Range (RVR) is reported when the horizontal visibility along the runway is 1500 meters or less, as it is critical for aircraft landing and takeoff operations."
+    },
+    {
+      "question": "Radiation fog occurs",
+      "options": [
+        "Over land",
+        "Over sea",
+        "During day"
+      ],
+      "answer": 0,
+      "explanation": "Radiation fog primarily forms over land, especially during clear, calm nights when the ground cools rapidly through radiation, chilling the air above it to its dew point."
+    },
+    {
+      "question": "When visibility reduces between 5000 m and 1000 m and RH is almost 100%, it is",
+      "options": [
+        "Mist",
+        "Haze",
+        "Fog"
+      ],
+      "answer": 0,
+      "explanation": "When visibility is between 1000 m and 5000 m and the relative humidity (RH) is close to 100%, it is classified as mist. Fog is when visibility drops below 1000 m under similar high humidity conditions. Haze is typically associated with drier air and smaller particles."
+    },
+    {
+      "question": "Radiation Fog forms over N India during",
+      "options": [
+        "May to June",
+        "Dec to Feb",
+        "Oct to Nov."
+      ],
+      "answer": 1,
+      "explanation": "Radiation fog is most common over North India during the winter months of December to February. This period is characterized by clear skies, calm winds, and long nights, which are conducive to radiative cooling."
+    },
+    {
+      "question": "Warm and moist air moving over a cold ground gives rise to:",
+      "options": [
+        "Thunder clouds",
+        "Fog and stratus",
+        "Frontal clouds"
+      ],
+      "answer": 1,
+      "explanation": "When warm and moist air moves over a cold ground surface, the air near the surface cools to its dew point, leading to the formation of fog. If this cooling extends to a higher layer, it can also result in the formation of low-lying stratus clouds."
+    },
+    {
+      "question": "Warm and moist air moving over a cold surface causes",
+      "options": [
+        "Radiation Fog",
+        "Advection Fog",
+        "Frontal Fog"
+      ],
+      "answer": 1,
+      "explanation": "The scenario described, where warm and moist air moves horizontally over a colder surface, is the mechanism for the formation of advection fog. The cold surface cools the lower layers of the warm air to saturation."
+    },
+    {
+      "question": "The radiation fog forms due to",
+      "options": [
+        "Heating of the earth during day",
+        "Radiational cooling of earth at night",
+        "Advection of cold air"
+      ],
+      "answer": 1,
+      "explanation": "Radiation fog forms due to the radiational cooling of the Earth's surface at night. This cooling chills the air layer directly above the ground, causing water vapor in the air to condense into fog."
+    },
+    {
+      "question": "The radiation fog activity increases after the passage of a",
+      "options": [
+        "WD",
+        "Depression",
+        "Col"
+      ],
+      "answer": 0,
+      "explanation": "WD likely refers to a Western Disturbance. After the passage of a Western Disturbance, skies often clear and winds become calm, which are ideal conditions for radiational cooling and the subsequent formation of radiation fog during the night and early morning."
+    },
+    {
+      "question": "Radiation fog is essentially a ____ phenomena",
+      "options": [
+        "Nocturnal",
+        "Dusk",
+        "Day"
+      ],
+      "answer": 0,
+      "explanation": "Radiation fog is essentially a nocturnal phenomenon. It forms during the night when the ground cools down through radiation, leading to the cooling and saturation of the air near the surface."
+    },
+    {"question": "The radiation fog forms over",
+      "options": [
+        "Water",
+        "Land",
+        "Both"
+      ],
+      "answer": 1,
+      "explanation": "Radiation fog primarily forms over land. Land surfaces cool down more quickly at night compared to water surfaces, making them more conducive to the radiative cooling necessary for radiation fog formation."
+    },
+    {
+      "question": "The ____  fog forms due to horizontal movement of warm moist air over cold surface",
+      "options": [
+        "Radiation",
+        "Advection",
+        "Frontal"
+      ],
+      "answer": 1,
+      "explanation": "Advection fog forms due to the horizontal movement (advection) of warm, moist air over a colder surface. The cold surface cools the lower layers of the air to their dew point, causing condensation and fog formation."
+    },
+    {
+      "question": "Advection fog forms during",
+      "options": [
+        "night only",
+        "day time only",
+        "any time of day and night"
+      ],
+      "answer": 2,
+      "explanation": "Advection fog can form at any time of day or night as long as there is a movement of warm, moist air over a colder surface, leading to cooling and condensation."
+    },
+    {
+      "question": "For formation of Radiation fog",
+      "options": [
+        "There should be sufficient moisture in atmosphere, cloudy sky, nil wind",
+        "There should be sufficient moisture in atmosphere, clear sky, light wind.",
+        "There should be sufficient moisture in atmosphere, cloudy sky, strong wind."
+      ],
+      "answer": 1,
+      "explanation": "Radiation fog formation requires sufficient moisture in the atmosphere, a clear sky (to allow for radiative cooling of the ground), and light winds (to allow the cooled air near the surface to remain and condense)."
+    },
+    {
+      "question": "Instrument used for measuring visibility is called",
+      "options": [
+        "Visiometer",
+        "Transmissometer",
+        "Ceilometer"
+      ],
+      "answer": 1,
+      "explanation": "A transmissometer is an instrument used to measure visibility by determining the amount of light transmitted through a known distance of the atmosphere."
+    },
+    {
+      "question": "Advection fog forms",
+      "options": [
+        "over sea",
+        "over Land",
+        "both over land and sea"
+      ],
+      "answer": 2,
+      "explanation": "Advection fog can form over both land and sea when warm, moist air moves over a colder surface. Sea fog is a common type of advection fog formed when warm, humid air from over a warm ocean current moves over a colder ocean current or colder coastal waters."
+    },
+    {
+      "question": "Fog is ____ cloud on ground",
+      "options": [
+        "Stratocumulus",
+        "Stratus",
+        "Nimbostratus"
+      ],
+      "answer": 1,
+      "explanation": "Fog is essentially a stratus cloud that forms at ground level. It has the same physical characteristics as a stratus cloud but is in contact with the Earth's surface."
+    },
+    {
+      "question": "Frontal Fog is more common with a",
+      "options": [
+        "Western Disturbance",
+        "Cyclone",
+        "Warm Front",
+        "Cold Front"
+      ],
+      "answer": 2,
+      "explanation": "Frontal fog is more commonly associated with a warm front. As warm, moist air rises over a retreating cold air mass at a warm front, precipitation can evaporate into the cooler air near the surface, leading to saturation and fog formation."
+    },
+    {
+      "question": "The favourable pressure system for formation of fog is",
+      "options": [
+        "Lows and Cols",
+        "Highs and Trough",
+        "Lows and Ridges",
+        "Highs and Cols"
+      ],
+      "answer": 3,
+      "explanation": "High pressure systems and cols (the region of relatively low pressure between two highs) are generally favorable for fog formation. High pressure often leads to stable atmospheric conditions and light winds, while cols can also experience light winds and moisture convergence."
+    },
+    {
+      "question": "Thermal processes / temperature distribution which favours formation of fog is",
+      "options": [
+        "Isothermal",
+        "Adiabatic",
+        "Inversion",
+        "SALR"
+      ],
+      "answer": 2,
+      "explanation": "A temperature inversion, where temperature increases with height in a layer of the atmosphere, is a thermal condition that favors fog formation. The inversion traps cooler, moist air near the surface, preventing vertical mixing and allowing condensation to occur."
+    }]

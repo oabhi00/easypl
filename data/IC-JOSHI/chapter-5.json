@@ -1,0 +1,41 @@
+[
+    {
+      "question": "The ratio in % between the amount of water vapour present in the air to the amount of water vapor that it can hold at the same temperature is",
+      "options": ["Humidity", "Relative humidity", "Dew point"],
+      "answer": 1},
+    {
+      "question": "The temperature to which air must be cooled at constant pressure to become saturated is called",
+      "options": ["Wet bulb temperature", "Dry bulb temperature", "Dew point", "Humidity"],
+      "answer": 2},
+    {
+      "question": "Free air temperature, Wet bulb temperature and Dew point temperature are equal when",
+      "options": ["Air temperature is 0°C", "Relative humidity is 100%", "Air temperature is not below 0°C"],
+      "answer": 1},
+    {
+      "question": "On a rainy day compared to a sunny day, the length of runway required is",
+      "options": ["More", "Less", "Same"],
+      "answer": 0},
+    {
+      "question": "The spread (difference) between Free air temperature and Dew point temperature is ........ when air is saturated",
+      "options": ["Large", "Least", "Same"],
+      "answer": 1},
+    {
+      "question": "The saturation vapour pressure over water is ........ than over the ice",
+      "options": ["More", "Less", "Same"],
+      "answer": 0},
+    {
+      "question": "As the temperature of the air increases, the amount of water vapour required to saturate it ........",
+      "options": ["decreases", "increases", "remains same"],
+      "answer": 1},
+    {
+      "question": "The actual amount of water vapour contained in a given volume of air at a given temperature is termed as",
+      "options": ["Relative Humidity", "Specific Humidity", "Absolute Humidity"],
+      "answer": 2},
+    {
+      "question": "Humidity Mixing Ratio ........ when air is lifted adiabatically",
+      "options": ["decreases", "remains constant", "increases"],
+      "answer": 1},
+    {
+      "question": "It is the lowest temperature that air would attain by evaporating water into it to saturate it",
+      "options": ["Wet bulb temp", "Dry bulb temp", "Dew point"],
+      "answer": 0}]

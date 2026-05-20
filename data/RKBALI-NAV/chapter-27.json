@@ -1,0 +1,259 @@
+[
+    {
+      "question": "Direction property error is known as?",
+      "options": [
+        "180' ambiguity",
+        "90° ambiguity",
+        "quadrantal error"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is used to resolve 180  ambiguity?",
+      "options": [
+        "Align radio compass to True North",
+        "Sense Aerial",
+        "Loop Aerial."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An A/C is flying on HDG of 315 , which of the following signal will cause maximum quadrantal error.",
+      "options": [
+        "360°",
+        "25°",
+        "135°"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Variations of signal in NDB receivers due skywaves indicates the presence of:",
+      "options": [
+        "night efect.",
+        "coastal refraction.",
+        "mountain or terrain efect."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The BFO selector on an ADF receiver is used to:",
+      "options": [
+        "find the loop \"null\" position",
+        "stop loop rotation",
+        "hear the IDENT of some NDB stations radiating a continuous wave signal"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which one of the following disturbances is most likely to cause the greatest inaccuracy in ADF bearings?",
+      "options": [
+        "Quadrantal emor",
+        "Local thunderstorm activity",
+        "Coastal effect"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Factors liable to affect most NDI/ADE system performance and reliability include:",
+      "options": [
+        "static interference- night efect- absence of failure warning system",
+        "static interference- station interference- latitude error",
+        "height error- station interference- mountain efect"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "There are two NDBs, one 20NM inland, and the other S0NM inland from the coast. Assuming that the error caused by coastal refraction is the same for both propagations, the extent of the error in a position line plotted by an aircraft that is over water will be:",
+      "options": [
+        "greater from the beacon that is 20NM inland",
+        "the same from both beacons when the aireraft is on a relative bearing of 180° and 360°",
+        "greater from the beacon that is 50NM inland"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the wavelength of an NDB transmitting on 373 kHz?",
+      "options": [
+        "800m",
+        "80m",
+        "8 0 0 0 m"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft is \"homing\" to a radio beacon whilst maintaining a relative bearing of zero. If the magnetic heading decreases, the aircraft is experiencing:",
+      "options": [
+        "zero drift",
+        "right drift",
+        "left drift"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Errors caused by the effect of coastal refraction on bearings at lower altitudes are maximum when the NDB is:",
+      "options": [
+        "inland and the bearing crosses the coast at an acute angle",
+        "inland and the bearing crosses the coast at right angles",
+        "near the coast and the bearing crosses the coast at right angles"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Quadrantal errors associated with aircraft Automatic Direction Finding (ADF) equipment are caused by:",
+      "options": [
+        "skywave/ground wave contamination",
+        "signal bending by the aircraft metallic surfaces",
+        "signal bending caused by electrical interference from aircraft wiring"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "\"Night Effect\" which causes loss of signal and fading, resulting in bearing errors from transmissions, is due to:",
+      "options": [
+        "interference from other transmissions and is maximum at dusk when east of the NDB",
+        "static activity increasing at night particularly in the lower frequency band",
+        "skywave distortion of the null position and is maximum at dawn and dusk"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following is likely to have the greatest effect on ADF accuracy?",
+      "options": [
+        "Mutual interference between aircraft aerials",
+        "Frequency drift at the ground station","Interference from other NDBs, particularly at night"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "An aircraft is maintaining track outbound from an NDB with a constant relative bearing of 184º To return to the NDB the relative bearing to maintain is:",
+    "options": [
+      "184°",
+      "004°",
+      "356°."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Consider the following statements on the NDB transmitter:",
+    "options": ["It is operating in the HF/VHF band.","It is very simple, being required to transit only a carrier wave and identification.","In India, most NDBs operate in the frequency band 455 - 1750 kHz."],
+    "answer": 1
+  },
+  {
+    "question": "The purpose of the BFO switch on the ADF receiver is to:",
+    "options": [
+      "cut out the static noise.",
+      "improve the strength of the received signal.",
+      "make the signal audible."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "When using NDBs night effect is most likely to be greatest at:",
+    "options": [
+      "dusk.",
+      "dawn or dusk.",
+      "dawn."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "With regard to the following types of NDB which statements is correct?",
+    "options": [" Locators have 200 W power, 50 mm range and are NON A2A."," Locators have 5000 W power, 50 nm range and are NON AIA.","Locators have 15 W power, 10-25 m range and are NON A2A."],
+    "answer": 2
+  },
+  {
+    "question": "The D layer of the ionosphere affects the accuracy of NDB bearings:",
+    "options": [
+      "never.",
+      "by day and night.",
+      "by night only."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "An ADF uses a sense aerial to:",
+    "options": [
+      "transmit the beacon ident.",
+      "determine the nul position.",
+      "resolve ambiguous bearings."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which of the following equipments does not have a system to warn the pilot that it is inoperative:",
+    "options": [
+      "ADF",
+      "ILS",
+      "VOR"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The BFO:",
+    "options": ["is used to make the ident from an AlA NDB audible.","is used to determine the signal strength of an NDB.","creates the audio ident for an NDB."],
+    "answer": 0
+  },
+  {
+    "question": "An NDB signal crossing from land to sea will ... speed and bend ... the normal.",
+    "options": [
+      "decrease, away from",
+      "increase, towards.",
+      "increase, away from."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Long range NDBs normally employ:",
+    "options": [
+      "A3W",
+      "A9E",
+      "NON/A1A"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "When using a NON AZA NDB the BFO should be:",
+    "options": [
+      "off for tuning and on for identification.",
+      "off for tuning and off for identification.",
+      "on for tuning and of for identification."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the approved frequency band assigned to aeronautical ADFs?",
+    "options": [
+      "190-1750 kHz",
+      "190-1750 Hz",
+      "190-1750 GHz"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The promulgated range for an NDB is applicable:",
+    "options": [
+      "during daytime only.",
+      "throughout 24 hours, but is most prone to error around dusk and dawn.",
+      "during night time only."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "An aero plane is flying parallel to a coast. Which of the following NDBs will give the greatest coastal refraction LOP error?",
+    "options": [
+      "NDB sited on the coast-RBI 300° .",
+      "NDB sited 30 nm inland-RBI 330° .",
+      "NDB sited on the coast-RBI 330° ."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "A radio beacon has an operational range of 10 NM. By what factor should the transmitter power be increased in order to achieve an operational range of 20 NM?",
+    "options": [
+      "Eight",
+      "Four",
+      "Two"
+    ],
+    "answer": 1
+  }
+]

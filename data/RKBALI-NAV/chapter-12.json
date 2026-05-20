@@ -1,0 +1,298 @@
+[
+    {
+      "question": "TRK = 050°, W/V= 330°/18 kts, FOB= 1,540 kg, TAS = 200 kts, Distance to PNR = 800 nm, Reserve Required = 150 kg. Find: (i) Fuel consumption; SAR.",
+      "options": ["170 kg/hr, 1750 nm","173 kg/hr, 1780 nm","168 kg/hr, 1745 nm" ],
+      "answer": 1
+    },
+    {
+      "question": " Distance = 1,500 nm, TAS (4 engines) = 360 kts, TAS (3 engines) = 300 kts, TRK = 090°, W/V = 330°/30 kts, FOB = 4,500 kg, Reserve = 500 kg, Fuel consumption (4 engines) = 800 kg/hr, Fuel consumption (3 engines) = 600 kg/hr. Find Distance to PNR and Time to PNR (Assume engine failure at PNR and aircraft returns on 3 engines).",
+      "options": ["942 nm, 2hr 31min","945 nm, 2 hr 32 min","936 nm, 2 hr 28mins"],
+      "answer": 0
+    },
+    {
+      "question": "Distance = 2,400 nm, TRK = 080°, W/V = 030°/25 kts, TAS (Normal) = 440 kts, TAS (Return) = 360 kts, FOB = 10,000 kg, Reserve = 1,000 kg, Fuel consumption (Normal) = 1,400 kg/hr, Fuel consumption (Return) = 1,000 kg/hr. Find: (i) Distance and Time to CP .",
+      "options": ["1225 nm , 2hrs 57mins","1250 nm, 3 hrs 5 mins","1230 nm, 2hrs 58 mins"],
+      "answer": 0
+    },
+  {
+    "question": "On a flight from A to B: Track 153°, TAS 210 Kts, Distance 925 nm, Wind 200°/30, FOB 1000 lbs, reserve 200 lbs, F/C 180 lbs/hr. What is the SAR (Specific Air Range)?",
+    "options": [
+      "1167 ",
+      "1100 ",
+      "1250 "
+    ],
+    "answer": 0
+  },
+  {
+    "question": "On a flight from X to Y: Track 250°, TAS 195 Kts, Distance 975 nm, Wind 330°/35, FOB 900 gal, reserve 100 gal, F/C 150 GPH. What is the SAR (Specific Air Range)?",
+    "options": [
+      "1100 ",
+      "1170 ",
+      "1250 "
+    ],
+    "answer": 1
+  },
+  {
+    "question": "On a flight from K to L: Distance 1500 nm, TAS 310 Kts, Track 350°, Wind 240°/30, FOB 12000 lbs, reserve 2000 lbs, F/C 1800 lbs/hr. What is the SAR?",
+    "options": [
+      "2100 ",
+      "2000 ",
+      "2066 "
+    ],
+    "answer": 2
+  },
+  {
+    "question": "On a flight from A to B: Distance 1100 nm, Track 020°, Wind 220°/30, F/C 1200 lbs/hr, FOB 10000 lbs, reserve 1500 lbs, TAS 210 Kts (4-eng), TAS 185 Kts (3-eng). What is the SAR?",
+    "options": [
+      "1650 ",
+      "1700 ",
+      "1750 "
+    ],
+    "answer": 2
+  },
+  {
+    "question": "On a flight distance 1073 nm, TAS 170 kts, headwind 20 kts. Find the distance to CP.",
+    "options": [
+      "500 nm ",
+      "600 nm ",
+      "700 nm"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "On a flight from S to T: Distance 1250 nm, Track 135°, TAS (4-eng) 250 Kts, TAS (3-eng) 215 Kts, Wind 090°/30, FOB 12000 lbs, reserve 2000 lbs, F/C (4-eng) 1200 lbs/hr, F/C (3-eng) 1000 lbs/hr. What is the SAR?",
+    "options": [
+      "2500 ",
+      "2300 ",
+      "2700 "
+    ],
+    "answer": 0
+  },
+  {
+    "question": "On a flight from A to B: Track 317°, Wind 205°/35, TAS 185 Kts, DPAR 732 nm, Flight Fuel 1200 lbs. What is the SAR?",
+    "options": [
+      "1490 ",
+      "1590 ",
+      "1390 "
+    ],
+    "answer": 0
+  },
+  {
+    "question": "On a flight from Y to X: Track 210°, Wind 270°/35, TAS 200 Kts, FF 1100 lbs, DPaR 785 nm. What is the SAR?",
+    "options": [
+      "1500 ",
+      "1600 ",
+      "1700 "
+    ],
+    "answer": 1
+  },
+  {
+    "question": "On a flight from A to B: Track 155°, TAS 200 Kts, Wind 260°/35, Distance Required 1050 nm, F/C 141 GPH. What is the SAR?",
+    "options": [
+      "2036 ",
+      "2136 ",
+      "2236 "
+    ],
+    "answer": 1
+  },
+    {
+      "question": "From X to Y: Distance 1250 nm, Track 120°, TAS 4 Eng: 180 Kts, TAS 3 Eng: 150 Kts, WIND 090°/30 up to CP & 060°/30 after CP, FOB 1500 G. What is the distance to CP in case of engine failure?",
+      "options": [
+        "710 nm",
+        "750 nm",
+        "680 nm"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "From A to B: Distance 1450 nm, Track 132°, TAS 4 Eng: 190 Kts, TAS 3 Eng: 160 Kts, WIND 260°/40 up to CP & 350°/60 after CP, FOB 18000 lbs. What is the distance to PNR (return on 3 Engines)?",
+      "options": [
+        "820 nm",
+        "840 nm",
+        "860 nm"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "From P to Q: Distance 2000 nm, Track 090°, TAS 4 Eng: 180 Kts, TAS 3 Eng: 150 Kts, WIND 090°/20 for first 1000 nm & 150°/20 for rest. What is the distance to CP?",
+      "options": [
+        "1050 nm",
+        "1097 nm",
+        "1150 nm"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "From A to B: Distance 1500 nm, Track 347°, TAS 4 Eng: 175 Kts, TAS 3 Eng: 152 Kts, WIND 270°/20 for first 1000 nm & 245°/20 after. What is the distance to CP?",
+      "options": [
+        "756 nm",
+        "770 nm",
+        "740 nm"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "From A to B: Distance 2000 nm, Track 080°, TAS 180 Kts, WIND 290°/20 first half, 320°/20 second half. Endurance 15 hrs. What is the distance to PNR?",
+      "options": [
+        "1300 nm",
+        "1336 nm",
+        "1370 nm"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "From X to Y: Distance 1200 nm, TAS 160 Kts, Tailwind 10 Kts first 600 nm, Headwind 10 Kts after. What is the distance to CP?",
+      "options": [
+        "580 nm",
+        "600 nm",
+        "620 nm"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Flight distance 1015 nm, TAS 180 Kts, Headwind 10 Kts, Fuel Consumption 1200 lbs/hr. What is the distance to CP?",
+      "options": [
+        "536 nm",
+        "550 nm",
+        "520 nm"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "From A to B: Distance 1015 nm, Track 083°, TAS 4 Eng: 190 Kts, TAS 3 Eng: 160 Kts, WIND 190°/45 up to CP & 110°/40 after CP, FOB 15000 lbs. What is the distance to PNR (return on 3 Engines)?",
+      "options": [
+        "683 nm",
+        "700 nm",
+        "660 nm"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Full TAS 500 Kts, Engine failure TAS 400 Kts, Total distance 1000 nm, Along track wind 40 Kts. The distance to the engine failure CP will be:",
+      "options": [
+        "450 nm",
+        "550 nm",
+        "450 or 550 nm depending on wind direction"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The distance to the PNR will be greatest:",
+      "options": [
+        "If there is a tailwind component going out",
+        "If there is a headwind component going out",
+        "In still air conditions"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An engine failure PNR is calculated to enable the pilot to make the correct decision in the event of:",
+      "options": [
+        "An engine failing before reaching the mid-point",
+        "An engine failing after reaching the mid-point",
+        "The destination and its alternates closing any time up to the PNR"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In flight it is discovered that the winds used have been reversed, the effect will be:",
+      "options": [
+        "No effect on the distance to the PET but the ETA at it will be affected.",
+        "Change the distance to the PNR",
+        "Give the distance of the PET from the base ahead instead of from the base behind."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Flight distance 1500 nm, wind component out +40 kt, back -50 kt, TAS 320 kt, endurance = flight time +15%. The distance to the PNR will be:",
+      "options": [
+        "786 nm",
+        "750 nm",
+        "738 nm"
+      ],
+      "answer": 2
+    }
+  ,
+    {
+      "question": "The effect of an increasing strength of wind at 90° to track on the time and distance to the PET will be:",
+      "options": [
+        "no effect on distance, increase in time",
+        "decrease in both distance and time",
+        "none and no effect"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "On a simple flight from A to B, the distance to the PET is 1200 nm. The PNR endurance is equal to the flight time +10%. What is the distance to the PNR?",
+      "options": [
+        "1260 nm provided the same winds apply to both PET and PNR calculations.",
+        "1320 nm provided the same winds apply to both PET and PNR calculations.",
+        "1320 nm provided the wind is not at 90° to the track."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "On a flight out to the PET, the ground speed is found to be less than expected. The PET will be moved along track:",
+      "options": [
+        "Into wind",
+        "Into the wind provided the wind change continues throughout the flight.",
+        "Downwind provided the wind change continues throughout the flight."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "For a headwind component of 50 Kts, calculated DCP is 750 nm for the total route distance of 1200 nm. If actual flight wind component is 50 Kts tailwind, what is the new position of DCP?",
+      "options": [
+        "600 nm",
+        "450 nm",
+        "525 nm"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Aircraft departs point A on track 135° at 200K TAS for place B 600 NM away. Wind is 080/35. Calculate DCP and TCP.",
+      "options": [
+        "334 NM / 1:52",
+        "334 NM / 1:42",
+        "334 NM / 2:02"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If DCP in case of engine failure is 389 NMs on track 040°(T) with W/V 230/40, calculate leg distance and TCP for an aircraft with normal TAS of 250 kts and one engine failure TAS of 200 kts.",
+      "options": [
+        "999 NM / 3:50",
+        "924 NM / 3:05",
+        "968 NM / 1:20"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft's fuel consumption is 2000 GPH on four engines with 220 kts TAS and 1800 GPH on three engines with 200 kts TAS. With a headwind of 20 kts outbound, calculate FOB with 1000 gallons reserve if DPNR is 600 NM.",
+      "options": [
+        "11909 Gallons",
+        "10909 Gallons",
+        "9999 Gallons"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "TAS 480 Kts, Wind 330/80, Track 200, distance 3500 NM, fuel consumption outbound 2850 Kgs/hr, inbound 2680 Kgs/hr, FOB 10000 Kgs, reserve 2000 Kgs. Find PSR.",
+      "options": [
+        "683 NMs",
+        "815 NMs",
+        "750 NMs"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Track 335°, TAS 195 Kts, distance 1275 NMs, Wind 260/35, fuel consumption 105 GPH. Find DCP and if TCP is 55 mins before PNR what is FOB excluding reserve.",
+      "options": [
+        "67 NMs / 917 Gallons",
+        "727 NMs / 1027 Gallons",
+        "767 NMs / 1053 Gallons"
+      ],
+      "answer": 0
+    }
+  ]
+

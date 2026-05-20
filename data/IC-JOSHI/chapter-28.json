@@ -1,0 +1,92 @@
+[
+    {
+      "question": "Who prepares National SIGWX Charts",
+      "options": [
+        "(a) AMOs",
+        "(b) WAFC",
+        "(c) MWOs"
+      ],
+      "answer":2
+    },
+    {
+      "question": "Flight Level of freezing Level is included in .......... SIGWX Charts",
+      "options": [
+        "(a) Medium level charts",
+        "(b) High level charts",
+        "(c) Low level charts"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Fog, Precipitation and weather which reduce visibility below 5000 m is considered Significant weather for",
+      "options": [
+        "(a) All level flights",
+        "(b) High level flights",
+        "(c) Low level flights"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Briefing and Consultation are generally provided to the aircrew .......... hours prior to the scheduled departure",
+      "options": [
+        "(a) 3 hr",
+        "(b) 5 hr",
+        "(c) 6 hr"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "SIGMET information is provided to",
+      "options": [
+        "(a) Low level flights",
+        "(b) All level flights",
+        "(c) High level flights"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "For Low Level flights, and those under Visual Flight Rules, briefing is given up to",
+      "options": [
+        "(a) FL150 or above in mountains",
+        "(b) FL110 above the sea",
+        "(c) FL 120 or over the plains"
+      ],
+      "answer": 0
+    },
+        {
+          "question": "The height indications in the Flight Documentation in all en-route Met conditions : eg upper winds, turbulence, cloud base/top etc is",
+          "options": [
+            "(a) Above aerodrome elevation",
+            "(b) Flight Levels",
+            "(c) As requested by the Pilot"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "The height indications in the Flight Documentation in all aerodrome Met conditions : eg base and top of clouds",
+          "options": [
+            "(a) Above aerodrome elevation",
+            "(b) Flight Levels",
+            "(c) As requested by the Pilot"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "For National Flights the Documents provided are -",
+          "options": [
+            "(a) National SIGWX charts only",
+            "(b) WAFC upper wind and temp. charts only",
+            "(c) both WAFC upper wind and temp. charts and National SIGWX charts"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "For National Flights the winds and temperatures are provided for LL Flights for altitudes",
+          "options": [
+            "(a) 600, 1500 and 3000 m",
+            "(b) 3000 ft, 5000 ft, 10,000 ft",
+            "(c) 600, 1000 and 500 m"
+          ],
+          "answer": 0
+        }
+      ]

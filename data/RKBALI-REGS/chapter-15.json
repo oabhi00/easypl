@@ -1,0 +1,47 @@
+[
+    {
+      "question": "The continuing airworthiness of an aircraft, according to ICAO Annex 8, shall be determined by:",
+      "options": [
+        "ICAO",
+        "The operator's state",
+        "The state of registry"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A certificate of airworthiness shall be renewed or validated by:",
+      "options": [
+        "Laws of the state of registry and operation",
+        "Laws of the state of registry",
+        "Requirements laid down by ICAO"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The technical standards dealing with certification of aeroplanes are at present limited to multi-engine aircraft of:",
+      "options": [
+        "Up to 5700 kg maximum certificated take-off and landing mass",
+        "Over 5700 kg maximum certificated take-off mass",
+        "Up to 5700 kg maximum certificated take-off mass"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When an aircraft has sustained damage, the aircraft shall be allowed to resume its flight, if",
+      "options": [
+        "The state of registry, the state of design, and the state of manufacture consider that the aircraft is still airworthy",
+        "The state of manufacture informs the state of registry that the damage sustained is of a nature such that the aircraft is still airworthy",
+        "The state of registry considers that the damage sustained is of a nature such that the aircraft is still airworthy"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Jet Airways flight is to take off from London to Bosnia. C of A will be as per the rules of:",
+      "options": [
+        "UK",
+        "India",
+        "Bosnia"
+      ],
+      "answer": 1
+    }
+]

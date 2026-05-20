@@ -1,0 +1,118 @@
+[
+    {
+      "question": "The conditions which must exist to allow thunderstorms to develop are:",
+      "options": [
+        "a trigger action, a plentiful supply of moisture and a very stable atmosphere",
+        "a steep lapse rate, a stable atmosphere through a large vertical extent and a plentiful supply of moisture",
+        "a plentiful supply of moisture and a steep lapse rate through a large vertical extent and a trigger action",
+        "a steep lapse rate through a large vertical extent, a low relative humidity and a trigger action"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When moist air moves across France in the . . . . . . . . . . . . TS activity is common in southern UK in the . . . . . . . . . . .",
+      "options": ["winter/morning", "summer/late afternoon or evening", "winter/late afternoon or evening", "summer/morning"],
+      "answer": 1
+    },
+    {
+      "question": "Hazards of the mature stage of a TS cell include lightning, turbulence and:",
+      "options": ["microburst, windshear and anvil", "icing, microburst and windshear", "icing, drizzle and microburst", "windshear, hail and fog"],
+      "answer": 1
+    },
+    {
+      "question": "On a significant weather chart the thunderstorm symbol signifies:",
+      "options": [
+        "moderate turbulence and moderate icing",
+        "severe turbulence and severe icing",
+        "moderate turbulence and severe icing",
+        "moderate/severe turbulence and/or moderate/severe icing"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Thunderstorms require a trigger action to release the conditional instability. Which of the following would be the least suitable as a trigger?",
+      "options": [
+        "Convergence in temperate latitudes",
+        "Convergence in tropical latitudes",
+        "Subsidence in tropical latitudes",
+        "Convection in polar latitudes"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "During the . . . . . . . . . . stage of a thunderstorm cell, the cloud contains . . . . . . . .",
+      "options": [
+        "building/up currents and down currents",
+        "mature/up currents and down currents",
+        "dissipating/up currents and down currents",
+        "building/down currents only"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The following is unlikely to be a hazard below a thunderstorm:",
+      "options": ["severe turbulence", "severe icing", "windshear", "large variations in pressure setting values"],
+      "answer": 1
+    },
+    {
+      "question": "Thunderstorms are likely if:",
+      "options": [
+        "air is unstable, there is sufficient water vapour and there is trigger action",
+        "air is completely stable, there is sufficient water vapour and there is lifting orographically",
+        "there is a warm front",
+        "there is a col in winter"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hail grows by:",
+      "options": ["freezing as it leaves the cloud", "up and down progress in CU cloud", "collision with supercooled water drops", "collision with ice crystals"],
+      "answer": 2
+    },
+    {
+      "question": "How long approximately does a cumulonimbus cell take to complete the full cycle from the cumulus (building) to dissipating stage?",
+      "options": ["2-3 hours", "1-2 hours", "4-5 hours", "about 1 hour"],
+      "answer": 0
+    },
+    {
+      "question": "When approaching at flight level 300 a cumulonimbus cloud with an anvil top, pilots should aim to avoid the cloud by ___ NM horizontally if avoiding visually, or by ___ NM horizontally if using cloud avoidance radar. Select the appropriate respective ranges from those given below:",
+      "options": ["10 20", "15 10", "10 15", "5 10"],
+      "answer": 2
+    },
+    {
+      "question": "A microburst usually lasts for _________ and is about  ____________across.",
+      "options": ["20 minutes 20 NM", "5 minutes 5 km", "30 minutes 10 NM", "45 minutes 5 NM"],
+      "answer": 1
+    },
+    {
+      "question": "Thunderstorms caused by _________are most common in the summer and by  __________in the__________",
+      "options": [
+        "lapse rate air masses  late spring",
+        "air masses frontal activity  winter",
+        "cold fronts air masses  autumn",
+        "air masses frontal activity  summer"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When flying through an active CB cloud, lightning strikes are most likely:",
+      "options": [
+        "above 5000’ and underneath the anvil",
+        "in the clear air below the cloud in rain",
+        "in the temperature band between +10°C and –10°C",
+        "at or about 10 000 ft AMSL"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Regarding thunderstorms, the most accurate statement amongst the following is:",
+      "options": [
+        "there will always be windshear under the cloud",
+        "the average movement is in accord with the wind at 10 000 ft",
+        "if the cloud base has a temperature below 0°C then freezing rain will occur",
+        "the number of lightning flashes is directly proportional to the degree of turbulence"
+      ],
+      "answer": 1
+    }
+  ]
+  

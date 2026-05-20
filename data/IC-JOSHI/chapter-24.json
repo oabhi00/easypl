@@ -1,0 +1,148 @@
+[
+    {
+      "question": "The direction of surface wind is ",
+      "options": ["NW", "NE", "SE"],
+      "answer": 0,
+      "explanation": "The wind barb indicates wind coming from the NW.",
+      "image": "../image/a1.jpg"
+    },
+    {
+      "question": "The range of wind speed is",
+      "options": ["20-25 kt", "16-22kt", "18-22 kt"],
+      "answer": 2,
+      "explanation": "The weather chart contain two full barbs and one half barb totaling to 25 kts, the accepted range for this question is 18-22 kts.",
+      "image": "../image/a1.jpg"
+    },
+    {
+      "question": "The type of medium cloud is ",
+      "options": ["AC", "AS", "AC & AS"],
+      "answer": 0,
+      "explanation": "The weather chart contain medium cloud as 'ω' which represents AC clouds.",
+      "image": "../image/a1.jpg"
+    },
+    {
+      "question": "Low clouds are ",
+      "options": ["CU", "SC", "ST"],
+      "answer": 2,
+      "explanation": "The weather chart contain low cloud as '- - -' which represents ST clouds.",
+      "image": "../image/a1.jpg"
+    },
+    {
+      "question": "High clouds are ",
+      "options": ["CC", "CI", "CS"],
+      "answer": 1,
+      "explanation": "The weather chart contain high cloud as CI clouds.",
+      "image": "../image/a1.jpg"
+    },
+    {
+      "question": "Height of base of low cloud is  ",
+      "options": ["200 m", "250 m", "100-199 m"],
+      "answer": 2,
+      "explanation": "Height of base of low cloud is 100-199 m.",
+      "image": "../image/a1.jpg"
+    },
+    {
+      "question": "Amount of lowest cloud is  ",
+      "options": ["2/8", "4/8", "3/8"],
+      "answer": 2,
+      "explanation": "Amount of lowest cloud is 3/8.",
+      "image": "../image/a1.jpg"
+    },
+    {
+      "question": "Dew point temp range is   ",
+      "options": ["29.5-30.4 C", "29.1-30.4 C", "30.6-30.4 C"],
+      "answer": 0,
+      "explanation": "Dew point temp is 30 C which falls in range 29.5-30.4 C. ",
+      "image": "../image/a1.jpg"
+    },
+    {
+      "question": "Temperature 34 C is  ",
+      "options": ["Dry", "Wet", "Dew point"],
+      "answer": 0,
+      "explanation": "Temp is 34 degree celsius. ",
+      "image": "../image/a1.jpg"
+    },
+    {
+      "question": "962 represents"  ,
+      "options": ["QFE", "QFF", "QNH"],
+      "answer": 1,
+      "explanation": "962 represents sea level pressure QFF.",
+      "image": "../image/a1.jpg"
+    },
+    {
+      "question": "Pressure in hPa is"  ,
+      "options": ["996", "996.2", "1096.2"],
+      "answer": 1,
+      "explanation": "996.2",
+      "image": "../image/a1.jpg"
+    },
+    {
+      "question": "Pressure change of 1.4 hPa is in"  ,
+      "options": ["6 hrs", "3 hrs", "24 hrs"],
+      "answer": 2,
+      "explanation": "Pressure change of 1.4 hPa is in 24 hrs.",
+      "image": "../image/a1.jpg"
+    },
+    {
+      "question": "Past weather is"  ,
+      "options": ["Moderate Light Rain", "Continuous Rain", "Heavy Rain"],
+      "answer": 0,
+      "explanation": "Past weather is Moderate light rain.",
+      "image": "../image/a1.jpg"
+    },
+    {
+      "question": "Rainfall Amount is"  ,
+      "options": ["2 mm", "1.5 mm", "1.6-2.4 mm"],
+      "answer": 2,
+      "explanation": "'2' represents rainfall amount which equals to 1.6-2.4 mm.",
+      "image": "../image/a1.jpg"
+    },
+    {
+      "question": "Rainfall reported is from"  ,
+      "options": ["0300Z of yesterday to 0300Z of today", "0100 to 2400 Z", "0530 to 0830 IST"],
+      "answer": 0,
+      "explanation": "Rainfall reported is from 0300Z of yesterday to 0300Z of today",
+      "image": "../image/a1.jpg"
+    },
+    {
+      "question": "The Speed of ship is"  ,
+      "options": ["5 KMH", "5 MPS", "5 KT"],
+      "answer": 2,
+      "explanation": "5 KTS",
+      "image": "../image/a1.jpg"
+    },
+    {
+      "question": "Direction of movement of ship"  ,
+      "options": ["NW", "SW", "NE"],
+      "answer": 2,
+      "explanation": "The arrow represents the direction of ship which is north east. ",
+      "image": "../image/a1.jpg"
+    },
+    {
+      "question": "The Speed of ship reported is averaged for"  ,
+      "options": ["3 hr", "6 hr", "12 hr"],
+      "answer": 0,
+      "explanation": "3 hrs",
+      "image": "../image/a1.jpg"
+    },
+    {
+      "question": "Surface visibility is"  ,
+      "options": ["500 to <1000 m", "1000-2000 m", "2000 to <4000 m"],
+      "answer": 2,
+      "explanation": "surface visibility is 2000 to <4000 meters which is represented by '95'. ",
+      "image": "../image/a1.jpg"
+    },
+    {
+      "question": "Weather reported is"  ,
+      "options": ["Rain at the time of observation", "Rain during last one hour", "rain not at station but within 5 km"],
+      "answer": 1,
+      "explanation": "Rain during last one hour",
+      "image": "../image/a1.jpg"
+    }
+  ]
+
+
+    
+
+
+  

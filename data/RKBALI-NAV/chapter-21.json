@@ -1,0 +1,719 @@
+[
+    {
+      "question": "The basic properties of a gyroscope are:\n1. The gyro weight\n2. The rigidity in space\n3. The inertia\n4. The high RPM\n5. The precession",
+      "options": [
+        "2,5",
+        "3,4",
+        "2,3,5"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In the design principle of a gyroscope, the best efficiency is obtained through the concentration of the mass:",
+      "options": [
+        "Close to the axis and with a low rotation speed",
+        "On the periphery and with a low rotation speed",
+        "On the periphery and with a high rotation speed"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Rigidity in a gyroscope is:",
+      "options": [
+        "The reaction 90° in the direction of rotation when applying force to the spinning wheel",
+        "A way to express the stability of the inner and outer gimbal rings",
+        "The tendency it has to remain in its plane of rotation and resist attempts to alter its position"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Sources of power for gyroscopic operations in an aircraft are:",
+      "options": [
+        "Vacuum, gravity, and rigidity",
+        "Vacuum, pressure, and electrical",
+        "Rigidity, rotor speed, and moment of inertia"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The number of degrees of freedom of a gyro is:",
+      "options": [
+        "One more than the number of gimbals",
+        "The same as the number of gimbals",
+        "One less than the number of gimbals"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A directional gyro requires:",
+      "options": [
+        "One gimbal, one degree of freedom, and a horizontal spin axis",
+        "Two gimbals, two degrees of freedom, and a horizontal spin axis",
+        "Three gimbals, three degrees of freedom, and a lateral spin axis"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What type of gyro has a horizontal spin axis and one degree of freedom?",
+      "options": [
+        "Rate gyro",
+        "Displacement gyro",
+        "Rate integrating gyro"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The properties of a gyro are:\n1. Mass \n2. Rigidity in space \n3. Inertia \n4. precession \n5. Rigidity with reference to the earth",
+      "options": [
+        "1,2,3,4",
+        "1,3,4,5",
+        "1,2,3,5"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Gyro rigidity improves with:",
+      "options": [
+        "Increasing RPM, mass, and radial displacement of mass",
+        "Increasing RPM and mass but decreasing radial displacement of mass",
+        "Decreasing RPM but increasing mass and radial displacement of mass"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Apparent wander in the horizontal plane caused by the earth's rotation varies:",
+      "options": [
+        "As sine latitude",
+        "As cosine latitude",
+        "In direct proportion to the angular velocity of the rotor"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Artificial Horizon (A/H) indications are reliable in:",
+      "options": [
+        "+85° pitch, ±190° roll",
+        "+5° pitch, ±85° roll",
+        "±85° pitch, ±180° roll"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "During takeoff roll, an aircraft fitted with a vacuum-driven A/H will show:",
+      "options": [
+        "Climb and bank to the right",
+        "Only climb and no bank as the aircraft is on the ground",
+        "Will read correctly as the aircraft is on the ground"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft rolls out after a 180° steep turn to the right with reference to the natural horizon. A/H will show:",
+      "options": [
+        "Climb and slight bank to the right",
+        "Level and bank to the left",
+        "Climb and slight bank to the left"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft rolls out after a 180° steep turn to the left with reference to the natural horizon. A/H will show:",
+      "options": [
+        "Climb and slight bank to the right",
+        "Level and bank to the left","Climb and slight bank to the left"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The artificial horizon uses a gyroscope with:",
+    "options": [
+      "One degree of freedom, with its vertical axis oriented to the real vertical",
+      "Two degrees of freedom, with its horizontal axis corresponding to a reference direction",
+      "Two degrees of freedom, with its axis oriented and continuously maintained to local vertical"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "When an aircraft has turned 90° with a constant attitude and bank, the pilot observes the following on a classic artificial horizon:",
+    "options": [
+      "Too much nose-up and bank too high",
+      "Too much nose-up and bank too low",
+      "Too much nose-up and correct bank"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Following a 180° stabilized turn with a constant attitude and bank, the artificial horizon indicates:",
+    "options": [
+      "Too high pitch up and low banking",
+      "Attitude and banking correct",
+      "Too low pitch down and correct banking"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "When an aircraft has turned 360° with a constant attitude and bank, the pilot observes the following on a classic artificial horizon:",
+    "options": [
+      "Too much nose-up and bank correct",
+      "Attitude and bank correct",
+      "Too much nose-up and bank too high"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Classic artificial horizon indications turning through 180° at constant AOB:",
+    "options": [
+      "Nose up and AOB too low",
+      "Nose up and AOB too high",
+      "Nose up and correct AOB"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "During an acceleration phase at constant attitude, the resetting principle of the artificial horizon results in the horizon bar indicating a:",
+    "options": [
+      "Nose-down followed by a nose-up attitude",
+      "Constant attitude",
+      "Nose-up attitude"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "When an aircraft has turned 270° with a constant attitude and bank, the pilot observes the following on a classic artificial horizon:",
+    "options": [
+      "Attitude and bank correct",
+      "Too much nose-up and bank correct",
+      "Too much nose-up and bank too high"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "How many degrees of freedom and what is the spin axis of an attitude indicator?",
+    "options": [
+      "Local earth vertical, two degrees of freedom",
+      "Aircraft lateral axis, two degrees of freedom",
+      "Aircraft horizontal axis, one degree of freedom"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What would be the indication on an attitude indicator in a right turn?",
+    "options": [
+      "Climb due to pendulous vanes",
+      "No climb",
+      "Descent due to pendulous vanes"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What will a classic artificial horizon indicate when turning through 90° at constant attitude and bank angle?",
+    "options": [
+      "Correct bank angle and attitude",
+      "Too much bank and too much nose-up attitude",
+      "Too little bank and too much nose-up attitude"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "How will a basic AI respond if an aircraft performs a 270° turn at constant bank angle and rate of turn?",
+    "options": [
+      "Nose up and bank",
+      "Nose down and bank",
+      "Nose level and bank"
+    ],
+    "answer": 0
+  },
+    {
+      "question": "What are the errors in a DGI?\n1. Transport wander \n2. Earth rate \n3. Heading errors when banking and pitching \n4. Mechanical imperfections",
+      "options": [
+        "1,2,3",
+        "1,2,4",
+        "All of the above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the function of the latitude nut on a DI?",
+      "options": [
+        "To correct Coriolis effect",
+        "To compensate for earth rate error",
+        "To compensate for latitude error"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What error is introduced into a DGI due to movement of the gyro relative to the earth?",
+      "options": [
+        "Transport wander",
+        "Earth rate error",
+        "Altitude error"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The maximum directional gyro error due to the earth's rotation is:",
+      "options": [
+        "20°/hour",
+        "15°/hour",
+        "4°/hour"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A directional gyro is:\n1. a gyroscope free around two axis \n2. a gyroscope free around one axis \n3. capable of self-orientation around an earth-tied direction \n4. incapable of self-orientation around an earth-tied direction  \nThe combination of correct statement is:",
+      "options": [
+        "2,3",
+        "2,4",
+        "1,4"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An airborne instrument, equipped with a gyro with 2 degrees of freedom and a horizontal spin axis is:",
+      "options": [
+        "A flux gate compass",
+        "A directional gyro",
+        "A turn indicator"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The heading read on the dial of a directional gyro is subject to errors. This error:",
+      "options": [
+        "Shows itself by an apparent rotation of the horizontal axis of the gyroscope which seems to turn at 15° per hour to the right in the northern hemisphere",
+        "Is dependent on the ground speed of the aircraft, its true track and the average latitude of the flight",
+        "Is at its greatest value when the aircraft follows a meridian track"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The gimbal error of the directional gyro is due to the effect of:",
+      "options": [
+        "An apparent weight and an apparent vertical",
+        "Too slow precession on the horizontal gimbal ring",
+        "A bank or pitch attitude of the aircraft"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The characteristics of the directional gyro (DG) used in a gyro-stabilized compass system are:",
+      "options": [
+        "Two degrees of freedom, whose axis aligned with the vertical to the location is maintained in this direction by an erecting system",
+        "Two degrees of freedom, whose horizontal axis corresponding to the reference direction is maintained in the horizontal plane by an automatic erecting system",
+        "One degree of freedom, whose vertical axis, aligned with the real vertical to the location is maintained in this direction by an automatic erecting system"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The indication of the directional gyro as an on-board instrument are valid only for a short period of time. The causes of this inaccuracy are:\n1. the earth's rotation \n2.the longitudinal acceleration \n3.the a/c motion over the surface of the earth \n4. the mechanical defects of the gyro \n5. the gyro's weight \n6. the gimbal mount of the gyro rings \nThe combination of correct statements is:",
+      "options": [
+        "1,3,4",
+        "1,3,4,6",
+        "2,5,6"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The indications on a directional gyroscope or gyrocompass are subject to errors, due to:\n1. rotation of earth \n2.aeroplane motion on earth \n3. lateral and transversal aeroplane bank angles \n4. north change \n5.mechanical defects \nThe combination of correct statements is:",
+      "options": [
+        "2,3,5",
+        "3,4,5",
+        "1,2,3,5"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft turns left from heading 045° to 315° at rate 1. Time taken will be:",
+      "options": [
+        "30 sec",
+        "45 sec",
+        "90 sec"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft is turning with rate 1 with TAS = 250 knots. Find bank angle required.",
+      "options": [
+        "32°",
+        "25°",
+        "29°"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft turns with rate 1 at TAS = 150 knots. Bank angle required:",
+      "options": [
+        "22°",
+        "32°",
+        "25°"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft is flying at 120 knots true airspeed. To achieve a rate 1 turn, the pilot will have to bank the aircraft at an angle of:",
+      "options": [
+        "12°",
+        "19°",
+        "30°"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "To maintain same rate of turn, if CAS is increased, bank should be:",
+      "options": [
+        "Increased",
+        "Decreased",
+        "Same"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In comparison to low level, to maintain same rate of turn, RAS at higher level is to be:",
+      "options": [
+        "Increased",
+        "Decreased",
+        "Same"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In comparison to low level at higher level, if RAS is kept constant to maintain same rate, bank is to be:",
+      "options": [
+        "Increased",
+        "Decreased",
+        "Same"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The ball in a serviceable slip indicator is __ by ___ and ____ indicates the state of slip.",
+      "options": [
+        "Held central, gravity, does not always",
+        "Positioned, acceleration, does not always",
+        "Held central, gravity, always"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Increasing altitude at constant TAS will __ the angle of bank required to achieve a rate 1 turn.",
+      "options": [
+        "Increase",
+        "Decrease",
+        "Not affect"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Following a left engine failure, the pilot of a multi-engine aircraft uses rudder to oppose yaw and keeps the aircraft on heading while using bank to prevent sideslip. The TSI will show:",
+      "options": [
+        "Both needle and ball central",
+        "Both needle and ball to the right",
+        "Needle central and ball to the right"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The rate turn indicator uses a gyroscope:\n1. with one degree of freedom \n2. with two degree of freedom \n3.the frame of which is supported by two return rings \n4. the spinning wheel axis of which is parallel to the pitch axis \n5.the spinning wheel axis of which is parallel to the yawing axis \n6. The spinning wheel axis of which is horizontal \n the combination of correct statement is:",
+      "options": [
+        "2,5",
+        "1,6",
+        "1,3"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In a Turn-indicator, the measurement of a rate-of-turn consists of:",
+      "options": [
+        "High bank angles, in measuring the yaw rate",
+        "High bank angles, in measuring the roll rate",
+        "Low bank angles, in measuring the yaw rate"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In a turn at constant rate, the turn indicator reading is:",
+      "options": [
+        "Independent of the aircraft true airspeed",
+        "Inversely proportional to the aircraft true airspeed",
+        "Proportional to the aircraft true airspeed"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An airborne instrument, equipped with a gyro with 1 degree of freedom and a horizontal spin axis is a:",
+      "options": [
+        "Fluxgate compass",
+        "Directional gyro",
+        "Turn indicator"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A turn indicator is an instrument which indicates rate of turn. Rate of turn depends on:\n1. bank angle \n2. aeroplane speed \n3. aeroplane weight",
+      "options": [
+        "1,3",
+        "1,2",
+        "2,3"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When in flight, the needle of a needle-and-ball indicator is on the left and the ball on the right, the aircraft is:",
+      "options": [
+        "Turning right with not enough bank",
+        "Turning left with too much bank",
+        "Turning left with not enough bank"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When in flight, the needle of a needle-and-ball indicator is on the right and the ball on the left, the aircraft is:",
+      "options": [
+        "Turning left with too much bank",
+        "Turning right with not enough bank",
+        "Turning left with not enough bank"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When in flight, the needle and ball of a needle-and-ball indicator are on the right, the aircraft is:",
+      "options": [
+        "Turning left with not enough bank",
+        "Turning left with too much bank",
+        "Turning right with too much bank"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When in flight, the needle and ball of a needle-and-ball indicator are on the left, the aircraft is:",
+      "options": [
+        "Turning right with not enough bank",
+        "Turning right with too much bank",
+        "Turning left with too much bank"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "On the ground, during a left turn, the turn indicator indicates:",
+      "options": [
+        "Needle to the left, ball to the right",
+        "Needle in the middle, ball to the right",
+        "Needle to the left, ball to the left"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "On the ground, during a right turn, the turn indicator indicates:",
+      "options": [
+        "Needle to the right, ball to the right",
+        "Needle to the right, ball to the left",
+        "Needle in the middle, ball to the right"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Under normal operating conditions, when an aircraft is in a banked turn, the rate-of-turn indicator is a valuable gyroscopic flight control instrument; when associated with an attitude indicator it indicates:\n1. the angular velocity of the a/c about the yaw axis \n2. the bank of the a/c \n3. the direction of the a/c turn \n4.the angular velocity of the aircraft about the real vertical",
+      "options": [
+        "1,2","3,4",
+      "1,3"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "A turn indicator is built around a gyroscope with:",
+    "options": [
+      "1 degree of freedom",
+      "0 degree of freedom",
+      "3 degrees of freedom"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The rate-of-turn is the:",
+    "options": [
+      "Pitch rate in a turn",
+      "Change-of-heading rate of the aircraft",
+      "Aircraft speed in a turn"
+    ],
+    "answer": 1
+  },
+    {
+      "question": "A turn indicator used in conjunction with an attitude indicator will show?\n1. turn direction \n2. rate of turn \n3. angular velocity about the true vertical axis. \n4. angular velocity about the a/c vertical axis. \n5. angular velocity about the longitudinal axis.",
+      "options": [
+        "1,2",
+        "1,3",
+        "1,2,4"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "ROT indications are : ",
+      "options": [
+        "Proportional to TAS",
+        "Proportional to CAS",
+        "Proportional to mass"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "When both the needle and ball of a turn and slip indicator are displaced to the right, the aircraft is?",
+      "options": [
+        "Turning right with too much TAS",
+        "Turning right with insufficient TAS",
+        "Turning left with too much TAS"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What will be the immediate turn and slip indications when a left engine fails in climbing flight?",
+      "options": [
+        "Needle and ball left",
+        "Needle and ball right",
+        "Needle left and ball right"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When turning at constant bank angle, the rate of turn is?",
+      "options": [
+        "Determined by weight and TAS",
+        "Determined by weight",
+        "Determined by TAS"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A turn indicator used in conjunction with an attitude indicator can show?\n1. TAS in a turn \n2. direction of turn \n3. Angular velocity about the vertical axis of the a/c \n4. Angular velocity about the true vertical axis",
+      "options": [
+        "1,2",
+        "1,3",
+        "2,3"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What factors affect the turn indicator?\n1. AofA \n2. AOB \n3. TAS \n4. Weight",
+      "options": [
+        "1,2",
+        "1,3",
+        "2,3"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What are the essential properties of a turn indicator?\n1. Two degree of freedom \n2. One degree of freedom \n3. horizontal spin axis \n4. vertical spin axis \n5. longitudinal spin axis",
+      "options": [
+        "1,2",
+        "2,3",
+        "3,4"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "On a TSI, what does it indicate when the turn needle is out to the left and the ball out to the right?",
+      "options": [
+        "Right turn with too much bank",
+        "Left turn with too little bank",
+        "Left turn with too much bank"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What should a turn and slip indicator show in a right turn on the ground?",
+      "options": [
+        "Needle left and ball left",
+        "Needle left and ball right",
+        "Needle right and ball left"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If the turn and slip indicator shows needle left and ball left in a banked turn, the aircraft is __ and the required corrective action is __?",
+      "options": [
+        "Skidding, push left pedal forward",
+        "Skidding, push right pedal forward",
+        "Slipping, push left pedal forward"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If the turn and slip indicator shows needle left and ball right in a banked turn, the aircraft is __ and the required corrective action is __?",
+      "options": [
+        "Skidding, push left pedal forward",
+        "Skidding, push right pedal forward",
+        "Slipping, push left pedal forward"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What corrective action is required if the ball is out to the right in a left turn?",
+      "options": [
+        "More right rudder",
+        "More left rudder",
+        "More left bank"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If both the ball and needle are out to the left in a turn, the ball can be centralized by?",
+      "options": [
+        "Pushing the right rudder bar forward",
+        "Increasing TAS",
+        "Decreasing TAS"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "For a coordinated rate 1 right turn at 250 Kts TAS, in clean configuration the correct AOB is approximately?",
+      "options": [
+        "32 degrees",
+        "23 degrees",
+        "16 degrees"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "For a coordinated rate 1 left turn at an AOB of 27 degrees, the TAS should be?",
+      "options": [
+        "200 Kts",
+        "250 Kts",
+        "270 Kts"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The gyro in a turn indicator must have __ gimbal and __ degrees of freedom?",
+      "options": [
+        "One, one",
+        "Two, one",
+        "Two, two"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If the turn indicator needle is out to the right and the ball is out to the left, it indicates?",
+      "options": ["A left turn with too much bank",
+      "A left turn with too little bank",
+      "A right turn with too little bank"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What angle of bank is required to conduct a balanced rate 1 turn in an aircraft at 125 Kts TAS at a mass of 55000 Kg?",
+    "options": [
+      "15.5 degrees",
+      "17.5 degrees",
+      "19.5 degrees"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "If the mass of the aircraft was decreased from 60000 Kg to 45000 Kg?",
+    "options": [
+      "It would increase the required AOB",
+      "It would decrease the required AOB",
+      "It would not affect the required AOB, but less power would be required"
+    ],
+    "answer": 2
+  }
+]

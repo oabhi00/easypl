@@ -1,0 +1,183 @@
+[
+    {
+      "question": "The air mass which originates at sea in high Latitudes is called",
+      "options": ["Polar maritime", "Tropical continental", "Tropical maritime"],
+      "answer": 0,
+      "explanation": "Polar maritime air originates over cold ocean areas in high latitudes and is typically cool and moist."
+    },
+    {
+      "question": "The airmass which originates over equatorial region is",
+      "options": ["Warm and dry", "Warm and Moist", "Cold and dry"],
+      "answer": 1,
+      "explanation": "Equatorial regions are warm and have high humidity due to intense solar heating, hence the air mass is warm and moist."
+    },
+    {
+      "question": "If the advancing cold front is colder than the cool air mass of the warm front, the advancing cold front undercuts and lifts both the warm and cool air masses of the warm front. This is",
+      "options": ["Warm Occlusion", "Cold Occlusion", "Cold and dry"],
+      "answer": 1,
+      "explanation": "In a cold occlusion, the advancing cold front is colder than the air ahead of the warm front, lifting all air masses."
+    },
+    {
+      "question": "The airmass which originated over land area located in polar region is:",
+      "options": ["Warm and dry", "Warm and Moist", "Cold and dry"],
+      "answer": 2,
+      "explanation": "Polar continental air originates over cold land masses and is therefore cold and dry."
+    },
+    {
+      "question": "If a warm airmass overtakes a cold air mass, it is called",
+      "options": ["Cold Front", "Warm Front", "Occluded Front"],
+      "answer": 1,
+      "explanation": "A warm front occurs when a warm air mass moves over a cold air mass, gradually replacing it."
+    },
+    {
+      "question": "At warm front",
+      "options": ["Warm air overtakes the cold air", "Cold air undercuts the warm air"],
+      "answer": 0,
+      "explanation": "In a warm front, the warmer, lighter air glides over the colder, denser air mass."
+    },
+    {
+      "question": "The conditions are always unstable at a",
+      "options": ["Cold front", "Warm front"],
+      "answer": 0,
+      "explanation": "Cold fronts bring abrupt lifting of warm air, often causing thunderstorms and unstable conditions."
+    },
+    {
+      "question": "Sometimes Line squall occurs about 100–300 km ahead of a",
+      "options": ["Warm front", "Cold front"],
+      "answer": 1,
+      "explanation": "Line squalls are intense thunderstorms that can form ahead of advancing cold fronts due to rapid uplift."
+    },
+    {
+      "question": "Precipitation occurs over a belt of 30 – 50 km on both side of front",
+      "options": ["Cold front", "Warm front"],
+      "answer": 0,
+      "explanation": "Cold fronts typically have a wide precipitation zone due to the gradual lifting of warm air."
+    },
+    {
+      "question": "Cold front moves at … the speed of a warm front moves",
+      "options": ["Same", "Double", "Half"],
+      "answer": 1,
+      "explanation": "Cold fronts generally move faster than warm fronts, typically around twice the speed."
+    },
+      {
+          "question": "Line Squalls occur …… of Cold front",
+          "options": ["Ahead", "Behind", "At the"],
+          "answer": 0,
+          "explanation": "Line squalls usually form ahead of a cold front due to lifting of warm moist air."
+        },
+        {
+          "question": "Fronts are associated with",
+          "options": ["Tropical cyclone", "Monsoon Depression", "Extra-tropical Cyclones"],
+          "answer": 2,
+          "explanation": "Fronts are typically associated with extra-tropical cyclones due to the interaction of contrasting air masses."
+        },
+        {
+          "question": "CB, Roll-type clouds, SC, AC with embedded CB are associated",
+          "options": ["Cold front", "Warm front"],
+          "answer": 0,
+          "explanation": "Cold fronts often have cumulonimbus (CB) and other turbulent cloud types due to intense lifting and instability."
+        },
+        {
+          "question": "The surface of discontinuity between the Polar Ely and the temperate Wly is called",
+          "options": ["Equatorial Front", "Tropopause", "Polar Front"],
+          "answer": 2,
+          "explanation": "The Polar Front is the boundary between cold polar air and warmer westerlies, key to cyclogenesis."
+        },
+        {
+          "question": "The air mass which originates from sea area located in lower Latitudes is",
+          "options": ["Warm and Dry", "Warm and Moist", "Cold and Moist"],
+          "answer": 1,
+          "explanation": "Lower latitude maritime air is typically warm and moist due to warm ocean waters."
+        },
+        {
+          "question": "WDs approach India as",
+          "options": ["Cols", "Occluded Fronts", "Highs"],
+          "answer": 1,
+          "explanation": "Western Disturbances (WDs) often arrive as occluded fronts bringing precipitation."
+        },
+        {
+          "question": "Maximum WDs occur during",
+          "options": ["Summers", "Post Monsoon", "Winters"],
+          "answer": 2,
+          "explanation": "Western Disturbances are most common in winter months over northern India."
+        },
+        {
+          "question": "Ahead of a warm front the surface wind",
+          "options": ["Backs & weakens", "Veers & strengthens", "Backs & strengthens"],
+          "answer": 1,
+          "explanation": "Ahead of a warm front, winds typically veers and strengthens due to the approaching warmer air mass."
+        },
+        {
+          "question": "On approach of a Warm Front temperature",
+          "options": ["Fall", "Rise", "Remain same"],
+          "answer": 1,
+          "explanation": "As a warm front approaches, temperature gradually rises with the incoming warm air mass."
+        },
+        {
+          "question": "CI, CS, AS, NS, ST in sequence are associated with the front",
+          "options": ["Warm", "Cold", "Occluded"],
+          "answer": 0,
+          "explanation": "This cloud sequence (cirrus to stratus) is typical of a warm front."
+        },
+        {
+          "question": "During the passage of a Cold Front winds",
+          "options": ["Suddenly become squally", "Back and weaken", "Veer and are of moderate strength"],
+          "answer": 0,
+          "explanation": "Cold fronts bring sudden gusty winds and squalls due to abrupt air lifting."
+        },
+        {
+          "question": "Visibility is poor in a Warm Front",
+          "options": ["Ahead", "Ahead & During", "After & During"],
+          "answer": 1,
+          "explanation": "Warm fronts typically bring extended cloudiness and steady precipitation, reducing visibility ahead and during their passage."
+        },
+         {
+              "question": "Fog occurs in Cold Front",
+              "options": ["Ahead", "During", "After"],
+              "answer": 2,
+              "explanation": "Fog commonly forms after a cold front due to the lifting and cooling of moist warm air."
+            },
+            {
+              "question": "WD is a ……… front",
+              "options": ["Cold", "Warm", "Occluded"],
+              "answer": 2,
+              "explanation": "Western Disturbances are typically occluded fronts as they involve the merging of cold and warm fronts."
+            },
+            {
+              "question": "FZRA and FZFG occur ……… of a warm front",
+              "options": ["Ahead", "During", "After"],
+              "answer": 0,
+              "explanation": "Freezing rain (FZRA) and freezing fog (FZFG) usually occur ahead the warm front has passed and cold air remains at the surface."
+            },
+            {
+              "question": "Precipitation ceases after the passage of a front",
+              "options": ["Cold", "Warm", "Occluded"],
+              "answer": 1,
+              "explanation": "Warm fronts typically bring short-lived, intense precipitation which stops after the front passes."
+            },
+            {
+              "question": "During the approach of a Warm Front wind",
+              "options": ["Backs", "Veers", "Does not change"],
+              "answer": 0,
+              "explanation": "Winds usually back (shift counterclockwise) as a warm front approaches."
+            },
+            {
+              "question": "A WD with two or more closed isobars, at 2 hPa interval, it is termed as",
+              "options": ["Troughs in Westerlies", "Western Depression", "Western Cyclone"],
+              "answer": 1,
+              "explanation": "Such systems are classified as Western Depressions, which are characteristic of intense WDs."
+            },
+            {
+              "question": "A WD originate over",
+              "options": ["Baluchistan", "Caspian sea", "Mediterranean, Caspian and Black Seas"],
+              "answer": 2,
+              "explanation": "Western Disturbances originate from the Mediterranean region and surrounding seas."
+            },
+            {
+              "question": "Induced lows develop to the …….. of a WD",
+              "options": ["N", "S", "NE"],
+              "answer": 1,
+              "explanation": "Induced lows typically form to the south of a Western Disturbance in the Indian subcontinent."
+            }
+          ]
+      

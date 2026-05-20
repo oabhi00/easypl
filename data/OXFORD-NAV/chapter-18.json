@@ -1,0 +1,92 @@
+[
+    {
+      "question": "A leak in the pitot total pressure line of a non-pressurized aircraft to an airspeed indicator would cause it to:",
+      "options": [
+        "over-read in a climb and under-read in a descent",
+        "over-read",
+        "under-read in a climb and over-read in a descent",
+        "under-read"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "A pitot blockage of both the ram air input and the drain hole with the static port open causes the airspeed indicator to:",
+      "options": [
+        "read a little low",
+        "read a little high",
+        "react like an altimeter",
+        "freeze at zero"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If the static line to the ASI becomes blocked during a long descent, a dangerous situation could arise due to the ASI:",
+      "options": [
+        "over-reading, this indicated speed falsely showing the aircraft to be further from the stalling speed than it actually is",
+        "under-reading, this indicated speed falsely showing the aircraft to be closer to the stalling speed than it actually is",
+        "under-reading, this indicated speed possibly leading to the operation of flaps and/or landing gear at speeds in excess of safety speeds",
+        "over-reading, this indicated speed possibly leading to the operation of flaps and/or landing gear at speeds in excess of safety speeds"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft maintaining a constant CAS and altitude is flying from a cold airmass into warmer air. The effect of the change of temperature on the speed will be:",
+      "options": [
+        "CAS will decrease",
+        "EAS will increase",
+        "TAS will increase",
+        "TAS will decrease"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The airspeed indicator is calibrated to:",
+      "options": [
+        "conditions of the International Standard Atmosphere at all heights",
+        "conditions of the International Standard Atmosphere at MSL",
+        "an air density of 1013.25 g/m3",
+        "indicate correctly in any atmosphere"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Dynamic pressure is equal to:",
+      "options": [
+        "½ ρV²",
+        "½ Vρ²",
+        "(½ ρV)²",
+        "½ (ρV)²"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Excluding blockages, the full list of errors of the ASI is:",
+      "options": [
+        "instrument error, position error, density error, manoeuvre induced error",
+        "instrument error, position error, temperature error, compressibility error, manoeuvre induced error",
+        "instrument error, position error, barometric error, temperature error, lag, manoeuvre induced error",
+        "instrument error, position error, density error, compressibility error, manoeuvre induced error"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Some ASIs have coloured arcs and lines marked on their dials. A yellow arc and a white arc indicate:",
+      "options": [
+        "cautionary range and normal operating range",
+        "flap operating speed range and normal operating range",
+        "cautionary range and flap operating speed range",
+        "flap operating speed range and cautionary range"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If the static line to the ASI becomes blocked during a climb, the ASI reading will:",
+      "options": [
+        "increase, no matter what the actual airspeed is",
+        "progressively under indicate the value of airspeed",
+        "progressively over indicate the value of airspeed",
+        "stick at the airspeed showing at the moment of blockage"
+      ],
+      "answer": 1
+    }
+  ]

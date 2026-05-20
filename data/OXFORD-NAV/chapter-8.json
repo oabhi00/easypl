@@ -1,0 +1,163 @@
+[
+    {
+      "question": "A flight is to be made along the parallel of latitude from A at 48°00’N 04°00’W to B at 48°00’N 02°27’E. Calculate the distance.",
+      "options": [
+        "275 NM",
+        "259 NM",
+        "410 NM",
+        "428 NM"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An aircraft flies for 1000 NM along a rhumb line track of 090°(T) from C at 36°00’N 174°45’E to D. What is the longitude of D?",
+      "options": [
+        "190°45’W",
+        "193°30’E",
+        "164°39’W",
+        "168°15’E"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The following rhumb line tracks and distances are flown; starting from E in latitude 50°N. E to F 000°(T) 300 NM, F to G 090°(T) 300 NM, G to H 180°(T) 300 NM. What is the rhumb line bearing and distance of H from E?",
+      "options": [
+        "090°, 336 NM",
+        "270°, 300 NM",
+        "090°, 600 NM",
+        "270°, 600 NM"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the track and distance measured along the parallel of latitude of 80°S from 176°15’W to 179°45’E?",
+      "options": [
+        "090°, 77 NM",
+        "090°, 64 NM",
+        "270°, 41.7 NM",
+        "270°, 71.8 NM"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In which latitude is a difference in longitude of 44°10’ the equivalent of a departure of 2295 NM?",
+      "options": [
+        "42°N",
+        "30°N",
+        "50°N",
+        "36°N"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An aircraft leaves J (36°00’S 130°14’E) at 0946 UTC, flying a rhumb line track of 270° at FL100, temperature 0°C, Mach 0.81, wind component 35 kt tail. What is the aircraft’s position at 1004 UTC?",
+      "options": [
+        "36°00’S, 126°48’E",
+        "36°00’S, 128°15’E",
+        "36°00’S, 128°45’E",
+        "36°00’S, 129°05’E"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "At which latitude is the departure in NM between two points equal to:\n (i). their difference in longitude in minutes? \n(ii). half their difference in longitude in minutes?",
+      "options": [
+        "i. Equator, ii. 60°N",
+        "i. 45°N, ii. 30°N",
+        "i. Equator, ii. 65°S",
+        "i. 60°N, ii. 30°N"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "At latitude 52°N, what is the departure between the meridians of 136°16’W and 43°44’E, and what is the shortest distance between the same points?",
+      "options": [
+        "Departure: 5290 NM, Great circle: 4820 NM",
+        "Departure: 6650 NM, Great circle: 4560 NM",
+        "Departure: 5120 NM, Great circle: 4700 NM",
+        "Departure: 5500 NM, Great circle: 4850 NM"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An aircraft leaves position L in latitude 37°S and makes good the following tracks and ground speeds: L to M 270°(T) 310 kt (80 mins), M to N 180°(T) 280 kt, N to P 090°(T) 250 kt (93.5 mins to P). P is due south of L. Calculate the distance and time from M to N.",
+      "options": [
+        "270 NM, 55.5 mins",
+        "408 NM, 87 mins",
+        "240 NM, 51.25 mins",
+        "420 NM, 90 mins"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Aircraft Q flies at GS 301 kt along 46°N for 10° of longitude. Aircraft R flies between the same meridians in the same time. What is the latitude of R’s track?",
+      "options": [
+        "42°N",
+        "39°N",
+        "36°N",
+        "33°N"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Aircraft S leaves 36°N 10°E at 1522, flies 090°(T) at 470 kt, turns at 13°E onto 180°(T) at 460 kt. Aircraft T leaves 30°N 10°E at 1522 and flies 090°(T) at 150 kt. 1) Which aircraft reaches 30°N 13°E first? 2) What time? 3) Where is the other aircraft?",
+      "options": [
+        "S at 1559, T at 30°N 12°10’E",
+        "T at 1624, S at 30°27'N 13°E",
+        "S at 1548, T at 30°27'°N 11°45’E",
+        "S at 1545, T at 30°27'N 13°00’E"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An aircraft starts at 04°10’S 178°22’W and heads true north for 2950 NM, then turns 90° left and flies 314 km. What is its final position?",
+      "options": [
+        "55°00’N 174°22’W",
+        "45°00’N 174°22’W",
+        "55°00’N 177°38’E",
+        "45°00’N 177°38’E"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "An aircraft at position 50°N 006°E travels 300 NM due South, then 300 NM due East, then 300 NM due North, then 300 NM due West. What is its final position relative to its start point?",
+      "options": [
+        "North",
+        "East",
+        "West",
+        "South"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft departs 04°00’N 170°00’W and flies 600 NM South, then East, then North, then West. What is its final position?",
+      "options": [
+        "04°00’N 170°00’W",
+        "06°00’S 170°00’W",
+        "04°00’N 169°58.1’W",
+        "04°00’N 170°01.8’W"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft is flying around Earth eastwards along 60°N at 240 kt. What ground speed must another aircraft have along the equator to complete a full circle in the same time?",
+      "options": [
+        "600 kt",
+        "240 kt",
+        "480 kt",
+        "120 kt"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Your position is 58°33’N 174°00’W. You fly exactly 6 NM eastwards. What is your new position?",
+      "options": [
+        "58°33’N 174°11.5’W",
+        "58°33’N 173°55’W",
+        "58°33’N 173°40’W",
+        "58°33’N 173°48.5’W"
+      ],
+      "answer": 3
+    }
+  ]
+  

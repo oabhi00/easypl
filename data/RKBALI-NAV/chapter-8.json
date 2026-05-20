@@ -1,0 +1,767 @@
+[
+    {
+      "question": "The magnetic north pole seems to rotate around the geographical north pole. A complete rotation takes about:",
+      "options": [
+        "1 degree each 5.9 year.",
+        "3.37 years.",
+        "1 degree each 2.67 year."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In the areas close to the magnetic poles compasses are not to any use in air navigation, mainly because:",
+      "options": [
+        "the horizontal component of the earth's magnetic field is too weak.",
+        "the inclination is insufficient in these areas.",
+        "the distance from the magnetic equator is too long."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Magnetic dip at 40°, H value = 23 unit, value of Z and T will be.",
+      "options": [
+        "30/19",
+        "18/24",
+        "19/30"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Given that T = 50 micro-tesla (µT), dip angle = 60°, calculate H and Z.",
+      "options": [
+        "H = 25 µT, Z = 43.3 µT",
+        "H = 43.3 µT, Z = 25 µT",
+        "H = 50 µT, Z = 86.6 µT"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In direct reading magnetic compass, the effect of dip is countered by?",
+      "options": [
+        "powerful magnets.",
+        "low center of gravity.",
+        "the shape of the casing."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Compass deviation is caused by:",
+      "options": [
+        "aircraft magnetism distorting the earth's magnetic field.",
+        "the angle of magnetic dip.",
+        "the angle of inclination."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The forces acting upon the compass needle in a stand-by compass in an aircraft, are:",
+      "options": [
+        "the earth's magnetic field, the aircraft magnetic field and the effects of attitude and movement of the aircraft.",
+        "the earth's magnetic field, the Coriolis effect and aircraft magnetism.",
+        "the total magnetic field in the compass location."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Magnets in DRC are suspended below to",
+      "options": [
+        "Improve horizontality",
+        "To make DRC aperiodic",
+        "Improve sensitivity"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A magnetic compass will show an apparent turn to the north in the southern hemisphere when:",
+      "options": [
+        "the aircraft accelerates on 090° (C).",
+        "the aircraft decelerates on 270° (C).",
+        "the aircraft accelerates on 000° (C)."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Select the correct statement:",
+      "options": [
+        "DRC with all 3 property can be used any where.",
+        "Whatever be the accuracy DRC can not be used beyond 70° N.",
+        "Whatever be the efforts made for accuracy, DRC is unreliable beyond 70° N / 70° S."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The type of compass least likely to suffer from parallax is:",
+      "options": [
+        "a standby compass.",
+        "remote reading compass.",
+        "direct reading compass."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When accelerating on an easterly heading in the Northern hemisphere, the compass card of a direct reading magnetic compass will turn?",
+      "options": [
+        "Anti-clockwise giving an apparent turn toward the North.",
+        "Clockwise giving an apparent turn toward the North.",
+        "Clockwise giving an apparent turn toward the South."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When turning right from 320° (C) to 050° (C) in the Southern hemisphere, the reading of a direct reading magnetic compass will?",
+      "options": [
+        "Over - indicate the turn and liquid swirl will decrease the effect.",
+        "Under-indicate the turn and liquid swirl will decrease the effect.",
+        "Over - indicate the turn and liquid swirl will increase the effect."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft is completing a timed turn in the Northern hemisphere from 330°C to 040°C. After the turn has been stopped but before the direct indicating magnetic compass settles down, will the compass (1) over-read or under-read, and (2) is this error increased or decreased by liquid swirl?",
+      "options": [
+        "(1) over-read (2) increased.",
+        "(1) over-read (2) decreased.",
+        "(1) under-read (2) decreased."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft in the northern hemisphere makes an accurate rate one turn to the right/starboard. If the initial heading was 330°, after 30 seconds of the turn the direct reading magnetic compass should read?",
+      "options": [
+        "Less than 060°.",
+        "More than 060°.",
+        "More or less than 060º depending on the pendulous suspension used."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "At the magnetic equator?",
+      "options": [
+        "Deviation is Zero.",
+        "The isogonal is an agonic line.",
+        "Dip is Zero."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following is the correct conversion from True to Compass?",
+      "options": [
+        "T = 130 ; V = 2W ; M = 128 ; D = -1 ; C = 127 ",
+        "T = 130 ; V = 2E ; M = 128 ; D = -1 ; C = 129",
+        "T = 130 ; V = 2E ; M = 132 ; D = -1 ; C = 133"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The horizontal component of the earth's magnetic field?",
+      "options": [
+        "Weakens with increasing distance from the magnetic poles.",
+        "Weakens with increasing distance from the nearer magnetic poles.",
+        "Is approximately the same at magnetic latitude 50° N and 50° S."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the maximum value of dip that can be caused by the vertical component of terrestrial magnetism?",
+      "options": [
+        "45°",
+        "60°",
+        "90°"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following is correct when the variation is West?",
+      "options": [
+        "True North is East of Magnetic North.",
+        "Magnetic North is West of Compass North.",
+        "True North is West of Magnetic North."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A line drawn on a chart which joins all points where the value of magnetic variation is zero is called an?",
+      "options": [
+        "Agonic line.",
+        "Aclinic line.",
+        "Isogonal."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "How is the direct reading magnetic compass made aperiodic or dead beat?",
+      "options": [
+        "Using a pendulous suspension system for the magnetic assembly.",
+        "Using the lower possible viscosity liquid in the compass.",
+        "Positioning the magnetic assembly mass close to the compass point and using damping wires."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Isogonals converge at the?",
+      "options": [
+        "Magnetic equator.",
+        "North magnetic pole only.",
+        "North and South geographic and magnetic poles."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Why does the value of magnetic variation on a chart change with time?",
+      "options": [
+        "Movements of the magnetic poles, cause it to increase.",
+        "Movements of the magnetic poles cause it to increase or decrease.",
+        "Increases in the magnetic field, cause it to increase."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "At what point on the earth is a magnetic compass most effective?",
+      "options": [
+        "At the geographic equator.",
+        "Close to the magnetic North Pole.",
+        "Approximately midway between the magnetic poles."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft in the northern hemisphere is making an accurate rate one turn to the right. If the initial heading was 135° after 30 seconds the direct reading magnetic compass should read?",
+      "options": [
+        "225°.",
+        "Less than 225°.",
+        "More than 225°."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When using a direct reading magnetic compass in the northern hemisphere:",
+      "options": [
+        "A longitudinal acceleration on a Westerly heading causes an apparent turn to the South",
+        "A longitudinal acceleration of an Easterly heading causes an apparent turn to the North",
+        "A longitudinal deceleration of a Westerly heading causes an apparent turn to the North"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the main cause of permanent magnetism in aircraft?",
+      "options": [
+        "Hammering and the effect of the earth's magnetic field, whilst under construction.",
+        "Exposure to the terrestrial magnetic field during normal operation.",
+        "The combined effect of aircraft electrical equipment and the terrestrial magnetic field."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "When accelerating on a westerly heading in the northern hemisphere, the compass card of a direct reading magnetic compass will turn?",
+      "options": [
+        "Clockwise giving an apparent turn towards the north.",
+        "Clockwise giving an apparent turn towards the south.",
+        "Anti-clockwise giving an apparent turn towards the north."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the main advantage of a remote indicating compass compared to a direct reading compass is that it?",
+      "options": [
+        "It has less moving parts.",
+        "It senses, rather than seeks, the magnetic meridian.",
+        "It magnifies the earth's magnetic field in order to attain greater accuracy."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When decelerating on a westerly heading in the Northern hemisphere, the compass card of a direct reading magnetic compass will turn?",
+      "options": [
+        "Anti-clockwise giving an apparent turn towards the north.",
+        "Clockwise giving an apparent turn toward the south.",
+        "Anti-clockwise giving an apparent turn towards the south."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Why are the detector units in slaved gyro compasses usually fitted in or close to the wingtips of an aircraft?",
+      "options": [
+        "In order to isolate the detector unit from the terrestrial magnetic field.",
+        "In order to isolate the detector unit from the aircraft deviation sources.",
+        "Having one detector in each wingtip, cancels out compass deviation."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following statements is true of the Earth's magnetic field?",
+      "options": [
+        "It may be permanent, temporary, transient.",
+        "It does not affect aircraft deviation.",
+        "It acts like a large blue magnetic pole in Northern Canada."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In a remote indicating compass system the amount of deviation caused by aircraft magnetism and electrical circuits may be minimized by?",
+      "options": [
+        "Positioning the master unit in the center of the aircraft.",
+        "Using a vertically mounted gyroscope.",
+        "Mounting the detector unit in the wingtip."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft using a direct reading magnetic compass in the Northern hemisphere starts a Rate 1 turn to the right from 145°. What will be the indicated heading if it rolls out of the turn after 30 seconds?",
+      "options": [
+        "It is not possible to answer this question using the information given.",
+        "Greater than 235°.",
+        "Less than 235°."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The sensitivity of a direct reading compass varies?",
+      "options": [
+        "Inversely with the vertical component of the earth's magnetic field.",
+        "Directly with the horizontal component of the earth's magnetic field.",
+        "Directly with the vertical component of the earth's magnetic field."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An aircraft's compass must be swung?",
+      "options": [
+        "If the aircraft has been in the hangar for a long time and has been moved several times.",
+        "If the aircraft has been subjected to hammering.",
+        "Every maintenance inspection."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the dip angle at the South Magnetic Pole?",
+      "options": [
+        "00°.",
+        "90°.",
+        "180°."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "At the magnetic equator, when accelerating after take off on heading West, a direct reading compass?",
+      "options": [
+        "Under reads.",
+        "The heading indicates a turn to the south.",
+        "Indicates the correct heading."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the name for a line of equal magnetic variation?",
+      "options": [
+        "An isoclinic.",
+        "An isogonal.",
+        "An isogriv."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following statements concerning earth magnetism is completely correct?",
+      "options": [
+        "An isogonal is a line which connects places of equal dip; the aclinic is the line of zero magnetic dip.",
+        "An isogonal is a line which connects places with the same magnetic variation; the aclinic connects place with the same magnetic field strength.",
+        "An isogonal is a line which connects places with the same magnetic variations; the aclinic is the line of zero magnetic dip"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft is accelerating in the Northern hemisphere heading West. Will a direct reading magnetic compass (1) over-read or under-read and (2) Indicate a turn to the north or to the south?",
+      "options": [
+        "(1) over-read (2) north",
+        "(1) over-read (2) south",
+        "(1) under-read (2) north"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A direct reading compass should be swung when?",
+      "options": [
+        "The aircraft has made more than a stated number of landings.",
+        "There is a large, and permanent, change in magnetic latitude.",
+        "The aircraft is stored for a long period and is frequently moved."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The Earth can be considered as being a magnet with the?",
+      "options": [
+        "Red pole near the north pole of the earth and the direction of the magnetic force pointing straight down to the earth's surface.",
+        "Blue pole near the north pole of the earth and the direction of the magnetic force pointing straight up the earth's surface.",
+        "Blue pole near the north pole of the earth and the direction of the magnetic force pointing straight down to the earth's surface."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Deviation applied to magnetic heading gives?",
+      "options": [
+        "Magnetic track.",
+        "Compass heading.",
+        "Magnetic course."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is an occasion for carrying out a compass swing on a Direct Reading Compass?",
+      "options": [
+        "Before an aircraft goes on any flight that involves a large change of magnetic latitude.",
+        "After any of the aircraft radio equipment has been changed due to unserviceability.",
+        "After an aircraft has passed through a severe electrical storm, or has been struck by lightning."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following statements is correct concerning the effect of turning errors on a direct reading compass?",
+      "options": [
+        "Turning errors are greatest on east/west headings, and are greatest at high latitudes.",
+        "Turning errors are greatest on north/south headings, and are greatest at high latitudes.",
+        "Turning errors are greatest on north/south headings, and are least at high latitudes."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Complete the following statement regarding magnetic variation. The charted values of magnetic variation on earth normally change annually due to?",
+      "options": [
+        "Magnetic pole movement causing numerical values at all locations to increase or decrease.",
+        "Magnetic pole movement causing numerical values at all locations to increase.",
+        "An increasing field strength causing numerical values at all locations to increase."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The north and south magnetic poles are the only positions on the earth's surface where?",
+      "options": [
+        "The value of magnetic variation equals 90°.",
+        "A freely suspended compass needle will stand vertical.",
+        "A freely suspended compass needle will stand horizontal."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following statements concerning the earth's magnetic field is completely correct?",
+      "options": [
+        "Dip is the angle between total magnetic field and vertical field component.",
+        "Magnetic North rotates around true North slowly.",
+        "Earth's Red Pole is situated in North Canada."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Concerning direct reading magnetic compasses, in the northern hemisphere, it can be said that?",
+      "options": [
+        "On an Easterly heading, a longitudinal acceleration causes an apparent turn to the South.",
+        "On a Westerly heading, a longitudinal acceleration causes an apparent turn to the South.",
+        "On an Easterly heading, a longitudinal acceleration causes an apparent turn to the North."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "At a specific location the value of magnetic variation?",
+      "options": [
+        "Varies slowly over time.",
+        "Depends on the magnetic heading.",
+        "Depends on the true heading."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In northern hemisphere, during an acceleration in an easterly direction, the magnetic compass will indicate?",
+      "options": [
+        "A heading of East.",
+        "A decrease in heading.",
+        "An apparent turn to the South."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The purpose of compass check swing is to?",
+      "options": [
+        "Cancel out the horizontal component of the earth's magnetic field.",
+        "Cancel out the effects of the magnetic field found on board the aeroplane.",
+        "Measure the angle between Magnetic North and Compass North."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The magnitude of variation?",
+      "options": [
+        "has a maximum of 90°.",
+        "has a maximum of 180°.",
+        "has a maximum value of 45° E or 45° W."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "At the magnetic equator?",
+      "options": [
+        "Variation is zero.",
+        "Deviation is zero",
+        "Dip is zero."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The agonic line?",
+      "options": [
+        "Follows the geographical equator.",
+        "Joins places of nil variation.",
+        "Is midway between the magnetic north and South Poles."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Disadvantage of Remote sensing compass over DRC is :",
+      "options": [
+        "Turning errors are increased.",
+        "Detector unit is exposed to high deviation errors.",
+        "Susceptible to electrical failure."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What will be the effect on its direct reading compass when an aircraft on the Equator accelerates whilst traveling westwards.",
+      "options": [
+        "No change.",
+        "Indicates a decrease in heading.",
+        "Indicates a increase in heading."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A ground feature appears 30° to the left of the center line of the CRT of an airborne weather radar. If the heading of the aircraft is 355° (M) and the magnetic variation is 15° East, the true bearing of the aircraft from the feature is?",
+      "options": [
+        "310°.",
+        "130°.",
+        "160°."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The compass heading can be derived from the magnetic heading by reference to a:",
+      "options": [
+        "map showing the isoclinic lines",
+        "compass swinging curve",
+        "deviation correction curve"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "To minimise error, Magnetic compass should be read only when the aircraft is:",
+      "options": [
+        "turning with a constant bank",
+        "accelerating on a constant heading",
+        "flying straight and level with constant speed."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A pilot wishes to turn right on to a southerly heading with 20° bank at a latitude of 20° North. Using a direct reading compass, in order to achieve this he must stop the turn on an approximate heading of:",
+      "options": [
+        "150°",
+        "190°",
+        "210°"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Deviation card is used to help pilot in:",
+      "options": [
+        "maintaining magnetic headings",
+        "planning bad weather deviations",
+        "maintaining compass headings"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The purpose of compass swing is to determine the deviation of a magnetic compass:",
+      "options": [
+        "on a given heading",
+        "at a given latitude",
+        "on any heading"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In the northern hemisphere, during deceleration following a landing in an Easterly direction, the magnetic compass will indicate:",
+      "options": [
+        "a heading fluctuating about 090°",
+        "a constant heading",
+        "an apparent turn to the South"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The magnetic heading can be derived from the true heading by means of a:",
+      "options": [
+        "map showing the isoclinic lines",
+        "map showing the isogonal lines",
+        "compass swinging curve"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When turning onto a northerly heading the rose of a magnetic compass tends to \"undershoot\"; when turning onto a southerly heading it tends to \"overshoot\":\n1. these compass indications are less reliable in the northern hemisphere than in the southern hemisphere\n2. these compass oscillations following a lateral gust are not identical if the aircraft is heading north or south\n3. this behaviour is due to the mechanical construction of the compass\n4. this behaviour is a symptom of a badly swung compass\nThe combination of correct statements is:",
+      "options": [
+        "2, 3, 4",
+        "2, 3",
+        "1, 2, 4"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Among the errors of a magnetic compass, are errors:",
+      "options": [
+        "of parallax, due to oscillations of the compass rose",
+        "in North seeking, due to bank angle and magnetic heading",
+        "due to Schuler type oscillations"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The purpose of a compass swing is to attempt to coincide the indications of:",
+      "options": [
+        "compass north and magnetic north",
+        "true north and magnetic north",
+        "compass north and lubber line"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In a steep turn, the northerly turning error on a magnetic compass on the northern hemisphere is:",
+      "options": [
+        "equal to 180° on a 270° heading in a right turn",
+        "none on a 090° heading in a right turn",
+        "equal to 180° on a 090° heading in a right turn"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Magnetic compass swinging is carried out to reduce as much as possible:",
+      "options": [
+        "deviation",
+        "turning error",
+        "variation"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Magnetic compass works by:",
+      "options": [
+        "Converting earth's magnetic field to electrical field.",
+        "Sensing earth's magnetic field and converting it to gyro motion.",
+        "Sensing earth's magnetic field and rotating compass card."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A pilot wishes to turn right on to a northerly heading with 20° bank at a latitude of 40° North.Using a direct reading compass, in order to achieve this he must stop the turn on to an approximate heading of:",
+      "options": [
+        "350°",
+        "010°",
+        "330°"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In the Northern hemisphere, a magnetic compass will normally indicate a turn towards North if:",
+      "options": [
+        "a left turn is entered from a west heading.",
+        "an aircraft is decelerated while on an east or west heading.",
+        "an aircraft is accelerated while on an east or west heading."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following statements are correct:",
+      "options": [
+        "Dip is inversely proportional to H",
+        "Dip decreases with increased in latitude",
+        "Dip is inversely proportional to Z"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft turns left from 045º to 315° in the Southern Hemisphere. The magnets turn (i) ….. and liquid swirls (ii) ... causing an error.",
+      "options": [
+        "(i) clockwise (ii) clockwise",
+        "(i) anti-clockwise (ii) anti-clockwise",
+        "(i) clockwise (ii) anti-clockwise"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If the CH = 220°, var. = E12, dev. = W2, what is the corresponding TH?",
+      "options": [
+        "TH = 234°.",
+        "TH = 206°.",
+        "TH = 230°."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The deviating effect of vertical soft iron ....(i) with decrease of magnetic latitude, due to the .... (ii) of H and the …. (iii) of Z:",
+      "options": [
+        "(i) increases (ii) decrease (iii) decrease",
+        "(i) decreases (ii) increase (iii) decrease",
+        "(i) increases (ii) decrease (iii) increase"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When accelerating on a westerly heading in the Northern Hemisphere the needle of the DIC will:",
+      "options": [
+        "Turn clockwise giving an apparent turn towards south",
+        "Turn clockwise giving an apparent turn towards north",
+        "Turn anti-clockwise giving an apparent turn towards north"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft is fitted with a direct reading magnetic compass. Upon landing in a northerly direction the compass will indicate:",
+      "options": [
+        "a turn towards West.",
+        "no change.",
+        "a turn towards East."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "With reference to the flux valve of a remote indicating compass:",
+      "options": [
+        "the flux valve is pendulously mounted and so it is not subject to or affected by the earth's magnetic field.",
+        "the flux valve is fixed to the aircraft and it senses earth's magnetic field.",
+        "the flux valve remains in vertical position in order to liest sense earth's magnetic"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "During a sustained turn... the nearer magnetic pole, the effect of liquid swirl will.. compass turning error.",
+      "options": [
+        "towards; not affect.",
+        "towards; increase.",
+        "away from; not affect."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The principal advantage of a gyro magnetic compass (slaved gyro compass) is:",
+      "options": [
+        "It does not have to be aligned with the north",
+        "It does not precess",
+        "It combines the north-seeking ability of the magnetic compass with the stability of the direction indicator"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A remote indicating compass has usually less deviation error than a panel mounted compass because:",
+      "options": [
+        "it is carrying a well damped floating magnet.",
+        "it is normally mounted in a part of the airplane where magnetic interference is minimal.",
+        "it receives a higher flux-density from the earth's magnetic field."
+      ],
+      "answer": 1
+    }
+]

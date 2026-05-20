@@ -1,0 +1,161 @@
+[
+    {
+      "question": "Given Hdg°(C) = 120 and Deviation = 10W, what is the Hdg°(M)?",
+      "options": [
+        "110",
+        "130",
+        "120",
+        "100"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Given Hdg°(C) = 345 and Deviation = -7, what is the Hdg°(M)?",
+      "options": [
+        "352",
+        "338",
+        "345",
+        "355"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Given Hdg°(C) = 128 and Deviation = 4E, what is the Hdg°(M)?",
+      "options": [
+        "132",
+        "124",
+        "128",
+        "130"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Given Hdg°(M) = 220 and Variation = 12W, what is the Hdg°(T)?",
+      "options": [
+        "232",
+        "208",
+        "220",
+        "200"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Given Deviation = +10 and Variation = 7E,Hdg°(C)= 253,  what is the Hdg°(T)?",
+      "options": [
+        "270",
+        "280",
+        "260",
+        "250"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Given Hdg°(M) = 300 and Variation = 16E, what is the Hdg°(T)?",
+      "options": [
+        "316",
+        "284",
+        "300",
+        "270"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Given Hdg°(C) = 30, Deviation = 10E, what is the Hdg°(M)?",
+      "options": [
+        "20",
+        "40",
+        "30",
+        "50"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Given Hdg°(C) = 0 and Deviation = 10W, what is the Hdg°(M)?",
+      "options": [
+        "10",
+        "350",
+        "0",
+        "340"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Given Hdg°(M) = 215 and Variation = 6W, what is the Hdg°(T)?",
+      "options": [
+        "209",
+        "221",
+        "225",
+        "205"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Given Hdg°(C) = 220 and Deviation = -4, what is the Hdg°(M)?",
+      "options": [
+        "216",
+        "224",
+        "210",
+        "230"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "For flying in a given direction, the pilot needs a:",
+      "options": [
+        "Compass",
+        "Protractor",
+        "Manual",
+        "Map"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The true direction to be followed between two points can be obtained if you have a:",
+      "options": [
+        "Compass",
+        "Map",
+        "Radio compass",
+        "Altimeter"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Variation is the angular difference at a place between True North and Magnetic North and expressed in degrees to the East or West of:",
+      "options": [
+        "True North",
+        "Magnetic North",
+        "Both"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "When Variation is East:",
+      "options": [
+        "Magnetic direction is less than true direction",
+        "Magnetic direction is more than true direction",
+        "Depends upon the hemisphere",
+        "Magnetic and True directions are the same"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Lines joining places of equal variation shown on a map/chart are called:",
+      "options": [
+        "Isogonals",
+        "Isobars",
+        "Aclinic lines",
+        "Isoclinic lines"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A line joining places of zero variation is called:",
+      "options": [
+        "An aclinic line",
+        "An isoclinic line",
+        "An agonic line",
+        "An isotach"
+      ],
+      "answer": 2
+    }
+  ]

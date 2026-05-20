@@ -1,0 +1,119 @@
+[
+    {
+      "question": "DALR = 9.8 °C, ELR = 6.8 °C; atmosphere is",
+      "options": ["stable", "unstable", "indifferent"],
+      "answer": 0,
+      "explanation": "The atmosphere is stable when the environmental lapse rate (ELR) is less than the dry adiabatic lapse rate (DALR). Here, 6.8 °C/km < 9.8 °C/km, indicating a stable atmosphere."
+    },
+    {
+      "question": "SALR = 5.5 °C, ELR = 4.5 °C; atmosphere is",
+      "options": ["unstable", "stable", "indifferent"],
+      "answer": 1
+    },
+    {
+      "question": "DALR > ELR > SALR",
+      "options": ["conditionally unstable", "latently stable", "potentially stable"],
+      "answer": 0,
+      "explanation": "This condition (DALR > ELR > SALR) describes a conditionally unstable atmosphere. Dry air parcels are stable (ELR < DALR), while saturated air parcels are unstable (ELR > SALR)."
+    },
+    {
+      "question": "Dry air is unstable when:",
+      "options": ["ELR = DALR", "ELR > DALR", "ELR < DALR"],
+      "answer": 1,
+      "explanation": "Dry air is unstable when the environmental lapse rate (ELR) is greater than the dry adiabatic lapse rate (DALR). In this situation, a rising dry air parcel will remain warmer than its surroundings and continue to rise."
+    },
+    {
+      "question": "The saturated air is said to be unstable if",
+      "options": ["SALR = ELR", "SALR < ELR", "SALR > ELR"],
+      "answer": 1,
+      "explanation": "Saturated air is unstable when the environmental lapse rate (ELR) is greater than the saturated adiabatic lapse rate (SALR). A rising saturated air parcel will remain warmer than its surroundings and continue to rise."
+    },
+    {
+      "question": "If ELR = SALR = DALR the atmosphere is",
+      "options": ["Stable", "unstable", "Indifferent"],
+      "answer": 2,
+      "explanation": "When ELR equals both SALR and DALR, the atmosphere is considered neutrally stable or indifferent. A displaced air parcel will have the same temperature as its surroundings and will neither accelerate nor decelerate."
+    },
+    {
+      "question": "DALR means:",
+      "options": ["The rate at which temperature of unsaturated parcel of air falls with height when made to ascend adiabatically", "The rate at which temp falls with height", "The rate at which ascending parcel of saturated air cools"],
+      "answer": 0,
+      "explanation": "The Dry Adiabatic Lapse Rate (DALR) specifically refers to the rate of temperature decrease with height for an unsaturated air parcel rising adiabatically (without heat exchange with its surroundings)."
+    },
+    {
+      "question": "Surface temp. is 30 °C. Assuming DALR what is the temperature at 2 km",
+      "options": ["18 °C", "10 °C", "42 °C"],
+      "answer": 1,
+      "explanation": "DALR is approximately 10 °C/km. So, for a height of 2 km, the temperature will decrease by 2 * 10 °C = 20 °C. Therefore, the temperature at 2 km will be 30 °C - 20 °C = 10 °C."
+    },
+    {
+      "question": "An Isothermal atmosphere is:",
+      "options": ["Stable", "Unstable", "Neutral"],
+      "answer": 0,
+      "explanation": "An isothermal atmosphere has a zero lapse rate (temperature remains constant with height), which indicates stability."
+    },
+    {
+      "question": "If ELR is less than SALR, the atmosphere is said to be:",
+      "options": ["Absolutely unstable", "Conditionally unstable", "Absolutely stable"],
+      "answer": 2,
+      "explanation": "When the environmental lapse rate (ELR) is less than the saturated adiabatic lapse rate (SALR), both dry and saturated air parcels will be cooler than their surroundings when lifted, leading to absolute stability."
+    },
+    {
+      "question": "DALR is approximately",
+      "options": ["5 °C / km", "15 °C / km", "10 °C / km"],
+      "answer": 2,
+      "explanation": "The Dry Adiabatic Lapse Rate (DALR) is approximately 9.8 °C per kilometer, which is often rounded to 10 °C / km."
+    },
+    {
+      "question": "SALR at mean sea level is about",
+      "options": ["10 °C / Km", "5 °C / Km", "5 °F / Km"],
+      "answer": 1,
+      "explanation": "The Saturated Adiabatic Lapse Rate (SALR) is variable but is significantly less than the DALR due to the release of latent heat during condensation. At mean sea level, it's typically around 5 °C / km."
+    },
+    {
+      "question": "SALR approaches DALR",
+      "options": ["at 0 °C", "at -15 °F", "at -40 °C"],
+      "answer": 2,
+      "explanation": "SALR approaches DALR at very low temperatures (around -40 °C), where the amount of water vapor in the air is minimal, and thus the release of latent heat during condensation is also minimal."
+    },
+    {
+      "question": "Dry air having a temperature of 35 °C on surface when forced to rise adiabatically by 1 km would attain a temperature of",
+      "options": ["29 °C", "25 °C", "45 °C"],
+      "answer": 1,
+      "explanation": "Using the DALR of approximately 10 °C/km, a dry air parcel rising 1 km adiabatically will cool by 10 °C. Therefore, the temperature at 1 km would be 35 °C - 10 °C = 25 °C."
+    },
+    {
+      "question": "Inversion in the atmosphere indicates",
+      "options": ["Stability", "Instability", "Neutrality"],
+      "answer": 0,
+      "explanation": "An inversion, where temperature increases with height, is a very stable atmospheric condition because a rising air parcel will always be cooler and denser than its surroundings, inhibiting vertical motion."
+    },
+    {
+      "question": "Inversion is ........ Lapse Rate (LR)",
+      "options": ["Positive", "Negative", "Neutral"],
+      "answer": 1,
+      "explanation": "A normal lapse rate is positive (temperature decreases with height). An inversion is characterized by a negative lapse rate (temperature increases with height)."
+    },
+    {
+      "question": "Environmental LR can be more than DALR",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "True. The environmental lapse rate (ELR) is the actual temperature profile of the atmosphere and can vary significantly. It can be greater than the DALR, leading to unstable conditions."
+    },
+    {
+      "question": "The process which, to a large extent determines the vertical distribution of temperature in the atmosphere is",
+      "options": ["Adiabatic", "Isothermal", "Isentropic"],
+      "answer": 0,
+      "explanation": "Adiabatic processes, involving the cooling and warming of air parcels due to expansion and compression as they rise and sink, are the primary factor determining the vertical temperature distribution in the troposphere."
+    },
+    {
+      "question": " A rise in temperature with height is",
+      "options": ["Inversion", "Lapse", "Normal"],
+      "answer": 0,
+      "explanation": "A rise in temperature with height is the definition of a temperature inversion."
+    },
+    {"question": "Inversion is common in",
+      "options": ["Post Monsoon", "Monsoon", "Winters"],
+      "answer": 2,
+      "explanation": "Inversions are more common during winter nights when the ground cools rapidly through radiation, cooling the air layer near the surface while the air aloft remains relatively warmer."
+    }]

@@ -1,0 +1,63 @@
+[
+    {
+      "question": "An aircraft has to communicate with a VHF station at a range of 300 NM, if the ground station is situated 2500 ft AMSL which of the following is the lowest altitude at which contact is likely to be made?",
+      "options": [
+        "190 ft",
+        "1 378 ft",
+        "36 100 ft",
+        "84 100 ft"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Class ‘B’ VHF DF bearings are accurate to within:",
+      "options": [
+        "± 1°",
+        "± 5°",
+        "± 2°",
+        "± 10°"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A VDF QDM given without an accuracy classification may be assumed to be accurate to within:",
+      "options": [
+        "2 degrees",
+        "5 degrees",
+        "7.5 degrees",
+        "10 degrees"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An aircraft at altitude 9000 ft wishes to communicate with a VHF/DF station that is situated at 400 ft AMSL. What is the maximum range at which contact is likely to be made?",
+      "options": [
+        "115 NM",
+        "400 NM",
+        "143 NM",
+        "63.5 NM"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft is passed a true bearing from a VDF station of 353°. If variation is 8°E and the bearing is classified as ‘B’ then the:",
+      "options": [
+        "QDM is 345° ± 5°",
+        "QDR is 345° ± 2°",
+        "QTE is 353° ± 5°",
+        "QUJ is 353° ± 2°"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft at 19 000 ft wishes to communicate with a VDF station at 1400 ft AMSL. What is the maximum range at which contact is likely?",
+      "options": [
+        "175 NM",
+        "400.0 NM",
+        "62.5 NM",
+        "219 NM"
+      ],
+      "answer": 3
+    }
+  ]
+  

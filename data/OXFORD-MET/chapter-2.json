@@ -1,0 +1,154 @@
+[
+    {
+      "question": "The barometric pressure at the airfield datum point is known as:",
+      "options": [
+        "QFF",
+        "QNH",
+        "QFE",
+        "Standard Pressure"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The instrument that gives a continuous printed reading and record of the atmospheric pressure is:",
+      "options": [
+        "barometer",
+        "hygrometer",
+        "anemograph",
+        "barograph"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "The pressure of the atmosphere:",
+      "options": [
+        "decreases at an increasing rate as height increases",
+        "decreases at a constant rate as height increases",
+        "decreases at a decreasing rate as height increases",
+        "decreases at a constant rate up to the tropopause and then remains constant"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When considering the actual tropopause which statement is correct?",
+      "options": [
+        "It is low over the poles and high over the Equator",
+        "It is high over the poles and low over the Equator",
+        "It is the same height of 36 090 ft all over the world",
+        "It is at a constant altitude of 26 000’"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Atmospheric pressure may be defined as:",
+      "options": [
+        "the weight of the atmosphere exerted on any surface with which it is in contact",
+        "the weight of the atmosphere at standard sea level",
+        "the force per unit area exerted by the atmosphere on any surface with which it is in contact",
+        "a pressure exerted by the atmosphere of 1013.2 hPa"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The QFF is the atmospheric pressure:",
+      "options": [
+        "at the place where the reading is taken",
+        "corrected for temperature difference from standard and adjusted to MSL assuming standard atmospheric conditions exist",
+        "at a place where the reading is taken corrected to MSL taking into account the prevailing temperature conditions",
+        "as measured by a barometer at the aerodrome reference point"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The pressure of 1013 hPa is known as:",
+      "options": [
+        "standard pressure setting",
+        "QNH",
+        "QFE",
+        "QFF"
+      ],
+      "answer": 0
+    },
+        {
+          "question": "The aircraft altimeter will read zero at aerodrome level with which pressure setting set on the altimeter subscale:",
+          "options": [
+            "QFF",
+            "QNH",
+            "SPS",
+            "QFE"
+          ],
+          "answer": 3
+        },
+        {
+          "question": "The aerodrome QFE is:",
+          "options": [
+            "the reading on the altimeter on an aerodrome when the aerodrome barometric pressure is set on the subscale",
+            "the reading on the altimeter on touchdown at an aerodrome when 1013 is set on the subscale",
+            "the reading on the altimeter on an aerodrome when the sea level barometric pressure is set on the subscale",
+            "the aerodrome barometric pressure"
+          ],
+          "answer": 3
+        },
+        {
+          "question": "When an altimeter subscale is set to the aerodrome QFE, the altimeter reads:",
+          "options": [
+            "the elevation of the aerodrome at the aerodrome reference point",
+            "zero at the aerodrome reference point",
+            "the pressure altitude at the aerodrome reference point",
+            "the appropriate altitude of the aircraft"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "The aerodrome QNH is the aerodrome barometric pressure:",
+          "options": [
+            "corrected to mean sea level assuming standard atmospheric conditions exist",
+            "corrected to mean sea level, assuming isothermal conditions exist",
+            "corrected for temperature and adjusted to MSL assuming standard atmosphere conditions exist",
+            "corrected to MSL using ambient temperature"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "A line drawn on a chart joining places having the same barometric pressure at the same level and at the same time is:",
+          "options": [
+            "an isotherm",
+            "an isallobar",
+            "a contour",
+            "an isobar"
+          ],
+          "answer": 3
+        },
+        {
+          "question": "An isobar on a meteorological chart joins all places having the same:",
+          "options": [
+            "QFE",
+            "QFF",
+            "QNH",
+            "standard pressure"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Pressure will _________ with increasing height and will be about __________ at 10 000 ft and ___________ at 30 000 ft.",
+          "options": [
+            "Increase 800 hPa 400 hPa",
+            "Decrease 700 hPa 300 hPa",
+            "Increase 200 hPa 800 hPa",
+            "Decrease 500 hPa 200 hPa"
+          ],
+          "answer": 1
+        },
+            {
+              "question": "An airfield in England is 100 m above sea level, QFF is 1030 hPa, temperature at the surface is -15°C. What is the value of QNH?",
+              "options": [
+                "Cannot be determined",
+                "Less than 1030 hPa",
+                "Same as QFF",
+                "More than 1030 hPa"
+              ],
+              "answer": 1   
+            }
+          ]
+          
+

@@ -1,0 +1,237 @@
+[
+        {
+          "question": "LMT at A(42° 23' N 105°E) is 01:00 on 12/02, what is the LMT at 23°45'S 62°W?",
+          "options": [
+            "18:00  on 11/02",
+            "13:52  on 11/02",
+            "01:00  on 12/02",
+            "23:00  on 11/02"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Observer's meridian: 40°N, 11°20'E, LMT = 13:00 hrs. What is LMT at 60°N 121°21'E?",
+          "options": [
+            "20:20 hrs",
+            "04:54 hrs",
+            "12:15 hrs",
+            "21:20 hrs"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "Observer's meridian: 40°N, 11°20'E, LMT = 13:00 hrs. What is LMT at 53°S, 110°23'W?",
+          "options": [
+            "20:20 hrs",
+            "12:15 hrs",
+            "04:54 hrs",
+            "06:30 hrs"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Mean time has been introduced in order to:",
+          "options": [
+            "Have one fixed time to be used within the border of a country.",
+            "Introduce a constant measurement of time, independent of the daily variations in the movement of the sun.",
+            "Compensate for irregularities of the Earth's rotation speed.",
+            "Adjust for seasonal changes."
+          ],
+          "answer": 0
+        },
+        {
+          "question": "An aircraft departs from X (35°S 168°W) to Y (32°S 164°15'E) at 21:45 LMT on 2nd June. Flying time is 8 hr 20 min. What is the LMT ETA at Y?",
+          "options": [
+            "04:14 hrs on 4th June",
+            "06:05 hrs on 3rd June",
+            "17:17 hrs on 3rd June",
+            "04:14 hrs on 3rd June"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "An aircraft crosses IDL from 150°E to 108°W at 0000 UTC. What happens at destination?",
+          "options": [
+            "LMT is behind and date is ahead",
+            "Both LMT and date are behind",
+            "Date is behind and LMT is ahead",
+            "Both LMT and date are ahead"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "LMT at 55°29'N, 000°E is 12:00 hrs on 01 March. Find UTC at 23°23'S, 180°E.",
+          "options": [
+            "12:00 hrs 01 March",
+            "00:00 hrs 01 March",
+            "12:00 hrs 28 February",
+            "00:00 hrs 28 February"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "ZT at 30°N, 112°20'E is 18:00 hrs. Find UTC.",
+          "options": [
+            "11:00 hrs",
+            "07:00 hrs",
+            "18:00 hrs",
+            "13:00 hrs"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "UTC at 92°30'W is 01:00 hrs. Find ZT.",
+          "options": [
+            "07:00 hrs",
+            "19:00 hrs",
+            "01:00 hrs",
+            "17:00 hrs"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "ZT at 52°30'E is 12:00 hrs. Find UTC and LMT.",
+          "options": [
+            "UTC = 09:00 hrs, LMT = 12:30 hrs",
+            "UTC = 12:30 hrs, LMT = 09:00 hrs",
+            "UTC = 12:00 hrs, LMT = 15:30 hrs",
+            "UTC = 09:30 hrs, LMT = 12:00 hrs"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "At 10 hr 40 min at 160°E, difference between zone time and LMT will be:",
+          "options": [
+            "Zone time will be ahead of LMT by 20 min",
+            "Zone time will be ahead of LMT by 40 min",
+            "LMT will be ahead of ZT by 20 min"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "Find LMT, ZT, and IST (82.5°E) at 30°N, 90°E if UTC is 02:00 hrs.",
+          "options": [
+            "ZT = 08:00 hrs, LMT = 08:00 hrs, IST = 07:30 hrs",
+            "ZT = 07:30 hrs, LMT = 08:00 hrs, IST = 08:00 hrs",
+            "ZT = 08:30 hrs, LMT = 08:00 hrs, IST = 08:00 hrs"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "Local Mean Time of a place is the time lapsed since the transit of the mean sun over:",
+          "options": [
+            "its meridian",
+            "its antemeridian",
+            "the prime meridian"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "I.S.T. and the LMT of a place can be the same only when:",
+          "options": [
+            "The place is in India",
+            "The longitude of the place is 82°30' East",
+            "All the above"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "The LMT at a place in India is 0400. If the position is 10°N and 78°E, what is the IST?",
+          "options": [
+            "0400",
+            "0418",
+            "0342"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Mumbai's position is 19°05'N, 73°00'E. A place exactly north at 21°N, 73°00'E. When IST in Mumbai is 1200 hrs, IST at other place is:",
+          "options": [
+            "1122",
+            "1200",
+            "1238"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "When GMT at Chennai (13°00'N, 83°00'E) is 1100 hrs, the IST at Kolkata (20°00'N, 88°30'E) will be:",
+          "options": [
+            "1122",
+            "1100",
+            "1630"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "On 27th February, sunrise at 52°S, 40°E is 0243 UTC. At 52°S, 35°W the sunrise will be at:",
+          "options": [
+            "0243 LMT",
+            "0743 LMT",
+            "0523 LMT"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "The sun rises at 50°N and 25°E on 25th January at 0254 UTC. What time does it rise at 50°N and 40°W?",
+          "options": [
+            "0254 UTC",
+            "0714 UTC",
+            "2154 UTC"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What is the meaning of the term 'standard time'?",
+          "options": [
+            "It is another term for UTC",
+            "It is the time set by legal authorities for a country or part of a country",
+            "It is an expression for local mean time"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "The local mean time at longitude 95°20'W at 0000 UTC is:",
+          "options": [
+            "1738:40 same day",
+            "1738:40 previous day",
+            "0621:20 previous day"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "What does 5 hours 50 minutes and 20 seconds change of longitude represent?",
+          "options": [
+            "80°05'",
+            "87°35'",
+            "35°15'"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "The times given for sunrise, sunset, morning, and evening twilight in the Air Almanac:",
+          "options": [
+            "Are given in UTC",
+            "Are given in standard time",
+            "Are given in LMT"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "A is at longitude 12°30'E and B is at longitude 43°15'E. If LMT at B is 1749, what is LMT at A?",
+          "options": [
+            "1546",
+            "1706",
+            "1952"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "Consider the following statements about sunrise and sunset:",
+          "options": [
+            "In May, sunrise occurs later at 45°N than at 45°S.",
+            "In November, sunset occurs earlier at 45°S than at 45°N.",
+            "At equator, sunrise and sunset occur at quite regular times throughout the year."
+          ],
+          "answer": 2
+        }
+      ]

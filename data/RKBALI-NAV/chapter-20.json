@@ -1,0 +1,182 @@
+[
+  {
+    "question": "IVSI is more useful than a normal VSI as its indications are:",
+    "options": [
+      "More reliable during steady climb/descent",
+      "More reliable when the aircraft initiates a climb/descent",
+      "Reliable at all times"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "An aircraft fitted with an IVSI will have:",
+    "options": [
+      "Climb indications during a turn",
+      "Descent indications during a turn",
+      "Correct indications during turns"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Compared to the VSI, what errors are eliminated by the IVSI?",
+    "options": [
+      "Lag",
+      "Temperature",
+      "Turning"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The response time of a vertical speed detector may be improved by adding a:",
+    "options": [
+      "Second calibrated port",
+      "Correction based on an accelerometer sensor",
+      "Bimetallic strip"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The vertical speed indicator of an aircraft flying at a true airspeed of 100 kt, in a descent with a slope of 3 degrees, indicates:",
+    "options": [
+      "-300 ft/min",
+      "-250 ft/min",
+      "-500 ft/min"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What does a vertical speed indicator actually measure?",
+    "options": [
+      "The rate of temperature change",
+      "The rate of temperature and altitude change",
+      "The rate of pressure change"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The vertical speed indicator (VSI) is fed by:",
+    "options": [
+      "Differential pressure",
+      "Static pressure",
+      "Dynamic pressure"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "If the static vent becomes blocked during climb:",
+    "options": [
+      "The VSI will indicate an increasing rate of climb",
+      "The VSI will indicate a decreasing rate of climb",
+      "The VSI will return to zero"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Entering ground effect is likely to:",
+    "options": [
+      "Decrease static pressure but increase pitot pressure",
+      "Decrease pitot pressure but increase static pressure",
+      "Increase position errors"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "If the metered orifice in the VSI becomes partly blocked, VSI indication will be:",
+    "options": [
+      "Too high when climbing",
+      "Too low when descending",
+      "Too high when climbing/descending"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "If the casing of a VSI in a pressurized aircraft develops a leak, VSI indications will be:",
+    "options": [
+      "Too low when climbing or descending",
+      "Too high when climbing or descending",
+      "Too high when climbing and too low when descending"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "If the casing of a VSI in an unpressurized aircraft develops a leak:",
+    "options": [
+      "It will overread",
+      "It will underread",
+      "It will read zero"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The vertical speed indicator indications may be in error for some seconds after starting or finishing a climb or descent. The error is a result of:",
+    "options": [
+      "A combination of time lag and instrument error",
+      "A combination of time lag and maneuver-induced errors",
+      "A combination of position error and maneuver-induced errors"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "If the pitot pipe becomes partly blocked:",
+    "options": [
+      "The VSI indication will be too low when climbing",
+      "The VSI will be too low when descending",
+      "The VSI will not be affected"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "If the static pipe becomes partly blocked:",
+    "options": [
+      "The VSI indication will be too high when descending",
+      "The VSI indication will be too high when accelerating",
+      "The VSI indication will be too low when climbing or descending"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "During taxiing, the VSI shows -100 ft/min. The pilot should:",
+    "options": [
+      "Continue with the flight if an engineer is on board",
+      "Taxi back and have the VSI repaired",
+      "Continue with the flight using a new reference"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "VSI lag is reduced by:",
+    "options": [
+      "Two dashpots responding to acceleration",
+      "Two return springs",
+      "Bimetallic strips"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The correct action to be taken when the static vent blocks on an unpressurized aircraft is to:",
+    "options": [
+      "Break the VSI glass",
+      "Use the standby static source",
+      "Calculate rate of climb using mathematics"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "A VSI:",
+    "options": [
+      "Produces an output proportional to ambient pressure",
+      "Measures the difference between total pressure and static pressure",
+      "Measures the difference between the pressure inside and outside a capsule"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "A VSI indicates increasing Rate of Descent (ROD) by:",
+    "options": [
+      "VSI needle moving downwards",
+      "VSI needle moving upwards",
+      "VSI needle stationary"
+    ],
+    "answer": 0
+  }
+]

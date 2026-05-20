@@ -1,0 +1,111 @@
+[
+    {
+      "question": "What is the change of latitude from 52°15’N to 39°35’N?",
+      "options": ["12°40’S", "13°20’S", "11°45’S"],
+      "answer": 0
+    },
+    {
+      "question": "What is the change of latitude from 49°35’N to 60°20’S?",
+      "options": ["109°55’S", "110°00’S", "109°15’S"],
+      "answer": 0
+    },
+    {
+      "question": "What is the change of latitude from 74°20’S to 34°30’S?",
+      "options": ["39°50’N", "40°00’N", "41°10’N"],
+      "answer": 0
+    },
+    {
+      "question": "What is the change of latitude from 71°20’N to 86°45’N over the North Pole?",
+      "options": [ "14°55’","21°55’", "3°15’", "15°25’"],
+      "answer": 1
+    },
+    {
+      "question": "What is the distance from 41°25’N to 79°30’N in nautical miles?",
+      "options": ["2285 NM", "2280 NM", "2300 NM", "2250 NM"],
+      "answer": 0
+    },
+    {
+      "question": "What is the change of longitude from 075°40’W to 125°35’W?",
+      "options": ["49°55’W", "50°05’W", "51°10’E"],
+      "answer": 0
+    },
+    {
+      "question": "What is the change of longitude from 001°20’E to 004°20’W?",
+      "options": ["3°00’W", "5°40’W", "4°00’W"],
+      "answer": 1
+    },
+    {
+      "question": "What is the change of longitude from 150°40’E to 179°30’E?",
+      "options": ["28°50’E", "29°10’W", "30°10’E"],
+      "answer": 0
+    },
+    {
+      "question": "What is the change of longitude from 162°36’W to 140°42’E?",
+      "options": ["56°42’W", "39°10’W", "56°00’W"],
+      "answer": 0
+    },
+    {
+      "question": "What is the shortest distance in nautical miles between 52°06’N 002°32’E and 53°36’N 002°32’E?",
+      "options": ["90 NM", "100 NM", "120 NM", "80 NM"],
+      "answer": 0
+    },
+    {
+      "question": "What is the shortest distance in NM between 04°41’S 163°36’W and 03°21’N 163°36’W?",
+      "options": ["482 NM", "480 KM", "460 NM", "500 NM"],
+      "answer": 0
+    },
+    {
+      "question": "What is the shortest distance in NM between 62°00’N 093°00’E and 62°00’N 087°00’W?",
+      "options": ["5400 NM", "5400 KM", "3360 NM", "540 NM"],
+      "answer": 2
+    },
+    {
+      "question": "What is the shortest distance in NM between 00°00’N 176°00’E and 00°00’N 173°00’W?",
+      "options": ["11 NM", "660 NM", "170 NM", "7 NM"],
+      "answer": 1
+    },
+    {
+      "question": "What is the shortest distance in NM between 43°57’N 071°37’W and 43°57’S 108°23’E?",
+      "options": ["10,800 NM", "8,500 NM", "9,500 NM", "7,800 NM"],
+      "answer": 0
+    },
+    {
+      "question": "Given position A at 54°20’N 002°30’W and a ch.lat of 16°20’N and a ch.long of 20°30’W, what is position B?",
+      "options": [
+        "38°00’N 23°00’W",
+        "70°40’N 23°00’W",
+        "38°00’N 23°00’E",
+        "70°40’S 23°00’W"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Given position C at 36°47’S 179°21’E and a ch.lat of 46°47’N and a ch.long of 20°30’E, what is position D?",
+      "options": [
+        "10°00’N 159°51’W",
+        "10°00’N 160°09’W",
+        "10°00’N 199°51’E",
+        "83°34’N 199°51’E"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Any Meridian Line is a:",
+      "options": [
+        "Rhumb Line",
+        "Semi Great Circle",
+        "Rhumb Line and a semi Great Circle"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A Rhumb Line cuts all meridians at the same angle. This gives:",
+      "options": [
+        "The shortest distance between two points.",
+        "A line which could never be a Great Circle track",
+        "A line of constant direction"
+      ],
+      "answer": 2
+    }
+  ]
+  

@@ -1,0 +1,83 @@
+[
+    {
+      "question": "The process which causes the reduction in signal strength as range from a transmitter increases is known as:",
+      "options": [
+        "absorption",
+        "diffraction",
+        "attenuation",
+        "ionisation"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following will give the greatest surface wave range?",
+      "options": [
+        "243 MHz",
+        "500 kHz",
+        "2182 kHz",
+        "15 MHz"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "It is intended to increase the range of a VHF transmitter from 50 NM to 100 NM. This will be achieved by increasing the power output by a factor of:",
+      "options": [
+        "2",
+        "8",
+        "16",
+        "4"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "The maximum range an aircraft at 2500 ft can communicate with a VHF station at 196 ft is:",
+      "options": [
+        "79 NM",
+        "64 NM",
+        "52 NM",
+        "51 NM"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the minimum height for an aircraft at a range of 200 NM to be detected by a radar at 1700 ft AMSL?",
+      "options": [
+        "25 500 ft",
+        "15 000 ft",
+        "40 000 ft",
+        "57 500 ft"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Determine which of the following statements concerning atmospheric ionization are correct:\n1. The highest levels of ionization will be experienced in low latitudes\n2. Ionization levels increase linearly with increasing altitude\n3. The lowest levels of ionization occur about midnight\n4. The E-layer is higher by night than by day because the ionization levels are lower at night",
+      "options": [
+        "statements 1, 2 and 3 are correct",
+        "statements 1, 3 and 4 are correct",
+        "statements 2 and 4 are correct",
+        "statements 1 and 4 are correct"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "The average height of the E-layer is …… and the maximum range for sky wave will be ……",
+      "options": [
+        "60 km, 1350 NM",
+        "125 km, 2200 km",
+        "225 km, 2200 km",
+        "125 km, 1350 NM"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Concerning HF communications, which of the following is correct?",
+      "options": [
+        "The frequency required in low latitudes is less than the frequency required in high latitudes",
+        "At night a higher frequency is required than by day",
+        "The frequency required is dependent on time of day but not the season",
+        "The frequency required for short ranges will be less than the frequency required for long ranges"
+      ],
+      "answer": 3
+    }
+  ]
+  

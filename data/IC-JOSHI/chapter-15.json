@@ -1,0 +1,157 @@
+[
+    {
+      "question": "The arbitrary lower limit of jet core velocity has been assigned by WMO as",
+      "options": ["60 kt", "60 m/s", "70 m/s"],
+      "answer": 0,
+      "explanation": "WMO defines the lower limit of jet stream core velocity at 60 knots (kt), which is a standard benchmark."
+    },
+    {
+      "question": "Jet stream has",
+      "options": ["one maxima", "one or more maxima", "only two maxima"],
+      "answer": 1,
+      "explanation": "Jet streams can have one or more speed maxima along their axis, known as jet streaks."
+    },
+    {
+      "question": "The vertical wind shear in a Jet stream is about",
+      "options": ["5m/s/km", "6m/s/km", "8m/s/km"],
+      "answer": 0,
+      "explanation": "The vertical wind shear in jet streams typically ranges around 5 m/s/km, indicating rapid changes in wind speed with altitude."
+    },
+    {
+      "question": "Compared to horizontal wind shear the vertical wind shear in a Jet stream is",
+      "options": ["weaker", "stronger", "same"],
+      "answer": 1,
+      "explanation": "Vertical wind shear is generally stronger in jet streams due to steep wind gradients with altitude."
+    },
+    {
+      "question": "In a jet stream, the path of the maximum speed is known as",
+      "options": ["Core", "Axis", "Jet streak"],
+      "answer": 1,
+      "explanation": "Jet axis are maxima of wind speed embedded within the jet stream core."
+    },
+    {
+      "question": "The wind speed along the axis of a jet stream is always",
+      "options": ["Uniform", "Not uniform"],
+      "answer": 1,
+      "explanation": "Wind speeds are not uniform along the jet stream axis; they vary, creating jet streaks."
+    },
+    {
+      "question": "Along the axis of a jet stream there are centres of high speed winds, these are called",
+      "options": ["Jet streaks", "Core", "Axis"],
+      "answer": 0,
+      "explanation": "Jet streaks are localized regions of high-speed winds found along the jet stream axis."
+    },
+    {
+      "question": "In a wavy jet the Jet streaks are located over or near the",
+      "options": ["Ridge", "Trough", "Between Trough and Ridge"],
+      "answer": 0,
+      "explanation": "Jet streaks in wavy jet streams often occur at ridges, where wind shear is enhanced."
+    },
+    {
+      "question": "Sub-tropical Jet Stream (STJ) is",
+      "options": ["Westerly", "Easterly", "Southerly"],
+      "answer": 0,
+      "explanation": "STJ is a westerly jet stream located near 30° latitude in both hemispheres."
+    },
+    {
+      "question": "The normal position of Sub-tropical Jet Stream is",
+      "options": ["30° N", "27° N", "35° N"],
+      "answer": 1,
+      "explanation": "The STJ typically lies around 27° N during its normal phase."
+    },
+    {
+      "question": "The southern most position of STJ is in February is",
+      "options": ["22° N", "20° N", "18° N"],
+      "answer": 0,
+      "explanation": "During February, the STJ shifts southward and can reach as far as 22° N."
+    },
+    {
+      "question": "The STJ affects India from",
+      "options": ["Jun to Jul", "Oct to May", "Aug to Sep"],
+      "answer": 1,
+      "explanation": "STJ predominantly affects India from October to May, influencing winter weather patterns."
+    },
+    {
+      "question": "STJ has a layered structure. There are often two layers of max wind to the........of the jet core",
+      "options": ["S", "N", "SW"],
+      "answer": 0,
+      "explanation": "The jet stream often shows layered maxima to the south of its core due to varying altitude wind maxima."
+    },
+    {
+      "question": "The STJ strengthens",
+      "options": ["Northwards", "Upstream", "Downstream"],
+      "answer": 2,
+      "explanation": "The STJ typically strengthens downstream, where divergence enhances upper-level winds."
+    },
+     {
+          "question": "At and near the STJ the temperature gradient is very",
+          "options": ["Small", "Large", "Moderate"],
+          "answer": 0,
+          "explanation": "The subtropical jet (STJ) is characterized by a small temperature gradient, particularly between tropical and mid-latitudes."
+        },
+        {
+          "question": "Vertical wind shear in STJ is greater .......... the core",
+          "options": ["above", "below", "along"],
+          "answer": 0,
+          "explanation": "Vertical wind shear is greater above the core of the STJ due to stronger wind speed changes at lower altitudes."
+        },
+        {
+          "question": "The TJ prevails over the Indian Peninsula from",
+          "options": ["May to Jun", "Sep to Oct", "Jun to Aug"],
+          "answer": 2,
+          "explanation": "The Tropical Jet (TJ) occurs over India primarily during the monsoon months, especially from June to August."
+        },
+        {
+          "question": "The TJ is located over the Indian Peninsula, approximately at",
+          "options": ["13° N", "17° N", "18° N"],
+          "answer": 0,
+          "explanation": "The Tropical Jet generally lies near 13° N over the Indian Peninsula during active phases."
+        },
+        {
+          "question": "The TJ is located over India, approximately at a height of",
+          "options": ["15–16 km", "12–13 km", "11–12 km"],
+          "answer": 0,
+          "explanation": "The core of the Tropical Jet (TJ) is typically found around 15-16 km above sea level."
+        },
+        {
+          "question": "The TJ is strongest in",
+          "options": ["July–Aug", "Sep–Oct", "June"],
+          "answer": 0,
+          "explanation": "The Tropical Jet is strongest during the peak monsoon months of July and August."
+        },
+        {
+          "question": "In the TJ the wind shears are much .......... than the STJ",
+          "options": ["more", "less", "same"],
+          "answer": 1,
+          "explanation": "Wind shears in the Tropical Jet are typically less than in the Subtropical Jet due to smaller horizontal temperature gradients."
+        },
+        {
+          "question": "TJ is",
+          "options": ["Westerly", "Easterly", "Southerly"],
+          "answer": 1,
+          "explanation": "The Tropical Jet is an easterly jet stream that forms during the monsoon season."
+        },
+        {
+          "question": "A jet stream can be recognized by",
+          "options": ["High level dust", "High Pressure", "Streaks of CI", "Lenticular clouds"],
+          "answer": 2,
+          "explanation": "Jet streams are often identified by streaks of cirrus (CI) clouds at high altitudes."
+        },
+        {
+          "question": "Flying at right angles to a jet stream with falling pressure you will experience",
+          "options": ["Wind from left", "Increasing head wind", "Increasing tail wind", "Wind from right"],
+          "answer": 0,
+          "explanation": "Falling pressure with a perpendicular flight path to the jet stream typically results in winds from left."
+        },
+        {
+          "question": "When and where tropical jet stream occurs",
+          "options": [
+            "All year along equator",
+            "In Middle East in summers",
+            "In winters over Russia",
+            "In summers over SE Asia and Central Africa"
+          ],
+          "answer": 3,
+          "explanation": "The Tropical Jet Stream commonly appears in summer over Southeast Asia and Central Africa due to intense monsoon activity."
+        }
+      ]

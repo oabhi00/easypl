@@ -1,0 +1,154 @@
+[
+    {
+      "question": "An air mass that has travelled over an ocean is known as:",
+      "options": [
+        "continental air and has a high humidity",
+        "continental air and has a low humidity",
+        "maritime air and has a high humidity",
+        "maritime air and has a low humidity"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Characteristic weather associated with a mPc air mass transiting the British Isles in summer would include:",
+      "options": [
+        "widespread Cu and Cb activity over land during the day",
+        "clear quiet settled weather over land by day with good visibility",
+        "warm moist conditions with some Sc or Cu and moderate to poor visibility",
+        "extensive low stratus cloud giving drizzle to light rain over land by day"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If air in transit is heated from below it tends to become more:",
+      "options": [
+        "stable",
+        "neutrally stable",
+        "unstable",
+        "none of these"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The weather associated with polar maritime air is:",
+      "options": [
+        "overcast, moderate drizzle",
+        "overcast moderate intermittent rain",
+        "broken cloud, light, moderate or heavy rain",
+        "broken cloud, moderate continuous rain"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Polar maritime air is ______and can bring _____ in the UK in winter but _____ in summer.",
+      "options": [
+        "very unstable/heavy snow showers/does not arrive",
+        "cold and stable/advection fog/rain showers",
+        "unstable/intermittent or continuous snow/cool dry weather",
+        "unstable/heavy showers/light rain showers"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Tropical continental air normally brings to the UK:",
+      "options": [
+        "hot dry cloudless weather with a thick haze",
+        "warm weather with broken Cu and showers on coasts, visibility very good except in showers",
+        "warm dry cloudless weather with very good visibility",
+        "hot dry cloudless weather on coasts but Cu building up inland with rain showers, visibility good except in showers"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Referring to the area of the North Atlantic, the mean position of the polar front in January is:",
+      "options": [
+        "from Florida to southwest England",
+        "from Newfoundland to the north of Scotland",
+        "from Florida to the north of Scotland",
+        "from Newfoundland to southwest England"
+      ],
+      "answer": 0,
+      "image":"../image/chapter17-2.png"
+    },
+    {
+      "question": "When air from an air mass moves to a lower latitude, it can be expected that:",
+      "options": [
+        "surface layer air will become warmer, the RH will rise and the air will become unstable",
+        "surface layer air will become colder, the RH will rise and the air will become more stable",
+        "surface layer air will become warmer, the RH will fall and the air will become unstable",
+        "surface layer air will become warmer, the RH will fall and the air will become more stable"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In the N. Hemisphere when flying in the troposphere above the surface friction layer in the polar maritime air mass behind the cold front of a fully developed frontal depression:",
+      "options": [
+        "the wind will tend to veer in direction and increase in speed with progressive increase of altitude",
+        "the wind will tend to veer in direction with increase of altitude but the speed may remain constant in the lower layers of the atmosphere",
+        "the wind speed will reduce progressively with increase of altitude until at about 10 000 feet above mean sea level where it will then tend to increase in speed from another direction",
+        "the wind will tend to back in direction and increase in speed with progressive increase of altitude"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "The average surface level winds at A3, B3 and C3 in Appendix ‘A’ are respectively:",
+      "options": [
+        "easterly, westerly, southwesterly",
+        "westerly, westerly, southwesterly",
+        "southwesterly, westerly, northwesterly",
+        "southwesterly, westerly, northerly"
+      ],
+      "answer": 2,
+      "image":"../image/chapter17-1.png"
+    },
+    {
+      "question": "The average upper winds at A1, B1 and C1 in Appendix ‘A’ are respectively:",
+      "options": [
+        "easterly, westerly, northwesterly",
+        "northwesterly, westerly, southwesterly",
+        "southwesterly, westerly, northwesterly",
+        "southwesterly, westerly, northerly"
+      ],
+      "answer": 1,"image":"../image/chapter17-1.png"
+    },
+    {
+      "question": "It can be expected that the depth of the friction layer over the UK will be:",
+      "options": [
+        "greater in Polar Maritime air due to the instability and moderate wind",
+        "greater in Tropical Maritime air due to the warm temperature",
+        "greater in Polar Continental air due to the very low temperatures",
+        "greater in Tropical Continental air due to the relatively high temperatures in winter"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The air masses involved in the development of a polar front depression are:",
+      "options": [
+        "Polar Maritime and Polar Continental",
+        "Tropical Maritime and Polar Continental",
+        "Tropical Continental and Polar Maritime",
+        "Polar Maritime and Tropical Maritime"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "When a cold front passes a station in the British Isles:",
+      "options": [
+        "The wind veers and the dew point falls",
+        "The wind backs and the dew point falls",
+        "The wind veers and the dew point rises",
+        "The wind backs and the dew point rises"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Refer to Appendix B\nThe air masses indicated in the diagrams by the hand are respectively:",
+      "options": [
+        "Arctic, Tropical Continental, Polar Maritime, Arctic Maritime",
+        "Polar Continental, Tropical Maritime, Tropical Continental, Arctic",
+        "Polar Maritime, Tropical Maritime, Polar Continental, Arctic",
+        "Polar Continental, Polar Maritime, Tropical Maritime, Arctic"
+      ],
+      "answer": 1,"image":"../image/chapter17-2.png"
+    }
+  ]

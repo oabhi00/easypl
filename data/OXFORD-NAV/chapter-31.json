@@ -1,0 +1,62 @@
+[
+    {
+      "question": "A gyro-magnetic compass or magnetic heading reference unit is an assembly which always consists of: 1 - a directional gyro 2 - a vertical axis gyro 3 - an earth’s magnetic field detector 4 - an azimuth control 5 - a synchronizing control. The combination of correct statements is:",
+      "options": [
+        "2 and 5",
+        "1, 3 and 5",
+        "2, 3 and 5",
+        "1 and 4"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A slaved directional gyro derives its directional signal from:",
+      "options": [
+        "a direct reading magnetic compass",
+        "the flight director",
+        "the flux valve",
+        "the air data computer"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The gyro-magnetic compass torque motor:",
+      "options": [
+        "causes the directional gyro unit to precess",
+        "causes the heading indicator to precess",
+        "feeds the error detector system",
+        "is fed by the flux valve"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The heading information originating from the gyro-magnetic compass flux valve is sent to the:",
+      "options": [
+        "error detector",
+        "erector system",
+        "heading indicator",
+        "amplifier"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The input signal of the amplifier of the gyro-magnetic compass resetting device originates from the:",
+      "options": [
+        "directional gyro erection device",
+        "error detector",
+        "flux valve",
+        "directional gyro unit"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A flux valve senses the changes in orientation of the horizontal component of the earth’s magnetic field: 1 - the flux valve is made of a pair of soft iron bars 2 - the primary coils are fed AC voltage 3 - the information can be used by a “flux gate” compass or a directional gyro 4 - the flux gate valve casing is dependent on the aircraft three inertial axis 5 - the accuracy of the value of the magnetic field indication is less than 0.5%. The combination of correct statements is:",
+      "options": [
+        "2, 3 and 5",
+        "1, 3, 4 and 5",
+        "3 and 5",
+        "1, 4 and 5"
+      ],
+      "answer": 0
+    }
+  ]

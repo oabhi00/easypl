@@ -1,0 +1,453 @@
+[
+    {
+      "question": "For non-scheduled National Flights an advance notice (before ETD) is required to be given to AMOs _____.",
+      "options": [
+        "3 hr",
+        "18-24 hr",
+        "6 hr"
+      ],
+      "answer": 0,
+      "explanation": "for non-scheduled National Flights, an advance notice of 6 hours before the Estimated Time of Departure (ETD) is required to be given to the Aerodrome Meteorological Offices (AMOs)."
+    },
+    {
+      "question": "For non-scheduled National Flights an advance notice (before ETD) is required to be given to AMSs _____.",
+      "options": [
+        "3 hr",
+        "18-24 hr",
+        "6 hr"
+      ],
+      "answer": 1,
+      "explanation": "for non-scheduled National Flights, an advance notice of 18-24 hours before the Estimated Time of Departure (ETD) is required to be given to the Aviation Meteorological Services (AMSs)."
+    },
+    {
+      "question": "WAFS provides high quality en-route forecasts of .... to Met Offices.",
+      "options": [
+        "high quality en-route forecasts of winds and temperature",
+        "SIGMET",
+        "TREND"
+      ],
+      "answer": 0,
+      "explanation": "The question itself states that WAFS (World Area Forecast System) provides high quality en-route forecasts of winds and temperature to Meteorological Offices."
+    },
+    {
+      "question": "IMD has _____ Regional Met offices.",
+      "options": [
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": 2,
+      "explanation": "the India Meteorological Department (IMD) has 6 Regional Meteorological Offices."
+    },
+    {
+      "question": "There are _____ Aerodrome Met Offices.",
+      "options": [
+        "17",
+        "18",
+        "19"
+      ],
+      "answer": 1,
+      "explanation": "There are 18 Aerodrome Meteorological Offices."
+    },
+    {
+      "question": "There are _____ Aeronautical Met Station.",
+      "options": [
+        "56",
+        "54",
+        "52"
+      ],
+      "answer": 1,
+      "explanation": "there are 54 Aeronautical Meteorological Stations."
+    },
+    {
+      "question": "In AIREP the Met Information is contained in Section _____.",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "explanation": "In an AIREP (Air Report), the meteorological information is contained in Section 3."
+    },
+    {
+      "question": "TAF are generally valid for _____.",
+      "options": [
+        "18 hr",
+        "12 hr",
+        "9 hr"
+      ],
+      "answer": 2,
+      "explanation": "Terminal Aerodrome Forecasts (TAF) are generally valid for 9 hours."
+    },
+    {
+      "question": "The validity of Landing Forecast (TREND) is _____.",
+      "options": [
+        "1 hr",
+        "2 hr",
+        "3 hr"
+      ],
+      "answer": 1,
+      "explanation": "The validity period for a Landing Forecast (TREND) is 2 hours."
+    },
+    {
+      "question": "Landing Forecast is appended to _____.",
+      "options": [
+        "METAR and SPECI",
+        "TAF",
+        "AIREP"
+      ],
+      "answer": 0,
+      "explanation": "A Landing Forecast (TREND) is appended to METAR (Aviation Routine Weather Report) and SPECI (Aviation Special Weather Report)."
+    },
+    {
+      "question": "Local/Area Forecast is issued three times a day valid for next _____.",
+      "options": [
+        "18 hr",
+        "12 hr",
+        "9 hr"
+      ],
+      "answer": 1,
+      "explanation": "A Local/Area Forecast, issued three times a day, is valid for the next 12 hours."
+    },
+    {
+      "question": "Area Forecast covers an area _____.",
+      "options": [
+        "100 NM",
+        "100 km",
+        "50 NM"
+      ],
+      "answer": 0,
+      "explanation": "An Area Forecast covers an area of 100 Nautical Miles (NM)."
+    },
+        {
+          "question": "Global SIGWX Charts are issued by _____.",
+          "options": [
+            "WMO",
+            "AMO",
+            "WAFC"
+          ],
+          "answer": 2,
+          "explanation": "Global Significant Weather (SIGWX) Charts are issued by the World Area Forecast Centres (WAFC)."
+        },
+        {
+          "question": "Global SIGWX Charts are valid for _____.",
+          "options": [
+            "18 hr",
+            "24 hr",
+            "9 hr"
+          ],
+          "answer": 1,
+          "explanation": "Global Significant Weather (SIGWX) Charts are valid for 24 hours."
+        },
+        {
+          "question": "Global SIGWX Charts for high-level are issued for Flight Levels _____.",
+          "options": [
+            "250 & 630",
+            "460 & 100",
+            "460 & 260"
+          ],
+          "answer": 0,
+          "explanation": "Global Significant Weather (SIGWX) Charts for high-level flights are issued for Flight Levels 250 and 630."
+        },
+        {
+          "question": "CODAR is _____.",
+          "options": [
+            "Radar Report",
+            "Coded ARFOR",
+            "Upper report from an aircraft, other than weather reconnaissance aircraft"
+          ],
+          "answer": 2,
+          "explanation": "CODAR is an upper report from an aircraft, other than a weather reconnaissance aircraft."
+        },
+        {
+          "question": "WINTEM is _____.",
+          "options": [
+            "Actual upper winds",
+            "Forecast upper wind and temperature",
+            "Actual temperature and upper winds"
+          ],
+          "answer": 1,
+          "explanation": "WINTEM provides forecast upper wind and temperature information."
+        },
+        {
+          "question": "SIGMET is a notice of severe weather for _____.",
+          "options": [
+            "actual",
+            "expected",
+            "both"
+          ],
+          "answer": 2,
+          "explanation": "A SIGMET (Significant Meteorological Information) is a notice of severe weather phenomena, either actual or expected, which may affect the safety of aircraft operations."
+        },
+        {
+          "question": "SIGMET is issued for aircraft _____.",
+          "options": [
+            "in flight",
+            "on ground",
+            "both"
+          ],
+          "answer": 0,
+          "explanation": "SIGMET information is primarily issued for aircraft in flight to warn pilots about potentially hazardous weather conditions."
+        },
+        {
+          "question": "SIGMET is issued by _____.",
+          "options": [
+            "WAFC",
+            "AMO",
+            "MWO"
+          ],
+          "answer": 2,
+          "explanation": "SIGMET (Significant Meteorological Information) is issued by the Meteorological Watch Office (MWO)."
+        },
+        {
+          "question": "SIGMET is valid for _____.",
+          "options": [
+            "4 hr",
+            "8 hr",
+            "9 hr"
+          ],
+          "answer": 0,
+          "explanation": "A SIGMET (Significant Meteorological Information) is valid for 4 hours."
+        },
+        {
+          "question": "SIGMET is not issued for _____.",
+          "options": [
+            "Rain",
+            "Volcanic Ash",
+            "Severe Icing"
+          ],
+          "answer": 0,
+          "explanation": "SIGMET is issued for hazardous weather conditions like Volcanic Ash and Severe Icing, but not for general rain."
+        },
+        {
+          "question": "AIRMET is SIGMET issued by a MWO for the safety of _____.",
+          "options": [
+            "low-level aircraft",
+            "high-level aircraft",
+            "both"
+          ],
+          "answer": 0,
+          "explanation": "An AIRMET (Airman's Meteorological Information) is a SIGMET issued by a Meteorological Watch Office (MWO) specifically for the safety of low-level aircraft."
+        },
+        {
+          "question": "GAMET is an area forecast in abbreviated plain language for _____.",
+          "options": [
+            "low level flights",
+            "high level flights",
+            "all level flights"
+          ],
+          "answer": 0,
+          "explanation": "GAMET (Area Forecast for Low-Level Flights) is an area forecast provided in abbreviated plain language specifically for low-level flights."
+        },
+        {
+          "question": "The validity of Airfield warnings is not exceeding _____.",
+          "options": [
+            "3 hr",
+            "4 hr",
+            "6 hr"
+          ],
+          "answer": 1,
+          "explanation": "The validity period for Airfield warnings does not exceed 4 hours."
+  },
+
+    {
+      "question": "Airfield warning is issued for expected wind speed _____.",
+      "options": [
+        "30 kt",
+        "24 kt",
+        "15 kt"
+      ],
+      "answer": 0,
+      "explanation": "An airfield warning is issued when the expected wind speed is 30 knots or more."
+    },
+    {
+      "question": "Airfield warning is issued for wind direction of 20 kt changes by _____.",
+      "options": [
+        "45°",
+        "30°",
+        "60°"
+      ],
+      "answer": 0,
+      "explanation": "Airfield warning is issued if the wind direction of 20 knots or more is expected to change by 45 degrees or more."
+    },
+    {
+      "question": "Airfield Warning for gliders, light aircraft and helicopters is issued for expected wind speed _____.",
+      "options": [
+        "15 kt",
+        "17 kt",
+        "30 kt"
+      ],
+      "answer": 1,
+      "explanation": "An airfield warning specifically for gliders, light aircraft, and helicopters is issued when the expected wind speed is 17 knots or more."
+    },
+    {
+      "question": "Wind Shear Warning is issued for the observed or expected wind shear above runway _____.",
+      "options": [
+        "up to 500 m",
+        "above 500 m",
+        "300 m"
+      ],
+      "answer": 0,
+      "explanation": "Wind Shear Warning is issued for observed or expected wind shear up to 500 meters above the runway."
+    },
+    {
+      "question": "VOLMET is a MET information for aircraft _____.",
+      "options": [
+        "on ground",
+        "in flight",
+        "both"
+      ],
+      "answer": 1,
+      "explanation": "VOLMET (VOLatile METeorological information for aircraft in flight) provides meteorological information specifically for aircraft in flight."
+    },
+    {
+      "question": "VOLMET Radio Telephony Broadcast made on HF Channel from _____.",
+      "options": [
+        "Mumbai only",
+        "Kolkata only",
+        "both Kolkata and Mumbai"
+      ],
+      "answer": 2,
+      "explanation": "VOLMET Radio Telephony Broadcast on HF Channel is made from both Kolkata and Mumbai."
+    },
+    {
+      "question": "VOLMET consists of _____.",
+      "options": [
+        "SIGMET",
+        "TAF only",
+        "TAF and METAR"
+      ],
+      "answer": 2,
+      "explanation": "VOLMET typically consists of Terminal Aerodrome Forecasts (TAF) and Aviation Routine Weather Reports (METAR)."
+    },
+    {
+      "question": "In ROBEX the METAR/SPECI of international aerodromes and their alternates is exchanged _____.",
+      "options": [
+        "within India",
+        "outside India"
+      ],
+      "answer": 1,
+      "explanation": "ROBEX (Regional OPMET Bulletin EXchange), METAR/SPECI of international aerodromes and their alternates are exchanged outside India."
+    },
+    {
+      "question": "Global SIGWX Charts are issued _____ times a day.",
+      "options": [
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "answer": 2,
+      "explanation": "Global Significant Weather (SIGWX) Charts are issued four times a day."
+    },
+    {
+      "question": "Global SIGWX Charts for Medium-level are issued for Flight Levels _____.",
+      "options": [
+        "150 & 200",
+        "100 & 250",
+        "100 & 150"
+      ],
+      "answer": 1,
+      "explanation": "Global Significant Weather (SIGWX) Charts for Medium-level flights are issued for Flight Levels 100 and 250."
+    },
+    {
+      "question": "In India who compiles a single National SIGWX chart:",
+      "options": [
+        "New Delhi",
+        "Mumbai",
+        "Kolkata",
+        "Chennai"
+      ],
+      "answer": 3,
+      "explanation": "Chennai is the location in India that compiles a single National Significant Weather (SIGWX) chart."
+    },
+    {
+      "question": "The Indian National SIGWX chart is made for Medium Levels between Flight Levels _____.",
+      "options": [
+        "150 & 200",
+        "100 & 250",
+        "100 & 150"
+      ],
+      "answer": 1,
+      "explanation": "The Indian National SIGWX chart for Medium Levels is made for flight levels between 100 and 250."
+    },
+        {
+          "question": "The Indian National SIGWX chart is valid for _____.",
+          "options": [
+            "24 hr",
+            "18 hr",
+            "12 hr"
+          ],
+          "answer": 0,
+          "explanation": "The Indian National Significant Weather (SIGWX) chart is valid for 24 hours."
+        },
+        {
+          "question": "In India the National SIGWX chart is issued _____.",
+          "options": [
+            "2 times a day",
+            "4 times a day",
+            "6 times a day"
+          ],
+          "answer": 1,
+          "explanation": "In India, the National Significant Weather (SIGWX) chart is issued 4 times a day."
+        },
+        {
+          "question": "Individual TS which cover less than 50% area, are termed as _____.",
+          "options": [
+            "FRQ",
+            "ISOL",
+            "OCNL"
+          ],
+          "answer": 1,
+          "explanation": "An individual Thunderstorm (TS) that covers less than 50% of the forecast area is termed as Isolated (ISOL)."
+        },
+        {
+          "question": "If TS cells have no separation between adjacent TS and cover an area more than 75%, it is termed as _____.",
+          "options": [
+            "FRQ",
+            "ISOL",
+            "OCNL"
+          ],
+          "answer": 0,
+          "explanation": "If thunderstorm (TS) cells have no separation between adjacent cells and cover an area of more than 75%, it is termed as Frequent (FRQ)."
+        },
+        {
+          "question": "If TS cells are well separated and cover an area 50 - 75%, it are termed as _____.",
+          "options": [
+            "FRQ",
+            "ISOL",
+            "OCNL"
+          ],
+          "answer": 2,
+          "explanation": "If thunderstorm (TS) cells are well separated and cover an area between 50% and 75%, it is termed as Occasional (OCNL)."
+        },
+        {
+          "question": "The Indian National SIGWX chart is made for High Levels between Flight Levels _____.",
+          "options": [
+            "150 & 200",
+            "100 & 250",
+            "FL250 and FL630"
+          ],
+          "answer": 2,
+          "explanation": "The Indian National SIGWX chart for High Levels is made for flight levels between FL250 (Flight Level 250) and FL630 (Flight Level 630)."
+        },
+        {
+          "question": "Local Forecast covers an area _____.",
+          "options": [
+            "100 NM",
+            "100 km",
+            "50 NM"
+          ],
+          "answer": 2,
+          "explanation": "Local Forecast covers an area of 50 Nautical Miles (NM)."
+        },
+        {
+          "question": "Nowcasting forecast is valid for _____.",
+          "options": [
+            "30 hr",
+            "48 hr",
+            "less than 24 hr"
+          ],
+          "answer": 2,
+          "explanation":"Nowcasting forecast is valid for a period of less than 24 hours."
+        }
+      ]

@@ -1,0 +1,468 @@
+[
+    {
+      "question": "The Primary Flight Display (PFD) displays information dedicated to:",
+      "options": [
+        "Weather situation",
+        "Systems",
+        "Piloting"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Regarding Electronic Instrument System (EFIS):\n1. The navigation display displays flight director bars.\n2. The altimeter setting is displayed on the PFD (Primary Flight Display).\n3. The PFD is the main flying instrument.\n4. The FMA (Flight Mode Annunciator) is part of the ND.\nWhich combination of statements is correct?",
+      "options": [
+        "3,4",
+        "1,4",
+        "2,3"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which colours are typically used on an EHSI?",
+      "options": [
+        "Black, blue, purple, red, green and white",
+        "Red and blue",
+        "White, green, magenta, cyan, yellow and red"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An EFIS installation (Airbus) consists of:",
+      "options": [
+        "PFD and ND",
+        "PFD and ECAM",
+        "ND and ETCAS"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Cautionary information on an EHSI is displayed in:",
+      "options": [
+        "Yellow/Amber",
+        "White",
+        "Cyan/Blue"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The wind direction symbol displayed on all EHSI modes except PLAN mode is oriented:",
+      "options": [
+        "With respect to aircraft heading",
+        "To grid north when flying at high latitudes",
+        "To true north"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "On an HSI map mode, distance to go is displayed in the:",
+      "options": [
+        "Bottom right corner",
+        "Top left corner",
+        "Bottom left corner"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Instrumentation System (Boeing) consists of:",
+      "options": [
+        "Navigation Display and Primary Flight Display",
+        "ND and Electronic Attitude Director Indicator",
+        "Electronic Attitude Director Indicator and Electronic Horizontal Situation Indicator"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Decision height is displayed on the:",
+      "options": [
+        "EHSI in Map mode, and below 10 ft is shown as a circular display which is erased anti-clockwise",
+        "EADI, and below 80 ft changes to a circular scale with a magenta DH marker",
+        "EADI, and below 1000 ft is shown as a circular scale which is erased anti-clockwise"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "At what height does the DH on the EADI start flashing yellow?",
+      "options": [
+        "On reaching DH",
+        "At DH plus 100 ft",
+        "At 1000 ft AGL"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In addition to attitude and auto flight modes, what information is typically displayed on an EADI?",
+      "options": [
+        "Engine indications and systems information",
+        "Speed, altitude, ILS localizer and glide slope information, and sometimes heading",
+        "Altitude, speed and sometimes heading"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "WXR display is controlled from:",
+      "options": [
+        "A special control panel",
+        "Both captain’s and co-pilot’s EHSI control panels",
+        "Captain’s EHSI control only"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Aircraft electronic display systems normally incorporate:",
+      "options": [
+        "One symbol generator for each CRT",
+        "A single CRT for each pilot position",
+        "Glass cockpits with colored CRTs"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The weather radar display data can be shown on:",
+      "options": [
+        "First Officer's EHSI only",
+        "Only one EHSI at a time",
+        "Captain's and First Officer's EHSI simultaneously"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "With an EFIS flight director using EFIS guidance, reference north can be:",
+      "options": [
+        "Magnetic north between 73°N and 65°S and true north above",
+        "Magnetic north between 65°N and 73°S and true north above",
+        "Magnetic north only"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "When using EHSI, weather radar may be displayed on the following settings:",
+      "options": [
+        "Map, VOR/ILS",
+        "Map, Expanded VOR/ILS",
+        "VOR/ILS, Map, Expanded Plan"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Decision height is adjusted and set on the:",
+      "options": [
+        "Flight management computer",
+        "ADI or HSI",
+        "ADI section of the EFIS control panel"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The heading reference used on the EHSI is:",
+      "options": [
+        "True or Magnetic",
+        "Magnetic",
+        "True"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Decision height is...",
+      "options": [
+        "Displayed on the EADI using FMC inputs",
+        "Calculated by the flight management computer",
+        "Displayed on the EADI and set by the pilot using the EFIS control panel"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The EFIS control panel allows selection of:",
+      "options": [
+        "EADI operating mode",
+        "Decision Height",
+        "Autopilot operating mode"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Radio altitude is shown on the EADI and changes from a digital display to a circular scale:",
+      "options": [
+        "At DH",
+        "At 2500 ft",
+        "Below 1000 ft AGL"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The speed tape on an EADI is located:",
+      "options": [
+        "On the left hand side of the HSI",
+        "On the left hand side of the EADI",
+        "On the right hand side of the EADI"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "On an EHSI display, wind velocity can be displayed in which modes?",
+      "options": [
+        "Map, Plan, Full ILS and Full VOR",
+        "Map, Expanded ILS, Full ILS and Full VOR",
+        "Plan, Full ILS, Expanded VOR and Full VOR"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The function of EICAS is to:",
+      "options": [
+        "Show checklists on the left display and systems diagrams on the right display",
+        "Show engine primary indications on the upper display and secondary on lower",
+        "Show engine primary on left display and secondary on right display"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following would be an EICAS information?",
+      "options": [
+        "Primary Engine parameters",
+        "Decision Height",
+        "Range to a waypoint"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In addition to altitude and auto-flight modes, what information is typically displayed on an EADI?",
+      "options": [
+        "Engine indications and systems information",
+        "Altitude, speed and sometimes heading information",
+        "Speed, altitude, ILS localizer and glide slope information, and sometimes heading"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Regarding EFIS:\n1. The navigation display displays flight director bars.\n2. The altimeter setting is displayed on the primary flight display.\n3. The primary flight display is the main flying instrument.\n4. The flight mode annunciator is part of the Navigation Display.\nWhich combination regrouping correct statements?",
+      "options": [
+        "1,2",
+        "3,4",
+        "2,3"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the current active waypoint in the diagram given in Q40?",
+      "options": [
+        "BANTA",
+        "DPNI",
+        "TRK"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When using the EHSI, the weather radar may be displayed on the following settings:",
+      "options": [
+        "Map, VOR/ILS",
+        "VOR/ILS, Map, Expanded Plan",
+        "Map, Expanded VOR/ILS"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Airspeed is shown on:",
+      "options": [
+        "Only on the Captain's EHSI",
+        "On both EADIs",
+        "On both EHSIs"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which mode is selected on the Navigation Display (EHSI) in the diagram?",
+      "options": [
+        "Map mode",
+        "Expanded Map mode",
+        "Plan mode"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "On an HSI map mode, distance to go is displayed in the:",
+      "options": [
+        "Top left corner",
+        "Bottom left corner",
+        "Bottom right corner"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Weather radar data cannot be displayed on the EHSI in which of the following modes?",
+      "options": [
+        "VOR",
+        "ILS",
+        "PLAN"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The symbol below when shown on an EHSI display represents:",
+      "options": [
+        "The selected track and track reference",
+        "The selected heading and heading reference",
+        "The heading orientation, current heading, heading reference and heading pointer"
+      ],
+      "answer": 2,
+      "image": "chapter25-1.png"
+    },
+    {
+      "question": "Which of the diagrams below illustrate an approx 30 degree right bank and 15 degree nose down attitude?",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0,
+      "image": "chapter25-2.png"
+    },
+    {
+      "question": "In diagrams, the full VOR display is shown on diagram:",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "image": "chapter25-3.png"
+    },
+    {
+      "question": "The white arrow in the lower left corner in the diagram below indicates:",
+      "options": [
+        "The next heading will be 100 degrees",
+        "The current wind being experienced is 100 degrees, speed 20 kts",
+        "The active waypoint is located on radial 100 at 20 nm from VOR 2"
+      ],
+      "answer": 1,
+      "image": "chapter25-4.png"
+    },
+    {
+      "question": "An aircraft is under guidance mode following a VOR radial. From the EHSI represented in the diagram, it is possible to deduce that the aircraft is:",
+      "options": [
+        "On a selected radial of 130 degrees M",
+        "Located to the left side of the selected radial",
+        "Experiencing left side crosswind"
+      ],
+      "answer": 2,
+      "image": "chapter25-5.png"
+    },
+    {
+      "question": "The speed tape is located:",
+      "options": [
+        "On the left side of the EADI",
+        "On the left of the EHSI",
+        "At the top of the ADI"
+      ],
+      "answer": 0,
+      "image": "chapter25-6.png"
+    },
+    {
+      "question": "In the diagram the T/C is ...... and it will be reached .....",
+      "options": [
+        "FMC calculated top of climb approx. 4.5 nm from present position, before 0912.5Z.",
+        "Actual top of climb 6.4 nm from present position, after 0912.5Z.",
+        "Point on FMC route at which climb begins, at 0912.5Z."
+      ],
+      "answer": 0,
+      "image": "chapter25-7a.png"
+    },
+    {
+      "question": "What is the current active waypoint in the diagram below?",
+      "options": [
+        "Letters JPR",
+        "Letters PVR",
+        "Letters IBT"
+      ],
+      "answer": 1,
+      "image": "chapter25-7.png"
+    },
+    {
+      "question": "In the diagram below, what is the meaning of the white circle with (INTC) next to it?",
+      "options": [
+        "It denotes an active waypoint on the flight plan.",
+        "It indicates a location where you will intercept radial 095° from NNP VOR and track inbound.",
+        "TCAS indication - you are being intercepted by military aircraft."
+      ],
+      "answer": 1,
+      "image": "chapter25-8.png"
+    },
+    {
+      "question": "What heading is the aircraft currently flying in the diagram below?",
+      "options": [
+        "025",
+        "030",
+        "037"
+      ],
+      "answer": 2,
+      "image": "chapter25-9.png"
+    },
+    {
+      "question": "Which mode is selected on the Navigation Display (EHSI) in the diagram below?",
+      "options": [
+        "Map mode",
+        "Centre Map mode",
+        "Plan mode"
+      ],
+      "answer": 1,
+      "image": "chapter25-10.png"
+    },
+    {
+      "question": "Which mode is selected on the Navigation Display (EHSI) in the diagram below?",
+      "options": [
+        "Full VOR mode",
+        "Expanded VOR mode",
+        "Expanded NAV mode"
+      ],
+      "answer": 2,
+      "image": "chapter25-11.png"
+    },
+    {
+      "question": "Which mode is selected on the Navigation Display (EHSI) in the diagram below?",
+      "options": [
+        "Full VOR mode",
+        "Expanded VOR mode",
+        "Full NAV mode"
+      ],
+      "answer": 2,
+      "image": "chapter25-12.png"
+    },
+    {
+      "question": "Decision height is adjusted and set on the:",
+      "options": [
+        "Flight management computer",
+        "HSI section of the EFIS control panel",
+        "ADI section of the EFIS control panel"
+      ],
+      "answer": 2,
+      "image": "chapter25-13.png"
+    },
+    {
+      "question": "In the display below, the approx track from MANAV TO PARAM is:",
+      "options": [
+        "168 M",
+        "148 M",
+        "338 M"
+      ],
+      "answer": 0,
+      "image": "chapter25-14.png"
+    },
+    {
+      "question": "In the display below, the centre weather returns are:",
+      "options": [
+        "342 M, 50 nm",
+        "333 relative, 44 nm",
+        "326 relative, 89.6 nm"
+      ],
+      "answer": 1,
+      "image": "chapter25-15.png"
+    },
+    {
+      "question": "In plan mode:",
+      "options": [
+        "Wind speed and direction is displayed on left hand bottom.",
+        "Wind speed and direction is not displayed in this mode.",
+        "Wind speed and direction can be superimposed."
+      ],
+      "answer": 1
+    }
+]

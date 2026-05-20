@@ -1,0 +1,196 @@
+[
+    {
+        "question":"An aircraft is on a bearing of 263° (M) from a VOR station, the OBI is set to 091°, the deviation indicator will show:",
+        "options":["TO and fly left 4 dots.","TO and fly right 4 dots.","FROM and fly left 4 dots."],
+        "answer":0
+     },
+     {
+        "question":"A/C is on true bearing of 230° from station on Hdg 240° magnetic, mean variation 5° E, OBS = 065°. Find CDI, to / from, type of sensing and ADF indication.",
+        "options":["Left,TO,Reverse,ADF=165°","Right,From,Reverse,ADF=195°"],
+        "answer":0
+     },
+     {
+        "question":"An aircraft is on radial 120 with a magnetic heading of 300°, the track selector (OBS) reads: 330. The indications on the Course Deviation Indicator (CDI) are fly:",
+        "options":["left with 'FROM' showing","left with 'TO' showing","right with 'TO' showing"],
+        "answer":1
+
+     },
+     {
+        "question":"Indicator (OBI) for a VOR is selected to 090°.From/To indicator indicates 'TO' CDI needle is deflected halfway to the right. On what radial is the aircraft",
+        "options":["085","095","275"],
+        "answer":2
+     },
+     {
+        "question":"A/C is flying towards station on hdg 210° with 10° Starboard drift. CDI showing 2 dots fly left indication. To/From showing from. Find: (a) RBI indication  (b)OBS   (C)dist 'off track' if vor is located 90 miles from a/c position",
+        "options":["010°,036°,6 miles","220°,36°,8 miles"],
+        "answer":0
+     },
+     
+        {
+          "question": "An aircraft is flying from VOR A to VOR B, on track 120°. Half way when CDI is showing 2 dot fly right indication, the pilot selects VOR B. The new indication will be:",
+          "options": [
+            "To/From will show From and CDI 2 dot fly right indications.",
+            "To/From will show To and CDI 2 dot fly right indication.",
+            "To/From will show From and CDI 2 dot fly left indication."
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Inbound on radial 090°, the pilot rotates OBS 10° to the left and turns the aircraft to the right by 10° and notes the time. While maintaining a constant heading it is noticed that the CDI is centered in 8 min. Considering nil wind, based on this you can conclude that the time and final heading to station will be:",
+          "options": [
+            "48 min 080°",
+            "8 min 260°",
+            "16 min 280°"
+          ],
+          "answer": 1
+        },
+        {
+      "question": "The heading read on a standard RMI is:",
+      "options": [
+        "The True heading.",
+        "The relative heading.",
+        "The magnetic heading."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An RMI indicates aircraft heading. To convert the RMI bearings of NDBs and VORs to true bearings the correct combination for the application of magnetic variation is:",
+      "options": [
+        "NDB: aircraft position, VOR: aircraft position",
+        "NDB: aircraft position, VOR: beacon position",
+        "NDB: beacon position, VOR: aircraft position"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If you correctly tuned in a VOT situated to your east, your RMI should read ... and your OBS would read .........",
+      "options": [
+        "090; 090 with needle central and FROM indicated.",
+        "000; 000 with needle central and TO indicated.",
+        "000; 000 with needle central and FROM indicated."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An RMI slaved to a remote indicating compass has gone unserviceable and is locked on to a reading of 090°. The tail of the VOR pointer shows 135°. The available information from the VOR is:",
+      "options": [
+        "Radial unknown, relative bearing 015°",
+        "Radial 135°, relative bearing unknown",
+        "Radial 315°, relative bearing unknown"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An aircraft is on heading 180° True, Variation 7° East. ADF bears 200° Relative. NDB and VOR are co-located. What are RMI indications?",
+      "options": [
+        "013°",
+        "160°",
+        "200°"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft is homing on to station on heading 315° True, Variation 5° West. RMI shows 090°. Find (i) QDM, QDR, QTE, QUJ and (ii) ADF reading if VOR and NDB are collocated:",
+      "options": [
+        "QDM 045°, QDR 225°, QTE 045°, QUJ 225°, ADF 135°",
+        "QDM 090°, QDR 270°, QTE 265°, QUJ 85°, ADF 130°",
+        "QDM 135°, QDR 315°, QTE 135°, QUJ 85°, ADF 225°"
+      ],
+      "answer": 1
+    },
+    {
+        "question":"RMI showing 170°, aircraft hdg(M)=030°. find ADF reading.",
+        "options":["140°","130°","120°"],
+        "answer":0
+    },
+    {
+      "question": "An A/C VOR is tuned to a station. When 049° is selected on OBS, the deviation bar becomes centered and To/From indicates To. Aircraft radial and heading to reach the station is:",
+      "options": [
+        "229°/049° (M)",
+        "049°/229° (M)",
+        "049°/229° (T)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A/C is on heading 230° (M), RBI indicates 040°. What is the magnetic bearing of A/C from NDB when variation is 5° W at the A/C and 6° W at NDB.",
+      "options": [
+        "030°",
+        "270°",
+        "090°"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The VOR system is limited to about 1° of accuracy. One degree at 200 NM represents a width of:",
+      "options": [
+        "2.5 NM",
+        "3.0 NM",
+        "3.5 NM"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Aircraft heading 225° (M), ADF RMI reading 090° the quadrantal error of this bearing:",
+      "options": [
+        "not much.",
+        "proportional to sine heading times the signal strength.",
+        "maximum."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft is flying a constant heading with 8º right drift and is making good a track parallel to the center line of an airway but 5 nm off to the left of the center line. The ADF reading of a NDB on the airway center line 42 nm ahead of the aircraft is:",
+      "options": [
+        "001° Relative",
+        "015° Relative",
+        "011° Relative"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An aircraft is flying on a heading of 270° (M). The VOR OBS is also set to 270° with the full left deflection and FROM flag displayed. In which sector is the aircraft from the VOR ground station?",
+      "options": [
+        "NE",
+        "SW",
+        "NW"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If the ADF pointer indicates 200 degrees when the RMI rose is stuck at 090 degrees, what is the relative bearing of the beacon?",
+      "options": [
+        "290 degrees",
+        "10 degrees",
+        "180 degrees"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A/C is on radial 240°, HDG 230°. CDI showing two dots fly right indication. To/From showing TO. Find: (i) OBS (ii) Type of sensing",
+      "options": [
+        "236° Normal",
+        "056° Reverse",
+        "064° Reverse"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Aircraft heading is 080° (M). OBS is selected to 060°. Aircraft is on a radial of 040° (M). To/from indication and CDI will show:",
+      "options": [
+        "From/ fly right",
+        "To/ fly right",
+        "To/ fly left"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft is heading 055°, RMI reading 060°. After some time RMI reads 057° with no change of heading. Aircraft has drifted:",
+      "options": [
+        "Port",
+        "Starboard",
+        "Not drifted"
+      ],
+      "answer": 1
+    }
+  ]

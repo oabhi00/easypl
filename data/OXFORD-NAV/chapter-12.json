@@ -1,0 +1,62 @@
+[
+    {
+      "question": "A North Polar Stereographic chart is overprinted with a false grid aligned with the prime meridian. At position 80N 135E the grid track is 235°, will the true track be:",
+      "options": [
+        "010°",
+        "100°",
+        "190°",
+        "280°"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A South Polar Stereographic chart is overprinted with a false grid aligned with the prime meridian. At position 87S 123W the true track of an aircraft is 179°. What will the grid track be?",
+      "options": [
+        "056°",
+        "123°",
+        "237°",
+        "302°"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A South Polar Stereographic chart is overprinted with a false grid aligned with the anti-meridian of the prime meridian. At 78S 101E with a grid track of 180° the true track will be:",
+      "options": [
+        "079°",
+        "101°",
+        "259°",
+        "281°"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A North Polar Stereographic chart is overprinted with a false grid. At 77N 37W the grid track is 175° and the true track is 093°. At which longitude is the false grid aligned?",
+      "options": [
+        "045W",
+        "045E",
+        "082E",
+        "119W"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Using the data in the diagram, the false grid datum is.......................... and we are in the....................... hemisphere",
+      "options": [
+        "180°E/W, Northern",
+        "180°E/W, Southern",
+        "000°E/W, Northern",
+        "000°E/W, Southern"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "A Southern Lambert conformal conic chart is overprinted with a false grid aligned with the 180°W meridian. The constant of the cone is 0.843. If the true track at 145°E is 333°, what will the grid track be?",
+      "options": [
+        "002.5°",
+        "029.5°",
+        "303.5°",
+        "360°"
+      ],
+      "answer": 2
+    }
+  ]

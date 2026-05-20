@@ -1,0 +1,47 @@
+[
+    {
+      "question": "What type of sensor is used to measure the output of a low-pressure booster pump?",
+      "options": [
+        "Bourdon tube",
+        "Aneroid capsule",
+        "Bellows"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The two principal types of direct reading pressure gauges are:",
+      "options": [
+        "The Bourdon tube type and the capsule-operated type.",
+        "Capacitance type and bellows.",
+        "Manifold pressure type and engine pressure type."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following are used to measure temperature?",
+      "options": [
+        "Thermocouple, resistance, reactance, mercury",
+        "Thermocouple, resistance, mercury",
+        "Thermocouple, reactance, mercury"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An aircraft has a compensated capacitance fuel contents gauging system and is refueled so that the total fuel contents are 76,000 kg at a temperature of 18°C and an S.G. of 0.81. Whilst the aircraft is parked, the temperature increases to 26°C and the S.G. becomes 0.80. The indicated fuel contents have:",
+      "options": [
+        "Decreased by 2%",
+        "Increased by 1.25%",
+        "Remained the same"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The 'Bourdon tube' is used to measure:",
+      "options": [
+        "Fuel flow",
+        "Vibrations",
+        "Pressure"
+      ],
+      "answer": 2
+    }
+  ]

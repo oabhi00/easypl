@@ -1,0 +1,389 @@
+[
+    {
+      "question": "The METAR has been issued on ............ day",
+      "options": [
+        "15th",
+        "16th",
+        "17th"
+      ],
+      "answer": 1,
+      "image": "../image/a2.png"
+
+    },
+    {
+      "question": "The METAR has been issued at",
+      "options": [
+        "0630 IST",
+        "2300 UTC",
+        "0230 IST"
+      ],
+      "answer": 1,
+      "image": "../image/a2.png"
+    },
+    {
+      "question": "The surface wind speed is",
+      "options": [
+        "2-6 kt",
+        "3-7 kt",
+        "4-6 kt"
+      ],
+      "answer": 1,
+      "image": "../image/a2.png"
+    },
+    {
+      "question": "Wind direction is varying from",
+      "options": [
+        "290 to 050°",
+        "050 to 290°",
+        "200 to 050°"
+      ],
+      "answer": 0,
+      "image": "../image/a2.png"
+    },
+    {
+      "question": "Visibility 1500 m is towards",
+      "options": [
+        "N",
+        "S",
+        "All over the airport"
+      ],
+      "answer": 1,
+      "image": "../image/a2.png"
+    },
+    {
+      "question": "Visibility towards N is",
+      "options": [
+        "1500 m",
+        "5000 m",
+        "3000 m"
+      ],
+      "answer": 1,
+      "image": "../image/a2.png"
+    },
+    {
+      "question": "Height of base of low clouds above station level is",
+      "options": [
+        "2000 ft",
+        "2500 ft",
+        "2500 m"
+      ],
+      "answer": 0,
+      "image": "../image/a2.png"
+    },
+
+        {
+          "question": "Runway Visual range is",
+          "options": [
+            "1500 m",
+            ">1500 m",
+            "< 1500 m"
+          ],
+          "answer": 1,"image": "../image/a2.png"
+        },
+        {
+          "question": "Runway Visual range has",
+          "options": [
+            "Decreased",
+            "Increased",
+            "Remained same"
+          ],
+          "answer": 1,"image": "../image/a2.png"
+        },
+        {
+          "question": "The poor visibility is due to the Present weather, which is",
+          "options": [
+            "Fog",
+            "Brown Dust",
+            "Mist"
+          ],
+          "answer": 2,"image": "../image/a2.png"
+        },
+        {
+          "question": "Amount of lowest cloud is",
+          "options": [
+            "1–2/8",
+            "2–4/8",
+            "5–7/8"
+          ],
+          "answer": 0,"image": "../image/a2.png"
+        },
+        {
+          "question": "Amount of CB cloud is",
+          "options": [
+            "1–2/8",
+            "2–4/8",
+            "5–7/8"
+          ],
+          "answer": 0,"image": "../image/a2.png"
+        },
+        {
+          "question": "Height of base of CB is",
+          "options": [
+            "2500 m",
+            "3000 ft",
+            "2500 ft"
+          ],
+          "answer": 2,"image": "../image/a2.png"
+        },
+        {
+          "question": "The height of topmost layer of cloud is",
+          "options": [
+            "3000 m",
+            "30000 m",
+            "30000 ft"
+          ],
+          "answer": 2,"image": "../image/a2.png"
+        },
+        {
+          "question": "The landing forecast appended to any METAR is valid for",
+          "options": [
+            "1 hr",
+            "2 hr",
+            "3 hr"
+          ],
+          "answer": 1,"image": "../image/a2.png"
+        },
+            {
+              "question": "The wind in TREND from 0330 UTC is valid up to ............ UTC",
+              "options": [
+                "0400",
+                "0430",
+                "0415"
+              ],
+              "answer": 2,"image": "../image/a2.png"
+            },
+            {
+              "question": "Expected visibility after 0415 UTC is",
+              "options": [
+                "6000 m (6.0 km)",
+                "10 km (10)",
+                "10 km or 10"
+              ],
+              "answer": 2,"image": "../image/a2.png"
+            },
+            {
+              "question": "The group Q1003 in the METAR indicates",
+              "options": [
+                "QFE",
+                "QFF",
+                "QNH"
+              ],
+              "answer": 2,"image": "../image/a2.png"
+            },
+            {
+              "question": "The difference between TT and TdTd is 3°C. The atmosphere is",
+              "options": [
+                "Very Dry",
+                "Moist",
+                "Saturated"
+              ],
+              "answer": 1,"image": "../image/a2.png"
+            },
+            {
+              "question": "Just before the METAR was issued the weather was",
+              "options": [
+                "Rain",
+                "Mist",
+                "Fog"
+              ],
+              "answer": 2,"image": "../image/a2.png"
+            },
+            {
+              "question": "The range of pressure reported as Q1003 is",
+              "options": [
+                "1002.5 to 1003.5 hPa",
+                "1003.0 to 1003.9 hPa",
+                "1003.1 to 1003.5 hPa"
+              ],
+              "answer": 1,"image": "../image/a2.png"
+            },
+            {
+              "question": "The range of temperature reported as 32°C is",
+              "options": [
+                "31.4 to 32.3°C",
+                "32.1 to 32.4°C",
+                "31.5 to 32.4°C"
+              ],
+              "answer": 2,"image": "../image/a2.png"
+            },
+            {
+              "question": "Visibility is reported in steps of 50 m when visibility is",
+              "options": [
+                "800 m to 5000 m",
+                "0 to 800 m",
+                "5000 m to 10 km"
+              ],
+              "answer": 1
+            },
+            {
+              "question": "Visibility is reported in steps of 100 m when visibility is",
+              "options": [
+                "800 m to 5000 m",
+                "0 to 800 m",
+                "5000 m to 10 km"
+              ],
+              "answer": 0
+            },
+            {
+              "question": "Visibility is reported in steps of 1000 m when visibility is",
+              "options": [
+                "800 m to 5000 m",
+                "0 to 800 m",
+                "5000 m to 9999"
+              ],
+              "answer": 2
+            },
+            {
+              "question": "Visibility is reported 9999 when visibility is",
+              "options": [
+                "800 m to 5000 m",
+                "9000 to 9999 m",
+                "10 km or more"
+              ],
+              "answer": 2
+            },
+            {
+              "question": "Temperature +2.5°C is reported as",
+              "options": [
+                "02",
+                "03",
+                "2.5°C"
+              ],
+              "answer": 1
+            },
+            {
+              "question": "Temperature –12.5°C is reported as",
+              "options": [
+                "–12",
+                "–13",
+                "-12"
+              ],
+              "answer": 2
+            },
+                {
+                  "question": "Pressure is rounded down to the nearest whole number in hectopascal",
+                  "options": [
+                    "exact value",
+                    "upper value",
+                    "lower value"
+                  ],
+                  "answer": 2
+                },
+                {
+                  "question": "QNH 1002.6 hPa is reported as",
+                  "options": [
+                    "Q1002",
+                    "Q1003",
+                    "Q1002.6"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "question": "QNH 29.92 inches is reported as",
+                  "options": [
+                    "Q2900",
+                    "A2992",
+                    "A3000"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "question": "Fog is reported when visibility is",
+                  "options": [
+                    "< 1000 m",
+                    "1000 m",
+                    "> 1000 m"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "question": "Mist is reported when visibility is",
+                  "options": [
+                    "< 1000 m to 2000m",
+                    "1000 to 5000m",
+                    "> 1000 m"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "question": "CAVOK signifies Visibility, Cloud .......... and present weather better than the prescribed values or conditions",
+                  "options": [
+                    "ceiling",
+                    "base",
+                    "amount"
+                  ],
+                  "answer": 0
+                },
+                {
+                  "question": "CAVOK is issued when visibility is",
+                  "options": [
+                    "9–10 km",
+                    "10 km or more",
+                    "10 km only"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "question": "CAVOK is issued when\n(i) Visibility 10 km or more\n(ii) No weather of significance\n(iii) No clouds below 1500 m or below the highest minimum sector altitude, whichever is greater and no CB.",
+                  "options": [
+                    "Any one condition",
+                    "Any two conditions",
+                    "All the three conditions"
+                  ],
+                  "answer": 2
+                },
+                {
+                  "question": "SPECI is issued when\n(i) Change in wind direction is 60° and speed before and/or after change 10 kt.\n(ii) Mean speed has changed by 10 kt\n(iii) Variation from mean speed by 10 kt and speed before and/or after change 15 kt",
+                  "options": [
+                    "Any two conditions",
+                    "Any one condition",
+                    "All the three conditions"
+                  ],
+                  "answer": 1
+                },
+                {
+                  "question": "SPECI is issued when Clouds are\n(i) BKN or OVC base at 30, 60, 150, 300, 450 m\n(ii) Cloud amount below 450 m changes:\nFrom SKC/FEW/SCT to BKN/OVC OR\nFrom BKN/OVC to SKC/FEW/SCT",
+                  "options": [
+                    "Any one condition",
+                    "Any two conditions",
+                    "All the above conditions"
+                  ],
+                  "answer": 0
+                },
+                    {
+                      "question": "SPECI is issued for vertical visibility, by stations having Ceilograph, when sky is obscured",
+                      "options": [
+                        "True",
+                        "False"
+                      ],
+                      "answer": 0
+                    },
+                    {
+                      "question": "SPECI is issued when surface temperature has increased by .......... or more from the last observation.",
+                      "options": [
+                        "3°C",
+                        "4°C",
+                        "2°C"
+                      ],
+                      "answer": 2
+                    },
+                    {
+                      "question": "WS RWY28 indicates that the wind shear has been reported for RW 28 in",
+                      "options": [
+                        "take off path",
+                        "approach path",
+                        "both take off and approach paths"
+                      ],
+                      "answer": 2
+                    },
+                    {
+                      "question": "R26/M0150 in a METAR indicates that",
+                      "options": [
+                        "maximum RVR is 150 m",
+                        "minimum RVR is 150 m",
+                        "150 m is the lowest RVR instrument can measure and RVR is < 150 m"
+                      ],
+                      "answer": 2
+                    }
+                  ]
+      

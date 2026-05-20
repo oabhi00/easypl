@@ -1,0 +1,43 @@
+[
+    {
+      "question": "The bandwidth produced when a radio frequency (RF) of 4716 kHz is amplitude modulated with an audio frequency (AF) of 6 kHz is:",
+      "options": [
+        "6 kHz",
+        "3 kHz",
+        "12 kHz",
+        "9 kHz"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following statements concerning AM is correct?",
+      "options": [
+        "The amplitude of the RF is modified by the frequency of the AF",
+        "The amplitude of the RF is modified by the amplitude of the AF",
+        "The frequency of the RF is modified by the frequency of the AF",
+        "The frequency of the RF is modified by the amplitude of the AF"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is an advantage of single sideband (SSB) emissions?",
+      "options": [
+        "More frequencies available",
+        "Reduced power requirement",
+        "Better signal/noise ratio",
+        "All of the above"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which of the following statements concerning FM is correct?",
+      "options": [
+        "The amplitude of the RF is modified by the frequency of the AF",
+        "The amplitude of the RF is modified by the amplitude of the AF",
+        "The frequency of the RF is modified by the frequency of the AF",
+        "The frequency of the RF is modified by the amplitude of the AF"
+      ],
+      "answer": 3
+    }
+  ]
+  

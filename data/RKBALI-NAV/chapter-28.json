@@ -1,0 +1,98 @@
+[
+    {
+        "question": "An aircraft is homing to a station on 090° with 10° starboard drift. Find RBI indication.",
+        "options": ["10", "20", "30"],
+        "answer": 0
+    },
+    {
+        "question": "An aircraft is homing to a station on 360° with 15° port drift. Find RBI indication.",
+        "options": ["340", "345", "355"],
+        "answer": 1
+    },
+    {
+        "question": "An aircraft is flying away from a station on 270° with 15° port drift. Find ADF reading.",
+        "options": ["160", "165", "170"],
+        "answer": 1
+    },
+    {
+        "question": "An aircraft is flying away from a station on a magnetic heading of 030°. RBI is showing 185. Find track and drift.",
+        "options": ["40° and 10° S", "45° and 15° S", "35° and 5° S"],
+        "answer": 2
+    },
+    {
+        "question": "An aircraft is flying away from a station on a track of 200° with 10° starboard drift. Find heading and RB indication.",
+        "options": ["190° and 190°", "210° and 210°", "180° and 180°"],
+        "answer": 0
+    },
+    {
+        "question": "An aircraft is flying away from a station on a heading of 270°, making good a track of 260°. Find RBI and drift indication.",
+        "options": ["170° and 10° port", "190° and 10° starboard", "100° and 10° port"],
+        "answer": 0
+    },
+    {
+        "question": "After flying for 2 hours at a groundspeed of 80 kts, ADF shows 168°, heading of aircraft is 090°. If the remaining time to go to the station is 2 hours, find new heading to reach the station.",
+        "options": ["102°", "114°", "118°"],
+        "answer": 1
+    },
+    {
+        "question": "After flying for 180 nm on a heading of 200°, ADF shows 186°. If the remaining distance to go to destination is 120 nm, find new heading to the station.",
+        "options": ["175°", "180°", "185°"],
+        "answer": 2
+    },
+    {
+        "question": "An aircraft is flying heading with 12° starboard drift and making good a track 5 nm to the left of the centerline of the airway but parallel to it. Find RB of NDB situated at the centerline of the airway 30 nm ahead.",
+        "options": ["112°", "52°", "22°"],
+        "answer": 2
+    },
+    {
+        "question": "An aircraft is flying a constant heading with 12° port drift and making good a track, 5 nm to the right of the centerline. Find ADF reading for NDB situated on the center and 30 nm behind.",
+        "options": ["178°", "175°", "172°"],
+        "answer": 0
+    },
+    {
+        "question": "An aircraft is flying a constant heading with 8° starboard drift and making good a track, 5 nm to the right of the centerline of an airway but parallel to it. Find ADF reading for NDB situated on the centerline of the airway 30 nm ahead.",
+        "options": ["002°", "88°", "358°"],
+        "answer": 2
+    },
+    {
+        "question": "An aircraft is flying a constant heading with 5° starboard drift and making good a track, 5 nm to the centerline of airway but to the left of centerline. Find ADF reading from NDB situated on the centerline of the airway 30 nm ahead.",
+        "options": ["95°", "15°", "105°"],
+        "answer": 1
+    },
+    {
+        "question": "Compass heading 270°, deviation 2°W, variation 30°E, relative bearing 316°. What is the QDR?",
+        "options": [
+            "224°",
+            "044°",
+            "046°"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "The inbound track to NDB is 075° (T), variation 10° W, drift 7° right. The relative bearing to be maintained on the radio compass to reach NDB is:",
+        "options": [
+            "183° Relative",
+            "353° Relative",
+            "007° Relative"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "An aircraft is 'homing' to a radio beacon whilst maintaining a relative bearing of zero. If the magnetic heading decreases, the aircraft is experiencing:",
+        "options": [
+            "no drift",
+            "night drift",
+            "a wind from the right"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "An aircraft flying at 9000 feet towards a station will be able to receive VHF R/T transmissions from a ground station located at 1600 ft AMSL at a distance:",
+        "options": [
+            "168",
+            "148",
+            "128"
+        ],
+        "answer": 0
+    }
+]

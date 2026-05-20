@@ -1,0 +1,866 @@
+[
+    {
+      "question": "The ASI measures:",
+      "options": [
+        "Density and static pressure",
+        "Pitot pressure minus static pressure",
+        "Pitot pressure plus static pressure"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The reason for having a square-law compensation in the airspeed indicator mechanism is:",
+      "options": [
+        "The differential pressure decreases with the square of the airspeed",
+        "The ram air pressure decreases with the square root of the airspeed",
+        "The differential pressure increases with the square of the airspeed"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A pitot tube covered by ice which blocks the ram air inlet will affect the following instrument(s):",
+      "options": [
+        "Altimeter only",
+        "Vertical speed indicator only",
+        "Airspeed indicator only"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The airspeed indicator measures:",
+      "options": [
+        "Static pressure",
+        "Differential pressure",
+        "Static pressure changes"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If the static source of the ASI is blocked during level flight, the ASI will:",
+      "options": [
+        "Under-read",
+        "Over-read",
+        "Read correct"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If the static tube is clogged, which instrument(s) is/are affected?",
+      "options": [
+        "Vertical speed indicator & ASI only",
+        "Altimeter & VSI only",
+        "Airspeed indicator, VSI and altimeter"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Indicated airspeed corrected for position error is:",
+      "options": [
+        "Calibrated airspeed",
+        "Ground speed",
+        "Equivalent airspeed"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following is most dangerous?",
+      "options": [
+        "Pitot blocked during climb",
+        "Static blocked during descent (over-read)",
+        "Pitot blocked during descent"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If the static source of an aircraft is blocked during climb, the altimeter and ASI will:",
+      "options": [
+        "Under-read, under-read",
+        "Under-read, over-read",
+        "Over-read, under-read"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Compressibility error requires a correction because it is of dynamic pressure. It gives:",
+      "options": [
+        "Negative correction; increase in dynamic pressure; gives EAS",
+        "Positive correction; increase in dynamic pressure; gives TAS",
+        "Negative correction; decrease in static pressure; gives EAS"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The airspeed indicator is calibrated to:",
+      "options": [
+        "ISA at the height the aircraft is flying",
+        "The full ISA",
+        "ISA at mean sea level"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In a standard atmosphere and at sea level, the calibrated airspeed (CAS) is:",
+      "options": [
+        "Higher than the true airspeed (TAS)",
+        "Independent of the true airspeed (TAS)",
+        "Equal to the true airspeed (TAS)"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A white arc on an ASI indicates:",
+      "options": [
+        "Flaps extension speed range",
+        "Safe cruise speed",
+        "Safe speed on approach to land"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A pitot blockage of both the ram air input and the drain hole with the static port open causes the airspeed indicator to:",
+      "options": [
+        "Freeze at zero",
+        "Read a little low",
+        "React like an altimeter"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If the static line to the ASI becomes blocked during a climb, the ASI reading will:",
+      "options": [
+        "Remain fixed",
+        "Progressively over-read",
+        "Progressively under-read"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The pressure measured at the forward-facing orifice of a pitot tube is the:",
+      "options": [
+        "Dynamic pressure",
+        "Total pressure",
+        "Static pressure"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "VNO is the maximum speed:",
+      "options": [
+        "With flaps extended in landing position",
+        "At which the flight controls can be fully deflected",
+        "Not to be exceeded except in still air and with caution"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The limits of the white scale of an airspeed indicator are:",
+      "options": [
+        "VSI for the lower limit and VFE for the upper limit",
+        "VSO for the lower limit and VFE for the upper limit",
+        "VSO for the lower limit and VLE for the upper limit"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If the static source to an airspeed indicator (ASI) becomes blocked during a descent, the instrument will:",
+      "options": [
+        "Continue to indicate the speed applicable to that at the time of the blockage",
+        "Read zero",
+        "Over-read"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Dynamic pressure sensed by a pitot tube: Today's airspeed indicators (calibrated to the Saint-Venant formula), indicate, in the absence of static (and instrumental) error:",
+      "options": [
+        "Is not affected by the density of surrounding air",
+        "Increases if air density increases",
+        "Increases if air density decreases"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The errors to which the Mach meter is subject are:",
+      "options": [
+        "Instrument error, position error, compressibility error and manoeuvre induced error",
+        "Instrument error, position error, density error and manoeuvre induced error",
+        "Instrument error, position error"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The combined Mach meter / ASI is subject to the following errors:",
+      "options": [
+        "Instrument and compressibility only",
+        "Instrument, pressure and temperature only",
+        "Position, density, instrument, compressibility, manoeuvre induced"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "How many diaphragms are present in a basic Mach meter?",
+      "options": [
+        "Four",
+        "Two",
+        "Three"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Indication of Mach number is obtained from:",
+      "options": [
+        "Indicated speed and altitude using a speed indicator equipped with an altimeter-type aneroid",
+        "An ordinary airspeed indicator scaled for Mach number instead of knots",
+        "A kind of echo sound comparing velocity of sound with indicated speed"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The Mach number is the:",
+      "options": [
+        "True airspeed (TAS) divided by the local speed of sound",
+        "Equivalent airspeed (EAS) divided by the local speed of sound",
+        "Indicated airspeed (IAS) divided by the local speed of sound"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The principle of the Mach indicator is based on the computation of the ratio:",
+      "options": [
+        "(Pt + Ps) to Ps",
+        "Pt to Ps",
+        "(Pt - Ps) to Ps"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The Mach number is:",
+      "options": [
+        "A direct function of temperature; it varies in proportion to the square root of the absolute temperature",
+        "The ratio of the aircraft true airspeed to the sonic velocity at the altitude considered",
+        "The ratio of the aircraft conventional airspeed to the sonic velocity at the altitude considered"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Sound propagates through the air at a speed which only depends on:",
+      "options": [
+        "Temperature",
+        "Temperature and pressure",
+        "Pressure"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mach meter readings are subject to:",
+      "options": [
+        "Setting error",
+        "Density error",
+        "Position pressure error"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The reading of a Mach indicator is independent of:",
+      "options": [
+        "The outside temperature",
+        "The static pressure",
+        "The total pressure"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "As an airplane climbs higher, the true airspeed for a given indicated airspeed:",
+      "options": [
+        "Decreases",
+        "Increases",
+        "Remains the same"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following instruments require pitot and static pressure inputs?",
+      "options": [
+        "Airspeed indicator, vertical speed indicator, altimeter",
+        "Airspeed indicator, Mach meter and vertical speed indicator",
+        "Airspeed indicator and Mach meter"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "During a steady climb the pitot head becomes totally blocked by ice. As the climb continues the indications of the Mach meter will:",
+      "options": [
+        "Progressively under-indicate the Mach number",
+        "Stick at the Mach number at the time of blockage",
+        "Increase no matter what the actual Mach number"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The Mach number is a function of the:",
+      "options": [
+        "Isobaric gradient of the fluid",
+        "Humidity of the air",
+        "Absolute temperature of the air"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A Mach meter comprises:",
+      "options": [
+        "A combination of ASI and altimeter",
+        "A combination of VSI and altimeter",
+        "An ASI with its scale marked in Mach numbers"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mach meter indications:",
+      "options": [
+        "Vary with airspeed and temperature",
+        "Vary only with airspeed",
+        "Vary only with temperature"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "How will Mach meter indication respond if an aircraft passes through a cold front when flying at constant CAS and altitude?",
+      "options": [
+        "Increase",
+        "Decrease",
+        "Remain constant"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A Mach meter indicates Mach number based on the ratio of:",
+      "options": [
+        "Static pressure to pitot pressure",
+        "Pitot pressure to static pressure",
+        "Dynamic pressure to static pressure"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The airspeed indicator of an aircraft is provided with a moving red and white hatched pointer. This pointer indicates the:",
+      "options": [
+        "Speed indicated on the auto throttle control box, versus temperature",
+        "Speed indicated on the auto throttle control box versus altitude",
+        "Maximum speed in VMO operation versus altitude"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The velocity maximum operating (VMO) is a speed expressed in:",
+      "options": [
+        "Calibrated airspeed (CAS)",
+        "True airspeed (TAS)",
+        "Equivalent airspeed (EAS)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Considering the maximum operational Mach number (MMO) and the maximum operational speed (VMO), the captain of a pressurized aircraft begins his descent from a high flight level. In order to meet his scheduled time of arrival, he decides to use the maximum ground speed at any time of the descent. He will be limited:",
+      "options": [
+        "By the MMO",
+        "Initially by the MMO, then by the VMO below a certain flight level",
+        "By the VMO in still air"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Compressibility error in the ASI is normally corrected by:",
+      "options": [
+        "Use of a calibration card placed next to the instrument",
+        "Accurate calibration of the instrument",
+        "Use of the navigation computer"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Turbulent flow around a pressure head will cause:",
+      "options": [
+        "An increase in the dynamic pressure",
+        "Approximately 95% of the position error",
+        "Density error"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Dynamic pressure is given by:",
+      "options": [
+        "The static energy formula P1V1 = P2V2",
+        "The kinetic energy formula: 1/2 density x V^2",
+        "The kinetic energy formula P1V1 = P2V2"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The advantages of an ADC over a traditional pitot-static system are:\n1. position and compressibility correction\n2. reduced lag\n3. ability to supply many instruments\n4. ability to act as an altimeter following failures.",
+      "options": [
+        "1,3 & 4",
+        "1,2 & 3",
+        "1,2 & 4"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When descending at constant CAS:",
+      "options": [
+        "Dynamic pressure increases.",
+        "Dynamic pressure decreases.",
+        "Dynamic pressure remains constant."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "During a climb after take-off from a contaminated runway, if the total pressure probe of the airspeed indicator is blocked, the pilot finds that indicated airspeed:",
+      "options": [
+        "Decreases abruptly towards zero.",
+        "Increases steadily.",
+        "Increases abruptly towards VNE."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "With a pitot probe blocked due to ice build-up, the aircraft airspeed indicator will indicate in descent:",
+      "options": [
+        "Increasing speed.",
+        "Fluctuating speed.",
+        "Decreasing speed."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "After an aircraft has passed through a volcanic cloud which has blocked the total pressure probe inlet of the airspeed indicator, the pilot begins a stabilized descent and finds that the indicated airspeed:",
+      "options": [
+        "Increases steadily.",
+        "Decreases abruptly towards zero.",
+        "Decreases steadily."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Order of colour of ASI arcs is:",
+      "options": [
+        "White, green, yellow.",
+        "White, green, red.",
+        "Red, white, yellow."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What will be the effect if the drain hole and pitot tapping in a pitot probe are blocked, whilst the static source remains open?",
+      "options": [
+        "The ASI will respond to changes in pressure altitude only.",
+        "The ASI will not respond.",
+        "The ASI will under-read at all speeds."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What do the upper and lower limits of the yellow arc on an ASI represent?",
+      "options": [
+        "VNE and VNO.",
+        "VNO and VNE.",
+        "VMO and VNE."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If the pitot source and drain become blocked by ice when in cruise flight, how will the ASI respond when descending?",
+      "options": [
+        "It will under-read.",
+        "It will over-read.",
+        "It will read zero in all conditions."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "At MSL in the ISA:",
+      "options": [
+        "CAS = TAS.",
+        "IAS = TAS.",
+        "IAS = EAS."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In an ASI system, what does the pitot probe measure?",
+      "options": [
+        "Total pressure.",
+        "Dynamic pressure.",
+        "Static pressure."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Upper and lower limits of green arc in ASI indicate:",
+      "options": [
+        "VNO and VSO",
+        "VNO and VNE",
+        "VSO and VNO"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What will be the effect on the ASI if the pitot tube of an unpressurized aircraft is fractured and the pitot drain is blocked?",
+      "options": [
+        "It will over-read.",
+        "It will under-read.",
+        "It will give a constant reading."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If the pitot pipe becomes partly blocked:",
+      "options": [
+        "The IAS reading will be too low when climbing.",
+        "The IAS reading will be too low when descending.",
+        "The IAS reading will be too low when descending and too high when climbing."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If the pitot pipe becomes partly blocked:",
+      "options": [
+        "The IAS will be too high when descending.",
+        "The IAS will be too low when accelerating.",
+        "The IAS will be too low at all times."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If the static pipe becomes partly blocked:",
+      "options": [
+        "The IAS and ROC will be too low when climbing.",
+        "The IAS and ROC will be too low when descending.",
+        "The IAS and ROC will be too low at all times."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If the static pipe becomes partly blocked:",
+      "options": [
+        "The IAS will be too high when descending at constant IAS.",
+        "The IAS will be too high when accelerating at constant altitude.",
+        "The IAS will be too low at all times."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If the pitot pipe becomes partly blocked:",
+      "options": [
+        "The ASI will over-read and the error will be greater when climbing at constant CAS than when climbing at constant TAS.",
+        "The ASI will over-read and the error will be greater when climbing at constant TAS than when climbing at constant CAS.",
+        "The ASI will under-read and the error will be greater when climbing at constant CAS than when climbing at constant TAS."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What does the white arc on an ASI indicate?",
+      "options": [
+        "VSO at the lower end and VFE at the upper end.",
+        "VSO at the lower end and VRO at the upper end.",
+        "VST at the lower end and VFE at the upper end."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If the pitot source becomes blocked while the static source remains open, an ASI will:",
+      "options": [
+        "Under-read at all speeds.",
+        "Over-read at all speeds.",
+        "Give an indication proportional to altitude."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is VLO?",
+      "options": [
+        "The maximum speed with landing gear out.",
+        "The maximum speed for retracting or extending the landing gear.",
+        "The minimum speed for flight with landing gear out."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What does the green arc on an ASI indicate?",
+      "options": [
+        "VLE at the lower end and VTO at the upper end.",
+        "VST at the lower end and VNO at the upper end.",
+        "VSI at the lower end and MMO at the upper end."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Where on an ASI is VFE indicated?",
+      "options": [
+        "The upper end of the white arc.",
+        "The lower end of the yellow arc.",
+        "The blue radial line."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Where on an ASI is VRO indicated?",
+      "options": [
+        "It is not specifically marked but will be less than VFE.",
+        "The lower end of the white arc.",
+        "It is not specifically marked but will be more than VFE."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Where on an ASI is VMO indicated?",
+      "options": [
+        "Upper end of green mark and lower end of yellow arc.",
+        "Lower end of green arc and upper end of white arc.",
+        "Upper end of white arc and lower end of green arc."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Where on an ASI is VNO indicated?",
+      "options": [
+        "Upper end of green mark and lower end of yellow arc.",
+        "Lower end of green arc and upper end of white arc.",
+        "Upper end of white arc and lower end of green arc."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Where on a twin prop aircraft ASI is Vyse indicated?",
+      "options": [
+        "The upper end of the white arc.",
+        "The lower end of the yellow arc.",
+        "The blue radial line."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Where on an ASI is VNE indicated?",
+      "options": [
+        "The red radial line at the upper end of the white arc.",
+        "The red radial line at the lower end of the green arc.",
+        "The red radial line at the upper end of the yellow arc."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Where on an ASI is VLO indicated?",
+      "options": [
+        "The upper end of the white arc",
+        "The lower end of the white arc",
+        "It is not specifically marked but will be less than VLE"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Where on an ASI is Vs with flaps up indicated?",
+      "options": [
+        "Lower end of white arc",
+        "Upper end of yellow arc",
+        "Lower end of green arc"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "VFE is ... and is indicated by the ... on an ASI:",
+      "options": [
+        "Max speed for flap retraction upper end of green arc",
+        "Max speed for flap down flight upper end of white arc",
+        "Max speed for flaps up flight lower end of white arc"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "VNO is ... and is indicated by the ... on an ASI:",
+      "options": [
+        "Min speed for normal operations lower end of green arc",
+        "Max speed for normal operations upper end of green arc",
+        "Min speed for night operations lower end of white arc"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "VNE is ... and is indicated by the ... on an ASI:",
+      "options": [
+        "Minimum night envelope speed upper end of white arc",
+        "Maximum night envelope speed lower end of green arc",
+        "Never exceed speed red radial line at the upper end of the yellow arc"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The calibrated airspeed (CAS) is obtained by applying to the indicated airspeed (IAS):",
+      "options": [
+        "A compressibility and density correction",
+        "An instrument and position/pressure error correction",
+        "An antenna and compressibility correction"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The velocity maximum operating (VMO) is a speed expressed in:",
+      "options": [
+        "True airspeed (TAS)",
+        "Computed airspeed (COAS)",
+        "Calibrated airspeed (CAS)"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The airspeed indicator of a twin-engined aircraft comprises different sectors and color marks. The blue line corresponds to the:",
+      "options": [
+        "Maximum speed in operations, or VMO",
+        "Optimum climbing speed with one engine inoperative, or Vyse",
+        "Speed not to be exceeded, or VNE"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An airplane is in steady descent. The auto-throttle maintains a constant Mach number. If the total temperature remains constant, the calibrated airspeed:",
+      "options": [
+        "Remains constant",
+        "Decreases if the static temperature is lower than the standard temperature, increases if above",
+        "Increases"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aeroplane is in steady descent below the tropopause in the ISA. The auto-throttle maintains a constant calibrated airspeed. If the total temperature remains constant, the Mach number:",
+      "options": [
+        "Increases if the static temperature is lower than the standard temperature, decreases if higher",
+        "Decreases",
+        "Increases"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An aeroplane is in a steady climb. The auto-throttle maintains a constant Mach number. If the total temperature remains constant, the calibrated airspeed:",
+      "options": [
+        "Decreases if the static temperature is lower than the standard temperature, increases if higher",
+        "Decreases",
+        "Increases"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "How will the Mach meter respond in a constant CAS climb if the static source becomes blocked?",
+      "options": [
+        "Increase",
+        "Decrease",
+        "Remain constant"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "How will the Mach meter respond in a constant TAS climb if the static source becomes blocked?",
+      "options": [
+        "Increase",
+        "Decrease",
+        "Remain constant"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "How will the Mach meter respond in a constant Mach number climb if the static source becomes blocked?",
+      "options": [
+        "Increase",
+        "Decrease",
+        "Remain constant"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What happens to Mach meter indication in a constant TAS climb?",
+      "options": [
+        "Increases",
+        "Decreases",
+        "Increases then remains constant"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What would happen if the static pipe became detached from the back of a Mach meter in a pressurized aircraft at high altitude?",
+      "options": [
+        "Under-read",
+        "Over-read",
+        "No effect"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A Mach meter is made up of:",
+      "options": [
+        "An altimeter with a density capsule",
+        "An ASI with an altitude capsule",
+        "A VSI with a modified scale"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "VMO is calculated based on:",
+      "options": [
+        "TAS",
+        "EAS",
+        "CAS"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If the static source becomes blocked the Mach meter will ... as an aircraft climbs:",
+      "options": [
+        "Over-indicate",
+        "Under-indicate",
+        "Not indicate"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If temperature decreases when flying at constant CAS at FL 200, the Mach meter indication will ... and the true Mach number will ...:",
+      "options": [
+        "Increase, increase",
+        "Decrease, decrease",
+        "Not change, increase"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Mach meter indications:",
+      "options": [
+        "Are temperature related",
+        "Increase with temperature",
+        "Are independent of temperature"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is actually measured by a Mach meter?",
+      "options": [
+        "Pitot pressure",
+        "The ratio of (pitot pressure - static pressure) to static pressure",
+        "The ratio of static pressure to dynamic pressure"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If temperature increases by 5 degrees C during a constant Mach number descent, what will happen to CAS?",
+      "options": [
+        "Increase by 5 Kts",
+        "Increase by 10 Kts",
+        "Remain constant"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What does Mach number represent?",
+      "options": [
+        "The CAS of an aircraft as a fraction of the local speed of sound",
+        "The local speed of sound as a fraction of the CAS of an aircraft",
+        "The IAS of an aircraft as a fraction of the local speed of sound"
+      ],
+      "answer": 2
+    }
+]

@@ -1,0 +1,1289 @@
+[
+    {
+        "question": "As a cause of accidents, the human factor:",
+        "options": [
+            "Is cited in approximately 73% of aviation accidents",
+            "Has increased accidents exponentially since 1970",
+            "Has been generally due to high workload in the cockpit"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The rate of accidents in commercial aviation:",
+        "options": [
+            "is approx 52 accidents per million airport movements",
+            "has worsened considerably since 1970",
+            "is approx 1 accident per million airport movements"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "The most common specific cause of pilot induced accident is:",
+        "options": [
+            "poor pre-flight planning",
+            "hypoxia",
+            "controlled flight into terrain"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Most of the accidents take place during:",
+        "options": [
+            "cruise",
+            "approach and landing",
+            "take-off and initial climb"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Most a/c accidents are linked to:",
+        "options": [
+            "deficiencies in human performance",
+            "technical failures",
+            "adverse weather conditions"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Human errors:",
+        "options": [
+            "Are now considered as being inherent to the cognitive function of human and can be totally eliminated by CRM training.",
+            "Are now considered as being inherent to the cognitive function of human and are generally inescapable.",
+            "Are likely to be eliminated in the near future by higher degree of automation."
+        ],
+        "answer": 1
+
+    },
+    {
+        "question": "The error in checklist is related to an interface mismatch between:",
+        "options": ["Liveware - Liveware.","Liveware - Software","Liveware - Environment"],
+        "answer": 1
+    },
+    {
+        "question": "CRM training has under mentioned clear aims in terms of specific skills to develop for the purpose of:",
+        "options":["Error avoidance, threat management, system management and undesired aircraft state management.","Error avoidance, threat management, error management and environment management.","Error avoidance, threat management, error management and undesired aircraft state management."],
+        "answer": 2
+
+    },
+    {
+        "question": "A congested cockpit restricting movement is an interface mismatch between:",
+        "options":["Liveware Software.","Liveware - Environment.","Liveware - Hardware."],
+        "answer": 2
+    },
+    {
+        "question": "High noise level in a cockpit is a mismatch between:",
+        "options":["Liveware - Liveware.","Liveware - Environment.","Liveware - Hardware."],
+        "answer": 0
+
+    },
+    {
+        "question": "Inefficient warning system in the cockpit is a mismatch between:",
+        "options":[
+"Liveware - Liveware.","Liveware - Environment.","Liveware - Software."],
+"answer": 2
+    },
+    {
+      "question": "A disturbance of the biological rhythm is a mismatch between:",
+      "options": [
+        "Liveware – Hardware.",
+        "Liveware – Software.",
+        "Liveware – Environment."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The main consideration in modern airline operations should be:",
+      "options": [
+        "Efficient utilisation of resources.",
+        "Maximum utilisation of resources.",
+        "Safety."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The elements of the SHEL model are:",
+      "options": [
+        "Software, hardware, electronics, and livewire.",
+        "Shareware, hardware, education, and limitations.",
+        "Software, hardware, environment, and livewire."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which is true regarding the interaction between various elements of the SHEL model?",
+      "options": [
+        "All components of the SHEL model are equally important, as conflict and error can arise from the various mismatches.",
+        "The hardware is the hub for interactions between the different components of the system, hence other components should be matched to design most suitable hardware.",
+        "The liveware is the hub of the SHEL model; therefore, the nonhuman components should be adapted and matched to this central component."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "CRM and LOFT training are designed to improve:",
+      "options": [
+        "The quality number of individuals performance.",
+        "Individual performance in adverse conditions.",
+        "The quality of crew performance."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Four important disciplines from which information is drawn in understanding human performance and behavior are:",
+      "options": [
+        "Psychology, engineering, physiology, and anthropometry.",
+        "Sociology, mathematics, biology and industrial design.",
+        "Physics, biochemistry, physiology, and anthropometry."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Pilots have now become responsible for the management of hardware and software interfaces, through which they are required to direct the operation of the aircraft. These technological advances have:",
+      "options": [
+        "Significantly eliminated human errors.",
+        "Given rise to new forms of error.",
+        "Are aimed to eliminate pilots from the cockpit."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "About what proportion of civil air accidents result from inadequate human performance?",
+      "options": [
+        "89%",
+        "73%",
+        "57%"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is meant by the trans authority gradient?",
+      "options": [
+        "It is the authority exercised by the captain over all flight operations.",
+        "It is the authority relationship between captain and other crew members.",
+        "It is the authority relationship between captain and first officer."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Introducing Automation in a cockpit:",
+      "options": [
+        "Always reduces potential for human error and workload.",
+        "Generally relocates potential for error and increases workload.",
+        "Eliminates human error but work load increases."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "High Arousal Overload results in:",
+      "options": [
+        "A real danger of attention becoming narrowed.",
+        "An attention becoming sharpest.",
+        "An optimum arousal for more difficult or intellectually (cognitive) tasks."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A pilot suffering from a mild head ache before flight can:",
+      "options": [
+        "Take Over The Counter medicines from the chemist and fly.",
+        "Take Over The Counter medicines from the first aid box in the aircraft and fly.",
+        "Should take medicines prescribed by an aviation medicine specialist and take his advise for flying."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Categories of errors defined by TEM are:",
+      "options": ["Intentional non-compliance error, Procedural error, Communication error, Proficiency error and Operational decision error.",
+      "Intentional non-compliance error, Procedural error, Communication error, Proficiency error and vigilance error.",
+      "Instrument error, Procedural error, Communication error, Proficiency error and vigilance error."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Operational Threats outside the control of flight crew are:",
+    "options": [
+      "Adverse weather, Terrain, Airport conditions, Heavy traffic/TCAS events, Unfamiliar airports etc.",
+      "Time pressure, Irregular operations, Flight diversions, Missed approaches etc.",
+      "Aircraft malfunctions, Automation events etc."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What airplane equipment marked a substantial decrease in hull loss rates in the eighties?",
+    "options": [
+      "GPWS",
+      "TCAS",
+      "SSR"
+    ],
+    "answer": 0
+  },
+    {
+      "question": "Stress occurs:",
+      "options": [
+        "With inexperienced pilots when the situational demands exceed their individual capabilities.",
+        "While monitoring the progress of motor programmes.",
+        "While concentrating on routine procedures."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Divided attention is the ability:",
+      "options": [
+        "To overcome mental blocks.",
+        "To execute several mental activities at almost the same time.",
+        "To train or practice regularly."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Stress promotes:",
+      "options": [
+        "A decrease in physical strength rather than promoting mental performance.",
+        "An increase in physical strength rather than promoting mental performance.",
+        "An increase in mental performance rather than promoting physical strength."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An over stressed pilot may show the following symptoms:",
+      "options": [
+        "Deterioration in motor coordination.",
+        "Concentration and determination to complete the task.",
+        "Low pitch voice and slow speaking."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following statement is correct?",
+      "options": [
+        "Domestic stress will not affect the pilot's performance.",
+        "A moderate level of stress may improve performance.",
+        "A student will learn faster and better under severe stress."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In the initial phase of flight training:",
+      "options": [
+        "The pilot is competent to fly and knows at this stage what he can and cannot do.",
+        "The pilot is confident of his abilities and is able to negotiate all challenges in adverse situations.",
+        "The pilot is competent enough to fly the aircraft at this stage, but does not have a great deal of confidence in his/her abilities."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A pilot is skilled when he:",
+      "options": [
+        "Is familiar with his aircraft systems.",
+        "Trains or practices regularly, knows how to manage himself/herself and knows how to keep resources in reserve for coping with the unexpected.",
+        "Is directing and focusing psychological resources to enhance perception, performance and mental experience."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Anthropometry is the study of:",
+      "options": [
+        "Human workspace.",
+        "Human working conditions.",
+        "Human measurement."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The human information processing system is highly efficient compared to computers because of its:",
+      "options": [
+        "Flexibility.",
+        "Working memory capacity.",
+        "Speed."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Cockpit lights should:",
+      "options": [
+        "Avoid harsh shadows and reflected glare.",
+        "Contain red filters.",
+        "Be covered with non-reflective plastic."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Normally the design of aircraft uses measurements taken from:",
+      "options": [
+        "The entire population disregarding both the 5% lowest and the 5% highest.",
+        "The entire population disregarding the 5% lowest.",
+        "The entire population."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The most important requirement in the design of both displays and controls is:",
+      "options": [
+        "Accessibility.",
+        "Positioning.",
+        "Standardization."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Many pilots think ahead to deal with abnormal situations:",
+      "options": [
+        "This has to be positively appreciated for it increases consistency in action.",
+        "This has to be rejected because the company draws the rules and the procedures they have to comply with.",
+        "This is dangerous for every situation is different."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In an abnormal situation the pilot has an apparently correct explanation for the problem.The chance that he/she now ignores or devalues other relevant information, not fitting into his/her mental picture is:",
+    "options": [
+      "The same, no matter if he/she has already made up his/her mind.",
+      "Decreasing.",
+      "Increasing."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What are the main factors which bring about hypo vigilance are:",
+    "options": [
+      "State of low fatigue is liable to cause phases of drowsiness and hypo-vigilance.",
+      "The monotony of the task, tiredness, the need for sleep and a lack of stimulation.",
+      "Stress, panic and the need to keep awake."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Hypo vigilance is:",
+    "options": [
+      "An extremely agitated state of panic or near panic.",
+      "A state of high fatigue liable to cause phases of drowsiness and hypo-vigilance.",
+      "Tends to lead to slower but more accurate responses."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The human brain has:",
+    "options": [
+      "Different reservoirs of resources for information-gathering, information-processing or action phase.",
+      "One reservoir of resources for the information-gathering, information-processing or action phase.",
+      "Different reservoir of resources for all phases of information stored briefly in our sensory memory."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "If a pilot has to perform two tasks requiring the allocation of cognitive resources:",
+    "options": [
+      "The sharing of resources causes performance on each task to be reduced.",
+      "Resources are not limited, there is no deterioration in tasks being performed.",
+      "Multi-tasking is very common in aviation, hence pilots need not worry."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What are the main signs indicating loss of vigilance?",
+    "options": [
+      "Increase in sensory perception and loss of concentration.",
+      "Decrease in sensory perception and sensation of muscular heaviness.",
+      "Blurred vision."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which are the preferred solutions to manage phases of reduced or low vigilance (hypovigilance)?",
+    "options": [
+      "Healthy living and organizing periods of rest during the flight.",
+      "Exercise and meditation.",
+      "Selective attention to important matters only."
+    ],
+    "answer": 0
+},
+    {
+      "question": "The three distinct phases to developing a Motor Programme or skill (Anderson model) are:",
+      "options": [
+        "Cognitive, associative and autonomous.",
+        "Training, practice and specialization.",
+        "Learning, perfecting and demonstrating."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "\"Divided attention\" is:",
+      "options": [
+        "To execute several mental activities at almost the same time.",
+        "To prioritize the activities depending upon the relevance.",
+        "To develop skills to monitor multiple instruments."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The available cognitive resources of the human brain:",
+      "options": [
+        "Are of unlimited capacity of the central decision maker and working memory.",
+        "Are limited and make it impossible to perform two attentional tasks at the same time.",
+        "Can be trained to perform several attentional tasks together through motor programs."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The \"cocktail party effect\" is:",
+      "options": [
+        "To exceed alcohol limits unintentionally.",
+        "The ability to pick up relevant information unintentionally.",
+        "To gather irrelevant information intentionally."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Attention and Concentration is essential for pilots, however:",
+      "options": [
+        "Capacity of attention and concentration is limited.",
+        "Sensory information is a stumbling block.",
+        "Attention cannot move very quickly from item to item."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The first stage in the information process is:",
+      "options": [
+        "Sensory stimulation.",
+        "Attention.",
+        "Perception."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In the short-term-memory, information is stored for approximately ____ and it's capacity is ____ items.",
+      "options": [
+        "40 to 60 seconds, 11 + 3",
+        "20 to 30 seconds, 7 + 2",
+        "10 to 20 seconds, 7 + 2"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Motor programmes are:",
+      "options": [
+        "Routines stored in sensory memory to be executed without continuous conscious control.",
+        "Held within the Long Term Memory and can be carried out without conscious thought.",
+        "Held within the Short Term Memory and can be carried out without conscious thought."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "NREM sleep Stage 4 is:",
+      "options": [
+        "Beginning of deep sleep.",
+        "End of deep sleep.",
+        "Deep sleep."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Concerning the capacity of the human long-term memory:",
+      "options": [
+        "It's storage capacity is unlimited, although frequently there may be retrieval problems.",
+        "It's storage capacity is unlimited, there are no retrieval problems.",
+        "It's storage capacity is limited. Can be improved considerably by rehearsal."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Murphy's law states:",
+      "options": [
+        "If equipment is designed in such a way that it can be operated wrongly, then sooner or later, it will be.",
+        "Safety is paramount in designing any equipment.",
+        "Operational well-being of personnel is the industry need."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following are primary sources of motivation?",
+      "options": [
+        "Loyalty to the employer and high arousal level.",
+        "Skill learning, mnemonics and insight.",
+        "Satisfaction and feelings of achievement, rewards, punishment, and goal attainment."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Flying a coordinated turn is:",
+      "options": [
+        "Skill-based behavior.",
+        "Attention-based behavior.",
+        "Experience-based behavior."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The following factors can interfere with accurate situational awareness:",
+      "options": [
+        "Stress, Boredom and Fatigue.",
+        "Emotional disturbance, Poor communication and Interruptions.",
+        "Both A and B are correct."
+      ],
+      "answer": 2
+    },
+    {"question": "Which of the following provides the basis of all perceptions?",
+    "options": [
+      "We perceive most of the information reaching our senses at any moment.",
+      "Perception involves the conversion of the sensory information received into a meaningful structure.",
+      "Sensory information that we expect to receive is not easily perceived."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "How can optimum arousal and vigilance affect a pilot?",
+    "options": [
+      "High arousal and vigilance are necessary for a pilot in all stages of flight.",
+      "In low arousal and vigilance, there is a real danger of attention becoming narrowed.",
+      "Too little arousal and vigilance have an inert effect, while too much has a hyper effect."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "An attention mechanism is required because:",
+    "options": [
+      "Attention can move very quickly from item to item.",
+      "Attention is the deliberate devotion of the cognitive resources to a specific item.",
+      "There is a limit to the number of items held or maintained in short term memory (or working memory) and our channel capacity is limited."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Hyper vigilance is:",
+    "options": [
+      "Necessary in critical stages of a flight.",
+      "Necessary to allow flight crew to concentrate on instruments while landing.",
+      "In its most acute forms, an extremely agitated state of panic or near panic."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is meant by Episodic memory?",
+    "options": [
+      "Memory of events or episodes in our life, held in the long term memory.",
+      "Memory of events or episodes in our life, held in the short term memory.",
+      "Stores knowledge of the major events or episodes in the world in long term memory."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Automated assistance for the human operator must be highly reliable, it:",
+    "options": [
+      "Enables pilots to use their motor skills effectively in case the machine fails.",
+      "Induces hyper vigilance resulting in complacency.",
+      "Induces complacency, human expertise may gradually be lost if the machine fails."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The achievable rate of human error after practice is:",
+    "options": [
+      "1 in 10 times.",
+      "1 in 100 times.",
+      "1 in 1000 times."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Sleep is basically divided into two components.",
+    "options": [
+      "Sleep credit and sleep debit.",
+      "Rapid Eye Movement (REM) sleep and Non-Rapid Eye Movement (NREM) sleep.",
+      "Light sleep and deep sleep."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "In the absence of all time cues (Free running circadian rhythms), the biological clock has a natural cycle of about:",
+    "options": [
+      "26 hours.",
+      "25 hours.",
+      "24 hours."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Circadian cycles cause body temperature to change. At approximately what time of day is our temperature at its lowest value?",
+    "options": [
+      "19:30",
+      "14:30",
+      "04:30"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Flying from Hyderabad to Berlin with a layover of 22 hours, what time measure is relevant for your circadian rhythm?",
+    "options": [
+      "ZT (zonal time).",
+      "IST (Indian Standard Time).",
+      "LT (local time)."
+    ],
+    "answer": 1
+  },
+  {
+      "question": "Performance loss may be present up to:",
+      "options": [
+        "60 minutes after awaking from a short sleep (nap).",
+        "30 minutes after awaking from a short sleep (nap).",
+        "20 minutes after awaking from a short sleep (nap)."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "As a result of automation in cockpits,",
+      "options": [
+        "Pilots may be replaced in the cockpit with AI in the near future.",
+        "Pilots, computers and machines are not alternatives, but complementary factors in ensuring flight safety.",
+        "Humans being responsible for the majority of accidents are dispensable."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A skilled motor task will be momentarily disrupted by a startle reflex but return to normal within:",
+      "options": [
+        "Five to ten minutes.",
+        "Five to ten seconds.",
+        "Two to three minutes."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Easily observable indications of stress are:",
+      "options": [
+        "perspiration, flushed skin, dilated pupils and slow breathing.",
+        "perspiration, flushed skin, low blood pressure and slow breathing.",
+        "perspiration, flushed skin, dilated pupils and fast breathing."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The key to reducing cockpit workload is:",
+      "options": [
+        "Good cockpit housekeeping.",
+        "Good communication and flying skills.",
+        "Thorough flight planning."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following statement is correct with respect to REM sleep?",
+      "options": [
+        "It is not important for the regeneration of mental and physical functions compared to all the other sleep stages.",
+        "The eye moves rapidly from side to side and the brain wave form is similar to that when a person is awake.",
+        "There is no eye movement and muscle activity."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "About ____ of a normal sleep is spent in Stage 2 sleep.",
+      "options": [
+        "30 percent.",
+        "70 percent.",
+        "50 percent."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Fatigue is a:",
+      "options": [
+        "Very deep tiredness due to the cumulative effects of a stressful lifestyle and/or living and working environment.",
+        "Very deep depression due to the cumulative effects of a low arousal and/or living and working environment.",
+        "Lethargic instant response of a person to the event or circumstances to which he is exposed."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "To avoid stress,",
+      "options": [
+        "Wish it away, stress is not a natural part of life, hence avoidable.",
+        "Raise your vigilance and arousal to a high level to counter stress.",
+        "Know your limits and fly well inside them."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Stress factors are cumulative. A cumulative score indicating that a person is life stress free is less than:",
+      "options": [
+        "60",
+        "40",
+        "20"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What does stress management involve?",
+      "options": [
+        "Recognizing stress, accepting it and developing a coping strategy.",
+        "The recognition and removal of stress.",
+        "A constant stress prevention."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What are the main effects of a lack of sleep loss on performance?",
+      "options": [
+        "The brain activity, eye movement become faster and the cardiac activity increases.",
+        "It affects fatigue, concentration, attention, the risk of sensory illusions and mood disorders.",
+        "The physiological rhythms of a pilot in a new time zone will re-synchronize quickly to cater for sleep loss."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In order to minimize the effects of crossing more than 3- 4 zones with a layover more than 24 hours, it is advisable to:",
+      "options": [
+        "Keep in swing with the rhythm of the arrival country for as long as possible and maintain regular living patterns.","Keep in swing with the rhythm of the departure country for as long as possible and maintain regular living patterns.",
+      "Keep in swing with the rhythm of the arrival country for as long as possible and maintain regular living patterns of departure country."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Of the following statements concerning the effects of circadian rhythms on performance:",
+    "options": [
+      "Sensorimotor performance is better in the morning whereas intellectual performance is better in the evening.",
+      "Sensorimotor and intellectual performance are better in the morning after a good night sleep.",
+      "Sensorimotor performance is better in the evening whereas intellectual performance is better in the morning."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Melatonin secretion regulates:",
+    "options": [
+      "Metabolism.",
+      "Sleep.",
+      "Muscles."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The physiological rhythms of a pilot in a new time zone will resynchronize to this new time zone at a rate of about:",
+    "options": [
+      "1-1.5 hours a day.",
+      "2-2.5 hours a day.",
+      "3-3.5 hours a day."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The readjustment of the biological rhythms after a time shift is normally more difficult with flights towards the:",
+    "options": [
+      "West.",
+      "North.",
+      "East."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The main functions of deep sleep are?",
+    "options": [
+      "It essentially allows for motor programmes reactivation and the reconstitution of mental agility.",
+      "It essentially allows for physical recovery and the reconstitution of neuron energy reserves.",
+      "It essentially allows for fatigue recovery and the reconstitution of circadian circle."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Preventive efforts for mental disorders should be aimed at more common mental health problems such as:",
+    "options": [
+      "Psychosis",
+      "Depression, anxiety and substance misuse.",
+      "Personal and financial issues."
+    ],
+    "answer": 1
+  },
+    {
+        "question":"The atmosphere contains the following gases:",
+        "options":["78% nitrogen, 21% oxygen, 0.03% carbon dioxide, rest rare gases.","78% helium, 21% oxygen, 0.03% carbon dioxide, rest: rare gases.","78% nitrogen, 21% oxygen, 1% carbon monoxide, rest: rare gases."],
+        "answer":0
+    },
+    {
+        "question":"The volume percentage of oxygen in the atmosphere is 21% which:",
+        "options": ["Is constant for all altitudes conventional airplanes can reach.","Decreases with increasing altitude.","Increases with increasing altitude."],
+        "answer":0
+    },
+    {
+        "question": "Oxygen, combined with hemoglobin in blood is transported by:",
+        "options":["Platelets","Red blood cells","White blood cells."],
+        "answer":1
+    },
+    {
+        "question":"One of the most dangerous symptoms of hypoxia concerning flight safety",
+        "options":["Hyperventilation, causing emotional stress.","Impaired judgment, disabling the pilot to recognize the symptoms","Reduced coordination of limb movements, causing the pilot to spin."],
+        "answer":1
+    },
+    {
+        "question":"One of the most frequent symptom(s) of decompression sickness emerging after a decompression in airline operation:",
+        "options":["Are the bends","Is a shock","Are neurological damages to the CNS"],
+        "answer":0
+    },
+    {
+        "question":"The cabin pressure in airline operation is:",
+        "options":["Normally not exceeding 4,000 to 5,000 feet","Normally not exceeding 2,000 to 3,000 feet","Normally not exceeding 6,000 to 8,000 feel."],
+        "answer":2
+    },
+    {
+        "question":"What is the Time of Useful Consciousness?",
+        "options":["The length of time during which an individual can act with both mental and physical efficiency and alertness, measured from the moment at which he loses his available oxygen supply","The time taken to become aware of hypoxia due to gradual decompression ","The period of time between the start of hypoxia and the moment that the pice becomes aware of it"],
+        "answer":0
+    },
+    {
+        "question": "You can overcome hyperventilation by breathing into a plastic or paper bag The intention is:",
+        "options":["To reduce blood pressure","To increase the amount of nitrogen in the lung","To raise the level of CO, in the blood as fast as possib"],
+        "answer":2
+    },
+    {
+        "question":"Which phenomenon is common to hypoxia and hyperventnation?",
+        "options":["severe headache","tinglin sensations in arms or legs","cyanosis"],
+        "answer":1
+    },
+    {
+        "question":"The risk of barotrauma of the middle ear is more likely to occur:",
+        "options":["with colds and slow ascents","with cold and rapid descent","with cold and first climb"],
+        "answer":1
+    },
+    {
+      "question": "The purpose of cabin pressurization system is:",
+      "options": [
+        "Reduce gastrointestinal trapped gases, middle ear and sinus problems.","To allow the crew and passengers to move about freely in a comfortable environment, unencumbered by oxygen masks or other life support equipment.",
+    "Both A and B are correct."
+  ],"answer":0
+  
+},
+{
+  "question": "Flickering light when reflected from spinning rotor blades:",
+  "options": [
+    "Cannot be neglected.",
+    "Can cause spatial disorientation and/or nausea, when looked at for a longer period of time.",
+    "Should be avoided, because it may destroy the optical nerve."
+  ],
+  "answer":1
+},
+{
+  "question": "Presbyopia is:",
+  "options": [
+    "Far sightedness, linked with age.",
+    "Short sightedness.",
+    "Myopia."
+  ],
+  "answer":0
+},
+{
+  "question": "Scanning at night should be performed by:",
+  "options": [
+    "Scanning with one eye open.",
+    "Slight eye movement to the side of the object.",
+    "Concentrated fixation on an object (image must fall on the foveacentralis)."
+  ],
+  "answer":1
+},
+{
+  "question": "A pilot approaching a runway which is narrower than normal may feel he is at greater height than he actually is. To compensate he may fly a:",
+  "options": [
+    "Flatter than normal approach with the tendency to undershoot.",
+    "Higher than normal approach with the tendency to overshoot.",
+    "Compensatory glide path and stall out."
+  ],
+  "answer":0
+},
+{
+  "question": "Spatial disorientation will be most likely to occur during flight:",
+  "options": [
+    "When flying in and out of clouds and the pilot maintains good instrument cross check.",
+    "No head movement in a prolonged constant rate turn.",
+    "If the brain receives conflicting information and the pilot does not believe the instruments."
+  ],
+  "answer":2
+},
+{
+  "question": "Hypoxia will effect night vision:",
+  "options": [
+    "At 5,000 ft.",
+    "Less than day vision.",
+    "And causes the autokinetic phenomena."
+  ],
+  "answer":0
+},
+      {
+        "question": "What is meant by the term Incapacitation?",
+        "options": [
+          "When situational awareness of the crew is too low.",
+          "The effect of gastrointestinal upset.",
+          "The gradual or sudden loss of a crew member's ability to function."
+        ],
+        "answer":2
+      },
+      {
+        "question": "In the short-term-memory, information is stored for approximately:",
+        "options": [
+          "20 seconds",
+          "A couple of days",
+          "1 hour"
+        ],
+        "answer":0
+      },
+      {
+        "question": "Concerning the relation between performance and stress, which of the following statement is correct?",
+        "options": [
+          "Domestic stress will not affect the pilot's performance because he is able to leave this type of stress on the ground.",
+          "A moderate level of stress may improve performance.",
+          "A student will learn faster under severe stress."
+        ],
+        "answer":1
+      },
+      {
+        "question": "The main preoccupation in modern airline operations should be:",
+        "options": [
+          "Efficient utilisation of resources.",
+          "Maximum utilisation of resources.",
+          "Safety."
+        ],
+        "answer":1
+      },
+      {
+        "question": "The elements of the SHEL model are:",
+        "options": [
+          "Software, hardware, electronics and liveware.",
+          "Shareware, hardware, education and limitations.",
+          "Software, hardware, environment and liveware."
+        ],
+        "answer":2
+      },
+      {
+        "question": "The rate and depth of breathing is primary regulated by the concentration of:",
+        "options": [
+          "Water vapor in the alveoli.",
+          "Oxygen in the cells.",
+          "Carbon dioxide in the blood."
+        ],
+        "answer":2
+      },
+      {
+        "question": "Pulse rate is in influenced by the following factors:\n1. Adrenalin 2. Cortisol 3. Physical exercise.",
+        "options": [
+          "1, 3 are correct, 2 is false.",
+          "1, 2, 3 are correct.",
+          "2, 3 are correct, 1 is false."
+        ],
+        "answer":0
+      },
+      {
+        "question": "Which of the following statements is true?",
+        "options": [
+          "People are capable of living without stress.",
+          "Stressors accumulate thus increasing the likelihood to exhaustion.",
+          "Stressors are independent from each other."
+        ],
+        "answer":1
+      },
+      {
+        "question": "Motor programmes are:",
+        "options": [
+          "Rules that enable us to deal with preconceived situations.",
+          "Stored routines that enable patterns of behavior to be executed only under continuous conscious control.",
+          "Stored routines that enable patterns of behavior to be executed without continuous conscious control."
+        ],
+        "answer":2
+      },
+      {
+        "question": "What optimizes crew co-operation? \n1. Sharing and common task\n2. Confidence in each others capability.\n3. Precise definition of functions associated with each crew member's role.",
+        "options": [
+          "1, 2",
+          "2, 3",
+          "1, 2, 3"
+        ],"answer":2
+      },
+      {
+        "question": "What should a pilot do to keep his night vision (scotopic vision)?",
+        "options": [
+          "Select meals with high contents of vitamin B and C.",
+          "Not smoke before start and during flight and avoid flash blindness.",
+          "Wait at least 60 minutes to night adapt before he takes off."
+        ],"answer":1
+      },
+      {
+        "question": "Between which components is an interface mismatch causing stress due to poor cockpit design, thus leading to reduced human performance?",
+        "options": [
+          "Liveware - Software.",
+          "Liveware - Liveware.",
+          "Liveware - Hardware."
+        ],
+        "answer":2
+      },
+      {
+        "question": "Which of the following sentences concerning crew performance is correct?",
+        "options": [
+          "Mistakes can always be detected and corrected by the individual, hence too much practice is not needed.",
+          "The quality of crew-performance is not dependent on the arousal level of the individual.",
+          "The quality of crew-performance depends on the practice done to improve capability."
+        ],
+        "answer":2
+      },
+  {
+    "question": "Pilots are more easily inclined to make mistakes when:",
+    "options": [
+      "Making decisions independently of others.",
+      "They are not constrained by time.",
+      "They are not able to assess and control the risks involved in a situation."
+    ],
+    "answer":2
+  },
+  {
+    "question": "Low levels of arousal are:",
+    "options": [
+      "Good on final approach.",
+      "Not good on final approach.",
+      "Good for general flying."
+    ],
+    "answer":1
+  },
+  {
+    "question": "The amount of light which strikes the retina is controlled by:",
+    "options": [
+      "The cornea.",
+      "The lens.",
+      "The pupil."
+    ],
+    "answer":2
+  },
+  {
+    "question": "Which of the following statements in regard to motivation is correct?",
+    "options": [
+      "Too much motivation may result in hypo vigilance and thus in a decrease in attention.",
+      "Motivation will reduce the task automation process hence performance will degrade.",
+      "The learning process is vastly improved with motivation."
+    ],
+    "answer":2
+  },
+  {
+    "question": "Five hours after a rapid decompression at FL 320 you experience pain in the joints. Which of following answers is correct?",
+    "options": [
+      "This symptom indicates decompression sickness and will disappear with in 24 hours.",
+      "This phenomenon is treated by breathing 100% oxygen under pressure.",
+      "You should ask for medical advice since this is a symptom of decompression sickness."
+    ],
+    "answer":2
+  },
+  {
+    "question": "A high degree of cockpit automation may alter the traditional tasks of the pilots in a way, that:",
+    "options": [
+      "The crew always maintains situational awareness by being more alert.",
+      "The crew pays more attention to be always in loop.",
+      "The attention of the cockpit crew will become reduced with the consequence of 'being out of the loop'."
+    ],
+    "answer":2
+  },
+  {
+    "question": "Long-term memory is an essential component of the pilot's knowledge and expertise.",
+    "options": [
+      "The information stored in long-term memory is always fresh and easy to retrieve.",
+      "It is desirable to pre-activate knowledge stored in long-term memory to have it available when required.",
+      "The capacity of long-term memory is limited to a few weeks."
+    ],
+    "answer":1
+  },
+  {
+    "question": "The human information processing system is highly efficient compared to computers because of its:",
+    "options": [
+      "Speed.",
+      "Working memory capacity.",
+      "Flexibility."
+    ],
+    "answer":2
+  },
+  {
+    "question": "What are easily observable indications of stress?",
+    "options": [
+      "Rising of the blood pressure, pupils narrowing, stabbing pain around the heart.",
+      "Perspiration, flushed skin, dilated pupils, fast breathing.",
+      "Faster, deep inhalation, stabbing pain around the heart."
+    ],
+    "answer":1
+  },
+  {
+    "question": "CRM (Crew Resource Management) training is:",
+    "options": [
+      "Intended to develope effectiveness of crew performance by improving attitudes towards flight safety and human relationship management.",
+      "Not intended to change the individual's attitude towards other crew members.",
+      "Intended to alter an individual's stress management capabilities."
+    ],
+    "answer":0
+  },
+  {
+    "question": "As a result of automation in cockpits:",
+    "options": [
+      "Coordination between the members is facilitated by the provision of more precise and more important information.",
+      "Communication and coordination call for an even greater effort on the part of the crew members.",
+      "Man-man communication has been significantly improved."
+    ],
+    "answer":1
+  },
+  {
+    "question": "Which statement is correct?",
+    "options": [
+      "Oxygen diffusion from the lungs into the blood does not depend on partial oxygen pressure.",
+      "Oxygen diffusion from the blood into the cells depends on their partial oxygen pressure gradient.",
+      "The gradient of diffusion is higher at altitude than it is at sea level."
+    ],
+    "answer":1
+  },
+  {
+    "question": "A pilot after pulling out of a steep dive, moves the control column instinctively and firmly forward may suffer a:","options": [
+      "Grey Out.",
+      "Black Out.",
+      "Red Out."
+    ],
+    "answer":2
+  },
+  {
+    "question": "A pilot has flown an aircraft as a Captain for 1000 hrs.With what phase of motor programme he can be associated with?",
+    "options": [
+      "Automatic.",
+      "Cognitive.",
+      "Associative."
+    ],
+    "answer":0
+  },
+  {
+    "question": "Too low a workload can:",
+    "options": [
+      "Degrade performance.",
+      "Enhance arousal.",
+      "Help plan future activities better."
+    ],
+    "answer":0
+  },
+  {
+    "question": "In civil air transport, linear accelerations (Gx): 1: do not exist;\n2: have slight physiological consequences;\n3: may, in the case of pull-out, lead to loss of consciousness;\n4: cause sensory illusions on the pitch axis.",
+    "options": [
+      "1, 4",
+      "2",
+      "3, 4"
+    ],
+    "answer":1
+  },
+  {
+    "question": "Thinking on human reliability is changing:",
+    "options": [
+      "Human errors can be avoided: All it takes is to be vigilant and to extend one's knowledge.",
+      "It is thought that it will be possible to eliminate errors in the near future.",
+      "Human errors are now considered as being inherent to the cognitive function of human and are generally inescapable."
+    ],
+    "answer":2
+  },
+  {
+    "question": "Gases of physiological importance to man are:",
+    "options": [
+      "Oxygen and carbon dioxide.",
+      "Nitrogen and carbon dioxide.",
+      "Oxygen and carbon monoxide."
+    ],
+    "answer":0
+  },
+    {
+      "question": "You can survive at any altitude, provided that:",
+      "options": [
+        "Enough oxygen, pressure and heat is available.",
+        "21% oxygen is available in the air you breath in.",
+        "Pressure respiration is guaranteed for that altitude."
+      ],
+      "answer":0
+    },
+    {
+      "question": "Fatigue and permanent concentration:",
+      "options": [
+        "Increase the tolerance to hypoxia.",
+        "Lower the tolerance to hypoxia.",
+        "Do not affect hypoxia at all."
+      ],
+      "answer":1
+    },
+    {
+      "question": "An increase in the amount of carbon dioxide in the blood leads to:",
+      "options": [
+        "A decrease of acidity in the blood.",
+        "A reduction of red blood cells.",
+        "Shortness of breath."
+      ],
+      "answer":2
+    },
+    {
+      "question": "The total pressure of a mixture of gases is equal to the sum of the partial pressures of the gases which compose the mixture corresponds to:",
+      "options": [
+        "Henry's law",
+        "Dalton's law",
+        "Graham's law"
+      ],
+      "answer":1
+    },
+    {
+      "question": "The barometric pressure has dropped to 1/2 of the pressure at sea level at:",
+      "options": [
+        "10 000 feet",
+        "18 000 feet",
+        "25 000 feet"
+      ],
+      "answer":1
+    },
+    {
+      "question": "Boyle's law is directly applicable in case of:",
+      "options": [
+        "The expansion of trapped gasses in the human body with increasing altitude.",
+        "The occurrence of decompression sickness at high altitude.",
+        "Hyperventilation with increasing altitude."
+      ],
+      "answer":0
+    },
+    {
+      "question": "Dalton's law explains the occurrence of:",
+      "options": [
+        "Bends.",
+        "Creeps.",
+        "Altitude hypoxia."
+      ],
+      "answer":2
+    },
+    {
+      "question": "The respiratory process consists mainly of:",
+      "options": [
+        "The diffusion of oxygen through the respiratory membranes into the blood, transportation to the cells, diffusion into the cells and elimination of carbon dioxide from the body.",
+        "The transportation of oxygen to the cell and the elimination of carbon monoxide.",
+        "The transportation of oxygen to the cell and the elimination of nitrogen."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Carbon monoxide poisoning:",
+      "options": [
+        "Occurs only above 15 degrees OAT.",
+        "Is more likely to occur in aeroplanes where the cabin heat is technically supplied by coating the exhaust.",
+        "Is more likely to occur in aeroplanes with twin-engines because of high engine efficiency."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In the following list you will find several symptoms listed for hypoxia and carbon monoxide poisoning. Please mark those referring to carbon monoxide poisoning.",
+      "options": [
+        "Muscular spasms, mental confusion, impairment of hearing.",
+        "High levels of arousal, increased error proneness, lack of accuracy.",
+        "Headache, increasing nausea, dizziness."
+      ],
+      "answer":2
+    },
+    {
+      "question": "A pilot, climbing in a unpressurized aircraft and without using supplemental oxygen will pass the \"critical threshold\" at approximately:",
+      "options": [
+        "10 000 ft",
+        "18 000 ft",
+        "22 000 ft"
+      ],
+      "answer":2
+    },
+    {
+      "question": "Breathing 100% OXYGEN will lift the pilot's physiological safe altitude to approximately:",
+      "options": [
+        "38 000 ft",
+        "10 000 ft",
+        "22 000 ft"
+      ],
+      "answer":0
+    }
+  ]

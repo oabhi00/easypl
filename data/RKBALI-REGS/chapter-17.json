@@ -1,0 +1,982 @@
+[
+    {
+      "question": "MMEL is drawn up by:",
+      "options": [
+        "The operator and approved by the certification authority.",
+        "The manufacturer and approved by the DGCA.",
+        "The operator from a main list drawn up by the manufacturer."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The Minimum Equipment List (MEL) is established by:",
+      "options": [
+        "The airline operator.",
+        "The aeronautical authority the airline operator depends on.",
+        "The manufacturer."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A piece of equipment on your public transport airplane fails while you are still parked. The reference document you use in the first place to decide on the procedure to follow is:",
+      "options": [
+        "The minimum equipment list.",
+        "The flight manual.",
+        "The operation manual's chapter \"Abnormal and Emergency Procedures\"."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The minimum equipment list of a public transport airplane is to be found in the:",
+      "options": [
+        "Flight manual.",
+        "Operation manual.",
+        "CAR OPS."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In public transport, prior to take-off in icing conditions, the captain must check that:",
+      "options": [
+        "External surfaces are free from any ice accretion which may impede the airplane performance and manoeuvrability, except within the limits specified by the flight manual.",
+        "External surfaces are free from any ice accretion greater than 5 mm.",
+        "Possible ice accretions do not cause to exceed weight and balance limits."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The accumulation of snow or ice on an aircraft in flight induces an increase in the:",
+      "options": [
+        "Value of the stall angle of attack.",
+        "Roll rate.",
+        "Stalling speed."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following requirements should be met when planning a flight with icing conditions?",
+      "options": [
+        "The flight should be planned so that a change of cruising level can be initiated rapidly.",
+        "The aircraft shall before flight be sprayed with anti-icing fluid.",
+        "The aircraft shall be equipped with approved ice protection systems."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "You are the captain of a commercial aeroplane and you notice, after take-off, a flock of birds which may present a bird strike hazard, you must:",
+      "options": [
+        "Immediately inform the appropriate ground station.",
+        "Draft a bird strike hazard report upon arrival and within at most 48 hours.",
+        "Inform the appropriate ground station within a reasonable period of time."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the most effective method for scaring birds?",
+      "options": [
+        "Land rover with loudspeaker.",
+        "Shell crackers.",
+        "Making movement."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "90% of bird strikes occur:",
+      "options": [
+        "Under 500 m.",
+        "Between 500 and 1,500 m.",
+        "Above 1,000 m."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The observations and studies conducted on the behaviour of birds on the ground, showed that aircraft taking off and having reached an average speed of 135 kt, show that birds fly away:",
+      "options": [
+        "From the beginning of the take-off roll.",
+        "About ten seconds beforehand.",
+        "About two seconds beforehand."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Who has the responsibility for establishing operating procedures for noise abatement purposes during instrument flight in compliance with ICAO PANS OPS?",
+      "options": [
+        "The operator.",
+        "State in which the aeroplane is operating.",
+        "Commander."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "About procedures for noise attenuation during landing:",
+      "options": [
+        "Such procedures will not involve the prohibition of using reverse thrust.",
+        "Such procedures do not exist.",
+        "They prohibit the use of reverse thrust."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Noise abatement shall not be the determining factor in the designation of a runway under the following circumstances:\n1. when crosswind component, including gust, exceeds 15 kt\n2. when the tailwind component, including gust, exceeds 5 kt\n3. when the runway is not clear or dry\nThe combination of correct statements is:",
+      "options": [
+        "1.",
+        "1, 2.",
+        "1, 2, 3."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In accordance with (ICAO) DOC 8168 - OPS, noise preferential routes are established to ensure that aeroplanes departing and arriving overfly noise-sensitive areas in the vicinity of the aerodrome as far as practicable. In establishing noise preferential routes:",
+      "options": [
+        "No turns should be required coincident with a reduction of power associated with a noise abatement procedure.",
+        "Turns during take-off should not be required unless the bank angle for turns is limited to 28° (climbing at V2 + 10 to 20 kt).",
+        "Turns during take-off and climb should not be required unless the aeroplane has reached an altitude which provides at least a height of no less than 100 m above terrain and the highest obstacles."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What precludes a runway being used for noise abatement procedures if landing at VMC?",
+      "options": [
+        "Tailwind up to 3 kts.",
+        "No ILS or visual guidance.",
+        "Crosswind including gusts of 10 kts."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "During an approach procedure which involves noise abatement, the aeroplane is to be in the final landing configuration at any point after passing the ... or at a point ... from the threshold of the landing runway, whichever is earlier.",
+      "options": [
+        "Final marker, 6 NM",
+        "Middle marker, 5 NM",
+        "Outer marker, 5 NM"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In case of an engine nozzle fire while on ground you:",
+      "options": [
+        "Pull the fire shut off handle and trigger the engine's fire-extinguisher",
+        "Carry out a dry cranking",
+        "Carry out a damp cranking"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "To extinguish a fire in the cockpit, you use:\n1. A water fire-extinguisher\n2. A powder or chemical fire-extinguisher\n3. A halon fire-extinguisher\n4. A CO₂ fire-extinguisher\nThe combination of correct statements is:",
+      "options": [
+        "2, 3, 4",
+        "1, 2",
+        "3, 4"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "You will use a CO₂ fire-extinguisher for:\n1. A paper fire\n2. A plastic fire\n3. A hydrocarbon fire\n4. An electrical fire\nThe combination of correct statements is:",
+      "options": [
+        "3, 4",
+        "1, 2, 3",
+        "1, 2, 3, 4"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "You will use a dry chemical powder fire-extinguisher for:\n1. A paper fire\n2. A plastic fire\n3. A hydrocarbon fire\n4. An electrical fire\nThe combination of correct statements is:",
+      "options": [
+        "1, 4",
+        "1, 2, 3",
+        "1, 2, 3, 4"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "CO₂ type extinguishers are fit to fight:\n1. Class A fires\n2. Class B fires\n3. Electrical source fires\n4. Special fires: metals, gas, chemical product\nThe combination of correct statements is:",
+      "options": [
+        "1, 2, 3",
+        "1, 3, 4",
+        "2, 3, 4"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "To fight a fire in an air-conditioned cargo hold:",
+      "options": [
+        "You turn off the cargo hold ventilation and extinguish fire",
+        "Extinguish fire only",
+        "Fire-fighting is not necessary, since the transport of combustible goods in an air-conditioned cargo hold is forbidden"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In case of a fire due to the heating of the brakes, you fight the fire using:\n1. A dry powder fire extinguisher\n2. A water spray atomizer\n3. A water fire-extinguisher\n4. A CO₂ fire-extinguisher to the maximum\nThe combination of correct statements is:",
+      "options": [
+        "1, 2",
+        "1, 4",
+        "3, 4"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A class A fire is a fire of:",
+      "options": [
+        "Electrical origin",
+        "Solid material, generally of organic nature",
+        "Liquid or liquefiable solid"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "After landing, in case of high temperature of the brakes you:",
+      "options": [
+        "Release the parking brake and you approach the wheels sidewards",
+        "Release the parking brake and you approach the wheels either from aft or fore",
+        "Apply the parking brake and approach the wheels sidewards"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "H₂O extinguishers are fit to fight:",
+      "options": [
+        "Class A fires",
+        "Electrical source fires",
+        "Class B fires"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The fire-extinguisher types which may be used on Class B fires are:\n1. H₂O\n2. CO₂\n3. Dry-chemical\n4. Halogen\nThe combination of correct statements is:",
+      "options": [
+        "3, 4",
+        "1, 2, 3, 4",
+        "2, 3, 4"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The fire-extinguisher types which may be used on Class A fires are:\n1. H₂O\n2. CO₂\n3. Dry-chemical\n4. Halogen\nThe combination of correct statements is:",
+      "options": [
+        "3, 4",
+        "1, 2, 3, 4",
+        "2, 3, 4"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A dry-chemical type fire extinguisher is fit to fight:\n1. Class A fires\n2. Class B fires\n3. Electrical source fires\n4. Special fires: metals, gas, chemicals\nThe combination of correct statements is:",
+      "options": [
+        "1, 2, 3, 4",
+        "3, 4",
+        "1, 2, 3"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A fire occurs in a wheel and immediate action is required to extinguish it. The safest extinguishant to use is:",
+      "options": [
+        "CO₂ (carbon dioxide)",
+        "Foam",
+        "Dry powder"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "To use passengers' oxygen in case of severe cabin smoke is:",
+      "options": [
+        "Useless because breathing oxygen would explode under smoke conditions",
+        "Useless because the toxic cabin smoke is mixed with the breathing oxygen",
+        "Possible and recommended"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Following a heavy mass landing on a short runway, you should check the:",
+      "options": [
+        "Temperature of the brakes",
+        "Pressure of the hydraulic fluid",
+        "Pressure of the pneumatic tyres"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The correct statement about extinguishing agents on board aeroplanes is:",
+      "options": [
+        "Water may only be used for minor fires.",
+        "Burning cargo in cargo-aeroplanes is usually extinguished by using carbon dioxide.",
+        "Halon is an effective extinguishing agent for use in aeroplanes."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If smoke appears in the air conditioning, the first action to take is to:",
+      "options": [
+        "Determine which system is causing the smoke",
+        "Begin an emergency descent",
+        "Put on the mask and goggles"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Beneath fire extinguishers the following equipment for the fire fighting is on board:",
+      "options": [
+        "A hydraulic winch and a big box of tools",
+        "A big bunch of fire extinguishing blankets",
+        "Crash axes or crowbars"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A class B fire is a fire of:",
+      "options": [
+        "Liquid or liquefiable solid",
+        "Solid material usually of organic nature",
+        "Special fire: metal, gas, chemical product"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Fire fighting in the toilet must be performed with:",
+      "options": [
+        "All available extinguishers simultaneously",
+        "All available extinguishers in sequence",
+        "All available liquids"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The system which must be switched off in case of a belly compartment fire is generally the:",
+      "options": [
+        "Ventilation of the cargo compartment",
+        "Trim air",
+        "Pressurization"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "You will use a water fire-extinguisher (straight jet) on a fire of:\n1. Solid (fabric, carpet, ...)\n2. Liquids (ether, gasoline, ...)\n3. Gas\n4. Metals (sodium, ...)\nThe combination of correct statements is:",
+      "options": [
+        "3",
+        "1",
+        "2"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "You will use a halon extinguisher for a fire of:\n1. Solids (fabric, plastic, ...)\n2. Liquids (alcohol, gasoline, ...)\n3. Gas\n4. Metals (aluminium, magnesium, ...)\nThe combination of correct statements is:",
+      "options": [
+        "1, 2, 4",
+        "1, 2, 3, 4",
+        "1, 2, 3"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An engine fire warning will switch on the relevant fire shut-off handle. The fire shut-off handle will be switched off when:",
+      "options": [
+        "Fire is no longer detected",
+        "The fire-extinguisher has been triggered",
+        "The fire shut-off handle has been pulled"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A 1211 halon fire-extinguisher can be used for:\n1. A paper fire\n2. A fabric fire\n3. An electric fire\n4. A wood fire\n5. A hydrocarbon fire\nThe combination of correct statements is:",
+      "options": [
+        "2, 4, 5",
+        "2, 3, 4",
+        "1, 2, 3, 4, 5"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A CO₂ fire extinguisher can be used for:\n1. A paper fire\n2. A hydrocarbon fire\n3. A fabric fire\n4. An electrical fire\n5. A wood fire\nThe combination of correct statements is:",
+      "options": [
+        "2, 4, 5",
+        "1, 2, 3, 4, 5",
+        "1, 3, 5"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A water fire-extinguisher can be used without restriction for:\n1. A paper fire\n2. A hydrocarbon fire\n3. A fabric fire\n4. An electrical fire\n5. A wood fire\nThe combination of correct statements is:",
+      "options": [
+        "2, 3, 4",
+        "1, 2, 3, 4, 5",
+        "1, 3, 5"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "After a landing, with overweight and overspeed conditions, the tyres and brakes are extremely hot. The fireguards should approach the landing gear tyres:",
+      "options": [
+        "Only from left or right sides",
+        "From any side",
+        "Only from front or rear side"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "For a flight deck fire which of the following do you use?\n1. BCF\n2. Halon\n3. Dry Powder\n4. Water\nThe combination of correct statements is:",
+      "options": [
+        "1, 2, 3.",
+        "1, 2, 3 & 4.",
+        "1 & 2."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft is configured for seating 61 to 200 passengers. What is the requirement for hand held fire extinguishers?",
+      "options": [
+        "4 conveniently located in the passenger compartment.",
+        "2 conveniently located in the passenger compartment.",
+        "3 conveniently installed in the passenger compartment."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The number of hand fire extinguishers which must be conveniently located in the passenger compartment when the maximum approved passenger seating configuration is between 401 and 500 is:",
+      "options": [
+        "3.",
+        "6.",
+        "5."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Water fire extinguisher with a directed spray can be used on which fires?",
+      "options": [
+        "Gas fires.",
+        "Liquid fires.",
+        "Solid fires."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "You will use a Halon extinguisher for a fire of:\n1. Solids (fabric, plastic, ...)\n2. Liquids (alcohol, gasoline, ...)\n3. Gas\n4. Metals (aluminium, magnesium, ...)",
+      "options": [
+        "2, 3, 4",
+        "1, 2, 4",
+        "1, 2, 3"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Fire extinguishers should be located in the pilots' compartment and ...",
+      "options": [
+        "At each passenger compartment that is separate from the pilots' compartment and not readily accessible to the flight crew.",
+        "In the passenger cabin.",
+        "At each door."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In case of an engine jet pipe fire while on the ground you:",
+      "options": [
+        "Carry out a wet motoring cycle.",
+        "Carry out a dry motoring cycle.",
+        "Pull the fire shut off handle and trigger the engine's fire extinguishers."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If cabin altitude increases during level flight, the differential pressure:",
+      "options": [
+        "Decreases",
+        "Remains constant",
+        "Increases"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The minimum requirements for Supplemental Oxygen to be supplied in pressurised aeroplanes during and following an emergency descent are that for pilots it shall be available for the entire flight time that the cabin pressure altitude exceeds a minimum of X feet. That minimum of X feet is:",
+      "options": [
+        "13000 ft",
+        "14000 ft",
+        "15000 ft"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A slow decompression may be caused by:",
+      "options": [
+        "Loss of a cabin window",
+        "A leak in a door seal during normal pressurised flight",
+        "Loss of a door"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When flying in straight and level flight at FL290 for some considerable time a small leak develops in the cabin which causes a slow depressurisation, this can be seen on the cabin rate of climb indicator which will indicate:",
+      "options": [
+        "A rate of climb",
+        "Zero",
+        "A rate of descent of approximately 300 fpm"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aeroplane suffers an explosive decompression at an altitude of 31000 ft. What is the initial action by the operating crew?",
+      "options": [
+        "Place the seat belts signs to ON",
+        "To put on oxygen masks",
+        "Transmit a MAYDAY message"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A slow decompression may be caused by:\n1. a cracked window\n2. a bad functioning of the pressurization\n3. a minor leak in the fuselage\n4. the loss of a door\nThe combination of correct statements is:",
+      "options": [
+        "1, 2",
+        "3, 4",
+        "1, 2, 3"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A fast decompression is recognizable by the following elements:\n1. Mist in the cabin\n2. Blast towards the exterior of the aircraft\n3. Expansion of body gases\n4. Blast of air released violently from the lungs\nThe combination of correct statements is:",
+      "options": [
+        "1, 4",
+        "1, 2, 3, 4",
+        "1, 2, 3"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Supplemental oxygen is used to:",
+      "options": [
+        "Provide people on board with oxygen during a cabin depressurisation",
+        "Protect a crew who fights a fire"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Oxygen should be used after rapid decompression in an emergency descent until what altitude?",
+      "options": [
+        "14000 ft",
+        "13000 ft",
+        "10000 ft"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In case of an unexpected encounter with windshear, you will:\n1. set the maximum take-off thrust\n2. increase the pitch-up attitude up to the limit actuating the stick shaker\n3. pull in the drag devices (gear and flaps)\n4. keep the airplane's current configuration\n5. try to reach the maximum lift-to-drag ratio\nThe combination of correct statements is:",
+      "options": [
+        "1, 2, 4",
+        "1, 3, 5",
+        "3, 5"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If you encounter a \"microburst\" just after taking-off, at the beginning you will have:\n1. A head wind\n2. A strong rear wind\n3. Better climb performances\n4. A diminution of climb gradient\n5. An important thrust drop\nThe combination of correct statements is:",
+      "options": [
+        "1, 4",
+        "1, 3",
+        "4, 5"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "During a landing approach, the aircraft is subjected to windshear with an increasing tailwind. In the absence of a pilot action, the aircraft:\n1. flies above the glide path\n2. flies below the glide path\n3. has an increasing true airspeed\n4. has a decreasing true airspeed\nThe combination of correct statements is:",
+      "options": [
+        "2, 3",
+        "1, 4",
+        "2, 4"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Wind shear may be described as a change in wind direction and/or speed in space, including updraughts and downdraughts. To counter the effects of windshear the amount of control action that is required is:",
+      "options": [
+        "Substantial",
+        "Medium",
+        "Null"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "While approaching the outer-marker, the tower informs you about the presence of a \"microburst\". You will expect to encounter:",
+      "options": [
+        "Convection motion of air mass",
+        "Supercooled water",
+        "Windshear (vertical and horizontal)"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "One of the main characteristics of windshear is that it:",
+      "options": [
+        "Occurs only at a low altitude (2000 ft) and never in the horizontal plane",
+        "Can occur at any altitude in both the vertical and horizontal planes",
+        "Can occur at any altitude and only in the horizontal plane"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which one of the following magnitudes will be the first to change its value when penetrating a wind shear?",
+      "options": [
+        "Indicated airspeed",
+        "Groundspeed",
+        "Vertical speed"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft which experiences a headwind of 40 kt while making its way towards the centre of a microburst may expect, when crossing the microburst, to face a windshear of:",
+      "options": [
+        "40 kt",
+        "80 kt",
+        "20 kt"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When a commercial transport passenger airplane is equipped with a door in the flight crew compartment area, this door must include:",
+      "options": [
+        "A locking system to prevent any unauthorized access",
+        "A sealing system allowing the maintenance for as long as possible of the pressure in the cockpit in case of a depressurization in the compartment area",
+        "Distinctive red or yellow colored markings indicating the access area (in case of a blocked door)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In addition to inform each State, whose citizens are known to be on board an aircraft, the State of the country in which an aircraft has landed after an act of unlawful interference must immediately notify the:",
+      "options": [
+        "State of Registry of the aircraft, the State of the operator and ICAO",
+        "State of Registry of the aircraft and the State of the operator only",
+        "State of Registry of the aircraft and the DGCA"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In case of a hi-jack, the squawk code is:",
+      "options": [
+        "2000",
+        "7500",
+        "7700"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The flight deck door should be capable of being:",
+      "options": [
+        "Remotely locked from either inside or outside the compartment",
+        "Remotely locked by cabin crew operation from outside the compartment",
+        "Locked from within the compartment"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Who has the responsibility to take adequate measures for the safety of passengers and crew of an aircraft which is subjected to an act of unlawful interference until their journey can be continued? The:",
+      "options": [
+        "Contracting State in which the unlawful interference occurs",
+        "Commander of the aircraft",
+        "DGCA"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Following an act of unlawful interference on board an aeroplane, to whom the commander should submit a report of the act to:",
+      "options": [
+        "Both the local authority and the Authority of the State of the operator",
+        "The local Authority only",
+        "The Authority of the State within which the aeroplane is operating at the time of the unlawful interference"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "When flight crew members are at their duty stations they must:",
+      "options": [
+        "Wear a communications headset.",
+        "Keep the seat belts fastened.",
+        "Fully raise the seat."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In addition to informing each State, whose citizens are known to be on board an aircraft, the State of the country in which an aircraft has landed after an act of unlawful interference must immediately notify the:",
+      "options": [
+        "State of Registry of the aircraft, the State of the operator and ICAO.",
+        "State of Registry of the aircraft and the State of the operator only.",
+        "State of the operator, the J.A.A. and ICAO."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In case of ditching, the cabin attendants will:\n1. evacuate women and children first\n2. have the passengers embark directly in the life rafts\n3. prevent passenger movements which may impede the airplane's flotation ability\n4. ensure the complete evacuation of the airplane\nThe combination of correct statements is:",
+      "options": [
+        "1, 4",
+        "2, 3, 4",
+        "2, 3"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Mist in the cabin, pressure and temperature drop characterize:",
+      "options": [
+        "A fast depressurization",
+        "A plastic fire",
+        "A slow depressurization"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In the event of a precautionary landing, who is responsible for alerting the emergency services?",
+      "options": [
+        "The operations dispatcher.",
+        "The commander.",
+        "ATC."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If ditching is inevitable:",
+      "options": [
+        "Passengers should be briefed that even if they successfully evacuate the aeroplane it is inevitable that some of them will die from drowning.",
+        "The use of life jackets is to be replaced before the ditching.",
+        "Life jackets are to be inflated before leaving the aeroplane."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "From the following list:\n1. Fuel jettisoning system and its operation are free from fire hazard\n2. The fuel discharge is clear of any part of the aeroplane\n3. Fuel fumes do not enter any part of the aeroplane\n4. The jettison operation does not adversely affect the controllability of the aeroplane\nWhich of the above are requirements that must be shown to exist during fuel jettisoning tests:",
+      "options": [
+        "1, 4",
+        "1, 2, 3, 4",
+        "2, 3",
+        "1, 2"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Fuel jettison should be carried out:",
+      "options": [
+        "Anywhere if unavoidable.",
+        "Above 6,000ft AGL.",
+        "All answers are correct."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Fuel Jettison:",
+      "options": [
+        "Must be ordered by ATC to reduce aeroplane mass in an emergency situation.",
+        "Is a procedure to reduce mass in an emergency only.",
+        "Is a procedure that may be employed to reduce aeroplane mass where an overweight landing may result in damage to the aeroplane."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A list of dangerous goods, which may not be transported by air, can be found in:",
+      "options": [
+        "The shipper's declaration for dangerous goods",
+        "The technical instructions for the safe transport of dangerous goods by air",
+        "Annex 18 to the Chicago convention"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In compliance with the CAR-OPS, in order to carry hazardous materials on board a public transport aeroplane, they must be accompanied with a:",
+      "options": [
+        "Representative of the company owning the materials",
+        "Specialized handling employee",
+        "Transport document for hazardous materials"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The general information, instructions and recommendations on the transport of hazardous materials are specified in the:",
+      "options": [
+        "AIP (Aeronautical Information Publication)",
+        "Operation manual",
+        "Flight manual"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Products or materials are considered to be dangerous goods if the products or materials in question are defined as such by:",
+      "options": [
+        "The IATA document entitled \"Regulations governing the transportation of dangerous goods by air\"",
+        "The directive of the Community Union",
+        "The ICAO document entitled \"Technical Instructions for the safe transportation of dangerous goods by air\""
+      ],
+      "answer": 2
+    },
+    {
+      "question": "ICAO Appendix 18 is a document dealing with:",
+      "options": [
+        "The air transport of live animals",
+        "The safety of the air transport of hazardous materials",
+        "The noise pollution of aircraft"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The dangerous goods transport document, if required, shall be drawn up by:",
+      "options": [
+        "The shipper",
+        "The handling agent",
+        "The captain"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Can dangerous goods be carried in the passenger cabin or on the flight deck?",
+      "options": [
+        "Yes, provided they are non toxic.",
+        "Yes, if authorised by the authority.",
+        "Yes, but only goods specified in the technical instructions."
+      ],
+      "answer": 2
+    },
+    {
+        "question": "Your flight manual does not include specific supplementary information on landing distances on wet runways and the service bulletins or weather reports indicate that the runway may be wet at the estimated time of arrival, the required landing distance on a dry runway must be increased by:",
+    "options": [
+      "15%",
+      "18%",
+      "16.7%"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "A runway is considered damp when:",
+    "options": [
+      "Its surface is not dry, and when surface moisture does not give a shiny appearance",
+      "It is covered with a film of water of less than 3mm",
+      "Surface moisture gives it a shiny appearance"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "A runway is considered wet when:\n1. It is covered with a quantity of water or loose or slushy snow less than or equal to the equivalent of 3mm of water\n2. The amount of surface moisture is sufficient to modify its colour but does not give it a shiny appearance\n3. The amount of surface moisture is sufficient to make it reflective, but does not create large stagnant sheets of water\n4. It has stagnant sheets of water\nThe combination of correct statements is:",
+    "options": [
+      "1, 2",
+      "1, 3",
+      "1, 2, 3"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The presence of dynamic hydroplaning depends primarily on the:",
+    "options": [
+      "Strength of the headwind",
+      "Aircraft's weight",
+      "Depth of the standing water of the runway"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The braking efficiency is a piece of information presenting itself in the form of:",
+    "options": [
+      "Letter falling between A and E",
+      "Combination of the terms: poor, medium, good",
+      "Zero followed by two decimals"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "A runway covered with 4 mm thick water, is said to be:",
+    "options": [
+      "Contaminated.",
+      "Flooded.",
+      "Damp."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "A runway is considered damp when:",
+    "options": [
+      "It is covered with a film of water of less than 1 mm.",
+      "Its surface is not dry, and when surface moisture does not give it a shiny appearance",
+      "It is covered with a film of water of less than 3 mm."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The effect whereby a tyre is lifted from the runway due to aeroplane speed along the runway is known as:",
+    "options": [
+      "Surface tension.",
+      "Hydroplaning.",
+      "Aqua-skimming."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Viscous hydroplaning is caused by:",
+    "options": [
+      "A smooth and dirty runway surface.",
+      "Bald tyres.",
+      "A rough runway surface."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the shortest distance in a sequence for landing between a \"Heavy\" aircraft preceding a \"Light\" aircraft",
+    "options": [
+      "3NM",
+      "5NM",
+      "2km"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "A separation minimum shall be applied between a LIGHT or MEDIUM aircraft and a HEAVY aircraft and between a LIGHT aircraft and a MEDIUM aircraft when the heavier aircraft is making a low or missed approach and the lighter aircraft is landing on the same runway in the opposite direction or on a parallel opposite direction runway separated by:",
+    "options": [
+      "Less than 750m",
+      "Less than 760m",
+      "750m"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "A separation minimum shall be applied between a LIGHT or MEDIUM aircraft and a HEAVY aircraft and between a LIGHT aircraft and a MEDIUM aircraft when the heavier aircraft is making a low or missed approach and the lighter aircraft utilizing the opposite direction runway for take off, this minimum is:",
+    "options": [
+      "2 minutes",
+      "3 minutes",
+      "1 minute"
+    ],
+    "answer": 0
+  },
+  {"question": "In order to meet the wake turbulence criteria, what minimum separation should be applied when a MEDIUM aircraft is taking off behind a HEAVY aircraft and both are using the same runway?",
+    "options": [
+      "1 minute",
+      "2 minutes",
+      "3 minutes"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "In order to meet wake turbulence criteria, for arriving aircraft and using timed approaches, what minima shall be applied to aircraft landing behind a heavy or a medium aircraft?",
+    "options": [
+      "Medium aircraft other medium aircraft- 2 minutes Medium aircraft behind heavy aircraft- 3 minutes",
+      "Medium aircraft behind heavy aircraft- 3 minutes",
+      "Medium aircraft behind heavy aircraft- 4 minutes"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the minimum wake turbulence separation criteria when a LIGHT aircraft is taking off behind a MEDIUM aircraft and both are using the same runway?",
+    "options": [
+      "1 minute",
+      "3 minutes",
+      "2 minutes"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The letter \"L\" is written in the wake turbulence box of a flightplan form when the maximum certified take-off weight of an aircraft is less than or equal to:",
+    "options": [
+      "14600kg",
+      "7000kg",
+      "77000kg"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Wake turbulence risk is highest:",
+    "options": [
+      "If, just before landing a much lighter aircraft has landed at the same runway with heavy crosswind.",
+      "When a heavy aircraft has just performed a take-off at a closely situated parallel runway with a light crosswind.",
+      "When a preceding aircraft has briefly applied take-off thrust just prior to take off."
+    ],
+    "answer": 1
+  }
+]

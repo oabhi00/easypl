@@ -1,0 +1,43 @@
+[
+    {
+      "question": "The ideal length for a Marconi aerial for a frequency of 406 MHz is:",
+      "options": [
+        "36.9 cm",
+        "35.1 cm",
+        "17.5 cm",
+        "18.5 cm"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A disadvantage of directivity is:",
+      "options": [
+        "reduced range",
+        "side lobes",
+        "phase distortion",
+        "ambiguity"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is not an advantage of a slotted antenna (phase array)?",
+      "options": [
+        "Reduced side lobes",
+        "Improved resolution",
+        "Reduced power",
+        "Directivity"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "The ideal length of a half-wave dipole for a frequency of 75 MHz is:",
+      "options": [
+        "1.9 m",
+        "95 cm",
+        "3.8 m",
+        "47.5 cm"
+      ],
+      "answer": 0
+    }
+  ]
+  

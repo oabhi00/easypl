@@ -1,0 +1,121 @@
+[
+    {
+      "question": "Aurora Australis occurs in the",
+      "options": ["S hemisphere", "N hemisphere", "Equator"],
+      "answer": 0,
+      "explanation": "Aurora Australis, also known as the Southern Lights, occurs in the Southern Hemisphere."
+    },
+    {
+      "question": "Aurora Australis called ........ Lights",
+      "options": ["Northern", "Southern", "Temperate"],
+      "answer": 1,
+      "explanation": "Aurora Australis is called the Southern Lights."
+    },
+    {
+      "question": "Aurora Borealis occurs in the",
+      "options": ["S hemisphere", "N hemisphere", "Equator"],
+      "answer": 1,
+      "explanation": "Aurora Borealis, also known as the Northern Lights, occurs in the Northern Hemisphere."
+    },
+    {
+      "question": "Aurora Borealis are called ........ Lights",
+      "options": ["Northern", "Southern", "Temperate"],
+      "answer": 0,
+      "explanation": "Aurora Borealis is called the Northern Lights."
+    },
+    {
+      "question": "Corona occurs in ........ clouds",
+      "options": ["AS", "NS", "CS"],
+      "answer": 0,
+      "explanation": ""
+    },
+    {
+      "question": "Bishop's ring is due to the diffraction of light by fine particles of",
+      "options": ["water", "dust", "ice"],
+      "answer": 1,
+      "explanation": "Bishop's ring is a large, faint halo observed around the sun (and sometimes the moon) caused by the diffraction of sunlight by fine volcanic dust particles in the stratosphere."
+    },
+    {
+      "question": "The radius of the Bishop's ring is about",
+      "options": ["32 °", "22 °", "42 °"],
+      "answer": 1,
+      "explanation": "The radius of Bishop's ring is typically around 20-22 degrees from the sun or moon."
+    },
+    {
+      "question": "Superior Mirage occurs in marked",
+      "options": ["Lapse", "Isothermal", "Inversion"],
+      "answer": 2,
+      "explanation": "A superior mirage occurs when there is a temperature inversion, meaning a layer of warmer air is above a layer of colder air near the surface. This causes light rays to bend downwards, making objects appear higher than they actually are."
+    },
+    {
+      "question": "Inferior Mirage occurs when there is",
+      "options": ["Lapse", "Isothermal", "Inversion"],
+      "answer": 0,
+      "explanation": "An inferior mirage occurs when there is a strong temperature lapse rate near the surface, meaning the air is much hotter near the ground than above. This causes light rays to bend upwards, making objects appear lower or with a reflective surface below them."
+    },
+    {
+      "question": "Corona is formed due to the ........ of light",
+      "options": ["Refraction", "Diffraction", "Scattering"],
+      "answer": 1,
+      "explanation": "Coronae are formed by the diffraction of light by small water droplets or ice crystals of relatively uniform size in clouds."
+    },
+    {
+      "question": "Corona are formed due to light, passing through",
+      "options": ["Mist only", "Fog only", "small water or ice particles only", "Any one of all these"],
+      "answer": 3,
+      "explanation": "Coronae are optical phenomena produced by the diffraction of sunlight or moonlight by individual small water droplets or ice crystals, typically found in thin clouds like altostratus or altocumulus."
+    },
+    {
+      "question": "Halo is produced by",
+      "options": ["Refraction", "Diffraction", "Scattering"],
+      "answer": 0,
+      "explanation": "Halos are produced by the refraction (bending) of sunlight or moonlight as it passes through ice crystals in high-altitude cirrus clouds."
+    },
+    {
+      "question": "Halo is produced when light passes through",
+      "options": ["water particles", "ice crystals", "both"],
+      "answer": 1,
+      "explanation": "Halos are specifically formed by the refraction of light through ice crystals, which have a hexagonal shape."
+    },
+    {
+      "question": "Halo occur in the cloud",
+      "options": ["AS", "NS", "CS"],
+      "answer": 2,
+      "explanation": "Halos typically occur in cirrostratus (CS) clouds, which are thin, high-level clouds composed of ice crystals."
+    },
+    {
+      "question": "Halo is luminous ring of ........ radius",
+      "options": ["32 °", "22 °", "42 °"],
+      "answer": 1,
+      "explanation": "The most common type of halo is the 22° halo, which appears as a luminous ring with an angular radius of approximately 22 degrees around the sun or moon."
+    },
+    {
+      "question": "Halo round the sun shows a pure clear ........ on the outside",
+      "options": ["Red", "Yellow", "Violet"],
+      "answer": 0,
+      "explanation": "In a typical 22° halo, the colors are often faintly visible, with red on the inside (closest to the sun or moon) and sometimes a bluish or violet tinge on the outside due to the way light is refracted by the ice crystals."
+    },
+    {
+      "question": "Halo signifies predominance in the cloud of",
+      "options": ["Supercooled water drops", "Ice crystals", "Both"],
+      "answer": 1,
+      "explanation": "The presence of a halo indicates that the cloud causing it is primarily composed of ice crystals."
+    },
+    {
+      "question": "The cloud which cause Halo has ........ chances of ice accretion",
+      "options": ["negligible", "maximum", "medium"],
+      "answer": 0,
+      "explanation": "Cirrostratus clouds, which cause halos, are very thin and composed of ice crystals that are generally too small and sparse to cause significant ice accretion on aircraft."
+    },
+    {
+      "question": "Sometimes a halo with a radius of ........ is observed, called Large Halo",
+      "options": ["32 °", "42 °", "22 °"],
+      "answer": 1,
+      "explanation": "A less common type of halo is the 46° halo, which has a larger angular radius of approximately 46 degrees. This is what is referred to as a 'Large Halo'."
+    },
+    {
+      "question": "Halo occurs from ........ cloud",
+      "options": ["Low", "Medium", "High"],
+      "answer": 2,
+      "explanation": "Halos occur in high-level clouds, specifically cirrus and cirrostratus clouds, which are composed of ice crystals."
+    }]

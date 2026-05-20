@@ -1,0 +1,4225 @@
+[
+    {
+      "question": "Gyro rigidity increases with?",
+      "options": [
+        "Increasing RPM, and concentrating mass close to the center.",
+        "Increasing RPM and concentrating mass at the periphery.",
+        "Decreasing RPM and radius."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "At what approximate date is the earth closest to the sun (perihelion)?",
+      "options": [
+        "21 March.",
+        "21 September.",
+        "Beginning of January."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Convergence is:",
+      "options": [
+        "the angle of inclination of meridians towards each other.",
+        "the angle at which a meridian cuts the equator.",
+        "the angle of inclination of one parallel of latitude with another."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The initial great circle track from A (S 27º30' E 017º45') to B (S 27º30' E 029º15') is:",
+      "options": [
+        "092.65°",
+        "088.34°",
+        "091.61°"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Consider the following statements on sunrise and sunset.",
+      "options": [
+        "In May sunrise occurs later at 45°N than at 45°S.",
+        "In November sunset occurs earlier at 45°S than at 45°N.",
+        "At equator sunrise and sunset occur at quite regular times throughout the year."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When approaching the international date line from the east, you:",
+      "options": [
+        "should increase your date by an extra date at the first midnight you experience.",
+        "should be prepared to decrease your date by 1.",
+        "should be prepared to increase your date by 1."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When Magnetic direction is 270° and true direction is 265°, the variation is:",
+      "options": [
+        "5° West",
+        "5° East",
+        "5° West in N. Hemisphere"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Zero variation occurs only at:",
+      "options": [
+        "Equator",
+        "Poles",
+        "could occur anywhere"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The aircraft radio equipment which emits on a frequency of 4400MHz is the:",
+      "options": [
+        "weather radar",
+        "primary radar",
+        "radio altimeter"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The rhumb-line distance between points A (60°00'N 002°30'E) and B (60°00'N 007°30'W) is:",
+      "options": [
+        "600nm",
+        "450nm",
+        "300nm"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft flies the following rhumb line tracks and distance: 700 NM South, 700 NM East, 700 NM North, 700 NM West from 04°00'N 030°00'W. Final position?",
+      "options": [
+        "04°00'N 030°30'W",
+        "03°58'N 030°02'W",
+        "04°00'N 029°55'W"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft at position 60°N 005°W tracks 090° (T) for 350 km. On completion of the flight the longitude will be:",
+      "options": [
+        "002°10'W",
+        "000°15'E",
+        "001°19'E"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The circumference of the Earth is approximately:",
+      "options": [
+        "5,600 Km",
+        "13,200 Km",
+        "40,000 Km"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft is over position PONTA (55°30'N 060°15'W), receiving PBN VOR (53°30'N 060°15'W). Magnetic variation is 31°W at PONTA and 28°W at PBN. What is the radial from PBN?",
+      "options": [
+        "031°",
+        "332°",
+        "028°"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Distance Q to R 1960 NM, Groundspeed 'out' 380 kt, Groundspeed 'back' 470 kt, Safe endurance 7 HR. Distance to PSR?",
+      "options": [
+        "1471 NM",
+        "1442 NM",
+        "1538 NM"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the strength of the H component of the earth's magnetic field at the magnetic North pole?",
+      "options": [
+        "0",
+        "10",
+        "16"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A direct reading magnetic compass will be affected by?",
+      "options": [
+        "Adjacent electrical equipment and  Ferrous metals.",
+        "Adjacent electrical equipment and  Non-ferrous metals."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "If the ADF pointer indicates 270° when the RMI rose is stuck at 075°, what is the relative bearing of the beacon?",
+    "options": [
+      "290 degrees",
+      "110 degrees",
+      "195 degrees"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "When an aircraft lands on a southerly heading in the southern hemisphere, the direct reading magnetic compass will indicate:",
+    "options": [
+      "180° turn to the west",
+      "180° turn to the east",
+      "No apparent turn"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which one of the following, concerning great circle on a direct Mercator chart, is correct?",
+    "options": [
+      "With the exception of meridians and the equator, they are curves concave to the equator.",
+      "Their center cannot be that of the Earth.",
+      "They are represented by straight lines."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which statement is correct concerning great circles on a polar stereographic chart?",
+    "options": [
+      "The higher the latitude the closer they approximate to a straight line.",
+      "The lower the latitude the closer they approximate to a straight line.",
+      "They are all represented by straight lines."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Distance Q to R 1970 NM, Groundspeed 'out' 436 kt, Groundspeed 'back' 485 kt, Safe endurance 9 HR. Distance to PSR?",
+    "options": [
+      "1964 MIN",
+      "2079 MIN",
+      "2066 MIN"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "True course from A to B = 090°, TAS 460 kts, Wind 360/100 kt, Variation = 10°E, Deviation = -2°. Calculate compass heading and GS?",
+    "options": [
+      "069° - 448 kt",
+      "067° - 446 kt",
+      "069° - 458 kt"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the true altitude of an aircraft if its altimeter indicated 16000 ft when the ambient temperature was -30°C?",
+    "options": [
+      "15200 ft",
+      "16200 ft",
+      "16400 ft"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "If pressure altitude is 30000 ft, indicated TAT is -10°C, mach number is 0.82, what is the density altitude?",
+    "options": [
+      "31000 ft",
+      "30382 ft",
+      "30674 ft"
+    ],
+    "answer": 1
+},
+    {
+      "question": "When descending through an isothermal layer at constant CAS?",
+      "options": [
+        "TAS increases.",
+        "TAS decreases.",
+        "TAS remains constant."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "How will mach meter indication vary in a constant CAS climb?",
+      "options": [
+        "Increase.",
+        "Decrease.",
+        "Remain constant."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mach meter indications?",
+      "options": [
+        "Vary with airspeed and temperature.",
+        "Vary only with airspeed.",
+        "Vary with density and altitude."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Two points A and B are 1000 NM apart. TAS= 490 kt. On the flight between A and B the equivalent headwind is -20 kt. On the return leg between B and A, the equivalent headwind is +40 kt. What distance from A, along the route A to B, is the point of Equal Time (PET)?",
+      "options": [
+        "470 NM.",
+        "455 NM.",
+        "530 NM."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft was over 'A' at 1600 hours flying direct to 'B'. Distance 'A' to 'B' 3000 NM, True airspeed 390 kt, Mean wind component 'out' +55 kt, Mean wind component 'back' -75 kt, Safe endurance 9 HR 30 MIN. The distance from 'A' to the Point of Safe Return (PSR) 'A' is?",
+      "options": [
+        "2254 NM.",
+        "1752 NM.",
+        "1711 NM."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "TAS = 197 Kt, True course = 240°, W/V = 180/30 kt. Descent is initiated at FL 220 and completed at FL 40. Distance to be covered during descent is 39 NM. What is the approximate rate of descent?",
+      "options": [
+        "800 FT/MIN.",
+        "950 FT/MIN.",
+        "1400 FT/MIN."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft is on an ILS 3 degree glide slope, which passes over the runway threshold at a height of 50 feet. The DME range is 18 nm from the threshold. What is the height above the runway threshold elevation?",
+      "options": [
+        "5522 feet.",
+        "5472 feet.",
+        "5422 feet."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "When the center of gravity is at the forward limit, an aeroplane will be:",
+      "options": [
+        "Extremely unstable and require small elevator control to change pitch.",
+        "Extremely stable and will require excessive elevator control to change pitch.",
+        "Extremely stable and require small elevator control to change pitch."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "By adding to the basic empty mass the following fixed necessary equipment for a specific flight (catering, safety and rescue equipment, fly away kit, crew), we get:",
+      "options": [
+        "Landing mass",
+        "Dry operating mass",
+        "Take-off mass"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A jet transport has following structural limits:\n Maximum Ramp Mass : 63 060 kg, Maximum T/O Mass : 62 800 kg \n Maximum Landing Mass: 54 900 kg , Maximum Zero Fuel Mass : 51 300 g \n The aero plane fuel is loaded accordance with the following requirements:\n Taxi Fuel: 400 kg, Trip fuel : 8400 kg, contingency & final reserve fuel : 1800 kg, alternate fuel:1100 kg\n if the DOM is 34930 kg, determine the maximum traffic load that can be carried on the flight if departure and landing airfeild are not performance limited.",
+      "options":["16 370 kg","16 430 kg","17 070 kg"],
+      "answer":0
+    },
+    {
+      "question":"Determine the zero fuel mass for the following single engine aeroplane. \nStandard Empty Mass: 1764 lbs,Optional Equipment:35lbs \npilot + front seat passenger : 300 lbs, cargo mass: 350 lbs \n ramp fuel = block fuel = 60 gal , trip fuel : 35 Gal. Fuel density : 6lbs/Gal",
+      "options":["2659 lbs","2414 lbs","2449 lbs"],
+      "answer":2
+    },
+    {
+      "question":"Maximum Structural Landing mass : 125000 kg, Maximum Zero fuel Mass:108500 kgs \n Maximum Structural T/O Mass: 155000 kg, DOM = 82000 kg\n Scheduled trip fuel is 17000 kg and the reserve fuel is 5000 ks. \n Assuming performance limitations are not restricting, the maximum permitted t/o mass and maximum traffic load are:",
+      "options":["130500 kg and 26500 kg","130500 kg and 31500 kg","125500 kg and 21500 kg"],
+      "answer":0
+    },
+    {
+      "question": "Loads must be adequately secured in order to:",
+      "options": [
+        "Prevent excessive 'g'-loading during the landing flare",
+        "Avoid unplanned center of gravity (CG) movement and aircraft damage",
+        "Allow steep turns"
+      ],
+      "answer": 1
+    },
+    {
+          "question": "Who is responsible for specifying the principle method of loading?",
+          "options": [
+            "the operator",
+            "the loading supervisor",
+            "the CAA"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "A reduction in airspeed of aircraft will cause an air driven artificial horizon to Indicate:",
+          "options": [
+            "a climbing turn to the right",
+            "a pitch up",
+            "a descending turn to the left"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "While carrying out a turn at magnetic equator with DRC, there will be:",
+          "options": [
+            "no turning error",
+            "a tendency to over read the turn through North & under read the turn through South",
+            "a tendency to under read all turns due to liquid swirl"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "During an IFR flight TAS and time appear to deviate from the data in the flight plan. The minimum deviations, that should be reported to ATC in order to conform to PANS-RAC, are:",
+          "options": [
+            "TAS 10kt and time 2 minutes",
+            "TAS 5% and time 3 minutes",
+            "TAS 3% and time 3 minutes"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Magnetic heading 311°, Drift angle 10° left, Relative bearing of NDB 270° What is the magnetic bearing of the NDB measured from the aircraft?",
+          "options": [
+            "221°",
+            "208°",
+            "211°"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "Which white EFIS symbol below represents the aircraft?",
+          "options": [
+            "a) △ ",
+            "b) ◯ ",
+            "c)⚫"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "What is the effect on the Mach number and TAS in an aircraft that is climbing with constant CAS?",
+          "options": [
+            "Mach number decreases; TAS decreases",
+            "Mach number increases: TAS remains constant",
+            "Mach number increases; TAS increases"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "In case of accidental closing of an aircraft's left static pressure port (rain, birds), the altimeter?",
+          "options": [
+            "Over reads the altitude in case of a side-slip to the right and displays the correct information during symmetric flight.",
+            "Keeps on providing reliable reading in all situations.",
+            "Over reads the altitude in case of a sideslip to the left and displays the correct information during symmetric flight."
+          ],
+          "answer": 2
+        },
+        {
+          "question": "If an aircraft is equipped with one altimeter which is compensated for position error and another altimeter which is not, and all other factors being equal?",
+          "options": [
+            "At high speed the non-compensated altimeter will indicate a lower altitude.",
+            "At high speed, the non-compensated altimeter will indicate a higher altitude.",
+            "ATC will get an erroneous altitude report SSR,"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "After an aircraft has passed through a volcanic cloud which has blocked the total pressure probe inlet of the airspeed indicator, the pilot begins a stabilized descent and finds that the indicated airspeed?",
+          "options": [
+            "Increases steadily.",
+            "Decreases abruptly towards zero.",
+            "Decreases steadily"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "What happens to mach meter indication in a constant RAS climb?",
+          "options": [
+            "Decreases",
+            "Increases.",
+            "Increases then remains constant"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "The hysteresis error of an altimeter varies substantially with the?",
+          "options": [
+            "Time passed at a given altitude.",
+            "Mach number of the aircraft",
+            "Aircraft altitude."
+          ],
+          "answer": 0
+        },
+        {
+      "question": "When flying from a sector of warm air into one of colder air, the altimeter will?",
+      "options": [
+        "Over read",
+        "Be just as correct as before",
+        "Show the actual height above ground"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is QNH?",
+      "options": [
+        "Ambient pressure at msl",
+        "The pressure to be set on the altimeter subscale to obtain an indication of zero on the runway",
+        "The pressure to be set on the altimeter subscale to obtain a reading of the pressure altitude of the runway"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "During the approach, a crew reads on the radio altimeter the value of 650 ft. This is an indication of the true?",
+      "options": [
+        "Height of the lowest wheels with regard to the ground at any time",
+        "Height of the aircraft with regard to the ground at any time",
+        "Height of the aircraft with regard to the runway"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Modern low altitude radio altimeters emit waves in the following frequency band?",
+      "options": [
+        "HF (High Frequency)",
+        "UHF (Ultra High frequency)",
+        "SHF (Super High Frequency)"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The operation of the radio altimeter of a modern aircraft is based on?",
+      "options": [
+        "Pulse modulation of the carrier wave",
+        "A combination of frequency modulation and pulse modulation",
+        "Frequency modulation of the carrier wave"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If the pitot pipe becomes partly blocked?",
+      "options": [
+        "The VSI indication will be too low when climbing",
+        "The VSI will be too low when descending",
+        "The VSI will not be affected"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If the static pipe becomes partly blocked?",
+      "options": [
+        "The VSI indication will be too high with descending",
+        "The VSI indication will be too high when accelerating at constant descending",
+        "The VSI indication will be too low when descending"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What does an AS indicate?",
+      "options": [
+        "MMO",
+        "VNE",
+        "Temperature and VMO"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What speed is VNO?",
+      "options": [
+        "That which may only be exceeded with caution and in still air",
+        "That which may never be exceeded",
+        "That which may be exceeded only in emergencies"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What will be the effect on the ASI if the pitot tube of an unpressurised aircraft is fractured and the pitot drain is blocked?",
+      "options": [
+        "It will over read",
+        "It will under read",
+        "It will give a constant reading"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Considering the maximum operational Mach number (MMO) and the maximum operational speed (VMO), the captain of a pressurized aircraft begins his descent from a high flight level. To meet his scheduled time of arrival, he decides to use the maximum ground speed at any time of the descent. He will be limited?",
+      "options": [
+        "By the MMO",
+        "By the VMO in still air",
+        "Initially by the MMO, then by the VMO below a certain flight level"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In a standard atmosphere and at sea level, the calibrated airspeed (CAS) is?",
+      "options": [
+        "Lower than the true airspeed (TAS)",
+        "Equal to the true airspeed (TAS)",
+        "Independent of the true airspeed (TAS)"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "VLO is the maximum?",
+      "options": [
+        "Speed at which the landing gear can be operated with full safety",
+        "Flight speed with landing gear down",
+        "Speed with flaps extended in a given position"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mach meter indications?",
+      "options": [
+        "Vary with airspeed and temperature",
+        "Vary only with airspeed",
+        "Vary only with temperature"
+      ],
+      "answer": 1
+    },
+    {"question": "How will mach meter indication respond if an aircraft passes through a cold front when flying at constant CAS and altitude?",
+    "options": [
+      "Increase",
+      "Decrease",
+      "Remain constant"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "According to the building principle of a gyroscope, the best efficiency is obtained through the concentration of the mass?",
+    "options": [
+      "Close to the axis and with a low rotation speed",
+      "On the periphery and with a high rotation speed",
+      "Close to the axis and with a high rotation speed"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "A Standby horizon or emergency attitude indicator?",
+    "options": [
+      "Only works if there is a complete electrical failure",
+      "Contains its own separate gyro",
+      "Is automatically connected to the primary vertical gyro if the alternator fails"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "A turn indicator is built around a gyroscope with?",
+    "options": [
+      "1 degree of freedom",
+      "3 degrees of freedom",
+      "2 degrees of freedom"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The indication on a directional gyroscope or gyrocompass is subject to errors due to which factors? (1)Rotation of earth  (2)aero plane motion on earth  (3)Lateral and transversal aeroplane bank angles.  (4)North Change  (5)Mechanical Defects",
+    "options": [
+      "2, 3, 5",
+      "1, 2, 3, 5",
+      "3, 4, 5"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "When turning through 270° at constant AOB and pitch attitude, what will a classic artificial horizon indicate?",
+    "options": [
+      "Too much nose up and too little bank angle",
+      "Too much nose up and too much bank angle",
+      "Too little nose up and too little bank angle"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "An artificial horizon has?",
+    "options": [
+      "Two degrees of freedom and a vertical spin axis",
+      "Two degrees of freedom and a longitudinal spin axis",
+      "Two degrees of freedom and a lateral spin axis"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "A turn indicator used in conjunction with an attitude indicator will show: (1) Turn direction  (2) Rate of turn  (3) Angular velocity about the true vertical axis.  (4) Angular velocity about the vertical axis.  (5) Angular velocity about the longitudinal axis.",
+    "options": [
+      "1, 2",
+      "1, 3",
+      "1, 2, 4"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "ROT indications are?",
+    "options": [
+      "Proportional to TAS",
+      "Proportional to CAS",
+      "Proportional to mass"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "For a rate one turn at 150 Kts, the AOB must be?",
+    "options": [
+      "2°",
+      "33°",
+      "44°"
+    ],
+    "answer":0
+  },
+  {
+    "question": "Following a left engine failure, the pilot of a multi-engine aircraft uses rudder to arrest the yaw, whilst side slipping down track with the wings held level by the ailerons. What will the turn and slip indicator show in this condition?",
+    "options": [
+      "Both needle and ball central",
+      "Both needle and ball right",
+      "Both needle and ball left"
+    ],
+    "answer": 0
+  }
+,
+    {
+      "question": "In a Satellite-Assisted Navigation System (GNSS/GPS), a fix is obtained by:",
+      "options": [
+        "the aircraft's receiver measuring the phase angle of signals received from a number of satellites in known positions",
+        "measuring the time taken for an aircraft's transmissions to travel to a number of satellites, in known positions, and return to the aircraft's receiver",
+        "measuring the time taken for a minimum number of satellites' transmissions, in known positions, to reach the aircraft's receiver"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An airway 10 NM wide is to be defined by two VORs each having a resultant bearing accuracy of plus or minus 3.5°.\nIn order to ensure accurate track guidance within the airway limits the maximum distance apart for the transmitter is approximately:",
+      "options": [
+        "50 NM",
+        "165 NM",
+        "105 NM"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A DME in tracking mode subsequently experiences a reduction in signal strength will switch the equipment in the first instance to:",
+      "options": [
+        "standby mode",
+        "signal controlled search",
+        "memory mode"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In which situation will speed indications on an airborne Distance Measuring Equipment (DME) most closely represent the groundspeed of an aircraft flying at FL400?",
+      "options": [
+        "When tracking directly away from the station at a range of 10 NM",
+        "When tracking directly towards the station at a range of 100 NM or more",
+        "When passing abeam the station and within 5 NM of it"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is an ILS localiser frequency?",
+      "options": [
+        "109.15 MHz",
+        "108.25 MHz",
+        "110.20 MHz"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A Primary radar operates on the principle of:",
+      "options": [
+        "phase comparison",
+        "continuous wave transmission",
+        "pulse technique"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Factors liable to affect most NDB/ADF system performance and reliability include:",
+      "options": [
+        "static interference - night effect - absence of failure warning system",
+        "static interference - station interference - latitude error",
+        "height error - station interference - mountain effect"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The reason for using different frequencies for transmitting and receiving in the DME system:",
+      "options": [
+        "Is to prevent self-triggering of the receiving equipment by the transmitter",
+        "Is to avoid the reception in the aircraft of signals referring to other aircraft.",
+        "Is to prevent overload of the system."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the maximum distance between VOR and DME/TACAN ground to have the same Morse code identifier?",
+      "options": [
+        "2000 m",
+        "300 m"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The minimum number of satellites required for receiver autonomous integrity monitoring is",
+      "options": [
+        "4",
+        "5"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which radio wave is most affected by the ionosphere?",
+      "options": [
+        "The sky wave",
+        "The space wave."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The greatest distance over the ground is achieved when flying a great circle track",
+      "options": [
+        "in tailwind conditions",
+        "in nil wind conditions",
+        "in beam wind conditions"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "radial inbound the aircraft would fly?",
+      "options": [
+        "a constant heading.",
+        "a rhumb line track.",
+        "a great circle track."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A VOT is:",
+      "options": [
+        "a test VOR.",
+        "a tracking VOR",
+        "a terminal VOR."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft is on a heading of 100 degrees (m) from a VOR.To make the VOR/ILS deviation indicator needle centralise with the TO flag showing, the following bearing should be selected on the OBS:",
+    "options": [
+      "110 degrees.",
+      "290 degrees.",
+      "280 degrees."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Compass Heading 090, Deviation 2°E, Variation 2°W, AS 160 kts. Whilst flying for a distance of 14 NM in 6 MIN. what is the W/V (°/kts)?",
+    "options": [
+      "160°/50 kt.",
+      "150°/50 kt.",
+      "160°/60 kt."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "In a banked turn a barometric altimeter using a single static source?",
+    "options": [
+      "Will over indicate.",
+      "Will under indicate.",
+      "Might over or under indicate, depending on the position of the static source."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Conversion angle is:",
+    "options": [
+      "Difference between G/C being measured at either meridian",
+      "Difference between G/C and R/L Bearings",
+      "Difference between Grid north and True North."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "A mach meter is made up of?",
+    "options": [
+      "An altimeter with a density capsule.",
+      "An ASI with an altitude capsule.",
+      "A VSI with a modified scale."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "VMO is calculated based on?",
+    "options": [
+      "TAS.",
+      "EAS.",
+      "CAS."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "In a non-pressurized aircraft, if one or several static pressure ports are damaged, there is an ultimate emergency means for restoring a practically correct static pressure intake?",
+    "options": [
+      "Breaking the rate-of climb indicator glass window.",
+      "Slightly opening a window to restore the ambient pressure in the cabin.",
+      "Descending as much as possible in order to fly at a pressure as close to 1013.25 hPa as possible."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The response time of a vertical speed detector may be increased by adding a?",
+    "options": [
+      "Correction based on an accelerometer sensor.",
+      "Bi-metallic strip.",
+      "Return spring."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Heading information given by a gyro platform., is given by a gyro at?",
+    "options": [
+      "2 degrees-of-freedom in the vertical axis.",
+      "1 degree-of-freedom in the horizontal axis.",
+      "2 degrees-of-freedom in the horizontal axis."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "In low altitude radio altimeters, the height measurement (above the ground) is based upon:",
+    "options": [
+      "a frequency modulation wave, for which the frequency variation between the transmitted wave and the received wave after ground reflection is measured",
+      "a pulse transmission, for which time between transmission and reception is measured on a circular scanning screen",
+      "a wave transmission, for which the frequency shift by DOPPLER effect after ground reflection is measured"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What heading is the aircraft currently flying in diagram below?",
+    "options":["25°","30°","37°"],
+    "answer":2,"image":"../image/sample1.png"
+  },
+    {
+      "question": "At what approximate date is the earth furthest from the sun (aphelion)?",
+      "options": [
+        "Beginning of July.",
+        "End of September.",
+        "Beginning of January."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If pressure altitude is 22800 ft, at an elevation of 22000 ft, what is QNH?",
+      "options": [
+        "985 hPa",
+        "976 hPa",
+        "1034 hPa"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Direction is measured",
+      "options": [
+        "clockwise from North",
+        "anti clockwise from north",
+        "clockwise or anticlockwise from the parallel of latitude."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The highest value of longitude is found:",
+      "options": [
+        "close to the poles.",
+        "along equator.",
+        "at greenwich anti meridian"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A great circle track joins position A (57° S 140°W) and B (63° S 150°W). What is the difference between the great circle track at A and B?",
+      "options": [
+        "It increases by 9°.",
+        "It decreases by 9°.",
+        "It increases by 6°."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "G is in position 35°00'N 034°45'W. For a particular date sunrise at 35°00'N is in the air almanac listed as 0715. what is the time of sunrise at G, given in UTC?",
+      "options": [
+        "0715 (UTC)",
+        "0504 (UTC)",
+        "0934 (UTC)"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Nautical mile is defined as a unit of measurement of distance",
+      "options": [
+        "fixed by statute as 5280 ft.",
+        "equal to the average length of one minute of latitude",
+        "equal to 1/10000th part of the meridian between equator and the pole."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An agonic line is a line that connects:",
+      "options": [
+        "positions that have the same variation",
+        "points of equal magnetic horizontal field strength",
+        "positions that have 0° variation"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Position A 45° N, ?° E, Position B 45° N, 45° 15'E. Distance A-B =350 NM, B is to the East of A, What is the longitude of position A?",
+      "options": [
+        "37° 00'E.",
+        "48° 00 E.",
+        "51° 15°E."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The 'departure' between position 60°N 100°E and 60° N 'X' is 1200 NM. What is the longitude of 'X'?",
+      "options": [
+        "140°E.",
+        "140°W.",
+        "175°W."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Two aircraft are flying eastwards around the earth. Aircraft A is flying along the 50°N parallel of latitude and aircraft B is flying along the equator. If aircraft A is flying at a groundspeed of 340 knots, what would be the groundspeed of aircraft B both aircraft fly once round the Earth in the same journey time?",
+      "options": [
+        "529 knots.",
+        "540 knots.",
+        "480 knots."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "When landing on runway 36 in Northern hemisphere, a direct reading magnetic compass indicates?",
+      "options": [
+        "A westerly turn.",
+        "An easterly turn.",
+        "No turn."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Magnetic heading can be calculated from true heading using?",
+      "options": [
+        "A compass and a map indicating isogonal lines.",
+        "A compass and a calibration card.",
+        "A compass and a deviation card."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Errors in direct reading magnetic compasses can be caused by?",
+      "options": [
+        "Turns through 90 degrees East and 270 degrees west.",
+        "Acceleration on east/west headings.",
+        "Crosswinds when on east/west headings."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In an aircraft taking-off on runway 27 in the northern hemisphere, what will its D R M C indicate?",
+      "options": [
+        "Southerly turn.",
+        "Northerly turn.",
+        "Oscillations about west."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The roll out must be performed at........when turning from NW to NE in the southern hemisphere?",
+      "options": [
+        "025 degrees.","045 degrees.",
+      "055 degrees."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "A perfectly straight line on a Lamberts chart is?",
+    "options": [
+      "A parallel of latitude.",
+      "A rhumb line.",
+      "A meridian of longitude."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "How do rhumb lines, (other then meridians), appear on polar stereographic chart?",
+    "options": [
+      "As straight lines.",
+      "As lines concave to the nearer pole.",
+      "As lines convex to the nearer pole."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the time to the point of safe endurance if an aircraft has a TAS of 300 kts, the outbound leg is 200 NM with 20 knots headwind? It has a safe endurance of 6 hours, if the wind component on the outbound and inbound leg is the same?",
+    "options": [
+      "2.1 hours.",
+      "2.6 hours.",
+      "2.9 hours."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Maximum allowable tailwind component for landing 10 kt. Planned runway 05 (047° magnetic). The direction of the surface wind reported by ATIS 210°. Variation is 17°E. calculate the maximum allowable wind speed that can be accepted without exceeding the tailwind limit?",
+    "options": [
+      "1 kt.",
+      "18 kt.",
+      "14 kt."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "If QNH is 999 hPa, what is the pressure altitude at an elevation of 25000 ft?",
+    "options": [
+      "25400 ft.",
+      "25200 ft.",
+      "25300 ft."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "If pressure altitude is 6500 ft, at an elevation of 5660 ft, what is QNH?",
+    "options": [
+      "985 hPa",
+      "1034 hPa",
+      "1026 hPa"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "If pressure remains constant as temperature increases?",
+    "options": [
+      "Density will increase, causing the CAS: TAS ratio to increase.",
+      "Density will decrease, causing the CAS: TAS ratio to decrease.",
+      "Density will decrease, causing the CAS: TAS ratio to increase."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "If an aircraft is climbed with a constant mach meter indication in the ISA, how should the ASI indication respond?",
+    "options": [
+      "Increase.",
+      "Decrease.",
+      "Decrease then remain constant."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "How will mach meter indication respond if an aircraft passes through a cold front when flying at constant CAS and altitude?",
+    "options": [
+      "Increase.",
+      "Decrease.",
+      "Remain constant."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "An aircraft was over 'A' at 1435 hours flying direct to 'B'. Distance 'A' to 'B' 2900 NM, True airspeed 470 kt, Mean wind component 'out' +55 kt, Mean wind component 'back' -75 kt, The ETA for reaching the Point of Equal Time (PET) between 'A' and 'B' is?",
+    "options": [
+      "17:44.",
+      "16:57.",
+      "17:21."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Distance 'A' to 'B' 2700 NM, Groundspeed 'out' 465 kt, Groundspeed 'back' 515 kt. The time from 'A' to the Point of Equal Time (PET) between 'A' and 'B' is?",
+    "options": [
+      "183 MIN.",
+      "165 MIN.",
+      "171 MIN."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "If there is a 12 knot increase in headwind by what amount must the rate of descent be changed in order to maintain a 3° glide slope?",
+    "options": [
+      "It must be increased by 35 ft/ min.",
+      "It must be decreased by 35 ft/ min.",
+      "It must be decreased by 61 ft/ min."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "850 FT/MIN equals?",
+    "options": [
+      "5.2 m/sec",
+      "4.6 m/sec",
+      "4.3 m/sec"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "A revenue flight is to be made by a jet transport. The following are the aeroplane's structural limits:\nMaximum Ramp Mass: 69 900 kg,\nMaximum Take Off Mass: 69 300 kg\nMaximum Landing Mass: 58 900 kg,\nMaximum Zero Fuel Mass: 52 740 kg\nTake Off and Landing mass are not performance limited.\nDry Operating Mass: 34 930 kg, Trip Fuel: 1 500 kg\nTaxi Fuel: 250 kg,\nContingency & final reserve fuel: 1 450 kg\nAlternate Fuel: 1 350 kg\nThe maximum traffic load that can be carried is:",
+    "options": [
+      "20 420 kg",
+      "17 810 kg",
+      "21 170 kg"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The term 'Maximum Zero Fuel Mass' consist of :",
+    "options": [
+      "The maximum mass authorized for a certain aeroplane not including the fuel load and operational items",
+      "The maximum mass for some aero planes including the fuel load and the traffic load",
+      "The maximum permissible mass of an aero plane with no usable fuel."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The take-off mass of an aero plane is 117 000 kg, comprising a traffic load of 18 000 kg and fuel of 46 000 kg. What is the dry operating mass?",
+    "options": [
+      "71 000 kg",
+      "99 000 kg",
+      "53 000 kg"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The take-off mass of an aero plane is 141000 kg. Total fuel on board is 63000 kg including 14000 kg reserve fuel and 1000 kg of unusable fuel. The traffic load is 12800 kg. The zero fuel mass is:",
+    "options": [
+      "65200 kg.",
+      "79000 kg",
+      "78000 kg"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The basic empty mass of an aircraft is 30 000 kg. The masses of the following items are :\ncatering: 300 kg, safety and rescue material: nil\nfly away kit: nil, crew (inclusive crew baggage): 365kg\nfuel at take-off: 3 000 kg, unusable fuel: 120 kg\npassengers, baggage, cargo: 8 000 kg\nThe Dry Operating Mass is :",
+    "options": [
+      "30 785 kg",
+      "30 300 kg",
+      "38 300 kg"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Maximum structural take-off mass: 72 000 kg\nMaximum structural landing mass: 56 000 kg\nMaximum zero fuel mass: 48 000 kg,\nTaxi fuel: 800 kg\nTrip fuel: 18 000 kg,\nContingency fuel: 900 kg\nAlternate fuel: 700 kg, Final reserve fuel: 2 000 kg\nDetermine the actual take-off mass:",
+    "options": [
+      "74 000 kg",
+      "72 000 kg",
+      "69 600 kg"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Why are \"stepped cruise\" used on long distance flights?",
+    "options": [
+      "To fly as close as possible to the optimum altitude as aero plane mass reduces",
+      "To respect ATC flight level constraints",
+      "Step climbs do not have any special purpose for jet aero planes; they are used for piston engine aero planes only"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the effect of tailwind on the time to climb to a given altitude?",
+    "options": [
+      "The time to climb decreases",
+      "The time to climb does not change",
+      "The effect on time to climb will depend on the aero plane type"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The optimum long-range cruise altitude for a turbojet aero plane:",
+    "options": [
+      "is always equal to the powerplant ceiling",
+      "increases when the aero plane mass decreases",
+      "is independent of the aero plane mass"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "You have filed a flight plan for an uncontrolled flight and suffer a delay prior to departure. After how long a delay must you restate your OBT?",
+    "options": [
+      "30 mins",
+      "40 mins",
+      "60 mins"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which is the highest latitude listed below at which the sun will rise above the horizon and set every day?",
+    "options": [
+      "68°",
+      "66°",
+      "62°"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "True track 180°, Drift 8°R, Compass heading 195°, Deviation -2°. Calculate the variation.",
+    "options": [
+      "21°W",
+      "25°W",
+      "5°W"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "An aircraft at FL370 is required to commence descent at 120 NM from a VOR and to cross the facility at FL130. If the mean GS for the descent is 288 kt, the minimum rate of descent required is:",
+    "options": [
+      "960 FT/MIN",
+      "890 FT/MIN",
+      "860 FT/MIN"
+    ],
+    "answer": 0
+  },
+    {
+      "question": "In An Air Data Computer (ADC), aero plane altitude is calculated from?",
+      "options": [
+        "Measurement of absolute barometric pressure from a static source on the fuselage.",
+        "Measurement of outside air temperature (OAT).",
+        "Measurement of elapsed time for a radio signal transmitted to the ground surface and back."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The pressure altitude is the altitude corresponding?",
+      "options": [
+        "In standard atmosphere, to the reference pressure Ps.",
+        "In ambient atmosphere, to the pressure Ps prevailing at this point.",
+        "In standard atmosphere, to the pressure Ps prevailing at this point."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "At sea level, on a typical servo altimeter, the tolerance in feet from indicated must not exceed?",
+      "options": [
+        "+/-60 feet.",
+        "+/-75 feet.",
+        "+/-30 feet."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The altitude indicated on board an aircraft flying in an atmosphere where all the atmosphere layers below the aircraft are cold is?",
+      "options": [
+        "Equal to the standard altitude.",
+        "Lower than the real altitude.",
+        "Higher than the real altitude."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the true altitude of an aircraft if its altimeter indicated 16000 ft when the ambient temperature was -30° C?",
+      "options": [
+        "15200 ft.",
+        "15400 ft.",
+        "16200 ft."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What will happen to the indicated altitude if an aircraft in level flight passes into a warmer air mass?",
+      "options": [
+        "Over indicate.",
+        "Under indicate.",
+        "Not change."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A radio altimeter can be defined as a?",
+      "options": [
+        "Ground radio aid used to measure the true height of the aircraft.",
+        "Ground radio aid used to measure the true altitude of the aireraft.",
+        "Self-contained on-board aid used to measure the true height of the aircraft."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In low altitude radio altimeters height measurement (above ground) is based upon?",
+      "options": [
+        "A triangular amplitude modulation wave, for which modulation phase shift between transmitted and received waves after ground reflection is measured.",
+        "A frequency modulation wave, for which the frequency variation between the transmitted wave and the received wave after ground reflection is measured.",
+        "A pulse transmission, for which time between transmission and reception is measured on a circular scanning screen."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "VSI lag is reduced by?",
+      "options": [
+        "Two dashpots responding to acceleration.",
+        "Two return springs.",
+        "Bi-metallic strips."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If the choke in the VSI becomes partly blocked?",
+      "options": [
+        "The VSI indication will be too high when climbing.",
+        "The VSI indication will be too low when descending.",
+        "The VSI indication wil be too high when climbing or descending."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If the pitot pipe becomes partly blocked?",
+      "options": [
+        "The VSI indication will over read when descending.",
+        "The VSI will be unaffected.",
+        "The VSi will over under read at al times."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Compressibility is most significant at",
+      "options": [
+        "low air speed range.",
+        "TAS is excess of 300 K.",
+        "TAS of 300 K."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What will be the effect if the drain hole and pitot tapping in a probe are blocked, whilst the static source remains open?",
+      "options": [
+        "The ASi will respond to changes in pressure altitude only.",
+        "The ASI will not respond",
+        "The ASI will under read at al speeds"
+      ],
+      "answer": 0
+    }
+ ,
+    {
+      "question": "With a constant weight, irrespective of the airfield altitude, an aircraft always takes off at the same?",
+      "options": [
+        "Calibrated airspeed.",
+        "Ground speed.",
+        "True airspeed."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The calibrated airspeed (CAS) is obtained by applying to the indicated airspeed (IAS)?",
+      "options": [
+        "A compressibility and density correction.",
+        "An instrument and position/pressure error correction.",
+        "An antenna and compressibility correction."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "VNO is the maximum speed?",
+      "options": [
+        "Which must never be exceeded.",
+        "At which the flight controls can be fully deflected.",
+        "Not to be exceeded except in still air and with caution."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "For a constant Calibrated Airspeed (CAS) and a level flight, a fall in ambient temperature will result in a?",
+      "options": [
+        "Lower True Airspeed (TAS) due to a decrease in air density.",
+        "Lower True Airspeed (TAS) due to an increase in air density.",
+        "Higher True Airspeed (TAS) due to a decrease in air density."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When a climbing at a constant Mach number below the tropopause, in ISA conditions, the Calibrated Airspeed (CAS) will?",
+      "options": [
+        "Decrease.",
+        "Increase at a linear rate.",
+        "Remain constant."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "How will mach meter indication respond if an aircraft is flying at constant CAS at FL 270 when it experiences a reduction in OAT?",
+      "options": [
+        "No change.",
+        "Increase.",
+        "Decrease."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "How will the mach meter respond in a constant CAS climb if the static source becomes blocked?",
+      "options": [
+        "Increase",
+        "Decrease.",
+        "Remain constant"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "How will the mach meter respond in a constant TAS climb if the static source becomes blocked?",
+      "options": [
+        "Increase.",
+        "Decrease",
+        "Remain constant."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The basis properties of a gyroscope are?\n1. The gyro's weight. 2. The rigidity in space.\n3. The inertia 4. The high RPM. 5. The precession\nThe combination of correct statements is?",
+      "options": [
+        "3,4.",
+        "2, 5.",
+        "2,3, 5."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "At a low bank angle, the measurement of rate-of-turn actually consists in measuring the?",
+      "options": [
+        "Angular velocity of the aircraft.",
+        "Yaw rate of the aircraft.",
+        "Pitch rate of the aircraft."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An airborne instrument, equipped with a gyro with 2 degrees of freedom and a horizontal spin axis is?",
+      "options": [
+        "An artificial horizon.",
+        "A turn indicator.",
+        "A directional gyro."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When, in flight, the needle and ball indicator is on the left and the ball on the right, the aircraft is?",
+      "options": [
+        "Turning left with not enough bank",
+        "Turning right with not enough bank",
+        "Turning right with too much bank"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "How many degrees of freedom and what is the spin axis of an attitude indicator?",
+      "options": [
+        "Local earth vertical two degrees of freedom.",
+        "Aircraft lateral axis two degrees of freedom.",
+        "Aircraft horizontal axis one degree of freedom."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A direct reading magnetic compass will be affected by?",
+      "options": [
+        "Soft iron.",
+        "Hard iron.",
+        "Soft iron effect hard iron, and hard iron."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A turn indicator has?\n1. A horizontal spin axis. 2. A vertical spin axis.\n3. One degree of freedom. \n4. Two degrees of freedom.\n5. A spin axis tied to the yawing plane of the aircraft.\n6. A gravity erecting unit.",
+      "options": ["1,3.",
+      "1, 5.",
+      "3, 5."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "When both the needle and ball of a turn and slip indicator are displaced to the right the aircraft is?",
+    "options": [
+      "Turning right with insufficient bank.",
+      "Turning right with too much bank.",
+      "Turning left with too much bank."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "In a primary radar using pulse technique, pulse recurrence frequency (PRF)/ pulse recurrence rate (PRR) determines:",
+    "options": [
+      "minimum range",
+      "beam width",
+      "maximum theoretical range"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which one of the following disturbances is most likely to cause the greatest inaccuracy in ADF bearings?",
+    "options": [
+      "Coastal effect",
+      "Quadrantal error",
+      "Local thunderstorm activity"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the maximum number of usable Secondary Surveillance Radar (SSR) transponder codes?",
+    "options": [
+      "760",
+      "4096",
+      "3600"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "An aircraft is 100 NM from a VOR facility. Assuming no error when using a deviation indicator where 1 dot = 2° deviation, how many dots deviation from the center line of the instrument will represent the limits of the airway boundary? (Assume that the airway is 10 NM wide)",
+    "options": [
+      "6.0",
+      "1.5",
+      "3.0"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The MIDDLE MARKER of an Instrument Landing System (ILS) facility is identified audibly and visually by a series of:",
+    "options": [
+      "dots and a white light flashing",
+      "dashes and an amber light flashing",
+      "alternate dots and dashes and an amber light flashing"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "An aircraft is flying on a heading of 270°(M). The VOR OBS is also set to 270° with the full left deflection and FROM flag displayed.\nIn which sector is the aircraft from the VOR ground station?",
+    "options": [
+      "SE",
+      "NE",
+      "NW"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "ICAO specifications are that range errors indicated by Distance Measuring Equipment (DME) should not exceed:",
+    "options": [
+      "+ or - 0.5 NM or 3% of the distance measured whichever is the greater",
+      "+ or - 1.25 NM plus 0.25% of the distance measured",
+      "+ or - 0.25 NM plus 1.25% of the distance measured"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the metric distance of an NDB wavelength?",
+    "options": [
+      "Metric",
+      "Centimetric and metric",
+      "Metric and Kilometric"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which radio frequency employs the refraction properties of the ionosphere?",
+    "options": [
+      "EHF.",
+      "HF",
+      "VHF."
+    ],
+    "answer": 1
+  },
+    {
+      "question": "VOR wavelength is?",
+      "options": [
+        "2.46 Cm.",
+        "24.6 Cm.",
+        "2.46m."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Groundspeed measurement using DME equipment is most accurate flying:",
+      "options": [
+        "towards the station at short range.",
+        "past the station at short range.",
+        "from the station at long range."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Real wander of the gyroscope can be caused by",
+      "options": [
+        "earth's rotation beneath the gyroscope.",
+        "asymmetric friction at the spin axis.",
+        "instrument being a tied as opposed to space gyro."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the wavelength and waveband of a radio aid that uses a frequency of 1.579 GHz?",
+      "options": [
+        "19 Cm. UHF.",
+        "15.79 Khz. VLF.",
+        "1.579 MHz VHF"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In an ASI the static pressure enters:",
+      "options": [
+        "Both the capsule & the case",
+        "the case only.",
+        "the capsule only."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The wavelength of a 121.95 MHz signal is?",
+      "options": [
+        "24.6 Cm.",
+        "2.46 m.",
+        "24.6 m."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is skip distance?",
+      "options": [
+        "The distance between a receiver and the first and second fundamentals.",
+        "The distance between the transmitter and the first returning sky wave.",
+        "The distance between the receiver and the first returning fundamental."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The skip distance is increased by - - - - the wavelength and --- - - t h e frequency?",
+      "options": [
+        "Decreasing. Decreasing.",
+        "Decreasing. Increasing.",
+        "Increasing. Increasing."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If an aircraft has two altimeters, only one of which is corrected for position error?",
+      "options": [
+        "ATC transponder replies will be inaccurate.",
+        "At high altitude and high speed the non-corrected altimeter will over indicate.",
+        "At high altitude and high speed the non-corrected altimeter will under indicate."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Barometric altimeter readings can become erratic during landing because?",
+      "options": [
+        "Static ports can become blocked by debris.",
+        "Static pressure is changed by ground effect.",
+        "The air is warmer close to the ground so dynamic pressure changes."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If the static source becomes blocked the mach meter will .........as an aircraft climbs?",
+      "options": [
+        "Over indicate.",
+        "Under indicate.",
+        "Not indicate."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If temperature decreases when flying at constant CAS at FL 200, the mach meter indication will... and the true mach number will......?",
+      "options": [
+        "Increase increase.",
+        "Decrease decrease.",
+        "Not change increase."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The correct indications when taxiing in a turn to the left are?",
+      "options": [
+        "Needle right, ball right.",
+        "Needle right, ball center.",
+        "Needle left, ball right."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A slaved directional gyro derives it's directional signal from?",
+      "options": [
+        "A direct reading magnetic compass.",
+        "The flight director.",
+        "The flux valve."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The gyro in a vertical reference data generator has?\nOne degree of freedom., Two degrees of freedom., Vertical axis., Horizontal axis.",
+      "options": [
+        "1,3.",
+        "1,4.",
+        "2,3."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "DG errors are caused by?\n1. Mechanical imperfections, 2. Earth rate, 3.Transport wander,\n4. Banking when pitching 5. Annual migration of the poles.",
+      "options": [
+        "All of the above.",
+        "1,2,3,4.",
+        "2, 3, 4, 5."
+      ],
+      "answer": 1
+    },
+    {"question": "An aero plane is on an IFR flight. The flight is to be changed from IFR to VFR. Is it possible?",
+    "options": [
+      "No, only ATC can order you to do this",
+      "No, you have to remain IFR in accordance to the filed flight plan",
+      "Yes, the pilot in command must inform ATC using the phrase \"Canceling my IFR flight\""
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Course required = 085° (T), Forecast W/V 030/100kt, TAS = 470 kt, Distance = 265nm. Calculate the true HDG and flight time?",
+    "options": [
+      "075º, 39 min.",
+      "075°, 42 min.",
+      "073°, 42 min."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "When climbing through an isothermal layer at constant CAS?",
+    "options": [
+      "TAS increases.",
+      "TAS remains constant.",
+      "Mach number decreases."
+    ],
+    "answer": 0
+  },
+  {
+    "question":"Which mode is selected on the EHSI in diagram below?",
+    "options":["Map Mode","Center Map Mode","Plan Mode"],
+    "answer":1,"image":"../image/sample2.png"
+    },
+    {
+      "question": "The duration of civil twilight is the time?",
+      "options": [
+        "Between Sunset and when the center of the sun is 6° below the true horizon.",
+        "Between Sunset and when the top of the sun is 6° below the visual horizon.",
+        "Between Sunset and when the center of the sun is 6° below the visual horizon."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Earth is a:",
+      "options": [
+        "Planet",
+        "Satellite",
+        "Asteroid"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "When standing at the South Pole in which direction will you be facing?",
+      "options": [
+        "North",
+        "South",
+        "East"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft passes position A (75°00'N 120°00'W) enroute to position B (75°00'N 140°30'W). What is the great circle track on departure from A?",
+      "options": [
+        "280°",
+        "285°",
+        "267°"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A day at a place as measured in local mean time starts:",
+      "options": [
+        "When the mean sun transits the meridian of the place in question.",
+        "When the mean sun transits the anti-meridian of the place in question.",
+        "When the mean sun transits the 180E/W meridian."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Deviation applied to magnetic heading gives:",
+      "options": [
+        "Magnetic track",
+        "True heading",
+        "Compass heading"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A negative (westerly) magnetic variation signifies that:",
+      "options": [
+        "Compass north is east of magnetic north",
+        "Compass north is west of magnetic north",
+        "True north is east of magnetic north"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Position A 45°N, ?°E, Position B 45°N, 50°15'E Distance A-B = 280 NM, B is to the East of A, What is the longitude of position A?",
+      "options": [
+        "43°39'E",
+        "45°57'E",
+        "52°53'E"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the longitude of a position 15 NM to the east of 58°42'N 094°00'W?",
+      "options": [
+        "093°53.3'W",
+        "094°13.0'W",
+        "093°31.1'W"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "On an instrument check while taxiing when carrying out a turn, the TSI will indicate:",
+      "options": [
+        "Slip into the turn",
+        "Skip out of the turn",
+        "No slip or skid"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Parallels of latitude, except the equator, are:",
+      "options": [
+        "Rhumb lines",
+        "Great circles",
+        "Both Rhumb lines and Great circles"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "When landing in a southerly direction a direct reading magnetic compass will indicate:",
+      "options": [
+        "Easterly turn",
+        "Westerly turn",
+        "No turn"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The greatest cause of errors in a direct reading magnetic compass is:",
+      "options": [
+        "Turning",
+        "Latitude changes",
+        "Parallax"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "To improve the horizontality of a compass, the magnet assembly is suspended from a point:",
+      "options": [
+        "On the center line of the magnet",
+        "Below the center of gravity",
+        "Above the center of gravity"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "At what DRMC heading is roll out required when conducting a turn from south-west to south-east at 45° north?",
+      "options": [
+        "115°",
+        "135°",
+        "140°"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "On a Mercator chart, at latitude 60°N, the distance measured between W002° and E008° is 20 cm. The scale of this chart at latitude 60°N is approximately:",
+      "options": [
+        "1:2,780,000",
+        "1:278,000",
+        "1:27,800,000"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What type of projection is generally used for charts used for navigation in North and South polar areas?",
+      "options": [
+        "Lambert's conformal",
+        "Polar stereographical projection",
+        "Direct Mercator"
+      ],
+      "answer": 1
+    },
+    {"question": "An aeroplane is flying at TAS 180 kt on a track of 090°. The W/V is 045°/50kt. How far can the aeroplane fly out from its base and return in one hour?",
+    "options": [
+      "85 NM",
+      "90 NM",
+      "100 NM"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The following information is displayed on an Inertial Navigation System: GS 520 kt, true HDG 090°, Drift angle 5° right, TAS 480 kt, SAT -51°C. The W/V being experienced is?",
+    "options": [
+      "322°/60 kt",
+      "320°/60 kt",
+      "320°/45 kt"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Runway direction 083°(M), Surface W/V 035/35kt. Calculate the effective headwind component:",
+    "options": [
+      "25 kt",
+      "2 kt",
+      "26 kt"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "For take-off an aircraft requires a headwind component of at least 10kt and has a cross-wind limitation of 35kt. The angle between the wind direction and the runway is 60°, calculate the minimum and maximum allowable wind speed:",
+    "options": [
+      "20 kt and 40 kt",
+      "20 kt and 45 kt",
+      "25 kt and 30 kt"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "When climbing through an isothermal layer at constant CAS:",
+    "options": [
+      "Mach number increases",
+      "Mach number decreases",
+      "TAS decreases"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "When descending through an isothermal layer at constant Mach number:",
+    "options": [
+      "TAS increases",
+      "TAS decreases",
+      "TAS remains constant"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "When climbing at a constant Mach number below the tropopause, in ISA conditions, the Calibrated Airspeed (CAS) will:",
+    "options": [
+      "Decrease",
+      "Increase at a linear rate",
+      "Increase at an exponential rate"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "In a steady climb with the auto-throttle maintaining a constant calibrated airspeed. If the total temperature remains constant, the Mach number:",
+    "options": [
+      "Increases",
+      "Remains constant",
+      "Decreases if the static temperature is lower than the standard temperature"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "How will CAS respond if temperature increases by 5 degrees C when flying at a constant indicated Mach number at FL290?",
+    "options": [
+      "Increases",
+      "Decreases",
+      "Remains approximately constant"
+    ],
+    "answer": 2
+  },
+    {
+      "question": "If ambient temperature increases by 10 degrees, for an aircraft flying at constant TAS, the indicated mach number will......and the true mach number will….....?",
+      "options": [
+        "Increase increase",
+        "Decrease Decrease",
+        "Not change Increase"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Distance 'A' to 'B' 2600 NM, Groundspeed 'out' 395 kt, Groundspeed 'back' 480 kt. The time from 'A' to the Point of Equal Time (PET) between 'A' and 'B' is?",
+      "options": [
+        "267 MIN",
+        "217 MIN",
+        "190 MIN"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Distance 'Q' to 'R' 1650 NM, Groundspeed 'out' 465 kt, Groundspeed 'back' 385 kt, Safe endurance 9 HR. The distance from 'Q' to the Point of Safe Return (PSR) between 'Q' and 'R' is?",
+      "options": [
+        "1867 NM",
+        "1842 NM",
+        "1896 NM"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The empty mass of an aeroplane is given as 44800 kg. Operational items (including crew standard mass of 1060 kg) are 2300 kg. If the maximum zero fuel mass is given as 65500 kg, the maximum traffic load which could be carried is:",
+      "options": [
+        "19460 kg",
+        "18400 kg",
+        "20700 kg"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "With respect to aeroplane loading in the planning phase, which of the following statements is always correct?",
+      "options": [
+        "LM = TOM - TRIP FUEL",
+        "MTOM = ZFM + MAXIMUM POSSIBLE FUEL MASS",
+        "MZFM = TRAFFIC LOAD + DOM"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "For the purpose of completing the Mass and Balance documentation, the Traffic Load is considered to be equal to the Take-off Mass:",
+      "options": [
+        "less the operating mass.",
+        "plus the operating mass.",
+        "plus the trip fuel mass."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The center of gravity of an aeroplane:",
+      "options": [
+        "may only be moved if permitted by the regulating authority and endorsed in the aeroplane's certificate of airworthiness.",
+        "is in a fixed position and is unaffected by aeroplane loading.",
+        "can be allowed to move between defined limits."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In a DRC magnetic system it is made aperiodic by:",
+      "options": [
+        "Pendulous suspension",
+        "Magnets with large magnetic moments",
+        "Damping action of compass liquid"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following statements is correct?",
+      "options": [
+        "The Maximum Take-off Mass is equal to the maximum mass when leaving the ramp.",
+        "The Basic Empty Mass is equal to the mass of the aeroplane excluding traffic load and usable fuel but including the crew.",
+        "The Maximum Landing Mass of an aeroplane is restricted by structural limitations, performance limitations and the strength of the runway."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The datum is a reference from which all moment (balance) arms are measured. Its precise position is given in the control and loading manual and it is located:",
+      "options": [
+        "at or near the natural balance point of the empty aeroplane",
+        "at or near the forward limit of the center of gravity",
+        "at a convenient point which may not physically be on the aeroplane"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In mass and balance calculations which of the following describes the datum?",
+      "options": [
+        "It is the most aft position of the center of gravity",
+        "It is the point on the aeroplane designated by the manufacturers from which all center of gravity measurements and calculations are made",
+        "It is the distance from the center of gravity to the point through which the weight of the component acts"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Vertical soft iron magnetism:",
+      "options": [
+        "Strength increases with increase in magnetic latitude",
+        "Strength varies as cosine of magnetic latitude",
+        "Has the same polarity in both the hemispheres"
+      ],
+      "answer": 0
+    },
+    {"question": "In high speed aircraft, the TAS is determined by means of an:",
+    "options": [
+      "Air speed indicator",
+      "An accelerometer",
+      "Mach meter"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "It is possible, in flight, to:(1) file an IFR flight plan (2) modify an active IFR or VFR flight plan (3) cancel an active VFR flight plan (4)close an active VFR flight plan",
+    "options": [
+      "2,3,4",
+      "1,2,3,4",
+      "1,2,3"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The planned departure time from the parking area is 1815UTC. The estimated take-off time is 1825UTC. The IFR flight plan must be filed with ATC at the latest at:",
+    "options": [
+      "1745UTC",
+      "1715UTC",
+      "1725UTC"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "An aircraft at position 60°N 005°W tracks 090°(T) for 315 km. On completion of the flight the longitude will be:",
+    "options": [
+      "002°10'W",
+      "000°15'E",
+      "000°40'E"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Isogonals are lines of equal:",
+    "options": [
+      "compass deviation.",
+      "magnetic variation.",
+      "wind velocity."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "IAS 120 kt, FL 80, OAT +20°C, What is the TAS?",
+    "options": [
+      "141 kt",
+      "102 kt",
+      "120 kt"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Airport elevation is 1000 ft., QNH is 988 hPa. What is the approximate density altitude?",
+    "options": [
+      "3201 ft",
+      "1680 ft",
+      "-320 ft"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Halfway between two reporting points the navigation log gives: TAS 360 kt, W/V 330°/80 kt, Compass heading 237º, Deviation on this heading -5°, Variation 19°W. What is the average ground speed for this leg?",
+    "options": [
+      "403 kt",
+      "354 kt",
+      "373 kt"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "A gyro which does not have a rotor is called:",
+    "options": [
+      "Ring laser gyro",
+      "Rotor free gyro",
+      "Free gyro"
+    ],
+    "answer": 0
+  },
+{
+    "question": "The north magnetic pole is:",
+    "options": [
+      "At the northern end of the Earth's axis of rotation.",
+      "Is always in the same geographic position.",
+      "Slowly and constantly changing its position."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "If QFE is 1022 hPa what is the pressure altitude of the field?",
+    "options": [
+      "270 ft amsl",
+      "-270 ft amsl",
+      "30660 ft amsl"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The primary factor which makes the servo-assisted altimeter more accurate than the simple pressure altimeter is the use of:",
+    "options": [
+      "A sub-scale logarithmic function.",
+      "An induction pick-off device.",
+      "More effective temperature compensating leaf springs."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Why are vibrators sometimes fitted in altimeters?",
+    "options": [
+      "Overcome friction.",
+      "Overcome inertia.",
+      "Overcome hysteresis."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The low-altitude radio altimeters used in precision approaches:",
+    "options": [
+      "Operate in the 1540-1660 MHz range.",
+      "Are of the pulsed type.",
+      "Are of the frequency modulation type."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "For the landing configuration a radio altimeter indicates?",
+    "options": [
+      "Altitude of the main wheel above ground.",
+      "Height of the flight deck above the ground.",
+      "Height of the main wheel above the ground."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "A VSI:",
+    "options": [
+      "Produces an output proportional to ambient pressure.",
+      "Measures the difference between total pressure and static pressure.",
+      "Measures the difference between the pressure inside and outside a capsule."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "A VSI indicates increasing ROD by:",
+    "options": [
+      "VSI needle moving downwards.",
+      "VSI needle moving upwards.",
+      "VSI needle stationary."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The response rate of a VSI can be improved by fitting a:",
+    "options": [
+      "Accelerometer system.",
+      "Choke system.",
+      "Bi-metallic compensator."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "At MSL in the ISA:",
+    "options": [
+      "CAS = TAS",
+      "IAS = TAS",
+      "IAS = EAS"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "In an ASI system, what does the pitot probe measure?",
+    "options": [
+      "Total pressure.",
+      "Dynamic pressure.",
+      "Static pressure."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "CAS is:",
+    "options": [
+      "EAS corrected for position error and compressibility error.",
+      "IAS corrected for position error and instrument error.",
+      "TAS corrected for instrument error and ram effect."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The limits of the green scale of an airspeed indicator are:",
+    "options": [
+      "VSI for the lower limit and VNE for the upper limit.",
+      "VSI for the lower limit and VLO for the upper limit.",
+      "VS1 for the lower limit and VNO for the upper limit."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The limits of the yellow scale of an airspeed indicator are:",
+    "options": [
+      "VLO for the lower limit and VNE for the upper limit.",
+      "VNE for the lower limit and VNE for the upper limit.",
+      "VFE for the lower limit and VNE for the upper limit."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "A mach meter comprises of:",
+    "options": [
+      "A combination of ASI and altimeter.",
+      "A combination of VSI and altimeter.",
+      "An ASI with its scale marked in mach numbers."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the TAS at 40000 ft in the ISA at Mach 1?",
+    "options": [
+      "542 Kts.",
+      "660 Kts.",
+      "573 Kts."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What happens to mach meter indication in a constant RAS climb?",
+    "options": [
+      "Increases.",
+      "Decreases.",
+      "Increases then remains constant."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The characteristics of the directional gyro (DG) used in a gyro stabilised compass system are:",
+    "options": [
+      "One degree of freedom, whose vertical axis, aligned with the real vertical to the location is maintained in this direction by an automatic erecting system.",
+      "Two degrees of freedom, whose horizontal axis corresponding to the reference direction is maintained in the horizontal plane by an automatic erecting system.",
+      "Two degrees of freedom, whose axis aligned with the vertical to the location is maintained in this direction by an erecting system."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Radio wave ground attenuation is greatest on:",
+    "options": [
+      "HF band.",
+      "MF band.",
+      "LF band."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "When an aircraft has turned 360 degrees with a constant attitude and bank, the pilot observes the following on a classic artificial horizon:",
+    "options": [
+      "Too much nose-up and bank correct.",
+      "Too much nose-up and bank too high.",
+      "Attitude and bank correct."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "When an aircraft has turned 270 degrees with a constant attitude and bank, the pilot observes the following on a classic artificial horizon:",
+    "options": [
+      "Too much nose-up and bank too high.",
+      "Too much nose-up and bank too low.",
+      "Attitude and bank correct."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "An AI has:",
+    "options": [
+      "One degree of freedom and a lateral spin axis.",
+      "Two degrees of freedom and a vertical spin axis.",
+      "Two degrees of freedom and a horizontal spin axis."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "How will a basic AI respond if an aircraft performs a 270 degree turn at constant bank angle and ROT?",
+    "options": [
+      "Nose up and bank.",
+      "Nose down and bank.",
+      "Nose level and bank."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which of the following properties are possessed by a standby artificial horizon? (1)Independent power supply (2) Integral gyro (3)Remote (external) gyro (4)used only in emergencies",
+    "options": [
+      "1,2",
+      "2,3 ",
+      "3,4"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "If an aircraft turns through 270° at a constant rate of turn and AOB, the indications on its classic artificial horizon will be:",
+    "options": [
+      "Bank left nose up.",
+      "Bank right nose up.",
+      "Wings level nose up."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The turn needle indicates in a slightly banked turn:",
+    "options": [
+      "Angular velocity about the vertical axis.",
+      "Angular acceleration about the vertical axis.",
+      "Angular velocity about the lateral axis."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "A rate 1 turn at 120 kts requires:",
+    "options": [
+      "10° AOB.",
+      "20° AOB.",
+      "30° AOB."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Following a left engine failure the pilot of a multi-engine aircraft uses rudder to oppose yaw and bank to prevent side slip. What will the turn and slip indicator show?",
+    "options": [
+      "Both needle and ball central.",
+      "Needle central and ball right.",
+      "Both needle and ball left."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The data supplied by a radio altimeter:",
+    "options": [
+      "Indicates the distance between the ground and the aircraft.",
+      "Concerns only the decision height.",
+      "Is used only by the radio altimeter indicator."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The ATC transponder system, excluding Mode S, contains:",
+    "options": [
+      "Two modes, each of 4096 codes.",
+      "Four modes, each 1024 codes.",
+      "Four modes, each 4096 codes."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What approximate rate of descent is required to maintain a 3° glide path at a groundspeed of 120 kt?",
+    "options": [
+      "950 ft/min.",
+      "600 ft/min.",
+      "550 ft/min."],
+      "answer": 1
+    },
+    {
+      "question": "Outer marker transmits on 75 MHz and has an aural frequency of:",
+      "options": [
+        "400 Hz.",
+        "2000 Hz.",
+        "3000 Hz."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What approximate rate of descent is required to maintain a 3° glidepath at a groundspeed of 90 kt?",
+      "options": [
+        "450 ft/min.",
+        "400 ft/min.",
+        "600 ft/min."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The BFO selector on an ADF receiver is used to:",
+      "options": [
+        "Hear the ident and must always be switched on.",
+        "Find the loop 'null' position.",
+        "Hear the IDENT of some NDB stations radiating a continuous wave signal."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the colour sequence when passing over an Outer, Middle and Inner Marker beacon?",
+      "options": [
+        "Blue - Amber - White.",
+        "Amber - White - Green.",
+        "White - Amber - Blue."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The Outer Marker of an ILS facility transmits on a frequency of:",
+      "options": [
+        "200 MHz and is modulated by alternate dot/dash in Morse.",
+        "75 MHz and is modulated by alternate dot/dash in Morse.",
+        "75 MHz and is modulated by Morse at two dashes per second."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "VOR reference phase is 080° and variable 220°. Aircraft QDM to the station is:",
+      "options": [
+        "320°.",
+        "140°.",
+        "040°."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "ILS Glide Paths provide azimuth coverage (i) each side of the localizer center-line to a distance of (ii) from the threshold.",
+      "options": [
+        "(i) 25° (ii) 17 NM.",
+        "(i) 35° (ii) 25 NM.",
+        "(i) 8° (ii) 10 NM."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "For a conventional DME facility, beacon saturation will occur whenever the number of simultaneous interrogations exceeds:",
+      "options": [
+        "60.",
+        "100.",
+        "200."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The accuracy of a DME:",
+      "options": [
+        "Is approximately ±2 nm.",
+        "Is approximately ±0.5 nm.",
+        "Decreases with increase of range."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following cause air density to decrease?",
+      "options": [
+        "Increasing humidity, decreasing altitude, increasing temperature.",
+        "Increasing humidity, increasing altitude, decreasing temperature.",
+        "Increasing humidity, increasing altitude, increasing temperature."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "EAS is",
+      "options": [
+        "IAS corrected for adiabatic compression",
+        "CAS corrected for adiabatic compression",
+        "IAS corrected for instrument errors."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When a DME is used instead of marker beacons to provide range to the threshold on an ILS approach and where the DME frequency is paired with the ILS, the DME indications should not be used at altitudes greater than:",
+      "options": [
+        "25,000 ft",
+        "10,000 ft",
+        "6,000 ft"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft DME receiver does not lock on to its own transmissions reflected from the ground because:",
+      "options": [
+        "the pulse recurrence rates are varied",
+        "they are not on the receiver frequency",
+        "DME uses the UHF band"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What will be the rate of descent when flying down a 12% glide slope, at a groundspeed of 350 knots?",
+      "options": [
+        "4255 ft/min",
+        "4283 ft/min",
+        "4382 ft/min"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If the pressure feed line to a barometric altimeter becomes detached from the back of the instrument in flight, the instrument will?",
+      "options": [
+        "Read zero continuously.",
+        "Read cabin altitude.",
+        "Over read."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If temperature increases by 5 degrees C during a constant mach number descent, what will happen to CAS?",
+      "options": [
+        "Increase by 5 Kts.",
+        "Increase by 10 Kts.",
+        "Remain constant."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What does Mach number represent?",
+      "options": [
+        "The CAS of an aircraft as a fraction of the local speed of sound.",
+        "The local speed of sound as a fraction of the CAS of an aircraft.",
+        "The IAS of an aircraft as a fraction of the local speed of sound."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An airborne instrument, equipped with a gyro with 2 degrees of freedom and a horizontal spin axis is?",
+      "options": [
+        "A directional gyro.",
+        "An artificial horizon.",
+        "A turn indicator."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An airborne instrument, equipped with a gyro with 1 degree of freedom and a horizontal spin axis is a?",
+      "options": [
+        "Fluxgate compass.",
+        "Directional gyro.",
+        "Turn indicator."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In a standby compass the magnet system is immersed in a transparent liquid. The purpose of this liquid is to:",
+      "options": [
+        "increase sensitivity, increase aperiodicity.",
+        "increase sensitivity at high latitudes, lubricate bearings.",
+        "increase sensitivity, decrease aperiodicity."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The 'departure' between positions 60°N 160°E and 60°N 'X' is 1800 NM east. What is the longitude of 'X'?",
+      "options": [
+        "120° E",
+        "140° E",
+        "140° W"
+      ],
+      "answer": 2
+    },
+    {
+      "question":"Which Mode is selected in the navigation display (EHSI) in diagram below?",
+      "options":["Full VOR Mode","Expanded VOR mode","Full NAV mode"],
+      "answer":2,"image":"../image/sample4.png"
+    },
+    {
+        "question":"The main reason that day and night,throughout the year, have different duration, is due to the?",
+        "options":["The changing distance between the sun and the earth","the inclination of the ecliptic to the Equator","The changing shape of the orbit to the Earth around the Sun"],
+        "answer": 1
+    },
+    {
+        "question":"The purpose of creating network of latitude and longitudes is",
+        "option":["for pinpointing positions on the earth","for strategic reasons during war","for navigation by ships"],
+        "answer":0
+    },
+    {
+        "question":"the datum used for measuring direction is",
+        "options":["the meridian of the place","latitude of the place","none is correct"],
+        "answer":0
+    },
+    {
+        "question":"Which one of the following describes the appearance of the rhumb lines, except meridians, on a polar stereographic chart?",
+        "options":["Ellipses around the pole","Curves concave to the pole","Curves convex to the pole"],
+        "answer":1
+    },
+    {
+        "question":"On 4 Feb the air almanac lists 1941 as the time of sunset 5000S. An observer registers sunset at 2113 UTC this day. What is the observers position?",
+        "options":["5000S 02300W","5000S 0105W","5000S 02200E"],
+        "answer":0
+    },
+    {
+        "question":"The angle between magnetic north and compass north is called:",
+        "options":["magnetic variation","compass deviation","alignment error"],
+        "answer":1
+    },
+    {
+        "question":"A positive magnetic variation signifies that?",
+        "options":["True North in East of Magnetic north","True north is West of Magnetic North","Magnetic North is West of Compass North"],
+        "answer":1
+    },
+  {
+    "question": "In order to fly from position A (10°00'N, 030°00'W) to position B (30°00'N, 050°00'W), maintaining a constant true course, it is necessary to fly?",
+    "options": ["A rhumb line track.", "The constant average drift route.", "The great-circle route."],
+    "answer": 0
+  },
+  {
+    "question": "At a fixed pressure altitude an increase in temperature will?",
+    "options": ["Decrease density but increase density altitude.", "Decrease density altitude", "Not affect density altitude"],
+    "answer": 0
+  },
+  {
+    "question": "The coordinates of the heliport at Issy les Moulineaux are N48° 50' E002° 16.5'. The coordinates of the antipodes are?",
+    "options": ["S41°10' W177°43.5'", "S41°10' E177°43.5'", "S48°50' W177°43.5'"],
+    "answer": 2
+  },
+  {
+    "question": "The position of an aircraft that it would reach if it were flown in conditions of no wind is known as:",
+    "options": ["DR position", "Most probable position", "Air position"],
+    "answer": 2
+  },
+  {
+    "question": "The sensitivity of a magnetic compass can be affected by?",
+    "options": ["The H component of the earth's magnetic field.", "The Z component of the earth's magnetic field.", "Both of the above."],
+    "answer": 2
+  },
+  {
+    "question": "When cruising on a westerly heading a direct reading magnetic compass will indicate?",
+    "options": ["Northerly turn", "Southerly turn", "No turn"],
+    "answer": 2
+  },
+  {
+    "question": "When turning right through 90 degrees to north, in the northern hemisphere, roll out should be conducted on a heading of?",
+    "options": ["010 degrees", "020 degrees", "350 degrees"],
+    "answer": 2
+  },
+  {
+    "question": "When turning from SE to SW at 50 degrees north, the roll out should occur at?",
+    "options": ["245 degrees", "210 degrees", "25 degrees"],
+    "answer": 0
+  },
+  {
+    "question": "On a Lambert Conformal Conic chart great circles that are not meridians are?",
+    "options": ["Curves concave to the pole of projection.", "Straight lines within the standard parallels.", "Curves concave to the parallel of origin."],
+    "answer": 2
+  },
+  {
+    "question": "Parallels of latitude, except the equator, are?",
+    "options": ["Rhumb lines", "Complex curves", "Great circles"],
+    "answer": 0
+  },
+  {
+    "question": "TAS = 270 kt, true HDG = 270°, wind 205°(T)/30 kt. Calculate the drift angle and GS?",
+    "options": ["12R - 269 kt", "6L - 259 kt", "6R - 259 kt"],
+    "answer": 2
+  },
+  {
+    "question": "TAS = 135 kt, HDG (T) = 278°, W/V = 140/20 kt. Calculate the Track (T) and GS?",
+    "options": ["284 - 150 kt", "273 - 150 kt", "280 - 150 kt"],
+    "answer": 0
+  },
+  {
+    "question": "Magnetic track = 210°, Magnetic HDG = 215°, VAR = 15°E, TAS = 360 kt. Aircraft flies 64 NM in 12 MIN. Calculate the true W/V?",
+    "options": ["264°/50 kt", "265°/40 kt", "260°/50 kt"],
+    "answer": 0
+  },
+  {
+    "question": "Course 095°(T), TAS is 220 kt, wind speed 70 kt. Maximum drift angle will be obtained for a wind direction of:",
+    "options": ["165°", "185°", "215°"],
+    "answer": 1
+  },
+  {
+    "question": "When climbing through an isothermal layer at constant Mach number?",
+    "options": ["CAS increases", "CAS decreases", "TAS decreases"],
+    "answer": 1
+  },
+  {
+    "question": "When descending through an isothermal layer at constant CAS?",
+    "options": ["LSS increases", "LSS decreases", "LSS remains constant"],
+    "answer": 2
+  },
+  {
+    "question": "How will Mach meter indication respond if an aircraft is flying at constant CAS at FL270 when it experiences a reduction in OAT?",
+    "options": ["No change", "Decrease", "Increase or decrease depending on TAT"],
+    "answer": 0
+  },
+  {
+    "question": "A mach meter comprises of?",
+    "options": ["A combination of ASI and altimeter.", "An ASI with its scale marked in mach numbers.", "An altimeter with its scale marked in mach numbers."],
+    "answer": 0
+  },
+  {
+    "question": "An aircraft is flying at 310 Kts TAS at FL290, Temperature deviation is -6°C. The local speed of sound is?",
+    "options": ["570 Kts", "583 Kts", "596 Kts"],
+    "answer": 1
+  },
+  {
+    "question": "Increase of 0.15 in mach number results in an increase of 93 Kts TAS. If temperature deviation from ISA is -9°C, the FL is?",
+    "options": ["FL200", "FL130", "FL90"],
+    "answer": 1
+  },
+  {
+    "question": "Distance 'A' to 'B' 2900 NM, Groundspeed 'out' 420 kt, Groundspeed 'back' 480 kt. Safe endurance 8 HR 30 MIN. The time from 'A' to the Point of Safe Return (PSR) 'A' is?",
+    "options": ["272 MIN", "295 MIN", "249 MIN"],
+    "answer": 0
+  },
+  {
+    "question": "Distance 'Q' to 'R' 1760 NM, Groundspeed 'out' 450 kt, Groundspeed 'back' 360 kt. The time from 'Q' to the Point of Equal Time (PET) between 'Q' and 'R' is?",
+    "options": ["109 MIN", "16 MIN", "104 MIN"],
+    "answer": 2
+  },
+  {
+    "question": "Distance 'A' to 'B' 3600 NM, Groundspeed 'out' 378 kt, Groundspeed 'back' 400 kt. The time from 'A' to the Point of Equal Time (PET) between 'A' and 'B' is?",
+    "options": ["283 MIN", "323 MIN", "288 MIN"],
+    "answer": 1
+  },
+  {
+    "question": "Considering only structural limitations, on long distance flights (at the aero plane's maximum range), the traffic load is normally limited by:",
+    "options": ["the maximum zero fuel mass.", "the maximum zero fuel mass plus the take-off mass.", "the maximum take-off mass."],
+    "answer": 2
+  },
+  {
+    "question": "Traffic load is the:",
+    "options": ["zero fuel mass minus dry operating mass.", "dry operating mass minus the disposable load.", "dry operating mass minus the variable load."],
+    "answer": 0
+  },
+  {
+    "question": "Maximum Structural Landing Mass: 68000 kg, Maximum Zero Fuel Mass: 70200 kg, Maximum Structural Take-off Mass: 78200 kg, Dry Operating Mass: 48000 kg. Scheduled trip fuel is 7000 kg and the reserve fuel is 2800 kg. Assuming performance limitations are not restricting, the maximum permitted take-off mass and maximum traffic load are respectively:",
+    "options": ["77200 kg and 22200 kg", "75000 kg and 17200 kg", "75000 kg and 20000 kg"],
+    "answer": 1
+  },
+  {
+    "question": "Dry Operating Mass= 29800 kg, Maximum Take-Off Mass= 52400 kg, Maximum Zero-Fuel Mass= 43100 kg, Maximum Landing Mass= 46700 kg, Trip fuel= 4000 kg, Fuel quantity at brakes release= 8000 kg. The maximum traffic load is:",
+    "options": ["13300 kg", "9300 kg", "12900 kg"],
+    "answer": 2
+  },
+  {
+    "question": "A flight has been made from London to Valencia carrying minimum fuel and maximum traffic load. On the return flight the fuel tanks in the aero plane are to be filled to capacity with a total fuel load of 20100 litres at a fuel density of 0.79 kg/l. The following are the aero plane's structural limits: Maximum Ramp Mass: 69900 kg, Maximum Take Off Mass: 69300 kg, Maximum Landing Mass: 58900 kg, Maximum Zero Fuel Mass: 52740 kg. The performance limited take off mass at Valencia is 67330 kg. The landing mass at London is not performance limited. Dry Operating Mass: 34930 kg, Trip Fuel (Valencia to London): 5990 kg, Taxi fuel: 250 kg. The maximum traffic load that can be carried from Valencia will be:",
+    "options": ["13240 kg", "1670 kg", "14331 kg"],
+    "answer": 2
+  },
+  {
+    "question": "The maximum certificated taxi (or ramp) mass is that mass to which an aero plane may be loaded prior to engine start. It is:",
+    "options": ["a value which varies with airfield temperature and altitude. Corrections are listed in the flight manual.", "a value which varies only with airfield altitude. Standard corrections are listed in the flight manual.", "a fixed value which is listed in the flight manual"],
+    "answer": 2
+  },
+  {"question": "In calculations with respect to the position of the center of gravity a reference is made to a datum. The datum is:",
+    "options": ["an arbitrary reference chosen by the pilot which can be located anywhere on the aero plane", "a reference plane which is chosen by the aero plane manufacturer. Its position is given in the aero plane Flight or Loading Manual", "calculated from the loading manifest"],
+    "answer": 1
+  },
+  {
+    "question": "Moment (balance) arms are measured from a specific point to the body station at which the mass is located. That point is known as:",
+    "options": ["the focal point", "the datum", "the center of gravity of the aero plane"],
+    "answer": 1
+  },
+  {
+    "question": "The second segment of take-off flight path begins:",
+    "options": ["when acceleration starts from V2 to the speed for the flap retraction", "when landing gear is fully retracted", "when flap retraction begins"],
+    "answer": 1
+  },
+  {
+    "question": "Which of the following statements is applicable to the acceleration height at the beginning of the 3rd climb segment?",
+    "options": ["The minimum one engine out acceleration height must be maintained in case of all engines operating", "The maximum acceleration height depends on the maximum time take-off thrust may be applied", "There is no requirement for minimum climb performance when flying at the acceleration height"],
+    "answer": 1
+  },
+  {
+    "question": "If a pilot lands at an aerodrome other than the destination aerodrome specified in the flight plan, he must ensure that the ATS unit at the destination aerodrome is informed within a certain number of minutes of his planned ETA at destination. The number of minutes is:",
+    "options": ["30", "15", "45"],
+    "answer": 0
+  },
+  {
+    "question": "You make a diversion from the route given in the flight plan and land at an uncontrolled airfield. Within what time after landing should you inform ATC?",
+    "options": ["20 mins", "45 mins", "30 mins"],
+    "answer": 2
+  },
+  {
+    "question": "The scale on a Lambert conformal conic chart:",
+    "options": ["is constant along a meridian of longitude", "is constant along a parallel of latitude", "varies slightly as a function of latitude and longitude"],
+    "answer": 1
+  },
+  {
+    "question": "On a Direct Mercator chart, a rhumb line appears as a:",
+    "options": ["small circle concave to the nearer pole", "straight line", "curve convex to the nearer pole"],
+    "answer": 1
+  },
+  {
+    "question": "The distance from 'Q' to the Point of Safe Return (PSR) 'Q' is:",
+    "options": ["2370 nm", "2290 nm", "1510 nm"],
+    "answer": 1
+  },
+  {
+    "question": "An island is observed to be 15° to the left. The aircraft heading is 120°(M), variation 17°(W). The bearing °(T) from the aircraft to the island is:",
+    "options": ["268", "302", "088"],
+    "answer": 2
+  },
+  {
+    "question": "During a climb after take-off from a contaminated runway, if the total pressure probe of the airspeed indicator is blocked, the pilot sees that indicated airspeed:",
+    "options": ["Decreases abruptly towards zero.", "Increases steadily", "Increases abruptly towards VNE."],
+    "answer": 1
+  },
+  {
+    "question": "With a pitot probe blocked due to ice build up, the aircraft airspeed indicator will indicate in descent a?",
+    "options": ["Increasing speed.", "Fluctuating speed", "Decreasing speed."],
+    "answer": 2
+  },
+  {
+    "question": "The density altitude is?",
+    "options": [
+      "The altitude of the standard atmosphere on which the density is equal to the actual density of the atmosphere.",
+      "The temperature altitude corrected for the difference between the real temperature and standard temperature.",
+      "The pressure altitude corrected for the relative density prevailing at this point."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What will happen to the altimeter reading in a right sideslip, if an aircraft has a static vent at each side of the fuselage, but the left one is blocked?",
+    "options": ["Over read", "Under read.", "No change."],
+    "answer": 1
+  },
+  {
+    "question": "0.5 NM for 1 minute of difference in longitude at:",
+    "options": ["60°N", "45 N.", "20°W"],
+    "answer": 0
+  },
+  {
+    "question": "What will happen to altimeter indication if an aircraft in level flight enters a cold front?",
+    "options": ["Over indication.", "Under indication.", "No change."],
+    "answer": 0
+  },
+  {
+    "question": "In low altitude radio altimeters, the reading is zero when main landing gear wheels are on the ground. For this, it is necessary to?",
+    "options": [
+      "Change the display scale in short final, in order to have a precise readout.",
+      "Compensate residual altitude due to antennas height above the ground and coaxial cables length.",
+      "Account for signal processing time in the unit and apply a correction factor to the readings."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The operating frequency range of an altitude radio altimeter is?",
+    "options": ["2700 MHz to 2900 MHz.", "5 GHz", "4200 MHz to 4400 MHz."],
+    "answer": 2
+  },
+  {
+    "question": "An advantage of VHF as compared to low frequency radio is:",
+    "options": ["Speed of reception as waves travel faster", "Much greater range is possible", "Reduction of static interference"],
+    "answer": 2
+  },
+  {
+    "question": "As an aircraft moves close to the ground during a landing the VSI might?",
+    "options": ["Become inaccurate due to ground effect.", "Become inaccurate due to turbulence.", "Stick due to loss of pitot source."],
+    "answer": 0
+  },
+  {
+    "question": "What should the VSI indicate when an aircraft on a 3 degree glide slope is flying at 100 Kts TAS?",
+    "options": ["224 fpm descent.", "524 fpm descent.", "424 fpm descent."],
+    "answer": 1
+  },
+  {
+    "question": "If the port static vent of a large aircraft is blocked, what will happen to the VSI indications when it is side slipping at a constant rate to the left in a descent?",
+    "options": ["Over indicate.", "Under indicate.", "Be unaffected."],
+    "answer": 2
+  },
+  {
+    "question": "What does the blue line on a twin engine piston aircraft ASI indicate?",
+    "options": ["VXSE.", "VYSE.", "VNE."],
+    "answer": 1
+  },
+  {
+    "question": "What are indicated by the lower and upper ends of the white arc on an ASI?",
+    "options": ["VS1 and VFE.", "VSO and VFE.", "VFE and VFO."],
+    "answer": 1
+  },
+  {
+    "question": "When descending from FL400 and attempting to maintain maximum groundspeed, airspeed will be limited by?",
+    "options": ["VNE then VMO.", "VNO then VNE.", "MMO then VMO."],
+    "answer": 2
+  },
+  {
+    "question": "During a straight and uniform climb, the pilot maintains a constant calibrated airspeed (CAS).",
+    "options": [
+      "The Mach number increases and the true airspeed (TAS) increases.",
+      "The Mach number increases and the true airspeed (TAS) is constant.",
+      "The Mach number is constant and the true airspeed (TAS) is constant."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "VLE is the maximum?",
+    "options": [
+      "Speed authorized in flight.",
+      "Flight speed with landing gear down.",
+      "Speed at which the landing gear can be operated with full safety"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "How will mach meter indication vary in a constant CAS climb?",
+    "options": ["Increase.", "Decrease.", "Increase then remain constant."],
+    "answer": 0
+  },
+  {
+    "question": "What is the LSS at MSL, ISA?",
+    "options": ["600 Kts.", "661 Kts.", "750 Kts."],
+    "answer": 1
+  },
+  {
+    "question": "What would happen if the static pipe became detached from the back of a mach meter in a pressurised aircraft at high altitude?",
+    "options": ["Under read.", "Over read.", "No effect."],
+    "answer": 0
+  },
+  {
+    "question": "The degrees of freedom of a gyro are determined by the number of gimbal rings it comprises. Among the flight control instruments, the artificial horizon plays an essential part. It uses a gyroscope with?",
+    "options": [
+      "Two degrees of freedom, whose axis is oriented and continuously maintained to local vertical by an automatic erecting system.",
+      "Two degrees of freedom, whose horizontal axis corresponding to a reference direction is maintained in a horizontal plane by an automatic erecting system.",
+      "One degree of freedom, whose horizontal axis is maintained in a horizontal plane by an automatic erecting system."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "A slaved directional gyro derives its directional signal from?",
+    "options": [
+      "a direct reading magnetic compass.",
+      "The flight director.",
+      "The flux valve."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Aircraft attitude is indicated on?",
+    "options": [
+      "EICAS/ECAM primary display.",
+      "EFIS ND.",
+      "EFIS PFD."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "When turning through 90° at constant AOB and pitch attitude, what will a classic artificial horizon indicate?",
+    "options": [
+      "Too much nose up and too little bank angle.",
+      "Too much nose up and too much bank angle.",
+      "Too little nose up and too little bank angle."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The ball in a serviceable slip indicator is….......by . . . . . . . a n d …….. indicate/s the state of slip",
+    "options": [
+      "Held central, Gravity, Does not always.",
+      "Positioned, Acceleration, Does not always.",
+      "Held central, Gravity, Always."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The turn indicator is affected by?\n1. AOB\n2. Airspeed.\n3. Weight.\n4. Altitude.",
+    "options": [
+      "1, 2.",
+      "3, 4."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The correct turn and slip indications when turning right on the ground are?",
+    "options": ["Needle and ball right.", "Needle and ball left.", "Needle right and ball left."],
+    "answer": 2
+  },
+  {
+    "question": "ROT indications depend on?\n1. Airspeed. 2. Mass. 3. AOB",
+    "options": ["1,2.", "2,3.", "1,3."],
+    "answer": 2
+  },
+  {
+    "question": "Course Deviation Indicator (CDI) for a VOR is selected to 090°. From/To indicator indicates 'TO'. CDI needle is deflected halfway to the right. On what radial is the aircraft?",
+    "options": ["095°", "275°", "085°"],
+    "answer": 1
+  },
+  {
+    "question": "The VOR system is limited to about 1º of accuracy. One degree at 200 NM represents a width of:",
+    "options": ["2.5 mm", "3.0 nm", "3.5 m"],
+    "answer": 2
+  },
+  {
+    "question": "What is the approximate angular coverage of reliable navigation information for a 3° ILS glide path out to a distance of 10 NM?",
+    "options": ["3° above and below the glide path and 10° each side of the localiser centerline", "1.35° above the horizontal to 5.25° above the horizontal and 8º each side of the localiser centerline", "0.45° above the horizontal to 1.75° above the glide path and 8° each side of the localiser centerline"],
+    "answer": 1
+  },
+  {
+    "question": "An aircraft is on radial 120 with a magnetic heading of 300°, the track selector (OBS) reads: 330. The indications on the Course Deviation Indicator (CDI) are 'fly':",
+    "options": ["left with 'TO' showing", "right with 'TO' showing", "right with 'FROM' showing"],
+    "answer": 0
+  },
+  {
+    "question": "Magnetic heading 280°, VOR radial 090°. What bearing should be selected on the omni-bearing selector in order to centralise the VOR deviation needle with a 'TO' indication?",
+    "options": ["100°", "090°", "270°"],
+    "answer": 2
+  },
+  {
+    "question": "An aircraft carrying out an ILS approach is receiving more 90 Hz than 150 Hz modulation notes from both the localiser and glide path transmitters. The ILS indication will show:",
+    "options": ["fly left and fly up", "fly right and fly down", "fly left and fly down"],
+    "answer": 1
+  },
+  {
+    "question": "Quadrantal errors associated with aircraft Automatic Direction Finding (ADF) equipment are caused by:",
+    "options": ["misalignment of the loop aerial", "skywave/ground wave contamination", "signal bending by the aircraft metallic surfaces"],
+    "answer": 2
+  },
+  {
+    "question": "A VOR and DME are co-located. You want to identify the DME by listening to the call sign. Having heard the same call sign 4 times in 30 seconds the:",
+    "options": ["VOR and DME call signs were the same and broadcast with the same pitch", "DME call sign is the one with the higher pitch that was broadcast only once", "DME call sign was not transmitted, the distance information is sufficient proof of correct operation"],
+    "answer": 1
+  },
+  {
+    "question": "When 95 nm from a VOR you commence a descent from FL 330 with the intention of arriving at the VOR at FL 100. What rate of descent is required if your mean ground speed is 250 knots?",
+    "options": ["1059ft/min.", "1010ft/min.", "1150ft/min."],
+    "answer": 1
+  },
+  {
+    "question": "Radio Waves are coming from the land to sea the waves will bend:",
+    "options": ["Towards normal", "Remain same", "Away from normal"],
+    "answer": 2
+  },
+  {
+    "question": "What will be the rate of descent when flying down a 12% glide slope, at a groundspeed of 375 knots?",
+    "options": ["4560ft/min.", "4217ft/min.", "4227ft/min."],
+    "answer": 0
+  },
+  {
+    "question": "At 80 nm from a VOR an aircraft commences a descent from FL330 in order to arrive overhead the VOR at FL100. What rate of descent is required if the mean groundspeed in the descent is to be 240 knots?",
+    "options": ["1300ft/min.", "1150ft/min.", "1120ft/min."],
+    "answer": 1
+  },
+  {
+    "question": "An aircraft is on an ILS 3 degree glide slope, which passes over the runway threshold at a height of 50 feet. The DME range is 15 nm from the threshold. What is the height above the runway threshold elevation?",
+    "options": ["3550 feet", "4450 feet", "4550 feet"],
+    "answer": 2
+  },
+  {
+    "question": "In a chart if meridians and parallels of Lat. cut each other at right angles and the scale in the immediate vicinity of the point are correct, the chart is said to be:",
+    "options": ["Equal area projection", "Poly-conic projection", "Orthomorphic projection"],
+    "answer": 2
+  },
+  {
+    "question": "For an aircraft at a height of 1500 feet, interception of a 3° ILS glide path will occur at approximately?",
+    "options": ["7.0 nm from the threshold", "5.0 nm from the threshold", "6.0 nm from the threshold"],
+    "answer": 1
+  },
+  {
+    "question": "Convergency Angle (C.A.) increases with:",
+    "options": [
+      "Increases of Latitude and Decreases of difference in longitude",
+      "Decrease of Latitude and Decreases of difference in longitude",
+      "Increases of Latitude and increases of difference in longitude"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What will happen to the altimeter indications in an aircraft in level flight if the right static vent becomes blocked and the left remains clear?",
+    "options": [
+      "Over indicate when side slipping right",
+      "Over indicate when side slipping left",
+      "Under indicate in all conditions"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The vectors of a triangle that are resolved by computer to determine course and groundspeed are:",
+    "options": [
+      "Course and TAS, Track and G/S, wind direction and speed",
+      "Course and G/S, Track and TAS, W/V",
+      "Track and wind speed, Course and TAS, wind direction and G/S"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Aircraft is on 100° (M) bearing from NDB. In order to intercept 110° bearing line from the NDB, the aircraft must turn:",
+    "options": ["Right 130°", "Right 130°", "Right 080°"],
+    "answer": 0
+  },
+  {
+    "question": "The response rate of a VSI can be improved by fitting a:",
+    "options": ["Accelerometer system", "Choke system", "Bi-metallic compensator"],
+    "answer": 0
+  },
+  {
+    "question": "Aircraft approaching NDB heading 240°, ADF reads 000°. Aircraft maintains heading but drifts to the left. ADF reading will be:",
+    "options": ["< 000°", "= 000°", "> 000°"],
+    "answer": 2
+  },
+  {
+    "question": "During an acceleration phase at constant attitude, the resetting principle of the artificial horizon results in the horizon bar indicating a:",
+    "options": ["Nose-down attitude", "Constant attitude", "Nose-up attitude"],
+    "answer": 2
+  },
+  {
+    "question": "In the Southern hemisphere, during deceleration following a landing in an Easterly direction, the magnetic compass will indicate:",
+    "options": [
+      "An apparent turn to the North",
+      "No apparent turn",
+      "A heading fluctuating about 090°"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "A radio altimeter can be defined as a:",
+    "options": [
+      "Ground radio aid used to measure the true altitude of the aircraft",
+      "Self-contained on-board aid used to measure the true height of the aircraft",
+      "Self-contained on-board aid used to measure the true altitude of the aircraft"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Aeroplane loading:\nA) must be performed under the supervision of qualified personnel\nB) must be consistent with the data used for calculating the mass and balance\nC) must comply with compartment dimension limitations\nD) must comply with the maximum load per running meter\nE) must comply with the maximum mass per cargo compartment",
+    "options": [
+      "A, B, C, D and E only",
+      "C, D and E only",
+      "A and B only"
+    ],
+    "answer": 0
+  },
+  {
+    "question":"in diagrams, the Full VOR display is shown on diagram?",
+    "options":["1","2","3"],
+    "answer":1,"image":"../image/sample5.png"
+  },
+  {
+    "question": "The aircraft flies from position 50°N 175°W to a new position 50°N 175°E crossing the international date line, the observer should -",
+    "options": ["Decrease the date and LMT increase", "Increase the date and LMT increases", "Increase the date and LMT decreases"],
+    "answer": 2
+  },
+  {
+    "question": "A co-located VOR/DME is being used to track on airway inbound on the 160° radial, at 60 NM DME range, the VOR indicates 336° on the OBS and FROM/TO reads 'TO', the aircraft position is -",
+    "options": ["VOR, CDI needle indicates one dot to the right", "4 NM left of the airway centre line", "4 NM starboard of the airway centre line"],
+    "answer": 2
+  },
+  {
+    "question": "The radio altimeter determines aircraft height by -",
+    "options": ["Measuring the time interval between outgoing and incoming signals", "Employing a pulse modulation pattern", "Comparing the frequencies of the outgoing and the incoming signals"],
+    "answer": 2
+  },
+  {
+    "question": "Listed below are the factors which change density altitude:\nA. Decreasing barometric pressure \nB. Increasing barometric pressure \nC. Decreasing temp \nD. Increasing temp \nE. Decreasing relative humidity \nF. Increasing Relative humidity \n Select the factors which increase the density altitude at a given airport:",
+    "options": ["A. D & E", "B, C & E", "A, D & F"],
+    "answer": 2
+  },
+  {
+    "question": "If a flight is made from an area of low pressure into an area of high pressure without the altimeter setting being adjusted and a constant indicated altitude is maintained, the altimeter would indicate -",
+    "options": ["The actual altitude above the sea level", "Higher than the actual altitude above sea level", "Lower than the actual altitude above sea level"],
+    "answer": 2
+  },
+  {
+    "question": "If the PNR is calculated to be 880 NM with 10,000 Kg of fuel available, the distance to the PNR with 11,000 Kg fuel available, other factors being equal, will be -",
+    "options": ["920 nm", "968 nm"],
+    "answer": 1
+  },
+  {
+    "question": "Under which of the following circumstances will GPWS not give warning?",
+    "options": ["Approaching without flaps lowered", "Approaching with the undercarriage not locked down", "Rising ground ahead"],
+    "answer": 2
+  },
+  {
+    "question": "When fitted with mode 'C' transponders, a TCAS - 2 system may provide?",
+    "options": ["RA only", "Horizontal plane TA & RA", "Vertical plane TA & RA"],
+    "answer": 2
+  },
+  {
+    "question": "If the pulse length used in a primary radar is 4 microseconds, ignoring receiver recovery time, the minimum range at which a target can be detected is -",
+    "options": ["1200 meters", "2400 meters", "60 meters"],
+    "answer": 2
+  },
+  {
+    "question": "If an aircraft with two static ports sideslips towards the blocked port, the altitude indication will?",
+    "options": ["Increase", "Decrease", "Remain unchanged"],
+    "answer": 0
+  },
+  {
+    "question": "If radar has a beam width of 3° and a pulse of 4 microseconds, the target azimuth resolution at a range of 60 NM will be approximately -",
+    "options": ["4 nm", "3 nm", "6 nm"],
+    "answer": 1
+  },
+  {
+    "question": "What are errors in a DGI?",
+    "options": ["Transport wander, Earth rate, Mechanical imperfection", "Earth rate, Heading errors when banking and pitching, Mechanical imperfection", "transport wander,Earth rate, Heading errors when banking and pitching, Mechanical imperfection"],
+    "answer": 2
+  },
+  {
+    "question": "While using the airborne weather radar in the weather mode, the strongest returns on the screen indicate -",
+    "options": ["Areas of high concentration of larger water droplets", "Areas of probable wind shear", "Areas of severe turbulence"],
+    "answer": 0
+  },
+  {
+    "question": "The operational details of an aircraft are: maximum takeoff weight 72,000 kg,maximum landing weight 63,000 kg and maximum zero fuel weight 60,000 kg, burn off fuel 6.5 tons, reserve fuel 3.5 tons, operational weight of aircraft 42,000 kg. Calculate the maximum payload that can be carried for this flight -",
+    "options": ["20,000 kg", "18,000 kg", "17,500 kg"],
+    "answer": 2
+  },
+  {
+    "question": "For a flight from station 'Z', aircraft cruises at TAS 235 kt, track outbound 090°(T), FOB 2500 lbs, normal fuel consumption 255 lbs/hr and in case of one engine failure, reduced TAS and F/C are 180 kt TAS and 190 lbs/hr respectively.Average wind component +30 kt. What shall be the radius of action if one engine fails at the time of returning back to base?",
+    "options": ["1122 nm", "1143 nm", "0985 nm"],
+    "answer": 0
+  },
+  {
+    "question": "A flight is made from VOR A (51° N, 01° W), local variation 8°W to VOR B (51° N, 06°W), local variation 9° W, maintaining the same radial with 7° starboard drift and a/c flying great circle path,what is the heading(M) on departure?",
+    "options": ["273 (M)", "276 (M)", "271 (M)"],
+    "answer": 2
+  },
+  {
+    "question": "Two aircraft start from the equator, A flies 000°(T) for 5400 nm, B flies 090°(T) for 2500 nm. On reaching their destinations, the bearing of A from B will be -",
+    "options": ["000 (T)", "180 (T)", "045 (T)"],
+    "answer": 0
+  },
+  {
+    "question": "On a Mercator chart, radio bearings are plotted -",
+    "options": ["After correcting G/C radio brg into R/L brg by applying CA", "Directly as G/C bearing", "As rhumb line bearing after applying convergency angle"],
+    "answer": 0
+  },
+  {
+    "question": "A ground feature appears 30° to the left of the CRT centreline. Heading is 355° (M), variation is 15°E. What is the true bearing of aircraft from the feature?",
+    "options": ["310°", "130°", "160°"],
+    "answer": 2
+  },
+  {
+    "question": "Aircraft at HO (55° 33'N, 060°15'W), YYR VOR at (53°30'N, 060°15'W), variation 31°W at HO and 28°W at YYR. What is the radial from YYR?",
+    "options": ["031°", "332°", "028°"],
+    "answer": 2
+  },
+  {
+    "question": "X to Y: 123 NM, FL130, OAT +7°C, headwind 25 kt. Required RAS for 42 min trip?",
+    "options": ["160 kts", "165 kts", "171 kts"],
+    "answer": 0
+  },
+  {
+    "question": "Aircraft heading 155°, RMI reads 330°. To intercept magnetic 140° away from NDB, which way to turn and what will RMI indicate?",
+    "options": ["Right 320", "Left 140", "Left 320"],
+    "answer": 2
+  },
+  {
+    "question": "ILS shows 2 dots left and 2 dots above with 3 NM DME. What is the aircraft's position?",
+    "options": ["115 meters right of centre line, 45 meters", "115 meters left of centre line, 31 meters", "230 meters right of centre line, 106 meters"],
+    "answer": 0
+  },
+  {
+    "question": "Standing at the South Pole, which direction are you facing?",
+    "options": ["North", "East", "West"],
+    "answer": 0
+  },
+  {
+    "question": "After takeoff, VNAV will engage when:",
+    "options": [
+      "A thrust setting other than takeoff power is set and altitude selected is above aircraft's current height",
+      "A steering command is initiated and altitude is at least with current height",
+      "There is no AFCS comparator and all system flags are clear"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "An aircraft flies from 04°00'N, 030°00'W: 700 nm S, 700 nm E, 700 nm N, 700 nm W. Final position is?",
+    "options": ["04°00'N, 030°03'W", "03°58'N, 030°02'W", "04°00'N, 029°55'W"],
+    "answer": 2
+  },
+  {
+    "question": "TAS = 197 kt, TC = 240°, W/V = 180/30, descent from FL220 to FL40 over 39 NM. Approx. rate of descent?",
+    "options": ["800 FT/MIN", "1500 FT/MIN", "1400 FT/MIN"],
+    "answer": 2
+  },
+  {
+    "question": "Distance Q to R: 1970 NM, G/S out 495 kt, G/S back 465 kt, safe endurance 9 HR. PSR is at -",
+    "options": ["2267 NM", "2242 NM", "2157 NM"],
+    "answer": 2
+  },
+  {
+    "question": "Effect on CP position of reducing TAS in a headwind component will be:",
+    "options": ["Leave the distance unchanged", "Decrease the distance", "Increase the distance"],
+    "answer": 2
+  },
+  {
+    "question": "If air temperature is +20°C, the local speed of sound will be -",
+    "options": ["621 kt", "669 kt", "610 kt"],
+    "answer": 1
+  },
+  {
+    "question": "Aircraft flies from 1000 hPa into 960 hPa area without changing altimeter subscale. Aircraft flies -",
+    "options": ["1200 ft lower", "1200 ft higher", "120 ft higher"],
+    "answer": 0
+  },
+  {
+    "question": "INS relies on:",
+    "options": [
+      "Satellite radio positioning waves to fix position",
+      "Accelerometers only to fly aircraft along waypoints",
+      "Accelerometers and a rate gyro stabilized platform to measure acceleration and log progress"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What inputs are fed to ADC?\nA. AOA \nB. TAT \nC. OAT \nD. dynamic pressure \nE. Static pressure \nF. Total Pressure \nG.. AC Electrical power \nH. automatic commands",
+    "options": [
+      "A, B, D, E & G",
+      "A, B, D, F & G",
+      "A, B, E, F & G"
+    ],
+    "answer": 2
+  },
+  {
+    "question":"GPWS may give warning of:\nA. excessive sink rate \nB. excessive closure with terrain \nC. excessive proximity with ground when not in landing configuration \nD. excessive AOB",
+    "options":["A,B & C","B,C & D","A,C& D"],
+    "answer":0
+  },
+  {
+    "question":"Inputs to TCAS II include :",
+    "options":["Mode S transponder to coordinate avoidance maneuvers","Mode A transponder providing TA and RA data","Mode C transponder coordinating avoidance maneuvering"],
+    "answer":0
+  },
+  {
+    "question":"After applying GPS differential correction to a raw position, the refind position will be:",
+    "options":["Absolutely accurate","Accurate to 1 meter","Accurate to 1 to 3 meters"],
+    "answer":2
+  },
+  {
+    "question":"In EFIS he triangle symbol represents:",
+    "options":["A selected course pointer and is available on the ADI when VOR or ILS is selected.It is coloured magenta","An active way point and is available on the H.S.I when MAP, PLAN or VOR is selected, it is coloured green","The acroplane indicates its position at the apex of the triangle it is available on the H.S.I when MAP. VOR or ILS is selected and is coloured white0"],
+    "answer":2
+  },
+  {
+    "question":"To increase the maximum theoretical range of pulse radar system:",
+    "options":["Reduce the PRF and increase the power" ,"Increase the PRF and reduce the power","Inerease the PRF and increase the power"],
+    "answer":0
+  },
+  {
+    "question":"A magnetic compass must be swing after:",
+    "options":["A short term change in latitude","Long term change in latitude","Short term change in longitude"],
+    "answer":1
+  },
+  {
+    "question":" When a mode 'C' interrogation is responded to, vertical position of the aircraft is coded and transmitted. This vertical position is referred to:",
+    "options":["The sub scale of the altimeter","Area QNH","1013.2 hPa"],
+    "answer":2
+  },
+  {
+    "question":"An ft is approaching to land and is exactly on the ILS glide slope as it crosses the outer mark (OM). The airport elevation is 2600 ft, published OM crossing altitude is 4200 ft nd ATIS / QNH / temp is 1013 / +40 deg C. which answer best describes the expected dicated altitude as the OM is crossed in these conditions :",
+    "options":["4000 ft","4200 ft","3850 ft"],
+    "answer":1
+},
+{
+    "question":"GRID MORA value clear all terrain and man made structures by:",
+    "options":["2000 ft","2000 ft in mountainous area and 1000 ft in non-mountainous area","1000 ft when highest elevation are 5000' MSL or lower and 2000 ft where highest elevations are 5000' ft MSL. or higher"],
+    "answer":0
+},
+{
+    "question":"You are flying magnetic heading 300, with the Omni-bearing Indicator to 300, the CDI needle showing 3 dots left and the TO flag showing. If the airplane is now turned to the reciprocal heading of magnetic heading 120. Assuming the selection remains unaltered, what would be the indications on VOR display?",
+    "options":["CDI needle will shift 3 dots to the right","TO flag wil change to FROM","There wil not be any changes in the VOR indication"],
+    "answer":2
+},
+{
+    "question":"In a Doppler VOR (DVOR), the reference signal is ........ , the bearing signal is ....... and the direction of rotation of the bearing signal is ...... : ",
+    "options":["AM, FM, anti-clockwise","AM, FM, clockwise","FM, AM, anti-clockwise"],
+    "answer":0
+},
+{
+    "question":" If a standard rate turn is maintained, how much time would be required to turn to the left from a heading 090° to heading of 300°:",
+    "options":["70 sec","40 sec","50 sec"],
+    "answer":2
+},
+{
+    "question":"The heading indicator is a",
+    "options":["Earth gyro","Directional gyro","Rate gyro"],
+    "answer":1
+},
+{
+    "question":" An aircraft is flying at constant indicated altitude, over a warm air mass. The altimeter reading will be:",
+    "options":["Correct","Grater than the real altitude","Less than the real altitude"],
+    "answer":2
+},
+{
+    "question":"If the needle and the ball of a turn and slip indicator both show right, what does it indicate?",
+    "options":["Turn to left and too much bank","Turn to right and too much bank","Turn to left and too little bank"],
+    "answer":1
+},
+{
+    "question":" What is density altitude?",
+    "options":["Altitude in the standard atmosphere at which the prevailing density is equal to the density in the standard atmosphere","Pressure altitude corrected for prevailing temp","Temperature altitude"],
+    "answer":0
+},
+{
+    "question":"Mach number is defined as:",
+    "options":[ "The ratio of pitot pressure to dynamic pressure","The ratio of static pressure to dynamic pressure","The ratio of dynamic pressure to static pressure"],
+    "answer":2
+},
+{
+    "question":"What happens when the static pressure supply, to an altimeter, becomes blocked during a descent?",
+    "options":["Reduces to zero","Over reads","Indicates altitude at which blockage occurred"],
+    "answer":2
+},
+{
+    "question":"INS relies on:",
+    "options":["Satellite radio positioning waves to fix position","Accelerometers only to fly the aircraft along a given set of way points","Accelerometers and a rate gyro stabilized platform to measure acceleration and velocity and keep continuous log of progress from initial erection to shut down"],
+    "answer":2
+},
+{
+    "question":"Place A on 57°N 176°W & Place B 60°N 177°E. Calculate dlong ?",
+    "options":["1°E","7°W","3°N"],
+    "answer":1
+},
+{
+    "question":"An aircraft with its altimeter setting 1013 lands at an Aerodrome with Elevation = 1240' ,QNH at Acrodrome = 1008. What will the altimeter read on Ground ?",
+    "options":["1375","1105'","1240'"],
+    "answer":0
+},
+{
+    "question":"An aircraft at FL75 takes off from an Aerodrome with elevation =1500' ,QNH at acrodrome= 1023.25. What is the true Vertical distance ?",
+    "options":["6300'","6000'","5700'"],
+    "answer":0
+},
+{
+    "question":"Stalling Speed with landing configuration is called ?",
+    "options":["Vso","Vsl","Vs"],
+    "answer":0
+},
+{
+    "question":"Vl Should not be less than ?",
+    "options":["Vmcg","Vmbe","Vmca & Vmcg"],
+    "answer":0
+},
+{
+    "question":"Scale at LCC practically is ?",
+    "options":["Constant with in 8 degrees of equator","Constant Everywhere","Constant outside standard parallels."],
+    "answer":1
+},
+{
+    "question":"Fuel consumption is 220ltrs/hr with Density of 0.8. What would be the FC when density changes to 0.75?",
+    "options":["275 Ltrs/hr","206 Ltrs/hr","220 Ltrs/hr"],
+    "answer":1
+},
+{
+    "question":"When turning error is maximum ?",
+    "options":["When Turning through North/South direction at high latitudes","When Turning through North /South at least latitudes","When turning through East/West Direction at high latitudes"],
+    "answer":0
+},
+{
+    "question":"What Squawk Code should be Entered while crossing an FIR ?",
+    "options":["7500","7600","2000"],
+    "answer":2
+},
+{
+    "question":" What does the Pitot Tube measure ?",
+    "options":["Total - Dynamic Pressure","Total + Static Pressure","Dynamic + Static Pressure"],
+    "answer":2
+},
+{
+    "question":"If Pitot source gets blocked during descent ASI will ...... , VSI will ...... & Altimeter will ........?",
+    "options":["Under Read, Over Read, Over Read Respectively.","Over Read, No effect, No effect Respectively","Under Read No effect, No effect Respectively"],
+    "answer":2
+},
+{
+    "question":"Forward CG will cause ?",
+    "options":["Higher Stalling speed","Lower stalling speed","No effect on the stalling speed"],
+    "answer":0
+},
+{
+    "question":"An Aircraft flying a track inbound parallel to airway direction of 090°(M) compensating 5°S drift and is 12nms starboard of the track. What will the ADF read when tuned to destination NDB 45 Nms away ?",
+    "options":["011°","191°","349°"],
+    "answer":2
+},
+{
+    "question":" An Aircraft in to NDB on Inbound track of 040[M] is asked to intercept and proceed direct on to outbound track of 330[M] by intercepting the same at 40°.The aircraft should alter heading to?",
+    "options":["290°(M)","010°(M)","030°(M)"],
+    "answer":1
+},
+{
+    "question":"Turning Error is maximum in NHS when ?",
+    "options":["Aircraft is turning through North South directions at least latitudes","Aircraft is turning through North South at High latitudes","Turning through East/West Directions"],
+    "answer":1
+},
+{
+    "question":"Aircraft A on a certain altitude at 60°N Parallel of latitude flies at a speed of 230Kts and reaches back to the point from where it starts. Aircraft B on Equator does the same assuming that the time taken by both the aircrafts is same! What is the speed of Aircraft B ?",
+    "options":["230kts","460kts","115kts"],
+    "answer":1
+},
+{
+    "question":"Airspeed Entered in Col.15 of the flight plan is always ?",
+    "options":["TAS","IAS","G/S"],
+    "answer":0
+},
+{
+    "question":" Rhumb Lines on a polar stereographic projection:",
+    "options":[ "Curve concave to nearer pole","Straight lines","Curve convex to ncarer pole"],
+    "answer":0
+},
+{
+    "question":"An aircraft is attempting to home to a VOR on radial 064. The CDI shows 4 dots Fly right with a TO indication, at the same time the co-located DME shows a range of 45 nautical miles. where is the aircraft in relation to the required track?",
+    "options":["6nm right of track","3nm right of track","6nm left of the track"],
+    "answer":2
+},
+{
+    "question":" Which of the following is a horizontal axis Tied gyro?",
+    "options":["artificial horizontal","turn and slip indicator"," DGI"],
+    "answer":1
+},
+{
+    "question":"In what way does IRS differ from INS?",
+    "options":["has shorter spin up time and suffers from laser lock","has longer spin up time but does not suffer from laser lock","is difficult to maintain due to many more moving parts"],
+    "answer":2
+},
+{
+    "question":"FL 330, Temperature = -50 deg C,RAS=310kt, what is mach number.",
+    "options":["0.90","0.87","1.161"],
+    "answer":1
+},
+{
+  "question":" During a compass swing the values of coefficients are as, A=+3°, B=+2 °and C= -10°. What will be the expected deviation on Hdg 145°(C) in southern hemisphere -",
+  "options":["12° easterly","12° westerly","9.30° westerly"],
+  "answer":0
+},
+{
+  "question":"On Mercator chart if the scale at 30°N is 1:35,00,000, what will be scaled at 40°N.",
+  "options":["1:2625000","1:3099250","None of the above"],
+  "answer":2
+},
+{
+  "question":" An aircraft is homing to a VOR, drift 100 starboard, variation at VOR Stn is 50° W and at DR position 30°33W. Give the initial heading to maintain a radial of 274°:",
+  "options":[ "104° M","084° M","264° M"],
+  "answer":1
+},
+{
+  "question":" Aircraft present Hdg 170° (M), ADF 345° relative. Make 45° intercept of the 355º track out bound. What shall be the Hdg to intercept and ADF indication at the time of intercept: \n ADF on intercept (Relative) and Intercept Hdg (M)",
+  "options":[ "310; 175°","040: 135°","045; 130°"],
+  "answer":2
+},
+{
+  "question":"If the PNR is calculated to be 880 NM with 10,000 Kg of fuel available, the distance to the PNR with 11,000 Kg fuel available, other factors being equal, will be -",
+  "options":["920 nm","968 nm","960 nm"],
+  "answer":1
+},
+{
+  "question":"The principal advantage of a gyro magnetic compass (Slaved gyro compass) is:",
+  "options":["It does not have to be aligned with the north","It does not precess","It combines the north-seeking ability of the magnetic compass with the stability of the direction indicator"],
+  "answer":2
+},
+{
+  "question":"A remote indicating compass has usually less deviation error than a panel mounted compass because:",
+  "options":["it is carrying a well damped floating magnet.","it is normally mounted in a part of the airplane where magnetic interference is minimal.","it receives a higher flux-density from the earth's magnetic field"],
+  "answer":1
+},
+{
+  "question":"The use of the TCAS (Traflic Collision Avoidance System) for avoiding an aircraft in flight is now general. TCAS uses for its operation:",
+  "options":["the echos of collision avoidance radar system especially installed on board","both the replies from the transponders of other aircraft and the ground-based radar echos","the replies from the transponders of other aircraft"],
+  "answer":2
+},
+{
+  "question":"AWR works in SHF band because:",
+  "options":["Large water drops, and storms give good reflection at 3 cm. wavelength and small drops like fog / mist stratus clouds do not give reflections.","Enable the equipment to be powerful to be installed in nose.","To receive reflection from large water droplets and dust storm."],
+  "answer":0
+},
+{
+  "question":"Flying at flight level 200, AWR return at range of 60 nm is identifiable when center of beam is tilted + 1° and -40. What is the height of the base and top of the rain bearing clouds. BW of AWR is 4'.",
+  "options":["FL 260, FL 140","FL 200, FL 80","FL 140, FL 80"],
+  "answer":2
+},
+{
+  "question":"The conical pencil beam of a weather radar is 5 degrees and the beam is tilted 4 degrees up. At this setting the tops of a cloud at range 70 NM just disappear:\nWhat is the approximate height of the cloud tops above the aircraft's altitude?",
+  "options":["7 800 feet.","9 400 fcet.","1 100 feet."],
+  "answer":2
+},
+{
+  "question":"The transponder IDENT button is used:",
+  "options":["On initial contact with ATC","When requested by ATC","When changing codes"],
+  "answer":1
+},
+{
+  "question":"An airfield Surveillance radar is required to operate at a minimum range of 0.125 mms. The maximum pulse width of the transmission is:",
+  "options":["3.08μs","1.54μs","1.07μs"],
+  "answer":1
+},
+{
+  "question":" An aircraft flying towards a stationary transmitter measures a frequeney shift of 2015 Hz. If the transmission frequency is 4.75 GHz, the aircraft's GS is:",
+  "options":["215 knots","247 knots","264 knots."],
+  "answer":1
+},
+{
+  "question":" An airborne weather radar has the following characteristics: Wavelength 3.2 cm. Pulse width 2.2 microseconds. Pulse recurrence frequency 400 pulses per second.\nThe theoretical minimum range of the radar is:",
+  "options":["330 metres","480 meters","660 meters"],
+  "answer":0
+},
+{
+  "question":"The time taken for the transmission of an interrogation pulse by a Distance Measuring Equipment (DME) to travel to the ground transponder and return to the airborne receiver was 2000 micro-second including processing time. The slant range from the ground transponder was:",
+  "options":["158NM","162NM","324NM"],
+  "answer":0
+},
+{
+  "question":"An aircraft flies from a cold air mass into a warm air mass at a constant FL and RAS. The Mach number will:",
+  "options":["Increase","Decrease","Remain constant"],
+  "answer":2
+},
+{
+  "question":"The altitude in the ISA where a TAS of 480 kts equals Mach 0.82 is:",
+  "options":["29 000ft","31 500ft","34 000ft"],
+  "answer":1
+},
+{
+  "question":"Runway 15, length 2 300 meters. Displaced threshold 15 metres, stopway 80 meters, clearway 150 meters. The accelerate-stop distance available is:",
+  "options":["2380 meters","2450 meters","2365 meters"],
+  "answer":0
+},
+{
+  "question":"An aircraft is flying at FL350 at M0.81 with a headwind component of 125 kts & ISA +13°. The flight distance is 1 750 kms and the average fuel consumption is 5950 Ibs per hour. Total fuel reserves required are 9% of burn off plus 100 Imperial gallons, SG is 0.805. The amount of fuel that should be on board the aircraft at brake release is:",
+  "options":["15,823 lbs","17,247 lbs","18,052 lbs"],
+  "answer":2
+},
+{
+  "question":"It 230 US galls of fuel weigh 1 700 ibs, the specific gravity of the fuel is:",
+  "options":[ "0.74","0.80","0.88"],
+  "answer":2
+},
+{
+  "question":"Overhead 'P' (28°24'S 021°16'E) at 4 000 ft climbing to FL260. Mean RAS 150, constant ROC 650 fpm, initial HDG 267° (M), mean climb temperature -7°C mean climb W/V 140/30. The DR position at TOC is:",
+  "options":["28°00'S 020°00'E","28°52'S 019º10'E","27°22'S 019°46'E"],
+  "answer":1
+},
+{
+  "question":"At 0831 an aircraft was overhead XYZ (28°32'S 028°45'E) maintaining radial 270° XYZ, TAS 150, HDG 280° (M). At 0922 it obtains a relative bearing of 125° WM (28°00'S 026°42'E). The wind component is:",
+  "options":["-15"," +15"," +5"],
+  "answer":1
+},
+{
+  "question":"Positions X and Y are 960 nm apart. At 1205, aircraft A leaves position X en route to Y at GS 370 kts. At 1225, aircraft B leaves position Y en route to X at GS 290 kts. At what time will the aircraft pass each other?",
+  "options":["1321","1341","1343"],
+  "answer":1
+},
+{
+  "question":" On a chart, scale 1: 1 000 000, the distance between 2 pinpoints is 30 cms. The time taken between these fixes is 45 minutes. What is the aircraft's ground speed in kms per hour",
+  "options":["225","348.5","400"],
+  "answer":2
+},
+{
+  "question":"An aircraft departs X (27º34'S 034°15'W) at 0900Z, track 090° (T), and GS 455kyts. At 015°00'W it flies due north at GS 422kts. The ETA abeam of Y(19°35'S 013°45'W)",
+  "options":["1223","1233","1243"],
+  "answer":0
+},
+  {
+    "question":" Nominal scale in Lambert conformal conie chart is correct at?",
+    "options":["Latitude of origin","Standard parallels","Equator"],
+    "answer":1
+  },
+  {
+    "question":"On a Mercator chart, the straight line (rhumb line) and the curved line (great circle) representing the path between two points exhibit:",
+    "options":[ "Earth convergency","Chart convergency","Convergence angle"],
+    "answer":1
+  },{
+    "question":"In which of the following projections will the plane surface touch the radius of earth at one of the poles?",
+    "options":["Mercator","Lambert","Polar stereographic"],
+    "answer":2
+  },{
+    "question":"On a Lamberts chart, the distance between parallels of latitude spaced the same number of degrees apart:",
+    "options":["Is constant throughout the chart.","Reduces between and expands outside the standard parallels.","Expands between and expands outside the standard parallel."],
+    "answer":1
+  },{
+    "question":" On a polar stereo-graphic chart, showing South pole, a straight line joining A-70°S065°E and B- 70ºS025°W, the True course on departure from position A",
+    "options":["250° (T)","315°(T)","225°(T)."],
+    "answer":2
+  },{
+    "question":"On a Lambert chart, with standard parallels at 37°N and 65°N, with respect to a straight line drawn on the map between A (49°N 030°W) and B(48°N 040°W), the:",
+    "options":["GC is to the north and rhumb line is to the south.","GC and thumb line are to the north.","GC and rhumb line are to the south."],
+    "answer":0
+  },{
+    "question":"Current fight plan is a flight plan which:",
+    "options":[ "includes changes brough about by subsequent clearances.","excludes changes brought about by subsequent clearances.","includes changes brought about by subsequent amendments made by the pilot in command."],
+    "answer":0
+  },{
+    "question":"In column 15 of an ICAO light plan, 250knots cruising speed is written as:",
+    "options":[ "K0250","N250","N0250"],
+    "answer":2
+  },{
+    "question":"Radalt is dependant on:",
+    "options":["AMCW","FMCW","Barometric Pressure"],
+    "answer":1
+  },
+  {
+    "question":" Departure time entered in Item 13 of ICAO flight plan submitted before departure is:",
+    "options":["ETD","TEET"," EOBT"],
+    "answer":2
+  },
+  {
+    "question":"Vmca is defined as the minimum speed, whilst in the air, that directiona control can be maintained with one engine inoperative with",
+    "options":[ "use of ful rudder deflection","Max. of 5 degree bank","both 1&2 are correct."],
+    "answer":2
+  },
+  {
+    "question":"Maximum allowable take-off mass 64400 kg, Maximum landing mass 56200 kg, Maximum zero fuel mass 53000 kg, Dry operating mass 35500 kg, Traffic load 14500 kg, Trip fuel 4900 kg, Take-off fuel 7400 kg. Find maximum possible additional load.",
+    "options":["5600 kg","7000 kg","3000 kg"],
+    "answer":2
+  },{
+    "question":"Dry operating mass (DOM)= 33510 kg Load= 7600 kg Final reserve fuel- 983 kg Alternate fuel= 1100 kg Contingency fuel 102 kg The estimated landing mass at alternate should be:",
+    "options":["42195 kg","42093 KG","42210 KG"],
+    "answer":0
+  },
+  {
+    "question":" A pitot tube covered by ice which blocks the ram air inlet will affect the following instrument:",
+    "options":["VSI","Altimeter","ASI"],
+    "answer":2
+  },
+  {
+    "question":"In the ATS flight plan item 15, when entering a route for which SID & STAR procedure exists :",
+    "options":["Both SID & STAR should be entered.","Only STAR is entered.","Both SID and STAR are not required to be entered."],
+    "answer":0
+  },
+  {
+    "question":" An NDB signal crossing from land to sea ...... in speed and bends ...... from the normal:",
+    "options":["increases, away","decreases, towards","decreases,away"],
+    "answer":0
+  },
+  {
+    "question":"The still air distance in the climb is 189 Nautical Air Miles (NAM) and time 30 Miles (NAM) and time 30 minutes. What ground distance would be covered in a 30 kt head wind?",
+    "options":[ "219 nm","159nm","174nm"],
+    "answer":2
+  },
+  {
+    "question":" What is the operational limit for runway slope?",
+    "options":[" +/- 2% ","+3% - 1%"," +/-1.5% "],
+    "answer":0
+  },
+  {
+    "question":"Transverse Mercator charts are highly suitable for?",
+    "options":["Large N/S extensions","Large E/W extensions","Both N/S and E/W extensions"],
+    "answer":1
+  },
+  {
+    "question":" Which ICAO DOC is referred for FLIGHT PLAN?",
+    "options":[ "DOC 8168","DOC 4444","Annex 17."],
+    "answer":1
+  },
+  {
+    "question":"Doc 10085 is an?",
+    "options":["ETOPS Manual","EDTO Manual|","Airworthiness Manual"],
+    "answer":1
+  },
+  {
+    "question":" What determines the maximum and minimum range of a pulsed radar ?",
+    "options":[ "Pulse Repetition Time, Pulse Width.","Continuous Wave, Pulse Repetition Period.", "Pulse Width, Speed of Propagation."],
+    "answer":0
+  },
+  {
+    "question":"Which error causes hunting in an ADF?",
+    "options":[ "Coastal error.","Night effect.","Static Interference and Precipitation"],
+    "answer":2
+  },
+  {
+    "question":"GNSS maximum error is due to?",
+    "options":[ "Ephemeris Error","Ionospheric Propagation Error","Multi Path Reception"],
+    "answer":1
+  },
+  {
+    "question":"How does the forward CG affect the aireraft in terms of stall angle, range, endurance ?",
+    "options":[ "Increased Stall Angle, decreased range and endurance.","Decreased Stall Angle, range and endurance.","Decreased Stall Angle, increased range and endurance."],
+    "answer":0
+  },
+  {
+    "question":"What is the indication of a VSI over a cold front ?",
+    "options":["a positive descend rate","a smooth level flight","a positive climb rate"],
+    "answer":2
+  },
+  {
+    "question":"Deviation is not zero in a VOR, what do we follow ?",
+    "options":["True track","Compass track","Magnetic track"],
+    "answer":1
+  },
+  {
+    "question":"Number of passengers not known, what has to be filled in flight plan Item 19?",
+    "options":["P/NSP(Not Specified)","P/NKN(Not Known)","P/TBN(To Be Notified)"],
+    "answer":2
+  },
+  {
+    "question":"A/C MTOM is 140000 kg, on the day it weighs 130000 kg, what should be entered in wake turbulence category?",
+    "options":["S","H","M"],
+    "answer":1
+  },{
+    "question":"Fuel in an A/C is 14000lbs, reserve fuel needed at landing is 2000lbs in a twin engine aircraft & fuel flow per engine is 1000 lbs/hr, TAS is 180 kts wind component (-)45 kts find distance to PNR ?",
+    "options":["810 NM","945 NM","2700 NM"],
+    "answer":0
+  },{
+    "question":"More fundamental function causing Stall Warning is ",
+    "options":["High IAS","High AOA","Low TAS"],
+    "answer":1
+  },{
+    "question":"A/c at 24380ft range 30nm. What is the indicated range?",
+    "options":["30.52 NM","32.26 NM","30.26 NM"],
+    "answer":2
+  },
+  {
+    "question":" Due to emergency the pilot descends at a greater rate, he may expect:",
+    "options":[" Greater ground speed, long roll distance and undershooting of R/W."," Greater airspeed, long roll distance and proper control of the a/c.","Greater groun dspeed, long roll distance and overshooting of R/W."],
+    "answer":0
+
+  },
+  {
+    "question":" During the approach, a crew reads on the radio altimeter the value of 65 ft,this is an indication of true",
+    "options":[ "Height of the aircraft with regard to ground at any time.","Height of the lowest wheel with regard to runway threshold at any time.","Height of the lowest wheel with regard to ground at any time."],
+    "answer":2
+  },{
+    "question":"The altimeter consists of one or more several aneroid capsules located in sealed casing. The pressure in the aneroid capsule and casing are respectively:",
+    "options":[ "Very low, Static","Static, vacuum."," Static, Dynamic."],
+    "answer":0
+  },{
+    "question":" The initial climb for a single-engine aircraft in the takeoff path typically involves:",
+    "options":[ "Vy followed by Vx","Vx followed by Vy","Best rate of climb speed initially followed by best angle of climb speed."],
+    "answer":1
+  },{
+    "question":" What does the turn coordinator indicate?",
+    "options":["Pitch rate.","Roll rate.","Yaw rate."],
+    "answer":2
+  },{
+    "question":" What is the true direction and distance (in NM) from point P,(48°33'S 57°09 E) to point Q (71° 23' S, 57° 09' E)?)",
+    "options":["360°,1370 NM","180°.1370 NM ","180°,754 NM"],
+    "answer":1
+  },{
+    "question":"You are flying a constant compass heading of 252°. Variation is 22°E, deviation is 3°W and your INS is showing a drift of 9º right. True track is?",
+    "options":[" 262°","274°","280°"],
+    "answer":2
+  },{
+    "question":" Which band does a RADALT operate in?",
+    "options":["4200-4400 Khz","4200-4400 Mhz"," 4200-4400 Ghz"],
+    "answer":1
+  },{
+    "question":" The failure of radio altimeter would?",
+    "options":["result in warning of proximity to the ground being not available during cruise.","increase the risk of CFIT.","both a and b are correct."],
+    "answer":1
+  },{
+    "question":"What does the best angle of climb speed achieve?",
+    "options":["maximum rate of elimb for a given altitude and weight.","provides the maximum vertical climb rate without sacrificing too much forward progress.","efficient ascent in terms of fuel consumption."],
+    "answer":0
+  },{
+    "question":"The LMT and date at a longitude of 001°W is 1330 on 6th January, what is the LMT and date at longitude 159°E?",
+    "options":["13:00 6th Jan","00:40 7th Jan","00:10 7th Jan"],
+    "answer":2
+  },{
+    "question":"Aircraft is said to be Neutrally stable if the center of gravity is located at:",
+    "options":["forward limit"," aft limit","aerodynamic center"],
+    "answer":2
+  },
+  {
+    "question":" ILS and GNSS are to be written in flight plan as:",
+    "options":["I,N","I,G","L,G"],
+    "answer":2
+  },
+  {
+    "question":" GPS (Global Positioning System) constellations are typically deployed in orbits that are inclined relative to:",
+    "options":["the Earth's spin axis."," the Earth's equator."," the Prime meridian."],
+    "answer":1
+  },
+  {
+    "question":"Which of the following combination gives least performance:",
+    "options":["high humidity, low altitude, high temperature.","high humidity, high altitude, high temperature","low humidity, low altitude, low temperature."],
+    "answer":1
+  },
+  {
+    "question":"During a VFR flight at a navigation check point the remaining usable fuel is 60 us gal. The reserve fuel is 12 us gal. According to the flight plan the remaining flight time is 1h 35mins. Calculate the highest acceptable rate of consumption possible for the rest of the trip.",
+    "options":["30.3 us gal/hr"," 33.6 us gal/hr","35.5 us gal/hr"],
+    "answer":0
+  },
+  {
+    "question":"The Operating mass of an aircraft is:",
+    "options":[" the dry operating mass plus the take off fuel mass."," the empty mass plus the take off fuel mass."," the empty mass plus crew, crew baggage and catering."],
+    "answer":0
+  },
+  {
+    "question":"The coded identification of the VOR is transmitted about every ........ SECONDS:",
+    "options":["20 seconds","10 seconds","30 SECONDS "],
+    "answer":1
+  },
+  {
+    "question":"An aircraft heading 140° (M) bears 320° (T) from a VOR (VAR 10° E). The bearing, selected on the OBS which would make the VOR/ILS deviation indicator show TO would be:",
+    "options":["120°","130°","320°"],
+    "answer":1
+  },
+  {
+    "question":"TCAS II (RA) provides the pilot with specific instructions on how to avoid the conflict with traffic by:",
+    "options":[" quickly and steadily turning left or right.","quickly and steadily increasing/decreasing ground speed.","quickly and steadily descending, climbing, or adjusting vertical speed."],
+    "answer":2
+  },
+  {
+    "question":" The indications on the RMI are shown below. Which of the following statements is correct?",
+    "options":["Heading 192°M, VOR radial 132°M, NDB bearing 108°M.","Heading 192°T, VOR radial 108°M, NDB bearing 132°M.","Heading 192°M, VOR radial 312°M, NDB bearing 288°M."],
+    "answer":0,"image":"../image/sample7-1.png"
+  },
+  {
+    "question":" The aircraft is 60nm inbound from the VOR.The ILS/VOR indicator below is set to define the centre line of an airway. The aircraft is located on which radial? What is the type of sensing and OBS selected?",
+    "options":["243°, normal, 063°","095°, reverse,220°","063°, normal,248°"],
+    "answer":2,"image":"../image/sample7-2.png"
+  },
+  {
+    "question":"Unless otherwise stated on the charts for SID, the routes shown are given with:",
+    "options":["Mag Heading","True Course","Mag course"],
+    "answer":2
+  },
+  {
+    "question":"At night, a position has to be reported to ATC, distance 750 nm from ground station, what frequency is to be used?",
+    "options":["17296 khz","123.9 Mhz","5649 Khz"],
+    "answer":2
+  },
+  {
+    "question":"A multi engine aircraft is on IFR flight. Given the following data and assuming fuel consumption remains unchanged, which of the following statement is correct: \n - Trip fuel: 65 USG \n - Contingency fuel: 5% of trip \n - ALT Fuel including final reserve: 17 USG \n - Usable fuel at time of departure: 93 USG \n - At point half way to destination, fuel consumed is 40 USG ",
+    "options":["At destination required reserves remain intact.",
+  "Remaining fuel is insufficient to reach destination.","Remaining fuel is insufficient to reach to destination with reserves intact."],
+    "answer":0
+  },
+  {
+    "question":"What is the advantage of remote indicating compass over direct reading magnetic compass?",
+    "options":["It is lighter"," It is connected to the electrical power so more accurate","It senses the earth's magnetic field rather than it seeks, so it is more sensitive"],
+    "answer":2
+  },
+  {
+    "question":"An a/c on Hdg 340°M with ADF reading 190°, what will be the indication on RMI?",
+    "options":["Pointer reads 170° & tail reads 350°","pointer reads 350° & tail reads 170°","Point reads 150° & tail reads 330°"],
+    "answer":1
+  },
+   {
+    "question":"The period of validity of the navigational database is:",
+    "options":["7 days","28 days","depends upon operational requirements"],
+    "answer":1
+  },
+     {
+    "question":" The FMC navigational database can be accessed by the pilots:",
+    "options":["to read information only.","to update the database.","to change information once in 28 days."],
+    "answer":0
+  },
+     {
+    "question":" A landing compass:",
+    "options":["Is used to establish aircraft magnetic heading during a compass swing.","Is the compass used as reference during landing."," Is a compass on which compass direction for landing may be set."],
+    "answer":0
+  },
+     {
+    "question":"What is Expected Approach Time (EAT)?",
+    "options":["Estimated time overhead the destination airfield.","Estimated time to leave holding fix following a delay.","Estimated final approach fix time."],
+    "answer":1
+  },
+     {
+    "question":"An a/c plans to depart LONDON at 1000 UTC & arrive at Munich EDDM at 1215 UTC. In ATC flight plan item 16 should be entered:",
+    "options":[" EDDM 1415","EDDM 1215","EDDM 0215"],
+    "answer":2
+  },
+     {
+    "question":"An aeroplane is flying from an airport to another. In cruise, the CAS is 150 kts, TAS is 180kts, GS 210kts, the speed box on the flight plan shall be filled as follows:",
+    "options":["N0180","N0210","K0180"],
+    "answer":0
+  },
+     {
+    "question":"Which of the following is not an advantage of a slotted antenna?",
+    "options":["reduced side lobes","directivity","improved resolutions"],
+    "answer":2
+  },
+     {
+    "question":"A VOR and DME are co-located. You want to identify the DME by listening to the call sign. Having heard the same call sign 4 times in 30 seconds the:",
+    "options":["VOR and DME call signs were the same and broadcast with the same pitch","DME call sign is the one with the lower pitch that was broadcast several times.","DME call sign is the one with the higher pitch that was broadcast only once"],
+    "answer":2
+  },
+     {
+    "question":"A radio altimeter can be defined as a:",
+    "options":[" Self contained on board aid used to measure the density altitude of the aircraft","Self contained on board aid used to measure the true height of the aircraft","On board aid used to measure the pressure altitude of the aircraft."],
+    "answer":1
+  },
+     {
+    "question":"In S/H during landing in westerly direction, the magnetic compass will indicate:",
+    "options":[ "apparent turn to South","no apparent turn","apparent turn to North"],
+    "answer":0
+  },
+     {
+    "question":"A pitot tube covered by ice which blocks the ram air inlet will affect the following instruments:",
+    "options":["ASI and altimeter both"," Airspeed indicator only","Altimeter only"],
+    "answer":1
+  },
+     {
+    "question":"Maximum allowable take-off mass 64400 kg; maximum landing mass 56200 kg; maximum zero fuel mass 53000 kg; dry operating mass 35500 kg; estimated load 14500 kg; estimated trip fuel 4900 kg; minimum take-off fuel 7400 kg. Find maximum additional load.",
+    "options":["3000 kg","4000 kg","5600 kg"],
+    "answer":0
+  },
+     {
+    "question":"The ATC transponder system, excluding Mode S, contains:",
+    "options":[ "four modes, each 4096 codes", "two modes, each of 4096 codes","two modes, each 1024 codes."],
+    "answer":1
+  },
+  {
+    "question":"The transponder code set in an SSR system consists of:",
+    "options":["4 digits, forming any of 4096 different codes.", "4 digits, forming any of 7777 different codes.","2 digits and 2 letters, forming any of 4096 different codes."],
+    "answer":0
+  },
+  {
+    "question":" If the SSR transponder IDENT button is pressed an identification pulse is automatically and continuously transmitted for:",
+    "options":["20 seconds, 4.35µ sec before the last framing pulse.","20 seconds, 4.35 µsec after the last framing pulse.","10 seconds, 4.35µ sec after the last framing pulse."],
+    "answer":1
+  },
+  {
+    "question":"Distance from P to Q is 400 NM, wind component +30 Kts, and wind component from Q to P is -40 Kts. All engines operative TAS is 160 Kts. The flight fuel is 2450 Kg and the Safe endurance is 4 hours. Calculate PNR for return to P. What is the distance from PNR to О?",
+    "options":["155 NM, 45NM", "255 NM, 155NM","294 NM, 106NM"],
+    "answer":2
+  },
+  {
+    "question":"The principal propagation path employed in an NDB/ADF system is:",
+    "options":["skywave","surface wave","direct wave"],
+    "answer":1
+  },
+  {
+    "question":"An aircraft is flying straight and level, over a warm air mass. The altimeter reading will be:",
+    "options":["less than the real height","correct","greater than the real height"],
+    "answer":0
+  },
+  {
+    "question":"Minimum number of GNSS satellites required to carry out independent functions mentioned below is:\n1. 3D operations, Receiver Autonomous Integrity Monitoring (RAIM) and to isolate any faulty satellite.\n2. Operations to obtain a position.\n3. 2D operations.",
+    "options":["5,4,3","6,4,3","7,5,4"],
+    "answer":1
+  },
+  {
+    "question":"In a doppler VOR the reference signal is .....,the bearing signal is ...... and the direction of rotation of the bearing signal is....... ",
+    "options":["AM,FM,anti-clockwise","AM,FM,clockwise","FM,AM,anti clockwise"],
+    "answer":0
+  },
+  {
+    "question":"Frequency and Wavelength of radio altimeter is?",
+    "options":["4.2 GHz to 4.4 GHz. and 7.14m to 6.82m.","4.2 MHz to 4.4 MHz. and 7.14 cm to 6.82 cm.","4.2 GHz to 4.4 GHz. and 7.14 cm to 6.82 cm."],
+    "answer":2
+  },
+  {
+    "question":"An aircraft takes off from an airport 2 hours before sunset. The pilot flies a track of 090°(T). W/V 130°/20 kt, TAS 100 kt. In order to return to the point of departure before sunset, the furthest distance which may be travelled is:",
+    "options":["97 nm","115 nm","105 nm"],
+    "answer":0
+  },
+  {
+    "question":"An aircraft has a TAS of 300 knots and is over a stretch of water between 2 airfields 500 NM apart. If the wind component is 60 knots head, what is the distance from the first airfield to the critical point?",
+    "options":["250 nm","200 nm","300 nm"],
+    "answer":2
+  },
+  {
+    "question":"Preventive RA in TCAS II (for no change in vertical speed required) is:",
+    "options":["Maintain Vertical Speed","Crossing Maintain","Monitor Vertical Speed"],
+    "answer":2
+  },
+  {
+    "question":" Purpose of latitude rider nut in DGI is to:",
+    "options":["correct for earth rate compensation.","correct for transport wander.","correct for real wander."],
+    "answer":0
+  },
+  {
+    "question":"An NDB transmits a signal pattern in the horizontal plane which is:",
+    "options":[ "a beam rotating at 30 Hz.","omnidirectional.","a cardioid balanced at 30 Hz."
+],
+    "answer":1
+  },
+  {
+    "question":"The middle marker of an ILS installation identifies itself with:",
+    "options":["dots and dashes with alternating an amber light.","continuous dots with a white light.","continuous dashes with an amber light."],
+    "answer":0
+  },
+  {
+    "question":"n aircraft takes off from the aerodrome of ALPHA (altitude 1 483 ft, QFE = 963 hPa, temperature = 32°C). Five minutes later, passing 5,000 ft on QFE, the second altimeter set on 1013 hPa will indicate approximately:",
+    "options":["6900 ft","6400 ft","6000 ft"],
+    "answer":1
+  },
+  {
+    "question":"How do you measure your location using GPS?",
+    "options":["Simultaneous bearings from anumber of satellites.","Range and bearing from each known satellite position.","Simultaneous ranges from a number of satellites."],
+    "answer":2
+  },
+  {
+    "question":"When descending through an isothermal level (at a constant Mach number) the TAS will ____, the CAS ____ and the LSS will ____:",
+    "options":[ "remain constant, increase, remain constant.","decrease, decrease, remain constant.","increase, increase, decrease."],
+    "answer":0
+  },
+  {
+    "question":" How many feet you have to climb to reach FL 75, departure aerodrome elevation = 1500ft, QNH = 1023hpa, Temp = ISA, 1hpa = 30ft:",
+    "options":["7800 ft","6300 ft","8700 ft"],
+    "answer":1
+  },
+  {
+    "question":"The time to reach the closing level at a given gross mass is 36 minutes and the distance travelled is 157NM (nil wind). What will be the distance travelled with an average tail wind component of 60kts?",
+    "options":["193 nm","228 nm","175 nm"],
+    "answer":0
+  },
+  {
+    "question":" Course 040°(T), TAS is 120 kt, Wind speed 30 kt. Maximum drift angle will be obtained for a wind direction of:",
+    "options":["120°","130°","140°"],
+    "answer":1
+  },
+  {
+    "question":"The hysteresis error of an altimeter varies substantially with the:",
+    "options":["aircraft altitude.","time passed at a given altitude.","mach number of the aircraft."],
+    "answer":1
+  },
+  {
+    "question":"Typical Airborne Weather Radar (AWR) is gyro stabilised within limits in:",
+    "options":["pitch,roll and yaw.","pitch and yaw.","pitch and roll."],
+    "answer":2
+  },
+  {
+    "question":"The basic elements of the satellite navigation system NAVSTAR/GPS are:",
+    "options":["the space segment, the earth segment and the user segment.","the space segment, the control segment and the user segment.","the space segment, the control segment and the clock segment."],
+    "answer":1
+  },
+  {
+    "question":"What is the purpose of the GPS control segment?",
+    "options":["To control the use of the satellites by unauthorised users.","To maintain the satellites in orbit.","To monitor the satellites in orbit."],
+    "answer":2
+  },
+  {
+    "question":" If one static out of 2 is not calibrated for position error, what will happen during high speed cruise?",
+    "options":["the non-compensated altimeter will indicate a lower altitude.","the non-compensated altimeter will indicate a higher altitude.","the non-compensated altimeter will indicate a correct altitude."],
+    "answer":0
+  },
+  {
+    "question":"Main design functions of Secondary Surveillance Radar (SSR) Mode S are:",
+    "options":["continuous automatic position reporting using Global Positioning System (GPS) satellites.","improved long range (HF) communication capability.","data linking, ATC surveillance, reduced R/T communications and use by TCAS II."],
+    "answer":2
+  }
+]
+
+
+ 
+ 
+
+
+
+ 
+
+

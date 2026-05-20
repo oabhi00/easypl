@@ -1,0 +1,451 @@
+[
+    {
+      "question": "Density varies:",
+      "options": [
+        "Inversely with temperature and pressure",
+        "Directly with pressure and inversely with temperature",
+        "Inversely with pressure and directly with temperature"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If pressure increases whilst temperature increases in the ISA:",
+      "options": [
+        "Density will increase.",
+        "Density might increase or decrease.",
+        "Density will remain constant."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If pressure increases whilst temperature increases in a non-standard atmosphere:",
+      "options": [
+        "Density will increase.",
+        "Density will decrease.",
+        "Density might increase or decrease."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In ISA conditions, with increase in altitude rate of fall of pressure",
+      "options": [
+        "Increases",
+        "Decreases",
+        "Remains same"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In atmosphere rate of fall of pressure is",
+      "options": [
+        "Linear",
+        "Exponential",
+        "Progressive"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The ISA temperature and pressure for 18,000 ft are:",
+      "options": [
+        "-20.7° C and 506 hPa respectively",
+        "-20.7º C and 595.2 hPa respectively",
+        "-12.7° C and 506 hPa respectively"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the ISA temperature value at FL 330?",
+      "options": [
+        "-56.5°C.",
+        "-53°C.",
+        "-50°C."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An a/c is flying with indicated altitude 20,000 ft, OAT = -10°C. Find True Altitude.",
+      "options": [
+        "21000'",
+        "21200'",
+        "21300'"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An a/c is flying indicated altitude of 25,000 ft. SAT = -50°C. Find true altitude.",
+      "options": [
+        "23,500'",
+        "26,500'",
+        "24,000'"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A/C is flying indicated altitude of 21,000' OAT = - 12°C. Find TA",
+      "options": [
+        "22,260'",
+        "19,740'",
+        "21,500'"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A/C is flying at PA = 17,000', Ambient Temp = - 30°C. Find TA.",
+      "options": [
+        "16,252'",
+        "17,748'",
+        "16,500'"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A/C takes off from A elevation A = 90'. PA of A = 150' it goes to B. PA at B = 450'. Elevation B = 240'. Find QNH & QFE at A and B.",
+      "options": [
+        "At A: QNH = 1011 hPa, QFE = 1008 hPa. At B: QNH = 1006 hPa, QFE = 998 hPa",
+        "At A: QNH = 1013 hPa, QFE = 1008 hPa. At B: QNH = 1013 hPa, QFE = 998 hPa",
+        "At A: QNH = 1008 hPa, QFE = 1013 hPa. At B: QNH = 998 hPa, QFE = 1006 hPa"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An A/C takes of from A with altimeter reading 240'. Elevation A = 330'. QFE = 997 hPa. It goes to B. Elevation B = 300'. Altimeter reads 210 at landing. without changing the setting. Find QNH and QFE at B.",
+      "options": [
+        "QNH = 1008 hPa, QFE = 998 hPa",
+        "QNH = 1008 hPa, QFE = 997 hPa",
+        "QNH = 1005 hPa, QFE = 997 hPa"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An A/C takes off from A with altimeter reading 240'. A elevation 300' QFEA = 994 hPa, goes to B. Elevation B = 180'. Altimeter reads 150' at landing, without changing the setting. Find QNH at A and QNH and QFE at B.",
+      "options": [
+        "QNH at A = 994 hPa. QNH at B = 1003 hPa, QFE at B = 997 hPa",
+        "QNH at A = 1004 hPa. QNH at B = 997 hPa, QFE at B = 1003 hPa",
+        "QNH at A = 1004 hPa. QNH at B = 1003 hPa, QFE at B = 997 hPa"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An a/c takes off from place X with altimeter set at 1008 hPa. And climbs to indicated altitude of 9,500' it goes to place Y where QNH is 1015 hPa. Elevation of Y is 400'. Find:\n(a) True altitude of A/C over Y.\n(b) Height of a/c over Y.\n(c) Altimeter reading on landing at Y (subscale was not reset to QNH of Y).",
+      "options": [
+        "(a) 9290', (b) 8890', (c) 610'",
+        "(a) 9710', (b) 9310', (c) 190'",
+        "(a) 9710', (b) 9310', (c) 610'"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An a/c takes of from place A with altimeter reading 0. QNH = 1015 hPa elevation at A is 60' and elevation of B is 300', Find\n(a) Subscale reading while taking of from A.\n(b) True altitude of a/c over B\n(c) True ht. of a/c over B.\n(d) Indicated Altitude while landing at B. (subscale not reset).",
+      "options": [
+        "(a) 1015 hPa, (b) 6300', (c) 6000', (d) 300'",
+        "(a) 1013 hPa, (b) 6090', (c) 5790', (d) 510'",
+        "(a) 1013 hPa, (b) 6300', (c) 5790', (d) 510'"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An a/c takes of from place A with altimeter reading 180'. Elevation of A is 90'. QNH of A 1020 hPa, a/c climbs to altimeter indications of 8000'. A/C goes to B. Elevation B = 30'. QFEB= 998 hPa. (subscale was not reset). Find\n(a) Subscale setting at A\n(b) True altitude of a/c over B.\n(c) True height of a/c over B.\n(d) QNH at B\n(e) Altimeter reads 120' while landing at B. Find altitude with altimeter sub scale set at 999 hPa at B.",
+      "options": [
+        "(a) 1023 hPa, (b) 7280', (c) 7250', (d) 999 hPa, (e) -600'",
+        "(a) 1020 hPa, (b) 8000', (c) 7970', (d) 998 hPa, (e) 120'",
+        "(a) 1017 hPa, (b) 7610', (c) 7580', (d) 1004 hPa, (e) 420'"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An a/c takes off from place A with elevation 90' with altimeter reading 0'.QNH = 1020 hPa. It climbs to 8000'. It goes to B. Elevation B = 30'.QNH = 1004 hPa. Find\n(a) True altitude of A/C over B\n(b) Height of a/c over B\n(c) Altimeter reading while landing at B. (Subscale was not reset)",
+      "options": [
+        "(a) 8390', (b) 8360', (c) -420'",
+        "(a) 8000', (b) 7970', (c) 0'",
+        "(a) 7610', (b) 7580', (c) 420'"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An A/C takes off from place A. QNH = 998 hPa elevation A = 90'. Altimeter Reads (-)90' at the time of take off. It goes to place B. QNH = 1020 hPa elevation B = 200'. Mid way there is a hill of elevation 3000 mtrs. Find:\n(a) Subscale reading at take off.\n(b) QNH at hill (assume uniform pressure gradient).\n(c) What indications of altimeter will give clearance of 500' while crossing over hill.",
+      "options": [
+        "(a) 1004 hPa, (b) 1009 hPa, (c) 10850'",
+        "(a) 992 hPa, (b) 1009 hPa, (c) 9830'",
+        "(a) 998 hPa, (b) 1009 hPa, (c) 10340'"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Distance between A & B is 1000 nm. QFE = 990 hPa elevation A = 90'. A/C takes off with QNH setting at A. 700 nm from A, there is a hill of 7,000' elevation. QFE = 1010 hPa elevation B = 600'. Find:\n(a) What indicated altitude will give clearance of 1,000' over hill.(assume uniform pressure gradient)\n(b) What will altimeter show, while landing at B (altimeter was not reset).",
+      "options": [
+        "(a) 7220', (b) -510'",
+        "(a) 8000', (b) 1110'",
+        "(a) 8780', (b) 510'"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft is in level flight at FL100 over a mountain range, which extends up to 2400 meters AMSL. If the regional QNH is 998 hPa (use 30 ft/hPa), what is the approximate terrain clearance?",
+      "options": [
+        "1681 feet.",
+        "450 feet.",
+        "7869 feet."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft flies an altitude of 3500 feet from A to B, elevation 700 feet QNH 1015 hPa. B Elevation is 1120 feet QNH 992 hPa. Assuming the altimeter sub-scale is not changed, the aircraft will arrive over B at a height of:",
+      "options": [
+        "2810 feet",
+        "670 feet",
+        "1690 feet"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The atmospheric pressure at FL70 in a \"standard + 10\" atmosphere is:",
+      "options": [
+        "781.85 hPa",
+        "942.13 hPa",
+        "1013.25 hPa"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "On board an aircraft the altitude is measured from the:",
+      "options": [
+        "Density altitude",
+        "Standard altitude",
+        "Pressure altitude"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If QNH is 999 hPa, what is the pressure altitude at an elevation of 25000 ft.",
+      "options": [
+        "25400 ft.",
+        "25200 ft.",
+        "25300 ft."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If pressure altitude is 22,800 ft, at an elevation of 22,000 ft, what is QNH?",
+      "options": [
+        "985 hPa.",
+        "1034 hPa.",
+        "1026 hPa."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If pressure altitude is 3700 ft amsl and QNH is 1000 mb, what is field elevation?",
+      "options": [
+        "3310 ft.",
+        "390 ft.",
+        "490 ft."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Take-off and landing performance must be calculated based on -- and .... respectively?",
+      "options": [
+        "Forecast temperatures Forecast temperatures.",
+        "Actual temperatures Forecast temperatures.",
+        "Actual temperatures Actual temperatures."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If the OAT at a pressure altitude of 5000 ft amsl is 10°C what is the temperature deviation?",
+      "options": [
+        "-4.9°C.",
+        "+4.9°C.",
+        "-14.9°C."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Density altitude is?",
+      "options": [
+        "The altitude at which the existing density would occur in the ISA.",
+        "The density at which the existing temperature would occur in the ISA.",
+        "The elevation at which the existing density would occur in the ISA."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The pressure altitude of the field can be found by?",
+      "options": [
+        "Setting QNH on the altimeter subscale.",
+        "Setting QFE on the altimeter subscale.",
+        "Setting 1013 mb on the altimeter subscale."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If field pressure altitude is 5000 ft amsl and OAT is 25°C, What is the density altitude?",
+      "options": [
+        "7348.2 ft.",
+        "4988.2 ft.",
+        "8551.8 ft."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "IF QFE is 1022 hPa what is the pressure altitude of the field?",
+      "options": [
+        "270 ft amsl",
+        "-270 ft amsl",
+        "30660 ft amsl"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following cause air density to decrease?",
+      "options": [
+        "Increasing humidity, increasing altitude, increasing temperature.",
+        "Increasing humidity, decreasing altitude, increasing temperature.",
+        "Decreasing humidity, increasing altitude, decreasing temperature."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "IF QNH changes from 1013 hPa to 1022 hPa will?",
+      "options": [
+        "Increase field elevation",
+        "Decrease field elevation.",
+        "Not affect field elevation."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If QFE changes from 1013 hPa to 1022 hPa will?",
+      "options": [
+        "Increase field elevation",
+        "Not affect QNH.",
+        "Increase QNH."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If aerodrome elevation is 4000 ft amsl, and QNH is 1025 hPa, what is the pressure altitude?",
+      "options": [
+        "3540 ft.",
+        "3640 ft.",
+        "3740 ft."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "As altitude increase in the ISA?",
+      "options": [
+        "The effects of decreasing pressure outweighs those of decreasing temperature, so aircraft performance decreases.",
+        "The effects of decreasing density outweigh those of decreasing pressure and temperature so aircraft performance decreases",
+        "The effects of increasing TAS: CAS ratio outweigh those of pressure and temperature so aircraft performance decreases."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If the temperature is 12°C at a pressure altitude of 10000 ft., what is the density altitude?",
+      "options": [
+        "11993 ft.",
+        "13993 ft.",
+        "14993 ft."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If pressure altitude is 0 ft. and ambient temperature is 10°C, what is the density altitude?",
+      "options": [
+        "593 ft.",
+        "-593 ft.",
+        "1593 ft."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If field elevation is 1000 ft amsl, QNH is 1025 mb, and QFE is 991.67 mb, what is the pressure altitude at the field?",
+      "options": [
+        "-640 ft.",
+        "1640 ft.",
+        "640 ft."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Density altitude is?\n1. The elevation at which the prevailing density occurs in the ISA\n2. The Pressure altitude at which the prevailing temperature occurs in the ISA!\n3. The Pressure altitude at which the prevailing density occurs in the ISA.",
+      "options": [
+        "1.",
+        "1 and 2.",
+        "1 and 3."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Pressure altitude 29000 ft, OAT -55°C. Calculate the density altitude?",
+      "options": [
+        "28900 ft.",
+        "27500 ft.",
+        "27850 ft."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the true altitude if OAT = +35°C and Pressure Altitude = 5000 feet?",
+      "options": [
+        "5550 ft",
+        "4555 ft."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft with its altimeter setting 1013 lands at an Aerodrome with Elevation of 1240' ,QNH at Aerodrome = 1008. What will the altimeter read on Ground ?",
+      "options": [
+        "1375'",
+        "1105'",
+        "1240'."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft at FL75 takes of from an Aerodrome with elevation = 1500' ,QNH at aerodrome= 1023.25. What is the true Vertical distance ?",
+      "options": [
+        "6300'",
+        "6000'",
+        "5700'"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Determine the height above touchdown of an aircraft which is on a 3° glide path at a range of 3 nm from touchdown.",
+      "options": [
+        "912 ft",
+        "318 ft",
+        "18240 ft"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "On 3°GP at 3 DME, ILS glide slope shows 2 dot fly up indications on 4 dot indicator. Approximately how many feet a/c is above/ below G/S (glide slope)?",
+      "options": [
+        "106' above GP",
+        "106' below GP",
+        "212' below GP"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "At 2.7 DME G/S shows % of full scale fly down indications. At this place there is a spot height of 200ft. Find clearance of a/c while flying over spot height.",
+      "options": [
+        "514'",
+        "1128'",
+        "714'"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "At 4.8 nm ILS/ DME, G/S shows 2 dot fly up indication on 5 dot indicator: There is an obstruction of elevation of 450'. A/C altimeter is set to QNH of the RWY. RWY elevation is 300ft. Find\na) Clearance of a/c while passing over obstruction.\nb) Altimeter reading over obstruction.\nc) Ht. of a/c over obstruction.",
+      "options": [
+        "(a) 1169', (b) 1619', (c) 1319'",
+        "(a) 869', (b) 1319', (c) 1019'",
+        "(a) 1619', (b) 1169', (c) 1319'"
+      ],
+      "answer": 0
+    }
+  ]

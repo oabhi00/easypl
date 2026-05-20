@@ -1,0 +1,118 @@
+[
+  {
+    "question": "When Track is 010°, Heading 000°, the drift is",
+    "options": ["10° P", "10° S", "Wind is from starboard."],
+    "answer": 1
+  },
+  {
+    "question": "The path traced by an aircraft over the ground and the intended track will be the same when",
+    "options": [
+      "estimated wind and actual wind is the same",
+      "there is no wind",
+      "there is no tail/headwind."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Drift is the angular difference between heading and track measured from",
+    "options": ["heading", "track", "any one of the above."],
+    "answer": 0
+  },
+  {
+    "question": "Drift occurs only when",
+    "options": ["there is a crosswind", "there is a headwind", "there is a tailwind"],
+    "answer": 0
+  },
+  {
+    "question": "Required track 300°T, drift 8° right, variation 10°W, deviation -4°. What is the required compass heading?",
+    "options": ["306°", "314°", "298°"],
+    "answer": 0
+  },
+  {
+    "question": "The wind at an airfield is reported to be 330°/30 kt. What will be the wind component along and across runway 04?",
+    "options": [
+      "10 kt headwind, 28 kt crosswind from the left.",
+      "10 kt tailwind, 28 kt crosswind from the left.",
+      "28 kt headwind, 10 kt crosswind from the right."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The reported surface wind from the control tower is 240°/35 kt. Runway 30 (303°M). What is the crosswind component?",
+    "options": ["30 kt.", "35 kt.", "26 kt."],
+    "answer": 0
+  },
+  {
+    "question": "The maximum factorised crosswind in which a particular aircraft can take off is 10 kt. What is the acceptable wind at 330° in which the aircraft can take off from runway 09?",
+    "options": ["2 kt.", "32 kt.", "12 kt."],
+    "answer": 2
+  },
+  {
+    "question": "The reported wind at an airfield is 270°/30 kt. What along-track and across-track wind components must be used in the take-off calculation for an aircraft using runway 29?",
+    "options": [
+      "28 kt tailwind, 10.5 kt from the right.",
+      "28 kt headwind, 10.5 kt from the left.",
+      "10.5 kt headwind, 28 kt from the right."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the ETA at Z? If TAS = 380 kt, what is the forecast and actual headwind/tailwind component?",
+    "options": [
+      "1112 UTC / +80 kt / +20 kt",
+      "1110 UTC / +40 kt / -10 kt",
+      "1102 UTC / -80 kt / -20 kt"
+    ],
+    "answer": 2,
+    "image": "chapter9.png"
+  },
+  {
+    "question": "True track: 192°, Magnetic variation: 7°E, Drift: 5° left. What is the magnetic heading required to maintain the given track?",
+    "options": ["190°M.", "192°M.", "188°M."],
+    "answer": 0
+  },
+  {
+    "question": "Magnetic heading 060°, Magnetic variation: 8°W, Drift angle: 4° right. What is the true track?",
+    "options": ["058°.", "054°.", "056°."],
+    "answer": 2
+  },
+  {
+    "question": "An aircraft is following a true track of 048° at a constant TAS of 210 kt. The wind velocity is 350°/30 kt. The Ground Speed and drift angle are?",
+    "options": [
+      "192 kt, 7° right.",
+      "196 kt, 7.5° right.",
+      "196 kt, 7.5° left."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "For a given track: Wind component = +45 kt, Drift = 15° left, TAS = 240 kt. What is the wind component on the reverse track?",
+    "options": ["81 kt.", "-62 kt.", "-45 kt."],
+    "answer": 1
+  },
+  {
+    "question": "True heading = 180°, TAS = 500 kt, Wind/Velocity 225°/100 kt. Calculate the Ground Speed.",
+    "options": ["435 kt.", "575 kt.", "350 kt."],
+    "answer": 0
+  },
+  {
+    "question": "True heading = 310°, TAS = 200 kt, GS = 176 kt, Drift angle 7° right. Calculate the Wind/Velocity.",
+    "options": ["273° / 33 kt.", "270° / 3 kt.", "270° / 43 kt."],
+    "answer": 1
+  },
+  {
+    "question": "True track is 348°, drift 17° left, variation 32°W, deviation 4°E. What is the compass heading?",
+    "options": ["007°", "359°", "033°"],
+    "answer": 2
+  },
+  {
+    "question": "True heading = 090°, TAS = 200 kt, Wind/Velocity = 220° / 30 kt. Calculate the Ground Speed.",
+    "options": ["240 kt", "140 kt", "220 kt"],
+    "answer": 2
+  },
+  {
+    "question": "An aircraft at FL290 commences descent at 50 NM from VOR and reports over VOR at FL80. GS = 243 kt. Calculate the Rate of Descent.",
+    "options": ["1500 FPM", "1600 FPM", "1700 FPM"],
+    "answer": 2
+  }
+]

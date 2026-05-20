@@ -1,0 +1,192 @@
+[
+    {
+      "question": "Calculate the d'long between position A 165°W and position B 103°W. Aircraft is flying from A to B.",
+      "options": [
+        "62°E",
+        "62°W",
+        "72°E"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Calculate the d'long between A 165°W and B 170°E. Aircraft is flying from A to B.",
+      "options": [
+        "25°W",
+        "15°E",
+        "20°W"
+      ],
+      "answer": 0,
+      "image": "chapter2.png"
+    },
+    {
+      "question": "The distance around the Earth along the Equator and around the meridian is:",
+      "options": [
+        "Exactly the same",
+        "Along Equator is more",
+        "Around the Poles (meridian and its antemeridian) is more"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The Earth rotates about its:",
+      "options": [
+        "Polar diameter",
+        "Equatorial diameter",
+        "Sometimes around the Polar and sometimes around the Equatorial diameter depending upon the season"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The cardinal points are:",
+      "options": [
+        "North, West",
+        "South, East",
+        "All the above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Graticule is the network of meridians and parallels on:",
+      "options": [
+        "Earth",
+        "Maps",
+        "Both"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The maximum difference between geocentric and geodetic latitude occurs at:",
+      "options": [
+        "0° north and south (equator)",
+        "90° north and south",
+        "45° north and south"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The ratio of the ellipticity of the Earth is 1/297. If the major axis is 6956 km at the equator, what is the minor axis (poles)?",
+      "options": [
+        "6879 km",
+        "6862 km",
+        "6932 km"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A great circle is any circle on the surface of the Earth whose:",
+      "options": [
+        "Radius is the same as that of the Earth",
+        "Plane passes through the center of the Earth",
+        "Both"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The shortest distance between any two points on the Earth is defined by:",
+      "options": [
+        "A straight line joining the two places on a map",
+        "The shorter arc of the great circle joining the two places",
+        "The rhumb line joining the two places"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A meridian is a:",
+      "options": [
+        "Semi great circle",
+        "Line joining places of the same latitude",
+        "Semi great circle joining places of same longitude"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "For measuring latitude, the datum used is:",
+      "options": [
+        "Equator",
+        "Prime meridian",
+        "The Pole"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Latitude is expressed in degrees, minutes and seconds to the North or South of:",
+      "options": [
+        "The Pole",
+        "Equator",
+        "Greenwich meridian"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Place A on 57°N 176°W & Place B 60°N 177°E. Calculate d'long and approximate heading from B to A.",
+      "options": [
+        "351° and 310°",
+        "7° and 130°",
+        "7° and 310°"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The only line on the Earth which is both Great Circle and rhumb line is:",
+      "options": [
+        "Meridians",
+        "Equator",
+        "Both"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The datum for measuring Longitude is called:",
+      "options": [
+        "The Prime Meridian",
+        "The Prime Latitude",
+        "The Equator"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The maximum Latitude can be as much as:",
+      "options": [
+        "90°",
+        "180°",
+        "360°"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Parallels of Latitude and Meridians of Longitude on the Earth:",
+      "options": [
+        "Can be distinctly identified when map reading",
+        "Are only imaginary lines and so are not marked on the Earth",
+        "Only global satellites can identify them on the Earth"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Point A is 20°30'N and point B 41°30'S. If an aircraft is traveling from A to B, what is the d'lat?",
+      "options": [
+        "21°",
+        "62°",
+        "70°"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Earth is a:",
+      "options": [
+        "Planet",
+        "Satellite",
+        "Asteroid"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Distance of one NM at equator approximately is:",
+      "options": [
+        "6105'",
+        "6076'",
+        "6046'"
+      ],
+      "answer": 2
+    }
+]

@@ -1,0 +1,182 @@
+[{
+    "question":"Point A latitude 59° N Longitude 010° W,\n Point B Latitude 65° N Longitude 010° E.\nGC track at A 050. \nFind convergency,GC track from B to A, CA, RL track at A and Gc track at B.",
+    "options":["17.6°,247.6°,8.8°,58.8°,70°","17.6°,250°,8.8°,58.8°,70°","17.6°,247.6°,8.8°,58.8°,67.6°"],
+    "answer": 2
+},
+{
+    "question":"Point A latitude 47° S Longitude 125° W, \nPoint B Latitude 41° S Longitude 135° W.\nGC track at A 300.\n Find convergency,GC track from B to A, CA, RL track at A and Gc track at B.",
+    "options":["7.2°,126.9°,3.5°,303.5°,306.9°","6.9°,126.9°,3.5°,303.5°,306.9°","17.6°,247.6°,8.8°,58.8°,67.6°"],
+    "answer": 1
+},
+{
+    "question":"Point A latitude 75°S Longitude 160° W, \nPoint B Latitude 60° S Longitude 165° E.\nRL track at A 312.\n Find GC track at A ,convergency,GC track from B to A, CA,and Gc track at B.",
+    "options":["295.8°,32.3°,148.1°,16.2°,328.1°","298°,40°,140°,20°,306.9°","300°,50°,140°,25°,67.6°"],
+    "answer": 0
+},
+{
+    "question":"For NH, \nG/C bearing of B from A is 040°, R/L bearing of B from A is 045°. \nFind R/L bearing of A from B, G/C bearing of A from B?",
+    "options":["225°,230°","230°,225°","220°,235°"],
+    "answer": 0
+},
+{
+    "question":"For NH,\n G/C bearing of P from Q is 060°, CA is 8°. \nFind R/L bearing of P from Q, G/C bearing of Q from P?",
+    "options":["66°,250°","68°,256°","70°,256°"],
+    "answer": 1
+},
+{
+    "question":"For SH, \nG/C bearing of P from Q is 130°, CA is 6°. \nFind R/L bearing of P from Q, R/L bearing of Q from P?",
+    "options":["122°,302°","125°,305°","124°,304°"],
+    "answer": 2
+},
+{
+    "question":"R/L brg of X from Y is 240° in Southern hemisphere.CA is 8° \nfind G/C brg of Y from X",
+    "options":["67°","68°","60°"],
+    "answer": 1
+},
+{
+    "question":"G/C brg of X from Y is 130 , G/C brg of Y from X is 318° \nfind CA, Hemisphere,R/L brg of Y from X.",
+    "options":["4°,NH,314°","4°,SH,314°","9°,SH,320°"],
+    "answer": 0
+},
+
+    {
+      "question": "G.C. bearing of A from B is 234°, G.C. bearing of B from A is 066°. \nFind R/L bearing of B from A.",
+      "options": [
+        "060°",
+        "066°",
+        "054°",
+        "234°"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A and B are on parallel of 30°N. G.C. bearing of B from A is 273°. Longitude of A = 8°E.\n Find longitude of B.",
+      "options": [
+        "4°W",
+        "12°E",
+        "8°E",
+        "4°E"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A and B are on parallel of 30°S. Longitude of A is 12°E. G.C. bearing of A from B is 266°.\n Find longitude of B.",
+      "options": [
+        "28°E",
+        "16°E",
+        "20°E",
+        "30°E"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A and B are on parallel of 40°. G.C. bearing of B from A is 096°. Longitude of A is 178°E. \nFind longitude of B.",
+      "options": [
+        "163°20'W",
+        "163°20'E",
+        "178°E",
+        "096°W"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "X and Y are on parallel of 45°. G.C. bearing of Y from X is 262°. Longitude of X is 3°E.\n Find longitude of Y.",
+      "options": [
+        "19°37'W",
+        "22°37'W",
+        "16°W",
+        "3°E"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The angle between the true great-circle track and the true rhumb-line track joining points A (60°S, 165°W) and B (60°S, 177°E) at the place of departure A is:",
+      "options": [
+        "15.5°",
+        "5.2°",
+        "7.8°"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The average true course of the great circle is 100°. The true course of the rhumb line at point A is:",
+      "options": [
+        "100°",
+        "104°",
+        "107°"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the standard formula for convergency?",
+      "options": [
+        "Convergency = dlat × cos(mean latitude)",
+        "Convergency = dlat × sin(mean latitude)",
+        "Convergency = dlong × sin(mean latitude)"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft passes position A (60°00'N, 120°00'W) on route to position B (60°00'N, 140°30'W). What is the great circle track on departure from A?",
+      "options": [
+        "261°",
+        "099°",
+        "279°"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A great circle track joins position A (59°S, 141°W) and B (61°S, 148°W). What is the difference between the great circle track at A and B?",
+      "options": [
+        "It increases by 3°",
+        "It decreases by 6°",
+        "It increases by 6°"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The rhumb line track between position A (45°00'N, 010°00'W) and position B (48°30'N, 015°00'W) is approximately:",
+      "options": [
+        "25°",
+        "315°",
+        "135°"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Great circle from P to Q measured at P is 095° in the Southern Hemisphere. Conversion angle P-Q = 7°. What is the rhumb line track P-Q?",
+      "options": [
+        "088°",
+        "102°",
+        "109°"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The great circle track X-Y measured at X is 319° and at Y is 325°. Which statement is correct?",
+      "options": [
+        "Southern Hemisphere, rhumb line track is 331°",
+        "Northern Hemisphere, rhumb line track is 313°",
+        "Southern Hemisphere, rhumb line track is 322°"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Place A is at 70°00'S, 60°00'W and place B at 70°00'S, 30°00'E. Find initial great circle track.",
+      "options": [
+        "270°",
+        "132°",
+        "312°"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "On a Mercator chart, GC track from A (25°00'S, 100°00'W) to B (35°00'S, 40°00'W) is 242°. Find rhumb line track from B to A.",
+      "options": [
+        "249.5°",
+        "075°",
+        "069.5°"
+      ],
+      "answer": 2
+    }
+  ]

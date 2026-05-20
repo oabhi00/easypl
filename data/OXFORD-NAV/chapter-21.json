@@ -1,0 +1,92 @@
+[
+    {
+      "question": "The local speed of sound is equal to: (K = Constant)",
+      "options": [
+        "K √ temperature (°F) knots",
+        "K √ temperature (K) knots",
+        "K √ temperature (°C) knots",
+        "K √ temperature (K) metres per second."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "At FL350 with a JSA deviation of -12, the true airspeed when flying at M 0.78 is:",
+      "options": [
+        "460 kt",
+        "436 kt",
+        "447 kt",
+        "490 kt"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When climbing at a constant mach number below the tropopause through an inversion:",
+      "options": [
+        "the CAS and TAS will both increase",
+        "the CAS and TAS will both decrease",
+        "the CAS will decrease and the TAS will increase",
+        "the CAS will increase and the TAS will decrease"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When descending below the tropopause under normal conditions (increasing temperature) at a constant CAS:",
+      "options": [
+        "both TAS and mach number will decrease",
+        "both TAS and mach number will increase",
+        "the TAS will decrease and the mach number will increase",
+        "the TAS will increase and the mach number will decrease"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Cruising at FL390, M 0.84 is found to give a TAS of 499 kt. The ISA deviation at this level will be:",
+      "options": [
+        "-17",
+        "+17",
+        "+19",
+        "-19"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The errors to which the Machmeter is subject are:",
+      "options": [
+        "instrument error, position error, compressibility error and manoeuvre induced error",
+        "instrument error, position error and manoeuvre induced error",
+        "instrument error, position error, barometric error, temperature error and manoeuvre induced error",
+        "instrument error, position error, density error and manoeuvre induced error"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The relationships between TAS, mach number (MNo) and local speed of sound (LSS) is:",
+      "options": [
+        "LSS = MNo",
+        "MNo = LSS",
+        "TAS = MNo × LSS",
+        "MNo = LSS × TAS"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The Machmeter gives an indication of mach number by measuring the ratio:",
+      "options": [
+        "pitot pressure / static pressure",
+        "dynamic pressure / static pressure",
+        "dynamic pressure / pitot pressure",
+        "static pressure / pitot pressure"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "An aircraft is flying at FL350 with a ISA deviation of +8. The Mach No. is 0.83 and the TAS 485. If the aircraft descends to FL300 and maintains the same Mach No. and TAS, the JSA deviation will now be:",
+      "options": [
+        "+8",
+        "-2",
+        "+2",
+        "-18"
+      ],
+      "answer": 1
+    }
+  ]

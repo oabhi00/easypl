@@ -1,0 +1,108 @@
+[
+    {
+      "question": "When supercooled water drops and ice particles co-exist, the ice crystals grow at the expense of the water drops because",
+      "options": [
+        "Saturation vapour pressure over water drops is less than over the ice crystals",
+        "Saturation vapour pressure over the ice crystals is less than over water drops",
+        "The ice crystals convert into water drops"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The clouds whose tops extend well above the freezing level are called",
+      "options": ["Warm Clouds", "Cold Clouds", "Moderate Clouds"],
+      "answer": 1
+    },
+    {
+      "question": "The clouds whose tops do not extend to the freezing level are called",
+      "options": ["Warm Clouds", "Cold Clouds", "Moderate Clouds"],
+      "answer": 0
+    },
+    {
+      "question": "Coalescence Theory explains occurrence of rainfall from the",
+      "options": ["Warm Clouds", "Cold Clouds", "Both types of Clouds"],
+      "answer": 0
+    },
+    {
+      "question": "Ice crystal Theory explains occurrence of rainfall from the",
+      "options": ["Warm Clouds", "Cold Clouds", "Both types of Clouds"],
+      "answer": 1
+    },
+    {
+      "question": "Giant Nucleus Theory explains occurrence of rainfall over",
+      "options": ["Maritime areas", "Inland areas", "Hilly areas"],
+      "answer": 0
+    },
+    {
+      "question": "Very heavy precipitation as showers over a short period is called",
+      "options": ["Flash floods", "Cloud Burst", "Orographic Rain"],
+      "answer": 1
+    },
+    {
+      "question": "Rain shadow area is on the ........ of the mountain range",
+      "options": ["Top", "Windward side", "Leeward side"],
+      "answer": 2
+    },
+    {
+      "question": "Sleet is a mixture of",
+      "options": ["Hail & Snow", "Rain & Snow", "Frozen Rain"],
+      "answer": 1
+    },
+    {
+      "question": "Rainfall in the tropics is more in",
+      "options": ["Winters", "Summers", "Post-monsoon"],
+      "answer": 1},
+    {
+      "question": "Rainfall in the tropics is more in the",
+      "options": ["Morning", "Afternoon", "Night"],
+      "answer": 1   },
+    {
+      "question": "Rainfall in the temperate latitudes is more in",
+      "options": ["Winters", "Summers", "Spring"],
+      "answer": 0},
+    {
+      "question": "Over J & K and western Himalayas Rainfall is more in",
+      "options": ["Winters", "Summers", "Post monsoon"],
+      "answer": 0},
+    {
+      "question": "Rainfall over coastal areas is more in the",
+      "options": ["Evening", "Afternoon", "Night & early morning"],
+      "answer": 2,
+      "explanation": "Coastal areas often experience increased rainfall during the night and early morning due to land-sea breezes. The land cools faster than the sea at night, leading to the development of a sea breeze that can enhance precipitation."
+    },
+    {
+      "question": "Areas to the ........ of western Ghats of India are rain shadow areas",
+      "options": ["W", "S", "E"],
+      "answer": 2,
+      "explanation": "The areas to the east of the Western Ghats in India are rain shadow regions. The Western Ghats intercept the moisture-laden winds from the Arabian Sea, causing heavy rainfall on the windward (western) side and dry conditions on the leeward (eastern) side."
+    },
+    {
+      "question": "A sudden rise in the level of rivers or stream causing floods is called",
+      "options": ["Cloud Burst", "Catchment flooding", "Flash Floods"],
+      "answer": 2,
+      "explanation": "A flash flood is characterized by a sudden and rapid rise in water level in a river or stream, often caused by intense rainfall over a short period, such as from a cloudburst."
+    },
+    {
+      "question": "Artificial rain making is also termed as",
+      "options": ["Simulation", "Cloud seeding", "Nucleation"],
+      "answer": 1,
+      "explanation": "Artificial rain making is the process of inducing or increasing precipitation by introducing artificial condensation nuclei into clouds, a technique known as cloud seeding."
+    },
+    {
+      "question": "Fog can be dispersed for a short period by artificial stimulation",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "True. Techniques like the dispersal of hygroscopic salts or the use of heat can temporarily dissipate fog by causing the fog droplets to evaporate or grow large enough to fall as drizzle."
+    },
+    {
+      "question": "Showery precipitation occurs from",
+      "options": ["NS", "AC", "CB"],
+      "answer": 2,
+      "explanation": "Showery precipitation, characterized by sudden starts and stops and variations in intensity, typically originates from cumulonimbus (CB) clouds, which are associated with convective activity."
+    },
+    {
+      "question": "A day is called Rainy day when rainfall in 24 hr is ........ mm or more",
+      "options": ["1.5", "2", "2.5"],
+      "answer": 2,
+      "explanation": "According to the India Meteorological Department (IMD), a day is classified as a rainy day if the recorded rainfall is 2.5 mm or more in a 24-hour period."
+    }]

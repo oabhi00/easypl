@@ -1,0 +1,339 @@
+[
+    {
+      "question": "During winters, _____ occurs over northern & central parts of India.",
+      "options": [
+        "Advection fog",
+        "Radiation fog",
+        "Activity of Radiation fog increases after the passage of a WD over N India"
+      ],
+      "answer": 2,
+      "explanation": "Radiation fog is common during winter nights over the northern and central parts of India due to clear skies, calm winds, and rapid cooling of the ground."
+    },
+    {
+      "question": "Low Temperatures and low humidity is the characteristics of _____ season.",
+      "options": [
+        "Post Monsoon",
+        "Summer",
+        "Monsoon",
+        "Winter"
+      ],
+      "answer": 3,
+      "explanation": "Winter season in India is characterized by low temperatures and low humidity due to the prevalence of dry, cold winds from the northwest."
+    },
+    {
+      "question": "The Summer Season period is _____.",
+      "options": [
+        "Jan-Feb",
+        "Mar-May",
+        "Jul - Sept",
+        "Oct - Dec"
+      ],
+      "answer": 1,
+      "explanation": "The summer season in India typically spans from March to May, characterized by high temperatures and dry conditions before the onset of the monsoon."
+    },
+    {
+      "question": "During Summer season _____ cause TS / DS over Punjab & Rajasthan.",
+      "options": [
+        "WDs",
+        "No WD affect N-parts of country",
+        "Track of WD is southern most"
+      ],
+      "answer": 0,
+      "explanation": "Western Disturbances (WDs) bring thunderstorms (TS) and dust storms (DS) to Punjab and Rajasthan during the summer season."
+    },
+    {
+      "question": "The monsoon current over the West coast of India is _____.",
+      "options": [
+        "SWly",
+        "SEly",
+        "NEly",
+        "NWly"
+      ],
+      "answer": 0,
+      "explanation": "The monsoon current that brings heavy rainfall to the west coast of India is the Southwest Monsoon, hence it is a Southwesterly (SWly) current."
+    },
+    {
+      "question": "Monsoon period is _____.",
+      "options": [
+        "Jan to Feb",
+        "March to May",
+        "Jun to Sep",
+        "Oct to Dec"
+      ],
+      "answer": 2,
+      "explanation": "The main monsoon season in India, characterized by widespread rainfall, typically occurs from June to September."
+    },
+    {
+      "question": "The monsoon advances with _____ current.",
+      "options": [
+        "Bay of Bengal",
+        "Arabian Sea",
+        "Bay of Bengal and Arabian Sea"
+      ],
+      "answer": 2,
+      "explanation": "The monsoon in India advances with the combined influence of both the Bay of Bengal and the Arabian Sea currents, which eventually merge over the subcontinent."
+    },
+    {
+      "question": "The rainfall over India during monsoon depends on _____.",
+      "options": [
+        "Low over Pakistan",
+        "Depression over Bay of Bengal",
+        "The position of the axis of Monsoon Trough"
+      ],
+      "answer": 2,
+      "explanation": "The distribution and intensity of rainfall over India during the monsoon season are significantly influenced by the position of the Monsoon Trough, a low-pressure area over the Indo-Gangetic plains."
+    },
+    {
+      "question": "Rainfall occurs all over the country during monsoon when _____.",
+      "options": [
+        "Axis of MT is in its normal position along Gangetic plains",
+        "Axis of MT is along Himalayas",
+        "Depression formed over Bay of Bengal"
+      ],
+      "answer": 0,
+      "explanation": "Widespread rainfall across the country during the monsoon season is often associated with the formation of axis of MT along gangetic plains."
+    },
+    {
+          "question": "Break in monsoon occurs when the axis of monsoon trough is along the _____.",
+          "options": [
+            "Gangetic plains",
+            "Foot hills of Himalayas",
+            "Bay of Bengal"
+          ],
+          "answer": 1,
+          "explanation": "A break in the monsoon occurs when the monsoon trough shifts northwards, often lying along the foothills of the Himalayas, leading to a decrease in rainfall over central and peninsular India."
+        },
+        {
+          "question": "With a Depression over the Head Bay, fair weather during monsoon occurs over _____.",
+          "options": [
+            "Assam",
+            "W Bengal",
+            "Orissa"
+          ],
+          "answer": 0,
+          "explanation": "When a depression forms over the Head Bay of Bengal, it draws in moisture and intensifies rainfall in the surrounding areas, including West Bengal and Orissa. Fair weather is less likely in these regions during such a scenario."
+        },
+        {
+          "question": "Monsoon is also called _____.",
+          "options": [
+            "Pre monsoon",
+            "Rainy Season",
+            "Post monsoon"
+          ],
+          "answer": 1,
+          "explanation": "The monsoon season is also commonly referred to as the rainy season in India due to the significant amount of rainfall it brings."
+        },
+        {
+          "question": "Autumn Season period is _____.",
+          "options": [
+            "Mar to May",
+            "Jun to Sept",
+            "Oct to Nov",
+            "Jan to Feb"
+          ],
+          "answer": 2,
+          "explanation": "The autumn season in India typically falls between the monsoon and winter seasons, which is roughly from October to November."
+        },
+        {
+          "question": "During post monsoon, pressure gradient over India is _____.",
+          "options": [
+            "weak",
+            "steep",
+            "same as winters"
+          ],
+          "answer": 0,
+          "explanation": "During the post-monsoon period, the pressure gradient over India is generally weak as the monsoon trough weakens and shifts southwards, leading to a more stable atmospheric condition."
+        },
+        {
+          "question": "During monsoon season, low pressure lies over _____.",
+          "options": [
+            "Bay of Bengal",
+            "NE India",
+            "Central India",
+            "Pakistan"
+          ],
+          "answer": 3,
+          "explanation": "During the monsoon season, a significant low-pressure area, known as the monsoon trough, develops over Pakistan, attracting moisture-laden winds from the Arabian Sea and the Bay of Bengal."
+        },
+        {
+          "question": "During vigorous monsoon period the pressure gradient over west coast is _____.",
+          "options": [
+            "Weak",
+            "Steep",
+            "Normal"
+          ],
+          "answer": 1,
+          "explanation": "A vigorous monsoon period is characterized by a strong pressure gradient over the west coast of India. This strong gradient leads to strong onshore winds and heavy rainfall."
+        },
+        {
+          "question": "Flying in Monsoon from Chennai to Kolkata at 14 km a/c will experience winds _____.",
+          "options": [
+            "Easterly",
+            "Westerly",
+            "Nly",
+            "Southerly"
+          ],
+          "answer": 0,
+          "explanation": "During the monsoon season, the prevailing winds over the Bay of Bengal and the eastern parts of India, including the flight path from Chennai to Kolkata, are generally easterly."
+        },
+        {
+          "question": "An A/C flying in Winter season from Chennai to Kolkata at 12 km will experience _____ winds.",
+          "options": [
+            "Ely",
+            "Wly",
+            "Nly",
+            "Sly"
+          ],
+          "answer": 1,
+          "explanation": "During the winter season, the prevailing winds over the eastern coast of India, including the region between Chennai and Kolkata at 12 km altitude, are typically westerly."
+        },
+        {
+          "question": "An aircraft flying in Summer season from Delhi to Kolkata at 10 km will experience _____.",
+          "options": [
+            "Easterly",
+            "Westerly",
+            "Northerly",
+            "Southerly"
+          ],
+          "answer": 1,
+          "explanation": "During the summer season, the upper-level winds over the Indo-Gangetic plains, including the flight path from Delhi to Kolkata at 10 km altitude, tend to be westerly."
+        },
+        {"question": "An A/C flying in Monsoon from Mumbai to Ahmadabad at 03 km will experience _____ winds.",
+    "options": [
+      "SEly",
+      "SWly",
+      "Nly",
+      "NWly"
+    ],
+    "answer": 1,
+    "explanation": "During the monsoon season, the winds at lower altitudes (around 3 km) over the western coast of India, including the flight path from Mumbai to Ahmedabad, are predominantly southwesterly, bringing in moisture from the Arabian Sea."
+  },
+  {
+    "question": "An A/C flying in winter season from Delhi to Kolkata at 06 km will experience _____ winds.",
+    "options": [
+      "SEly",
+      "SWly",
+      "Nly",
+      "NW-Wly"
+    ],
+    "answer": 3,
+    "explanation": "During the winter season, the winds at mid-altitudes (around 6 km) over the northern plains, including the flight path from Delhi to Kolkata, tend to be northwesterly to westerly."
+  },
+  {
+    "question": "An aircraft flying in summer season from Delhi to Kolkata at 06 km will experience _____.",
+    "options": [
+      "Port drift",
+      "Starboard drift",
+      "Tail wind",
+      "Head wind"
+    ],
+    "answer": 0,
+    "explanation": "Crosswind from starboard side (southwest), which mean port drift. "
+  },
+  {
+    "question": "Flying in winter season from Kolkata to Nagpur at 02 km will experience _____.",
+    "options": [
+      "port drift",
+      "Starboard drift",
+      "Tail wind",
+      "Head wind"
+    ],
+    "answer": 0,
+    "explanation": "You're flying west-southwest.Wind is from the northwest or north.So it's hitting you from your left (port) side."
+},
+{
+      "question": "During break monsoon the pressures all over the country _____.",
+      "options": [
+        "Rise",
+        "Fall",
+        "Do not change"
+      ],
+      "answer": 0,
+      "explanation": "During a break in the monsoon, the monsoon trough shifts northwards towards the Himalayas. This shift leads to a rise in pressure over most parts of the country, especially central and southern India, as the influence of the low-pressure system weakens."
+    },
+    {
+      "question": "During break monsoon sometimes surface winds over East UP and Bihar are _____.",
+      "options": [
+        "very strong",
+        "weak",
+        "normal"
+      ],
+      "answer": 0,
+      "explanation": "When there is a break in the monsoon and the monsoon trough shifts north, the surface winds over East Uttar Pradesh and Bihar become stronger and variable as the typical monsoon circulation strengthens in this region."
+    },
+    {
+      "question": "Mid tropospheric cyclone occurs during _____.",
+      "options": [
+        "Summer Season",
+        "Winters",
+        "Post monsoon",
+        "Monsoon"
+      ],
+      "answer": 3,
+      "explanation": "Mid-tropospheric cyclones (also known as monsoon depressions) are a characteristic feature of the monsoon season in India. They form over the Bay of Bengal and move inland, causing significant rainfall."
+    },
+    {
+      "question": "Mid tropospheric cyclone during monsoon form over _____.",
+      "options": [
+        "Orissa",
+        "Punjab",
+        "Gujarat",
+        "Chennai"
+      ],
+      "answer": 2,
+      "explanation": "Mid-tropospheric cyclones during the monsoon typically form over Gujarat’s Saurashtra and Kutch regions, causing heavy rainfall and mid-level atmospheric disturbances."
+    },
+    {
+      "question": "El Nino is _____ of ENSO.",
+      "options": [
+        "Warm phase",
+        "Cold Phase",
+        "Good for Indian Monsoon causing more rains"
+      ],
+      "answer": 0,
+      "explanation": "El Niño is the warm phase of the El Niño-Southern Oscillation (ENSO), a climate pattern across the tropical Pacific Ocean that can influence weather patterns globally, including the Indian monsoon."
+    },
+    {
+      "question": "Maximum cyclones occur over India in _____.",
+      "options": [
+        "Pre monsoon",
+        "Winters",
+        "Post monsoon",
+        "Monsoon"
+      ],
+      "answer": 2,
+      "explanation": "The Bay of Bengal and the Arabian Sea experience the highest frequency of tropical cyclones during the post-monsoon (October-November) seasons due to favorable atmospheric and oceanic conditions."
+    },
+    {
+      "question": "Tropical Jet stream occurs in India during _____.",
+      "options": [
+        "Pre monsoon",
+        "Winters",
+        "Post monsoon",
+        "Monsoon"
+      ],
+      "answer": 3,
+      "explanation": "The Tropical Easterly Jet stream is a significant upper-level wind system that develops over India during the monsoon season. "
+    },
+    {
+      "question": "Pressure gradient over West Coast of India is steep during _____.",
+      "options": [
+        "Pre monsoon",
+        "Winters",
+        "Post monsoon",
+        "Monsoon"
+      ],
+      "answer": 3,
+      "explanation": "During the monsoon season, there is a strong pressure gradient between the high pressure over the Arabian Sea and the low pressure over the Indian subcontinent. This steep pressure gradient drives strong southwesterly winds towards the west coast of India, resulting in heavy rainfall."
+    },
+    {
+      "question": "During break monsoon more rain occurs _____.",
+      "options": [
+        "along foot hills",
+        "NW India",
+        "S India"
+      ],
+      "answer": 0,
+      "explanation": "During a break in the monsoon, when the monsoon trough shifts northwards towards the Himalayas, the foothills of the Himalayas and northeastern India tend to receive increased rainfall, while central and southern India experience a reduction."
+    }
+  ]

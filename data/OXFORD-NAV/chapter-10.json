@@ -1,0 +1,312 @@
+[
+    {
+      "question": "A normal Mercator chart is a ________________ projection. The correct combination is:(i)Cylindrical  (ii)Perspective  (iii)Non Perspective  (iv)Conformal  (v)Conical  (vi)Azimuthal",
+      "options": [
+        "(i), (ii) and (iii)",
+        "(ii), (iv) and (v)",
+        "(i), (iii) and (iv)",
+        "(iii), (iv) and (vi)"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A direct Mercator graticule is:",
+      "options": [
+        "Rectangular",
+        "Square",
+        "Circular",
+        "Convergent"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "On a normal Mercator chart, rhumb lines are represented as:",
+      "options": [
+        "Curves concave to the Equator",
+        "Curves convex to the Equator",
+        "Complex curves",
+        "Straight lines"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "On a direct Mercator, great circles can be represented as:",
+      "options": [
+        "Straight lines",
+        "Curves",
+        "Straight lines and curves",
+        "None of the above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "On a direct Mercator, with the exception of the meridians and the Equator, great circles are represented as:",
+      "options": [
+        "Curves concave to the Nearer Pole",
+        "Curves convex to the Equator",
+        "Curves concave to the Equator",
+        "Straight lines"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The angle between a straight line on a Mercator chart and the corresponding great circle is:",
+      "options": [
+        "Zero",
+        "Earth convergency",
+        "Conversion angle",
+        "Chart convergence"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If the rhumb line track from Turin (45N 008E) to Khartoum (15N 032E) is 145°(T), what is the direction of the great circle track measured at Turin?",
+      "options": [
+        "133°(T)",
+        "139°(T)",
+        "145°(T)",
+        "151°(T)"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the direction of the great circle track from Khartoum to Turin?",
+      "options": [
+        "319°(T)",
+        "325°(T)",
+        "331°(T)",
+        "337°(T)"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "On a Mercator chart, the rhumb line track from Durban (30S 032E) to Perth (30S 116E) is 090°(T). What is the great circle track from Perth to Durban?",
+      "options": [
+        "291°(T)",
+        "312°(T)",
+        "228°(T)",
+        "249°(T)"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "At 60S on a Mercator chart, chart convergence is:",
+      "options": [
+        "greater than Earth convergency",
+        "“correct”",
+        "less than Earth convergency",
+        "equal to ch.long × 0.866"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "On a Mercator chart, the scale at the Equator is 1:3,500,000. What is the scale at 37°S?",
+      "options": [
+        "1:2,795,000",
+        "1:5,000,000",
+        "1:4,323,000",
+        "1:3,000,000"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "On a Mercator chart, the scale at 50°N is 1:4,500,000. What is the scale at the Equator?",
+      "options": [
+        "1:3,000,000",
+        "1:2,892,000",
+        "1:7,000,000",
+        "1:3,500,000"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "On a Mercator chart, the scale at 15°N is 1:1,500,000. What is the scale at 47°S?",
+      "options": [
+        "1:2,100,000",
+        "1:2,500,000",
+        "1:1,059,000",
+        "1:2,800,000"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The chart length between meridians 1° apart is 3.2 inches. What is the scale of the chart as a representative fraction at 50°N?",
+      "options": [
+        "1:050,000",
+        "1:980,000",
+        "1:122,000",
+        "1:879,000"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "A Mercator is to be constructed at a scale of 1:2,237,000 in latitude 44°N. What is the required spacing in centimetres between meridians 1° apart?",
+      "options": [
+        "4.12 cm",
+        "3.79 cm",
+        "3.57 cm",
+        "4.25 cm"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The scale of a Mercator chart is 1:3,500,000 at 52°N. What is the length in inches of a straight line from A (58N 42E) to B (58N 34E)?",
+      "options": [
+        "7.46 in",
+        "6.61 in",
+        "5.23 in",
+        "3.75 in"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "On a Mercator chart, the spacing of meridians 1° apart is 2.82 cm. In which latitude will the scale be 1:2,319,000?",
+      "options": [
+        "52°N",
+        "47°N",
+        "50°N",
+        "54°N"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "On a Mercator chart the spacing of meridians 1° apart is 5.42 cm. What is the scale of the chart as a representative fraction in latitude 56°N?",
+      "options": [
+        "1:1,700,000",
+        "1:1,147,000",
+        "1:2,000,000",
+        "1:2,050,000"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The scale of a Mercator chart is 1:3,500,000 in latitude 52°N. What is the spacing, in centimetres, between meridians 1° apart?",
+      "options": [
+        "3.21 cm",
+        "1.95 cm",
+        "2.67 cm",
+        "3.92 cm"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The scale of a Mercator chart is 1:5,107,200 in latitude 47°N. What distance in NM does one inch represent in 47°N?",
+      "options": [
+        "70 NM",
+        "62 NM",
+        "55 NM",
+        "49 NM"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the spacing in cm between meridians 10° apart at scale 1:5,107,200 in latitude 47°N?",
+      "options": [
+        "13.8 cm",
+        "14.85 cm",
+        "15.2 cm",
+        "15.9 cm"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "On a Mercator chart, a line drawn along the parallel of 60°N measuring 4 inches represents a distance of 200 km. What is the scale at 60°N as a representative fraction?",
+      "options": [
+        "1:3,000,000",
+        "1:1,968,000",
+        "1:3,450,000",
+        "1:1,875,000"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The scale of a Mercator chart is 1:2,179,000 at the Equator. What is the spacing in centimetres between meridians 10° apart?",
+      "options": [
+        "12.1 cm",
+        "13.2 cm",
+        "14.4 cm",
+        "51 cm"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "A Mercator chart has a scale of 1:3,000,000 at 60°N. In what latitude is the scale 1:6,000,000?",
+      "options": [
+        "equator",
+        "78.5°N",
+        "75.0°N",
+        "70.4°N"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In what latitude is the scale 1:5,300,000 on a chart where the scale is 1:3,000,000 at 60°N?",
+      "options": [
+        "72°N",
+        "28°N",
+        "64.8°N",
+        "62.3°N"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A lambert’s conical conformal chart has standard parallels at 63N and 41N. What is the constant of the cone?",
+      "options": [
+        ".891",
+        ".788",
+        ".656",
+        ".707"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Scale on a Lambert’s conformal conic chart",
+      "options": [
+        "is constant",
+        "is constant along a meridian of longitude",
+        "varies slightly as a function of latitude and longitude",
+        "is constant along a parallel of latitude"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "On a conformal chart, the standard parallels are 41°20’N and 11°40’N. What is the constant of the cone?",
+      "options": [
+        ".660",
+        ".202",
+        ".446",
+        ".895"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Scale on a Lambert conformal chart is:",
+      "options": [
+        "constant along a line of latitude",
+        "constant along a line of longitude",
+        "constant everywhere",
+        "correct at the parallel of origin"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "On a Lambert chart, the constant of the cone is .78585. What is the parallel of tangency?",
+      "options": [
+        "51°02’",
+        "51°36’",
+        "51°15’",
+        "51°48’"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "On a Lambert’s chart the constant of the cone is 0.80. A is at 53N 04W. You plan to fly to B. The initial Lambert’s chart straight-line track is 070°(T) and the rhumb line track from A to B is 082°(T). What is the longitude of B?",
+      "options": [
+        "26E",
+        "34W",
+        "11E",
+        "15E"
+      ],
+      "answer": 0
+    }
+  ]

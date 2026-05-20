@@ -1,0 +1,32 @@
+[
+    {
+      "question": "Water in the fuel tanks is:",
+      "options": [
+        "added with FSII when refuelling",
+        "is a consequence of atmospheric air entering the tanks through the engine",
+        "is a consequence of atmospheric air entering the tanks through the vent system",
+        "is a consequence of atmospheric air entering the tanks through the feeder box"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Water in the fuel tank is removed:",
+      "options": [
+        "via a drain valve at the lowest point in the tank",
+        "via a drain tank at the base of the engine",
+        "via a scoop at the top of the tank",
+        "every major servicing only"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The flash point of AVTUR is:",
+      "options": [
+        "38°C minimum",
+        "60°C minimum",
+        "100°C minimum",
+        "-38.7°C"
+      ],
+      "answer": 1
+    }
+]

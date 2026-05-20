@@ -1,0 +1,82 @@
+[
+    {
+      "question": "A pitot head is used to measure:",
+      "options": [
+        "dynamic minus static pressure",
+        "static plus dynamic pressure",
+        "static pressure",
+        "dynamic pressure"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A static vent is used to measure:",
+      "options": [
+        "dynamic pressure minus static pressure",
+        "dynamic pressure plus static pressure",
+        "atmospheric pressure",
+        "dynamic pressure"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A pressure head is subject to the following errors:",
+      "options": [
+        "position, manoeuvre-induced, temperature",
+        "position, manoeuvre-induced",
+        "position, manoeuvre-induced, density",
+        "position, manoeuvre-induced, instrument"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Given: Pt = total pressure, Ps = static pressure. Dynamic pressure is:",
+      "options": [
+        "Pt – Ps",
+        "(Pt – Ps) / Pt",
+        "(Pt – Ps) / Ps",
+        "Pt / Ps"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Manoeuvre induced error:",
+      "options": [
+        "is caused by pressure changes at static probes or vents",
+        "is likely to be greatest when yawing after engine failure",
+        "is combined with instrument and position error on a correction card",
+        "lasts for only a short time at high altitude"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Position error:",
+      "options": [
+        "may be reduced by the fitting of static vents",
+        "will usually decrease with an increase in altitude",
+        "will depend solely on the attitude of the aircraft",
+        "will usually decrease as the aircraft approaches the speed of sound"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Fitting static vents to both sides of the aircraft fuselage will:",
+      "options": [
+        "reduce the position error",
+        "balance out errors caused by side-slipping or yawing",
+        "require a calibration card for each static vent",
+        "enable a greater number of instruments to be fitted"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Where an alternate static source is fitted, use of this source usually leads to:",
+      "options": [
+        "a temporary increase in lag error",
+        "a lower pressure error than with normal sources",
+        "an increase in position error",
+        "no change in position error"
+      ],
+      "answer": 2
+    }
+  ]

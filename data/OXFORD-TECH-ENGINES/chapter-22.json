@@ -1,0 +1,22 @@
+[
+    {
+      "question": "The effect of modifying a gas turbine engine to include one further hydraulic pump will result in:",
+      "options": [
+        "increase in specific fuel consumption",
+        "decrease in specific fuel consumption",
+        "decrease in rpm",
+        "increase in EGT"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The drive for fuel, oil and hydraulic pumps is normally taken from the:",
+      "options": [
+        "LP fan",
+        "intermediate compressor",
+        "HP spool",
+        "HP turbine"
+      ],
+      "answer": 2
+    }
+]

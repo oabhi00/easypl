@@ -1,0 +1,158 @@
+[
+    {
+      "question": "Maximum turbulence associated with the mountain waves is likely to be:",
+      "options": [
+        "two wavelengths downwind and just above the surface",
+        "approximately one wavelength downwind of, and approximately level with, the top of the ridge",
+        "just below the tropopause above the ridge",
+        "down the lee side of the ridge and along the surface"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "For the formation of mountain waves, the wind above the level of the ridge should:",
+      "options": [
+        "decrease or even reverse direction",
+        "increase initially then decrease",
+        "increase with little change in direction",
+        "increase and then reverse in direction"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When flying in IMC in a region close to a range of hills 2000 ft high, in stable air and with wind direction at right angles to the axis of the range of hills, which of the following is probably the most dangerous practice:",
+      "options": [
+        "flying towards the hills, into the wind, at flight level 65",
+        "flying parallel to the hills on the downwind side at flight level 40",
+        "flying towards the hills downwind at flight level 55",
+        "flying parallel to the hills on the upwind side at flight level 40"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following statements referring to jet streams is correct?",
+      "options": [
+        "Turbulence associated with jet streams is probably associated with the rapid windshear in the vicinity of the jet",
+        "The maximum wind speed in a jet stream increases with increase of height up to the tropopause and remains constant thereafter",
+        "The core of a jet stream is usually located just below the tropopause in the colder air mass",
+        "The rate of change of wind speed at any given level is usually greatest on the warmer side of the jet"
+      ],
+      "answer": 0
+    },
+        {
+          "question": "The wind at square A3 is likely to be:",
+          "options": [
+            "35 kt",
+            "50 kt",
+            "25 kt",
+            "light"
+          ],
+          "answer": 1,
+          "image":"../image/chapter8.png"
+        },
+        {
+          "question": "The wind at ABC 4 may be:",
+          "options": [
+            "50 kt",
+            "40 kt",
+            "35 kt",
+            "a jet stream"
+          ],
+          "answer": 3,
+          "image":"../image/chapter8.png"
+        },
+        {
+          "question": "Flight conditions at B1 are likely to be:",
+          "options": [
+            "smooth",
+            "turbulent",
+            "turbulent in breaking wave crests",
+            "turbulent due to marked up and down currents"
+          ],
+          "answer": 3,
+          "image":"../image/chapter8.png"
+        },
+        {
+          "question": "The most extreme turbulence can occur:",
+          "options": [
+            "at B1",
+            "at A2",
+            "at ABC 4",
+            "at B2, 3, 4 and at C2, 3, 4"
+          ],
+          "answer": 0,
+          "image":"../image/chapter8.png"
+        },
+            {
+              "question": "The significance of lenticular cloud is:",
+              "options": [
+                "there may be mountain waves present and there will be severe turbulence",
+                "there are mountain waves present but they may not give severe turbulence",
+                "a Föhn wind can be expected with no turbulence",
+                "a katabatic wind is present which may lead to fog in the valleys"
+              ],
+              "answer": 1
+            },
+            {
+              "question": "A mountain range is aligned in an east/west direction. Select the conditions from the table below that will give rise to mountain waves:\n2000 ft  5000 ft  10 000 ft",
+              "options": [
+                "020/40  020/30  020/50",
+                "170/20  190/40  210/60",
+                "270/15  270/20  270/40",
+                "090/20  090/40  090/60"
+              ],
+              "answer": 1
+            },
+            {
+              "question": "For mountain waves to form, the wind direction must be near perpendicular to a ridge or range of mountains and the speed must:",
+              "options": [
+                "decrease with height within a stable layer above the hill",
+                "increase with height within an unstable layer above the hill",
+                "decrease with height within an unstable layer above the hill",
+                "increase with height within a stable layer above the hill"
+              ],
+              "answer": 3
+            },
+            {
+              "question": "A north/south mountain range, height 10 000 ft is producing marked mountain waves. The greatest potential danger exists for an aircraft flying:",
+              "options": [
+                "on the windward side of the ridge",
+                "at FL350 over and parallel to the ridge",
+                "towards the ridge from the lee side at FL140",
+                "above a line of clouds parallel to the ridge on the lee side at FL25"
+              ],
+              "answer": 3
+            },
+            {
+              "question": "Clear air turbulence, in association with a polar front jet stream in the Northern Hemisphere, is more severe:",
+              "options": [
+                "underneath the jet core",
+                "in the centre of the jet core",
+                "looking downstream on the right hand side",
+                "looking downstream on the left hand side"
+              ],
+              "answer": 3
+            },
+            {
+              "question": "Mountain waves can occur:",
+              "options": [
+                "up to a maximum of 5000 ft above the mountains and 50 NM to 100 NM downwind",
+                "up to mountain height only and 50 NM to 100 NM downwind",
+                "above the mountain and downwind up to a maximum height at the tropopause and 50 NM to 100 NM downwind",
+                "in the stratosphere and troposphere"
+              ],
+              "answer": 3
+            },
+                {
+                  "question": "Clear air turbulence (CAT) should be reported whenever it is experienced. What should be reported if crew and passengers feel a definite strain against their seat or shoulder straps, food service and walking is difficult and loose objects become dislodged?",
+                  "options": [
+                    "Light TURB",
+                    "Extreme TURB",
+                    "Severe TURB",
+                    "Moderate TURB"
+                  ],
+                  "answer": 3
+                }
+              ]
+              
+      

@@ -1,0 +1,275 @@
+[
+    {
+      "question": "The displays marked A, B, C, and D are respectively:",
+      "options": [
+        "Plan   Map  ILS    VOR",
+        "VOR   ILS  Expanded ILS  Plan",
+        "Map  VOR  ILS   Plan",
+        "Map  ILS  Expanded VOR Plan"
+      ],
+      "answer": 3,"image":"chapter35-1.png"
+    },
+    {
+      "question": "Refer to the display marked E and identify the correct statement:",
+      "options": [
+        "The aircraft is closing the localizer from the right, heading 130°M and is approaching the glide path from above",
+        "When established on the localizer the inbound heading will be 165°M",
+        "The aircraft’s track is 165°M",
+        "The localizer centre line is 133°M"
+      ],
+      "answer": 0,"image":"chapter35-1.png"
+    },
+    {
+      "question": "On display D the track from ZAPPO to BANTU is:",
+      "options": [
+        "310°M",
+        "130°T",
+        "360°M",
+        "180°T"
+      ],
+      "answer": 3,"image":"chapter35-1.png"
+    },
+    {
+      "question": "On display C the centre of the weather returns is:",
+      "options": [
+        "106° relative, 18 NM",
+        "332° relative, 13 NM",
+        "100°M, 130 NM",
+        "30 NM left of track, 15 NM ahead"
+      ],
+      "answer": 1,"image":"chapter35-1.png"
+    },
+    {
+      "question": "The drawing below is shown on the (i)............. and is displaying (ii)........... and (iii)............",
+          "options": [
+            "Primary Flight Display,600 kt TAS,200 ft RA",
+            "Navigation Display,600 ft RA,200 ft DH",
+            "EADI,600 ft Radio Altitude,200 ft Decision Height"
+           
+          ],
+       
+      "answer": 2,"image":"chapter35-2.png"
+      
+    },
+    {
+      "question": "The following yellow symbol appears in place of the normal radio altitude display when:",
+      "options": [
+        "the selected radio altitude has been reached",
+        "the radio altitude needs re-setting on the EHSI",
+        "there is a failure of the radio altimeter",
+        "the aircraft descends below 1000 ft AGL."
+      ],
+      "answer": 2,"image":"chapter35-3.png"
+    },
+    {
+      "question": "The following symbols A, C, and E are best described respectively as:",
+      "options": [
+        "off route waypoint, airport, navigation aid",
+        "next waypoint, navigation aid, airport",
+        "off route waypoint, navigation aid, a navigation point making up selected route",
+        "active waypoint aircraft currently navigating to, navigation aid, off route waypoint"
+      ],
+      "answer": 3,"image":"chapter35-4.png"
+    },
+    {
+      "question": "When using EHSI, weather radar may be displayed on the following settings:",
+      "options": [
+        "map, VOR/ILS",
+        "VOR/ILS, map, expanded plan",
+        "expanded map, VOR/ILS, plan",
+        "map, expanded VOR/ILS"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "WXR display is controlled from:",
+      "options": [
+        "captain’s EHSI control only",
+        "co-pilot’s EHSI control only",
+        "a special control panel",
+        "both captain’s and co-pilot’s EHSI control panels"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Decision height is adjusted and set on the:",
+      "options": [
+        "flight management computer",
+        "HSI section of the EFIS control panel",
+        "ADI section of the EFIS control panel",
+        "ADI or HSI"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Weather may be displayed, with modern EFIS fitted, on:",
+      "options": [
+        "the captain’s CRT only",
+        "the co-pilot’s CRT only",
+        "a special screen",
+        "on both the captain’s and co-pilot’s CRTs"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Airspeed is shown:",
+      "options": [
+        "only on the captain’s EHSI",
+        "on both EADIs",
+        "on both EHSIs",
+        "only on the flight management CRT"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "With an EFIS flight director using IRS guidance, reference north can be:",
+      "options": [
+        "magnetic north only.",
+        "magnetic north between 73°N and 65°S and true north above these latitudes",
+        "magnetic north between 65°N and 73°S and true north above these latitudes",
+        "magnetic north between 75°N and 75°S and true north above these latitudes"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Modes available for (EFIS) HSI on some units are:",
+      "options": [
+        "airspeed and Mach",
+        "MAP and PLAN",
+        "VOR, ILS, MAP and AUTO TRIM",
+        "only from manometric sources"
+      ],
+      "answer": 1
+    },
+   
+    {
+      "question": "An EFIS as well as having a control panel, symbol generators and a remote light sensor also has:",
+      "options": [
+        "EADIS and EHSIs",
+        "EHSIs and altitude indicator",
+        "EADIs and EICAs",
+        "EADI and WXR display tubes"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A basic digital computer consists of: 1. input peripherals 2. central processing unit 3. inertial unit 4. memory 5. auto brightness control 6. output peripherals",
+      "options": [
+        "1, 2, 3, 4 and 6",
+        "1, 2, 4 and 6",
+        "1, 4, 6 only",
+        "2, 3, 4 and 6"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The Central Processing Unit (CPU) consists of: 1. input device 2. output device 3. Arithmetic Logic Unit (ALU) 4. shift registers 5. control unit 6. hard disk",
+      "options": [
+        "1, 2, 3 and 5",
+        "3, 4, and 6",
+        "1, 2, 5, and 6",
+        "3, 4 and 5"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "In computer terminology an input peripheral device would be:",
+      "options": [
+        "a hard disk",
+        "a floppy disk",
+        "a keyboard",
+        "a screen display unit"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In computer terminology an output peripheral device would be:",
+      "options": [
+        "a floppy disk",
+        "a hard disk",
+        "a screen display unit",
+        "a keyboard"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In computer terminology a memory which loses its data when power is removed is called:",
+      "options": [
+        "non-volatile",
+        "non-permanent",
+        "non-retentive",
+        "volatile"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "In computer terminology a memory which retains its data when power is removed is called:",
+      "options": [
+        "non-volatile",
+        "volatile",
+        "RAM",
+        "ROM"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Examples of input peripheral devices are: 1. mouse 2. modem 3. printer 4. screen display unit 5. keyboard",
+      "options": [
+        "2, 3, 4 and 5",
+        "1, 2 and 5",
+        "1 and 5",
+        "1, 2, 3"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In computer terminology “software” refers to:",
+      "options": [
+        "the memory system floppy disks, hard disks, etc",
+        "the RAM and ROM capacity",
+        "the programme of instructions",
+        "the BIOS"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In computer terminology “hardware” refers to:",
+      "options": [
+        "the digital computer components, keyboard, monitor, CPU, etc",
+        "the permanent memory system and its capacity",
+        "the RAM capacity",
+        "the programme of instructions"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The permanent memory of a digital computer usually takes the form of:",
+      "options": [
+        "integrated circuits rated in megabytes",
+        "shift registers whose capacity is rated in mega or gigabytes",
+        "floppy or hard disks whose capacity is measured in mega or gigabytes",
+        "Central Processing Unit"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The purpose of the Arithmetic Logic Unit within the Central Processing Unit is to:",
+      "options": [
+        "act as a temporary store for information being processed",
+        "perform calculations in the binary number system",
+        "perform calculations in the binary, octal or hexadecimal system",
+        "perform all clock functions based on the computer clock frequency (clock time)"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Within the Central Processing Unit, the temporary stores and accumulator which handle the data during processing are called:",
+      "options": [
+        "Arithmetic Logic Unit (ALU)",
+        "shift registers",
+        "control unit",
+        "BIOS"
+      ],
+      "answer": 1
+    }
+  ]

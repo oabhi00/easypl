@@ -1,0 +1,157 @@
+[
+  {
+    "question": "An aircraft departs from point E, intending to fly the direct track to point F, 160 nm away. Having flown for 85 nm, a fix is obtained which puts the aircraft 11 nm to port of the intended track. Determine the alteration of heading required if the aircraft is to track directly from the fix to point F.",
+    "options": ["16.6 degrees to starboard", "16.8 degrees to port", "16.6 degrees to port"],
+    "answer": 0
+  },
+  {
+    "question": "Distance along track is 600 nm. Distance to go is 300 nm, and distance off track is 20 nm. Find total correction.",
+    "options": ["7 degrees", "6 degrees", "5 degrees"],
+    "answer": 1
+  },
+  {
+    "question": "After flying for 2 hr 40 min at a ground speed of 360 kt, an aircraft is 30 nm starboard of track. If the remaining time to destination at a ground speed of 240 kt is 45 min, what should be the new heading to reach destination if the aircraft was originally flying on heading 358°?",
+    "options": ["340", "346", "352"],
+    "answer": 1
+  },
+  {
+    "question": "After flying for 1 hr 30 min at a ground speed of 150 kt, an aircraft is 15 nm off track. If the remaining time to destination is 45 min at a ground speed of 180 kt, find the closing angle.",
+    "options": ["7", "8", "9"],
+    "answer": 0
+  },
+  {
+    "question": "After flying for 2 hr 30 min at a ground speed of 240 kt, an aircraft is 20 nm right of track. If the remaining time to destination is 1 hr, what is the new heading to reach the destination, if the aircraft was originally flying on heading 270°?",
+    "options": ["261", "262", "263"],
+    "answer": 2
+  },
+  {
+    "question": "An aircraft is tracking outbound from a VOR. The intention is to maintain the centerline of an airway which is defined by the 300° radial from the VOR. A back-bearing from the VOR shows the aircraft to be on the 295° radial, and the DME gives a range of 85 nm from the VOR. Determine the aircraft's displacement from the airway centerline.",
+    "options": ["7 nm", "8 nm", "10 nm"],
+    "answer": 0
+  },
+  {
+    "question": "With a TAS of 115 kt, the relative bearing on an ADF changes from 090° to 095° in 1.5 min. The distance to the beacon is:",
+    "options": ["12.5 nm", "24.5 nm", "34.5 nm"],
+    "answer": 2
+  },
+  {
+    "question": "The ADF indicates a wing-tip bearing change of 5° in 5 min. TAS is 115 kt. The distance to the beacon is:",
+    "options": ["36 nm", "57.5 nm", "115 nm"],
+    "answer": 2
+  },
+  {
+    "question": "The ADF indicates a wing-tip bearing change of 5° in 1.5 min. The time to the beacon is:",
+    "options": ["18 min", "24 min", "30 min"],
+    "answer": 0
+  },
+  {
+    "question": "With a TAS of 90 kt, the relative bearing on an ADF changes from 090° to 100° in 2.5 min. The distance and time to the beacon is:",
+    "options": ["15 nm, 22.5 min", "22.5 nm, 15 min", "32 nm, 18 min"],
+    "answer": 1
+  },
+  {
+    "question": "The ADF indicates a wing-tip bearing change of 15° in 7.5 min. The fuel consumption is 9.6 GPH. TAS is 85 kt. The distance to the beacon is:",
+    "options": ["30 min, 42.5 nm, 4.8 gal", "32 min, 48 nm, 5.58 gal", "48 min, 42.5 nm, 4.58 gal"],
+    "answer": 0
+  },
+  {
+    "question": "Maintaining a constant heading, the ADF reading changes from 045° to 090° in 5 min. TAS is 120 kt. Fuel consumption is 5 GPH. The distance to the beacon is:",
+    "options": ["5 min, 10 nm, 0.4 gal", "6.7 min, 13.4 nm, 0.6 gal", "10 min, 20 nm, 2.5 gal"],
+    "answer": 0
+  },
+  {
+    "question": "Maintaining a constant heading, the ADF reading changes from 315° to 270° in 7 min. TAS is 120 kt. Fuel consumption is 18 GPH. The distance to the beacon is:",
+    "options": ["7 min, 14 nm, 2.1 gal", "7 min, 13 nm, 2.1 gal", "9.3 min, 18.7 nm, 2.8 gal"],
+    "answer": 0
+  },
+  {
+    "question": "At 60 nm from a station, you travel approximately how many nm for each degree of radial crossed?",
+    "options": ["0.5", "1", "5"],
+    "answer": 1
+  },
+  {
+    "question": "According to the chart, the minimum obstruction clearance altitude (MOCA) is 8500 ft. The meteorological data gives an outside air temperature of -20°C at FL85. The QNH, given by a met station at an elevation of 4000 ft, is 1003 hPa. What is the minimum pressure altitude which should be flown according to the given MOCA?",
+    "options": ["8200 ft", "8500 ft", "8800 ft"],
+    "answer": 2
+  },
+  {
+    "question": "An aircraft is flying at MACH 0.84 at FL330. The static air temperature is -48°C and the headwind component is 52 kt. At 1338 UTC, the controller requests the pilot to cross the meridian of 030°W at 1500 UTC. Given the distance to go is 570 nm, the reduced MACH number should be:",
+    "options": ["0.781", "0.80", "0.71"],
+    "answer": 1
+  },
+  {
+    "question": "Flight planning chart for an aeroplane states that the time to reach the cruising level at a given gross mass is 36 min and the distance traveled is 157 nm (zero wind). What will be the distance traveled with an average tailwind component of 60 kt?",
+    "options": ["193 nm", "228 nm", "157 nm"],
+    "answer": 0
+  },
+  {
+    "question": "An aeroplane flies at an airspeed of 380 kt. It flies from A to B and back to A. Distance AB = 480 nm. When going from A to B, it experiences a headwind component of 60 kt. The wind remains constant. The duration of the flight will be:",
+    "options": ["2 h 35 min", "3 h 00 min", "2 h 10 min"],
+    "answer": 0
+  },
+  {
+    "question": "A sector distance is 450 nm. The TAS is 460 kt. The wind component is a 50 kt tailwind. What is the still air distance?",
+    "options": ["406 Nautical Air Miles (NAM)", "414 Nautical Air Miles (NAM)", "499 Nautical Air Miles (NAM)"],
+    "answer": 0
+  },
+  {
+    "question": "A descent is planned from 7500 ft MSL to arrive at 1000 ft MSL, 6 nm from a VORTAC. With a ground speed of 156 kt and a rate of descent of 800 ft/min, the distance from the VORTAC when descent is started is:",
+    "options": ["21.1 nm", "27.1 nm", "30.2 nm"],
+    "answer": 1
+  },
+  {
+    "question": "An aircraft at FL370 is required to commence descent when 100 nm from a DME facility and to cross the station at FL120. If the mean ground speed during descent is 396 kt, the minimum rate of descent required is approximately:",
+    "options": ["1650 ft/min", "2400 ft/min", "1000 ft/min"],
+    "answer": 0
+  },
+  {
+    "question": "At 0422 UTC, an aircraft at FL370, GS 320 kt, is on direct track to VOR 'X', 185 nm distant. The aircraft is required to cross VOR 'X' at FL80. For a mean rate of descent of 1800 ft/min at a mean GS of 232 kt, the latest time to commence descent is:",
+    "options": ["0451", "0454", "0445"],
+    "answer": 2
+  },
+  {
+    "question": "Assuming zero wind, what distance is covered by an aircraft descending from 15,000 ft with a TAS of 320 kt and a rate of descent of 3000 ft/min?",
+    "options": ["16.0 nm", "26.7 nm", "19.2 nm"],
+    "answer": 1
+  },
+  {
+    "question": "What will be the rate of descent when flying down a 7% glide slope at a ground speed of 250 kt?",
+    "options": ["1575 ft/min", "1737 ft/min", "173 ft/min"],
+    "answer": 2
+  },
+  {
+    "question": "Aircraft height is 2500 ft, ILS glide path angle is 3°. At what approximate distance from threshold can you expect to capture the glide path?",
+    "options": ["8.3 nm", "7.0 nm", "13.1 nm"],
+    "answer": 0
+  },
+  {
+    "question": "Wing-tip bearing change is 10°. Elapsed time between bearings is 8 min. Fuel consumption rate is 11.8 GPH. Calculate fuel required to reach the station in gallons.",
+    "options": ["9.4", "11.8", "15.7"],
+    "answer": 0
+  },
+  {
+    "question": "Convert 40 USG to kilograms and litres. SG = 0.72.",
+    "options": ["182 kg / 131 litres", "151 litres / 109 kg", "182 litres / 131 kg"],
+    "answer": 1
+  },
+  {
+    "question": "Convert into km: 15 NM, 17.26 SM, 60 miles.",
+    "options": ["110, 126.6, 232.4", "60, 69, 126", "170, 195.6, 314.8"],
+    "answer": 2
+  },
+  {
+    "question": "Convert into litres: 8.3 USG/hr, 102 IG/hr, 85 IG/hr.",
+    "options": ["102, 85, 336", "8.3, 6.9, 31.4", "85, 102, 322"],
+    "answer": 1
+  },
+  {
+    "question": "Convert to Kelvin: Celsius = 15, Fahrenheit = -40.",
+    "options": ["-15, 5, 258", "59, 15, 32", "-28, -18, 254"],
+    "answer": 0
+  },
+  {
+    "question": "Convert to metric tons: 200 kg, 441 lbs.",
+    "options": ["441, 992, 0.44", "690, 1521, 0.76", "440, 970, 0.44"],
+    "answer": 2
+  }
+]

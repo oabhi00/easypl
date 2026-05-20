@@ -1,0 +1,92 @@
+[
+    {
+      "question": "The objective of the investigation of an accident or incident shall be the:",
+      "options": [
+        "Prevention of accidents or incidents and to help the judges",
+        "Prevention of accidents or incidents and to help the manufacturers in design",
+        "Prevention of accidents or incidents"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following, according to ICAO Annex 13, shall be entitled to appoint an accredited representative to participate in the investigation?",
+      "options": [
+        "State conducting the investigation and State of design and manufacturing",
+        "All ICAO member States",
+        "Any State which, on request, provides information, facilities or experts to the State conducting the investigation"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The accident investigation preliminary report shall be submitted to appropriate States and to the ICAO, in:",
+      "options": [
+        "Any of the world's major languages",
+        "One of the working languages of ICAO",
+        "The language of the investigating State"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Upon receipt of the notification and a request by the state of occurrence for participation, the state of design and the state of manufacture shall in the case of an accident or serious incident inform the state of occurrence of the name of its representative to be present at the investigation when the aircraft:",
+      "options": [
+        "Has a maximum mass over 100000 kg",
+        "Has a maximum mass over 27000 kg",
+        "Has a maximum mass over 57000 kg"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Who is responsible, under Annex 13 of the Chicago convention for the initiation of an accident investigation?",
+      "options": [
+        "The law enforcement authorities of the state in which the aircraft is registered",
+        "The aircraft manufacturer",
+        "The government of the state in which the accident took place"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Just before arriving on the apron, taxiing inadvertently on the grass, a wheel falls into a hole which seriously damages the aircraft and obliges the crew to delay departure. This is an irregularity in the operation, the crew must follow the procedure relevant to this case",
+      "options": [
+        "This is an irregularity in the operation, the crew must inform the operator of the delay caused by necessary repair",
+        "Since no physical injury has been noticed and the flight is over, the actions to be taken are related only to insurance, to the repair man, the operator and the persons in charge of the runways and taxiways",
+        "None of the above"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Where an accident or incident occurs to an aircraft in India, then the pilot-in-command of the aircraft shall send notice thereof to:",
+      "options": [
+        "AAIB, DGCA, DM and O-I-C of nearest police station, as soon as is reasonably practicable but in any case not later than twenty-four hours",
+        "AAIB, DGCA, DM and O-I-C of nearest police station, as soon as is reasonably practicable but in any case not later than forty-eight hours",
+        "AAIB, DGCA, DM and AAI as soon as is reasonably practicable but in any case not later than twenty-four hours"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In the case of an accident the aircraft or any parts or contents thereof may be removed without the authority of DGCA/AAIB:",
+      "options": [
+        "To look for evidence",
+        "If so directed by the P-I-C",
+        "To extricate the body of a dead dog"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "\"An incident involving circumstances indicating that an accident or a serious incident could have occurred, if the risk had not been managed within safety margins\" is known as:",
+      "options": [
+        "Reportable Incident",
+        "Significant Incident",
+        "Flight Safety Incident"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "CVR and airborne image recording data:",
+      "options": [
+        "can be used for disciplinary, civil, administrative and criminal proceeding against the employees, operational personnel or organization",
+        "cannot be used for disciplinary, civil, administrative and criminal proceeding against the employees, operational personnel or organization",
+        "can be used for disciplinary, civil, administrative and criminal proceeding against the employees, operational personnel or organizations with the permission of DGCA."
+      ],
+      "answer": 1
+    }
+]

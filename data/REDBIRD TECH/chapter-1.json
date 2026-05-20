@@ -1,0 +1,2114 @@
+[
+    {
+      "question": "A relight is:",
+      "options": [
+        "The initiation of the after burning system.",
+        "What occurs when the engine drain valve is stuck.",
+        "The action of restarting a flamed out engine usually while airborne."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Choose the correct statement:\n1. AFT CG limit is set to ensure a minimum degree static longitudinal stability\n2. FWD CG limit is set to ensure a minimum degree of controllability under the worst circumstances",
+      "options": [
+        "1 is correct",
+        "Both 1 & 2 are incorrect",
+        "Both 1 & 2 are correct"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Swept back and Delta wings are:",
+      "options": [
+        "Very efficient at high speed but correspondingly inefficient at low speeds",
+        "Fairly inefficient at high speed but very efficient at low speed",
+        "Neither efficient at low or high speed"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The function of shut off valve in a pneumatic system is to:",
+      "options": [
+        "Shut off the pneumatic system",
+        "To switch off bleed air supply from an engine and the APU",
+        "To regulate the supply of bleed air"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Shock stall is caused is due to:",
+      "options": [
+        "Abrupt movement of the control column",
+        "Sudden increase in lift",
+        "Boundary layer separation aft of the shockwave causing sudden loss of lift"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The main contributory factors which cause creep in turbine blades are:",
+      "options": [
+        "High RPM and High gas speed.",
+        "High Temperature and High gas speeds.",
+        "High Temperature and Tensile loading"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In level flight, since lift equals weight, if the aircraft is performing a manoeuvre such that, twice the weight, the load factor will be:",
+      "options": [
+        "1.5",
+        "4.0",
+        "2.0"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In turbo-compressor the cooling air is:",
+      "options": [
+        "Ram air",
+        "Compressor air",
+        "Cabin air"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Nucleus has a:",
+      "options": [
+        "Positive charge",
+        "Negative charge",
+        "Positive & Negative"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mark the correct statement for climb performance?",
+      "options": [
+        "Higher the mass, poor climb performance",
+        "Speed of the A/C for higher ROC is increased with increased mass",
+        "All above are correct"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A complete breakdown of airflow through a compressor is known as:",
+      "options": [
+        "Compressor turbulence",
+        "Compressor Buffet",
+        "Compressor Surge"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Positive static stability is:",
+      "options": [
+        "If an A/C has a tendency to continue in the direction of disturbance.",
+        "If an A/C is subject to disturbance and has neither the tendency to return nor the in the displacement direction.",
+        "If an A/C is disturbed from equilibrium and has the tendency to return to equilibrium"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is phugoid oscillation?",
+      "options": [
+        "Short period in pitch attitude, airspeed, altitude and AOA vary",
+        "Long period oscillation in pitch attitude, airspeed, altitude remain constant but AOA vary",
+        "Long period of oscillation in pitch attitude, Speed attitude vary but AOA remains relatively constant"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The purpose of the diffuser vanes in a centrifugal compressor is to:",
+      "options": [
+        "Increase the charge temperature",
+        "Convert Kinetic energy into pressure Energy",
+        "Convert pressure energy into kinetic energy"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Increasing supply frequency with constant(regulated) voltage will cause the amplitude of  the current wave to----",
+      "options": [
+        "Inc",
+        "Reduce",
+        "Remain same"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "As per Bernoulli’s theorem –",
+      "options": [
+        "Decrease in speed along a stream line point decreases static pressure",
+        "Increase in speed at a point along stream line, Cause a decrease in static pressure at the point",
+        "Increase or Decrease in speed has no change in static pressure"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is most fav CG location for fuel economy?",
+      "options": [
+        "CG located at forward CG limit",
+        "CG location be same as CP location",
+        "CG located at the aft CG limit"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Thermal efficiency of engine is increased by :",
+      "options": [
+        "Increasing the combustion chamber volume",
+        "Increasing the R.P.M",
+        "Increasing the compression ratio"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A typical APU can provide",
+      "options": [
+        "Air for engine starting",
+        "Electrical power for ground or inflight use",
+        "All of the above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Load factor is:",
+      "options": [
+        "Weight divided by lift expressed as ‘g’",
+        "CL divided by weight",
+        "Lift divided by weight expressed as ‘g’"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Ionisation smoke detector work on the principle of:",
+      "options": [
+        "Measurement of light transmissibility by a photo electric cell",
+        "Visually illuminating of smoke samples",
+        "Through the process of ionisation that takes place continuously inside a detection chamber for presences of smoke particles."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the purpose of a hydraulic check valve?",
+      "options": [
+        "To direct the fluid in various directions",
+        "To restricts the fluid flow in one direction",
+        "To obtain fluid flow in one direction"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Control “overbalance” results in :",
+      "options": [
+        "A gradual increase in stick force with nose down tendency",
+        "A gradual loss of control followed by nose up tendency",
+        "A sudden reduction then reversal of stick force."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The power increase that occurs with initial increase in altitude when an engine has supercharger fitted is due to:",
+      "options": [
+        "The increasing charge temperature",
+        "The reducing exhausts back pressure",
+        "The decreasing density of the atmosphere"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The rate at which work is done called:",
+      "options": [
+        "Current",
+        "Power",
+        "Resistance"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Because of the reduction in density of the atmosphere, with an increase in altitude:",
+      "options": [
+        "The octane rating of the fuel must be increases",
+        "The throttle must be reduced to maintain the best Air/Fuel ratio",
+        "The mixture control must be moved towards the weak position"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Dynamic stability is ------- at high altitude due to------aerodynamic damping",
+      "options": [
+        "Increased      Reduced",
+        "Reduced        Reduced",
+        "Reduced        Increased"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Why do wind shield consists of 5 layers?",
+      "options": [
+        "To prevent fatigue",
+        "To enable effective heating",
+        "To increase their impact resistance"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Electrical resistance is measured in:",
+      "options": [
+        "Ohm",
+        "Watt",
+        "Amp"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Rudder gives :",
+      "options": [
+        "Lateral control about the longitudinal axis",
+        "Longitudinal control about the lateral axis",
+        "Directional control about the normal axis"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Negative static stability:",
+      "options": [
+        "Exists if an A/C has tendency to continue in the direction of disturbance",
+        "Exists if an A/C is subject to a disturbance and has neither the tendency to return nor the tendency to continue in the displacement of direction",
+        "Exists if an A/C disturbed from equilibrium"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The current in a circuit can be adjusted by:",
+      "options": [
+        "reducing the current",
+        "Using different materials",
+        "Altering the resistance"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the purpose of a hydraulic reservoir?",
+      "options": [
+        "To convert hydraulic pressure into work",
+        "To store hydraulic fluid",
+        "To support the system with pressurised fluid"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Materials which have free electrons are called:",
+      "options": [
+        "Insulators",
+        "Resistance",
+        "Conductors"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A choked nozzle;",
+      "options": [
+        "Gives additional pressure without the addition of fuel",
+        "Has no effect on thrust",
+        "Implies that no further increase in velocity can be obtained without the increase of heat"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Choose the correct statement",
+      "options": [
+        "High performance sailplanes have high AR",
+        "jet fighter aircraft have low aspect ratio",
+        "Both A & B"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the effect of ice, frost and snow on stall?",
+      "options": [
+        "Change aerofoil section increases stalling angle decrease in stall speed",
+        "Change aerofoil section decrease stall angle and increase in stall speed",
+        "Change aerofoil section increase stall angle increase in stall speed"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The A/C is at best L/D ratio when parasite drag is ;",
+      "options": [
+        "At minimum",
+        "Equal to induced drag",
+        "Greater than induced drag"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Longerons are beams in the fuselage which are fitted:",
+      "options": [
+        "Longitudinally",
+        "Horizontally",
+        "Diagonally"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Choose the correct statement:",
+      "options": [
+        "Decreasing the camber of an aerofoil will increase its lift",
+        "Increasing the camber of an aerofoil will increase its lift",
+        "Increasing the camber of an aerofoil will decrease its lift"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Delta-wing airplanes have moveable control surfaces on the trailing edge. They are called:",
+      "options": [
+        "All moving tail",
+        "Stabilizers",
+        "Elevons"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Power is measured in unis of:",
+      "options": [
+        "Ampere",
+        "Watts",
+        "Voltage"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Choose the correct answer for MONOCOQUE construction:",
+      "options": [
+        "All the loads are taken by the skin",
+        "This type of construction is good for heavy aircraft",
+        "Loads are shared by the skin and the structure"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A compressor stall causes:",
+      "options": [
+        "The vibration level to increase with a decrease in the turbine gas temperature",
+        "An increase in the turbine gas temperature and the vibration level",
+        "The rotation of the engine to stop suddenly"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An atom has gained an electron is called a:",
+      "options": [
+        "Static 10N",
+        "Neutral 10N",
+        "Negative 10N"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Choose the correct statement about aerodynamic heating:",
+      "options": [
+        "It is not very significant up to speed of mach 2.0",
+        "It shortens the fatigue life of the skin",
+        "Both of the above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Mark the correct statement:",
+      "options": [
+        "Power effect most prominent when aircraft has high power low speed during take off and while approaching",
+        "Instability depends on distance from CG to propeller and is lowest at high power and low dynamic pressure",
+        "Combined direct & indirect power effects increase of static stability at high power and high lift"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What are the factor affecting stall?",
+      "options": [
+        "Mass of a/c, load factor, use of power, CG, Lift coefficient",
+        "Mass of a/c, use of high power, higher power, CP, drag coefficienet",
+        "Mass of a/c, load factor use of power, lift and drag"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The power to start an APU comes from:",
+      "options": [
+        "Ground power unit",
+        "Aircraft main DC battery",
+        "Aircraft main engine generator"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When connecting battery in series the total voltage:",
+      "options": [
+        "Sum of the battery",
+        "Equal to the individual battery voltage",
+        "The sum of their individual voltage"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An increase in air density will ------ engine power and -------propeller drag at a particular throttle and propeller setting:",
+      "options": [
+        "Increase      Decrease",
+        "Increase       Increase",
+        "Decrease      Increase"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A restrictor valve –",
+      "options": [
+        "is used to restrict the number of services available after loss of system pressure",
+        "Controls the rate of movement of a service in one direction",
+        "Controls the rate of build-up of pressure in the system"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Centre of pressure moves:",
+      "options": [
+        "FWD at increased transonic speed",
+        "Remains constant in a sweep back wing",
+        "Aft at increased transonic speeds"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Dry Chemical (Dry powder):",
+      "options": [
+        "Stored in purple, brown, or green containers and is very effective against electrical and flammable fires",
+        "The use of this agent in crew compartment or passenger cabins of pressurized aircraft is not permit is best known for its applicable against wheel and brake fire",
+        "It is principal extinguisher for use on flammable liquid fires. It blankets the flame by excluding oxygen"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "How do large aircraft equipped with tricycle landing gear obtain steering control on ground?",
+      "options": [
+        "By use of nose wheel steering",
+        "By use of rudder",
+        "By use of differential braking"
+      ],
+      "answer": 0
+    },
+    {
+      "question": ") When an A/c structure is designed according to fail safe philosophy it means",
+      "options": [
+        "The structure will never break regardless of stress applied",
+        "The failed structure can be replaced easily",
+        "Adjacent structure with stands the loads which the failed structure should have carried"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "About which axis roll is achieved?",
+      "options": [
+        "The horizontal axis",
+        "The vertical axis",
+        "The longitudinal axis"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Control locks are used to prevent:",
+      "options": [
+        "Controls from wear and tear",
+        "Unauthorised interference with them",
+        "Mechanical damage in strong and gusty winds"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The dihedral construction of an air craft wing causes:",
+      "options": [
+        "A directional stability about the lateral axis",
+        "Lateral stability about the longitudinal axis",
+        "Longitudinal stability about the lateral axis"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The control which gives lateral control is:",
+      "options": [
+        "Elevator",
+        "Rudder for control in yaw about normal axis",
+        "Ailerons for control in roll about longitudinal axis"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Lift and drag on airplane depends upon?",
+      "options": [
+        "C.P, C.G, IAS , Air density",
+        "AOA, air density, velocity, CG",
+        "AOA, air density, aerofoil shape , velocity"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The nozzle is said to be “choked” when:",
+      "options": [
+        "The gas flow through it is subsonic",
+        "The gas temperature rises",
+        "The gas flow through it reaches its sonic value"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Choose the correct statement, Taper ratio is:",
+      "options": [
+        "Ratio of average chord to root chord",
+        "Ratio of root chord to tip chord",
+        "Ratio of tip chord to root chord"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An indication of the battery state of charge or serviceability is:",
+      "options": [
+        "The specific gravity of the electrolyte",
+        "The temperature of electrolyte",
+        "To check the temperature of electrolyte using a hydrometer"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Electro Motive Force(EMF) is a force behind the current to make it flow. If the EMF:",
+      "options": [
+        "Decrease, the flow of electrons increases",
+        "Increase, the flow of electrons decreases",
+        "Decreases, the flow of electrons decreases"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Fire detection system generally use four methods detection :",
+      "options": [
+        "FWD cargo, AFT cargo, APU and engines deflection system",
+        "AFT cargo fire bottles APU fire bottles engine fire bottle & FWD cargo fire bottle",
+        "Melting link detectors, Differential expansion detectors, Gas filed detectors and continuous fire detection"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If landing is made without flaps the landing speed must be:",
+      "options": [
+        "reduced",
+        "Increased",
+        "No change in speed is required"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is Vso ?",
+      "options": [
+        "Vso stalling speed with flaps down and landing gear down.",
+        "Vso stalling speed with flaps up",
+        "Vso stalling speed with flaps fully down"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "With increase in OAT, SFC will?",
+      "options": [
+        "Decrease",
+        "Increase",
+        "Stays the same"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the purpose of a hydraulic sequence valve?",
+      "options": [
+        "To activate the shuttle valve",
+        "To sequence certain events",
+        "To activate fire shut off valve"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "How are wing bending moments reduced in flight?",
+      "options": [
+        "by having wing mounted engines and using the wing fuel first",
+        "By using ailerons up float and using centre tank fuel as late as possible",
+        "By using aileron “up float” and using wing fuel as late as possible"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When air is pressurised by an engine driven compressors , it is also :",
+      "options": [
+        "Cooled",
+        "Heated",
+        "Moisturized"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "”MACH TRIM” or “MACH UNDER” are associated with:",
+      "options": [
+        "Flying at low speed and high gross weight",
+        "Flying at supersonic speeds",
+        "Flying at high subsonic speeds"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "EMF is measured in :",
+      "options": [
+        "Units of Voltage",
+        "Units of Amp",
+        "Units of watt"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "When responding to a TCAS 2 resolution advisory, the crew must respond within:",
+      "options": [
+        "2.5 Seconds using g forces +-0.25g",
+        "5 Seconds using g forces of +- 0.25g",
+        "5 Seconds using g-forces of +-0.5g"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The on load/nominal voltage of each cell of a lead acid battery is ------and on load voltage of one cell of Ni-Cad battery is:",
+      "options": [
+        "1.27 Volts /1.24 Volts",
+        "2.0 Volts/ 1.27 Volts",
+        "2.0 Volts/1.2 volts"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Icing on aircraft:",
+      "options": [
+        "can change the stall characteristics and stall warning device may not function",
+        "Can contaminate wing and tail surfaces, engine and pitot- static system",
+        "All of the above are correct"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The toilet fire detection must consist of:",
+      "options": [
+        "Fire bottles, Fusible plug and spray ring in addition with smoke detector system",
+        "Water glycol detection system",
+        "fire detection system"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft in level flight and cabin altitude increases pressure differential will :",
+      "options": [
+        "Remain the same",
+        "Increase",
+        "Decrease"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the solidity of propeller?",
+      "options": [
+        "Ratio of total frontal area of the blades to the area of propeller disc",
+        "Ratio of total frontal area angle to L/D ratio",
+        "Increasing number of blades increases aspect ratio"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The altitude above which icing does not occur since the droplets are all frozen and will not adhere to the aircrafts surface is:",
+      "options": [
+        "37,000 ft",
+        "42,000 ft",
+        "40,000 ft"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The aeroplane control surface which gives directional control about normal axis is?",
+      "options": [
+        "Rudder",
+        "Ailerons",
+        "Elevators"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "When connecting batteries ( of the same type) in parallel the total voltage is equal to:",
+      "options": [
+        "the sum of their individual voltage",
+        "The individual voltage battery voltage",
+        "Sum of the battery current"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is high speed buffet and its effect on aircraft?",
+      "options": [
+        "It can occur at any altitude with maximum operating speed",
+        "It can occur at high altitude with little effect on airframe structure",
+        "It is the same as a shock stall, Can seriously damage aircraft structure at high altitude."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The highest pressure in the gas turbine engine occurs:",
+      "options": [
+        "between the compressor and combustion chamber",
+        "In the combustion chamber",
+        "In the jet pipe"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The maximum thrust that a jet engine can develop will be:",
+      "options": [
+        "Go around thrust",
+        "Max Climb thrust",
+        "Max static thrust"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Chemical oxygen generators:",
+      "options": [
+        "The generators are relatively light self-contained devices.",
+        "Sufficient oxygen is supplied for a period of minimum 30 mutes.",
+        "A relief valve prevents internal pressure in the generators exceeding 50 psi as the normal flow psi"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The purpose of the tertiary airflow in the combustion chamber is to:",
+      "options": [
+        "Ensure complete combustion of the fuel",
+        "Ensure the gas temperature and cool the burner head",
+        "Reduce the gas temperature and cool the flame tube"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The disadvantage of “Conventional” elevator and trim tab is that aircraft?",
+      "options": [
+        "nose up authority reduces with forward CG movement",
+        "Nose up pitch authority increase with FWD CG movement",
+        "There is no effect of CG movement to pitch authority"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Ventral fin may be added as in additional contribution to -----",
+      "options": [
+        "Directional stability",
+        "Lateral stability",
+        "Static lateral stability"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "How do we achieve effective angle of attack over the propeller blade ?",
+      "options": [
+        "By increasing blade angle from propeller root to propeller tip",
+        "Reducing blade angle from propeller root to propeller tip",
+        "Increasing Blade angle from propeller tip to Propeller Root"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "How is the ice prevented from forming on the front wind shield of large system:",
+      "options": [
+        "Warm air is blown over the wind shield",
+        "De-icing fluids are sprayed",
+        "Electrically heated wind shields"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Dynamic hydroplaning is recognised by:",
+      "options": [
+        "Total loss of control",
+        "The tyre skids all the time",
+        "Partial loss of controls"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A propeller which is wind milling:",
+      "options": [
+        "Rotates the engine in reverse and gives drag",
+        "Rotates the engine in reverse and gives some thrust",
+        "Rotates the engine in the normal direction and give drag"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When gases passes through convergent duct:",
+      "options": [
+        "Vel and temp Inc and their pressure decreases",
+        "Vel inc and temp and pressure dec",
+        "Vel dec and temp and pressure inc"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In the event of an engine surging occurring, the correct action to be taken is :",
+      "options": [
+        "Close throttle quickly",
+        "Close throttle slowly",
+        "To open throttle fully"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "With asymmetric thrust mark the correct statement regarding effect of airspeed?",
+      "options": [
+        "Effectiveness of controls depends upon static pressure",
+        "Lower IAS will reduce the available rudder moment",
+        "Both A and B are correct"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Ohm’s law can be summed as :",
+      "options": [
+        "Current inversely proportional to voltage if voltage remains constant",
+        "Current directly proportional voltage:",
+        "Current inversely proportional to resistance if voltage remains constant"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Current is :",
+      "options": [
+        "A magnetic field produce around the conductor",
+        "Potential difference across the conductor",
+        "The number of electrons passing any point in the conductor in one second"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A fuel sample appears cloudy or hazy could be due to;",
+      "options": [
+        "Dirt in the fuel",
+        "Oil in the fuel:",
+        "Water contamination"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Stress is defined as :",
+      "options": [
+        "Internal force inside a load",
+        "Force per unit area measured in MN/m²",
+        "Twisting force inside a structural member"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A fuel strainer should be fitted:",
+      "options": [
+        "in the inlet manifold",
+        "at the air intake",
+        "before the main jet",
+        "after the main jet"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The bypass ration of the engine is the ratio of :",
+      "options": [
+        "Primary air to tertiary air",
+        "Cold stream air to that flowing through the hot core of the engine",
+        "Exhaust gas pressure to air intake pressure."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Bleed valves are automatically opened:",
+      "options": [
+        "At maximum RPM to prevent compressor stall (low RPM)",
+        "At low RPM to prevent the turbine stalling",
+        "During engine acceleration to prevent turbine surge."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The pressure within the gas turbine engine with it is being run on a stationary A/c is---------ambient pressure",
+      "options": [
+        "Above",
+        "Same as",
+        "Below"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The interstage airseal is used when",
+      "options": [
+        "Engine sections are operating at different pressure",
+        "Engine sections are subjected to the same value",
+        "It is more convenient"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The term (self sustaining speed) means that",
+      "options": [
+        "the aircraft can roll forward with no further opening of the throttles",
+        "the speed from which the engine can accelerate to full power within 5 seconds",
+        "the engine will run independently of external help",
+        "the speed from which the engine can accelerate to idle without the help of the starter motor"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "In a turbo fan engine, the fan speed is controlled by",
+      "options": [
+        "A reduction gear",
+        "A waste gate",
+        "The turbine"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A typical APU can provide",
+      "options": [
+        "Air for engine starting",
+        "Electrical power for ground or inflight use",
+        "All of the above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A cannular combustion system",
+      "options": [
+        "A set of flame tube each of which is mounted in a separate air casing",
+        "A set of flame tubes enclosed in a common air casing",
+        "One common flame tube enclosed in a common air casing"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The primary function of a diffuser in a carburettor is to:",
+      "options": [
+        "control the mixture strength over part of the engine speed range",
+        "vent air from the float chamber",
+        "emulsify the fuel during engine acceleration",
+        "enable adjustment of the engine slow running speed"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The current in a circuit can be adjusted by:",
+      "options": [
+        "Resistor",
+        "Inverter",
+        "Rectifier"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Fuel booster pump are fitted:",
+      "options": [
+        "Fitted inside the tanks",
+        "Fitted outside the tank",
+        "Both A & B correct"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A hydraulic gear extension/retraction mechanism consists of sequence valves, uplocks and:",
+      "options": [
+        "an anti-skid braking system",
+        "downlocks",
+        "torque links",
+        "a shock absorber"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is viscosity?",
+      "options": [
+        "Resistance to flowing liquid",
+        "Resistance to current",
+        "Both of the above"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Electrolytes :",
+      "options": [
+        "Encourages electron transfer between the electrodes until there is a potential difference between them",
+        "can be used to store charge and electric current",
+        "Both A & B"
+      ],
+      "answer": 0
+    },
+    {
+      "question": ") Lead battery acid battery are stored in a",
+      "options": [
+        "Semi charged Charged state to prevent deuteriation of the battery by sulphation",
+        "Discharge state and have a longer shell life",
+        "Charged state"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Factor affecting the resistance",
+      "options": [
+        "Type of material",
+        "Longer wire will have less resistance",
+        "Thicker the wire higher the resistance"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Class D compartment (which can not be reached by a crew inflight)",
+      "options": [
+        "Cabin crew operated fire extinguisher",
+        "Must not be ventilated to contain the fire",
+        "The compartment shall be lined with fire resistant material and ventilation and droughts must be there so that any fire likely to occur will not progress beyond safe limits"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Major advantage of Semi Monocoque structure over a monocoque structure is:",
+      "options": [
+        "Better strength to weight ratio",
+        "Cheaper to manufacture",
+        "It is lighter"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Battery capacity percentage efficiency must always be:",
+      "options": [
+        "10% above saturation level",
+        "above 70%",
+        "80% or more",
+        "above 90%"
+      ],
+      "answer": 2
+    },
+    {
+      "question": ") Shuttle valves will automatically:",
+      "options": [
+        "Switch hydraulically operated units to the most appropriate pressure supply.",
+        "Shut down systems which are overloaded.",
+        "Guard systems against overpressure.",
+        "Reduce pump loads."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The purpose of a ditching control is to:",
+      "options": [
+        "achieve rapid depressurisation.",
+        "open the outflow valve(s).",
+        "direct pressurisation air to the flotation bags.",
+        "close the outflow valve(s)."
+      ],
+      "answer": 3
+    },
+    {
+      "question": "The \"cabin differential pressure\" is:",
+      "options": [
+        "approximately 5 psi at maximum.",
+        "cabin pressure minus ambient pressure.",
+        "the pressure differential between the air entering and leaving the cabin."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Cabin pressure is controlled by :",
+      "options": [
+        "delivering a substantially constant flow of air into the cabin and controlling the outflow.",
+        "controlling the flow of air into the cabin with a constant outflow.",
+        "the cabin air re-circulation system.",
+        "the cabin air mass flow control inlet valve(s)."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The ice protection for propellers of modern turboprop aeroplanes works",
+      "options": [
+        "pneumatically.",
+        "with hot air.",
+        "with anti-icing fluid.",
+        "electrically."
+      ],
+      "answer": 3
+    },
+    {
+      "question": "The fuel system boost pumps are submerged in the fuel.",
+      "options": [
+        "To prime the pumps.",
+        "Because their efficiency is greater.",
+        "To shorten the fuel lines, so minimising the pressure losses.",
+        "To cool the pumps."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A static inverter is a:",
+      "options": [
+        "device for reversing the polarity of the static charge.",
+        "static discharger.",
+        "transistorized unit used to convert DC into AC."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The most widely used electrical frequency in aircraft is :",
+      "options": [
+        "20 Hz.",
+        "400 Hz",
+        "200 Hz"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A thermal circuit breaker:",
+      "options": [
+        "protects the system in the event of overheating, even without exceeding the maximum permissible current.",
+        "is a protection system with a quick break capacity of about one hundredth of a second.",
+        "forbids any overcurrent.",
+        "can be reset without any danger even if the fault remains"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Fire extinguisher to be use on wheel and brake fire:",
+      "options": [
+        "Dry powder(Chemical)",
+        "Water",
+        "CO2",
+        "Foam"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If resistance increases with an increase in temperature, the resistor is said to have:",
+      "options": [
+        "Positive Temperature Coefficient (PTC)",
+        "Negative Temperature Coefficient (NTC)",
+        "None of the above"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Most ideal shape cross sectional shape for pressurised fuselage is:",
+      "options": [
+        "Oval",
+        "Double bubble",
+        "Circular"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Longerons are:",
+      "options": [
+        "Run lengthwise along the fuselage joining the frames together",
+        "Responsible to provide space for electrical cables",
+        "Both of the above"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "3 Basic type of fuses",
+      "options": [
+        "Cartridge, HRC & Trip free",
+        "Cartridge, HRC & Current limiters",
+        "Trip free & non-trip free"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In order to reduce adverse aileron yaw A/c are fitted with",
+      "options": [
+        "Servo balance yaw",
+        "Differential ailerons",
+        "Differential balance yaw stick force reduce to 0."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In modern aircraft L/D ratio is 10 and 20 to 1 which means",
+      "options": [
+        "Lift is 20 times drag is 10 times",
+        "Lift is 10 times drag is 3 times",
+        "Lift is 10 to 20 times greater than drag"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Advantages of the Fly by wire (FBW)system over conventional flight control system are:",
+      "options": [
+        "It is lighter and does not require the heavy control cables",
+        "Low weight leads to better fuel consumption",
+        "Both of the above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "How are the forces are balanced in a steady power on descent?",
+      "options": [
+        "Weight acts as two components: One component balance lift and the second one acts forward to add thrust",
+        "If the nose of the aircraft is lowered with a constant thrust setting, the increased component of weights acting forward will increase IAS",
+        "Both A and B are correct"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is incipient stall?",
+      "options": [
+        "Wingroot is stalled but not completely",
+        "Leading edge Is stalled but not completely",
+        "Wing has begun to stall in few areas but not completely"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The airflow behind an oblique shockwave will",
+      "options": [
+        "Always be subsonic",
+        "Could be subsonic or supersonic",
+        "Always supersonic"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When does the bow wave first appear?",
+      "options": [
+        "At MCRIT.",
+        "At Mach 1.",
+        "Just above Mach 1.",
+        "Just below Mach 1."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An engine failure during Take off of a twin engine  aircraft results in:",
+      "options": [
+        "High loads on vertical stabilizer",
+        "High load on the main wheel",
+        "High loads on horizontal stabiliser"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Choose the correct answer for reducing induced drag",
+      "options": [
+        "Having winglets",
+        "Shaping the wing tips",
+        "Both A and B"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Choose the correct statement",
+      "options": [
+        "High lift devices are fitted on leading edge only",
+        "High lift devices are fitted on trailing edge only",
+        "Can be fitted on the leading and trailing edges"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Operational rough air speed VRA/MRA should consist of the following feature",
+      "options": [
+        "Be maximum structural cruise speed is with ability to with gust loads",
+        "For utility category aircraft the positive load limit above is 4.4 and  1.76 the negative limit load factor",
+        "Should be high enough to avoid staling and low enough to avoid damage to the structure"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The angle between blade chord and the plane of rotation is",
+      "options": [
+        "Blade angle",
+        "Geometric pitch",
+        "Angle of attack"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A Bypass Ratio of 5:1 means that:",
+      "options": [
+        "5 pounds of air is bypassed for every 10 pounds entering the engine intake",
+        "5 pounds of goes through the HP compressor for every 10 pounds that enters the intake",
+        "10 pounds of air goes through the bypass for every 5 pounds that enters the intake",
+        "5 pounds of air is bypassed for every 1 pound that goes through the hot core of the engine"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "One stage of an axial flow compressor consists of:",
+      "options": [
+        "one rotor assembly and one row of stator vanes",
+        "one stator assembly and one row of guide vanes",
+        "one rotor and one impeller assembly",
+        "one impeller and one diffuser assembly"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The extra space in the oil tank is to cater for:",
+      "options": [
+        "frothing and aeration of the oil as it passes through the engine.",
+        "fire protection.",
+        "the accommodation of extra oil contents on long duration flights.",
+        "anti-surge action."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Lox is:",
+      "options": [
+        "Lean Oxygen",
+        "Low pressure oxygen pressure",
+        "Liquid oxygen"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the percentage increase in stalling speed in straight and level turn?",
+      "options": [
+        "30 degree angle of bank 9% Increase in stalling speed",
+        "45 degree angle of bank 21% Increase in stalling speed",
+        "70 degree angle of bank 100% Increase in stalling speed"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Lead acid batteries are stored in a:",
+      "options": [
+        "Semi charged state to prevent deterioration of the battery by sulphation",
+        "Discharged state and have a longer shelf life",
+        "Charged state"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Batteries which are susceptible to thermal runaway:",
+      "options": [
+        "Ni-cad",
+        "Lead acid",
+        "Both a & b"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A NiCad battery shows a high temperature after engine start, this could be an indication of:",
+      "options": [
+        "thermal runaway",
+        "it is not connected to the battery bus bar",
+        "normal temperature during charging",
+        "depends upon the outside air temperature"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "When throttles are advanced for take off the configuration warning will sound if:",
+      "options": [
+        "The trim position is outside the take off range",
+        "The speed brakes are not in the selected position",
+        "Any or all of the above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The influence of ground effect is experienced by an aircraft when its height above ground is:",
+      "options": [
+        "About one wing span",
+        "About half wing span",
+        "About one and a half wing span"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Fire detection system must be capable of :",
+      "options": [
+        "Automatically operate the fire extinguisher system",
+        "Automatically after two minutes or aural warning operate the fire extinguisher system",
+        "Provide rapid detection of a localised fire or overheat conditions however it must not automatically operate the fire extinguishers."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the function of flap load relief system?",
+      "options": [
+        "Pilot can select the flap but will not extend until speed is below flap extend speed",
+        "Flaps will extend as soon as speed decreases to its value",
+        "Both A & B are correct"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The purpose of an air inlet is to provide a relatively ............. supply of air to the ............. of the ............ compressor.",
+      "options": [
+        "turbulent free       face      low pressure",
+        "turbulent               face      low pressure",
+        "turbulent free       rear     low pressure",
+        "turbulent free                  face      high pressure"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A typical APU can provide:",
+      "options": [
+        "Air for the engine starting",
+        "Electrical power for ground or in flight use",
+        "All of the above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The phenomenon of flutter is described as:",
+      "options": [
+        "Reversal of the ailerons caused by wing torosional flexibility",
+        "Rapid movement of the airframe caused by the vibration from the engines",
+        "Oscillatory motion of parts or parts of the aircraft relative to the remainder of the structure."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The critical Mach number of the whole aircraft is the speed at which any disturbance may affect the :",
+      "options": [
+        "Controllability of the aircraft",
+        "Lift or drag of the aircraft",
+        "Both of the above are correct"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Secondary cells can:",
+      "options": [
+        "Not be recharged",
+        "Can be discharged and recharged many times over a long period of time",
+        "Can be recharged only once"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "EMF is measured in units of :",
+      "options": [
+        "Voltage",
+        "Potential difference",
+        "Both (b) & (c) are correct"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "When an aircraft structure is designed according to fail safe philosphy it means :",
+      "options": [
+        "The structure will never break regardless of stress applied",
+        "The failed structure can be replaced easily",
+        "Adjacent structure withstand the loads which the failed structure should have carried"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The best extinguisher to use on a wheel or brake fire is:",
+      "options": [
+        "CO2",
+        "Water",
+        "Dry powder"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A constant pressure EDP supplies fluid:",
+      "options": [
+        "at a variable volume and controls its own pressure",
+        "at a variable pressure and controls its own pressure",
+        "at a constant and controls its own volume"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An Aircraft flying at Mach 1 at low altitude with an air temperature of 15 degree Celsius and an A/c flying at 30000 ft where the temperature is 43degree Celsius ,the effect on TAS will be:",
+      "options": [
+        "Lower A/C will  have a Lower TAS",
+        "Higher A/c will have a lower TAS",
+        "Lower A/c will have a higher TAS and Higher A/c will have a lower TAS"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which statement is correct:",
+      "options": [
+        "Flight spoilers rise on the wing with the “up-going” aileron",
+        "Flight spoilers remain retracted on the wing with “up-going” aileron",
+        "Flight spoiler remain retracted irrespective of the “up-going” or “down going” ailerons"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "When large aircraft are employed, a hand pump is usually used for:",
+      "options": [
+        "Ground servicing purposes",
+        "Lowering the landing gear in an emergency",
+        "Pressuring the oleo struts in the air"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In fire detection and protection systems, a mechanical system of fire detection which is reversible incorporates:",
+      "options": [
+        "A thermal switch and copper wire",
+        "Carbon fire detection",
+        "A small tube filled with helium gas and a titanium wire"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In a parallel connection/circuit:",
+      "options": [
+        "It receives the same voltage",
+        "Failure of resistor will not affect the other",
+        "All of the above are correct"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A low bypass turbojet engine has a forward velocity (V) of 600 mph and a jet velocity (VJ) of 1000 mph. Find propulsive efficiency",
+      "options": [
+        "33%",
+        "65%",
+        "75%"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A low bypass turbojet engine has a forward velocity (V) of 200 mph and a jet velocity (VJ) of 1000 mph. Find propulsive efficiency",
+      "options": [
+        "33%",
+        "65%",
+        "75%"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The extreme right limitation a gust load diagram is the speed:",
+      "options": [
+        "Vd",
+        "Vc",
+        "Vb",
+        "Vs"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What’s the limit load factor for a nominal transport category aircraft?",
+      "options": [
+        "2.5g",
+        "1.75g",
+        "3.75g",
+        "1.5g"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the positive manoeuvre limit load factor for  an aircraft in the utility category?",
+      "options": [
+        "2.76g",
+        "2.5g",
+        "6.0g",
+        "4.4g"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "ACTION TO BE TAKEN IN CASE OF ENGINE FIRE correct sequence of operation:\n3. PULL No. 1 FIRE HANDLE\n1. IF AFTER 30 SECONDS FIRE WARNING REMAINS ILLUMINATED ROTATE No.1 FIRE HANDLE RIGHT TO ITS MECHANICAL LIMIT AND HOLD FOR AT LEAST 1 SECOND. THIS WILL DISCHARGE THE RIGHT BOTTLE INTO THE LEFT ENGINE.\n6. LAND AS SOON AS POSSIBLE\n5. CLOSE LEFT THRUST LEVER\n4. LEFT ENGINE HP OR ENGINE START LEVER CLOSE\n2. NUMBER 1 ENGINE FIRE HANDLE ROTATE LEFT TO MECHANICAL LIMIT AND HOLD FOR AT LEAST 1 SECOND. THIS WILL DISCHARGE THE LEFT BOTTLE INTO THE LEFT ENGINE",
+      "options": [
+        "5,4,3,2,1,6",
+        "2,4,6,3,1,5",
+        "6,5,4,3,1,2"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Generally fuselage design are:",
+      "options": [
+        "Circular",
+        "Oval/ double bubble",
+        "All above"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "CB’s are",
+      "options": [
+        "Trip free",
+        "Trip free/Non trip free",
+        "Non trip free"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Generally wind shield consists of -----Layers",
+      "options": [
+        "6",
+        "4",
+        "5"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Choose the correct statement:",
+      "options": [
+        "Control system should be free of backlash",
+        "Backlash is free movement of cockpit control when the direction of movement is reverted.",
+        "All of the above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Thermal runway can take place in------- when constant-----",
+      "options": [
+        "Alkaline batteries/current charging system is used",
+        "Ni/Cad batteries/ current system is used.",
+        "Alkaline batteries/ Voltage charging system"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Control locks are used to protect:",
+      "options": [
+        "Mechanical damage in strong gusty wind",
+        "Controls from wear and tear",
+        "unauthorized interference with them"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What kind of sensors are used ion IHUMS Systems",
+      "options": [
+        "Accelerometer, tachometers and magnetic pickups",
+        "Accelerometer, ground speed gauges and magnetic pickups",
+        "Deformation gauges, tachometers and magnetic pickups"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is inertia?",
+      "options": [
+        "Opposition which a body offers to change in motion.",
+        "A large mass ha no inertia",
+        "Inertia refers to only stationary masses"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Mark the correct statement:",
+      "options": [
+        "Vortex generator improves aerodynamics characteristics",
+        "Vortex generator increase drag",
+        "All of the above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "One of the factor affecting capacitance is distance between the plates:",
+      "options": [
+        "A small distance gives a large capacitance",
+        "A large distance gives a large capacitance",
+        "A small distance gives a small capacitance"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Circuit breaker normally opens the circuit:",
+      "options": [
+        "And has the capability of opening and closing the circuit",
+        "It may also be used as a circuit isolation switch",
+        "All of the above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The movement of the flying control  surface in response to the movement of cockpit control may be achieved by:",
+      "options": [
+        "Hydraulically",
+        "Electrically",
+        "Any one or combination of the above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "To improve aerodynamic performance, modern aeroplane make use of surfaces that affect the airflow over the surface that could be:",
+      "options": [
+        "Flaps",
+        "Spoilers and speed brakes",
+        "All of the above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Upto which pressure altitude do most cabin pressure system operates to provide sufficient oxygen supply to the passenger?",
+      "options": [
+        "35000ft",
+        "10000 ft",
+        "8000 ft"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "How is the ice prevented from forming on the front wind shield of large systems",
+      "options": [
+        "Warm air is blown over the wind shield",
+        "De-icing fluids are sprayed",
+        "Electrically heated wind shields"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the reason for mass balancing a control surface?",
+      "options": [
+        "To move the CG of the control surface forward and thereby preventing flutter",
+        "A form of aerodynamic balance",
+        "The stick force will increase"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Where mass balance weight is located with respect to hinge line:",
+      "options": [
+        "Always on the hinge line",
+        "In front of hinge line",
+        "Aft of the hinge line"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If an aircraft is statically unstable it:",
+      "options": [
+        "Will only be dynamically stable at high speeds",
+        "Will never be dynamically stable",
+        "May or may not be dynamically stable, depending on the type of aircraft"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "How does the fin stall occur?",
+      "options": [
+        "As for any aerofoil there will be critical angle at which fin stalls",
+        "Aileron is applied in the same direction to correct the side slip",
+        "Both A and B"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The purpose of diffuser vanes in a centrifugal compressor is to:",
+      "options": [
+        "Increase the charge temperature",
+        "Convert the kinetic energy into pressure energy",
+        "Convert pressure energy into kinetic energy"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The difference between anti icing and de-icing system is:",
+      "options": [
+        "Anti icing system prevents the formation of ice while deicing system removes the ice after it is formed",
+        "De-icing system prevents the formation of ice while anti icing system removes the ice after it is formed",
+        "Anti icing is used in air while de-icing is used on ground"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If the ailerons deflection is increased there will be:",
+      "options": [
+        "Increment in Ange of bank",
+        "Increment in rate of roll",
+        "No change in angle of bank"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A supercharger is capable of maintaining sea level values of power upto a high altitude is called:",
+      "options": [
+        "Ground boosted supercharger",
+        "Externally driven supercharger",
+        "Altitude boosted supercharger"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An automatic cutout valve ACOV will:",
+      "options": [
+        "Provide idling circuit when selection is made",
+        "Extend the life of the accumulator",
+        "Provide an idling circuit when the accumulator is fully charged"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The main advantage of Pneumatic system:",
+      "options": [
+        "No fire hazard",
+        "Lighter system because no return lines are required",
+        "All of the above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Inadvertent retraction of the landing gear on ground is :",
+      "options": [
+        "Not possible as the system is not powerful enough",
+        "Prevented by the ground/air logic system",
+        "A danger after the aircraft is started"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In an emergency decent How can the rate of decent are increased?",
+      "options": [
+        "Reduce thrust by closing throttle",
+        "Extend speed brakes, Increase speed Mmo or Vmo or Vle if the gear is down",
+        "Both A & B correct"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Wing flaps extended speed(Vfe) is :",
+      "options": [
+        "The minimum air speed at which the aircraft should be flown",
+        "The minimum air speed at which the flaps can be extended and the aircraft can be flown",
+        "The maximum air speed at which the aircraft should be flown with flaps in prescribed extended position"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Choose the correct :As an aircraft climbs out of ground effect the following changes takes place",
+      "options": [
+        "The increase in downwash will produce a nose up pitching moment",
+        "The nose up pitching moment may induce an inadvertent over rotation and tail strike",
+        "Both A & B"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "APU are self monitoring and will shut down in the event of :",
+      "options": [
+        "Fire and oil pressure",
+        "Fire, Oil pressure failure, Overspeed and Overheat",
+        "Fire and overheat only"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "With asymmetry thrust mark the correct:",
+      "options": [
+        "Effectiveness of controls depends upon the static pressure",
+        "Lower IAS will reduce the available rudder movement",
+        "Both A & B"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "CP moves:",
+      "options": [
+        "FWD at increased transonic speed",
+        "Remain constant in sweep back wing",
+        "Aft at increased transonic speed"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Icing on aircraft:",
+      "options": [
+        "Can contaminate wing and tail surface, engine and pitot static system",
+        "Can change the stall characteristics and stall warning devices may not function",
+        "Both A & B"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Chemical oxygen generators:",
+      "options": [
+        "The generator are relatively light self contained devices",
+        "Sufficient oxygen is supplied for a period of minimum 30 minutes",
+        "A relief valve prevent internal pressure  in the generator exceeding 50psi as normal flow rate is 10 psi"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An atom that has lost an electron becomes:",
+      "options": [
+        "More negative",
+        "More positive",
+        "Static"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The magnetic chip detectors are fitted in:",
+      "options": [
+        "the pressure line between the pressure pump and the engine.",
+        "suction line between the reservoir and the pressure pump.",
+        "return line between the engine and the scavenge pump.",
+        "return line after the FCOC."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Gas turbines use for lubrication:",
+      "options": [
+        "mineral oil with additives (compound).",
+        "mineral oil straight.",
+        "multi-grade 20/50.",
+        "synthetic oil."
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Downwash :",
+      "options": [
+        "Behind the  leading edge",
+        "Downwash behind trailing edge",
+        "Upwash behind the  leading edge"
+      ],
+      "answer": 1
+    },
+    {
+      "question": ".Component along plane of rotation",
+      "options": [
+        "Torque",
+        "Thrust"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Hydraulic accumulator",
+      "options": [
+        "Dampen pressure fluctuations",
+        "Back up due to pressure pump failure",
+        "Both a and b"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Integration of aerodynamic load and elastic deformation",
+      "options": [
+        "Aero elasticity and aeroelastic coupling",
+        "Flutering"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "High energy ignition unit ignites",
+      "options": [
+        "4 times in one revolution",
+        "60-100 times in one second",
+        "60-100 time in one minute"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Control surface flutter occurs because of",
+      "options": [
+        "Unbalance",
+        "Overbalance",
+        "Mass balancing"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The alpha range of a variable pitch propeller is between:",
+      "options": [
+        "feather and flight fine pitch stop",
+        "feather and ground fine pitch stop",
+        "flight fine pitch stop and reverse stop",
+        "ground fine pitch stop and reverse stop"
+      ],
+      "answer": 0
+    },
+    {
+      "question": ".Coring",
+      "options": [
+        "Oil temperature increase",
+        "Oil pressure increase",
+        "Oil temperature increase then decrease"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "On a part throttled engine, take-off thrust would be achieved:",
+      "options": [
+        "later than normal due to pressure in the compressor being low",
+        "later than normal due to the EPR being low",
+        "at less than full throttle position",
+        "later than normal due to the EPR being high"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Turbine converts",
+      "options": [
+        "Pressure to kinetic energy",
+        "Kinetic to pressure energy",
+        "Kinetic velocity to pressure velocity"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The power output of a piston engine can be calculated by multiplying:",
+      "options": [
+        "force by distance",
+        "work by velocity",
+        "pressure by moment arm",
+        "torque by rpm"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Wing underside stress in level flight, no turbulence",
+      "options": [
+        "Tension",
+        "Shear",
+        "Compression"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Short wing span",
+      "options": [
+        "Increase in rate of roll as compared to large wing span",
+        "Decrease in rate of roll as compared to large wing span",
+        "No change in rate of roll"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Effects of temperature in battery",
+      "options": [
+        "Temperature affects battery",
+        "Low temperature decreases rate of discharge",
+        "Lead acid has improved performance on high temperature"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "for battery charging",
+      "options": [
+        "Constant voltage",
+        "Constant current",
+        "None of the above"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Limit load factors are based on the",
+      "options": [
+        "Mean weight of aircraft",
+        "Max weight of aircraft",
+        "Max weight divided by lift"
+      ],
+      "answer": 1
+    }
+  ]

@@ -1,0 +1,184 @@
+[
+    {
+      "question": "One centimetre represents five kilometres. What is the scale as a representative fraction?",
+      "options": [
+        "1:100,000",
+        "1:250,000",
+        "1:500,000",
+        "1:1,000,000"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "One centimetre represents 5.4 nautical miles. What is the representative fraction?",
+      "options": [
+        "1:750,000",
+        "1:1,000,080",
+        "1:850,000",
+        "1:950,000"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "One inch represents 15.4 kilometres. What is the scale as a representative fraction?",
+      "options": [
+        "1:450,000",
+        "1:500,000",
+        "1:606,000",
+        "1:700,000"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "3.5 inches represents 70 kilometres. What is the representative fraction?",
+      "options": [
+        "1:700,000",
+        "1:788,000",
+        "1:500,000",
+        "1:650,000"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Five inches represents eight nautical miles. What is the scale as a representative fraction?",
+      "options": [
+        "1:90,000",
+        "1:100,000",
+        "1:116,700",
+        "1:130,000"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "On a 1:500,000 chart, how many centimetres represent 30 km on the ground?",
+      "options": [
+        "4 cm",
+        "5 cm",
+        "6 cm",
+        "7 cm"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "On a 1:500,000 chart, how many inches represent 30 km on the ground?",
+      "options": [
+        "1.8 in",
+        "2.0 in",
+        "2.36 in",
+        "2.5 in"
+      ],
+      "answer": 2
+    },
+    {
+        "question": "On a 1:500,000 chart, how many inches represent 30 nautical miles on the ground?",
+        "options": [
+          "4.1 in",
+          "4.25 in",
+          "4.38 in",
+          "4.5 in"
+        ],
+        "answer": 2
+      },
+    {
+      "question": "On a 1:500,000 chart, how many centimetres represent 30 nautical miles on the ground?",
+      "options": [
+        "10.2 cm",
+        "11.11 cm",
+        "12.3 cm",
+        "13.0 cm"
+      ],
+      "answer": 1
+    },
+    
+    {
+      "question": "What is the chart length in cm representing 50 km on a 1:1,000,000 chart?",
+      "options": [
+        "3 cm",
+        "4 cm",
+        "5 cm",
+        "6 cm"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the chart length in inches representing 50 km on a 1:1,000,000 chart?",
+      "options": [
+        "1.87 in",
+        "1.92 in",
+        "1.97 in",
+        "2.00 in"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Is a 1:1,000,000 chart scale larger or smaller than a 1:500,000 chart?",
+      "options": [
+        "Larger scale",
+        "Smaller scale",
+        "Same scale",
+        "Depends on the region"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "On a chart where 5 cm = 7 NM, what is the representative fraction?",
+      "options": [
+        "1:250,000",
+        "1:259,280",
+        "1:300,000",
+        "1:200,000"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "How many inches on this chart (5 cm = 7 NM) represent a 5-minute flight at 156 knots?",
+      "options": [
+        "3.42 in",
+        "3.66 in",
+        "3.89 in",
+        "4.1 in"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "On a chart where 14.8 cm represents 20 NM, what is the representative fraction?",
+      "options": [
+        "1:250,270",
+        "1:260,000",
+        "1:240,000",
+        "1:245,000"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "How many inches on the chart (14.8 cm = 20 NM) would represent a 9-minute flight at 185 knots?",
+      "options": [
+        "7.92 in",
+        "8.08 in",
+        "8.25 in",
+        "8.50 in"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "On a chart where 1 cm = 3.5 km, what is the representative fraction?",
+      "options": [
+        "1:350,000",
+        "1:500,000",
+        "1:250,000",
+        "1:700,000"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the chart length in inches for a 4-minute flight at 204 km/h on a chart where 1 cm = 3.5 km?",
+      "options": [
+        "1.35 in",
+        "1.45 in",
+        "1.53 in",
+        "1.62 in"
+      ],
+      "answer": 2
+    }
+  ]
+  

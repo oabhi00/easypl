@@ -1,0 +1,88 @@
+[
+    {
+      "question": "If you observe drizzle falling, the cloud above you is most likely to be:",
+      "options": ["AS", "CU", "ST", "NS"],
+      "answer": 2
+    },
+    {
+      "question": "Turbulent cloud is usually a sheet of stratus, stratocumulus some 2000 ft thick with a flat top because:",
+      "options": [
+        "the air is usually at low temperatures containing little water vapour",
+        "turbulence steepens the lapse rate producing an inversion above the friction layer",
+        "air is not allowed to remain in contact with the surface due to the strong wind thus maintaining cool surface air with warm air above",
+        "the lapse rate becomes stable in the friction layer, due to turbulent mixing"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Clouds formed by convection will always:",
+      "options": [
+        "be layer clouds",
+        "be CU, CB or NS",
+        "have a rising cloud base and may develop into CB as the day progresses",
+        "form only in Polar maritime air"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "With reference to anticyclones affecting the UK, which of the following statements is correct?",
+      "options": [
+        "The pressure gradient is greatest towards the centre of the anticyclone",
+        "Anticyclones are more common in winter than they are in summer. This is why radiation fog is much more frequent in the winter",
+        "Apart from turbulence cloud, the formation of all other cloud types is unlikely in anticyclonic conditions",
+        "Warm anticyclones are those which are caused by the extreme air density associated with warmer weather"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The type of cloud from which continuous moderate or heavy rain is likely to fall is:",
+      "options": ["large cumulus", "altostratus", "nimbostratus", "cumulonimbus"],
+      "answer": 2
+    },
+    {
+      "question": "The movement of cool moist air over a warmer surface is likely to cause:",
+      "options": ["cumulus or cumulonimbus cloud", "advection fog", "nimbostratus cloud", "altocumulus lenticular cloud"],
+      "answer": 0
+    },
+    {
+      "question": "Intensity of precipitation is described as either:",
+      "options": ["intermittent, continuous or showery", "drizzle, rain or snow", "slight, moderate or heavy", "intermittent, moderate or heavy"],
+      "answer": 2
+    },
+    {
+      "question": "The term “shower” implies that:",
+      "options": [
+        "precipitation is in the form of rain and is continuous",
+        "precipitation is from cumulonimbus cloud and lasts for short periods",
+        "precipitation is intermittent and is from stratoform cloud",
+        "precipitation is continuous for long periods from cumuloform cloud"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Precipitation in the form of snow will not reach the surface unless the surface temperature is:",
+      "options": ["less than +4°C", "less than 0°C", "less than 45°F", "less than 30°F"],
+      "answer": 0
+    },
+    {
+      "question": "The type of precipitation in which visibility is likely to be most reduced is:",
+      "options": ["drizzle", "snow", "light rain", "sleet"],
+      "answer": 1
+    },
+    {
+      "question": "The type of precipitation usually associated with shallow stratocumulus is:",
+      "options": [
+        "mainly water droplets which can be supercooled if the temperature is low enough",
+        "ice crystals",
+        "supercooled water droplets only",
+        "large water droplets due to the strong up-currents associated with this type of cloud"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If there are small cumulus in the morning in summer, it is reasonable to forecast later in the day:",
+      "options": ["clear skies", "St and drizzle", "CB Cloud", "haze"],
+      "answer": 2
+    }
+  ]
+  

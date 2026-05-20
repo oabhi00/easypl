@@ -1,0 +1,63 @@
+[
+    {
+      "question": "Consider the following statements relative to air density and select the one which is correct:",
+      "options": [
+        "Because air density increases with decrease of temperature, air density must increase with increase of height in the International Standard Atmosphere (ISA)",
+        "At any given surface temperature the air density will be greater in anticyclonic conditions than it will be when the MSL pressure is lower",
+        "Air density increases with increase of relative humidity",
+        "The effect of change of temperature on the air density is much greater than the effect of change of atmospheric pressure"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The tropopause in mid latitudes is:",
+      "options": [
+        "lower in summer with a lower temperature",
+        "lower in winter with a higher temperature",
+        "lower in summer with a higher temperature",
+        "lower in winter with a lower temperature"
+      ],
+      "answer": 1
+    },  
+    {
+      "question": "Generally as altitude increases:",
+      "options": [
+        "temperature decreases and density increases",
+        "temperature, pressure and density decreases",
+        "temperature and pressure increase and density decreases",
+        "temperature decreases, pressure and density increases"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In the troposphere:",
+      "options": [
+        "over cold air, the pressure is higher at upper levels than at similar levels over warm air",
+        "over cold air, the pressure is lower at upper levels than at similar levels over warm air",
+        "over warm air, the pressure is lower at upper levels than at similar levels over warm air",
+        "the upper level pressure depends solely on the relative humidity below"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Density at the surface will be low when:",
+      "options": [
+        "pressure is high and temperature is high",
+        "pressure is high and temperature is low",
+        "pressure is low and temperature is low",
+        "pressure is low and temperature is high"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which of the following combinations will give the lowest air density?",
+      "options": [
+        "Low pressure, low humidity, low temperature",
+        "High pressure, high temperature, high humidity",
+        "High pressure, low temperature, low humidity",
+        "Low pressure, high humidity, high temperature"
+      ],
+      "answer": 3
+    }
+  ]
+  

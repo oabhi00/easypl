@@ -1,0 +1,52 @@
+[
+    {
+      "question": "European regulations (CS Ops-1) state that the maximum permissible deviations after compensation for the DRC are:",
+      "options": ["Ten degrees", "Three degrees", "One degree", "Two degrees"],
+      "answer": 0
+    },
+    {
+      "question": "Compass swings should be carried out:",
+      "options": ["on the apron.", "only on the compass swinging base or site.", "at the holding point.", "on the active runway."],
+      "answer": 1
+    },
+    {
+      "question": "Aircraft magnetism caused by vertical soft iron:",
+      "options": [
+        "varies with magnetic heading but not with magnetic latitude.",
+        "varies with magnetic latitude but not with heading.",
+        "it is not affected by magnetic latitude or heading.",
+        "varies as the cosine of the compass heading."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Aircraft magnetism caused by hard iron:",
+      "options": [
+        "is not usually influenced by the Earth’s magnetic field.",
+        "varies directly with magnetic latitude.",
+        "varies indirectly with magnetic latitude.",
+        "is maximum on east and west."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The aim of a compass swing is:\n1. to find deviation on the cardial headings and to calculate coefficients A,B and C. \n2. to eliminate or reduce the coefficients found. \n3. to record any residual deviation and to prepare a compass correction card.",
+      "options": [
+        "only answer 1 is correct.",
+        "answers 1 and 3 are correct.",
+        "answers 1, 2 and 3 are all correct.",
+        "none of the above answers are correct."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Deviation due to coefficient A is mainly caused by:",
+      "options": [
+        "hard iron force acting along the longitudinal axis.",
+        "hard and soft iron forces acting along the lateral axis.",
+        "vertical soft iron forces.",
+        "a misaligned lubber line."
+      ],
+      "answer": 3
+    }
+  ]

@@ -1,0 +1,705 @@
+[
+    {
+      "question": "Given the following METAR: EDDM 250850Z 33005KT 2000 R26R/P1500N R26L/1500N BR SCT002 OVC003 05/05 Q1025 NOSIG, what does it indicate?",
+      "options": [
+        "runway 26R and runway 26L have the same RVR",
+        "RVR on runway 26R is increasing",
+        "visibility is reduced by water droplets",
+        "there is a distinct change in RVR observed"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What does the abbreviation 'NOSIG' mean?",
+      "options": [
+        "Not signed by the meteorologist",
+        "No significant changes",
+        "No report received",
+        "No weather-related problems"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "From the TAF for Birmingham (EGBB), what can be assumed about visibility at 2055Z?",
+      "options": [
+        "more than 10 km",
+        "not less than 1.5 km, but could be in excess of 10 km",
+        "a maximum of 5 km",
+        "a minimum of 1.5 km and a maximum of 5 km"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "From the TAF for Zurich (LSZH), the lowest visibility forecast at ETA Zurich 1430 UTC is:",
+      "options": [
+        "6 km",
+        "6 NM",
+        "4 km",
+        "10 km"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the following statements is an interpretation of the SIGMET: SIGMET VALID 121420/121820 embd ts obs and fcst in w part of athinai fir / mov e / intst nc =",
+      "options": [
+        "Athens Airport is closed due to thunderstorms. The thunderstorm zone should be east of Athens by 1820 UTC",
+        "The thunderstorms in the Athens FIR are increasing in intensity, but are stationary above the western part of the Athens FIR",
+        "Thunderstorms must be expected in the western part of the Athens FIR. The thunderstorm zone is moving east. Intensity is constant",
+        "Thunderstorms have formed in the eastern part of the Athens FIR and are slowly moving west"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In the weather briefing room during the preflight phase of a passenger flight from Zurich to Rome, you examine the following weather reports of pressing importance at the time:\nEINN SHANNON 2808 sigmet 2 valid 0800/1100 loc sev turb fcst einn fir blw fl 050 south of 53n wkn =\nLIMM MILANO 2809 sigmet 2 valid 0900/1500 mod sev cat btn fl 250 and fl 430 fcst limm fir stnr nc =\nEGLL LONDON 2808 sigmet nr01 valid 0800/1200 for london fir isol cb embd in lyr cloud fcst tops fl 300 btn 52n and 54n east of 002e sev ice sev turb ts also fcst mov e wkn =\nWhich decision is correct?",
+      "options": [
+        "Because of the expected turbulence, you select a flight level below FL250",
+        "You show no further interest in these reports, since they do not concern the route to be flown",
+        "Owing to these reports and taking into account the presence of heavy thunderstorms at planned FL310, you select a higher flight level (FL370)",
+        "You cancel the flight since the expected dangerous weather conditions along the route would demand too much of the passengers"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "For a flight from Lisbon to Bordeaux, ETA 1800 UTC, what type of precipitation is forecast on the approach to Bordeaux?",
+      "options": [
+        "Continuous moderate rain",
+        "Light drizzle and fog",
+        "Moderate snow showers",
+        "Heavy rain showers"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "What does the term TREND signify?",
+      "options": [
+        "It is a flight forecast, issued by the meteorological station several times daily",
+        "It is a brief landing forecast added to the actual weather report",
+        "It is the actual weather report at an aerodrome and is generally issued at half-hourly intervals",
+        "It is a warning of dangerous meteorological conditions"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Compare the following TAF and VOLMET reports for Nice:\nTAF 2407/2416 VRB02KT CAVOK = 0920Z 13012KT 8000 SCT040CB BKN100 20/18 Q1015 TEMPO TS = What can be concluded from the differences between the two reports?",
+      "options": [
+        "That the weather at Nice is clearly more volatile than the TAF could have predicted earlier in the morning",
+        "That the weather conditions at 0920 were actually predicted in the TAF",
+        "That the weather in Nice after 0920 is also likely to be as predicted in the TAF",
+        "That the VOLMET speaker has got his locations mixed up, because there is no way the latest VOLMET report could be so different from the TAF"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which statement is true?",
+      "options": [
+        "QNH can be 1013.25 only for a station at MSL",
+        "QNH can be only lower than 1013.25 hPa",
+        "QNH can not be 1013.25 hPa",
+        "QNH is lower than 1013.25 hPa at any time"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following statements is an interpretation of the SIGMET:\nLSAW SWITZERLAND 0307 SIGMET 2 VALID 030700/031100 LSSW mod to sev cat fcst north of alps btn fl 260 and fl 380 / stnr / intsf =",
+      "options": [
+        "Severe turbulence observed below FL260 north of the Alps. Pilots advised to cross this area above FL380",
+        "Moderate to strong clear air turbulence of constant intensity to be expected north of the Alps",
+        "Moderate to severe clear air turbulence to be expected north of the Alps. Intensity increasing. Danger zone between FL260 and FL380",
+        "Zone of moderate to severe turbulence moving towards the area north of the Alps. Intensity increasing. Pilots advised to cross this area above FL260"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "From the TAF for Amsterdam airport, what is the minimum visibility forecast for ETA Amsterdam?",
+      "options": [
+        "5 NM",
+        "6 km",
+        "3 km",
+        "5 km"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "At a weather station, at 0600 UTC, the air temperature and dew point are respectively: T = -0.5°C, DP = -1.5°C. In the METAR message transmitted by this station, the 'temperature group' will be:",
+      "options": [
+        "M00/M01",
+        "M01/M02",
+        "00/M01",
+        "M01/M01"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Refer to the TAF for Zurich Airport. Which of these statements best describes the weather that can be expected at 1200 UTC?",
+      "options": [
+        "Meteorological visibility 6 kilometres, cloud base 500 ft, wind speed 5 kt",
+        "Meteorological visibility 2.5 kilometres, cloud base 500 ft, wind speed 5 kt",
+        "Meteorological visibility 800 metres, wind from 230°, cloud base 500 ft",
+        "Meteorological visibility 800 metres, vertical visibility 200 ft, calm"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In which of the following METAR reports, is the probability of fog formation in the coming night the highest?",
+      "options": [
+        "1850Z 21003KT 8000 SCT250 12/m08 Q1028 NOSIG",
+        "1850Z 06018G30KT 5000 OVC010 04/01 Q1024 NOSIG",
+        "1850Z 25010KT 4000 RA BKN012 OVC030 12/10 Q1006 TEMPO 1500",
+        "1850Z 15003KT 6000 SCT120 05/04 Q1032 BECMG 1600"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "In which of the following circumstances is a SIGMET issued?",
+      "options": [
+        "Marked mountain waves",
+        "Fog or a thunderstorm at an aerodrome",
+        "Clear ice on the runways of an aerodrome",
+        "A sudden change in the weather conditions contained in the METAR"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the wind speed given in a METAR report based on?",
+      "options": [
+        "The average speed of the previous 30 minutes",
+        "The strongest gust in the previous hour",
+        "The actual speed at the time of recording",
+        "The average speed of the previous 10 minutes"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which of the following weather reports could be, in accordance with the regulations, abbreviated to 'CAVOK'?",
+      "options": [
+        "LFSB 24008KT 9999 SCT050 18/11 Q1017 RERA NOSIG",
+        "LSZH VRB02KT 9000 BKN080 21/14 Q1022 NOSIG",
+        "LSGG 22006KT 9999 BKN090 17/15 Q1008 RERA NOSIG",
+        "LSZB 28012KT 9999 OVC100 16/12 Q1012 BECMG 5000"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "What does the term METAR signify?",
+      "options": [
+        "A METAR is a flight forecast, issued by the meteorological station several times daily",
+        "A METAR is a landing forecast added to the actual weather report as a brief prognostic report",
+        "A METAR signifies the actual weather report at an aerodrome and is generally issued in half-hourly intervals",
+        "A METAR is a warning of dangerous meteorological conditions within a FIR"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Does the following report make sense? LSZH VRB02KT 5000 MIFG 02/02 Q1015 NOSIG",
+      "options": [
+        "The report would never be seen, because shallow fog is not reported when the meteorological visibility is more than 2 km",
+        "The report is nonsense, because it is impossible to observe a meteorological visibility of 5 km if shallow fog is reported",
+        "The report is not possible, because, with a temperature of 2°C and a dew point of 2°C there must be uniform fog",
+        "The report is possible, because shallow fog is defined as a thin layer of fog below eye level"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Runway Visual Range (RVR) is:",
+      "options": [
+        "Measured with ceilometers alongside the runway",
+        "Usually better than meteorological visibility",
+        "Reported when meteorological visibility is less than 2000 m",
+        "Reported in TAFs and METARs"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When will the surface wind in a METAR record a gust factor?",
+      "options": [
+        "With gusts of at least 25 kt",
+        "With gusts of at least 35 kt",
+        "When gusts are at least 10 kt above the mean wind speed",
+        "When gusts are at least 15 kt above the mean wind speed"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What does the term SIGMET signify?",
+      "options": [
+        "A SIGMET is a brief landing forecast added to the actual weather report",
+        "A SIGMET is an actual weather report at an aerodrome and is generally issued at half-hourly intervals",
+        "A SIGMET is a warning of dangerous meteorological conditions",
+        "A SIGMET is a flight forecast, issued by the meteorological station several times daily"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In which weather report would you expect to find information about icing conditions on the runway?",
+      "options": [
+        "GAFOR",
+        "TAF",
+        "METAR",
+        "SIGMET"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A SPECI is:",
+      "options": [
+        "An aviation routine weather report",
+        "A warning for special weather phenomena",
+        "A forecast for special weather phenomena",
+        "An aviation selected special weather report"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Refer to the following TAF for Zurich.\nLSZH 0610/0619 20018G30KT 9999 -RA SCT050 BKN080 TEMPO 0610/0615 23012KT 6000 -DZ BKN015 BKN030 BECMG 0615/0618 23020G35KT 4000 RA OVC010=\nThe lowest cloud base forecast at ETA Zurich (1200 UTC) is:",
+      "options": [
+        "1000 ft",
+        "1500 m",
+        "5000 ft",
+        "1500 ft"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Refer to the TAF for Bordeaux airport.\nFCFR31 281400\nLFBD 2815/2824 26015KT 9999 SHRA BKN020 TEMPO 2816/2820 26020G30KT 8000\n+SHRA BKN015CB PROB30 2816/2820 TSRA=\n Flight Lisbon to Bordeaux, ETA 1800 UTC.  At ETA Bordeaux what is the lowest quoted visibility forecast?",
+      "options": [
+        "10 or more km",
+        "8 km",
+        "8 NM",
+        "10 NM"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following weather reports could be, in accordance with the regulations, abbreviated to 'CAVOK'?",
+      "options": [
+        "26012KT 8000 SHRA BKN025 16/12 Q1018 NOSIG",
+        "27019G37KT 9999 BKN050 18/14 Q1016 NOSIG",
+        "34004KT 7000 MIFG SCT260 09/08 Q1029 BECMG 1600",
+        "00000KT 0100 FG VV001 11/11 Q1025 BECMG 0500"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following weather reports is a warning of conditions that could be potentially hazardous to aircraft in flight?",
+      "options": [
+        "SIGMET",
+        "ATIS",
+        "SPECI",
+        "TAF"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Refer to the TAF for Amsterdam airport.\nFCNL31 281500\nEHAM 2816/2901 14010KT 6000 -RA SCT025 BECMG 2816/2818 12015G25KT SCT008\nBKN013 TEMPO 2818/2823 3000 RA BKN005 OVC010 BECMG 2803/2901 25020KT\n8000 NSW BKN020 =\n Flight from Bordeaux to Amsterdam, ETA 2100 UTC.\nAt ETA Amsterdam what surface wind is forecast?",
+      "options": [
+        "120° / 15 kt gusts 25 kt",
+        "140° / 10 kt",
+        "300° / 15 kt maximum wind 25 kt",
+        "250° / 20 kt"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Within a short interval, several flight crews report that they have experienced strong clear air turbulence in certain airspace. What is the consequence of these reports?",
+      "options": [
+        "The airspace in question, will be temporarily closed",
+        "The competent aviation weather office will issue a SPECI",
+        "The competent aviation weather office will issue a storm warning",
+        "The competent aviation weather office will issue a SIGMET"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "In Zurich during a summer day, several weather observations were taken.\n 160450Z 23015KT 3000 +RA SCT008 SCT020 OVC030 13/12 Q1010 NOSIG =\n160650Z 25008KT 6000 SCT040 BKN090 18/14 Q1010 RERA NOSIG =\n160850Z 25006KT 8000 SCT040 SCT100 19/15 Q1009 NOSIG =\n161050Z 24008KT 9999 SCT040 SCT100 21/15 Q1008 NOSIG =\n161250Z 23012KT CAVOK 23/16 Q1005 NOSIG =\n161450Z 23016KT 9999 SCT040 BKN090 24/17 Q1003 BECMG 25020G40KT TS =\n161650Z 24018G35KT 3000 +TSRA SCT006 BKN015CB 18/16 Q1002 NOSIG =\n161850Z 28012KT 9999 SCT030 SCT100 13/11 Q1005 NOSIG = What do you conclude based on these observations?",
+      "options": [
+        "A cold front passed the station early in the morning and a warm front during late afternoon",
+        "A trough line passed the station early in the morning and a warm front during late afternoon",
+        "Storm clouds due to warm air came close to and grazed the station",
+        "A warm front passed the station early in the morning and a cold front during late afternoon"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Refer to the following TAF extract: BECMG 0918/0921 2000 BKN004 PROB30 BECMG 0921/0924 0500 FG VV001. What does the abbreviation 'PROB30' mean?",
+      "options": [
+        "Change expected in less than 30 minutes",
+        "Probability of 30%",
+        "Conditions will last for at least 30 minutes",
+        "The cloud ceiling should lift to 3000 ft"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Refer to the following TAF extract: BECMG 2218/2221 2000 BKN004 PROB30 BECMG 2221/2224 0500 FG VV001. What visibility is forecast for 2400 UTC?",
+      "options": [
+        "500 m",
+        "2000 m",
+        "Between 500 m and 2000 m",
+        "Between 0 m and 1000 m"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is a TREND forecast?",
+      "options": [
+        "An aerodrome forecast valid for 9 hours",
+        "A route forecast valid for 24 hours",
+        "A routine report",
+        "A landing forecast appended to METAR/SPECI, valid for 2 hours"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "SIGMET information is issued as a warning for significant weather to:",
+      "options": [
+        "VFR operations only",
+        "Heavy aircraft only",
+        "All aircraft",
+        "Light aircraft only"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following phenomena can produce a risk of aquaplaning?",
+      "options": [
+        "SA",
+        "+RA",
+        "FG",
+        "BCFG"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In which of the following 1850 UTC METAR reports, is the probability of fog formation, in the coming night, the highest?",
+      "options": [
+        "00000KT 9999 SCT300 21/01 Q1032 NOSIG",
+        "VRB01KT 8000 SCT250 11/10 Q1028 BECMG 3000",
+        "22004KT 6000 -RA SCT012 OVC030 17/14 Q1009 NOSIG",
+        "VRB02KT 2500 SCT120 14/M08 Q1035 NOSIG"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "How long from the time of observation is a TREND in a METAR valid?",
+      "options": [
+        "1 hour",
+        "30 minutes",
+        "2 hours",
+        "9 hours"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Refer to the following TAF extract: BECMG 1918/1921 2000 BKN004 PROB30 BECMG 1921/1924 0500 FG VV001. What does the abbreviation 'BKN004' mean?",
+      "options": [
+        "4 - 8 oktas, ceiling 400 m",
+        "1 - 4 oktas, ceiling 400 m",
+        "5 - 7 oktas, ceiling 400 ft",
+        "1 - 4 oktas, ceiling 400 ft"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is a SPECI?",
+      "options": [
+        "A warning of meteorological dangers at an aerodrome, issued only when required",
+        "An aerodrome forecast issued every 9 hours",
+        "A selected special aerodrome weather report, issued when a significant change of the weather conditions have been observed",
+        "A routine aerodrome weather report issued every 3 hours"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of these four METAR reports suggests that rain is most likely in the next few hours?",
+      "options": [
+        "05016G33KT 8000 OVC015 08/06 Q1028 NOSIG",
+        "23015KT 8000 BKN030 OVC070 17/14 Q1009 BECMG 4000",
+        "34004KT 9999 SCT040 SCT100 m05/m08 Q1014 NOSIG",
+        "16002KT 0100 FG SCT300 06/06 Q1022 BECMG 1000"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Refer to the following TAF extract:\n BECMG 1318/1321 2000 BKN004 PROB30 BECMG 1321/1324 0500 FG VV001\n What does the abbreviation “VV001” mean?",
+      "options": [
+        "Vertical visibility 100 m",
+        "Vertical visibility 100 ft",
+        "RVR less than 100 m",
+        "RVR greater than 100 m"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If CAVOK is reported then:",
+      "options": [
+        "low level windshear has not been reported",
+        "any CBs have a base above 5000 ft",
+        "no low drifting snow is present",
+        "no clouds are present"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The following weather message\n  EDDM 2413/2422 VRB03KT 1500 HZ OVC004 BECMG 2415/2417 00000KT 0500 FG \nVV002 TEMPO 2420/2422 0400 FG VV001 \n is a:",
+      "options": [
+        "24 hour TAF",
+        "SPECI",
+        "METAR",
+        "9 hour TAF"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which of the following statements is an interpretation of the METAR?\n 25020G38KT 1200 +TSGR BKN006 BKN015CB 23/18 Q1016 BECMG NSW =",
+      "options": [
+        "Mean wind speed 20-38 kt, meteorological visibility 1200 metres, temperature \n23°C",
+        "Broken, cloud base 600 ft and 1500 ft, temperature 18°C",
+        "Wind 250°, thunderstorm with moderate hail, QNH 1016 hPa",
+        "Gusts of 38 kt, thunderstorm with heavy hail, dew point 18°C"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which of the following weather reports could be, in accordance with the \nregulations, abbreviated to “CAVOK”? \n (MSA above ground: LSZB 10000 FT, LSZH 8000 FT, LSGG 12000 FT, LFSB 6000 FT)",
+      "options": [
+        "LSZH 26024G52KT 9999 BKN060 17/14 Q1012 RETS TEMPO 5000 TSRA =",
+        "LSZB 30004KT 9999 SCT090 10/09 Q1006 NOSIG =",
+        "LFSB 00000KT 9000 SCT080 22/15 Q1022 NOSIG =",
+        "LSGG 22003KT 9999 SCT120 BKN280 09/08 Q1026 BECMG 5000 ="
+      ],
+      "answer": 3
+    },
+    {
+      "question": "On the European continent METARs of main airports are compiled and distributed \nwith intervals of:",
+      "options": [
+        "0.5 hour",
+        "1 hour",
+        "2 hours",
+        "3 hours"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The RVR, as reported in a METAR, is always the:",
+      "options": [
+        "highest value of the A-, B- and C-position",
+        "lowest value of the A-, B- and C-position",
+        "value representative of the touchdown zone",
+        "average value of the A-, B- and C-position"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In the TAF for Delhi (India), during the summer, for the time of your landing you \nnote: TEMPO TS. What is the maximum time this deterioration in weather can last \nin any one instance ?",
+      "options": [
+        "60 minutes",
+        "120 minutes",
+        "10 minutes",
+        "20 minutes"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Refer to the following TAF extract:\n BECMG 3018/3021 2000 BKN004 PROB30 BECMG 3021/3024 0500 FG VV001\n What does the “BECMG” data indicate for the 18 to 21 hour time frame?",
+      "options": [
+        "A quick change to new conditions between 1800 UTC and 1900 UTC",
+        "Many short term changes in the original weather",
+        "Many long term changes in the original weather",
+        "The new conditions are achieved between 1800 and 2100 UTC"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "The cloud base, reported in the METAR, is the height above:",
+      "options": [
+        "airfield level",
+        "mean sea level",
+        "the pressure altitude of the observation station at the time of observation",
+        "the highest terrain within a radius of 8 km from the observation station"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Appended to a METAR you get the following runway report: 01650428\n What must you consider when making performance calculations?",
+      "options": [
+        "The braking action will be medium to good",
+        "The runway will be wet",
+        "Aquaplaning conditions",
+        "The friction coefficient is 0.28"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which of these four METAR reports suggests that a thunderstorm is likely in the next few hours?",
+      "options": [
+        "1350Z 16004KT 8000 SCT110 OVC220 02/m02 Q1008 NOSIG =",
+        "1350Z 34003KT 0800 SN VV002 m02/m04 Q1014 NOSIG =",
+        "1350Z 04012KT 3000 OVC012 04/03 Q1022 BECMG 5000 =",
+        "1350Z 21005KT 9999 SCT040CB SCT100 26/18 Q1016 TEMPO 24018G30 TS ="
+      ],
+      "answer": 3
+    },
+    {
+      "question": "The wind direction in a METAR is measured relative to:",
+      "options": [
+        "magnetic north",
+        "the 0-meridian",
+        "grid north",
+        "true north"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which of the following weather reports could be, in accordance with the regulations, abbreviated to “CAVOK”?",
+      "options": [
+        "04012G26KT 9999 BKN030 11/07 Q1024 NOSIG =",
+        "15003KT 9999 BKN100 17/11 Q1024 NOSIG =",
+        "24009KT 6000 RA SCT010 OVC030 12/11 Q1007 TEMPO 4000 =",
+        "29010KT 9999 SCT045TCU 16/12 Q1015 RESHRA NOSIG ="
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Marseille Information gives you the following meteorological information for Ajaccio and Calvi for 1600 UTC:\n Ajaccio: wind 360°/2 kt, visibility 2000 m, rain, BKN stratocumulus at 1000 FT, OVC altostratus at 8000 FT, QNH 1023 hPa.\n Calvi: wind 040°/2 kt, visibility 3000 m, mist, FEW stratus at 500 FT, SCT stratocumulus at 2000 FT, OVC altostratus at 9000 FT, QNH 1023 hPa.\n The ceilings (more than 4 oktas) are therefore:",
+      "options": [
+        "1000 FT at Ajaccio and 9000 FT at Calvi",
+        "1000 FT at Ajaccio and 500 FT at Calvi",
+        "8000 FT at Ajaccio and 9000 FT at Calvi",
+        "1000 FT at Ajaccio and 2000 FT at Calvi"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of the four answers is a correct interpretation of data from the following METAR?\n 16003KT 0400 R14/P1500 R16/1000N FZFG VV003 M02/M02 Q1026 BECMG 2000 =",
+      "options": [
+        "Meteorological visibility 400 m, RVR for runway 16 1000 m, dew point -2°C, freezing fog",
+        "RVR for runway 16 1000 m, meteorological visibility increasing in the next 2 hours to 2000 m, vertical visibility 300 m, temperature -2°C",
+        "RVR for runway 14 1500 m, meteorological visibility 400 m, QNH 1026 hPa, wind 160° at 3 kt",
+        "Meteorological visibility 1000 m, RVR 400 m, freezing level at 300 m, variable winds, temperature 2°C"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "You receive the following METAR:\n LSGG 0750Z 00000KT 0300 R05/0700N FG VV001 M02/M02 Q1014 NOSIG =\n What will be the RVR at 0900 UTC?",
+      "options": [
+        "900 m",
+        "The RVR is unknown, because the “NOSIG” does not refer to RVR",
+        "300 m",
+        "700 m"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following statements is an interpretation of the METAR?\n 00000KT 0200 R14/0800U R16/P1500U FZFG VV001 m03/m03 Q1022 BECMG 0800 =",
+      "options": [
+        "Meteorological visibility 200 metres, RVR for runway 16 1500 metres, temperature -3°C, vertical visibility 100 metres",
+        "Meteorological visibility 200 ft, RVR for runway 16 more than 1500 metres, vertical visibility 100 ft, fog with hoar frost",
+        "Meteorological visibility for runway 14 800 metres, fog with hoar frost, RVR for runway 16 more than 1500 metres",
+        "RVR for runway 14 800 metres, vertical visibility 100 ft, calm, meteorological visibility improving to 800 metres in the next 2 hours"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Look at this TAF for Zurich Airport\n  TAF LSZH 2113/2122 22018G35KT 9999 SCT012 BKN030 BECMG 2113/2115 \n25025G45KT TEMPO 2117/2120 4000 +SHRA BKN025TCU BECMG 2120/2122 25015KT T1815Z T1618Z =\n Which of these statements best describes the weather most likely to be experienced at 1500 UTC?",
+      "options": [
+        "Meteorological visibility 10 kilometres or more, main cloud base 3000 ft, wind 250°, temperature 18°C",
+        "Meteorological visibility 4000 metres, gusts up to 25 kt, temperature 18°C",
+        "Meteorological visibility 10 kilometres or more, main cloud base 1200 ft, gusts up to 45 kt",
+        "Severe rain showers, meteorological visibility 4000 metres, temperature 15°C, gusts up to 35 kt"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The validity of a TAF is:",
+      "options": [
+        "2 hours",
+        "between 6 and 9 hours",
+        "9 hours from the time of issue",
+        "stated in the TAF"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Runway visual range can be reported in:",
+      "options": [
+        "a METAR",
+        "a TAF",
+        "a SIGMET",
+        "both a TAF and a METAR"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Refer to the TAF for Amsterdam airport.\n FCNL31 281500 EHAM 2816/2901 14010KT 6000 -RA SCT025 BECMG 2816/2818 12015G25KT SCT008 BKN013 TEMPO 2818/2823 3000 RA BKN005 OVC010 BECMG 2823/2901 25020KT \n8000 NSW BKN020 =\n Flight from Bordeaux to Amsterdam, ETA 2100 UTC.\n What lowest cloud base is forecast for arrival at Amsterdam?",
+      "options": [
+        "250 ft",
+        "500 m",
+        "800 ft",
+        "500 ft"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "ATIS information contains:",
+      "options": [
+        "only operational information",
+        "meteorological and operational information",
+        "only meteorological information",
+        "operational information and if necessary meteorological information"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In METAR messages, the pressure group represents the:",
+      "options": [
+        "QFE rounded to the nearest hPa",
+        "QNH rounded down to the nearest hPa",
+        "QFE rounded down to the nearest hPa",
+        "QNH rounded up to the nearest hPa"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What do the first four letters of the SIGMET message identify?",
+      "options": [
+        "The issue number",
+        "The ICAO identifier for the relevant airport",
+        "The name of the air traffic services controlling unit",
+        "The validity time"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the expected change in the weather intensity indicated by this SIGMET?\n EGTT SIGMET 1 VALID 310730/311130 EGRR LONDON FIR ISOL CB FCST TOPS FL370 \nROUTES W OF W00400 NC=",
+      "options": [
+        "Weakening",
+        "Strengthening",
+        "Dissipating",
+        "No change"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "How would a severe mountain wave be coded in a SIGMET message?",
+      "options": [
+        "+ MTW",
+        "SEV MTW",
+        "SEV MNTW",
+        "SEVERE MNTW"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In the following SIGMET message, what is the hazard forecast? \nLFFF SIGMET 1 VALID 310600/311100 LFPW- UIR FRANCE MOD TURB   \nFCST BLW FL420 W of 04W MOVE E 30KT NC=",
+      "options": [
+        "Moderate turbulence at 42 000 ft west of 4 degrees west and moving eastwards",
+        "Moderate turbulence below 42 000 ft west of 4 degrees west and moving from the east",
+        "Turbulence at 42 000 ft west of 4 degrees west and moving at 30 kt",
+        "Moderate turbulence below 42 000 ft west of 4 degrees west and moving eastwards"
+      ],
+      "answer": 3
+    }
+  ]
+
+
+

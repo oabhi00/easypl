@@ -1,0 +1,285 @@
+[
+    {
+      "question": "When does perihelion occur?",
+      "options": ["early January", "mid March", "early July", "September 21"],
+      "answer": 0
+    },
+    {
+      "question": "When does aphelion occur?",
+      "options": ["early January", "mid March", "early July", "September 21"],
+      "answer": 2
+    },
+    {
+      "question": "Viewed from the North Celestial Pole (above the North Pole), the Earth orbits the Sun:",
+      "options": ["clockwise in a circular orbit", "anticlockwise in a circular orbit", "clockwise in an elliptical orbit", "anticlockwise in an elliptical orbit"],
+      "answer": 3
+    },
+    {
+      "question": "When do the ‘equinoxes’ occur?",
+      "options": ["December and June", "February and November", "March and September", "January and July"],
+      "answer": 2
+    },
+    {
+      "question": "When it is the Winter Solstice in the Southern hemisphere, the Declination of the Sun is:",
+      "options": ["0°N/S", "23½°N", "66½°N", "23½°S"],
+      "answer": 1
+    },
+    {
+      "question": "What is the angle between the Equinoctial and the Ecliptic?",
+      "options": ["66½°", "23½°", "varies between 23½°N and 23½°S", "varies between 66½°N and 66½°S"],
+      "answer": 1
+    },
+    {
+      "question": "The declination of a celestial body (the Sun) measured on the Celestial Sphere is analogous (equivalent) to ________________ on the Earth?",
+      "options": ["latitude", "longitude", "altitude of the body measured from the sensible horizon", "co-latitude"],
+      "answer": 0
+    },
+    {
+      "question": "The length of daylight/night depends upon the declination of the Sun and the latitude of the observer. When is the rate of change of the length of daylight greatest?",
+      "options": ["February/November", "January/July", "at the Equinoxes", "at the Solstices"],
+      "answer": 2
+    },
+    {
+      "question": "A sidereal day is:",
+      "options": ["longer than an apparent solar day", "longer than a real solar day", "shorter than an apparent solar day", "equal to a real solar day"],
+      "answer": 2
+    },
+    {
+      "question": "The maximum difference between mean noon (1200LMT) and real/apparent noon occurs in ________?",
+      "options": ["January/July", "March/September", "November/February", "December/June"],
+      "answer": 2
+    },
+    {
+      "question": "The maximum difference between mean time and apparent time is:",
+      "options": ["21 minutes", "16 minutes", "30 minutes", "there is no difference"],
+      "answer": 1
+    },
+    {
+      "question": "What is the length of a Sidereal Year?",
+      "options": ["365 days", "366 days", "365 days 6 hrs", "365 days 5 hrs 48.75 minutes"],
+      "answer": 2
+    },
+    {
+      "question": "The Calendar Year and the Tropical Year are of different lengths. The difference is adjusted partly by using leap years every fourth calendar year. However, some years are not designated as leap years. Which of the following years will be a leap year?",
+      "options": ["2001", "2100", "2300", "2400"],
+      "answer": 3
+    },
+    {
+      "question": "The Hour Angle (Greenwich Hour Angle) of a celestial body is analogous/ equivalent on the Earth to ________?",
+      "options": ["latitude", "longitude", "co-latitude", "UTC"],
+      "answer": 1
+    },
+    {
+      "question": "A star has a Greenwich Hour Angle (GHA) of 220°. Which meridian is the star transiting (crossing)?",
+      "options": ["040W", "040E", "140W", "140E"],
+      "answer": 3
+    },
+    {
+      "question": "Without using the Air Almanac, convert 153°30’ of arc of longitude into time.",
+      "options": [
+        "10 hrs 24 min",
+        "10 hrs 22 min",
+        "10 hrs 14 min",
+        "10 hrs 8 min"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The definition of Local Mean Time (LMT) is:",
+      "options": [
+        "time based upon the average movement of the Earth around the Sun.",
+        "when the mean Sun is transiting (crossing) your meridian, it is 1200hrs LMT.",
+        "when the mean Sun is transiting (crossing) your anti-meridian, it is 0000hrs LMT (2400 hrs LMT, previous day).",
+        "all of the above."
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Local Mean Time (LMT) always changes by a day when crossing:",
+      "options": [
+        "the Greenwich Meridian",
+        "180°E/W",
+        "the International Date Line",
+        "the Equator"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Zone Time (ZT) is used:",
+      "options": [
+        "by aircraft on trans-oceanic routes",
+        "as legal time in all countries",
+        "by ships at sea",
+        "in polar regions"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A ship at longitude 83E observes sunrise at a Zone Time of 0500 ZT on Zone Date 15th May. What is the UTC?",
+      "options": [
+        "2300 UTC 14th May",
+        "1100 UTC 15th May",
+        "2328 UTC 14th May",
+        "1032 UTC 15th May"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "On Mid-summer Day in the Southern hemisphere, the Sun will be overhead:",
+      "options": [
+        "66½ S",
+        "23½ N",
+        "23½ S",
+        "the Equator"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "On Mid-winter Day in the Northern hemisphere, the Sun will be overhead:",
+      "options": [
+        "66½ S",
+        "23½ N",
+        "23½ S",
+        "the Equator"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "At position 4830N 10315E the time is 1045 LMT on the 17th May. What is the LMT and local date at 4830S 00715E?",
+      "options": ["0421 LMT on the 17th May","0421 LMT on the 16th May ","0450 LMT on the 17th"],
+      "answer": 0
+    },
+    {
+      "question": "When LMT at 4600N 00830W is 2300 on the 9th May, what is the LMT and local date at: a. 4600N 10830W? b. 4600N 10830E?",
+      "options": ["0648 LMT on the 10th May,1620 LMT on the 9th May","1620 LMT on the 9th May,0648 LMT on the 10th May"],
+      "answer": 1
+    },
+    {
+      "question": "The time is 1300 UTC on 1st April. Calculate the LMT and local date at: a. 5430N 00715E b. 1627S 10743W",
+      "options": ["1329 LMT on 1st April,0014 LMT 2nd April","0014 LMT on 2nd April,0549 LMT 1st April ","1329 LMT on 1st April,0549 LMT 1st April"],
+      "answer": 2
+    },
+    {
+      "question": "At 3000N 4630E the time is 0300 LMT. What is the time at 6000N 01615W in: a. UTC? b. LMT?",
+      "options":["2354 UTC (previous day), 2200 LMT (previous day)","2249 UTC (previous day),2354 LMT (previous day)","2354 UTC (previous) 2249LMT (previous day)"],
+          "answer": 2
+        },
+    
+    {
+      "question": "In position 4830N 6357W the LMT is 1430 on the 10th February. What is the Standard Time in Hong Kong (2220N 11407E)?",
+      "options": ["0245 on 11th February","0246 on 11th February","0255 on 11th February"],
+      "answer": 1
+    },
+    {
+      "question": "An aircraft is to fly from Wellington, New Zealand (4110S 17454E) to Samoa (1350S 17145W). The estimated flight time is 6 hours 15 minutes. Give the Standard Time and date of departure from Wellington if the ETA for Samoa is 2350 LMT on the 8th September",
+      "options": ["1135 on 9th September (NZST)","1735 on 9th September (NZST)","1702 on 9th September (NZST)"],
+      "answer": 2
+    },
+    {
+      "question": "Determine the LMT in WELLINGTON, NEW ZEALAND (17446E) at 0730 UTC.",
+      "options": ["1909 LMT","2008 LMT","2110 LMT"],
+      "answer": 0
+    },
+    {
+      "question": "LMT in BOSTON, MASSACHUSETTS, USA (07108W) is 1200. What is the UTC?",
+      "options": ["1744 UTC","1844 UTC","1645 UTC"],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft leaves BRISBANE, QUEENSLAND, AUSTRALIA (15302E) at 2200 UTC on 4th May and lands in MANILA, PHILIPPINE REPUBLIC (12058E) some 6 hours and 45 minutes later. What is the LMT and Standard Time of landing?",
+      "options": ["1247 LMT and 1243 ST","1249 LMT and 1245 ST","1243 LMT and 1243 ST"],
+      "answer": 1
+    },
+    {
+      "question": "By how much is LMT, BANGKOK, THAILAND (10100E) later than LMT, SAN FRANCISCO, CALIFORNIA, USA (12225W)?",
+      "options": ["1520 LATER","1454 LATER","1445 LATER"],
+      "answer": 1
+    },
+    {
+      "question": "An aircraft left NEW YORK, USA (07500W) on a 5 hour 25 minute scheduled flight to VANCOUVER, BRITISH COLUMBIA, CANADA (12320W). If the ATD was 0915 NEW YORK Summer Time, what will be the ETA (Standard Time) VANCOUVER?",
+      "options": ["1240 ST","1140 ST","1040 ST"],
+      "answer": 2
+    },
+    {
+      "question": "Inclusive of flying and refuelling time, the scheduled time from ROME, ITALY (01230E) to HONG KONG (11400E) is 21 hours 40 minutes. If the flight must land at HONG KONG at 1835 Standard Time, at what Standard Time must the flight leave ROME to arrive on schedule?",
+      "options": ["1355 ST","0955 ST","0745 ST"],
+      "answer": 0
+    },
+    {
+      "question": "The flight time between SYDNEY, NEW SOUTH WALES, AUSTRALIA and HONOLULU, HAWAII (15752W) is 9 hours 50 minutes. If an aircraft leaves SYDNEY at 0930 Standard Time on the 8th May, what is the LMT and local date of arrival?",
+      "options": ["2249 LMT","1320 LMT","1020 LMT"],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft leaves HONOLULU, HAWAII at 2300 Standard Time on the 10th May. If the flight time to SYDNEY, NEW SOUTH WALES, AUSTRALIA is 10 hours 20 minutes, what is the Standard Time of arrival at SYDNEY?",
+      "options": ["1620 ST","0520 ST","1320 ST"],
+      "answer":1
+     },
+    {
+      "question": "A flight from NEW YORK, USA (07345W) to MADRID, SPAIN (00333W) is planned to leave at 2000 Standard Time on 16th February. If the flight time is 7 hours 45 minutes, give the Standard Time and local date of arrival at MADRID.",
+      "options": ["0942 ST","0945 ST","0930 ST"],
+      "answer": 1
+    },
+    {
+      "question": "On June 21, what is the lowest northerly latitude (listed in the Air Almanac) at which the Sun will be above the horizon for 24 hrs (all day)?",
+      "options": [
+        "64N",
+        "66N",
+        "68N",
+        "70N"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "On December 21, what is the lowest northerly latitude (listed in the Air Almanac) at which the Sun never rises (or sets)?",
+      "options": [
+        "64N",
+        "66N",
+        "68N",
+        "70N"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Civil twilight is:",
+      "options": [
+        "the period between sunset and the end of evening civil twilight (ECT)",
+        "the period between the start of morning civil twilight (MCT) and sunrise",
+        "related to the position of the centre of the Sun being 6° below the sensible horizon",
+        "a period when it is possible to carry out daylight tasks without artificial lighting",
+        "used in the EU-OPS definition of day flying/night flying",
+        "all of the above"
+      ],
+      "answer": 5
+    },
+    {
+      "question": "Nautical twilight and astronomic twilight are the twilight periods that follow civil twilight. Nautical twilight occurs when the Sun is between _________ and ____________ below the sensible horizon:",
+      "options": [
+        "0°/6°",
+        "6°/12°",
+        "12°/18°",
+        "18°/24°"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Between 60N and 60S, the minimum duration of Civil Twilight is?",
+      "options": [
+        "21 minutes",
+        "16 minutes",
+        "14 minutes",
+        "30 minutes"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Sunrise/sunset twilight tables in the Air Almanac are listed for a sea level situation. An aircraft flying at FL350 would experience sunrise _____________ , sunset ___________ and the length of twilight would ____________",
+      "options": [
+        "later   earlier   be longer",
+        "earlier   later   be longer",
+        "later   earlier   not change",
+        "earlier   later   be shorter"
+      ],
+      "answer": 3
+    }
+  ]

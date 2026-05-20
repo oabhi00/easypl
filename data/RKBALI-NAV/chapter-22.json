@@ -1,0 +1,196 @@
+[
+    {
+      "question": "An aircraft is flying from waypoint 4 at 35°S 20°W to waypoint 5 at 35°S 30°W. With DSR TK/ST selected on the CDU, the desired track readout which is displayed as the aircraft overflies waypoint 4 is:",
+      "options": [
+        "090.0°",
+        "272.9°",
+        "267.1°"
+      ],
+      "answer": 2,
+      "image": "chapter22.png"
+    },
+    {
+      "question": "An aircraft is flying from waypoint 4 at 35°S 20°W to waypoint 5 at 35°S 30°W. With DIS/TIME selected on the CDU, the distance to go which is displayed as the aircraft overflies waypoint 4 is:",
+      "options": [
+        "491.5 nm",
+        "600 nm",
+        "less than 491.5 nm"
+      ],
+      "answer": 2,
+      "image": "chapter22.png"
+    },
+    {
+      "question": "An aircraft is flying from waypoint 4 at 35°S 20°W to waypoint 5 at 35°S 30°W. With POS selected on the CDU and the longitude readout showing 25°00.0'W, the latitude readout will show a latitude which is:",
+      "options": [
+        "35°00.0'S",
+        "south of 35°00.0'S",
+        "north of 35°00.0'S"
+      ],
+      "answer": 1,
+      "image": "chapter22.png"
+    },
+    {
+      "question": "An aircraft is flying from waypoint 4 at 35°S 20°W to waypoint 5 at 35°S 30°W. With XTK/TKE selected on the CDU, when the aircraft is midway between the waypoints the cross track readout distance will show:",
+      "options": [
+        "00.0",
+        "R05.7",
+        "L05.7"
+      ],
+      "answer": 0,
+      "image": "chapter22.png"
+    },
+    {
+      "question": "An aircraft is flying from waypoint 4 at 35°S 20°W to waypoint 5 at 35°S 30°W. The total change in the track angle between waypoints 4 and 5 is:",
+      "options": [
+        "less than 10%, decreasing",
+        "more than 10%, decreasing",
+        "less than 10%, increasing"
+      ],
+      "answer": 2,
+      "image": "chapter22.png"
+    },
+    {
+      "question": "Given Waypoint 3 55°15'N 178°37'W; waypoint 4 55°15'N 171°23'E, what would be the DSR TK indicated on leaving WPT 3?",
+      "options": [
+        "274.1°",
+        "265.99°",
+        "094.1°"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Given Waypoint 3 55°15'N 178°37'W; waypoint 4 55°15'N 171°23'E, what is the approximate distance to go at WPT 3?",
+      "options": [
+        "171.3 nm",
+        "341.7 nm",
+        "491.5 nm"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Given Waypoint 3 55°15'N 178°37'W; waypoint 4 55°15'N 171°23'E, if the INS is showing 0 TKE when at midpoint, what latitude should the INS indicate?",
+      "options": [
+        "55°15'N",
+        "55°09.2'N",
+        "55°21.8'N"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Given Waypoint 3 55°15'N 178°37'W; waypoint 4 55°15'N 171°23'E, on reaching Waypoint 4, what TMG should be indicated?",
+      "options": [
+        "270°",
+        "274.1°",
+        "265.9°"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "At the end of an 8h 24m flight, the INS shows a position error. What is the INS error rate per hour of flight?",
+      "options": [
+        "0.55 nm/hr",
+        "0.65 nm/hr",
+        "0.45 nm/hr"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "From WPT1 to WPT2, the desired track and distance would be shown as:",
+      "options": [
+        "180°T 300 nm",
+        "000°T 238 nm",
+        "000°T 300 nm"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The function of the INS stable platform is to:",
+      "options": [
+        "Provide a permanently horizontal basis for the system's gyroscopes",
+        "Ensure the accelerometers remain horizontal and correctly oriented",
+        "Provide a datum to integrate with the airborne computer"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The function of the accelerometers in INS is to:",
+      "options": [
+        "Determine velocities and hence displacement and new position",
+        "Provide power to the torquers to maintain the stable platform's horizontality",
+        "Maintain the angular velocity of the stable platform"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "During the alignment procedure of the INS, the aircraft must not be moved:",
+      "options": [
+        "May be taxied slowly but not subjected to accelerations of the magnitude used for take-off",
+        "May taxi but not get airborne, as this involves vertical accelerations",
+        "Must not move at all"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A TAS input is required in an INS in order to:",
+      "options": [
+        "Ensure the system starts to indicate change of position as it moves",
+        "Provide a datum against which the accelerometers can operate",
+        "Display wind information"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In a strap-down INS system, laser lock is prevented by:",
+      "options": [
+        "Using gyroscopes to keep the platform horizontal",
+        "Using a dither motor to break the lock",
+        "Using accelerometers and computers to compensate for delays"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "RLG in IRS is used to:",
+      "options": [
+        "Keep the gyroscopes' gimbals free to move in all directions",
+        "Enable computer to link up with EFIS",
+        "Eliminate mechanical precession and topple"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A laser gyro consists of:",
+      "options": [
+        "Two gyroscopes to stabilize the platform",
+        "A laser generating two light waves",
+        "A horizontal platform stabilized by 'level push button'"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In order to align a strap-down inertial unit, it is required to insert the local geographical coordinates. This is necessary to:",
+      "options": [
+        "Position the computing trihedron with reference to earth",
+        "Check operation of laser gyros",
+        "Re-erect laser gyros"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Sensors of an INS measure:",
+      "options": [
+        "Acceleration",
+        "Velocity",
+        "Drift angle"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In ATT mode, IRS provides the following information:",
+      "options": [
+        "Heading, position and ground speed",
+        "Acceleration, angular rate and attitude data",
+        "Heading, acceleration and attitude data"
+      ],
+      "answer": 1
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+      "question": "Doppler operates on the principle that ...... between a transmitter and receiver will cause the received frequency to ...... if the transmitter and receiver are moving ..... .",
+      "options": [
+        "apparent motion, decrease, together",
+        "relative motion, decrease, apart",
+        "the distance, increase, at the same speed",
+        "relative motion, increase, apart"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Due to ‘Doppler’ effect an apparent decrease in the transmitted frequency, which is proportional to the transmitter’s velocity, will occur when:",
+      "options": [
+        "the transmitter and receiver move towards each other",
+        "the transmitter moves away from the receiver",
+        "the transmitter moves towards the receiver",
+        "both transmitter and receiver move away from each other"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The change in frequency measured in an aircraft from a radio transmission reflected from the ground is used to determine:",
+      "options": [
+        "the drift and ground speed of the aircraft",
+        "the aircraft’s track and speed",
+        "the across track wind component and heading",
+        "track error and ground speed"
+      ],
+      "answer": 0
+    }
+  ]
+  

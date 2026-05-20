@@ -1,0 +1,200 @@
+[
+    {
+      "question": "Flight Duty Period and Flight Time Limit for 2 crew international scheduled flight is _ hrs, _ _hrs and _ landings.",
+      "options": [
+        "11, 8 and 6.",
+        "12, 8 and 5.",
+        "13, 8 and 4."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Route guides are required to be carried in",
+      "options": [
+        "All aircraft",
+        "All private aircraft",
+        "Aircraft involved in scheduled transport services"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The duty time of the trainee pilot:",
+      "options": [
+        "Is calculated as per the Flight Time and Flight Duty Period Limit",
+        "Is not affected by the Flight Duty Period and Flight Time Limit",
+        "Is the time calculated from take-off to landing"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A pilot can fly in 28 consecutive days",
+      "options": [
+        "100 hrs PIC & 50 hrs as Co-pilot",
+        "100 hrs",
+        "120 hrs"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Flight Manual is to be carried by",
+      "options": [
+        "All aircraft",
+        "Scheduled aircraft only",
+        "If C of A states so"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A put. Aircraft from Chennai to Colombo is required to carry on board.",
+      "options": [
+        "Journey log book",
+        "Route Guide",
+        "All of the above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The maximum duty time limit per day extension for a scheduled flight is",
+      "options": [
+        "1.5 hrs",
+        "2 hrs",
+        "3 hrs"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Max flying hours for a flight crew in 90 consecutive days is:",
+      "options": [
+        "200 hrs",
+        "300 hrs",
+        "330 hrs"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "With regard to flight time limitations, \"flight time\" means:",
+      "options": [
+        "The total time from when an aircraft first moves under its own power for the purpose of taking off until it comes to rest after the flight",
+        "The time between take-off and landing",
+        "The time between an aircraft starting to move and coming to a complete stop plus one and a half hours"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The maximum permitted flight time for flight crew is:",
+      "options": [
+        "81 hours in the 27 days prior to the flight",
+        "120 hours in the 27 days before the current flight",
+        "1000 hours in 365 consecutive days"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A flight to be operated with a pressurized aeroplane will not be commenced unless a sufficient quantity of stored breathing oxygen is carried to supply:",
+      "options": [
+        "All crew members",
+        "All crew members and passengers",
+        "All crew members and passengers, when the atmospheric pressure in any compartment occupied by them is less than 700 hPa"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Emergency and cockpit checklist is to be carried by",
+      "options": [
+        "All a/c",
+        "Scheduled a/c",
+        "Non-scheduled a/c"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Number of first aid kits to be carried on board an aircraft carrying 250 passengers is:",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "No person, other than a flight crew member assigned to a flight, is admitted or carried in the flight deck unless that person is",
+      "options": [
+        "A security staff",
+        "An operating crew member",
+        "Representative of the Operator"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Low Visibility Procedures (LVP) are applied at an aerodrome for the purpose of ensuring safe operations during",
+      "options": [
+        "Category I, Category II and III approaches",
+        "Low Visibility Take-offs",
+        "Severe thundershowers"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "For an unplanned event, such as unforecast weather, equipment malfunction, or air traffic delay that is beyond the control of the operator, 'Flight Time' and 'Flight Duty Period' for scheduled operations may be extended as follows:",
+      "options": [
+        "Flight Time by maximum of 2 hours and FDP by maximum of 4 hours subject to a cumulative limit of maximum of 8 hours and maximum of 16 hours respectively in 30 consecutive days.",
+        "Flight Time by maximum of 4 hours and FDP by maximum of 8 hours.",
+        "Flight Time by maximum of 1 hour and FDP by maximum of 2 hours"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Minimum trip fuel required shall be the amount of fuel required to enable the aeroplane to fly from take-off or the point of in-flight re-planning",
+      "options": [
+        "until landing at the destination aerodrome taking into account the operating conditions.",
+        "until overhead at the destination aerodrome taking into account the operating conditions.",
+        "until overhead at the destination aerodrome taking into account the fuel required to go to a diversion."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Scheduled operators may be authorized LVTO minima of up to:",
+      "options": [
+        "400 m",
+        "200 m",
+        "125 m"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If, after commencing an instrument approach, the reported RVR/Visibility falls below the applicable minimum, the approach shall not be continued:",
+      "options": [
+        "below MDA/DA, as applicable",
+        "below AOM published for the aerodrome.",
+        "below 1,000 ft above the aerodrome."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "All FDRs shall be capable of retaining the information recorded during at least the last __ hours of their operation. CVRs at least ___ hrs and data link recorders shall be capable of retaining the information recorded during at least the last __ hours of their operation.",
+      "options": [
+        "24, 2, 4",
+        "25, 2, 2",
+        "25, 3, 2"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Filed minima is 300 m. Touchdown zone RVR is 400 m. Relevant mid-point RVR is 100 m and stop-end RVR 300 m. The runway is:",
+      "options": [
+        "Below minima",
+        "Within minima",
+        "Equal to minima"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "CARS is a:",
+      "options": [
+        "Lightweight voice recorder.",
+        "Heavyweight flight recorder.",
+        "Crash protected flight recorder."
+      ],
+      "answer": 0
+    }
+  ]

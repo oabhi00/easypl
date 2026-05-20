@@ -1,0 +1,62 @@
+[
+    {
+      "question": "The rate of turn indicator uses (i) ............... which spins (ii)...................",
+      "options": [ "a space gyroscope,up and away from the pilot",
+            "a tied gyro,anticlockwise when viewed from above",
+            "a rate gyro,up and away from the pilot",
+            "an earth gyro,clockwise"
+          ],
+          "answer":2
+        },
+    {
+      "question": "The gyro in a rate of turn indicator has (i) ....................... operating speed than the gyros used in other instruments because (ii)……………........",
+          "options": [
+            "a lower,a higher rigidity is not required",
+            "the same,it uses the property of rigidity",
+            "a higher,a low precession rate gives a greater operating range",
+            "variable,more than one rate of turn is desired"
+          ],
+       
+      "answer":0
+    },
+    {
+      "question": "The TBI shown alongside indicates:",
+      "options": [
+        "a rate of turn to the left, slipping in",
+        "an aircraft taxiing and turning starboard",
+        "that the aircraft will complete a turn in one minute",
+        "the aircraft is yawing to the right"
+      ],
+      "answer": 0,"image":"chapter28.png"
+    },
+    {
+      "question": "When the pointer of a rate of turn indicator shows a steady rate of turn:",
+      "options": [
+        "the calibrated spring is exerting a force about the lateral axis equal to the rate of turn",
+        "the force produced by the spring is producing a precession equal to but opposite to the rate of turn is correctly banked",
+        "the spring is providing a force which produces a precession equal to the rate of turn (in the opposite direction)",
+        "the spring is providing a force which produces a precession equal to the rate of turn (in the correct direction)"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "If the filter of the air driven rate of turn indicator becomes partially blocked:",
+      "options": [
+        "the aircraft will turn faster than indicated",
+        "the instrument will over-read",
+        "the rate of turn indicated will be unaffected",
+        "the radius of the turn will decrease"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The radius of a turn at rate 1, and TAS 360 kt is:",
+      "options": [
+        "10 NM",
+        "5 NM",
+        "7.5 NM",
+        "2 NM"
+      ],
+      "answer": 3
+    }
+  ]

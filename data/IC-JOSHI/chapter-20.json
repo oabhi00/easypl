@@ -1,0 +1,153 @@
+[
+    {
+      "question": "The poleward moving air piles up in the subtropical regions and forms high pressure belt at the surface, it is called _____.",
+      "options": [
+        "Subtropical high",
+        "Polar High",
+        "Equatorial high"
+      ],
+      "answer": 0,
+      "explanation": "The convergence of air aloft in the subtropics, due to the Hadley and Ferrel cells, leads to the sinking of air and the formation of the subtropical high-pressure belt at the surface, located around 30 degrees latitude north and south."
+    },
+    {
+      "question": "_________ occurs over subtropical high.",
+      "options": [
+        "advection",
+        "convection",
+        "subsidence"
+      ],
+      "answer": 2,
+      "explanation": "The subtropical high-pressure zones are characterized by the subsidence (sinking) of air from the upper atmosphere. This sinking air compresses and warms, leading to stable atmospheric conditions and generally dry weather."
+    },
+    {
+      "question": "The occurrence of large deserts near 30N and 30S are due to large scale _____.",
+      "options": [
+        "subsidence",
+        "convection",
+        "advection"
+      ],
+      "answer": 0,
+      "explanation": "The large-scale subsidence of air in the subtropical high-pressure belts around 30°N and 30°S latitudes results in dry conditions, inhibiting cloud formation and precipitation, which is a primary reason for the existence of many of the world's major deserts in these regions."
+    },
+    {
+      "question": "A part of the sinking air over the subtropical highs flows towards the equator, turning west (in the northern hemisphere) due to the Coriolis force. This surface air is called _____.",
+      "options": [
+        "Trade winds",
+        "Roaring forties",
+        "Doldrums"
+      ],
+      "answer": 0,
+      "explanation": "The surface winds that flow from the subtropical high-pressure belt towards the equatorial low-pressure belt are deflected to the right in the Northern Hemisphere due to the Coriolis effect, resulting in northeasterly winds known as the Trade Winds."
+    },
+    {
+      "question": "The huge vertical circulations, one between the equator and 30N and another between equator and 30S, are called _____.",
+      "options": [
+        "Hadley Cells",
+        "Ferrel Cells",
+        "Polar cells"
+      ],
+      "answer": 0,
+      "explanation": "The Hadley Cells are large-scale atmospheric convection cells that operate between the equator and approximately 30 degrees latitude north and south. Warm, moist air rises at the equator, flows poleward aloft, sinks in the subtropics, and flows back towards the equator at the surface."
+    },
+    {
+      "question": "The descending branch of the Hadley cell marked by calm winds and high pressure at the surface are called _____.",
+      "options": [
+        "Tropical Latitudes",
+        "Middle Latitudes",
+        "Horse Latitudes"
+      ],
+      "answer": 2,
+      "explanation": "The Horse Latitudes are regions of calm winds and high pressure at the surface, located around 30 degrees latitude north and south. They correspond to the descending branch of the Hadley Cell."
+    },
+    {
+      "question": "The winds in the upper troposphere are westerly. These are known as _____.",
+      "options": [
+        "Natural Westerlies",
+        "Steady Westerlies",
+        "Zonal Westerlies"
+      ],
+      "answer": 2,
+      "explanation": "The prevailing westerly winds in the upper troposphere at middle latitudes are often referred to as Zonal Westerlies, indicating their general west-to-east flow around the globe."
+    },
+        {
+          "question": "In the equatorial regions the upper tropospheric winds are _____.",
+          "options": [
+            "Westerlies",
+            "Easterlies",
+            "Zonal Westerlies"
+          ],
+          "answer": 1,
+          "explanation": "In the upper troposphere over the equatorial regions, the winds generally flow from east to west and are known as Easterlies, as part of the Hadley Cell circulation."
+        },
+        {
+          "question": "The disturbances of middle latitudes move from _____.",
+          "options": [
+            "W to E",
+            "E to W",
+            "N to S",
+            "S to N"
+          ],
+          "answer": 0,
+          "explanation": "The weather disturbances in the middle latitudes, such as extratropical cyclones, generally move from west to east due to the prevailing westerly winds in these latitudes."
+        },
+        {
+          "question": "The tropical disturbances which form in the equatorial low pressure belt move in _____ direction.",
+          "options": [
+            "Easterly direction",
+            "Westerly direction",
+            "Southerly direction"
+          ],
+          "answer": 1,
+          "explanation": "Tropical disturbances that form in the equatorial low-pressure belt (Intertropical Convergence Zone - ITCZ) generally move in a westerly direction, influenced by the easterly winds prevalent in the tropics."
+        },
+        {
+          "question": "Tropical disturbance which reach the zone of transition in the upper level flow change course and begin to move in a _____.",
+          "options": [
+            "Perpendicular direction",
+            "Opposite direction",
+            "Southwards"
+          ],
+          "answer": 1,
+          "explanation": "Tropical disturbances that reach the zone of transition in the upper-level flow change course and begin to move in an opposite direction due to the shift in prevailing wind patterns."
+        },
+        {
+          "question": "Latitudinally, on  average there is radiation _____ in the tropics than in the polar regions.",
+          "options": [
+            "surplus",
+            "deficit",
+            "balance"
+          ],
+          "answer": 0,
+          "explanation": "On average, the tropics receive more solar radiation than they lose to space, resulting in a net radiation surplus. In contrast, the polar regions experience a net radiation deficit."
+        },
+        {
+          "question": "The systems like highs, lows, cyclonic circulation etc are associated with distinct types of weather. A study of the behaviour of these systems, known as _____.",
+          "options": [
+            "Synoptic Meteorology",
+            "Climatology",
+            "Physical Meteorology"
+          ],
+          "answer": 0,
+          "explanation": "Synoptic Meteorology is the study of weather patterns on a large scale, focusing on systems like high and low-pressure areas, fronts, and cyclonic circulations and their associated weather phenomena."
+        },
+        {
+          "question": "Rising air creates calms or doldrums in the equatorial region _____.",
+          "options": [
+            "ITCZ",
+            "Horse Latitudes",
+            "Equatorial Doldrums"
+          ],
+          "answer": 2,
+          "explanation": "The Equatorial Doldrums refer to the zone around the equator characterized by light and variable winds due to the rising air associated with the Intertropical Convergence Zone (ITCZ)."
+        },
+        {
+          "question": "Steady NE winds in the N hemisphere and SE winds in the S hemisphere are called _____.",
+          "options": [
+            "Easterly winds",
+            "Trade Winds",
+            "Tropical Winds"
+          ],
+          "answer": 1,
+          "explanation": "The steady northeasterly winds in the Northern Hemisphere and southeasterly winds in the Southern Hemisphere that blow towards the equator are known as the Trade Winds. They are a result of air flowing from the subtropical high-pressure belts towards the equatorial low-pressure belt and being deflected by the Coriolis force."
+        }
+      ]

@@ -1,0 +1,102 @@
+[
+    {
+      "question": "From the information in the VOLMET report, what type of pressure system is dominating the region?",
+      "options": [
+        "An anticyclone",
+        "A cyclone",
+        "A low-pressure system",
+        "A trough"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A VOLMET is defined as:",
+      "options": [
+        "a radio broadcast of selected aerodrome forecasts",
+        "a continuous telephone message of selected aerodrome METARs",
+        "a continuous radio broadcast of selected aerodrome actual weather observations and forecasts",
+        "a teleprinter message of selected aerodrome TAFs and METARs"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "VOLMETs are updated:",
+      "options": [
+        "every hour",
+        "four times a day",
+        "two times a day",
+        "every half-hour"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "VOLMETs are:",
+      "options": [
+        "air-to-ground radio transmissions on HF and VHF",
+        "air-to-ground radio transmissions on HF and SVHF",
+        "ground-to-air radio transmissions on LF and VHF",
+        "ground-to-air radio transmissions on HF and VHF"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Given that sunrise is at 0600 UTC, what might you expect during the two hours following the aerodrome VOLMET report?",
+      "options": [
+        "CAVOK",
+        "Radiation fog",
+        "Low stratus",
+        "Advection fog"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When are ATIS broadcasts updated?",
+      "options": [
+        "Any time the aerodrome or weather information changes",
+        "Only when the aerodrome information changes",
+        "Every 30 minutes",
+        "Every hour"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "To minimize VHF frequency use, the ATIS can be broadcast on the voice frequency of which navigation aid?",
+      "options": [
+        "ILS",
+        "NDB",
+        "VOR",
+        "GPS"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In an ATIS broadcast, what is used to identify the current report?",
+      "options": [
+        "An alphabetical code",
+        "A number",
+        "A validity number",
+        "An issue time"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the ATIS?",
+      "options": [
+        "A chart of current aerodrome and weather information",
+        "A continuous broadcast of current aerodrome and weather information",
+        "A continuous broadcast of weather information",
+        "A printed text report of current aerodrome and weather information"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In what frequency band is the ATIS normally broadcast?",
+      "options": [
+        "LF",
+        "HF",
+        "ADF",
+        "VHF"
+      ],
+      "answer": 3
+    }
+  ]

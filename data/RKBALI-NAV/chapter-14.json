@@ -1,0 +1,628 @@
+[
+    {
+      "question": "The center of gravity of an aero plane is that point through which the total mass of the aero plane is said to act. The weight acts in a direction",
+      "options": [
+        "governed by the distribution of the mass within the aero plane",
+        "always parallel to the aero plane's vertical axis",
+        "parallel to the gravity vector"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When an aero plane is stationary on the ground, its total weight will act vertically",
+      "options": [
+        "through its center of pressure",
+        "through a point defined as the datum point",
+        "through its center of gravity"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The weight of an aero plane, which is in level non accelerated flight, is said to act",
+      "options": [
+        "vertically through the center of gravity",
+        "always along the vertical axis of the aero plane",
+        "vertically through the datum point"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The center of gravity of an aero plane",
+      "options": [
+        "may only be moved if permitted by the regulating authority and endorsed in the aero plane's certificate of airworthiness",
+        "must be maintained in a fixed position by careful distribution of the load",
+        "can be allowed to move between defined limits"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The center of gravity is the",
+      "options": [
+        "center of thrust along the longitudinal axis, in relation to a datum line",
+        "neutral point along the longitudinal axis, in relation to a datum line",
+        "point where all the aircraft mass is considered to be concentrated"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The center of gravity of a body is that point",
+      "options": [
+        "where the sum of the external forces is equal to zero",
+        "which is always used as datum when computing moments",
+        "through which the sum of the forces of all masses of the body is considered to act"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aero plane is loaded with its center of gravity towards the rear limit. This will result in:",
+      "options": [
+        "a reduction in power required for a given speed",
+        "an increased risk of stalling due to a decrease in tailplane moment",
+        "a reduced fuel consumption as a result of reduced drag"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When the center of gravity is at the forward limit, an aero plane will be:",
+      "options": [
+        "extremely stable and will require excessive elevator control to change pitch",
+        "extremely unstable and require excessive elevator control to change pitch",
+        "extremely stable and require small elevator control to change pitch"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What determines the longitudinal stability of an aero plane?",
+      "options": [
+        "The relationship of thrust and lift to weight and drag",
+        "The location of the center of gravity with respect to the neutral point",
+        "The effectiveness of the horizontal stabilizer, rudder and rudder trim tab"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An aero plane is said to be \"neutrally stable\". This is likely to:",
+      "options": [
+        "causes the center of gravity to move forwards",
+        "be caused by a center of gravity which is towards the forward limit",
+        "be caused by a center of gravity which is towards the rearward limit"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If the center of gravity is near the forward limit the aero plane will:",
+      "options": [
+        "require elevator trim which will result in an increase in fuel consumption",
+        "benefit from reduced drag due to the decrease in angle of attack",
+        "require less power for a given airspeed"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "During take-off you notice that, for a given elevator input, the aero plane rotates much more rapidly than expected. This is an indication that:",
+      "options": [
+        "the center of pressure is aft of the center of gravity","the aero plane is overloaded",
+      "the center of gravity may be towards the aft limit"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "If the center of gravity of an aero plane moves forward during flight the elevator control will:",
+    "options": [
+      "become heavier making the aero plane more difficult to maneuver in pitch",
+      "become lighter making the aero plane more difficult to maneuver in pitch",
+      "become heavier making the aero plane more easy to maneuver in pitch"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The position of the center of gravity can always be determined by:",
+    "options": [
+      "subtracting the total moment from the total mass",
+      "dividing the total moment by the total mass",
+      "dividing the total mass by the total moment"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The stalling speed of an aero plane will be highest when it is loaded with a:",
+    "options": [
+      "high gross mass and aft center of gravity",
+      "high gross mass and forward center of gravity",
+      "low gross mass and aft center of gravity"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "With the center of gravity on the forward limit which of the following is to be expected?",
+    "options": [
+      "A decrease in range",
+      "A tendency to yaw to the right on take-off",
+      "A decrease of the stalling speed"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The Dry Operating Mass of an aero plane includes:",
+    "options": [
+      "Crew and crew baggage, catering, removable passengers service equipment, potable water and lavatory chemicals",
+      "Passengers, baggage and cargo",
+      "Fuel and passengers baggage and cargo"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "At the flight preparation stage, the following parameters in particular are available for determining the mass of the aircraft:\n1. Dry operating mass, 2. Operating mass\nWhich statement is correct:",
+    "options": [
+      "The dry operating mass includes fixed equipment needed to carry out a specific flight",
+      "The dry operating mass includes take-off fuel",
+      "The operating mass is the mass of the aero plane without take-off fuel"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "In relation to an aero plane, the term \"Basic Empty Mass\" includes the mass of the acroplane structure complete with its power plants, systems, furnishings and other items of equipment considered to be an integral part of the particular aero plane configuration. Its value is",
+    "options": [
+      "found in the latest version of the weighing schedule as corrected to allow for modifications",
+      "printed in the loading manual and includes unusable fuel",
+      "found in the flight manual and is inclusive of unusable fuel plus fluids contained in closed systems"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "When establishing the mass breakdown of an aero plane, the empty mass is defined as the sum of the:",
+    "options": [
+      "basic mass plus special equipment mass",
+      "standard empty mass plus specific equipment mass plus trapped fluids plus unusable fuel mass",
+      "basic mass plus variable equipment mass"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "An aero plane is weighed and the following recordings are made:\nnose wheel assembly scale 5330kg\nleft main wheel assembly scale 12370kg\nright main wheel assembly scale 12480kg\nIf the \"operational items\" amount to a mass of 1780kg with a crew mass of 545kg, the empty mass, as entered in the weight schedule, is:",
+    "options": [
+      "31960kg",
+      "30180kg",
+      "28400kg"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "The take-off mass of an aero plane is 117000 kg, comprising a traffic load of 18000kg and fuel of 46000kg. What is the dry operating mass?",
+    "options": [
+      "99000kg",
+      "64000kg",
+      "53000kg"
+    ],
+    "answer": 2
+  },
+    {
+      "question": "When preparing to carry out the weighing procedure on an aero plane, which of the following is not required?",
+      "options": [
+        "drain all engine tank oil",
+        "drain all usable fuel",
+        "drain all chemical toilet fluid tanks"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aero plane may be weighed",
+      "options": [
+        "in an enclosed, non-air conditioned, hangar",
+        "at a specified \"weighing location\" on the airfield",
+        "in a quiet parking area clear of the normal maneuvering area"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The mass of an aero plane weighing more than 2000 Kgs must be determined prior to initial entry into service and thereafter",
+      "options": [
+        "at intervals of 5 years if no modifications have taken place",
+        "at intervals of 9 years",
+        "at regular annual intervals"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aero plane must be re-weighed at certain intervals. Where an operator uses an aircraft weighing less than 2000 kgs, this interval is",
+      "options": [
+        "4 years for each aero plane",
+        "whenever a major repair/modification is carried out, which affect weight and balance data.",
+        "whenever the Certificate of Airworthiness is renewed"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An aero plane is weighed prior to entry into service. Who is responsible for deriving the Dry Operational Mass from the weighed mass by the addition of the \"operational items\"?",
+      "options": [
+        "The aero plane manufacturer of supplier",
+        "The commander of the aero plane",
+        "The Operator"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The responsibility for determination of the mass of \"operating items\" and \"crew members\" included within the Dry Operating Mass lies with",
+      "options": [
+        "the person compiling the weighing schedule",
+        "the operator",
+        "the commander"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A revenue flight is planned for the transport acroplane. The take-off mass is not airfield limited. The following data applies:\nDry Operating Mass: 34930kg, Performance limited landing mass: 55000kg\nFuel on board at ramp:\nTaxi fuel: 350kg, Trip fuel: 9730kg\nContingency and final reserve fuel: 1200kg, Alternate fuel: 1600kg\nPassengers on board: 130\nStandard mass for each passenger: 84kg, Baggage per passenger: 14kg\nTraffic load: Maximum possible\nDetermine the maximum cargo load that may be carried without exceeding the limiting aero plane landing mass.",
+      "options": [
+        "4530kg",
+        "5400kg",
+        "6350kg"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The empty mass of an aero plane is given as 44800kg. Operational items (including crew standard mass of 1060kg) are 2300kg. If the maximum zero fuel mass is given as 65500kg, the maximum traffic load which could be carried is:",
+      "options": [
+        "20700kg",
+        "23000kg",
+        "18400kg"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Aero plane Dry Operating Mass: 85000kg\nPerformance limited take-off mass: 127000kg\nPerformance limited landing mass: 98500kg\nMaximum zero fuel mass: 89800kg\nFuel requirements for flight:\nTrip fuel: 29300kg\nContingency and final reserve fuel: 3600kg\nAlternate fuel: 2800kg\nThe maximum traffic load that can be carried on this flight is:",
+      "options": [
+        "4800kg",
+        "7100kg",
+        "6300kg"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An additional baggage container is loaded into the aft cargo compartment but is not entered into the load and trim sheet. The aero plane will be heavier than expected and calculated take-off safety speeds",
+      "options": [
+        "will not be achieved",
+        "are unaffected but will be increased",
+        "will give reduced safety margins"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Fuel loaded onto an aero plane is 15400kg but is erroneously entered into the load and trim sheet as 14500kg. This error is not detected by the flight crew but they will notice that",
+      "options": ["speed at un-stick will be higher than expected",
+      "V1 will be reached sooner than expected",
+      "the aero plane will rotate much earlier than expected"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "When considering the effects of increased mass on an aero plane, which of the following is true?",
+    "options": [
+      "Stalling speeds will be higher",
+      "Flight endurance will be increased",
+      "Gradient of climb for a given power setting will be higher"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Prior to departure an aero plane is loaded with 16500 litres of fuel at a density of 780kg/m^3. This is entered into the load sheet as 16500kg and calculations are carried out accordingly. As a result of this error, the aero plane is",
+    "options": [
+      "lighter than anticipated and the calculated safety speeds will be too high",
+      "heavier than anticipated and the calculated safety speeds will be too high",
+      "lighter than anticipated and the calculated safety speeds will be too low"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "A flight benefits from a strong tail wind which was not forecast. On arrival at destination a straight in approach and immediate landing clearance is given. The landing mass will be higher than planned and",
+    "options": [
+      "the approach path will be steeper",
+      "the landing distance required will be longer",
+      "the approach path will be steeper and threshold speed higher"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Determine the Landing Mass for the following single engine aero plane.\nStandard Empty Mass: 1764 lbs\nOptional Equipment: 35 lbs\nPilot + Front seat passenger: 300 lbs\nCargo Mass: 350 lbs\nRamp Fuel = Block Fuel : 60 Gal.\nTrip Fuel: 35 Gal.\nFuel density: 6 lbs/Gal.",
+    "options": [
+      "2659 lbs",
+      "2449 lbs",
+      "2599 lbs"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Maximum structural take-off mass 48 000 kg\nMaximum structural landing mass: 44 000 kg\nMaximum zero fuel mass: 36 000 kg\nTaxi fuel: 600 kg, Contingency fuel: 900 kg\nAlternate fuel: 800 kg, Final reserve fuel: 1 100 kg\nTrip fuel: 9 000 kg\nDetermine the actual take-off mass:",
+    "options": [
+      "47 800 kg",
+      "48 000 kg",
+      "48 400 kg"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "If an aero plane is at a higher mass than anticipated, for a given airspeed the angle of attack will",
+    "options": [
+      "remain constant, drag will decrease and endurance will decrease.",
+      "remain constant, drag will increase and endurance will increase.",
+      "be greater, drag will increase and endurance will decrease."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The crew of a transport aero plane prepares a flight using the following data:\nDry operating mass: 90,000 kg, Block fuel: 30 000 kg\nTaxi fuel: 800 kg, Maximum take-off mass: 145 000 kg\nThe traffic load available for this flight is:",
+    "options": [
+      "5 000 kg",
+      "5 800 kg",
+      "25 800 kg"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "The Dry Operating Mass of an aircraft is 2 000 kg. The maximum take-off mass, landing and zero fuel mass are identical at 3500 kg. The block fuel mass is 550kg, and the taxi fuel mass is 50 kg. The available mass of payload is:",
+    "options": [
+      "1 000 kg",
+      "950 kg",
+      "1 500 kg"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "The maximum quantity of fuel that can be loaded into an aero plane's tanks is given as 3800 US Gallons. If the fuel density (specific gravity) is given as 0.79 the mass of fuel which may be loaded is",
+    "options": [
+      "13647 kg.",
+      "11364 kg.",
+      "14383 kg."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Dry operating mass = 38 000 kg\nMaximum structural take-off mass = 72 000 kg\nMaximum landing mass = 65 000 kg\nMaximum zero fuel mass = 61 000 kg\nFuel burn = 8 000 kg, Take-off Fuel = 10 300 kg\nThe maximum allowed take-off mass and payload are respectively :",
+    "options": [
+      "73 000 kg and 27 000 kg",
+      "71 300 kg and 23 000 kg","71 300 kg and 25 300 kg"
+    ],
+    "answer": 1
+  },
+  {
+      "question": "A revenue flight is to be made by a jet transport. The following are the aero plane's structural limits:\nMaximum Ramp Mass: 69 900 kg, Maximum Take Off Mass: 69 300 kg\nMaximum Landing Mass: 58 900 kg, Maximum Zero Fuel Mass: 52 740 kg\nThe performance limited take off mass is 67 450kg and the performance limited landing mass is 55 470 kg.\nDry Operating Mass: 34 900 kg, Trip Fuel: 6 200 kg\nTaxi Fuel: 250 kg, Contingency & final reserve fuel: 1 300 kg\nAlternate Fuel: 1 100 kg\nThe maximum traffic load that can be carried is:",
+      "options": [
+        "25 800 kg",
+        "17 840 kg",
+        "18 170 kg"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The following data is extracted from an aero plane's loading manifest:\nPerformance limited take-off mass 93500 kg\nExpected landing mass at destination 81700 kg\nMaximum certificated landing mass 86300 kg, Fuel on board 16500 kg\nDuring the flight a diversion is made to an en-route alternate which is not 'performance limited' for landing.\nFuel remaining at landing is 10300 kg. The landing mass:",
+      "options": [
+        "is 87300 kg and excess structural stress could result",
+        "is 83200 kg which is in excess of the regulated landing mass and could result in overrunning the runway",
+        "must be reduced to 81700 kg in order to avoid a high speed approach."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aero plane is to depart from an airfield at a take-off mass of 302550 kg.\nFuel on board at take-off (including contingency and alternate of 19450 kg) is 121450 kg.\nThe Dry Operating Mass is 161450 kg. The useful load will be:",
+      "options": [
+        "19650 kg",
+        "121450 kg",
+        "141100 kg"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Total mass: 7500 kg\nCenter of Gravity (cg) location station: 80.5, Aft cg limit station: 79.5\nHow much cargo must be shifted from the aft cargo compartment at station 150 to the forward cargo compartment at station 30 in order to move the cg location to the aft limit?",
+      "options": [
+        "62.5 kg.",
+        "68.9 kg.",
+        "73.5 kg."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aero plane's weighing schedule indicates that the empty mass is 57320 kg.\nThe nominal Dry Operating Mass is 60120 kg and the Maximum Zero Fuel Mass is given as 72100 kg. Which of the following is a correct statement in relation to this aero plane?",
+      "options": [
+        "operational items have a mass of 2800 kg and the maximum useful load is 14780 kg.",
+        "operational items have a mass of 280 kg and the maximum traffic load for this aero plane is 11980 kg.",
+        "operational items have a mass of 2800 kg and the maximum traffic load for this aero plane is 11980 kg."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The crew of a transport aero plane prepares a flight using the following data:\n- Block fuel: 40 000 kg, Trip fuel: 29 000 kg, Taxi fuel: 800 kg\n- Maximum take-off mass: 170 000 kg, Maximum landing mass: 148 500 kg.\n- Maximum zero fuel mass: 112 500 kg, Dry operating mass: 80 400 kg\nThe maximum traffic load for this flight is:",
+      "options": [
+        "32 100 kg",
+        "32 900 kg",
+        "18 900 kg"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The Zero Fuel Mass and the Dry Operating Mass:",
+      "options": [
+        "differ by the mass of usable fuel.",
+        "differ by the value of the traffic load mass.",
+        "are the same value."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The following data applies to an aero plane which is about to take off:\nCertified maximum take-off mass 141500 kg,\nPerformance limited take-off mass 137300 kg\nDry Operating Mass 58400 kg, excluding crew and crew hand baggage mass 640 kg\nCrew baggage in hold 10 kg, Fuel on board 60700 kg\nFrom this data calculate the mass of the useful load.",
+      "options": [
+        "17450 kg",
+        "18200 kg",
+        "78150 kg"
+      ],
+      "answer": 0
+    },
+    {"question": "In relation to an aero plane, the term 'Basic Empty Mass' includes the mass of the aero plane structure complete with its powerplants, systems, furnishings and other items of equipment considered to be an integral part of the particular aero plane configuration. Its value is",
+    "options": [
+      "printed in the loading manual and includes unusable fuel.",
+      "found in the latest version of the weighing schedule as corrected to allow for modifications.",
+      "inclusive of an allowance for crew, crew baggage and other operating items. it is entered in the loading manifest."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "An aircraft basic empty mass is 3000 kg. The maximum take-off, landing, and zero-fuel mass are identical, at 5200 kg. Ramp fuel is 650 kg, the taxi fuel is 50 kg. The payload available is:",
+    "options": [
+      "1 600 kg",
+      "1 550 kg",
+      "20 kg"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "In relation to an aero plane the Dry Operating Mass is the total mass of the aero plane ready for a specific type of operation but excluding:",
+    "options": [
+      "usable fuel and crew.",
+      "potable water and lavatory chemicals.",
+      "usable fuel and traffic load."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "On an aero plane without central fuel tank, the maximum Zero Fuel Mass is related to:",
+    "options": [
+      "maximum structural take-off mass.",
+      "wing loaded trip fuel.",
+      "the bending moment at the wing root."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "If the details of an aircraft from M to N are given below. No fuel is available at N.\nDistance M to N 750nm\nAverage TAS 380 K\nWind component M to N 30 K HW\nAverage fuel flow 5700 Kg/hr\nFuel reserve (assume unused) 50 Kg\nAc mass less fuel & traffic load 52000 Kg\nMax T/O mass at M 91000 Kg\nMax T/O mass at N 88000 Kg\nMax landing mass at N 77500 Kg\nMax landing mass at M 75000 Kg\nFind: (i) Max traffic load from M to N, (ii) Max traffic load from N to M",
+    "options": [
+      "(i) 14,573 kgs (ii) 22,500 kgs",
+      "(i) 14,503 kgs (ii) 22,500 kgs",
+      "(i) 14,573 kgs (ii) 22,000 kgs"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "PLTOM 45000 lbs\nPLLM 40000 lbs\nFlight fuel 4000 lbs\nReserve fuel 800 lbs\nDOM 25000 lbs\nFind: (i) Traffic load, (ii) Can you carry additional reserve fuel without affecting traffic load, if so how much",
+    "options": [
+      "(i) 14200 lbs (ii) 1000 lbs",
+      "(i) 14200 lbs (ii) no",
+      "(i) 15200 lbs (ii) 1000 lbs"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "From P to Q (where fuel is not available) & return to P. maximum traffic load is to be of loaded at Q & maximum traffic load is to be uplifted from Q. the data given is:\nDistance P to Q 610nm\nMass no fuel & no traffic load 36500 kg.\nMax landing mass 52400 kg.\nMax take off mass 63000 kg.\nReserve fuel unused 4000 kg.\nAdditional fuel for each flight T/O circuit landing etc. 500 kg.\nMean fuel consumption 1350 kg./hr.\nMean ground speed P to Q 240 K\nMean ground speed Q to P 280 K\nFind: (i) fuel to be lifted at P, (ii) Maximum traffic load P to Q, (iii) Maximum traffic load Q to P",
+    "options": [
+      "(i) 10372 kgs (ii) 7059 kgs (iii) 11900 kgs",
+      "(i) 11872 kgs (ii) 7459 kgs (iii) 10400 kgs",
+      "(i) 11372 kgs (ii) 7959 kgs (iii) 10900 kgs"
+    ],
+    "answer": 2
+  },
+    {
+      "question": "Maximum structural take off mass 80000 lbs\nMaximum structural landing mass 64500 lbs\nDry operating mass 50000 lbs\nFlight fuel 6000 lbs\nReserve fuel 1500 lbs.\nFind the traffic load that can be carried",
+      "options": [
+        "13000 lbs",
+        "11193 lbs",
+        "250 lbs"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An a/c is to fly from A to B\nMax T/O mass structure limited 82,000 lbs\nMax mass without fuel & traffic load 50,000 lbs\nFuel Requirements\nPLLM 64,000 lbs\na) For flight A to B 16,000 lbs\nb) Reserve fuel 8,000 lbs\nIf the aircraft lands at B after having consumed 500 lbs of reserve fuel what is the Maximum traffic load that can be carried.",
+      "options": [
+        "6000 lbs",
+        "8000 lbs",
+        "6500 lbs"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In aircraft to fly A to B\nMax permissible take of mass 82,000 lbs\nMax mass without fuel and traffic load 50,000 lbs\nMax permissible landing mass 69000 lbs\nFuel required\n(a) For flight from A to B 16000 lbs\n(b) Reserve 3000 lbs\n(i) What is the Max traffic load that can be carried?\n(ii) Is it possible to carry additional reserve fuel without affecting the traffic",
+      "options": [
+        "(i) 16000, (ii) cannot carry",
+        "(i) 13000, (ii) cannot carry",
+        "(i) 13000, (ii) 3000lb"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A flight is to be made from M to N and return to M carrying max. Traffic load in each direction fuel is not available at N\nDistance to M to N 80nm\nMean ground speed M to N 70 K.\nMean ground speed N to M 110 K.\nMean fuel consumption 410 Kg/hr\nMax take off Mass at M 6180 Kg.\nMax landing mass at N 5740 kg.\nMax take off mass at N 5800 Kg.\nMax landing mass at M 5460 Kg.\nMax zero fuel mass 5180 Kg.\nAircraft mass less fuel and traffic load 4400 Kg.\nReserve fuel (assume not used) 250 Kg.\nCalculate:\n(i) Max traffic load which can be carried from M to N\n(ii) Max traffic load which can be carried from N to M",
+      "options": [
+        "(i) 763 kgs (ii) 780 kgs",
+        "(i) 763 kgs (ii) 530 kgs",
+        "(i) 513 kgs (ii) 530 kgs"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Max T/o mass 51.00 Tone\nRTOM 50.00 Tone\nMax landing mass 44.20 Tone\nRLM 43.20 Tone\nMax Zero fuel mass 45.10 Tone\nAPS mass 27.50 Tone\nTrip fuel 4.2 Tone\nReserve fuel 1.00 Ton\nFind the traffic load that can be carried",
+      "options": [
+        "17.6 tons",
+        "17.3 tons",
+        "14.7 tons"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Max Take of mass 80000 Lbs\nMaximum landing mass 60000 Lbs\nDry operating mass 48000 Lbs\nTAS 200 K\nTrack 350\nWN 350/20\nDistance 1350nm\nFuel consumption 2500 Lbs/hr\nReserve fuel 3500 Lbs\nFind the traffic load that can be carried.",
+      "options": [
+        "9750 lbs",
+        "8500 lbs",
+        "15409 lbs"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Max structural T/O mass 55000 Kg\nMax structural landing mass 52000 Kg\nMax zero fuel mass 38000 Kg\nDOM 29000 Kg\nFuel cons 1600 Kg/hr\nDistance 1500nm\nReserve fuel 2750 Kg\nTAS 260 Kts\nWinds - headwind, 20K till halfway, thereafter changes to 60K tail wind.\n( i Find Max traffic load in still air.\n(ii) Find Max traffic load with winds.",
+      "options": [
+        "(i) 9000 kg (ii) 9000 kg",
+        "(i) 9000 kg (ii) 8000 kg",
+        "(i) 9000 kg (ii) 10000 kg"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Find maximum traffic load:\nFlying Time 3hrs 30 mins, FC 1500 Kg/hr, Reserve fuel 45 mins. Restricted take off mass 45000 kg, DOM 37525 kg.",
+      "options": [
+        "1100 kg",
+        "1200 kg",
+        "1025 kg"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Maximum structural take off mass 82000 lbs,\nMaximum structural landing mass 64500 lbs,\nDry operating mass 50000 lbs,\nFlight fuel 16000 lbs. Calculate pay load if aircraft is to use 700 lbs of reserve fuel after reaching destination.\nReserve fuel 1500 lbs.",
+      "options": [
+        "13000 lbs",
+        "13200 lbs",
+        "13700 lbs"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In a neutrally stable aircraft the center of gravity of the aircraft is located:",
+      "options": [
+      "at or very near the aerodynamic center.",
+      "too far aft of the aerodynamic center.",
+      "too far forward of the aerodynamic center."
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Structural integrity of wing root will be adversely affected by:",
+    "options": [
+      "adding fuel to MZFM.",
+      "increasing the number of fasteners at the wing root.",
+      "exceeding maximum authorized mass including fuel."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Calculate Total Fuel Required for a turbojet aircraft.\nGiven: Thrust (F) = 80 kN, Specific Fuel Consumption (SFC) = 0.6 kg/(s.kN).\nFlight Time = 30 minutes.",
+    "options": [
+      "43200 kg",
+      "86400 kg",
+      "172800 kg"
+    ],
+    "answer": 1
+  }
+]

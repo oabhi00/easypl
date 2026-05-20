@@ -1,0 +1,372 @@
+[
+    {
+      "question": "Length of NM is more at:",
+      "options": [
+        "Equator",
+        "45° Latitude",
+        "Poles"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Kilometer is defined as:",
+      "options": [
+        "The mean length of a 1/40000 part of the equator.",
+        "0.454 nautical mile.",
+        "A 1/1000 part of the meridian length from equator to the pole."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When dealing with heights and altitudes in international aviation, we use the following units:",
+      "options": [
+        "Meter and feet.",
+        "Feet, kilometer and decimals of nautical mile.",
+        "Feet and yard."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "How many feet are there in a nm?",
+      "options": [
+        "1000 ft",
+        "6080 ft",
+        "3280 ft"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A nautical mile is defined as:",
+      "options": [
+        "The average length of a 1-minute arc of a meridian.",
+        "1952 meters",
+        "The average length of a 1 arc of longitude and a 1' arc of latitude."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "How many feet are equivalent to 9.5 km?",
+      "options": [
+        "57,760 ft",
+        "31,160 ft",
+        "50,160 ft"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In international aviation the following units are used for horizontal distance:",
+      "options": [
+        "Meters, statute miles, and nautical miles.",
+        "Kilometers, statute miles, and nautical miles.",
+        "Meters, kilometers, and nautical miles."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Consider the following statements:",
+      "options": [
+        "The exact length of 1 minute of arc varies a little from position to position because the earth radius varies.",
+        "In any position on the surface of the earth, the length of 1 minute of arc east/west is equal to the length of 1 minute of arc north/south in the same position on a perfect sphere.",
+        "Both statements are correct."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "1 nautical mile equals:",
+      "options": [
+        "0.869 statute mile.",
+        "1609 meters.",
+        "6076 feet."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "How many feet are there in 1 statute mile?",
+      "options": [
+        "5280 ft",
+        "3280 ft",
+        "6080 ft"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An A/C flying from place X (27° 27' N 030° 24' E) to Y (27° 27' N 108° 47' E). Find rhumb line Distance.",
+      "options": [
+        "4000 nm",
+        "4173 nm",
+        "4250 nm",
+        "4300 nm"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An A/C takes off from A (27° 13' N 024° 37' E) to B (27° 13' N 094° 37' W). Find departure.",
+      "options": [
+        "6200 nm",
+        "6300 nm",
+        "6362 nm",
+        "6400 nm"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An A/C takes off from X (39° 42' N 105° 20' E) for Y (39° 42' N 178° 35' E). Find R/L Distance.",
+      "options": [
+        "3200 nm",
+        "3300 nm",
+        "3381.5 nm",
+        "3450 nm"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An a/c takes off from place X (45° 20'N 010° 05'E) and flies in R/L direction of 270° for 800 nm. Find lat - long of destination.",
+      "options": [
+        "45° 20' N 07° 00' W",
+        "45° 20' N 08° 53' W",
+        "46° 00' N 08° 53' W",
+        "44° 40' N 09° 10' W"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An A/C takes off from X (32° 48' S 178° 10' W) and flies on true westerly track for 450 nm. Find lat long of Y.",
+      "options": [
+        "32° 48' S 172° 55' W",
+        "37° 40' S 172° 55' E",
+        "32° 48' S 172° 05' W",
+        "32° 48' S 172° 55' E"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "An A/C takes off from (45° 40' N 176° 36' E) and flies on true track of 090° for 1480 kms. Find lat - long of destination.",
+      "options": [
+        "45° 40' N 164° 20' E",
+        "45° 40' S 164° 20' W",
+        "45° 40' N 164° 20' W",
+        "46° 00' N 160° 00' W"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An A/C takes off from 10° N 175° E it flies in southerly direction for 600 nm. Thereafter in easterly direction for 600 nm. Thereafter in southerly direction for 600 nm. Find lat- long of destination.",
+      "options": [
+        "10° S 175° E",
+        "00° N 175° W",
+        "10° S 175° W",
+        "10° N 175° W"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Two A/C A and B take off from X (53° N 004° E) for point Y (60° N 016° W). A/C A flies due north till 60° latitude and then due west to Y. A/C B flies due west till 016° W than to Y. Which A/C travels shorter and by how many nm?",
+      "options": [
+        "A/C A shorter by 122 nm",
+        "A/C B shorter by 122 nm",
+        "A/C A shorter by 600 nm",
+        "A/C B shorter by 722 nm"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An A/C takes off from A (30° S 060° E) and flies in northerly direction for 600 nm, thereafter in easterly direction for 600 nm. Thereafter southerly direction for 600 nm, thereafter westerly direction for 600 nm. Find final position of A/C in nm East or West of starting position.",
+      "options": [
+        "47 nm East",
+        "553 nm East",
+        "47 nm West",
+        "553 nm West"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Departure = 250 nm, D long = 4° 50', find latitude.",
+      "options": [
+        "30° 41' N/S",
+        "25° N/S",
+        "35° N/S",
+        "40° N/S"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An A/C takes off from (48° 5' N 001° W) and flies on track of 270° for 2 hrs 10 min and then alters its track to 360° and later it alters its track to 090°, after flying for 1 hr 32 min, it crosses the meridian 1° W. If G/S of the A/C was 420 Kts throughout the flight, what was the flying time on second leg.",
+      "options": [
+        "1 hr 45 min",
+        "1 hr 57 min",
+        "2 hr 05 min"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An A/C takes off from (50° S 004° E) and flies on track of 090° for 2 hrs and then alters its track to 180° and later it alters its track to 270° after flying for 1 hr 27 min, it crosses the meridian 4° E. If G/S of the A/C was constant at 380 Kts throughout the flight, what was the flying time of the aircraft on second leg?",
+      "options": [
+        "1 hr 05 min",
+        "1 hr 15 min",
+        "1 hr 57 min"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Position A 45°N, ?°E Position B 45°N, 45°15'E Distance A-B= 280NM. B is to the East of A. Required: longitude of position A?",
+      "options": [
+        "51° 51' E",
+        "49° 57' E",
+        "38° 39' E"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft departs from position A (04° 10' S 178° 22' W) and flies northward following the meridian for 2950NM. It then flies westward along the parallel of latitude for 382NM to position B. The coordinates of position B are?",
+      "options": [
+        "45° 00' N 168° 22' W",
+        "S3° 20' N 172° 38' E",
+        "45° 00' N 172° 38' E"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the time required to travel along the parallel of latitude 60°N between meridians 010°E and 030°W at a groundspeed of 480kt?",
+      "options": [
+        "01:45",
+        "02:30",
+        "01:15"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the longitude of a position 6NM to the east of 58° 42' N 094° 00' W?",
+      "options": [
+        "093° 48.5' W",
+        "094° 12.0' W",
+        "093° 53.1' W"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The circumference of the parallel of latitude at 60°N is approximately:",
+      "options": [
+        "18706 nm",
+        "34641 nm",
+        "10800 nm"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Position A 00°N 100°E Position B is 240°(T), 200NM from A. What is the position of B?",
+      "options": [
+        "01° 40' N 097° 07' E",
+        "01° 40' N 101° 40' E",
+        "01° 40' S 097° 07' E"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft flies a great circle track from 56°N 070°W to 62°N 110°E. The total distance traveled is?",
+      "options": [
+        "2040 nm",
+        "3420 nm",
+        "3720 nm"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Position A is located on the equator at longitude 130° 00' E. Position B is located 100NM from A on a bearing of 225°(T). The coordinates of position B are:",
+      "options": [
+        "01° 11' S 128° 49' E",
+        "01° 11' N 131° 11' E",
+        "01° 11' S 131° 11' E"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If an aeroplane was to circle around the Earth following parallel 60°N at a ground speed of 480kt. In order to circle around the Earth along the equator in the same amount of time, it should fly at a ground speed of:",
+      "options": [
+        "550 kt",
+        "240 kt",
+        "960 kt"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In order to fly from position A (10° 00' N 030° 00' W) to position B (30° 00' N 050° 00' W), maintaining a constant true course, it is necessary to fly:",
+      "options": [
+        "a rhumb line track",
+        "a straight line plotted on a lambert chart",
+        "the great-circle route"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft departing A(N40° 00' E080° 00') flies a constant true track of 270° at a ground speed of 120 kts. What are the coordinates of the position reached in 6 HR?",
+      "options": [
+        "N40° 00' E060° 00'",
+        "N40° 00' E064° 20'",
+        "N40° 00' E068° 10'"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Position A 60°N 020°W, Position B 60°N 021°W and Position C 59°N 020°W.What are, respectively, the distances from A to B and from A to C?",
+      "options": [
+        "60 nm and 52 nm",
+        "52 nm and 60 nm",
+        "30 nm and 60 nm"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft at latitude 10° North flies south at a groundspeed of 445 km/h. what will be its latitude after 3h?",
+      "options": [
+        "03° 50' S",
+        "02° 00' S",
+        "12° 15' S"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An aircraft at latitude 10° S flies north at a GS of 890 km/h. what will its latitude be after 1.5h?",
+      "options": [
+        "02° 00' N",
+        "12° 15' N",
+        "22° 00' N"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft at latitude 02° 20' N tracks 180°(T) for 685 km. on completion of the flight the latitude will be:",
+      "options": [
+        "04° 10' S",
+        "03° 50' S",
+        "04° 30' S"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The departure between positions 60° N 160° E and 60° N X is 900 nm. what is the longitude of X?",
+      "options": [
+        "170° W",
+        "145° E",
+        "175° E"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft at position 60° N 005° W tracks 090°(T) for 315 km. on completion of the flight the longitude will be:",
+      "options": [
+        "000° 40' E",
+        "002° 10' W",
+        "000° 15' E"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A flight is to be made from A 49° S 180° E/W to B 58° S 180° E/W. the distance in kilometers from A to B is approximately:",
+      "options": [
+        "1222",
+        "1000",
+        "804"
+      ],
+      "answer": 1
+    }
+  ]

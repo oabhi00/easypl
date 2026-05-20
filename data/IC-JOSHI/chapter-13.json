@@ -1,0 +1,239 @@
+[
+    {
+      "question": "The condition necessary for the formation of a thunderstorm are:",
+      "options": [
+        "Steep lapse rate, strong winds",
+        "Shallow lapse rate, adequate supply of moisture",
+        "Steep lapse rate, adequate supply of moisture and trigger action"
+      ],
+      "answer": 2,
+      "explanation": "Thunderstorm development requires a steep lapse rate (unstable atmosphere), an adequate supply of moisture in the lower atmosphere, and a lifting mechanism (trigger action) to initiate upward motion."
+    },
+    {
+      "question": "Hail is most likely to fall from a cloud",
+      "options": ["Having layers", "Composed of Ice crystals", "Having strong vertical development"],
+      "answer": 2,
+      "explanation": "Hail forms within cumulonimbus clouds that have strong updrafts capable of lifting supercooled water droplets to high altitudes where they freeze. Repeated cycles of lifting and freezing add layers to the hailstone, resulting in significant size."
+    },
+    {
+      "question": "Norwesters are",
+      "options": [
+        "The western disturbances which affect NW India",
+        "Severe thunderstorms which occur over NE India during hot weather period",
+        "Severe thunderstorms which occur over Peninsula during hot weather period"
+      ],
+      "answer": 1,
+      "explanation": "Norwesters are severe thunderstorms that occur over Northeast India, particularly West Bengal and adjoining areas, during the hot weather period (pre-monsoon)."
+    },
+    {
+      "question": "Duststorm usually occurs over NW India during",
+      "options": ["Post-monsoon", "Winter", "Pre-Monsoon"],
+      "answer": 2,
+      "explanation": "Dust storms are common over Northwest India during the pre-monsoon season (March to June) when the land is dry and hot, and strong winds can lift large amounts of dust into the atmosphere."
+    },
+    {
+      "question": "A 'mature' thunderstorm has strong",
+      "options": ["updraft only", "downdraft only", "updrafts and downdrafts"],
+      "answer": 2,
+      "explanation": "A mature thunderstorm is characterized by the presence of both strong updrafts, which carry warm, moist air upwards, and strong downdrafts, which are caused by falling precipitation and the cooling of air due to evaporation."
+    },
+    {
+      "question": "Aircraft icing is most favoured in the cloud which have temperatures ranging between",
+      "options": ["-20 °C and -40 °C", "0 °C and -20 °C", "below -40 °C"],
+      "answer": 1,
+      "explanation": "Aircraft icing is most likely to occur in clouds where the temperature ranges between 0 °C and -20 °C, as this is the range where significant amounts of supercooled liquid water droplets (which freeze on contact with the aircraft) are typically found."
+    },
+    {
+      "question": "A short duration, showery precipitation is associated with",
+      "options": ["ST", "AS", "CB"],
+      "answer": 2,
+      "explanation": "Cumulonimbus (CB) clouds are associated with heavy, showery precipitation of short duration, often accompanied by thunderstorms, lightning, and hail."
+    },
+    {
+      "question": "Hail is",
+      "options": [
+        "Solid precipitation commonly occurring over the mountainous regions in winters.",
+        "Frozen or partly frozen rain falling from sheet type of clouds",
+        "Solid precipitation falling from a deep convective cloud"
+      ],
+      "answer": 2,
+      "explanation": "Hail is a form of solid precipitation that consists of balls or irregular lumps of ice. It forms within deep convective clouds (cumulonimbus) with strong updrafts."
+    },
+    {
+      "question": "The most hazardous cloud for aviation is",
+      "options": ["CB", "CU", "NS"],
+      "answer": 0,
+      "explanation": "Cumulonimbus (CB) clouds are considered the most hazardous to aviation due to the presence of severe turbulence, strong updrafts and downdrafts, heavy precipitation, lightning, hail, and potential for icing."
+    },
+    {
+      "question": "The life of a Cb cell is usually",
+      "options": ["7 to 8 hrs", "3 to 4 hrs", "2-3 hr"],
+      "answer": 2,
+      "explanation": "The typical life cycle of an individual cumulonimbus (CB) cell is relatively short, usually ranging from 2 to 3 hours."
+    },
+    {
+      "question": "Generally the severest activity of a, heat-type, TS is for",
+      "options": ["2 hrs", "30 to 45 min", "3 to 4 hr"],
+      "answer": 1,
+      "explanation": "The most severe activity of a heat-type thunderstorm (air mass thunderstorm) is typically concentrated within a shorter period, usually lasting for about 30 to 45 minutes during its mature stage."
+    },
+    {
+      "question": "Norwesters occur during",
+      "options": ["Jan - Feb", "Mar - May", "June - Sep", "Oct - Dec"],
+      "answer": 1,
+      "explanation": "Norwesters, the severe thunderstorms of Northeast India, primarily occur during the pre-monsoon hot weather season, which spans from March to May."
+    },
+    {
+      "question": "Norwesters occur during",
+      "options": ["Winter", "Hot weather", "Monsoon", "Post Monsoon"],
+      "answer": 1,
+      "explanation": "Norwesters are a phenomenon of the hot weather season (pre-monsoon) in Northeast India."
+    },
+    {
+      "question": "Norwesters affect",
+      "options": ["N India", "Bengal, Bihar, Orissa and Assam", "Central India"],
+      "answer": 1,
+      "explanation": "Norwesters are severe thunderstorms that primarily affect the eastern parts of India, including the states of Bengal, Bihar, Orissa, and Assam."
+    },
+    {
+      "question": "The trigger action may take place due to",
+      "options": ["Clear night sky, no wind", "Orographic lifting", "high pressure"],
+      "answer": 1,
+      "explanation": "Orographic lifting, where air is forced to rise over mountains, can act as a trigger mechanism for thunderstorm development by causing the air to cool and condense."
+    },
+    {
+      "question": "Norwesters normally occur during",
+      "options": ["Mornings", "Afternoons", "Nights"],
+      "answer": 1,
+      "explanation": "Norwesters, being a type of thunderstorm, typically develop during the afternoon when surface heating is maximum, leading to increased atmospheric instability."
+    },
+    {
+      "question": "Norwesters originates over",
+      "options": ["Chota-Nagpur hills", "Deccan Plateau", "Khasi hills"],
+      "answer": 0,
+      "explanation": "Norwesters are believed to originate over the Chota-Nagpur plateau region due to the favorable atmospheric conditions that develop there during the pre-monsoon season."
+    },
+    {
+      "question": "Andhi (blinding storms) occur generally over",
+      "options": ["S India", "N India", "NE India"],
+      "answer": 1,
+      "explanation": "Andhi, which are intense dust storms that reduce visibility significantly, are common over North India, particularly during the hot and dry pre-monsoon season."
+    },
+    {
+      "question": "Wind speed in Light DS is",
+      "options": ["25 kt", "30 kt", "up to 21 kt"],
+      "answer": 2,
+      "explanation": "A light dust storm (DS) is typically characterized by wind speeds up to 21 knots (approximately 24 mph)."
+    },
+    {
+      "question": "The diameter of Microburst is",
+      "options": ["less than 4 km", "less than 2 km", "less than 6 km"],
+      "answer": 0,
+      "explanation": "A microburst is a localized column of sinking air within a thunderstorm and has a diameter of less than 4 kilometers (2.5 miles)."
+    },
+    {
+      "question": "The diameter of a Macroburst",
+      "options": ["< 4 km", "4 km or more", "> 8 km"],
+      "answer": 1,
+      "explanation": "A macroburst is a larger and more intense downdraft than a microburst, with a diameter of 4 kilometers (2.5 miles) or more."
+    },
+    {
+      "question": "For detecting precipitation, a Radar wavelength in the range ........ is suitable",
+      "options": ["30 to 200 mm", "400-500 mm", "600-700 mm"],
+      "answer": 0,
+      "explanation": "Radar wavelengths in the range of 30 to 200 mm (S-band and C-band) are suitable for detecting precipitation because these wavelengths are scattered effectively by raindrops and ice particles."
+    },
+    {
+      "question": "For a airborne radars, wavelength generally used",
+      "options": ["20 mm", "40 mm", "60 mm"],
+      "answer": 2,
+      "explanation": "Airborne weather radars often use X-band wavelengths, which are around 30 mm (though options include 20, 40, and 60 mm). These shorter wavelengths provide good resolution for detecting precipitation intensity and features."
+    },
+    {
+      "question": "The wavelength of TS detection X band radar is",
+      "options": ["10 mm", "20 mm", "30 mm"],
+      "answer": 2,
+      "explanation": "X-band weather radars used for thunderstorm (TS) detection typically operate at wavelengths around 3 cm or 30 mm."
+    },
+    {
+      "question": "The wavelength of storm detection S band radar is",
+      "options": ["50 mm", "100 mm", "200 mm"],
+      "answer": 1,
+      "explanation": "S-band weather radars used for large-scale storm detection operate at longer wavelengths, typically around 10 cm or 100 mm. This wavelength is less attenuated by heavy precipitation, allowing for better penetration into storms."
+    },
+    {
+      "question": "Over plains TS mostly occur during the",
+      "options": ["afternoon", "night", "early morning"],
+      "answer": 0,
+      "explanation": "Over plains, thunderstorms (TS) are most common during the afternoon due to maximum surface heating and the development of convective instability."
+    },
+    {
+      "question": "Over valley and foot hills TS generally occur during",
+      "options": ["afternoon", "night & early morning"],
+      "answer": 1,
+      "explanation": "Over valleys and foothills, thunderstorms (TS) are also typically more frequent during the night and early morning."
+    },
+    {
+      "question": "Over the sea TS are more frequent",
+      "options": ["afternoon", "night", "early morning"],
+      "answer": 1,
+      "explanation": "Over the sea, thunderstorms (TS) are often more frequent during the night and early morning. This is because the sea surface temperature changes less than land, and temperature differences between the sea and the overlying air can become more pronounced at night, leading to instability."
+    },
+    {
+      "question": "The life of Mesoscale Convective Complex TS is",
+      "options": ["2-3 hr", "3-4 hr", "6 to 24 hr"],
+      "answer": 2,
+      "explanation": "Mesoscale Convective Complexes (MCCs) are large, organized systems of thunderstorms that can persist for several hours, typically ranging from 6 to 24 hours or even longer."
+    },
+    {
+      "question": "Loud peals of thunder, frequent flashes of lightning, moderate or heavy showers accompanied by light hail with maximum wind speed 15-40 kt is classified as",
+      "options": ["Light TS", "Moderate TS", "Severe TS"],
+      "answer": 1,
+      "explanation": "This description, with moderate to heavy showers and wind speeds up to 40 knots, generally fits the criteria for a moderate thunderstorm (TS). Severe thunderstorms typically involve stronger winds, larger hail, and potentially tornadoes."
+    },
+    {
+      "question": "For a severe TS one of the requirements is strong Wind Shear",
+      "options": ["Horizontal", "Vertical", "Slant"],
+      "answer": 1,
+      "explanation": "Strong vertical wind shear (a change in wind speed or direction with height) is a crucial ingredient for the development of severe thunderstorms, as it can help to organize the storm's updraft and downdraft and prolong its lifespan."
+    },
+    {
+      "question": "Severe TS cells are tilted",
+      "options": ["in vertical", "to the South", "to the North"],
+      "answer": 0,
+      "explanation": "Severe thunderstorm cells in the Northern Hemisphere are often tilted to the south due to the interaction between the updraft and the prevailing environmental winds (vertical wind shear)."
+    },
+    {
+      "question": "When flying through an active TS, lightning strikes are most likely",
+      "options": [
+        "Above 5000 ft and under the anvil.",
+        "In the clear air below the cloud in rain",
+        "In the temperature band between +10 ° and -10 ° C",
+        "At or about 10000 ft"
+      ],
+      "answer": 2,
+      "explanation": "Lightning is most likely to occur within the mixed-phase region of a thunderstorm, where both ice crystals and supercooled water droplets coexist, typically in the temperature range between +10 °C and -10 °C."
+    },
+    {
+      "question": "Hazards of the mature stage of a TS Cell include lightning, turbulence and:",
+      "options": [
+        "Microburst, wind-shear and anvil",
+        "Icing, microburst and WS",
+        "Icing, drizzle and microburst",
+        "WS, hail and fog"
+      ],
+      "answer": 1,
+      "explanation": "The mature stage of a thunderstorm cell poses several hazards, including lightning, turbulence, icing (if temperatures are below freezing), microbursts (strong downdrafts), and wind shear (WS)."
+    },
+    {
+      "question": "Hail grows by",
+      "options": [
+        "freezing as it leaves the cloud",
+        "up and down forces in CU cloud",
+        "collision with ice crystals",
+        "collision with supercooled water drops"
+      ],
+      "answer": 3,
+      "explanation": "Hailstones grow within cumulonimbus clouds through repeated collisions with supercooled water droplets. These droplets freeze upon contact with the ice nucleus or existing hailstone, adding layers as the hailstone is lifted and falls within the storm's updrafts and downdrafts."
+    }]
+  

@@ -1,0 +1,82 @@
+[
+    {
+      "question": "The difference between static air temperature and total air temperature is known as:",
+      "options": [
+        "corrected outside air temperature",
+        "the total ram rise",
+        "the recovery factor",
+        "hot ramp radiation"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A direct reading aircraft thermometer usually consists of a bimetallic helix protruding into the airstream.  Movement of the pointer over the temperature scale will depend upon:",
+      "options": [
+        "difference in electrical resistance of the two metals",
+        "increase in pressure as airspeed increases",
+        "increase in adiabatic cooling as airspeed increases",
+        "different coefficients of expansion of the two metals"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "A remote reading thermometer depends on _______ to indicate changes in temperature:",
+      "options": [
+        "change of electrical resistance of the two metals",
+        "change of electrical resistance with temperature",
+        "change of electrical resistance with pressure",
+        "change of electrical capacitance with temperature"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Aircraft air temperature thermometers are shielded to protect them from:",
+      "options": [
+        "solar radiation",
+        "accidental physical damage on the ground or hailstones in flight",
+        "airframe icing",
+        "kinetic heating"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "At a true airspeed of 500 knots, what is the ram rise?",
+      "options": [
+        "50°C",
+        "25°C",
+        "5°C",
+        "16°C"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An air temperature probe may be aspirated in order to:",
+      "options": [
+        "prevent icing",
+        "measure air temperature on the ground",
+        "compensate for moisture level at the ramp position",
+        "reduce the effects of solar radiation"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Total Air Temperature is:",
+      "options": [
+        "the maximum temperature attainable by the air when brought to rest adiabatically",
+        "the temperature indicated on the air temperature thermometer plus the ram rise",
+        "the static air temperature minus the recovery factor",
+        "the recovery factor plus the ram rise"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of these formulae gives the total temperature (Tt) from the static temperature (Ts):",
+      "options": [
+        "Tt = Ts (1 + 0.2 M²)",
+        "Tt = Ts (1 + 0.2 Kr M²)",
+        "Tt = Ts /(1 + 0.2 Kr M²)",
+        "Tt = Ts (1 - 0.2 M²)"
+      ],
+      "answer": 1
+    }
+  ]

@@ -1,0 +1,155 @@
+[
+    {
+      "question": "The measurement of surface temperature is made:",
+      "options": [
+        "at ground level",
+        "at approximately 10 metres from ground level",
+        "at approximately 4 feet above ground level",
+        "at approximately 4 metres above ground level"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The purpose of a “Stevenson screen” is to:",
+      "options": [
+        "maintain a moist atmosphere so that the wet bulb thermometer can function correctly",
+        "prevent the mercury freezing in the low winter temperatures",
+        "protect the thermometer from wind, weather and from direct sunshine",
+        "keep the wet and dry bulb thermometers away from surface extremes of temperature"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If temperature remains constant with an increase in altitude there is:",
+      "options": [
+        "an inversion",
+        "an inversion aloft",
+        "uniform lapse rate",
+        "an isothermal layer"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "The surface of the earth is heated by:",
+      "options": [
+        "convection",
+        "conduction",
+        "long wave solar radiation",
+        "short wave solar radiation"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Cloud cover will reduce diurnal variation of temperature because:",
+      "options": [
+        "incoming solar radiation is reflected back to space and outgoing terrestrial radiation is reflected back to earth",
+        "incoming solar radiation is re-radiated back to space and atmospheric heating by convection will stop at the level of the cloud layer",
+        "the cloud stops the sun’s rays getting through to the earth and also reduces outgoing conduction",
+        "incoming solar radiation is reflected back to space and outgoing terrestrial radiation is re-radiated from the cloud layer back to the surface"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Diurnal variation of the surface temperature will:",
+      "options": [
+        "be unaffected by a change of wind speed",
+        "decrease as wind speed increases",
+        "increase as wind speed increases",
+        "be at a minimum in calm conditions"
+      ],
+      "answer": 1
+    },
+        {
+          "question": "Which of the following surfaces is likely to produce a higher than average diurnal variation of temperature:",
+          "options": [
+            "rock or concrete",
+            "water",
+            "snow",
+            "vegetation"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "Most accurate temperatures above ground level are obtained by:",
+          "options": [
+            "Tephigram",
+            "aircraft reports",
+            "temperature probe",
+            "radiosonde"
+          ],
+          "answer": 3
+        },
+        {
+          "question": "The method by which energy is transferred from one body to another by contact is called:",
+          "options": [
+            "radiation",
+            "convection",
+            "conduction",
+            "latent heat"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "The diurnal variation of temperature is:",
+          "options": [
+            "greater over the sea than over land",
+            "less over desert areas than over temperate grassland",
+            "reduced anywhere by the presence of cloud",
+            "increased anywhere as wind speed increases"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "The troposphere is heated largely by:",
+          "options": [
+            "absorption of the sun’s short wave radiation",
+            "radiation of heat from cloud tops and the earth’s surface",
+            "absorption by ozone of the sun’s short wave radiation",
+            "conduction from the surface, convection and the release of latent heat"
+          ],
+          "answer": 3
+        },
+        {
+          "question": "An inversion is one in which:",
+          "options": [
+            "there is no horizontal gradient of temperature",
+            "there is no change of temperature with height",
+            "there is an increase of temperature as height increases",
+            "there is a decrease of temperature as height increases"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "The sun gives out________ amount of energy with _________ wavelengths. The earth gives out relatively ___________ amounts of energy with relatively___________ wavelengths:",
+          "options": [
+            "large, large, small, small",
+            "small, small, large, large",
+            "large, large, small, large",
+            "large, small, small, large"
+          ],
+          "answer": 3
+        },
+            {
+              "question": "With a clear night sky, the temperature change with height by early morning is most likely to show:",
+              "options": [
+                "a steady lapse rate averaging 2°C/1000 ft",
+                "a stable lapse rate of 1°C per 1000 ft",
+                "an inversion above the surface with an isothermal layer above",
+                "an inversion from near the surface and a 2°C per 1000 ft lapse rate above"
+              ],
+              "answer": 3
+            },
+            {
+              "question": "Over continents and oceans, the relative temperature conditions are:",
+              "options": [
+                "warmer in winter over land, colder in summer over sea",
+                "colder in winter over land, warmer in winter over sea",
+                "cold in winter over both land and sea",
+                "warmer in summer over land and sea"
+              ],
+              "answer": 1
+            }
+          ]
+          
+        
+      

@@ -1,0 +1,92 @@
+[
+    {
+      "question": "If an arriving aircraft is making a straight-in approach, a departing aircraft may take off in any direction",
+      "options": [
+        "Until five minutes before the arriving aircraft is estimated to be over the instrument runway",
+        "Until ten minutes before the arriving aircraft is estimated to be over the instrument runway",
+        "Until two minutes before the arriving aircraft is estimated to be over the instrument runway"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "For controlled traffic that shall be separated in the vicinity of an airport, separation minima may be reduced:",
+      "options": [
+        "At the discretion of the air traffic controller",
+        "When the commander in the following aircraft has the preceding aircraft in sight and is able to maintain own separation",
+        "If the commander of the involved aircraft so requests"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "At the commencement of final approach, if the controller possesses wind information in the form of components, significant changes in the mean surface wind direction and speed shall be transmitted to aircraft. The mean tailwind component significant change is:",
+      "options": [
+        "3 kt",
+        "4 kt",
+        "2 kt"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The EAT has to be transmitted to the pilot as soon as possible, in case the expected delay is:",
+      "options": [
+        "5 minutes or more",
+        "15 minutes or more",
+        "20 minutes"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A so-called \"Visual Approach\" can be performed:",
+      "options": [
+        "During VFR flight, there should be a visibility of 5 km or more",
+        "During IFR flights, if there is 1000 ft more than the appropriate DA or MDA for the procedure",
+        "During IFR flights if there is permanent sight on the movement area and the underlying ground"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "\"Time Approach Procedure\" is used as necessary to expedite the approach of a number of arriving aircraft. This will be obtained requesting aircraft:",
+      "options": [
+        "To maintain a specified speed during the approach procedure",
+        "To pass the specified point inbound at the previously notified time",
+        "To apply a step-down descent between aircraft in the approach sequence"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "During an arrival procedure under an IFR flight plan in VMC conditions, traffic avoidance is the responsibility of",
+      "options": [
+        "The radar controller",
+        "The pilot-in-command",
+        "The approach controller"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If the crew on an arriving aircraft approaching a controlled aerodrome will report \"field in sight\", a clearance for \"visual approach\" may be given under certain conditions",
+      "options": [
+        "The meteorological visibility must not be less than 8 km",
+        "The approach must be passing the FAF",
+        "The air traffic controller will provide separation to other controlled traffic"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which statement is correct? During a \"visual approach\" in controlled airspace (class C):",
+      "options": [
+        "ATC will apply separation with other traffic",
+        "The pilot has to apply separation with other traffic",
+        "ATC will apply separation with other arriving traffic"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "One-minute separation may be used between departing aircraft if they are to fly on tracks diverging by at least:",
+      "options": [
+        "30° immediately after take-off",
+        "15° immediately after take-off",
+        "45° immediately after take-off"
+      ],
+      "answer": 2
+    }
+  ]

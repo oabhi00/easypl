@@ -1,0 +1,452 @@
+[
+    {
+      "question": "A servo altimeter has a quoted accuracy of 1 bPa at mean sea level. The accuracy in the standard atmosphere is:",
+      "options": [
+        "± 50 ft at 10,000 ft and ± 100 ft at 40,000 ft",
+        "± 50 ft at 2,000 ft and ± 90 ft at the tropopause",
+        "± 27 ft at MSL and ± 50 ft at 10,000 ft"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Position error is caused by:",
+      "options": [
+        "Ground effect",
+        "Configuration of the aircraft",
+        "All of the above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Pressure error is maximum at:",
+      "options": [
+        "High speed and high altitude",
+        "Low level and high speed",
+        "As in and under ground effect"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A servo altimeter is more accurate than a conventional one because of:",
+      "options": [
+        "More accurate electrical servos",
+        "More accurate electrical pick-off coils",
+        "Less accurate electrical servos"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What will happen if an aircraft has two altimeters, one of which is compensated for position error, while the other is not?",
+      "options": [
+        "One will overread at high airspeed",
+        "One will underread at high airspeed",
+        "One will underread close to the ground"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The purpose of a standby static source is:",
+      "options": [
+        "To reduce position error",
+        "To be used in an emergency",
+        "Both a and b"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If the static source of an aircraft is blocked in an unpressurized aircraft, the correct action for the pilot will be:",
+      "options": [
+        "Break the glass of the altimeter",
+        "Break the glass of the VSI",
+        "Use the standby static source"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "White zebra crossing on the altimeter appears when:",
+      "options": [
+        "Aircraft is below MSA (Minimum Safe Altitude)",
+        "Aircraft is above 10,000 ft",
+        "Aircraft is below 10,000 ft"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When flying from a sector of warm air into one of colder air, the altimeter will:",
+      "options": [
+        "Underread",
+        "Overread",
+        "Show the actual height above ground"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Temperature error in an altimeter is caused by:",
+      "options": [
+        "Non-standard MSL temperature",
+        "Non-standard temperature lapse rate",
+        "Non-standard temperature at aircraft altitude"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A bimetallic strip in an altimeter is provided:",
+      "options": [
+        "To compensate for temperature error",
+        "To compensate for thermal expansion of mechanical linkages",
+        "To compensate for adiabatic rise in temperature"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Pressure error in an altimeter arises because:",
+      "options": [
+        "The true external dynamic pressure is not accurately transmitted to the instrument",
+        "The true external static pressure is not accurately transmitted to the instrument",
+        "The true external kinetic pressure is not accurately transmitted to the instrument"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In a non-pressurized aircraft, if one or several static pressure ports are damaged, there is an ultimate emergency means for restoring a practically correct static pressure intake:",
+      "options": [
+        "Breaking the rate-of-climb indicator glass window",
+        "Slightly opening a window to restore the ambient pressure in the cabin",
+        "Calculating the ambient static pressure, allowing for the altitude and QNH, adjusting the instruments"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The pressure altitude is the altitude corresponding:",
+      "options": [
+        "In ambient atmosphere, to the reference pressure Ps",
+        "In standard atmosphere, to the reference pressure Ps",
+        "In standard atmosphere, to the pressure Ps prevailing at this point"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The altimeter consists of several aneroid capsules located in a sealed casing. The pressure in the aneroid capsule (i) and casing (ii) are respectively:",
+      "options": [
+        "(i) static pressure at time t, (ii) static pressure at time t-1",
+        "(i) vacuum (or a very low pressure), (ii) static pressure",
+        "(i) static pressure, (ii) total pressure"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Altimeter gives height of aircraft with respect to:",
+      "options": [
+        "MSL",
+        "AGL",
+        "Set datum"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "We are maintaining a constant flight level. That means:",
+      "options": [
+        "The outside air pressure is constant if the temperature remains constant",
+        "The outside air pressure is constant",
+        "The altitude is constant when the sea-level pressure is constant"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The altitude indicated on board an aircraft flying in an atmosphere where all atmosphere layers below the aircraft are warm is:",
+      "options": [
+        "The same as the real altitude",
+        "Higher than the real altitude",
+        "Equal to the standard altitude"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In case of accidental closing of an aircraft's left static pressure port, the altimeter:",
+      "options": [
+        "Overreads in sideslip to the left, correct during symmetric flight",
+        "Keeps providing reliable readings in all situations",
+        "Underreads the altitude"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The altimeter is fed by:",
+      "options": [
+        "Differential pressure",
+        "Dynamic pressure",
+        "Static pressure"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The advantage of a sensitive altimeter over a service altimeter is:",
+      "options": [
+        "It does not form lag error",
+        "Instrument error is really eliminated",
+        "It can be used up to higher altitude"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The error in altimeter readings caused by the variation of the static pressure near the source is known as:",
+      "options": [
+        "Position pressure error",
+        "Barometric error",
+        "Hysteresis effect"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If the static source of an altimeter becomes blocked during a descent, the instrument will:",
+      "options": [
+        "Under-read",
+        "Gradually indicate zero",
+        "Continue to display the reading at which the blockage occurred"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The primary factor which makes the servo-assisted altimeter more accurate than the simple pressure altimeter is the use of:",
+      "options": [
+        "An induction pick-off device",
+        "More effective temperature compensating leaf springs",
+        "Combination of counters/pointers"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "At sea level, on a typical servo altimeter, the tolerance in feet from indicated must not exceed:",
+      "options": [
+        "± 30 ft",
+        "± 75 ft",
+        "± 60 ft"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft is flying straight and level, over a warm air mass. The altimeter reading will be:",
+      "options": [
+        "Greater than the real height",
+        "Less than the real height",
+        "Correct"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When flying from a sector of warm air into one of colder air, the altimeter will:",
+      "options": [
+        "Be just as correct as before",
+        "Underread",
+        "Overread"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The hysteresis error of an altimeter varies substantially with the:",
+      "options": [
+        "Aircraft altitude",
+        "Time passed at a given altitude",
+        "Mach number of the aircraft"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A pilot is given a QNH of 1003 hPa while coming in to land. He forgets to reset his altimeter. The error experienced will be:",
+      "options": [
+        "Pilot error",
+        "Pressure error",
+        "Barometric error"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "For an altimeter, pressure fluctuations at the static vent cause:",
+      "options": [
+        "Barometric error",
+        "Position error",
+        "Hysteresis error"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An aircraft is passing 6,500 ft in a descent when the static line becomes blocked. The altimeter then reads:",
+      "options": [
+        "Less than 6,500 ft",
+        "Zero",
+        "6,500 ft"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The purpose of the vibrating device of an altimeter is to:",
+      "options": [
+        "Allow damping of the measurement",
+        "Reduce the hysteresis effect",
+        "Reduce the effect of friction in the linkages"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Lag error in a servo-assisted altimeter is virtually removed by:",
+      "options": [
+        "Electromechanical pick-off device",
+        "Rocking mechanism",
+        "Using more than one capsule in series"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A transducer in a servo-assisted altimeter is used to:",
+      "options": [
+        "Increase sensitivity of the altimeter",
+        "Remove lag error",
+        "All of the above"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In an aircraft, a static source placed where it is subjected to dynamic pressure causes:",
+      "options": [
+        "No error",
+        "Position error",
+        "Dynamic pressure error"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The principle of operation of a servo-assisted pressure altimeter is that:",
+      "options": [
+        "Static pressure is used in the same way as a simple altimeter except that several capsules are used",
+        "Static pressure changes are converted via an E- and I-bar transducer into electrical signals moving a digital counter and pointer",
+        "Static pressure enters an aneroid capsule causing it to expand"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When flying from low pressure to high pressure, the barometric error of an altimeter will cause the instrument to:",
+      "options": [
+        "Indicate a higher altitude than the correct one",
+        "Underread the true altitude",
+        "Indicate the true altitude"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What will happen to the altimeter reading in a right sideslip, if an aircraft has a static vent at each side but the left one is blocked?",
+      "options": [
+        "Overread",
+        "Underread",
+        "No change"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A barometric altimeter comprises:",
+      "options": [
+        "An aneroid capsule sensing static pressure",
+        "An aneroid capsule sensing pitot pressure",
+        "A differential capsule sensing pitot and static pressures"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What will happen to the altimeter reading in a right sideslip if the right static vent is blocked?",
+      "options": [
+        "Overread",
+        "Underread",
+        "No change"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The altimeter of an aircraft with a static pressure source on each side of the fuselage will, if one becomes blocked:",
+      "options": [
+        "Overread when sideslipping",
+        "Overread when sideslipping towards the blocked source",
+        "Overread when sideslipping towards the clear source"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A servo altimeter is ... because it employs an electrical pick-off:",
+      "options": [
+        "More accurate because",
+        "Less accurate because",
+        "Less reliable because"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What will happen to the altimeter reading if an aircraft flying at a fixed heading meets a colder air mass?",
+      "options": [
+        "Read less than true altitude",
+        "Read more than true altitude",
+        "Read zero"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "From where does the ADC obtain altitude data?",
+      "options": [
+        "Radio altimeter",
+        "OAT sources",
+        "Barometric altitude source"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If icing or debris causes pressure disturbances at the static source, the effect will be:",
+      "options": [
+        "Increased compressibility error",
+        "Increased instrument error",
+        "Increased position error"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In a barometric altimeter, ... is fed into the capsule and ... is fed into the case:",
+      "options": [
+        "Static pressure, dynamic pressure",
+        "Vacuum, static pressure",
+        "Dynamic pressure, vacuum"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If the static pressure source in an unpressurized aircraft becomes blocked, the altimeter would ... but might be rectified by:",
+      "options": [
+        "Read zero, break the altimeter glass",
+        "Read zero, open the windows",
+        "Freeze, break the VSI glass"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If the pitot source becomes blocked, the barometric altimeter will:",
+      "options": [
+        "Freeze",
+        "Read zero",
+        "Be unaffected"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If the static vent becomes partly blocked in a descent, the indications will:",
+      "options": [
+        "Be too high when descending but correct when at constant altitude",
+        "Be too high when descending but correct when at constant height",
+        "Be too low when descending but correct when at constant altitude"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A vibrator is sometimes fitted in an altimeter to:",
+      "options": [
+        "Overcome gauge parallax error",
+        "Reduce instrument error",
+        "Reduce sensing error"
+      ],
+      "answer": 1
+    }
+  ]

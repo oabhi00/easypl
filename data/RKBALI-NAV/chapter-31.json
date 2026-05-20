@@ -1,0 +1,160 @@
+[
+    {
+      "question": "An aeroplane's RMI shows an indication of 070°, wind calm. The aeroplane is to join a right-hand holding pattern at the NDB, the inbound leg of which is 330°. The aeroplane should:",
+      "options": [
+        "fly to the NDB and join the pattern.",
+        "fly to the NDB then fly a teardrop with an outbound heading of 120° for 1 minute and a rate one turn to join inbound.",
+        "fly to the NDB then fly outbound on 150° for 1 minute, then turn left to point directly at the NDB joining the pattern overhead."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A/C heading 170° (M). ADF reading 345° Relative. Make 45° intercept of 355° track. What are the Outbound/Inbound headings?",
+      "options": [
+        "310° / 175°",
+        "135° / 040°",
+        "130° / 045°"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft heading 040° (M) has an ADF reading of 060° Relative, is to intercept the 120° (M) track inbound to an NDB at 50°. The relative bearing of the NDB that confirms track interception is:",
+      "options": [
+        "080° Relative",
+        "060° Relative",
+        "050° Relative"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft heading 135° (M) with 13° Right drift intercepts the 082° (M) track outbound from an NDB. The relative bearing of the NDB that confirms track interception is:",
+      "options": [
+        "132° Relative",
+        "137° Relative",
+        "127° Relative"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft heading 200° (M) has an ADF reading of 160° Relative. The heading to steer to intercept the 150° track outbound from the NDB at 30° is:",
+      "options": [
+        "130° (M)",
+        "120° (M)",
+        "140° (M)"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A/C position 41° N 81° W, QDM = 173° from a G/S (VOR) at 59° N 84° W, Var at G/S = 3°E, Var at a/c position = 6°E. Find BTP on Lambert chart.",
+      "options": [
+        "QDM = 173°, QTE = 356°",
+        "QDM = 173°, QTE = 176°",
+        "QDM = 173°, QTE = 266°"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A/C true bearing from station is 050° in NH. CA = 5°. Find BTP on Mercator chart.",
+      "options": [
+        "055°",
+        "045°",
+        "065°"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "QTE = 240° in NH, CA = 10°. Find BTP on Mercator chart.",
+      "options": [
+        
+        "250°",
+        "220°","230°"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "QTE = 320° in SH, CA = 8°. Find BTP on Mercator chart.",
+      "options": [
+        "318°",
+        "328°",
+        "338°"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "ADF RMI = 240° in NH, Var = 10° W, CA = 5°. Find BTP on Mercator chart.",
+      "options": [
+        "055°",
+        "065°",
+        "050°"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "RMI = 055° in NH, Var 5° E, CA = 10°. Find BTP on Mercator chart.",
+      "options": [
+        "210°",
+        "230°",
+        "250°"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "VOR RMI = 120° in SH, Var at a/c = 5° E, Var at G/S = 10° E, CA = 7°. Find BTP on Mercator chart.",
+      "options": [
+        "317°",
+        "307°",
+        "327°"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A/C magnetic bearing to VOR = 310°, position 30°S 45°45'E, station at 19°20'S 30°30'E, Mean variation = +10°. Find BTP on Mercator chart.",
+      "options": [
+        
+        "124°",
+        "144°","134°"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "LSR = 198°, QC = +2°, Hdg(T) = 210°, CA = 5°, in Southern Hemisphere. Find BTP on Mercator chart.",
+      "options": [
+        "235°",
+        "225°",
+        "245°"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "LSR = 301° in SH, QC = -1°, Hdg(T) = 120°, CA = 10°. Find BTP on Mercator chart.",
+      "options": [
+        "250°",
+        "240°",
+        "260°"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Aircraft tracking into a NDB heading 040°(M), asked to track radial 210°. Intercept angle 30°. Initial heading and ADF reading after intercept?",
+      "options": [
+        "020° / 010°",
+        "060° / 330°",
+        "070° / 320°"
+      ],
+      "answer": 1
+    },
+    {
+        "question":"An a/c hdg 130 deg(M) has an ADF redaing of 190 deg relative is to intercept the 170 deg(M) track outbound from an NDB at 30 deg intercept angle,the relative bearing of the NDB that confirms track interception is:",
+        "options":["150° Relative","160° Relative","140° Relative"],
+        "answer":0
+    },
+    {
+      "question": "Aircraft inbound to NDB on 040°(M), asked to intercept and proceed outbound on 330°(M) with 40° intercept angle. New heading?",
+      "options": [
+        "290°(M)",
+        "010°(M)",
+        "030°(M)"
+      ],
+      "answer": 1
+    }
+  ]

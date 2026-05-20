@@ -1,0 +1,321 @@
+[
+    {
+      "question": "The TAF has been issued on ........... day",
+      "options": ["23rd", "18th", "24th"],
+      "answer": 2,
+      "image": "../image/a3.png"
+    },
+    {
+      "question": "The TAF has been issued at",
+      "options": ["2330 IST", "1830 UTC", "24 UTC"],
+      "answer": 0,
+      "image": "../image/a3.png"
+    },
+    {
+      "question": "The expected surface wind speed is",
+      "options": ["09 kt", "06 kt", "08 kt"],
+      "answer": 2,
+      "image": "../image/a3.png"
+    },
+    {
+      "question": "Initially expected wind direction is",
+      "options": ["120°", "090°", "050°"],
+      "answer": 1,"image": "../image/a3.png"
+    },
+    {
+      "question": "TAF is valid for date",
+      "options": ["23rd", "24th", "25th"],
+      "answer": 2,"image": "../image/a3.png"
+    },
+    {
+      "question": "Lowest forecast visibility in TAF is",
+      "options": ["1500m", "0800m", "0200m"],
+      "answer": 1,"image": "../image/a3.png"
+    },
+    {
+      "question": "Height of base of lowest clouds in TAF is",
+      "options": ["1000 m", "1000 ft", "0800 ft"],
+      "answer": 2,"image": "../image/a3.png"
+    },
+    {
+      "question": "Weather TSRA is expected after",
+      "options": ["0600 UTC", "0600 IST", "0800 UTC"],
+      "answer": 0,"image": "../image/a3.png"
+    },
+    {
+      "question": "Direction of gusty wind is",
+      "options": ["090°", "100°", "120°"],
+      "answer": 2,"image": "../image/a3.png"
+    },
+    {
+      "question": "Expected weather up to 25/0400UTC is",
+      "options": ["Fog", "TSRA", "Mist"],
+      "answer": 0,"image": "../image/a3.png"
+    },
+    {
+      "question": "Amount of lowest cloud is",
+      "options": ["1-2/8", "3-4/8", "5-7/8"],
+      "answer": 1,"image": "../image/a3.png"
+    },
+    {
+      "question": "Amount of CB cloud is",
+      "options": ["1-2/8", "2-4/8", "5-7/8"],
+      "answer": 0,"image": "../image/a3.png"
+    },
+    {
+      "question": "Height of base of CB is",
+      "options": ["2500 ft", "3000 m", "2500 m"],
+      "answer": 0,"image": "../image/a3.png"
+    },
+    {
+      "question": "Height of topmost layer of cloud is",
+      "options": ["2800 m ", "28000 m","28000 ft"],
+      "answer": 2,"image": "../image/a3.png"
+    },
+    {
+      "question": "Period of validity of TAF is",
+      "options": ["23 to 00 IST","00 to 09 UTC","20 to 12 UTC"],
+      "answer": 1,"image": "../image/a3.png"
+    },
+    {
+      "question": "Group 1500/1509 in a TAF indicate",
+      "options": ["TAF is issued on 15th at 0000 UTC","TAF is valid from 15th 0000 to 0900 UTC","TAF is valid from 1500 to 0900 UTC"],
+      "answer": 1,"image": "../image/a3.png"
+    },
+    {
+      "question": "What is true of a TAF",
+      "options": ["9 hr TAF is for international dissemination","TAF valid for 9 hr is issued every 6 hr","TAF valid for 12-30 hr is issued every 3 hr","TAF for national use are valid for 9 hr and issued every 3 hr"],
+      "answer": 3
+    },
+    {
+      "question": "Time of issue of ROFOR is",
+      "options": ["0610 UTC","0000 IST","0000 UTC"],
+      "answer": 2,"image": "../image/a4.png"
+    },
+      {
+        "question": "Period of validity of ROFOR is",
+        "options": [
+          "(a) 0000 to 0000 IST",
+          "(b) 0600 to 0100 IST",
+          "(c) 0600 to 1000 UTC"
+        ],
+        "answer": 2,"image": "../image/a4.png"
+      },
+      {
+        "question": "Wind speed in ROFOR is in",
+        "options": [
+          "(a) KT",
+          "(b) MPS",
+          "(c) KMH"
+        ],
+        "answer": 0,"image": "../image/a4.png"
+      },
+      {
+        "question": "Base of CB cloud is",
+        "options": [
+          "(a) 300 m",
+          "(b) 300 ft",
+          "(c) 3000 ft"
+        ],
+        "answer":2,"image": "../image/a4.png"
+      },
+      {
+        "question": "Height of Freezing level?",
+        "options": [
+          "(a) 1700 m",
+          "(b) 17,000 ft",
+          "(c) 1.7 km"
+        ],
+        "answer": 1,"image": "../image/a4.png"
+      },
+      {
+        "question": "Icing group in the ROFOR is",
+        "options": [
+          "(a) 7//170",
+          "(b) 621800",
+          "(c) 54//609"
+        ],
+        "answer": 1,"image": "../image/a4.png"
+      },
+      {
+        "question": "Type of Icing?",
+        "options": [
+          "(a) Nil",
+          "(b) Light",
+          "(c) Light icing in cloud"
+        ],
+        "answer":2,"image": "../image/a4.png"
+      },
+      {
+        "question": "Indicator figure for turbulence group in the ROFOR is",
+        "options": [
+          "(a) 7",
+          "(b) 6",
+          "(c) 5"
+        ],
+        "answer": 2,"image": "../image/a4.png"
+      },
+      {
+        "question": "Height at which Icing is expected?",
+        "options": [
+          "(a) 21,000 ft",
+          "(b) 18,000 m",
+          "(c) 15,000 ft"
+        ],
+        "answer": 1,"image": "../image/a4.png"
+      },
+      {
+        "question": "Thickness of Icing is expected to be?",
+        "options": [
+          "(a) 300 m",
+          "(b) 600 m",
+          "(c) Up to Cloud Top"
+        ],
+        "answer": 2,"image": "../image/a4.png"
+      },
+      {
+        "question": "Height at which Turbulence is expected?",
+        "options": [
+          "(a) 15,000 ft",
+          "(b) 5,000 ft",
+          "(c) 12,000 ft"
+        ],
+        "answer":0,"image": "../image/a4.png"
+      },
+      {
+        "question": "Thickness of turbulence expected is?",
+        "options": [
+          "(a) 2000 ft",
+          "(b) 300 m",
+          "(c) Up to Top of cloud"
+        ],
+        "answer": 1,"image": "../image/a4.png"
+      },
+      {
+        "question": "Wind at 5000 ft expected is?",
+        "options": [
+          "(a) 280/10 kt",
+          "(b) 280/15 kt",
+          "(c) 280/20 kt"
+        ],
+        "answer": 1,"image": "../image/a4.png"
+      },
+      {
+        "question": "Wind at 20000 ft expected is?",
+        "options": [
+          "(a) 270/45 kt",
+          "(b) 270/40 KMH",
+          "(c) 270/40 kt"
+        ],
+        "answer": 0,"image": "../image/a4.png"
+      },
+        {
+          "question": "Temperature at 20000 ft expected is?",
+          "options": [
+            "(a) -05 °C",
+            "(b) 05 °C",
+            "(c) 268 K"
+          ],
+          "answer": 0,"image": "../image/a4.png"
+        },
+        {
+          "question": "Temperature at 40,000 ft expected is?",
+          "options": [
+            "(a) -45 °C",
+            "(b) -41 °C",
+            "(c) 233 K"
+          ],
+          "answer":1,"image": "../image/a4.png"
+        },
+        {
+          "question": "Date of issue of forecast is?",
+          "options": [
+            "(a) 10",
+            "(b) 01",
+            "(c) 02"
+          ],
+          "answer": 1,"image": "../image/a4.png"
+        },
+        {
+          "question": "Indicator group for Jet stream in ROFOR is",
+          "options": [
+            "(a) 22222",
+            "(b) 11111",
+            "(c) 11111"
+          ],
+          "answer": 1,"image": "../image/a4.png"
+        },
+        {
+          "question": "Indicator group for Maximum Wind in ROFOR is",
+          "options": [
+            "(a) 22222",
+            "(b) 11111",
+            "(c) 11111"
+          ],
+          "answer": 0,"image": "../image/a4.png"
+        },
+        {
+          "question": "Maximum Wind speed expected is",
+          "options": [
+            "(a) 120 kt",
+            "(b) 130 kt",
+            "(c) 140 kt"
+          ],
+          "answer": 2,"image": "../image/a4.png"
+        },
+        {
+          "question": "Maximum Wind speed expected at height",
+          "options": [
+            "(a) 40000 ft",
+            "(b) 36000 ft",
+            "(c) 38000 ft"
+          ],
+          "answer": 1,"image": "../image/a4.png"
+        },
+        {
+          "question": "Jet stream is expected at Lat/Long",
+          "options": [
+            "(a) 27 N/70 E",
+            "(b) 28 N/75 E",
+            "(c) 25 N/70 E"
+          ],
+          "answer": 2,"image": "../image/a4.png"
+        },
+        {
+          "question": "Vertical Wind Shear per 300 m expected is",
+          "options": [
+            "(a) 25 kt",
+            "(b) 30 kt",
+            "(c) 35 kt"
+          ],
+          "answer": 0,"image": "../image/a4.png"
+        },
+        {
+          "question": "Jet stream core speed is expected to be",
+          "options": [
+            "(a) 125 kt",
+            "(b) 130 kt",
+            "(c) 140 kt"
+          ],
+          "answer": 1,"image": "../image/a4.png"
+        },
+        {
+          "question": "Jet stream is expected at a height of",
+          "options": [
+            "(a) 40,000 ft",
+            "(b) 35,000 ft",
+            "(c) 38,000 ft"
+          ],
+          "answer": 2,"image": "../image/a4.png"
+        },
+        {
+          "question": "Wind at 40,000 ft expected is?",
+          "options": [
+            "(a) 270/105 kt",
+            "(b) 270/115 KMH",
+            "(c) 270/140 kt"
+          ],
+          "answer": 0,"image": "../image/a4.png"
+        }
+      ]
+  

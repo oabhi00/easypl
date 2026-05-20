@@ -1,0 +1,123 @@
+[
+    {
+      "question": "The cloud in grid square M11 is most likely to be:",
+      "options": ["cirrus", "nimbostratus", "altocumulus", "stratus fractus"],
+      "answer": 2, "image":"../image/chapter18-1.png"
+    },
+    {
+      "question": "Precipitation will reach the ground mainly in the area:",
+      "options": ["L14 - R14", "Q14 - S14", "O14 - T14", "J14 - O14"],
+      "answer": 3, "image":"../image/chapter18-1.png"
+    },
+    {
+      "question": "In grid square M6 the worst cloud conditions for flying could be:",
+      "options": [
+        "altocumulus",
+        "cumulonimbus embedded in nimbostratus",
+        "cumulonimbus",
+        "nimbostratus"
+      ],
+      "answer": 1, "image":"../image/chapter18-1.png"
+    },
+    {
+      "question": "Which of the conditions below would lead to the worst icing condition:\nSize of Drop      Ambient Temperature",
+      "options": [
+        "2 mm  -30°C",
+        "1 mm  -1°C",
+        "5 mm  -4°C",
+        "3 mm  -12°C"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Refer to Appendix ‘B’. In a warm occlusion flying at 20 000’ where will the most turbulence be found?",
+      "options": ["A", "B", "C", "A and C"],
+      "answer": 1, "image":"../image/chapter18-2.png"
+    },
+    {
+      "question": "Refer to Appendix ‘C’. Which area will get the most rain at the surface?",
+      "options": ["A", "B", "C", "D"],
+      "answer": 2, "image":"../image/chapter18-3.png"
+    },
+    {
+      "question": "Refer to Appendix ‘D’. What type of cloud will be found at X?",
+      "options": ["CS", "NS", "SC", "CB"],
+      "answer": 0, "image":"../image/chapter18-4.png"
+    },
+    {
+      "question": "Refer to Appendix ‘D’. What type of cloud is most likely at Z?",
+      "options": ["CU", "CB", "AS", "NS"],
+      "answer": 1, "image":"../image/chapter18-4.png"
+    },
+    {
+      "question": "After passage of an occluded front in the Northern Hemisphere:\nWind  Temperature  Precipitation",
+      "options": [
+        "backs  stops falling  continues",
+        "veers  drops rapidly  stops abruptly",
+        "veers  drops or rises  begins to dry up",
+        "backs  rises quickly  increases in strength"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "With a cold occlusion:",
+      "options": [
+        "the air ahead of the warm front is colder than the air behind the cold front",
+        "the warm sector remains on the surface",
+        "the cloud type is predominantely layer with a wide precipitation band",
+        "there is a risk of CB embedded in NS"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Refer to Appendix ‘A’. The front at P14 is:",
+      "options": ["cold", "warm", "warm at an occlusion", "cold at an occlusion"],
+      "answer": 3, "image":"../image/chapter18-1.png"
+    },
+    {
+      "question": "Refer to Appendix ‘B’. The relative temperatures at A, B, and C could be respectively:",
+      "options": ["+6 +8 +10", "+6 +10 +8", "+8 +10 +8", "+10 +6 +8"],
+      "answer": 3, "image":"../image/chapter18-2.png"
+    },
+    {
+      "question": "Refer to Appendix ‘B’. Precipitation at the surface underneath B is likely to be:",
+      "options": [
+        "Light drizzle",
+        "Continuous moderate",
+        "Showers, heavy with the possibility of hail",
+        "Nil"
+      ],
+      "answer": 2,"image":"../image/chapter18-2.png"
+    },
+    {
+      "question": "Refer to Appendix ‘B’. Flight conditions at B are likely to be:",
+      "options": [
+        "smooth and clear",
+        "layerd clouds with only light turbulence",
+        "some turbulence in NS with the possibility of embedded CB giving moderate/severe turbulence",
+        "flight in CU, CB with some turbulence"
+      ],
+      "answer": 2, "image":"../image/chapter18-2.png"
+    },
+    {
+      "question": "When flying from west to east through a cold occlusion (below the warm air) over the North Atlantic you would expect the wind to ____ and the temperature to ____",
+      "options": [
+        "veer / decrease",
+        "back / increase",
+        "back / decrease",
+        "veer / increase"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A warm occlusion occurs when:",
+      "options": [
+        "warm air is forcing cool air over cold air",
+        "cold air is forcing cool air over warm air",
+        "cool air is forcing warm air over cold air",
+        "cool air is forcing cold air aloft"
+      ],
+      "answer": 2
+    }
+  ]
+  

@@ -1,0 +1,42 @@
+[
+    {
+      "question": "A primary radar has a pulse repetition frequency of 275 pps. The time interval between the leading edges of successive pulses is:",
+      "options": [
+        "3.64 milliseconds",
+        "36.4 milliseconds",
+        "3.64 microseconds",
+        "36.4 microseconds"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A primary radar system has a pulse repetition frequency of 450 pps. Ignoring pulse width and flyback at the CRT, the maximum range of the radar would be:",
+      "options": [
+        "333 NM",
+        "180 NM",
+        "666 NM",
+        "360 NM"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The frequency band and rate of scan of Airfield Surface Movement radars are:",
+      "options": [
+        "SHF; 60 rpm",
+        "SHF; 200 rpm",
+        "EHF; 100 rpm",
+        "EHF; 10 rpm"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A ground based radar with a scanner rotation of 60 rpm, a beamwidth in the order of 0.5° and a PRF of 10 000 pps would be:",
+      "options": [
+        "an Airfield Surface Movement Indicator with a theoretical range of 8 NM",
+        "a Precision Approach Radar",
+        "an Airfield Surface Movement Indicator with a theoretical range of 16 NM",
+        "a high resolution Surveillance Approach Radar"
+      ],
+      "answer": 0
+    }
+  ]

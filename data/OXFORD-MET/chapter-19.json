@@ -1,0 +1,123 @@
+[
+    {
+      "question": "A thermal depression is likely to form:",
+      "options": [
+        "over the Iberian peninsula during the summer",
+        "in the lee of the Alps over northern Italy in winter",
+        "in association with a marked trough of low pressure over the USA",
+        "on the trailing edge of a warm sector mid latitude depression"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Tropical revolving storms usually:",
+      "options": [
+        "form close to one side of the Equator and while moving slowly in a westerly direction, cross over to the other hemisphere",
+        "move in a westerly direction before recurving towards the Equator",
+        "move in an easterly direction before recurving towards the nearest pole",
+        "do not form within 5° of the Equator"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "With reference to tropical revolving storms, which of the following statements is correct?",
+      "options": [
+        "Typhoons are found in the South China sea in January",
+        "Cyclones occur in the Bay of Bengal in winter",
+        "Hurricanes in the South Atlantic sometimes affect the east coast of Brazil",
+        "Hurricanes affect the southeast of the USA in late summer"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which of the following statements accurately describes the “West African tornado”?",
+      "options": [
+        "The West African tornado is similar to the North American and European tornadoes",
+        "It is a line of thunderstorms producing a line squall aligned roughly north/south",
+        "It is another name for the cyclones that affect the West African coast in summer",
+        "It is the name given to a line of thunderstorms that lie along the ITCZ but some 200 miles to the south"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Extensive cloud and precipitation is often associated with a non-frontal thermal depression because of:",
+      "options": [
+        "surface divergence and upper level convergence causing widespread descent of air in the depression",
+        "surface convergence and upper level divergence causing widespread descent of air in the depression",
+        "surface convergence and upper level divergence causing widespread ascent of air in the depression",
+        "surface divergence and upper level convergence causing widespread ascent of air in the depression"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In comparison with a primary depression a secondary depression is:",
+      "options": [
+        "always more active",
+        "sometimes more active",
+        "never more active",
+        "unlikely to produce gale force winds"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A secondary depression would form in association with:",
+      "options": [
+        "a polar depression",
+        "a col",
+        "a summer thermal depression over the Mediterranean or Caspian Sea",
+        "a polar front low"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Tropical revolving storms:",
+      "options": [
+        "are always given a male first name beginning with “A” for the first of the season and thereafter named in alphabetical order of occurrence",
+        "have internal wind speeds of 10-20 knots rotating cyclonically around a subsiding clear air core known as the eye",
+        "usually have the most severe weather in the quadrant to the right of the track in a hurricane",
+        "regenerate after crossing the coast from sea to land"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following are thermal depressions?",
+      "options": [
+        "Tropical revolving storms, polar air depressions, tornadoes",
+        "The equatorial trough, monsoon lows, some depressions over the central and eastern Mediterranean sea in summer",
+        "The equatorial trough, polar air depressions, monsoon lows, orographic lows",
+        "The lows forming over flat land in summer, polar air depressions, tropical revolving storms, some of the lows which form over inland seas in winter"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "A secondary low pressure system rotates around a primary low:",
+      "options": [
+        "cyclonically",
+        "anticyclonically",
+        "into the primary",
+        "at a constant distance"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Flying conditions in a secondary low pressure system are:",
+      "options": [
+        "always more severe than in a primary low",
+        "sometimes more severe than in a primary low",
+        "less severe than in a primary low",
+        "relatively calm"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Tropical revolving storms:",
+      "options": [
+        "do not occur in the South Atlantic",
+        "generally move from east to west before turning towards the Equator",
+        "intensify after crossing coasts",
+        "occur principally in spring and early summer"
+      ],
+      "answer": 0
+    }
+  ]
+  

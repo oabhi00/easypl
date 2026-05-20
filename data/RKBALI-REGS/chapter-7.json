@@ -1,0 +1,110 @@
+[
+    {
+      "question": "When instructed by ATC to hold short of the runway, the pilot should stop:",
+      "options": [
+        "With nose gear on the hold line",
+        "So that no part of the aircraft extends beyond the hold line",
+        "So that the flight deck area of the aircraft is even with the hold line"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The following aircraft will be given priority to land:",
+      "options": [
+        "An aircraft with a VIP on board",
+        "An aircraft with a critical shortage of fuel",
+        "A scheduled aircraft"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Apron is an area on an aerodrome where the following activities take place:",
+      "options": [
+        "Loading/unloading of passengers, mail, and cargo only",
+        "Parking of aircraft only",
+        "Loading/unloading of passengers, mail, and cargo, fueling, parking, or maintenance"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "For safety reasons, a person should remain away from a jet engine by at least:",
+      "options": [
+        "100 ft",
+        "200 ft",
+        "300 ft"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Movement area of an aerodrome constitutes the following:",
+      "options": [
+        "Area including runways and taxiways, excluding apron",
+        "Area excluding taxiways but including runways and apron",
+        "Area including runways, taxiways, and aprons"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The manoeuvring area of an airport is that area:",
+      "options": [
+        "Normally referred to as the ramp or apron",
+        "Used for taxiing, taking off, and landing",
+        "Used when taxiing to and from the parking area"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An aircraft shall report \"long final\" when it is at ______ from the approach end of the runway:",
+      "options": [
+        "8 NM",
+        "4 NM",
+        "1 NM"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What defines a controlled aerodrome?",
+      "options": [
+        "It must be located within a CTR",
+        "It must have a control tower giving an ATC service",
+        "It must have a control tower and be in a CTR"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Aerodrome traffic is considered to be:",
+      "options": [
+        "Aircraft on the movement area and flying in the vicinity",
+        "Aircraft on the manoeuvring area and flying in the vicinity",
+        "Aircraft on the movement area only"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Aircraft shall not be held closer to a runway-in-use:",
+      "options": [
+        "Than at a runway-holding position",
+        "Than at the runway edge",
+        "Than at 40 m from the runway edge"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Friction coefficient due to snow - in how many segments is the runway divided based on friction level?",
+      "options": [
+        "1/2",
+        "1/3",
+        "1/4"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Runway friction coefficient 0.20 means estimated surface friction:",
+      "options": [
+        "Good",
+        "Medium to good",
+        "Poor"
+      ],
+      "answer": 2
+    }
+]

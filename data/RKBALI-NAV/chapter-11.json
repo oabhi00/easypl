@@ -1,0 +1,542 @@
+[
+    {
+      "question": "Total Air Temp is always... than Static Air Temp and the difference varies with...",
+      "options": [
+        "warmer, altitude.",
+        "warmer, TAS.",
+        "colder, CAS."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Cruising at FL.390, M.84 is found to give a TAS of 499kt. The ISA deviation at this level will be:",
+      "options": [
+        "+19.",
+        "+15.5.",
+        "-19."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In An Air Data Computer (ADC), airplane altitude is calculated from:",
+      "options": [
+        "Measurement of outside air temperature (OAT)",
+        "The difference between absolute and dynamic pressure at the fuselage",
+        "Measurement of absolute barometric pressure from a static source on the fuselage"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "M: Mach number Ts: static temperature Tt: total temperature\nWhich of the following statements is correct?",
+      "options": [
+        "Ts = Tt /(1+0.2M)",
+        "Ts = Tt x (0.2M*)",
+        "Ts = Tt x (1+0.2M*)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The difference between static air temperature and total air temperature is known as:",
+      "options": [
+        "hot ramp radiation",
+        "corrected outside air temperature",
+        "the ram rise"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An Air Data Computer (ADC):",
+      "options": [
+        "transforms air data measurements into electric impulses driving servo motors in instruments",
+        "is an auxiliary system that provides altitude information in the event that the static source is blocked",
+        "measures position error in the static system and transmits this information to ATC to provide correct altitude reporting"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A/C is flying at TAS = 520 Kts. SAT is - 20° C. Find TAT.",
+      "options": [
+        "15.64°C",
+        "-64.36°C",
+        "32.82°C"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "TAT = - 25°. SAT = - 35°. Find TAS.",
+      "options": [
+        "156.2 Kts.",
+        "275.4 Kts.",
+        "387.9 Kts."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A/C is flying at TAS = 400 Kts. SAT = - 23°. Find Dynamic rise in temperature.",
+      "options": [
+        "-44.09° C",
+        "11.56° C",
+        "21.09° C"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Total air temp is ... than SAT by an amount which is proportional to ...",
+      "options": [
+        "Higher, CAS",
+        "Higher, TAS",
+        "Higher, LSS"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A temperature sensor having a recovery factor of 0.75 indicates 30° C. Static Air Temperature (SAT) is 25° C. How high is the Ram-rise?",
+      "options": [
+        "6.7° C.",
+        "5° C.",
+        "18.8° C."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If pressure altitude is 30000 ft amsl and mach number is 0.84 what is the ISA temperature?",
+      "options": [
+        "-44.9°C.",
+        "-10°C.",
+        "-54.9°C."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If indicated TAT is -10°C, pressure altitude is 30000 ft. amsl, and mach number is 0.84, what is the temperature deviation?",
+      "options": [
+        "4°C.",
+        "-4°C.",
+        "0°C."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If pressure altitude is 40,000 ft. amsl, indicated TAT is -29°C what is the mach number assuming ISA conditions?",
+      "options": [
+        "0.7.",
+        "0.75.",
+        "0.8."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If mach number is 0.88 and TAT is -4°C, what is the pressure altitude in the international standard atmosphere?",
+      "options": [
+        "22000 ft.",
+        "28000 ft.",
+        "26000 ft."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If pressure altitude is 30000 ft., indicated TAT is -10°C, mach number is 0.82, what is the density altitude?",
+      "options": [
+        "31000 ft.",
+        "30382 ft.",
+        "30674 ft."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "FL 350, Mach 0.80, OAT -55°C. Calculate the values for TAS and local speed of sound (LSS)?",
+      "options": [
+        "460 kt, LSS 575 kt.",
+        "465 kt, LSS 575 kt.",
+        "460 kt, LSS 567 kt."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "TAS = 485 kt, OAT = ISA +10°C, FL 410. Calculate the Mach number?",
+      "options": [
+        "0.852.",
+        "0.833.",
+        "0.825."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "TAS 487kt, FL 330, Temperature ISA + 15. Calculate the MACH number?",
+      "options": [
+        "0.81.",
+        "0.83.",
+        "0.79."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "M 0.80, OAT -50°C, FL 330, GS 490 kt, VAR 20°W, Magnetic heading 140°, drift is 11° right. Calculate the true W/V?",
+      "options": [
+        "020°(T) / 95 kts.",
+        "020°(T) / 80 kts.",
+        "025°(T) / 90 kts."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "FL250, OAT -15°C, TAS 250 kt. Calculate the Mach No.?",
+      "options": [
+        "0.45.",
+        "0.40.",
+        "0.38."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "IAS 120 kt, FL. 80, OAT +20°C. What is the TAS?",
+      "options": [
+        "141 kts.",
+        "135 kts.",
+        "144 kts."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "FL120, OAT is ISA standard, CAS is 200 kt, Track is 222°(M), Heading is 215°(M), Variation is 15°W. time to fly 105 NM is 21 MIN. what is the W/V?",
+      "options": [
+        "050°(T) / 75 kt.",
+        "050°(T) / 70 kt.",
+        "050°(T) / 50 kt."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What corrections must be applied to indicated airspeed to produce true airspeed?",
+      "options": [
+        "Correction for altitude and wind.",
+        "Correction for altitude and temperature.",
+        "Correction for heading and altitude."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "EAS is?",
+      "options": [
+        "CAS corrected for adiabatic compression.",
+        "IAS corrected for adiabatic compression.",
+        "IAS corrected for pressure sensing errors."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "As pressure altitude increases when climbing at constant IAS?",
+      "options": [
+        "CAS will increase.",
+        "CAS will decrease.",
+        "TAS will increase."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "As pressure altitude increases when climbing at constant mach number?",
+      "options": [
+        "TAS will decrease then remain constant.",
+        "CAS will decrease then remain constant",
+        "TAS will increase."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "As pressure altitude increases.",
+      "options": [
+        "Temperature decreases.",
+        "Temperature decreases then remains constant.",
+        "Temperature increases then remains constant."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Mach number is the ratio of?",
+      "options": [
+        "IAS:TAS.",
+        "CAS:LSS.",
+        "TAS:LSS."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "At a fixed pressure altitude an increase in temperature will?",
+      "options": [
+        "Decrease density but increase density altitude.",
+        "Not affect density altitude.",
+        "Increase density but decrease density altitude."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The Airspeed Indicator measures:",
+      "options": [
+        "Differential pressure",
+        "Differential pressure changes",
+        "Static pressure changes"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Calibrated air speed is:",
+      "options": [
+        "IAS plus the pressure error",
+        "IAS plus density error correction",
+        "IAS plus instrument error correction"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "CAS is IAS corrected for:",
+      "options": [
+        "position error.",
+        "instrument error.",
+        "density error."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "EAS is:",
+      "options": [
+        "IAS corrected for compressibility",
+        "CAS corrected for position error",
+        "CAS corrected for compressibility"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "At any given height or altitude, an aircraft will always lift-off at the same?",
+      "options": [
+        "CAS.",
+        "Ground speed.",
+        "EAS."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "CAS is?",
+      "options": [
+        "EAS corrected for position error and compressibility error.",
+        "IAS corrected for position error and instrument error.",
+        "IAS corrected for density error and position error."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When descending through an isothermal layer at a constant Calibrated Airspeed (CAS), the True Airspeed (TAS) will?",
+      "options": [
+        "Decrease.",
+        "Remain constant.",
+        "Increase at an exponential rate."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft is flying at mach 0.86 and the true ambient air temperature is -42°C. Determine\na) The local speed of sound\nb) The TAS",
+      "options": [
+        "a) 593 kts, b) 510 kts",
+        "a) 570 kts, b) 490 kts",
+        "a) 610 kts, b) 525 kts"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft flying at a TAS of 1100 knots at FL 650. A change in 0.1M causes a change in TAS of 57 knots. The temperature deviation at FL 650 assuming an ISA atmosphere is:",
+      "options": [
+        "+5",
+        "-5",
+        "-2.5"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If the outside temperature at 35000ft is -40°C, the local speed of sound is:",
+      "options": [
+        "596 kt",
+        "307 kt",
+        "686 kt"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft is flying at FL 390, temperature -56.5° C at Mach 0.85. The TAS of the aircraft is:",
+      "options": [
+        "472 kt",
+        "561 kt",
+        "485 kt"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The velocity of sound at the sea level in a standard atmosphere is:",
+      "options": [
+        "661 kt",
+        "644 kt",
+        "1059 kt"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "If a Decrease of 0.12 in the Mach number results in a decrease of 80 Knots in the TAS, what is the local speed of sound?",
+      "options": [
+        "667 Kts",
+        "583 Kts",
+        "747 Kts"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An increase of 0.15 Mach results in an increase of 93 kt TAS of an aircraft. The local speed of sound is:",
+      "options": [
+        "620 kt",
+        "560 kt",
+        "580 kt"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "When climbing at a constant Mach number below the tropopause, in ISA conditions, the Calibrated Airspeed (CAS) will:",
+      "options": [
+        "decrease",
+        "increase at a linear rate",
+        "increase at an exponential rate"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "For a constant Calibrated Airspeed (CAS) and a level flight, a fall in ambient temperature will result in a:",
+      "options": [
+        "higher True Air Speed (TAS) due to a decrease in air density",
+        "lower True Air Speed (TAS) due to an increase in air density",
+        "higher True Air Speed (TAS) due to an increase in air density"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "At a constant Mach number, the calibrated airspeed (CAS):",
+      "options": [
+        "decreases when the altitude increases",
+        "remains unchanged when the outside temperature increases",
+        "increases when the altitude increases"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When descending through an isothermal layer at a constant Calibrated Airspeed (CAS), the True Airspeed (TAS) will:",
+      "options": [
+        "increase at a linear rate",
+        "increase at an exponential rate",
+        "decrease"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When descending through an isothermal level the TAS will ....., the CAS ....... and the LSS will …....:",
+      "options": [
+        "remain constant, increase, remain constant",
+        "increase, increase, decrease",
+        "remain constant, decrease, increase"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When descending through an inversion at constant TAS?",
+      "options": [
+        "Mach number increases.",
+        "Mach number remains constant.",
+        "CAS decreases."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "When climbing through an inversion at constant TAS.",
+      "options": [
+        "Mach number increases.",
+        "Mach number decreases",
+        "Mach number remains constant."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When descending through an inversion at constant CAS?",
+      "options": [
+        "TAS decreases.",
+        "Mach number increases.",
+        "Mach number remains constant."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "When climbing through an inversion at constant CAS?",
+      "options": [
+        "TAS increases.",
+        "TAS remains constant.",
+        "Mach number decreases."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "When climbing through an inversion at constant mach number?",
+      "options": [
+        "CAS increases.",
+        "TAS increases.",
+        "TAS remains constant"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When descending through an inversion at constant mach number?",
+      "options": [
+        "TAS increases.",
+        "TAS decreases.",
+        "CAS decreases."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When climbing through an inversion at constant CAS?",
+      "options": [
+        "TAS increases.",
+        "TAS remains constant.",
+        "Mach number decreases."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "When descending through an inversion at constant CAS?",
+      "options": [
+        "TAS increases.",
+        "TAS decreases.",
+        "Mach number increases."
+      ],
+      "answer": 1
+    },
+    {
+      "question": "When descending through an isothermal layer at constant TAS?",
+      "options": [
+        "Mach number increases.",
+        "Mach number decreases.",
+        "Mach number remains constant."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When climbing through an isothermal layer at constant TAS?",
+      "options": [
+        "Mach number increases.",
+        "Mach number decreases.",
+        "Mach number remains constant."
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When descending through an isothermal layer at constant CAS?",
+      "options": [
+        "Mach number increases.",
+        "Mach number decreases.",
+        "Mach number remains constant."
+      ],
+      "answer": 1
+    }
+]

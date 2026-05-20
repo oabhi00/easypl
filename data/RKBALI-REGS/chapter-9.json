@@ -1,0 +1,272 @@
+[
+    {
+      "question": "Detailed description of meteorological information provided at the aerodrome and an indication of meteorological information relevant to the aerodrome is found in the following part of the AIP:",
+      "options": [
+        "AD",
+        "RAC",
+        "MET"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A checklist of AIP supplements currently in force shall be issued at intervals of:",
+      "options": [
+        "Not more than 2 months",
+        "Not more than 28 days",
+        "Not more than one month"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following is information that is not given in AIP approach and landing charts?",
+      "options": [
+        "OCH or OCA",
+        "Visibility minima",
+        "DME frequencies"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An integrated aeronautical information package consists of the following elements:",
+      "options": [
+        "AIP, supplements to AIP, NOTAM and PIB, AIC and checklist summaries",
+        "AIP, including amendment service; supplements to AIP, NOTAM and pre-flight information bulletin (PIB), AIC, checklists and summaries",
+        "AIP, including amendment service; supplements to AIP, NOTAM, AIC and checklist summaries"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Temporary changes on specifications for AIP supplements of long duration and information of short duration which contains extensive text and/or graphics shall be published as AIP supplements. It is considered a long duration if:",
+      "options": [
+        "Three months or longer",
+        "Two months or longer",
+        "One year or longer"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Operationally significant changes to the AIP shall be published in accordance with:",
+      "options": [
+        "AIC procedures and identified by the acronym AIC followed by a number",
+        "NOTAM procedures and identified by the acronym NOTAM followed by a number",
+        "AIRAC procedures and identified by the acronym AIRAC"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A checklist of NOTAM currently in force shall be issued at the AFTN at intervals:",
+      "options": [
+        "Not more than 28 days",
+        "Not more than one month",
+        "Not more than 10 days"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Change in frequency or location of navigational aids on short notice is notified through:",
+      "options": [
+        "NOTAMs",
+        "AIRAC",
+        "AIP"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The contents of Aeronautical Information Publication (AIP) are:",
+      "options": [
+        "GEN, ENR (en-route) and AD (aerodromes)",
+        "GEN, ENR, RAC, AD",
+        "GEN, AGA, COM, ENR, FAL"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The SIGMET service is in the AIP, in the following part:",
+      "options": [
+        "AGA",
+        "GEN",
+        "MET"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In which chapter of the AIP can you find a list with \"location indicators\"?",
+      "options": [
+        "AGA",
+        "GEN",
+        "ENR"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The information on holding, approach and departure procedures, are found in the following part of the AIP:",
+      "options": [
+        "ENR",
+        "MAP",
+        "AD"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The closure of a runway for a year, because of maintenance, will be published:",
+      "options": [
+        "Only in AIP",
+        "In NOTAM and AIP, including Supplement",
+        "Only in NOTAM"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An AIRAC is:",
+      "options": [
+        "An acronym for a system aimed at advance notification based on common effective dates, of circumstances necessitating significant changes in operating procedures",
+        "A notice distributed by means of telecommunication containing information concerning the establishment, condition or change in any aeronautical facility, service, procedure or hazard, the timely knowledge of which is essential to personnel concerned with flight operations",
+        "A package which consists of the following elements: AIP, supplements to the AIP, NOTAM, AIC, checklists and summaries"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Select the acronym corresponding to the following definition: a special NOTAM series notifying, by means of a specific format, an important change for aircraft operations due to volcanic activity, a volcano eruption or a volcanic ash cloud.",
+      "options": [
+        "GVTAM",
+        "ASHTAM",
+        "NAVTAM"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The system notifying in advance the circumstances requiring important changes in the methods of operation, based on common effective dates, is identified by the acronym:",
+      "options": [
+        "AIRAC",
+        "EATCHIP",
+        "IFPS"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The temporary, long-term modification (3 months or more) and the short-term extensive or graphical information are published as follows:",
+      "options": [
+        "AIP Supplements",
+        "Trigger NOTAM",
+        "NOTAM"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The information concerning charges for aerodromes/heliports and Air Navigation Services are in the following part of the AIP:",
+      "options": [
+        "AD",
+        "GEN",
+        "FAL"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Angio pride ies ama distin Ful of the ir Traff So de an A",
+      "options": [
+        "An AIRAC",
+        "An ATS NOTAM",
+        "An Advisory NOTAM"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A notice containing information concerning flight safety, air navigation technical, administrative or legislative matters and originated at the AIS of a state is called:",
+      "options": [
+        "NOTAM",
+        "AIRAC",
+        "Aeronautical Information Circular (AIC)"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In which section of AIP are contained information elements relating to prohibited, restricted and dangerous areas?",
+      "options": [
+        "AGA",
+        "ENR",
+        "GEN"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In which section of AIP are contained information elements relating to refueling facilities and limitations on refuelling services?",
+      "options": [
+        "AD",
+        "GEN",
+        "SAR"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In which section of the AIP are contained information elements relating to areas and/or routes for which meteorological service is provided?",
+      "options": [
+        "MET",
+        "GEN",
+        "RAC"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Each contracting state shall provide an Aeronautical Information Service (AIS) in its territory and for areas in which the state is responsible for the Air Traffic Services outside its territory, and this shall include the preparation and origination of:",
+      "options": [
+        "Only AIP and NOTAMs",
+        "AIP, NOTAMs, Circular and AIRAC",
+        "Integrated Aeronautical Information Package"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The identification of each prohibited, restricted and danger area shall be composed of:",
+      "options": [
+        "The nationality letters for location indicators assigned to the state or territory, followed by the letters P, R and D and figures",
+        "The letters P (Prohibited), R (Restricted) and D (Dangerous) for the area concerned and figures",
+        "The letters P (Prohibited), R (Restricted) and D (Dangerous) followed by figures"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "NOF in India are established at:",
+      "options": [
+        "All major aerodromes",
+        "All international airports",
+        "International airports at Delhi, Mumbai, Kolkata and Chennai only"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Runway Condition Report (RCR) is prepared by ______ for use by ______.",
+      "options": [
+        "Aerodrome Operator, Flight Crew",
+        "Flight Crew, DGCA",
+        "Flight Crew, Aircraft Operator"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Runway Condition Code (RWYCC) is reported for:",
+      "options": [
+        "The runway to indicate unusable portion of the operational runway",
+        "For each one-third portion of the operational runway to indicate the presence of water, snow, ice, slush or frost",
+        "For non-operational runway to denote its status"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Standing water on runway is notified through a:",
+      "options": [
+        "NOTAM W",
+        "SNOWTAM",
+        "AIRAC"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "NOF stands for:",
+      "options": [
+        "NOTAM Office",
+        "NOTAM for Flight",
+        "International NOTAM Office"
+      ],
+      "answer": 2
+    }
+  ]

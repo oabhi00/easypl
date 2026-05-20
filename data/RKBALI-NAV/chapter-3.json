@@ -1,0 +1,416 @@
+[
+    {
+      "question": "Radio Navigation charts (Jeppesen) uses:",
+      "options": [
+        "Lambert's conformal conic projection",
+        "Mercator's projection",
+        "IMPP"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A rhumb line is a straight line. This applies to:",
+      "options": [
+        "Mercator's",
+        "Lambert's",
+        "IMPP"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Meridians and parallels intersect at right angles. This applies to:",
+      "options": [
+        "Mercator's",
+        "Lambert's",
+        "Both"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "On the Mercator's chart:",
+      "options": [
+        "Distortion increases away from the Equator",
+        "Distortion increases away from the Pole",
+        "Parallels of latitude are not straight lines"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The scale on a Lambert's projection is correct only along:",
+      "options": [
+        "The standard parallels",
+        "The equator",
+        "The end parallels of latitude and 2 degrees on either side of the central meridian"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Charts are used only for:",
+      "options": [
+        "Flying over seas",
+        "Dead reckoning navigation",
+        "Polar navigation"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "In an orthomorphic projection:",
+      "options": [
+        "Meridians and parallels intersect at right angles",
+        "Meridians and parallels are straight lines",
+        "Both the above"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The chart generally used for navigation in polar areas is based on a:",
+      "options": [
+        "Lambert's Conformal",
+        "Transverse Mercator",
+        "Stereographical projection"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "On a Lambert conformal conic chart the convergence of the meridians is:",
+      "options": [
+        "The same as earth convergency at the parallel of origin",
+        "The same as the scale",
+        "Most accurate at the standard parallels"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "On a Lambert conformal conic projection with two standard parallels, the scale is:",
+      "options": [
+        "Correct only along the parallel of origin",
+        "Correct only at the poles",
+        "Correct only along the standard parallels"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "On a Transverse Mercator chart, scale is exactly correct along the:",
+      "options": [
+        "Meridian of tangency",
+        "Prime meridian",
+        "Standard latitudes"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "On Lambert's conical projection, the given scale is correct at and convergence is correct at:",
+      "options": [
+        "Latitude of origin, latitude of origin",
+        "Latitude of origin, standard parallels",
+        "Standard parallels, latitude of origin"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "While measuring track at Lambert conical projection, protractor is to be placed at:",
+      "options": [
+        "Latitude of departure",
+        "Latitude of arrival",
+        "Midway longitude"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The angular difference on a Lambert conformal conic chart between the arrival and departure track is equal to:",
+      "options": [
+        "Departure angle",
+        "Map convergence",
+        "Secant of ½ latitude"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "On a Direct Mercator chart, meridians are:",
+      "options": [
+        "Parallel, equally spaced, horizontal straight lines",
+        "Converging curved lines",
+        "Parallel, equally spaced, vertical straight lines"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "On which of the following chart projections is it not possible to represent the north or south poles?",
+      "options": [
+        "Polar Stereographic",
+        "Direct Mercator",
+        "Lambert's Conical"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which one of the following, concerning great circles on a Direct Mercator chart, is correct?",
+      "options": [
+        "With the exception of meridians and the equator, they are curves concave to the equator",
+        "Straight lines",
+        "Curves concave to the nearest pole"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "On a Lambert conformal conic chart, the distance between parallels of latitude spaced the same number of degrees apart:",
+      "options": [
+        "Increases between and reduces outside of the standard parallels",
+        "Reduces between and expands outside the standard parallels",
+        "Is constant between the standard parallels"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which one of the following statements is correct concerning the appearance of great circles on a polar stereographic chart?",
+      "options": [
+        "The higher the latitude the closer they approximate to a straight line",
+        "The lower the latitude the closer they approximate to straight line",
+        "Never approximate to straight lines"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which one of the following describes the appearance of rhumb lines, except meridians, on a polar stereographic chart?",
+      "options": [
+        "Straight lines",
+        "Curves concave to the pole",
+        "Approximately straight lines"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the value of the convergence factor on a polar stereographic chart?",
+      "options": [
+        "2.0",
+        "1.5",
+        "1.0"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "On a Direct Mercator, rhumb lines are:",
+      "options": [
+        "Straight lines",
+        "Curves concave to the nearest pole",
+        "Curves convex to the nearest pole"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A perfectly straight line on a Lambert's chart is:",
+      "options": [
+        "A parallel of latitude",
+        "A rhumb line",
+        "A meridian of longitude"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which of the following statements best describes how scale varies on a Mercator chart?",
+      "options": [
+        "It is correct on the standard parallels, but expands outside them, and contracts within them",
+        "Expands directly with the secant of the latitude",
+        "Expands as the secant (½ × co-latitude)"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "On a Lambert Conformal chart, the distance between meridians 5º apart along latitude 37º North is 9 cm. The scale of the chart at that parallel approximates:",
+      "options": [
+        "1:3,500,000",
+        "1:5,000,000",
+        "1:4,000,000"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Where is the convergency correct on a Transverse Mercator chart?",
+      "options": [
+        "At the datum meridian and the Equator",
+        "Only at the Equator and poles",
+        "Only at the datum meridian"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "In which of the following projections will a plane surface touch the reduced earth at one of the poles?",
+      "options": [
+        "Stereographic",
+        "Direct Mercator",
+        "Transverse Mercator"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The scale on a Lambert's conformal conic chart:",
+      "options": [
+        "Is constant",
+        "Is constant along a parallel of latitude",
+        "Is constant along a meridian of longitude"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The scale is correct on a transverse Mercator chart:",
+      "options": [
+        "Along the datum meridian and meridians at 90° to it",
+        "At the prime meridian",
+        "Along the great circle of tangency"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The nominal scale of a Lambert conformal conic chart is the:",
+      "options": [
+        "Scale at the standard parallels",
+        "Scale at the parallel of origin",
+        "Scale at the poles"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What type of projection is generally used for charts used for navigation in North and South polar areas?",
+      "options": [
+        "Lambert's conformal",
+        "Polar stereographical projection",
+        "Direct Mercator"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "On a Lambert Conformal conic chart, great circles that are not meridians are:",
+      "options": [
+        "Curves concave to the pole of projection",
+        "Straight lines within the standard parallels",
+        "Curves concave to the parallel of origin"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Parallels of latitude, except the equator, are:",
+      "options": [
+        "Rhumb lines",
+        "Complex curves",
+        "Great circles"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "On Jeppesen charts, scale is given in the following manner:",
+      "options": [
+        "Representative fraction",
+        "Graduated scale and statement in words",
+        "All of the above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Nautical mile is more than a statute mile. Statute mile is more than a kilometer.",
+      "options": [
+        "Both statements are correct",
+        "Only kilometer is more than a nautical mile",
+        "Only statute mile is more than a nautical mile"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "1000 meters equals:",
+      "options": [
+        "1 nm",
+        "0.545 nm",
+        "0.545 km"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Contours are lines drawn on a map or chart joining:",
+      "options": [
+        "Places of equal elevation",
+        "Equal pressure",
+        "Equal variation"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Maps indicate the details of the topography. Pilots can use this for:",
+      "options": [
+        "Contact navigation",
+        "Instrument flying",
+        "Dead reckoning navigation"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Graticule is the network of meridians and parallels on:",
+      "options": [
+        "Earth",
+        "Maps",
+        "Both"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The scale of a chart is shown as 1:1 million. This means that:",
+      "options": [
+        "1\" on the chart equals 1 million inches on the Earth",
+        "1 cm on the chart represents 1 million centimeters on the Earth",
+        "Both"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Representation of high ground on a projection can be in the form of:",
+      "options": [
+        "Contours and form lines",
+        "Spot heights and layer tinting",
+        "All of the above"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Map Distance = 10 inches. Earth Distance = 120 nm. Find scale.",
+      "options": [
+        "1:8,755,200",
+        "1:5,755,200",
+        "1:7,755,200"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Map Distance = 13.2 inches. Earth Distance = 350 nm. Find scale.",
+      "options": [
+        "1:1,934,545",
+        "1:7,934,545",
+        "1:2,534,545"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "On a direct Mercator projection, the distance measured between two meridians spaced 5° apart at latitude 60° N is 8 cm. The Scale of this chart at latitude 60°N is approximately?",
+      "options": [
+        "1:3,500,000",
+        "1:5,000,000",
+        "1:2,000,000"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "On a direct Mercator projection, at latitude 45° North, a certain length represents 70 NM. At latitude 30° North, the same length represents approximately?",
+      "options": [
+        "86 nm",
+        "75 nm",
+        "45 nm"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "At 60° N the scale of a direct Mercator chart is 1:3,000,000. What is the scale at the equator?",
+      "options": [
+        "1:5,000,000",
+        "1:6,000,000",
+        "1:12,000,000"
+      ],
+      "answer": 1
+    }
+  ]

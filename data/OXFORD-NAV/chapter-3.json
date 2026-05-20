@@ -1,0 +1,143 @@
+[
+    {
+      "question": "The sensitivity of a direct reading magnetic compass is:",
+      "options": [
+        "inversely proportional to the horizontal component of the Earth’s magnetic field",
+        "proportional to the horizontal component of the Earth’s magnetic field",
+        "inversely proportional to the vertical component of the Earth’s magnetic field",
+        "inversely proportional to the vertical and horizontal components of the Earth’s magnetic field"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the definition of magnetic variation?",
+      "options": [
+        "The angle between the direction indicated by a compass and Magnetic North",
+        "The angle between True North and Compass North",
+        "The angle between Magnetic North and True North",
+        "The angle between Magnetic Heading and Magnetic North"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "At the magnetic equator:",
+      "options": [
+        "Dip is zero",
+        "Variation is zero",
+        "Deviation is zero",
+        "The isogonal is an agonic line"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which of these is a correct statement about the Earth’s magnetic field?",
+      "options": [
+        "It acts as though there is a large blue magnetic pole in Northern Canada",
+        "The angle of dip is the angle between the vertical and the total magnetic force",
+        "It may be temporary, transient, or permanent",
+        "It has no effect on aircraft deviation"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Where is a compass most effective?",
+      "options": [
+        "About midway between the Earth’s magnetic poles",
+        "In the region of the magnetic South Pole",
+        "In the region of the magnetic North Pole",
+        "On the geographic equator"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The value of variation:",
+      "options": [
+        "is zero at the magnetic equator",
+        "has a maximum value of 180°",
+        "has a maximum value of 45°E or 45°W",
+        "cannot exceed 90°"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The agonic line:",
+      "options": [
+        "is midway between the magnetic North and South poles",
+        "follows the geographic equator",
+        "is the shorter distance between the respective True and Magnetic North and South poles",
+        "follows separate paths out of the North polar regions, one currently running through Western Europe and the other through the USA"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "The angle between True North and Magnetic North is known as:",
+      "options": [
+        "deviation",
+        "variation",
+        "alignment error",
+        "dip"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The value of magnetic variation on a chart changes with time. This is due to:",
+      "options": [
+        "Movement of the magnetic poles, causing an increase",
+        "Increase in the magnetic field, causing an increase",
+        "Reduction in the magnetic field, causing a decrease",
+        "Movement of the magnetic poles, which can cause either an increase or a decrease"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Isogonal lines converge as follows:",
+      "options": [
+        "At the North Magnetic Pole",
+        "At the North and South Magnetic and Geographical Poles",
+        "At the North and South Magnetic Poles",
+        "At the Magnetic equator"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the maximum possible value of dip angle?",
+      "options": [
+        "66°",
+        "180°",
+        "90°",
+        "45°"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the dip angle at the South Magnetic Pole?",
+      "options": [
+        "0°",
+        "90°",
+        "180°",
+        "64°"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is a line of equal magnetic variation?",
+      "options": [
+        "An isocline",
+        "An isogonal",
+        "An isogriv",
+        "An isovar"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "If variation is West, then:",
+      "options": [
+        "True North is West of Magnetic North",
+        "Compass North is West of Magnetic North",
+        "True North is East of Magnetic North",
+        "Magnetic North is West of Compass North"
+      ],
+      "answer": 2
+    }
+  ]
+  

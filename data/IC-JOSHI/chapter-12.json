@@ -1,0 +1,147 @@
+[
+    {
+      "question": "Hoar frost occurs on airframe in clear air when the temperature of airframe is",
+      "options": ["below the frost point", "frost point", "just above the frost point"],
+      "answer": 0,
+      "explanation": "Hoar frost forms by deposition of water vapor directly as ice on surfaces that are below the frost point of the surrounding air."
+    },
+    {
+      "question": "In clouds at temperatures below 0 °C an aircraft may encounter icing of the type",
+      "options": ["only Glazed", "only Rime", "intermediate between these two"],
+      "answer": 2,
+      "explanation": "Depending on the temperature, droplet size, and rate of impingement, aircraft icing in sub-freezing clouds can range from rime ice (opaque and rough) to glazed ice (clear and smooth) or a mixture of both."
+    },
+    {
+      "question": "Opaque Rime ice is",
+      "options": ["Light porous", "Solid", "Mixture of porous and solid"],
+      "answer": 0,
+      "explanation": "Rime ice is formed by the instantaneous freezing of small supercooled water droplets. This traps air bubbles, resulting in a white, opaque, and porous structure."
+    },
+    {
+      "question": "Rime is formed by freezing of ........ supercooled water droplets on airframe when aircraft is flying through clouds",
+      "options": ["Small", "Large", "Medium"],
+      "answer": 0,
+      "explanation": "Rime ice typically forms from the rapid freezing of small supercooled water droplets that impinge on the aircraft's surfaces."
+    },
+    {
+      "question": "Glazed ice is formed by freezing of ........ supercooled water droplets on airframe when aircraft is flying through clouds",
+      "options": ["Small", "Large", "Medium"],
+      "answer": 1,
+      "explanation": "Glazed ice forms when larger supercooled water droplets impinge on the aircraft surface and freeze more slowly, allowing the water to spread out before freezing into a clear, smooth layer."
+    },
+    {
+      "question": "The ........ ice poses serious aviation hazard",
+      "options": ["Rime", "Hoar Frost", "Glazed"],
+      "answer": 2,
+      "explanation": "Glazed ice is considered the most serious aviation hazard because it is dense, hard, and adheres strongly to the aircraft surfaces, significantly altering the airfoil shape and increasing weight."
+    },
+    {
+      "question": "Airframe icing occurs below 0 °C. Its probability of occurrence decreases progressively below -20 °C, as at lower temperatures the proportion of super-cooled water drops in a cloud",
+      "options": ["Increases", "Decreases", "Does not change"],
+      "answer": 1,
+      "explanation": "The probability of encountering supercooled liquid water (which leads to icing) decreases significantly at temperatures below -20 °C, as most of the water vapor has typically frozen into ice crystals at these lower temperatures."
+    },
+    {
+      "question": "CI, CS and CC clouds consist mostly ice crystals. Icing hazard is therefore",
+      "options": ["Maximum", "Medium", "Negligible"],
+      "answer": 2,
+      "explanation": "Cirrus (CI), Cirrostratus (CS), and Cirrocumulus (CC) clouds are primarily composed of ice crystals. Since icing requires supercooled liquid water, the icing hazard in these clouds is generally negligible."
+    },
+    {
+      "question": "AS, NS consist of supercooled water drops and ice crystals in varying proportion; ........ icing is possible.",
+      "options": ["Maximum", "Light or moderate", "Negligible"],
+      "answer": 1,
+      "explanation": "Altostratus (AS) and Nimbostratus (NS) clouds contain a mixture of supercooled water droplets and ice crystals. Therefore, aircraft flying through these clouds can experience light to moderate icing."
+    },
+    {
+      "question": "In AC clouds, ........ icing is possible in mountainous areas.",
+      "options": ["Light", "Moderate", "Severe"],
+      "answer": 2,
+      "explanation": "Altocumulus (AC) clouds can contain significant amounts of supercooled water, especially in mountainous regions where orographic lifting enhances their development. Severe icing can be encountered in these conditions."
+    },
+    {"question": "In TCU, icing may range from light to severe type at least up to ........ level.",
+      "options": ["-40 °C level", "30 °C level", "-20 °C level"],
+      "answer": 2,
+      "explanation": "Towering Cumulus (TCU) clouds are vertically developed and can contain supercooled water at significant altitudes, with icing ranging from light to severe possible up to the -20 °C level."
+    },
+    {
+      "question": "In CB icing may range from light to severe type up to -20 °C level. Below this temperature severe icing is",
+      "options": ["not significant", "significant", "maximum"],
+      "answer": 0,
+      "explanation": "Cumulonimbus (CB) clouds are large thunderstorm clouds with very strong vertical development. While severe icing can occur up to the -20 °C level, at temperatures significantly below this, most of the water is frozen, making severe icing less likely."
+    },
+    {
+      "question": "Liquid water content is an important factor in icing. As the maximum water concentration is around _______, maximum ice formation in clouds may also be expected around that level.",
+      "options": ["-25 ° C level","-20 ° C level","-15 ° C level"],
+      "answer": 2,
+      "explanation":"Liquid water content is an important factor in icing. As the maximum water concentration is around -15 degree celsius, maximum ice formation in clouds may also be expected around that level."
+    },
+    {
+      "question": "Carburetor icing occurs when air from intake passes through a venturi (choke), causing expansional cooling and vaporization of fuel. Serious icing can occur at extreme temperatures",
+      "options": [
+        "13 ° C",
+        "30 ° C to -10 ° C",
+        "20 ° C"
+      ],
+      "answer": 1,
+      "explanation":"Carburetor icing occurs when the air entering the carburetor passes through a venturi (narrowed section of the carburetor) and undergoes expansion. This expansion causes the temperature of the air to drop, a phenomenon known as adiabatic cooling.At the same time, as the air cools, the fuel in the carburetor starts to vaporize, which can further cool the carburetor and lead to the formation of ice on surfaces inside the carburetor, such as the throttle valve or the venturi."
+    },
+    {
+      "question": "___________ occurs in a moist cloudless air on an aircraft surface having temp. below 0 ° C, due to sublimation of water vapour onto feathery ice crystals.",
+      "options": [
+        "Rime",
+        "Glazed",
+        "Hoar Frost"
+      ],
+      "answer": 2,
+      "explanation": "Frost occurs in a moist cloudless air on an aircraft surface having a temperature below 0°C, due to the sublimation of water vapor onto feathery ice crystals.Frost forms when the temperature of the aircraft surface is below the freezing point, and the air around the aircraft is moist but cloudless. Water vapor in the air undergoes sublimation, where it changes directly from a gas to a solid, depositing as ice crystals on the surface of the aircraft. These ice crystals typically have a feathery, lacy appearance."
+    },
+    {
+      "question": "___________ occurs in St, Sc, Ac, Cu, Ns at temperature -10 to -40 ° C and in Cb at temperature -20 to -40 ° C",
+      "options": [
+        "Rime",
+        "Glazed",
+        "Mixture of rime and clear"
+      ],
+      "answer": 0,
+      "explanation": ""
+    },
+    {
+      "question": "In clouds _______ occurs when a wide range of water drop sizes are present at temperatures between 0 ° C and -40 ° C",
+      "options": [
+        "Rime",
+        "Glazed",
+        "Mixture of rime and clear ice"
+      ],
+      "answer": 2,
+      "explanation":""
+    },
+    {
+      "question": "___________ occurs in AS, NS, AC and towering CU or CB between 0 ° C and -20 ° C. In warm front below 0 ° C, especially if the aircraft has rapidly descended from a colder region.",
+      "options": [
+        "Glazed",
+        "Rime",
+        "Mixture of Rime and Clear ice"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When fog freezes on parked aircraft it produces",
+      "options": [
+        "Hoar Frost",
+        "Rime",
+        "Clear ice"
+      ],
+      "answer": 0,
+      "explanation":"Frost occurs in a moist cloudless air on an aircraft surface having a temperature below 0°C, due to the sublimation of water vapor onto feathery ice crystals.Frost forms when the temperature of the aircraft surface is below the freezing point, and the air around the aircraft is moist but cloudless. Water vapor in the air undergoes sublimation, where it changes directly from a gas to a solid, depositing as ice crystals on the surface of the aircraft. These ice crystals typically have a feathery, lacy appearance."
+    },
+    {
+      "question": "Icing _______ the stalling speed appreciably",
+      "options": [
+        "Decreases",
+        "Increases",
+        "Does not change"
+      ],
+      "answer": 1,
+      "explanation": "Icing increases drag on the aircraft body hence stall speed is increased"
+    }]

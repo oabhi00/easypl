@@ -1,0 +1,52 @@
+[
+    {
+      "question": "The special SSR codes are as follows: emergency ............... , radio failure ................ , unlawful interference with the conduct of the flight ................",
+      "options": [
+        "7700, 7600, 7500",
+        "7700, 7500, 7600",
+        "7600, 7500, 7700",
+        "7500, 7600, 7700"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Secondary Surveillance Radar is a form of .............. radar with ..............type emissions operating in the .............. band.",
+      "options": [
+        "primary, pulse, SHF",
+        "primary, pulse, UHF",
+        "secondary, FM, SHF",
+        "secondary, pulse, UHF"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "If the SSR transponder IDENT button is pressed:",
+      "options": [
+        "it causes a momentary distinctive display to appear on the controller’s screen",
+        "an identification pulse is automatically and continuously transmitted for 20 seconds, 4.35 µs before the last framing pulse",
+        "an identification pulse is automatically and continuously transmitted for 10 seconds, 4.35 µs after the last framing pulse",
+        "an identification pulse is automatically and continuously transmitted for 20 seconds, 4.35 µs after the last framing pulse"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "When using SSR the ground controller will ask the pilot to cancel mode C if there is a discrepancy of more than ............... between the altitude detected by the radar from the reply pulses and the altitude reported by the pilot read from an altitude with the subscale set to ...............",
+      "options": [
+        "100 ft, Regional QNH",
+        "300 ft, 1013 HPa",
+        "50 ft, 1013 HPa",
+        "300 ft, Regional QNH"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Secondary radars require:",
+      "options": [
+        "a target which will respond to the interrogation, and this target will always be an aircraft",
+        "a target which will respond to the interrogation, and this target will always be ground based",
+        "a target which will respond to the interrogation, and this target may be either an aircraft or a ground based transponder",
+        "a quiescent target"
+      ],
+      "answer": 2
+    }
+  ]

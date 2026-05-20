@@ -1,0 +1,47 @@
+[
+    {
+      "question": "Density is .......... at poles than at the equator",
+      "options": ["Higher", "Lower", "Same"],
+      "answer": 0},
+    {
+      "question": "Above 8 km density is .......... at poles than at the equator",
+      "options": ["Higher", "Lower", "Same"],
+      "answer": 1},
+    {
+      "question": "The altitude in ISA at which air density is the same as the observed density is",
+      "options": ["Density Altitude", "ISA Density", "Real Density"],
+      "answer": 0},
+    {
+      "question": "Density is usually expressed in ..........",
+      "options": ["Kg/m²", "g/m³", "N/m²"],
+      "answer": 1},
+    {
+      "question": "Higher density altitude means .......... density",
+      "options": ["Higher", "Lower", "Same"],
+      "answer": 1},
+    {
+      "question": "For given pressure and temperature moist air has ........ density",
+      "options": ["Higher", "Lower", "Same"],
+      "answer": 1},
+    {
+      "question": "Air is less dense in",
+      "options": ["High Altitudes", "Warm Air", "High humidity", "All these"],
+      "answer": 3},
+    {
+      "question": "Density altitude may be defined as:",
+      "options": [
+        "The altitude in ISA at which the prevailing pressure occurs.",
+        "The altitude in ISA at which the prevailing density occurs.",
+        "The altitude in actual atmosphere at which the prevailing density occurs."
+      ],
+      "answer": 1},
+    {
+      "question": "If Temperature is constant and pressure increases the density altitude ........ ",
+      "options": ["increases", "lowers", "remains the same"],
+      "answer": 0},
+    {
+      "question": "For every 1°C change in temperature, density altitude differs from pressure altitude by",
+      "options": ["33 ft", "100 ft", "120 ft", "210 ft"],
+      "answer": 2}
+  
+    ]

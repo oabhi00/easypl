@@ -1,0 +1,72 @@
+[
+    {
+      "question": "For mountain waves to form there should be flow of air across the ridge, generally within .......... of the perpendicular to the ridge.",
+      "options": ["30°", "45°", "60°"],
+      "answer": 0,
+      "explanation": "Mountain waves typically form when the wind direction is within 30° of being perpendicular to the mountain ridge, which facilitates the lifting of air needed to form wave patterns."
+    },
+    {
+      "question": "For mountain waves to form the wind speed for small mountains should be at least",
+      "options": ["15 m/s", "10 m/s", "7 m/s"],
+      "answer": 2,
+      "explanation": "A minimum wind speed of around 7 m/s is usually required for the formation of mountain waves over small mountains."
+    },
+    {
+      "question": "For mountain waves to form the wind speed for large mountains should be at least",
+      "options": ["15 m/s", "10 m/s", "7 m/s"],
+      "answer": 0,
+      "explanation": "Wind speeds of at least 15 m/s are typically necessary to generate mountain waves over large mountain ranges."
+    },
+    {
+      "question": "For mountain waves to form there should be ..... air below the ridge and less stable air above.",
+      "options": ["Stable", "Unstable", "Indifferent"],
+      "answer": 0,
+      "explanation": "Stable air below and less stable air above creates the right conditions for the oscillations that lead to mountain waves."
+    },
+    {
+      "question": "The worst kind of turbulence is encountered in the vicinity of rotor clouds.",
+      "options": ["Rotor Clouds", "Lenticular Clouds", "Cap Clouds"],
+      "answer": 0,
+      "explanation": "Rotor clouds are associated with severe turbulence due to strong vertical motions and rotor circulation beneath mountain waves."
+    },
+    {
+      "question": "In mountain waves the rotor clouds form in",
+      "options": ["Troughs", "Ridges", "Valley"],
+      "answer": 1,
+      "explanation": "Rotor clouds typically form above the ridges in mountain ranges where turbulent eddies develop."
+    },
+    {
+      "question": "Clear air turbulence is often encountered",
+      "options": [
+        "At the boundary of a jet stream",
+        "In the wake of a passing airplane",
+        "In the wake of a larger airplane at takeoff and landing",
+        "All of the above"
+      ],
+      "answer": 0,
+      "explanation": "Clear air turbulence (CAT) can occur especially at jet stream boundaries."
+    },
+    {
+      "question": "Most CAT occurs on the ........... of a jet stream and in the vicinity of upper level frontal zones where temperature contrasts are strong.",
+      "options": ["Fringes", "Within the core", "Axis"],
+      "answer": 0,
+      "explanation": "Most CAT is found on the edges or fringes of jet streams where wind shear and temperature gradients are strongest."
+    },
+    {
+      "question": "CAT is the bumpiness experienced by aircraft at high altitudes. Over North India its maximum frequency is during:",
+      "options": ["Oct - May", "Jul - Aug", "Jun - Sep"],
+      "answer": 0,
+      "explanation": "In North India, CAT is most frequent from October to May due to stronger jet streams during winter months."
+    },
+    {
+      "question": "When approaching an area where mountain waves have been reported, a pilot should expect:",
+      "options": [
+        "Possible presence of roll clouds and lenticular clouds",
+        "Intense updraughts and downdraughts on the leeward side of the mountains",
+        "Moderate to severe turbulence as far as 20 to 30 nm from range on leeward side",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "All these phenomena are associated with mountain waves and can pose significant hazards to aviation."
+    }
+  ]

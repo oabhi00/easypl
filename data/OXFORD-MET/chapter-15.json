@@ -1,0 +1,152 @@
+[
+    {
+      "question": "Which of the conditions given below is most likely to lead to the formation of radiation fog?",
+      "options": [
+        "Wind Speed:7 kt, cloud cover: 8/8 St, Temp: 12°C, Dew point: 11°C",
+        "Wind Speed:15 kt, cloud cover: NIL, Temp: 15°C, Dew point: 14°C",
+        "Wind Speed:3 kt, cloud cover: 1/8 Ci, Temp: 8°C, Dew point: 7°C",
+        "Wind Speed:12 kt, cloud cover: NIL, Temp: -2°C, Dew point: -3°C"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "When _______ moist air passes over a surface which is _________ than the dew point of the air, _______fog can form. This occurs over____________",
+      "options": [
+        "cool ; warmer ; radiation ; the sea",
+        "warm ; cooler ; radiation ; the land only",
+        "cool ; warmer ; frontal   ; land",
+        "warm ; cooler ; advection ; land and sea"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Radiation fog is most likely at an inland airfield in the UK with a relative humidity of 80% in the ________with ___________and a wind of _______",
+      "options": [
+        "autumn clear skies 2-8 knots",
+        "spring  6/8 ST & SC 2-10 knots",
+        "winter  clear skies 15/20 knots",
+        "summer clear skies no wind"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Advection fog is formed when __________air moves over a___________surface and is __________its dew point:",
+      "options": [
+        "humid   cold  kept above",
+        "warm moist  cooler  cooled below",
+        "dry    frozen  well below",
+        "warm moist  warmer kept above"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "On a night when radiation fog is forming over most of southern England, the aerodromes likely to be first to experience the fog will be those situated:",
+      "options": [
+        "near the coast with a light onshore wind and clear skies",
+        "at the bottom of the hill with a light katabatic wind blowing",
+        "near the coast with a land breeze and cloudy skies",
+        "at the top of a hill with clear skies and no wind"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Radiation fog is most likely:",
+      "options": [
+        "with a wind speed up to 15 kt, a clear sky and a high relative humidity",
+        "with a wind of 2-8 kt, a high density and the summer season",
+        "in an anticyclone in winter",
+        "on a hill in autumn"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "If a station equipped with IRVR equipment reports RVR 1000, this means:",
+      "options": [
+        "RVR at touchdown is 1000 metres",
+        "RVR at touchdown is 1000 metres and at ‘mid point’ and ‘stop end’ the RVR is 800 metres or more",
+        "RVR at touchdown is 1000 metres and ‘mid point’ and ‘stop end’ equipment is unserviceable",
+        "RVR all along the runway is 1000 metres or more"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Changes of RVR are reported for increments of:",
+      "options": [
+        "25 m up to 250 m",
+        "25 m up to 200 m",
+        "50 m between 300 m and 800 m",
+        "50 m between 500 m and 800 m"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Frontal fog is most likely to:",
+      "options": [
+        "form ahead of a vigorous fast moving cold front",
+        "form ahead of a warm front",
+        "form on a vigorous cold front and last for many hours",
+        "form to the rear of a warm front but only last for 1 to 2 hours"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Fog may be defined as:",
+      "options": [
+        "a reduction of visibility to less than 1000 metres due to the presence of water vapour in the atmosphere",
+        "a reduction of visibility to less than 1000 metres due to the presence of water droplets in suspension in the atmosphere",
+        "a reduction of visibility to less than 1500 metres due to the presence of water droplets in suspension in the atmosphere",
+        "a reduction of visibility to less than 1000 ft due to the presence of water vapour in suspension in the atmosphere"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Several types of pressure distribution may be associated with radiation fog but all have one feature in common which is:",
+      "options": [
+        "closely spaced isobars",
+        "a tight pressure gradient",
+        "a slack pressure gradient",
+        "a rapidly falling pressure"
+      ],
+      "answer": 2
+    },
+    {
+      "question": " . . . . . . . . . . . . . . forms when moist air . . . . . . . . . . over a surface which is . . . . . . . . .  than the dew point of the air. Fill in the missing words from the list given below:",
+      "options": [
+        "Radiation fog, passes, warmer",
+        "Advection fog, settles, cooler",
+        "Advection fog, passes, cooler",
+        "Radiation fog, settles, warmer"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Advection fog:",
+      "options": [
+        "only occurs at night and early morning",
+        "is most likely with Polar Maritime air",
+        "will only clear by insolation",
+        "can sometimes last for 24 hours or more in winter"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "In circumstances where there is a clear sky, calm wind and a high relative humidity in autumn:",
+      "options": [
+        "radiation fog is likely over night",
+        "advection fog will form",
+        "radiation fog is likely at sunrise after previous mist",
+        "hill fog can be expected"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "At a station equipped with IRVR, reports are given:",
+      "options": [
+        "every ½ hour",
+        "when the normal visibility is 1500 m or less",
+        "when there is mist",
+        "when there is haze"
+      ],
+      "answer": 1
+    }
+  ]

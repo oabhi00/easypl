@@ -1,0 +1,121 @@
+[
+    {
+      "question": "Drizzle occurs from",
+      "options": ["CS","ST","NS","CU"],
+      "answer": 1,
+      "explanation": "Drizzle, which consists of very small water droplets, typically originates from stratus clouds."
+    },
+    {
+      "question": "Altostratus (AS) is",
+      "options": ["Low cloud of sheet type","A medium cloud of sheet type","A cloud of large vertical growth","A high cloud of sheet type"],
+      "answer": 1,
+      "explanation": "Altostratus (AS) clouds are mid-level clouds that appear as gray or bluish sheets, often uniform and featureless, sometimes thin enough to see a watery sun or moon."
+    },
+    {
+      "question": "Showers occur from",
+      "options": ["CU","CB","AS","AC"],
+      "answer": 1,
+      "explanation": "Showers, characterized by their sudden start and stop and often varying intensity, are typically associated with cumulonimbus (CB) clouds, which are towering storm clouds."
+    },
+    {
+      "question": "Heavy icing is possible in",
+      "options": ["CI","CS","ST","CB"],
+      "answer": 3,
+      "explanation": "Heavy icing conditions are most likely to be encountered in cumulonimbus (CB) clouds due to their large vertical extent, which contains supercooled water droplets at various temperature levels."
+    },
+    {
+      "question": "To avoid icing in cloudy conditions, a pilot is advised to fly through a cloud which shows optical phenomena",
+      "options": ["Halo","Corona","With multi-coloured clouds"],
+      "answer": 0,
+      "explanation": "Haloes are optical phenomena caused by the refraction and reflection of sunlight or moonlight by ice crystals in high-altitude clouds like cirrus (CI) or cirrostratus (CS). These clouds typically have lower liquid water content and thus a lower risk of icing compared to clouds composed of supercooled water droplets."
+    },
+    {
+      "question": "Dark gray cloud giving continuous rain is called",
+      "options": ["AS","NS","ST","CB"],
+      "answer": 1,
+      "explanation": "Nimbostratus (NS) clouds are dark, gray, featureless mid-level clouds that are associated with continuous, steady rain or snow."
+    },
+    {
+      "question": "A uniform layer of cloud resembling fog but not on the ground",
+      "options": ["AS","NS","ST"],
+      "answer": 2,
+      "explanation": "Stratus (ST) clouds are low-level clouds that appear as a gray or whitish uniform layer, often resembling fog but not resting on the ground. They can sometimes produce light drizzle or snow grains."
+    },
+    {
+      "question": "The clouds composed of ice crystals having feathery appearance",
+      "options": ["CI","CS","AS"],
+      "answer": 0,
+      "explanation": "Cirrus (CI) clouds are high-level clouds composed of ice crystals. They often appear as thin, wispy, feathery streaks or delicate white patches."
+    },
+    {
+      "question": "NS clouds occur",
+      "options": ["At cold front","At warm front"],
+      "answer": 1,
+      "explanation": "Nimbostratus (NS) clouds are typically associated with warm fronts. As a warm air mass slowly rises over a colder air mass at a warm front, it cools and condenses, often forming extensive layers of nimbostratus clouds that produce prolonged precipitation."
+    },
+    {
+      "question": "Halo is associated with the cloud",
+      "options": ["AC","AS","CS","CI"],
+      "answer": 2,
+      "explanation": "Haloes are optical phenomena caused by the refraction and reflection of sunlight or moonlight by ice crystals generally produced by cirrostratus (CS) clouds."
+    },
+    {
+      "question": "Corona is associated with the cloud",
+      "options": ["AS","AC","CC","CS"],
+      "answer": 0,
+      "explanation": ""
+    },
+    {
+      "question": "Lenticular clouds indicate presence of",
+      "options": ["Warm Front","Cold front","Mountain waves"],
+      "answer": 2,
+      "explanation": "Lenticular clouds are stationary lens-shaped clouds that form in the troposphere, typically in parallel alignment to the wind direction. They are often associated with mountain waves, which are oscillations in the airflow that occur downwind of mountain ranges."
+    },
+    {
+      "question": "The lowest level below which condensation trails will not form is",
+      "options": ["Mintra Level","Drytra Level","Maxtra Level"],
+      "answer": 0,
+      "explanation": "The Mintra Level (Minimum Temperature for Contrail Formation) is the lowest altitude at which the air is cold and humid enough for condensation trails (contrails) from aircraft exhaust to form and persist."
+    },
+    {
+      "question": "Rain falling from cloud but not reaching ground is",
+      "options": ["Virgo","Virga","Mirage"],
+      "answer": 1,
+      "explanation": "Virga is precipitation that falls from a cloud but evaporates before reaching the ground. It is often seen as streaks of water or ice crystals hanging below a cloud."
+    },
+    {
+      "question": "CB with distinct anvil is called",
+      "options": ["Castellaneous","Capillatus","Uncinus"],
+      "answer": 1,
+      "explanation": "Cumulonimbus capillatus (CB cap) is a cumulonimbus cloud characterized by a distinct anvil-shaped top, which is composed of ice crystals blown downwind at high altitudes."
+    },
+    {
+      "question": "Cloud ceiling is the height of the cloud covering ______ of the sky",
+      "options": ["3-4 / 8","8/8","5/8 or more"],
+      "answer": 2,
+      "explanation": "Cloud ceiling is defined as the height above the Earth's surface of the lowest layer of clouds that is reported as 'broken' (covering 5/8 to 7/8 of the sky) or 'overcast' (covering 8/8 of the sky), or the vertical visibility into an obscuration."
+    },
+    {
+      "question": "No condensation trails occur above",
+      "options": ["Maxtra Level","Drytra Level","Mintra Level"],
+      "answer": 0,
+      "explanation": "The Maxtra Level (Maximum Temperature for Contrail Formation) represents the highest altitude at which the air is still cold enough for contrails to potentially form. Above this level, the air is generally too warm."
+    },
+    {
+      "question": "Cloud of operational significance has base below ....... m or below the highest minimum sector altitude, which is greater",
+      "options": ["1500","2000","1000"],
+      "answer": 0,
+      "explanation": "A cloud is generally considered to be of operational significance to aviation if its base is below 1500 meters (approximately 5000 feet) above ground level or below the highest minimum sector altitude, whichever is greater. This is because lower clouds can affect visibility and require specific procedures."
+    },
+    {
+      "question": "AC cloud with cumuliform protuberances are indicative of",
+      "options": ["Stability","Instability","Neutrality"],
+      "answer": 1,
+      "explanation": "Altocumulus castellanus (AC cas) clouds, which have cumuliform protuberances or turret-like tops, indicate instability in the middle levels of the atmosphere. This instability can lead to the development of more significant convection."
+    },
+    {
+      "question": "Hail may be experienced under the anvil of a CB",
+      "options": ["True","False"],
+      "answer": 0,
+      "explanation": "Hail can indeed be experienced under the anvil of a cumulonimbus (CB) cloud. The anvil is composed of ice crystals that can grow into hailstones and fall out."
+    }]

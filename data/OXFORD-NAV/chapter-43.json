@@ -1,0 +1,332 @@
+[
+    {
+      "question": "Assuming the maximum likely error in VOR to be 5.5°, what is the maximum distance apart that beacons can be situated on the centre line of a UK airway in order that an aircraft can guarantee remaining within the airway boundary?",
+      "options": [
+        "54.5 NM",
+        "109 NM",
+        "66 NM",
+        "132 NM"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The Designated Operational Coverage quoted for VOR beacons in the COMM section of the AIP:",
+      "options": [
+        "is only applicable by day",
+        "guarantees a protection ratio of at least 3 to 1 by day and night",
+        "defines the airspace within which an aircraft is assured of protection from interference from other VORs on the same channel",
+        "is determined by the type of surface over which the signal will have to travel"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft is tracking away from a VOR on the 050 radial with 10° starboard drift. An NDB lies to the east of the VOR. Which of the RMIs illustrated below shows the aircraft when it is obtaining a relative bearing of 100° from the NDB?",
+      "options": [
+        " A",
+        " B",
+        " C",
+        " D"
+      ],
+      "answer":3,"image":"chapter43-1.png"
+    },
+    {
+      "question": "What is the theoretical maximum range that an aircraft at flight level 360 will obtain from a VOR beacon situated at 900 ft above mean sea level?",
+      "options": [
+        "274 NM",
+        "255 NM",
+        "112 NM",
+        "224 NM"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A conventional VOR:",
+      "options": [
+        "has an FM reference signal and an AM variable signal",
+        "has a 150 Hz reference signal and a 90 Hz variable signal",
+        "has an AM reference signal and a 150 Hz variable signal",
+        "has an AM reference signal and an FM variable signal"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The OBS on a deviation indicator is set to 330° and gives a 3 dots fly right demand with FROM indicated. What is the QDM of the aircraft to the station?",
+      "options": [
+        "144",
+        "324",
+        "336",
+        "156"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft is homing towards a VOR which marks the centre line of an airway. The beacon is 100 NM distant. If the pilot had the airway QDM set on the OBS what deflection of the deviation indicator would be given if the aircraft was on the boundary of the airway? Assume that one dot equals 2 degrees.",
+      "options": [
+        "3 dots",
+        "2 dots",
+        "2.5 dots",
+        "1.5 dots"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "What is the theoretical maximum range that an aircraft at flight level 420 will obtain from a VOR beacon situated at 400 ft above mean sea level?",
+      "options": [
+        "225 NM",
+        "256 NM",
+        "281 NM",
+        "257 NM"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Concerning conventional and Doppler VORs (DVOR), which of the following is correct?",
+      "options": [
+        "There is no way of knowing from the instrumentation display which type is being used",
+        "The DVOR will always have a “D” in the ident",
+        "The DVOR has a higher pitch ident than the standard VOR",
+        "The conventional VOR has less site error"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft is attempting to home to a VOR on the 064 radial. The CDI shows 4 dots fly right with a TO indication. At the same time the co-located DME shows a range of 45 NM. Where is the aircraft in relation to the required track?",
+      "options": [
+        "6 NM right of track",
+        "3 NM right of track",
+        "6 NM left of track",
+        "3 NM left of track"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "A VOR beacon ceases to transmit its normal identification which is substituted by ‘TST’. This means that:",
+      "options": [
+        "the beacon may be used providing that extreme caution is used",
+        "the beacon is undergoing maintenance or calibration and should not be used",
+        "this is a temporary short range transmission and will have approximately half its normal range",
+        "the beacon is under test and pilots using it should report its accuracy to air traffic control"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the approximate maximum range that an aircraft flying at 25 000 ft would expect to obtain from a VOR beacon situated 900 ft above mean sea level?",
+      "options": [
+        "220 NM",
+        "100 NM",
+        "235 NM",
+        "198 NM"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft is on the airway boundary range 100 NM from a VOR marking the airway centre line. Assuming that each dot equates to 2° how many dots deviation will be shown on the deviation indicator?",
+      "options": [
+        "3.0 dots",
+        "2.5 dots",
+        "2.0 dots",
+        "1.5 dots"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "An aircraft is required to intercept and home to a VOR along the 064 radial. The OBS should be set to:",
+      "options": [
+        "064 to get correct needle sense and a TO indication",
+        "244 to get correct needle sense and a TO indication",
+        "064 to get correct needle sense and a FROM indication",
+        "244 to get correct needle sense and a FROM indication"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An aircraft is tracking away from a VOR on the 150 radial with 10° starboard drift. An NDB lies to the south of the VOR. Which of the RMIs illustrated below shows the aircraft when it is obtaining a relative bearing of 100° from the NDB?",
+      "options": [
+        " A",
+        " B",
+        " C",
+        " D"
+      ],
+      "answer": 0,"image":"chapter43-2.png"
+    },
+    {
+      "question": "Assuming the maximum likely error in VOR to be 5°, what is the maximum distance apart that beacons can be situated on the centre line of a UK airway in order that an aircraft can guarantee remaining within the airway boundary?",
+      "options": [
+        "60 NM",
+        "100 NM",
+        "120 NM",
+        "150 NM"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "AN aircraft, heading 150°, is 100 NM north of a VOR, the pilot intends to home to the VOR on the 030 radial. The pilot should set ….. on the OBS and on reaching the 030 radial should turn ….. onto a heading of ….., assuming zero wind.",
+      "options": [
+        "210, left, 030",
+        "030, right, 210",
+        "210, right, 210",
+        "150, left, 210"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "The type of emission radiated by a VOR beacon is:",
+      "options": [
+        "a double channel VHF carrier with one channel being amplitude modulated and the second channel being frequency modulated",
+        "a single channel VHF carrier wave amplitude modulated at 30 Hz with a sub carrier being frequency modulated at 30 Hz",
+        "a VHF carrier wave with a 90 Hz frequency modulation and a 150 Hz amplitude modulation",
+        "a VHF pulse modulated emission with a pulse repetition frequency of 30 pps"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An aircraft wishes to track towards a VOR along the 274 radial. If variation is 10°W what should be set on the OBS?",
+      "options": [
+        "274",
+        "264",
+        "094",
+        "084"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft is tracking away from a VOR on a heading of 287°(M) with 14° starboard drift. If the variation is 6°W what is the phase difference between the reference and variable phase components of the VOR transmission?",
+      "options": [
+        "121°",
+        "295°",
+        "301°",
+        "315°"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What is the theoretical maximum range that a pilot would obtain from a VOR situated 900 ft above mean sea level in an aircraft flying at 18 000 ft?",
+      "options": [
+        "168 NM",
+        "188 NM",
+        "205 NM",
+        "250 NM"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft is attempting to home to a VOR beacon. The pilot has set 329 on the OBS of the deviation indicator. If the aircraft is situated on the 152 radial then the deviation indicator will show:",
+      "options": [
+        "one and a half dots fly right",
+        "one and a half dots fly left",
+        "three dots fly right",
+        "three dots fly left"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A VOR receiver in an aircraft measures the phase difference from a DVOR as 220°. Which radial is the aircraft on?",
+      "options": [
+        "140",
+        "040",
+        "320",
+        "220"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "The RMI indicates the aircraft magnetic heading. To convert the RMI bearings of NDBs and VORs to true bearings, the correct combination for the application of magnetic variation is:\n           NDB            VOR",
+      "options": [
+        "beacon position, aircraft position",
+        "beacon position, beacon position",
+        "aircraft position, beacon position",
+        "aircraft position, aircraft position"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Both the VOR and the ADF in an aircraft are correctly tuned and identified. The indications from both are shown on the RMI illustrated. Use the information to answer the following: The information given on the RMI indicates:",
+      "options": [
+        "that the aircraft is heading 033°(M), is on the 310° radial from the VOR, and bears 050°(M) from the NDB",
+        "that the aircraft is heading 330°(M), is on the 310° radial from the VOR, and bears 050° from the NDB",
+        "that the aircraft is heading 330°(M), is on the 130° radial from the VOR, and bears 050°(M) from the NDB",
+        "that the aircraft is heading 330°(M), is on the 130° radial from the VOR, and bears 230°(M) from the NDB"
+      ],
+      "answer": 3,"image":"chapter43-3.png"
+    },
+    {
+      "question": "The VOR in an aircraft is correctly tuned and set to define the centre line of an airway within UK airspace which you intend to fly. The indication received on the VOR/ILS deviation indicator is shown to the right. At the same time the DME gave a range of 90 NM from the facility. At the time of the observation, the aircraft’s radial and distance from the airway centre line were:",
+      "options": [
+        "062 radial, 9 NM",
+        "074 radial, 6 NM",
+        "242 radial, 6 NM",
+        "254 radial, 9 NM"
+      ],
+      "answer": 0,"image":"chapter43-4.png"
+    },
+    {
+      "question": "The normal maximum error which might be expected with a VOR bearing obtained within the DOC is:",
+      "options": [
+        "plus or minus 1°",
+        "plus or minus 2°",
+        "plus or minus 5°",
+        "plus or minus 10°"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "An aircraft is tracking away from VOR “A” on the 310° radial with 8° starboard drift; NDB “X” is north of “A”. Which diagram below illustrates the RMI when the aircraft is on its present track with a QDR from “X” of 270°?",
+      "options": [
+        " A",
+        " B",
+        " C",
+        " D"
+      ],
+      "answer": 0,"image":"chapter43-5.png"
+    },
+    {
+      "question": "The VOR indications on an RMI whose deviation is not zero:",
+      "options": [
+        "are magnetic",
+        "are compass",
+        "are relative",
+        "must have deviation applied before being used"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "An aircraft bears 175°(M) from a VOR. If the aircraft OBS is set to 002 and its heading is 359°(M) which diagram below represents the aircraft VOR/ILS deviation indicator? (assume 1 dot = 2°)",
+      "options": [
+        "Diagram A",
+        "Diagram B",
+        "Diagram C",
+        "Diagram D"
+      ],
+      "answer": 0,"image":"chapter43-6.png"
+    },
+    {
+      "question": "Using Annex A.\nAn aircraft is flying on the 170 radial with a heading of 315°(M).\nThe course on the HSI is set to 180°.\nWhich HSI shows the correct indications?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 2,"image":"chapter43-7.png"
+    },
+    {
+      "question": "Using Annex B.\nAn aircraft is flying on the 050 radial with a heading of 250°(M).\nThe course on the HSI is set to 060°.\nWhich HSI shows the correct indications?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 1,"image":"chapter43-8.png"
+    },
+    {
+      "question": "Using Annex C.\nAn aircraft is flying on the 245 radial with a heading of 250°(M).\nThe course on the HSI is set to 060°.\nWhich HSI shows the correct indications?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 0,"image":"chapter43-9.png"
+    }
+  ]

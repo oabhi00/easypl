@@ -1,0 +1,103 @@
+[
+    {
+      "question": "You are flying a VFR route and have become uncertain of your position. Which is the best course of action?",
+      "options": [
+        "Set heading towards a line feature - coastline, river or motorway",
+        "Turn round and fly your flight plan tracks in reverse until you see something you recognised before",
+        "Fly a series of ever-expanding circles from your present position till you find your next checkpoint",
+        "Turn round and fly your flight plan in reverse back to base"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Please refer to Appendix A (Page 233). What is the symbol for an unlighted obstacle?",
+      "options": [
+        "9",
+        "10",
+        "12",
+        "15"
+      ],
+      "answer": 3,"image":"chapter6-1.png"
+    },
+    {
+      "question": "Using the Jeppesen E(LO)1, position 5211N 00931W, which of the following denotes all the symbols?",
+      "options": [
+        "Military airport, ILS, NDB",
+        "Civil airport, VOR, ILS",
+        "Military airport, VOR, ILS",
+        "Civil airport, ILS, NDB"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Using the Jeppesen E(LO)1 chart, what are the symbols at Galway Carnmore (5318.1N 00856.5W)?",
+      "options": [
+        "VOR, NDB, DME, compulsory reporting point",
+        "Civil airport, NDB, DME, non-compulsory reporting point",
+        "Civil airport, VOR, DME, non-compulsory reporting point",
+        "VOR, NDB, DME, non-compulsory reporting point"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following is the symbol for an exceptionally high (over 1000 feet AGL) lighted obstruction?",
+      "options": [
+        "6",
+        "9",
+        "10",
+        "15"
+      ],
+      "answer": 2,"image":"chapter6-1.png"
+    },
+    {
+      "question": "What symbol is used to show a VORTAC on a map/chart?",
+      "options": [
+        "5",
+        "7",
+        "13",
+        "14"
+      ],
+      "answer": 3,"image":"chapter6-1.png"
+    },
+    {
+      "question": "Which is the symbol for a VOR?",
+      "options": [
+        "4",
+        "5",
+        "13",
+        "14"
+      ],
+      "answer": 2,"image":"chapter6-1.png"
+    },
+    {
+      "question": "What does symbol 3 represent?",
+      "options": [
+        "Lit obstacle",
+        "Lighthouse",
+        "VRP",
+        "Aeronautical ground light"
+      ],
+      "answer": 3,"image":"chapter6-1.png"
+    },
+    {
+      "question": "An aircraft flying VFR using visual navigation crosses two parallel roads at right angles to the track. For what purpose could that information be used?",
+      "options": [
+        "Tracking check",
+        "Ground speed check",
+        "Heading check",
+        "Deviation check"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which of the following would be most useful as a visual checkpoint when planning a flight?",
+      "options": [
+        "A small copse",
+        "A large wood",
+        "A large motorway junction",
+        "A bend in a river"
+      ],
+      "answer": 2
+    }
+  ]
+  

@@ -1,0 +1,124 @@
+[
+    {
+      "question": "The ICAO Annex which deals with entry and departure of persons and their baggage, cargo and other articles on international flights is:",
+      "options": ["Annex 9", "Annex 15", "Annex 8"],
+      "answer": 0
+    },
+    {
+      "question": "In case of aircraft registered in other Contracting States, which are not engaged in scheduled international services, and which are making flights across the territory of a Contracting State or stopping for non-traffic purposes, such Contracting State shall accept the information contained in a flight plan as adequate advance notification. This information is to be received:",
+      "options": [
+        "At least 2 hours in advance of arrival",
+        "At least 4 hours in advance of arrival",
+        "At least 1 hour in advance of arrival"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A contracting state which continues to require the presentation of a cargo manifest shall, apart from the information indicated in the heading of the format of the cargo manifest, not require more than the following item(s):",
+      "options": [
+        "The airway bill number and the number of packages related to the airway bill number",
+        "The airway bill number; the number of packages related to each airway bill number and the nature of the goods",
+        "The airway bill number and the nature of goods"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An aircraft which is not engaged in scheduled international air services and which is making a flight to or through any designated airport of a Contracting State and is admitted temporarily free of duty shall be allowed to remain within that State without security for customs duty.",
+      "options": [
+        "For a period of 12 hours",
+        "For a period of 48 hours",
+        "For a period to be established by that State"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which one of the statements is correct?",
+      "options": [
+        "Contracting states may not accept oral declaration of baggages",
+        "Contracting states shall accept an oral declaration of baggage from passengers and crew",
+        "Contracting states shall accept an oral declaration of baggage only from passengers"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "An aircraft flying to another contracting state:",
+      "options": [
+        "Is liable to pay customs duty on all unused fuel and oil carried",
+        "Is admitted to that state temporarily free of customs duty in regard to oil and fuel remaining only",
+        "Is admitted to that state temporarily free of customs duty"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Contracting states shall not require the authorized agent or pilot-in-command to deliver to the public authorities concerned, before departure of the aircraft, more than some copies of General Declaration, Cargo Manifest and stores list. The numbers of the copies are:",
+      "options": [
+        "2 copies of General Declarations and Cargo Manifest and one copy of a simple stores list",
+        "2 copies of General Declaration and of Cargo Manifest and of a stores list",
+        "2 of each"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "In cases where a visitor travelling by air holds a valid passport and no visa is required of him, contracting states",
+      "options": [
+        "Shall not require him to obtain any other identity document from their consulates or operators prior to initiate the flight",
+        "None of the answers are applicable",
+        "In certain cases any other identity may be required"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "The documents for entry and departure of aircraft:",
+      "options": [
+        "Has to be typewritten or produced by electronic data processing techniques",
+        "Are accepted in handwritten block lettering in ink",
+        "Are accepted at the contracting state discretion"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "On a general declaration form, the following data can be found:",
+      "options": [
+        "Aircraft registration mark, flight number, date and place of departure, destination and, number of crew and passengers",
+        "The nature of goods embarked on the aircraft (e.g. dangerous goods)",
+        "A complete description of payload (passengers, cargo and mail)"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the purpose of a Crew Member’s Certificate (CMC)?",
+      "options": [
+        "To allow flight crew to be exempted from customs, health and immigration formalities when disembarking",
+        "To permit access to the air side of an aerodrome for aircrew",
+        "To provide identification of aircrew"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "What documentation is required by persons travelling by air, for entry into a state?",
+      "options": [
+        "Passport and confirmation of inclusion on the general declaration passenger manifest",
+        "The same as would be required if the person arrived by ship",
+        "Passport, visa and any necessary health documentation (vaccination certificates)"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "The crew member certificate (CMC) shall be accepted by each Contracting State for identification purposes:",
+      "options": [
+        "Together with a valid flight crew license",
+        "None of the above",
+        "Together with a valid passport"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Except in special circumstances determined by the public authorities concerned, when a passenger is passing through the territory of a contracting state and has to stay in that contracting state until the next flight for lack of facilities or any other circumstances, the contracting state where the international airport is located shall permit such a passenger to remain within its territory without requiring visas prior to the arrival when",
+      "options": [
+        "The passenger is to leave that state within two (2) days from the day of his (her) arrival",
+        "The passenger is to leave that state within one (1) day from the day of his (her) arrival",
+        "The passenger is to leave that state within two (2) weeks from the day of his (her) arrival"
+      ],
+      "answer": 0
+    }
+]

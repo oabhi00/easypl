@@ -1,0 +1,187 @@
+[
+      
+    {
+      "question": "Winds in a low pressure",
+      "options": ["Converge", "Diverge", "Go straight"],
+      "answer": 0},
+    {
+      "question": "Low pressure is associated with",
+      "options": ["Good Weather", "Bad Weather", "None"],
+      "answer": 1},
+    {
+      "question": "In a high pressure area winds are",
+      "options": ["Normal", "Strong", "Weak"],
+      "answer": 2},
+    {
+      "question": "Flying from Low to High an altimeter would read",
+      "options": ["Over", "Under", "Constant"],
+      "answer": 1 },
+    {
+      "question": "Isallobar are lines of equal",
+      "options": ["Pressure", "Temperature Tendency", "Pressure Tendency"],
+      "answer": 2},
+    {
+      "question": "What kind of a barometer is an altimeter",
+      "options": ["Aneroid", "Mercury", "Alcohol"],
+      "answer": 0},
+    {
+      "question": "A region between two Lows and Two Highs is",
+      "options": ["Depression", "Secondary Low", "Col"],
+      "answer": 2},
+    {
+      "question": "Bad weather and better visibility is associated with",
+      "options": ["High", "Low", "Col"],
+      "answer": 1 },
+    {
+      "question": "The relationship between height and pressure is made use in construction of",
+      "options": ["Altimeter", "ASI", "VSI"],
+      "answer": 0},
+    {
+      "question": "Altimeter always measures the height of aircraft above",
+      "options": ["MSL", "datum of 1013.2 hPa", "datum at which its sub-scale is set"],
+      "answer": 2},
+    {
+      "question": "Two aircraft flying at same indicated altitude with altimeters set to 1013.2 hPa. One is flying over cold air mass and other over warm air mass. Which of the two has greater altitude?",
+      "options": ["Ac flying over warm air mass", "Ac flying over cold air mass"],
+      "answer": 0},
+    {
+      "question": "The rate of fall of pressure with height in a warm air mass compared to cold air mass will be",
+      "options": ["Same", "More", "Less"],
+      "answer": 2},
+    {
+      "question": "An increase of 1000 ft at MSL is associated with decrease of pressure of",
+      "options": ["100 hPa", "1000 hPa", "3 hPa", "33 hPa"],
+      "answer": 3},
+    {
+      "question": "Lines drawn through places of equal pressure are known as",
+      "options": ["Isobars", "Isotherms", "Isogonal", "Isoclinal"],
+      "answer": 0},
+    {
+      "question": "Which is true?",
+      "options": [
+        "Trough has frontal characteristics",
+        "At trough winds back in N-hemisphere",
+        "At trough winds veer in N-hemisphere"
+      ],
+      "answer": 1},
+    {
+      "question": "Semi diurnal pressure changes are most pronounced in",
+      "options": ["Polar region", "Middle latitudes", "Tropics"],
+      "answer": 2},
+    {
+      "question": "Flying from Delhi to Kolkata at constant indicated altitude but experiencing drift to Starboard. The actual altitude will be (vis-à-vis) indicated altitude",
+      "options": ["Lower", "Same", "Higher"],
+      "answer": 0},
+    {
+      "question": "In the Southern Hemisphere, around a Low Pressure Area wind blows",
+      "options": [
+        "In clockwise direction",
+        "In anticlockwise direction",
+        "Across isobars towards the centre"
+      ],
+      "answer": 0},
+    {
+      "question": "Altimeter of a/c on ground reads aerodrome elevation; its sub-scale is set to",
+      "options": ["QNH", "QNE", "QFF", "QFE"],
+      "answer": 0},
+    {
+      "question": "Instrument for recording pressure is called",
+      "options": ["Anemograph", "Barometer", "Hygrograph"],
+      "answer": 1},
+    {
+      "question": "Poor visibility is associated with",
+      "options": ["High", "Low", "Trough"],
+      "answer": 0},
+    {
+      "question": "On either side, perpendicular to the .......... pressures rise",
+      "options": ["Trough", "Ridge", "Low"],
+      "answer": 0},
+    {
+      "question": "Fall of pressure with height is more rapid in",
+      "options": ["Cold areas", "Warm areas", "Humid areas"],
+      "answer": 0},
+    {
+      "question": "300 hPa in ISA corresponds to the level",
+      "options": ["20,000 ft", "30,000 ft", "35,000 ft"],
+      "answer": 1},
+    {
+      "question": "18,000 ft height in ISA corresponds to the pressure level",
+      "options": ["700 hPa", "200 hPa", "500 hPa"],
+      "answer": 2},
+    {
+      "question": "200 hPa in ISA corresponds to the level",
+      "options": ["20,000 ft", "30,000 ft", "40,000 ft"],
+      "answer": 2},
+    {
+      "question": "24,000 ft height in ISA corresponds to pressure level",
+      "options": ["400 hPa", "500 hPa", "300 hPa"],
+      "answer": 0},
+    {
+      "question": "700 hPa in ISA corresponds to the Flight level",
+      "options": ["20,000 ft", "10,000 ft", "18,000 ft"],
+      "answer": 1},
+    {
+      "question": "40,000 ft height in ISA approximately corresponds to pressure level",
+      "options": ["400 hPa", "500 hPa", "200 hPa"],
+      "answer": 2},
+    {
+      "question": "850 hPa in ISA corresponds to the height",
+      "options": ["7,000 ft", "5,000 ft", "10,000 ft"],
+      "answer": 1},
+    {
+      "question": "Atmospheric pressure is due to",
+      "options": ["wind", "temperature", "gravity", "density"],
+      "answer": 3},
+    {
+      "question": "An aircraft is gaining altitude, in spite of altimeter reading constant altitude. Why?",
+      "options": [
+        "Standard pressure has risen",
+        "Flying towards High",
+        "Flying towards Low",
+        "Temperature has decreased"
+      ],
+      "answer": 1},
+    {
+      "question": "A contour of 9160 m can be expected on a constant pressure chart for pressure level",
+      "options": ["500 hPa", "400 hPa", "300 hPa", "200 hPa"],
+      "answer": 2},
+    {
+      "question": "In contour chart of 300 hPa, isohypse (contours) are drawn at interval of",
+      "options": ["20 gpm", "40 gpm", "60 gpm", "80 gpm"],
+      "answer": 3},
+    {
+      "question": "In constant pressure chart of 500 hPa, isohypse are drawn at interval of",
+      "options": ["20 gpm", "40 gpm", "60 gpm", "80 gpm"],
+      "answer": 1},
+    {
+      "question": "QNH of an aerodrome 160 m AMSL is 1005 hPa. QFE? Assuming 1 hPa = 8m",
+      "options": ["1010 hPa", "985 hPa", "1005 hPa", "990 hPa"],
+      "answer": 1},
+    {
+      "question": "Steep pressure gradient would mean",
+      "options": [
+        "Contours far apart, weak wind",
+        "Contours far apart, strong wind",
+        "Isobars far apart and temperature low",
+        "Isobars closely packed and strong wind"
+      ],
+      "answer": 3},
+    {
+      "question": "What type of inversion occur when a stable layer lies in a high pressure area ",
+      "options": ["Negative","Radiation","Subsidence","Airmass"],
+      "answer": 2},
+    {
+      "question": "Which of following would cause true altitude to increase when altimeter indicate constant altitude?",
+      "options": ["Warm/low","Cold/Low","Hot/High","Cool/Low"],
+      "answer": 2},
+    {
+      "question": "The movement of wind in relation to a cyclone is ",
+      "options": ["Descending and subsiding","Ascending and converging","Descending and cooling","Ascending and diverging"],
+      "answer": 1},
+    {
+      "question": "Aerodrome is at the mean sea level. Its QNH is 1014 hpa. Its QFF will be",
+      "options": ["1014 hpa","1013.25 hpa","Difficult to tell","More than QNH"],
+      "answer": 0}
+  
+  
+  ]

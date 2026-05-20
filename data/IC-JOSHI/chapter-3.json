@@ -1,0 +1,166 @@
+[
+    {
+        "question": "Diurnal variation of temperature is greatest when wind is",
+        "options": ["calm", "light", "strong"],
+        "answer": 0},
+    {
+      "question": "Diurnal variation of temperature is maximum over",
+      "options": ["mountains", "ocean", "land"],
+      "answer": 2},
+    {
+      "question": "On a clear day the amount of solar radiation received by Earth's surface is",
+      "options": ["1/2", "2/3", "5/6"],
+      "answer": 2},
+    {
+      "question": "Albedo is",
+      "options": ["Absorption rate of solar energy", "Greenhouse effect", "Reflecting power of Earth"],
+      "answer": 2},
+    {
+      "question": "During day the ambient temperature is ____ than ground",
+      "options": ["Lower", "Higher", "Equal"],
+      "answer": 0},
+    {
+      "question": "Diurnal variation of temperature over ocean is",
+      "options": ["About 5°C", "2–3°C", "Less than 1°C"],
+      "answer": 2},
+    {
+      "question": "At a coastal station the diurnal variation of temperature depends on",
+      "options": ["Wind direction", "Wind speed", "Radiation"],
+      "answer": 0},
+    {
+      "question": "Snow surface reflects about ____ % of solar radiation.",
+      "options": ["75%", "80%", "90%"],
+      "answer": 1},
+    {
+      "question": "Amount of solar radiation received per unit area is",
+      "options": ["Convection", "Radiation", "Insolation"],
+      "answer": 2},
+    {
+      "question": "Solar radiation received by the earth is",
+      "options": ["Longwave", "Microwave", "Shortwave"],
+      "answer": 2},
+    {
+      "question": "Rise in temperature of a surface is proportional to its specific heat",
+      "options": ["Directly", "Inversely", "Exponentially"],
+      "answer": 1},
+    {
+      "question": "Specific heat of land is ____ than that of water",
+      "options": ["Lower", "Higher", "Equal"],
+      "answer": 0},
+    {
+      "question": "Minimum temperature is reached at",
+      "options": ["Just before sunrise", "At midnight", "½ - 1 hour after dawn"],
+      "answer": 2},
+    {
+      "question": "An air parcel is lifted till it gets saturated. The temperature attained by it is called",
+      "options": ["Frost point", "Dew point", "Condensation level"],
+      "answer": 1},
+    {
+      "question": "Cloudy nights are ____",
+      "options": ["cool", "cold", "warm"],
+      "answer": 2},
+    {
+      "question": "Water vapour is transparent to terrestrial radiation",
+      "options": ["fully", "partially", "not at all"],
+      "answer": 1},
+    {
+      "question": "Higher the temperature ____ would be the wavelength of emitted radiation",
+      "options": ["longer", "shorter", "unchanged"],
+      "answer": 1},
+    {
+      "question": "Air is a bad conductor of heat. A parcel of air can therefore be regarded as insulated from the environment",
+      "options": ["False", "True", "Sometimes true"],
+      "answer": 1},
+    {
+      "question": "Warmer the earth ____ will be the Nocturnal radiation",
+      "options": ["intense", "low", "constant"],
+      "answer": 0},
+    {
+      "question": "Heat is the __ of the KE of all the molecules and atoms of a substance",
+      "options": ["average", "sum total", "difference"],
+      "answer": 1},
+    {
+      "question": "The solar radiation consists of about 46% ____",
+      "options": ["Infrared", "Ultraviolet", "Visible"],
+      "answer": 0},
+    {
+      "question": "The total energy radiated by a black body is proportional to its temperature (T)",
+      "options": ["T²", "T³", "T⁴"],
+      "answer": 2},
+    {
+      "question": "Intense radiation is emitted by",
+      "options": ["Hot bodies", "Cold bodies", "Dark bodies"],
+      "answer": 0},
+    {
+      "question": "The wavelength of most intense radiation is inversely proportional to its __",
+      "options": ["Humidity", "Albedo", "Absolute temperature"],
+      "answer": 2},
+    {
+      "question": "Hot bodies (like the sun) ____ radiate",
+      "options": ["Short Waves", "Long Waves", "Microwaves"],
+      "answer": 0},
+    {
+      "question": "The flow of heat from Earth's surface is 77% by",
+      "options": ["Conduction", "Latent Heat", "Radiation"],
+      "answer": 1},
+    {
+      "question": "-40 °C = -40 °F",
+      "options": ["True", "False", "Sometimes"],
+      "answer": 0},
+    {
+      "question": "Surface temperature is recorded at a height of ____ above ground",
+      "options": ["0.5 m", "1.25 m", "2.0 m"],
+      "answer": 1},
+    {
+      "question": "The door of Stevenson's screen should open",
+      "options": ["towards sun", "opposite to sun", "any direction"],
+      "answer": 1},
+    {
+      "question": "The liquid used in Minimum Thermometer is",
+      "options": ["mercury", "alcohol", "water"],
+      "answer": 1},
+    {
+      "question": "Freezing point of water is",
+      "options": ["0 °F", "12 °F", "100 °C", "32 °F"],
+      "answer": 3},
+    {
+        "question": "Boiling point of water is",
+        "options": ["100 °F", "112 °F", "212 °F", "312 °F"],
+        "answer": 2},
+      {
+        "question": "Freezing point of water is",
+        "options": ["173 K", "273 K", "373 K", "473 K"],
+        "answer": 1},
+      {
+        "question": "Boiling point of water is",
+        "options": ["373 K", "273 K", "17 K", "312 K"],
+        "answer": 0},
+      {
+        "question": "Convert 68° F into Kelvin ",
+        "options": ["233 K", "283 K", "294 K", "293 K"],
+        "answer": 3},
+      {
+        "question": "Diurnal variation of temperature is least on a day when it is",
+        "options": ["clear", "partly cloudy", "cloudy", "overcast"],
+        "answer": 3},
+      {
+        "question": "A clear and calm night is cooler than a cloudy night,because nocturnal radiation ",
+        "options": ["escape through clouds", "are partly radiated back by clouds to Earth", "are fully absorbed by H₂O", "are fully prevented from escaping by clouds"],
+        "answer": 1},
+      {
+        "question": "which surface will cause higher diurnal variation?",
+        "options": ["forest", "desert", "water", "snow"],
+        "answer": 1
+      },
+      {
+        "question": "If temperature does not change in a layer with height on a day, indicates",
+        "options": ["Isothermal layer", "Inversion", "Instability", "Uniform Lapse rate"],
+        "answer": 0
+      }
+
+
+
+
+
+  ]
+  
