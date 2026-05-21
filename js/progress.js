@@ -3,7 +3,7 @@
  * Saves and calculates user stats and accuracy per chapter/subject in LocalStorage
  */
 
-const STORAGE_ATTEMPTS_PREFIX = 'skyprep_attempts_';
+const STORAGE_ATTEMPTS_PREFIX = 'easypl_attempts_';
 
 export const progress = {
   // Save a quiz attempt
@@ -125,6 +125,40 @@ export const progress = {
       ? Math.round(totalAccuracySum / completedChaptersCount) 
       : 0;
       
+    return {
+      percentComplete,
+      avgAccuracy
+    };
+  },
+
+  // Get category level progress (aggregated across all matching subjects)
+  getCategoryProgress(username, categoryName, subjectsConfig) {
+    const configCategory = categoryName === "Technical General" ? "Technical" : categoryName;
+    const matchingSubjects = Object.values(subjectsConfig).filter(sub => sub.category === configCategory);
+    
+    if (matchingSubjects.length === 0) {
+      return { percentComplete: 0, avgAccuracy: 0 };
+    }
+    
+    let totalChapters = 0;
+    let completedChapters = 0;
+    let totalAccuracySum = 0;
+    
+    matchingSubjects.forEach(sub => {
+      totalChapters += sub.chapters.length;
+      const chapterMap = this.getChapterProgressMap(username, sub.id);
+      Object.keys(chapterMap).forEach(chapterId => {
+        const chData = chapterMap[chapterId];
+        if (chData.attemptsCount > 0) {
+          completedChapters++;
+          totalAccuracySum += chData.highScore;
+        }
+      });
+    });
+    
+    const percentComplete = totalChapters > 0 ? Math.round((completedChapters / totalChapters) * 100) : 0;
+    const avgAccuracy = completedChapters > 0 ? Math.round(totalAccuracySum / completedChapters) : 0;
+    
     return {
       percentComplete,
       avgAccuracy

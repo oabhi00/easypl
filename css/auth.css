@@ -3,20 +3,38 @@
   max-width: 450px;
   width: 100%;
   margin: 4rem auto;
+  border: 1px solid rgba(0, 210, 255, 0.15);
+  box-shadow: 0 0 30px rgba(0, 210, 255, 0.05);
+}
+
+.auth-wrapper::before {
+  content: 'PILOT IDENTIFICATION REQUIRED';
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  opacity: 0.6;
 }
 
 .auth-header {
   text-align: center;
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
 .auth-header h1 {
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
 }
 
 .auth-header p {
   color: var(--text-secondary);
+  font-size: 0.9rem;
 }
 
 .form-group {
@@ -25,30 +43,32 @@
 
 .form-label {
   display: block;
-  font-family: var(--font-display);
+  font-family: var(--font-mono);
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   margin-bottom: 0.5rem;
-  color: var(--text-secondary);
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .form-input {
   width: 100%;
   padding: 0.8rem 1rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--border);
-  border-radius: 10px;
+  background: rgba(0, 210, 255, 0.02);
+  border: 1px solid rgba(0, 210, 255, 0.15);
+  border-radius: 8px;
   color: var(--text-primary);
-  font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
   transition: var(--transition-fast);
 }
 
 .form-input:focus {
   outline: none;
   border-color: var(--accent);
-  background: rgba(255, 255, 255, 0.06);
-  box-shadow: 0 0 10px 0 var(--accent-glow);
+  background: rgba(0, 210, 255, 0.05);
+  box-shadow: 0 0 12px 0 var(--accent-glow);
 }
 
 /* Avatar Grid Selector */
@@ -63,13 +83,14 @@
   width: 100%;
   aspect-ratio: 1;
   border-radius: 50%;
-  border: 2px solid transparent;
+  border: 2px solid var(--glass-border);
   cursor: pointer;
-  padding: 3px;
+  padding: 4px;
   transition: var(--transition-fast);
   display: flex;
   align-items: center;
   justify-content: center;
+  background: var(--bg-tertiary);
 }
 
 .avatar-option img {
@@ -77,30 +98,36 @@
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  filter: hue-rotate(180deg) brightness(1.2); /* matches cyan theme */
 }
 
 .avatar-option:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
+  border-color: rgba(0, 210, 255, 0.4);
 }
 
 .avatar-option.selected {
   border-color: var(--accent);
+  background: rgba(0, 210, 255, 0.1);
   box-shadow: 0 0 12px 0 var(--accent-glow);
 }
 
 .auth-toggle {
   text-align: center;
   margin-top: 1.5rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-secondary);
+  font-family: var(--font-mono);
 }
 
 .auth-toggle span {
-  color: var(--accent-light);
+  color: var(--accent);
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .auth-toggle span:hover {
   text-decoration: underline;
+  text-shadow: 0 0 8px var(--accent-glow);
 }

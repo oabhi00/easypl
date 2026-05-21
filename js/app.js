@@ -15,10 +15,11 @@ class App {
     this.currentUser = null;
     
     // View state
-    this.currentView = 'auth'; // auth, dashboard, chapters, quiz, results
+    this.currentView = 'auth'; // auth, dashboard, books, chapters, quiz, results
     this.isLoginView = true;
     
     // Active selections
+    this.activeCategory = null;
     this.activeSubjectId = null;
     this.activeChapter = null;
     this.activeQuizPlayer = null;
@@ -29,6 +30,9 @@ class App {
     this.container = document.getElementById(containerId);
     if (!this.container) return;
 
+    // Wire up light/dark mode theme selector
+    this.initTheme();
+
     // Check existing session
     this.currentUser = auth.getCurrentUser();
     
@@ -37,6 +41,23 @@ class App {
     } else {
       this.navigate('auth');
     }
+  }
+
+  // Bind click listener for theme toggle
+  initTheme() {
+    const toggleBtn = document.getElementById('theme-toggle');
+    if (!toggleBtn) return;
+
+    toggleBtn.addEventListener('click', () => {
+      const isLight = document.body.classList.contains('light-mode');
+      if (isLight) {
+        document.body.classList.remove('light-mode');
+        localStorage.setItem('easypl_theme', 'dark');
+      } else {
+        document.body.classList.add('light-mode');
+        localStorage.setItem('easypl_theme', 'light');
+      }
+    });
   }
 
   // Router / Navigation Controller
@@ -50,6 +71,9 @@ class App {
         break;
       case 'dashboard':
         this.renderDashboardView();
+        break;
+      case 'books':
+        this.renderBooksView();
         break;
       case 'chapters':
         this.renderChaptersView();
@@ -110,10 +134,10 @@ class App {
       this.currentUser,
       stats,
       subjects,
-      // Subject card clicked callback
-      (subjectId) => {
-        this.activeSubjectId = subjectId;
-        this.navigate('chapters');
+      // Subject category clicked callback
+      (categoryName) => {
+        this.activeCategory = categoryName;
+        this.navigate('books');
       },
       // Logout callback
       () => {
@@ -121,6 +145,35 @@ class App {
         this.currentUser = null;
         this.isLoginView = true;
         this.navigate('auth');
+      }
+    );
+  }
+
+  // Render books/databases list view
+  renderBooksView() {
+    if (!this.currentUser) {
+      this.navigate('auth');
+      return;
+    }
+
+    if (!this.activeCategory) {
+      this.navigate('dashboard');
+      return;
+    }
+
+    ui.renderBooks(
+      this.container,
+      this.activeCategory,
+      subjects,
+      this.currentUser,
+      // Book selected callback
+      (subjectId) => {
+        this.activeSubjectId = subjectId;
+        this.navigate('chapters');
+      },
+      // Back callback
+      () => {
+        this.navigate('dashboard');
       }
     );
   }
@@ -149,7 +202,7 @@ class App {
       },
       // Back button callback
       () => {
-        this.navigate('dashboard');
+        this.navigate('books');
       }
     );
   }

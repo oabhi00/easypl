@@ -1,41 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800&display=swap');
 
 :root {
-  /* Color Palette - Premium Space/Aviation Theme */
-  --bg-primary: #0a0e1a;
-  --bg-secondary: #111827;
-  --bg-tertiary: #1f2937;
+  /* Color Palette - Cyber-Aviation Cockpit Theme */
+  --bg-primary: #060913;
+  --bg-secondary: #0b1121;
+  --bg-tertiary: #121b2d;
   
-  --accent: #2563eb;
-  --accent-light: #3b82f6;
-  --accent-glow: rgba(37, 99, 235, 0.15);
+  --accent: #00d2ff;
+  --accent-light: #70e3ff;
+  --accent-glow: rgba(0, 210, 255, 0.15);
   
-  --correct: #10b981;
-  --correct-light: #34d399;
-  --correct-glow: rgba(16, 185, 129, 0.15);
+  --correct: #05f3ad;
+  --correct-light: #5effcf;
+  --correct-glow: rgba(5, 243, 173, 0.15);
   
-  --wrong: #ef4444;
-  --wrong-light: #f87171;
-  --wrong-glow: rgba(239, 68, 68, 0.15);
+  --wrong: #ff4a76;
+  --wrong-light: #ff7da0;
+  --wrong-glow: rgba(255, 74, 118, 0.15);
   
-  --text-primary: #f3f4f6;
-  --text-secondary: #9ca3af;
-  --text-muted: #6b7280;
+  --hud-amber: #ff9f1c;
+  --hud-amber-glow: rgba(255, 159, 28, 0.15);
   
-  --border: rgba(255, 255, 255, 0.08);
-  --border-hover: rgba(255, 255, 255, 0.15);
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-muted: #475569;
   
-  --glass: rgba(17, 24, 39, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.06);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --text-highlight: #ffffff;
+  
+  --border: rgba(0, 210, 255, 0.1);
+  --border-hover: rgba(0, 210, 255, 0.3);
+  
+  --glass: rgba(11, 17, 33, 0.75);
+  --glass-border: rgba(0, 210, 255, 0.08);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
   
   /* Fonts */
-  --font-display: 'Outfit', 'Inter', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
   
   /* Transitions */
-  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Background Glows & Beam Variables */
+  --radar-beam-bg: radial-gradient(circle at 50% 50%, rgba(0, 210, 255, 0.015) 0%, transparent 60%);
+  --glow-1: radial-gradient(circle, rgba(0, 210, 255, 0.08) 0%, transparent 70%);
+  --glow-2: radial-gradient(circle, rgba(255, 159, 28, 0.04) 0%, transparent 70%);
+}
+
+body.light-mode {
+  /* Premium brushed aluminum / light slate terminal cockpit */
+  --bg-primary: #f4f6fa;
+  --bg-secondary: #eef2f6;
+  --bg-tertiary: #e2e8f0;
+  
+  --accent: #0284c7;
+  --accent-light: #0369a1;
+  --accent-glow: rgba(2, 132, 199, 0.1);
+  
+  --correct: #10b981;
+  --correct-light: #059669;
+  --correct-glow: rgba(16, 185, 129, 0.1);
+  
+  --wrong: #ef4444;
+  --wrong-light: #dc2626;
+  --wrong-glow: rgba(239, 68, 68, 0.1);
+  
+  --hud-amber: #ea580c;
+  --hud-amber-glow: rgba(234, 88, 12, 0.1);
+  
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  
+  --text-highlight: #0f172a;
+  
+  --border: rgba(2, 132, 199, 0.15);
+  --border-hover: rgba(2, 132, 199, 0.35);
+  
+  --glass: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(2, 132, 199, 0.12);
+  --glass-shadow: 0 8px 32px 0 rgba(15, 23, 42, 0.06);
+
+  --radar-beam-bg: radial-gradient(circle at 50% 50%, rgba(2, 132, 199, 0.008) 0%, transparent 60%);
+  --glow-1: radial-gradient(circle, rgba(2, 132, 199, 0.04) 0%, transparent 70%);
+  --glow-2: radial-gradient(circle, rgba(234, 88, 12, 0.02) 0%, transparent 70%);
 }
 
 /* Reset & Base Styles */
@@ -53,30 +103,62 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   position: relative;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
-/* Background Gradients */
+/* HUD Navigation Chart / Radar Grid Background */
 body::before {
   content: '';
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: center;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.6;
+  transition: background-image var(--transition-normal);
+}
+
+/* Dynamic radar scanning beam */
+body::after {
+  content: '';
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: var(--radar-beam-bg);
+  z-index: -1;
+  pointer-events: none;
+  animation: radarSweep 20s infinite linear;
+}
+
+/* Glow highlights */
+.decor-glow-1 {
+  position: fixed;
   top: -10%;
   left: -10%;
-  width: 50%;
-  height: 50%;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, transparent 70%);
-  z-index: -1;
+  width: 60%;
+  height: 60%;
+  background: var(--glow-1);
+  z-index: -2;
   pointer-events: none;
 }
 
-body::after {
-  content: '';
-  position: absolute;
+.decor-glow-2 {
+  position: fixed;
   bottom: -10%;
   right: -10%;
-  width: 50%;
-  height: 50%;
-  background: radial-gradient(circle, rgba(16, 185, 129, 0.05) 0%, transparent 70%);
-  z-index: -1;
+  width: 60%;
+  height: 60%;
+  background: var(--glow-2);
+  z-index: -2;
   pointer-events: none;
 }
 
@@ -84,7 +166,7 @@ body::after {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 a {
@@ -94,108 +176,148 @@ a {
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
   background: var(--bg-primary);
 }
 ::-webkit-scrollbar-thumb {
   background: var(--bg-tertiary);
-  border-radius: 4px;
+  border-radius: 3px;
+  border: 1px solid var(--border);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--text-muted);
+  background: var(--accent);
 }
 
 /* Main Layout Shell */
 #app {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 2.5rem 1.5rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* Premium Card Base */
+/* Glassmorphic Cyber-HUD Panels */
 .card {
   background: var(--glass);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--glass-border);
-  border-radius: 16px;
+  border-radius: 12px;
   box-shadow: var(--glass-shadow);
   padding: 2rem;
   transition: var(--transition-normal);
+  position: relative;
+  overflow: hidden;
 }
 
+/* Corner bracket details for HUD panels */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid var(--accent);
+  border-left: 2px solid var(--accent);
+  opacity: 0.5;
+  pointer-events: none;
+}
+.card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid var(--accent);
+  border-right: 2px solid var(--accent);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.card-interactive {
+  cursor: pointer;
+}
 .card-interactive:hover {
   border-color: var(--border-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.45);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px 0 rgba(0, 210, 255, 0.15);
+}
+.card-interactive:hover::before,
+.card-interactive:hover::after {
+  opacity: 1;
 }
 
-/* Button Component */
+/* Tactical glowing buttons */
 .btn {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 0.95rem;
-  padding: 0.75rem 1.5rem;
-  border-radius: 10px;
-  border: none;
+  font-size: 0.9rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   transition: var(--transition-fast);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent) 0%, #1d4ed8 100%);
-  color: white;
-  box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.4);
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  color: var(--bg-primary);
+  box-shadow: 0 4px 14px 0 var(--accent-glow);
+  font-weight: 700;
 }
 
 .btn-primary:hover {
   background: linear-gradient(135deg, var(--accent-light) 0%, var(--accent) 100%);
-  box-shadow: 0 6px 20px 0 rgba(37, 99, 235, 0.6);
+  box-shadow: 0 6px 20px 0 var(--accent-glow);
   transform: translateY(-1px);
 }
 
 .btn-secondary {
-  background: var(--bg-tertiary);
-  color: var(--text-primary);
+  background: var(--accent-glow);
+  color: var(--accent);
   border: 1px solid var(--border);
 }
 
 .btn-secondary:hover {
-  background: #374151;
-  border-color: var(--border-hover);
+  background: var(--border-hover);
+  border-color: var(--accent);
   transform: translateY(-1px);
 }
 
 .btn-outline {
   background: transparent;
   color: var(--text-primary);
-  border: 1px solid var(--border);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .btn-outline:hover {
   background: rgba(255, 255, 255, 0.05);
-  border-color: var(--text-secondary);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
+  from { opacity: 0; transform: translateY(12px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes pulseGlow {
-  0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4); }
-  70% { box-shadow: 0 0 0 10px rgba(37, 99, 235, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+@keyframes radarSweep {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .animate-fade-in {
@@ -210,7 +332,13 @@ a {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #ffffff 0%, #a5f3fc 100%);
+  background: linear-gradient(135deg, var(--text-highlight) 0%, var(--accent-light) 50%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-amber {
+  background: linear-gradient(135deg, var(--text-highlight) 0%, var(--hud-amber) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -231,5 +359,105 @@ a {
 @media (max-width: 768px) {
   .grid-2, .grid-3 {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Premium glass cockpit HUD background overlay */
+.hud-background-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: min(95vw, 95vh, 1100px);
+  height: min(95vw, 95vh, 1100px);
+  transform: translate(-50%, -50%);
+  z-index: -2;
+  pointer-events: none;
+  opacity: 0.85;
+  animation: hudDrift 24s ease-in-out infinite alternate;
+  transition: opacity var(--transition-normal);
+}
+
+.hud-svg {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes hudDrift {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(0.96);
+  }
+  50% {
+    transform: translate(-49.7%, -50.3%) rotate(0.6deg) scale(1);
+  }
+  100% {
+    transform: translate(-50.3%, -49.7%) rotate(-0.4deg) scale(0.96);
+  }
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  color: var(--accent);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: var(--glass-shadow);
+  transition: all var(--transition-normal);
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.08) rotate(15deg);
+  border-color: var(--accent);
+  box-shadow: 0 0 15px var(--accent-glow);
+  color: var(--accent-light);
+}
+
+.theme-toggle-btn:active {
+  transform: scale(0.95);
+}
+
+.theme-toggle-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform var(--transition-normal);
+}
+
+/* Hide moon icon by default in dark mode, show sun */
+.theme-toggle-btn .moon-icon {
+  display: none;
+}
+
+.theme-toggle-btn .sun-icon {
+  display: block;
+}
+
+/* Toggle icon display based on mode */
+body.light-mode .theme-toggle-btn .sun-icon {
+  display: none;
+}
+
+body.light-mode .theme-toggle-btn .moon-icon {
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .theme-toggle-btn {
+    top: 1rem;
+    right: 1rem;
+    width: 38px;
+    height: 38px;
   }
 }

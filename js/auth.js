@@ -3,8 +3,8 @@
  * Manages client-side user sessions and registration using LocalStorage
  */
 
-const STORAGE_USERS_KEY = 'skyprep_users';
-const STORAGE_SESSION_KEY = 'skyprep_current_user';
+const STORAGE_USERS_KEY = 'easypl_users';
+const STORAGE_SESSION_KEY = 'easypl_current_user';
 
 export const auth = {
   // Get currently logged-in user
