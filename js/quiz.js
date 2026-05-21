@@ -26,7 +26,17 @@ export class QuizPlayer {
     try {
       const response = await fetch(this.jsonPath);
       if (!response.ok) throw new Error('Failed to fetch quiz data.');
-      const data = await response.json();
+      const text = await response.text();
+      
+      let data;
+      const trimmed = text.trim();
+      if (trimmed.startsWith('[') || trimmed.startsWith('{')) {
+        data = JSON.parse(trimmed);
+      } else {
+        // Decode base64 obfuscated content
+        const decoded = atob(trimmed);
+        data = JSON.parse(decoded);
+      }
       
       if (!Array.isArray(data) || data.length === 0) {
         throw new Error('Quiz file is empty or invalid.');
