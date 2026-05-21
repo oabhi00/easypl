@@ -207,13 +207,15 @@
 }
 
 /* Animations for Subject Graphic on Hover */
-.subject-card:hover .subject-graphic svg {
+.subject-card:hover .subject-graphic svg,
+.landing-feature-card:hover .landing-feature-icon svg {
   transform: scale(1.05);
 }
 
 /* Rotate compass rose on hover */
-.subject-card:hover .nav-compass-rose {
-  transform: rotate(30deg);
+.subject-card:hover .nav-compass-rose,
+.landing-feature-card:hover .nav-compass-rose {
+  animation: compassSpin 6s infinite linear;
 }
 
 .nav-compass-rose {
@@ -221,8 +223,14 @@
   transform-origin: center;
 }
 
+@keyframes compassSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /* Rotate turbine blade on hover */
-.subject-card:hover .tech-turbofan {
+.subject-card:hover .tech-turbofan,
+.landing-feature-card:hover .tech-turbofan {
   animation: turbofanSpin 1.5s infinite linear;
 }
 
@@ -248,7 +256,8 @@
 }
 
 /* Runway center dash animation on hover */
-.subject-card:hover .runway-guidance {
+.subject-card:hover .runway-guidance,
+.landing-feature-card:hover .runway-guidance {
   stroke-dashoffset: -10;
 }
 

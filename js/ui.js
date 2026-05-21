@@ -255,7 +255,7 @@ export const ui = {
 
         <!-- System Stats Telemetry Footer -->
         <div class="landing-footer">
-          <span>EasyPL DGCA Pilot Examination Helper — Keep Learning, Fly Safe.</span>
+          <span>EasyPL Pilot Examination Helper — Keep Learning, Fly Safe.</span>
         </div>
       </div>
     `;
@@ -301,13 +301,13 @@ export const ui = {
           </div>
         ` : ''}
         <div class="auth-header">
-          <h1 class="text-gradient">EasyPL DGCA</h1>
+          <h1 class="text-gradient">EasyPL</h1>
           <p>${isLogin ? 'LOG IN TO YOUR ACCOUNT' : 'CREATE YOUR PILOT PROFILE'}</p>
         </div>
         
         <form id="authForm">
           <div class="form-group">
-            <label class="form-label" for="username">Pilot Username</label>
+            <label class="form-label" for="username">Username</label>
             <input class="form-input" type="text" id="username" required placeholder="Enter username" autocomplete="off">
           </div>
           
