@@ -8,7 +8,7 @@
 }
 
 .auth-wrapper::before {
-  content: 'PILOT IDENTIFICATION REQUIRED';
+  content: 'PILOT SIGN IN';
   position: absolute;
   top: 10px;
   left: 15px;

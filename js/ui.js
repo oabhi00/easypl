@@ -122,116 +122,147 @@ export const ui = {
     const regSVG = getSubjectGraphic('Regulations');
 
     container.innerHTML = `
-      <div class="landing-wrapper animate-fade-in">
-        <!-- Hero Card -->
-        <div class="landing-hero">
-          <div class="landing-hud-container">
-            <svg class="landing-hud-gyro" viewBox="0 0 100 100">
-              <!-- HUD Dial circle -->
-              <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity="0.3"/>
-              <circle cx="50" cy="50" r="38" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="2 3" opacity="0.4"/>
-              
-              <!-- Gyro horizon pitch tape -->
-              <line x1="25" y1="50" x2="75" y2="50" stroke="var(--accent)" stroke-width="2"/>
-              <line x1="35" y1="42" x2="65" y2="42" stroke="var(--accent)" stroke-width="1" opacity="0.8"/>
-              <line x1="35" y1="58" x2="65" y2="58" stroke="var(--accent)" stroke-width="1" opacity="0.8"/>
-              
-              <!-- Compass heading ticks -->
-              <line x1="50" y1="5" x2="50" y2="12" stroke="var(--accent)" stroke-width="2"/>
-              <line x1="50" y1="95" x2="50" y2="88" stroke="var(--accent)" stroke-width="2"/>
-              <line x1="5" y1="50" x2="12" y2="50" stroke="var(--accent)" stroke-width="2"/>
-              <line x1="95" y1="50" x2="88" y2="50" stroke="var(--accent)" stroke-width="2"/>
-              
-              <!-- Airplane symbol -->
-              <path d="M42,50 L47,50 L50,45 L53,50 L58,50 M50,45 L50,53" fill="none" stroke="var(--wrong)" stroke-width="2" stroke-linejoin="round"/>
-            </svg>
+      <div class="landing-container animate-fade-in">
+        <!-- Top Navigation Bar -->
+        <header class="landing-header">
+          <div class="landing-logo">
+            <span class="logo-icon">✈️</span>
+            <span class="logo-text">EasyPL</span>
           </div>
-          
-          <h1 class="landing-title text-gradient">EasyPL DGCA</h1>
-          <div class="landing-subtitle">PRE-FLIGHT EXAMINATION GATEWAY</div>
-          <p class="landing-tagline">
-            Master DGCA subjects including Meteorology, Air Navigation, Technical General, and Air Regulations with India's premium interactive pilot mock exam dashboard.
-          </p>
-          
-          <div class="landing-cta-group">
-            <button class="btn btn-primary" id="engageCockpitBtn" style="padding: 0.9rem 2.2rem; font-size: 1rem; letter-spacing: 0.1em; box-shadow: 0 0 20px var(--accent-glow);">
-              🛫 Engage Cockpit
-            </button>
-            <button class="btn btn-outline" id="exploreSystemsBtn" style="padding: 0.9rem 1.8rem; font-size: 0.9rem;">
-              Explore Systems
-            </button>
+          <div class="landing-nav-actions">
+            <button class="btn btn-outline" id="landingLoginBtn" style="padding: 0.5rem 1.2rem; font-size: 0.8rem;">Log In</button>
           </div>
-        </div>
+        </header>
+
+        <!-- Hero Section (Split Grid) -->
+        <section class="landing-hero-split">
+          <!-- Left: Hero Text & CTAs -->
+          <div class="hero-content">
+            <div class="hero-badge">✈️ DGCA Exam Preparation</div>
+            <h1 class="hero-title text-gradient">Clear Your DGCA Exams with Confidence</h1>
+            <p class="hero-description">
+              Study smart and pass your pilot theory papers. EasyPL provides high-quality mock tests, performance logs, and real exam conditions for Indian commercial pilot license candidates.
+            </p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" id="engageCockpitBtn" style="padding: 0.9rem 2.2rem; font-size: 1rem; letter-spacing: 0.05em; box-shadow: 0 0 20px var(--accent-glow);">
+                Start Practicing
+              </button>
+              <button class="btn btn-outline" id="exploreSystemsBtn" style="padding: 0.9rem 1.8rem; font-size: 0.9rem;">
+                Explore Subjects
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Glass Dashboard Widget Preview -->
+          <div class="hero-widget-container">
+            <div class="glass-widget" style="transform-style: preserve-3d; perspective: 1000px;">
+              <div class="widget-header">
+                <span class="status-indicator"></span>
+                <span class="widget-title">FLIGHT INSTRUMENT MONITOR</span>
+              </div>
+              <div class="widget-body">
+                <div class="widget-gyro-wrapper" style="transform: translateZ(30px);">
+                  <svg class="interactive-gyro" viewBox="0 0 100 100">
+                    <!-- HUD Dial circle -->
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.3"/>
+                    <circle cx="50" cy="50" r="38" fill="none" stroke="var(--accent)" stroke-width="1" stroke-dasharray="2 3" opacity="0.4"/>
+                    
+                    <!-- Gyro horizon pitch tape -->
+                    <g class="gyro-rotator" style="transform-origin: 50px 50px; transition: transform 0.1s ease-out;">
+                      <line x1="25" y1="50" x2="75" y2="50" stroke="var(--accent)" stroke-width="1.5"/>
+                      <line x1="35" y1="42" x2="65" y2="42" stroke="var(--accent)" stroke-width="0.8" opacity="0.8"/>
+                      <line x1="35" y1="58" x2="65" y2="58" stroke="var(--accent)" stroke-width="0.8" opacity="0.8"/>
+                    </g>
+                    
+                    <!-- Airplane symbol -->
+                    <path d="M42,50 L47,50 L50,45 L53,50 L58,50 M50,45 L50,53" fill="none" stroke="var(--wrong)" stroke-width="1.8" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="widget-stats" style="transform: translateZ(20px); width: 100%;">
+                  <div class="widget-stat-item">
+                    <span class="stat-lbl">Active Mode</span>
+                    <span class="stat-val text-accent">Exam Prep</span>
+                  </div>
+                  <div class="widget-stat-item">
+                    <span class="stat-lbl">Safety Margin</span>
+                    <span class="stat-val text-correct">100% Safe</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <!-- Subjects Grid Showcase -->
         <div>
-          <div class="landing-section-title">CORE AVIATION SUBJECTS</div>
+          <div class="landing-section-title">Exam Subjects</div>
           <div class="landing-features-grid">
             <div class="card landing-feature-card">
               <div class="landing-feature-icon">${metSVG}</div>
               <h3>Meteorology</h3>
-              <p>Atmospheric physics, weather reports (METAR/TAF), pressure systems, and altimetry computations.</p>
+              <p>Study weather reports (METAR/TAF), pressure structures, clouds, winds, and global climate patterns.</p>
             </div>
             
             <div class="card landing-feature-card">
               <div class="landing-feature-icon">${navSVG}</div>
               <h3>Air Navigation</h3>
-              <p>Flight plotting, wind triangles, chart scales, radio aids (VOR/ADF/ILS), and gyroscopic instruments.</p>
+              <p>Practice track plotting, wind triangles, chart scales, radio aids (VOR/ADF/ILS), and instruments.</p>
             </div>
             
             <div class="card landing-feature-card">
               <div class="landing-feature-icon">${techSVG}</div>
               <h3>Technical General</h3>
-              <p>Jet turbine engines, airframe structures, flight dynamics, electrical circuits, and hydraulic lines.</p>
+              <p>Understand jet turbine engines, airframe systems, aerodynamics, electrical grids, and hydraulics.</p>
             </div>
             
             <div class="card landing-feature-card">
               <div class="landing-feature-icon">${regSVG}</div>
               <h3>Air Regulations</h3>
-              <p>Aviation law, ICAO rules, airspace boundaries, search & rescue limits, and landing priorities.</p>
+              <p>Learn aviation law, airspace divisions, flight priority rules, and ICAO standards.</p>
             </div>
           </div>
         </div>
 
         <!-- Pre-Flight Checklist Steps -->
         <div class="landing-steps-section">
-          <div class="landing-section-title">PRE-FLIGHT PREPARATION FLOW</div>
+          <div class="landing-section-title">How It Works</div>
           <div class="landing-steps-grid">
             <div class="landing-step-card">
               <div class="landing-step-num">STEP 01 //</div>
-              <h4>Create Profile</h4>
-              <p>Initialize your local pilot registry record and choose your flightdeck crew avatar.</p>
+              <h4>Create Account</h4>
+              <p>Set up your pilot profile, choose your custom crew avatar, and get ready to study.</p>
             </div>
             
             <div class="landing-step-card">
               <div class="landing-step-num">STEP 02 //</div>
-              <h4>Select Exam Book</h4>
-              <p>Browse through core DGCA books and official question banks (e.g. Joshi, Oxford, mock papers).</p>
+              <h4>Select Study Book</h4>
+              <p>Choose your preferred books or mock papers for targeted preparation sessions.</p>
             </div>
             
             <div class="landing-step-card">
               <div class="landing-step-num">STEP 03 //</div>
-              <h4>Take Mock Test</h4>
-              <p>Attempt timed test sessions in our clean, distraction-free cockpit exam console.</p>
+              <h4>Practice Mock Tests</h4>
+              <p>Answer questions in a clean, timed environment designed to mimic real exams.</p>
             </div>
             
             <div class="landing-step-card">
               <div class="landing-step-num">STEP 04 //</div>
-              <h4>Review Flight Log</h4>
-              <p>Analyze incorrect responses via the attitude indicator horizon dashboard to perfect your scores.</p>
+              <h4>Track Your Progress</h4>
+              <p>Review wrong answers and monitor your average score and study time stats.</p>
             </div>
           </div>
         </div>
 
         <!-- System Stats Telemetry Footer -->
         <div class="landing-footer">
-          <span>CONSOLE STATUS: READY // LAT: 28.5686° N // LON: 77.1122° E // SYSTEM DEPTH: SECURE // NO ACTIVE FAULTS // BUILD V2.4.0</span>
+          <span>EasyPL DGCA Pilot Examination Helper — Keep Learning, Fly Safe.</span>
         </div>
       </div>
     `;
 
-    // Hook CTA clicks
+    // Hook clicks
     document.getElementById('engageCockpitBtn').addEventListener('click', onEngage);
+    document.getElementById('landingLoginBtn').addEventListener('click', onEngage);
     
     document.getElementById('exploreSystemsBtn').addEventListener('click', () => {
       const target = document.querySelector('.landing-section-title');
@@ -239,6 +270,25 @@ export const ui = {
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
+
+    // Interactive mouse move rotation effect on the gyro widget
+    const glassWidget = container.querySelector('.glass-widget');
+    const gyroRotator = container.querySelector('.gyro-rotator');
+    if (glassWidget && gyroRotator) {
+      glassWidget.addEventListener('mousemove', (e) => {
+        const rect = glassWidget.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        // Tilt the card slightly
+        glassWidget.style.transform = `translateY(-5px) rotateX(${-y / 15}deg) rotateY(${x / 15}deg) scale(1.02)`;
+        // Rotate the gyro line inside slightly
+        gyroRotator.style.transform = `rotate(${x / 4}deg)`;
+      });
+      glassWidget.addEventListener('mouseleave', () => {
+        glassWidget.style.transform = '';
+        gyroRotator.style.transform = '';
+      });
+    }
   },
 
   // 1. Render Authentication Screen (Pre-Flight BRIEFING Terminal)
@@ -246,8 +296,8 @@ export const ui = {
     container.innerHTML = `
       <div class="auth-wrapper card animate-fade-in">
         ${onBackToSplash ? `
-          <div class="auth-back" id="authBackBtn" title="Return to pre-flight lobby">
-            ✕ CLOSE
+          <div class="auth-back" id="authBackBtn" title="Back to Home">
+            ✕ BACK TO HOME
           </div>
         ` : ''}
         <div class="auth-header">
@@ -420,10 +470,10 @@ export const ui = {
           <img class="profile-avatar" src="${avatarUrl}" alt="User Avatar">
           <div class="profile-info">
             <h3>Welcome, ${user.username}</h3>
-            <p>ACTIVE PILOT</p>
+            <p>STUDENT PILOT</p>
           </div>
         </div>
-        <button class="btn btn-outline" id="logoutBtn">Disengage</button>
+        <button class="btn btn-outline" id="logoutBtn">Log Out</button>
       </div>
 
       <!-- General Statistics -->
@@ -562,7 +612,7 @@ export const ui = {
       const chProgress = progressMap[ch.id];
       const hasAttempted = chProgress && chProgress.attemptsCount > 0;
       const statusClass = hasAttempted ? 'status-completed' : 'status-not-started';
-      const statusText = hasAttempted ? `Passed (${chProgress.highScore}% score)` : 'STANDBY';
+      const statusText = hasAttempted ? `Passed (${chProgress.highScore}% score)` : 'NOT STARTED';
       
       chapterRowsHTML += `
         <div class="chapter-row animate-fade-in">
@@ -572,7 +622,7 @@ export const ui = {
           </div>
           <div class="chapter-action">
             <span class="badge-status ${statusClass}">${statusText}</span>
-            <button class="btn btn-secondary btn-start-chapter" data-id="${ch.id}">Engage</button>
+            <button class="btn btn-secondary btn-start-chapter" data-id="${ch.id}">Start</button>
           </div>
         </div>
       `;
@@ -688,7 +738,7 @@ export const ui = {
         <!-- Controls buttons -->
         <div class="quiz-controls">
           <button class="btn btn-outline" id="quizPrevBtn" ${questionNumber === 1 ? 'disabled style="opacity:0.25; pointer-events:none;"' : ''}>&larr; Prev Question</button>
-          <button class="btn btn-outline" id="quizQuitBtn" style="border-color: rgba(255, 74, 118, 0.4); color: var(--wrong-light)">Abort Exam</button>
+          <button class="btn btn-outline" id="quizQuitBtn" style="border-color: rgba(255, 74, 118, 0.4); color: var(--wrong-light)">Quit Exam</button>
           
           ${questionNumber === totalQuestions ? `
             <button class="btn btn-primary" id="quizSubmitBtn" ${!isAnswered ? 'disabled style="opacity:0.3; pointer-events:none;"' : ''}>Submit Exam</button>
