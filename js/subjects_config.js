@@ -180,7 +180,7 @@ export const subjects = {
       {
         "file": "questions.json",
         "id": "questions",
-        "displayName": "Questions",
+        "displayName": "Full Meteorology Mock Exam",
         "questionsCount": 494
       }
     ]
@@ -193,7 +193,7 @@ export const subjects = {
       {
         "file": "questions.json",
         "id": "questions",
-        "displayName": "Questions",
+        "displayName": "Full Navigation Mock Exam",
         "questionsCount": 598
       }
     ]
@@ -949,7 +949,7 @@ export const subjects = {
       {
         "file": "chapter-1.json",
         "id": "chapter-1",
-        "displayName": "Chapter 1",
+        "displayName": "General Technical Practice",
         "questionsCount": 232
       }
     ]
@@ -962,7 +962,7 @@ export const subjects = {
       {
         "file": "questions.json",
         "id": "questions",
-        "displayName": "Questions",
+        "displayName": "Full Air Regulations Mock Exam",
         "questionsCount": 1145
       }
     ]
@@ -1325,7 +1325,7 @@ export const subjects = {
       {
         "file": "questions.json",
         "id": "questions",
-        "displayName": "Questions",
+        "displayName": "Full Technical Mock Exam",
         "questionsCount": 1262
       }
     ]
