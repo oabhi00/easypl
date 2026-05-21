@@ -131,3 +131,22 @@
   text-decoration: underline;
   text-shadow: 0 0 8px var(--accent-glow);
 }
+
+.auth-back {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: opacity var(--transition-fast), color var(--transition-fast);
+  z-index: 10;
+}
+
+.auth-back:hover {
+  opacity: 1;
+  color: var(--wrong);
+}

@@ -15,7 +15,7 @@ class App {
     this.currentUser = null;
     
     // View state
-    this.currentView = 'auth'; // auth, dashboard, books, chapters, quiz, results
+    this.currentView = 'landing'; // landing, auth, dashboard, books, chapters, quiz, results
     this.isLoginView = true;
     
     // Active selections
@@ -39,7 +39,7 @@ class App {
     if (this.currentUser) {
       this.navigate('dashboard');
     } else {
-      this.navigate('auth');
+      this.navigate('landing');
     }
   }
 
@@ -66,6 +66,9 @@ class App {
     this.container.innerHTML = ''; // Clear container
 
     switch (view) {
+      case 'landing':
+        this.renderLandingView();
+        break;
       case 'auth':
         this.renderAuthView();
         break;
@@ -94,6 +97,18 @@ class App {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
+  // Render the cockpit landing/splash view
+  renderLandingView() {
+    ui.renderLanding(
+      this.container,
+      // Engage callback
+      () => {
+        this.isLoginView = true;
+        this.navigate('auth');
+      }
+    );
+  }
+
   // Render registration or login view
   renderAuthView() {
     ui.renderAuth(
@@ -116,6 +131,10 @@ class App {
         } catch (err) {
           alert(err.message);
         }
+      },
+      // Back to splash callback
+      () => {
+        this.navigate('landing');
       }
     );
   }
@@ -123,7 +142,7 @@ class App {
   // Render the dashboard view
   renderDashboardView() {
     if (!this.currentUser) {
-      this.navigate('auth');
+      this.navigate('landing');
       return;
     }
 
@@ -144,7 +163,7 @@ class App {
         auth.logout();
         this.currentUser = null;
         this.isLoginView = true;
-        this.navigate('auth');
+        this.navigate('landing');
       }
     );
   }
@@ -152,7 +171,7 @@ class App {
   // Render books/databases list view
   renderBooksView() {
     if (!this.currentUser) {
-      this.navigate('auth');
+      this.navigate('landing');
       return;
     }
 
@@ -181,7 +200,7 @@ class App {
   // Render chapters selection view
   renderChaptersView() {
     if (!this.currentUser) {
-      this.navigate('auth');
+      this.navigate('landing');
       return;
     }
 

@@ -114,10 +114,142 @@ const statIcons = {
 };
 
 export const ui = {
+  // 0. Render Cockpit Landing/Splash Screen
+  renderLanding(container, onEngage) {
+    const metSVG = getSubjectGraphic('Meteorology');
+    const navSVG = getSubjectGraphic('Navigation');
+    const techSVG = getSubjectGraphic('Technical');
+    const regSVG = getSubjectGraphic('Regulations');
+
+    container.innerHTML = `
+      <div class="landing-wrapper animate-fade-in">
+        <!-- Hero Card -->
+        <div class="landing-hero">
+          <div class="landing-hud-container">
+            <svg class="landing-hud-gyro" viewBox="0 0 100 100">
+              <!-- HUD Dial circle -->
+              <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity="0.3"/>
+              <circle cx="50" cy="50" r="38" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="2 3" opacity="0.4"/>
+              
+              <!-- Gyro horizon pitch tape -->
+              <line x1="25" y1="50" x2="75" y2="50" stroke="var(--accent)" stroke-width="2"/>
+              <line x1="35" y1="42" x2="65" y2="42" stroke="var(--accent)" stroke-width="1" opacity="0.8"/>
+              <line x1="35" y1="58" x2="65" y2="58" stroke="var(--accent)" stroke-width="1" opacity="0.8"/>
+              
+              <!-- Compass heading ticks -->
+              <line x1="50" y1="5" x2="50" y2="12" stroke="var(--accent)" stroke-width="2"/>
+              <line x1="50" y1="95" x2="50" y2="88" stroke="var(--accent)" stroke-width="2"/>
+              <line x1="5" y1="50" x2="12" y2="50" stroke="var(--accent)" stroke-width="2"/>
+              <line x1="95" y1="50" x2="88" y2="50" stroke="var(--accent)" stroke-width="2"/>
+              
+              <!-- Airplane symbol -->
+              <path d="M42,50 L47,50 L50,45 L53,50 L58,50 M50,45 L50,53" fill="none" stroke="var(--wrong)" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          
+          <h1 class="landing-title text-gradient">EasyPL DGCA</h1>
+          <div class="landing-subtitle">PRE-FLIGHT EXAMINATION GATEWAY</div>
+          <p class="landing-tagline">
+            Master DGCA subjects including Meteorology, Air Navigation, Technical General, and Air Regulations with India's premium interactive pilot mock exam dashboard.
+          </p>
+          
+          <div class="landing-cta-group">
+            <button class="btn btn-primary" id="engageCockpitBtn" style="padding: 0.9rem 2.2rem; font-size: 1rem; letter-spacing: 0.1em; box-shadow: 0 0 20px var(--accent-glow);">
+              🛫 Engage Cockpit
+            </button>
+            <button class="btn btn-outline" id="exploreSystemsBtn" style="padding: 0.9rem 1.8rem; font-size: 0.9rem;">
+              Explore Systems
+            </button>
+          </div>
+        </div>
+
+        <!-- Subjects Grid Showcase -->
+        <div>
+          <div class="landing-section-title">CORE AVIATION SUBJECTS</div>
+          <div class="landing-features-grid">
+            <div class="card landing-feature-card">
+              <div class="landing-feature-icon">${metSVG}</div>
+              <h3>Meteorology</h3>
+              <p>Atmospheric physics, weather reports (METAR/TAF), pressure systems, and altimetry computations.</p>
+            </div>
+            
+            <div class="card landing-feature-card">
+              <div class="landing-feature-icon">${navSVG}</div>
+              <h3>Air Navigation</h3>
+              <p>Flight plotting, wind triangles, chart scales, radio aids (VOR/ADF/ILS), and gyroscopic instruments.</p>
+            </div>
+            
+            <div class="card landing-feature-card">
+              <div class="landing-feature-icon">${techSVG}</div>
+              <h3>Technical General</h3>
+              <p>Jet turbine engines, airframe structures, flight dynamics, electrical circuits, and hydraulic lines.</p>
+            </div>
+            
+            <div class="card landing-feature-card">
+              <div class="landing-feature-icon">${regSVG}</div>
+              <h3>Air Regulations</h3>
+              <p>Aviation law, ICAO rules, airspace boundaries, search & rescue limits, and landing priorities.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pre-Flight Checklist Steps -->
+        <div class="landing-steps-section">
+          <div class="landing-section-title">PRE-FLIGHT PREPARATION FLOW</div>
+          <div class="landing-steps-grid">
+            <div class="landing-step-card">
+              <div class="landing-step-num">STEP 01 //</div>
+              <h4>Create Profile</h4>
+              <p>Initialize your local pilot registry record and choose your flightdeck crew avatar.</p>
+            </div>
+            
+            <div class="landing-step-card">
+              <div class="landing-step-num">STEP 02 //</div>
+              <h4>Select Exam Book</h4>
+              <p>Browse through core DGCA books and official question banks (e.g. Joshi, Oxford, mock papers).</p>
+            </div>
+            
+            <div class="landing-step-card">
+              <div class="landing-step-num">STEP 03 //</div>
+              <h4>Take Mock Test</h4>
+              <p>Attempt timed test sessions in our clean, distraction-free cockpit exam console.</p>
+            </div>
+            
+            <div class="landing-step-card">
+              <div class="landing-step-num">STEP 04 //</div>
+              <h4>Review Flight Log</h4>
+              <p>Analyze incorrect responses via the attitude indicator horizon dashboard to perfect your scores.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- System Stats Telemetry Footer -->
+        <div class="landing-footer">
+          <span>CONSOLE STATUS: READY // LAT: 28.5686° N // LON: 77.1122° E // SYSTEM DEPTH: SECURE // NO ACTIVE FAULTS // BUILD V2.4.0</span>
+        </div>
+      </div>
+    `;
+
+    // Hook CTA clicks
+    document.getElementById('engageCockpitBtn').addEventListener('click', onEngage);
+    
+    document.getElementById('exploreSystemsBtn').addEventListener('click', () => {
+      const target = document.querySelector('.landing-section-title');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  },
+
   // 1. Render Authentication Screen (Pre-Flight BRIEFING Terminal)
-  renderAuth(container, isLogin, onToggle, onSubmit) {
+  renderAuth(container, isLogin, onToggle, onSubmit, onBackToSplash) {
     container.innerHTML = `
       <div class="auth-wrapper card animate-fade-in">
+        ${onBackToSplash ? `
+          <div class="auth-back" id="authBackBtn" title="Return to pre-flight lobby">
+            ✕ CLOSE
+          </div>
+        ` : ''}
         <div class="auth-header">
           <h1 class="text-gradient">EasyPL DGCA</h1>
           <p>${isLogin ? 'LOG IN TO YOUR ACCOUNT' : 'CREATE YOUR PILOT PROFILE'}</p>
@@ -183,6 +315,10 @@ export const ui = {
 
     // Handle toggle between Login & Register
     document.getElementById('toggleAuth').addEventListener('click', onToggle);
+
+    if (onBackToSplash && document.getElementById('authBackBtn')) {
+      document.getElementById('authBackBtn').addEventListener('click', onBackToSplash);
+    }
 
     // Handle avatar selection clicks
     if (!isLogin) {
