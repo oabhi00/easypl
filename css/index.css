@@ -839,3 +839,17 @@ body.light-mode .theme-toggle-btn .moon-icon {
   padding: 1.5rem 0;
   border-top: 1px dashed var(--border);
 }
+
+.landing-footer a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--accent);
+  transition: var(--transition-fast);
+}
+
+.landing-footer a:hover {
+  color: var(--accent-light);
+  border-bottom-color: var(--accent-light);
+  text-shadow: 0 0 8px var(--accent-glow);
+}
+
