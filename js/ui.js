@@ -134,14 +134,14 @@ export const ui = {
           </div>
         </header>
 
-        <!-- Hero Section (Split Grid) -->
-        <section class="landing-hero-split">
-          <!-- Left: Hero Text & CTAs -->
+        <!-- Hero Section (Centered with Attitude BG) -->
+        <section class="landing-hero-centered">
+          <!-- Hero Text & CTAs -->
           <div class="hero-content">
             <div class="hero-badge">✈️ DGCA Exam Preparation</div>
-            <h1 class="hero-title text-gradient">Clear Your DGCA Exams with Confidence</h1>
+            <h1 class="hero-title text-gradient">Clear Your DGCA CPL Papers</h1>
             <p class="hero-description">
-              Study smart and pass your pilot theory papers. EasyPL provides high-quality mock tests, performance logs, and real exam conditions for Indian commercial pilot license candidates.
+              Study smart and clear your DGCA CPL papers. EasyPL provides high-quality mock tests, performance logs, and real exam conditions for Indian CPL candidates.
             </p>
             <div class="hero-actions">
               <button class="btn btn-primary" id="engageCockpitBtn" style="padding: 0.9rem 2.2rem; font-size: 1rem; letter-spacing: 0.05em; box-shadow: 0 0 20px var(--accent-glow);">
@@ -153,146 +153,236 @@ export const ui = {
             </div>
           </div>
 
-          <!-- Right: Interactive Glass Dashboard Widget Preview -->
-          <div class="hero-widget-container">
-            <div class="glass-widget" style="transform-style: preserve-3d; perspective: 1000px;">
-              <div class="widget-header">
-                <span class="status-indicator"></span>
-                <span class="widget-title">FLIGHT INSTRUMENT MONITOR</span>
-              </div>
-              <div class="widget-body">
-                <div class="widget-gyro-wrapper" style="transform: translateZ(30px);">
-                  <svg class="interactive-gyro" viewBox="0 0 100 100">
-                    <!-- HUD Dial circle -->
-                    <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.3"/>
-                    <circle cx="50" cy="50" r="38" fill="none" stroke="var(--accent)" stroke-width="1" stroke-dasharray="2 3" opacity="0.4"/>
-                    
-                    <!-- Gyro horizon pitch tape -->
-                    <g class="gyro-rotator" style="transform-origin: 50px 50px; transition: transform 0.1s ease-out;">
-                      <line x1="25" y1="50" x2="75" y2="50" stroke="var(--accent)" stroke-width="1.5"/>
-                      <line x1="35" y1="42" x2="65" y2="42" stroke="var(--accent)" stroke-width="0.8" opacity="0.8"/>
-                      <line x1="35" y1="58" x2="65" y2="58" stroke="var(--accent)" stroke-width="0.8" opacity="0.8"/>
-                    </g>
-                    
-                    <!-- Airplane symbol -->
-                    <path d="M42,50 L47,50 L50,45 L53,50 L58,50 M50,45 L50,53" fill="none" stroke="var(--wrong)" stroke-width="1.8" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-                <div class="widget-stats" style="transform: translateZ(20px); width: 100%;">
-                  <div class="widget-stat-item">
-                    <span class="stat-lbl">Active Mode</span>
-                    <span class="stat-val text-accent">Exam Prep</span>
-                  </div>
-                  <div class="widget-stat-item">
-                    <span class="stat-lbl">Safety Margin</span>
-                    <span class="stat-val text-correct">100% Safe</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+          <!-- Dynamic Ambient Background Glow Orbs for visual sexiness -->
+          <div class="landing-glow-orb-1"></div>
+          <div class="landing-glow-orb-2"></div>
 
-        <!-- Subjects Grid Showcase -->
-        <div>
-          <div class="landing-section-title">Exam Subjects</div>
-          <div class="landing-features-grid">
-            <div class="card landing-feature-card">
-              <div class="landing-feature-icon">${metSVG}</div>
-              <h3>Meteorology</h3>
-              <p>Study weather reports (METAR/TAF), pressure structures, clouds, winds, and global climate patterns.</p>
-            </div>
-            
-            <div class="card landing-feature-card">
-              <div class="landing-feature-icon">${navSVG}</div>
-              <h3>Air Navigation</h3>
-              <p>Practice track plotting, wind triangles, chart scales, radio aids (VOR/ADF/ILS), and instruments.</p>
-            </div>
-            
-            <div class="card landing-feature-card">
-              <div class="landing-feature-icon">${techSVG}</div>
-              <h3>Technical General</h3>
-              <p>Understand jet turbine engines, airframe systems, aerodynamics, electrical grids, and hydraulics.</p>
-            </div>
-            
-            <div class="card landing-feature-card">
-              <div class="landing-feature-icon">${regSVG}</div>
-              <h3>Air Regulations</h3>
-              <p>Learn aviation law, airspace divisions, flight priority rules, and ICAO standards.</p>
-            </div>
-          </div>
+          <!-- Centered: Interactive Background Attitude Indicator -->
+          <div class="landing-bg-attitude">
+            <svg class="bg-attitude-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <clipPath id="bgAiClip">
+                  <circle cx="100" cy="100" r="85" />
+                </clipPath>
+                <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#051937" />
+                  <stop offset="60%" stop-color="#005d8f" />
+                  <stop offset="100%" stop-color="#00d2ff" />
+                </linearGradient>
+                <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#3c1e08" />
+                  <stop offset="100%" stop-color="#1b0b00" />
+                </linearGradient>
+                <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="2.5" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <!-- Outer Bezel Ring -->
+              <circle cx="100" cy="100" r="92" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.3" filter="url(#neonGlow)"/>
+              <circle cx="100" cy="100" r="87" fill="none" stroke="var(--accent)" stroke-width="0.8" opacity="0.25"/>
+
+              <!-- Bank Angle Markings -->
+              <g transform="translate(100, 100)" stroke="var(--text-secondary)" stroke-width="1" opacity="0.5">
+                <polygon points="0,-87 -4,-80 4,-80" fill="var(--hud-amber)" stroke="none" />
+                <line x1="0" y1="-87" x2="0" y2="-83" transform="rotate(10)" />
+                <line x1="0" y1="-87" x2="0" y2="-83" transform="rotate(20)" />
+                <line x1="0" y1="-87" x2="0" y2="-83" transform="rotate(30)" />
+                <line x1="0" y1="-87" x2="0" y2="-81" stroke-width="1.5" transform="rotate(45)" />
+                <line x1="0" y1="-87" x2="0" y2="-81" stroke-width="1.5" transform="rotate(60)" />
+                
+                <line x1="0" y1="-87" x2="0" y2="-83" transform="rotate(-10)" />
+                <line x1="0" y1="-87" x2="0" y2="-83" transform="rotate(-20)" />
+                <line x1="0" y1="-87" x2="0" y2="-83" transform="rotate(-30)" />
+                <line x1="0" y1="-87" x2="0" y2="-81" stroke-width="1.5" transform="rotate(-45)" />
+                <line x1="0" y1="-87" x2="0" y2="-81" stroke-width="1.5" transform="rotate(-60)" />
+              </g>
+
+              <!-- Clipped Horizon Ball -->
+              <g clip-path="url(#bgAiClip)">
+                <!-- Sky -->
+                <rect x="-20" y="-20" width="240" height="240" fill="url(#skyGrad)"/>
+                
+                <!-- Rotatable/Translatable Horizon Group -->
+                <g class="bg-horizon-group" style="transform-origin: 100px 100px; transition: transform 0.1s ease-out;">
+                  <!-- Ground -->
+                  <rect x="-40" y="100" width="280" height="200" fill="url(#groundGrad)" />
+                  <!-- White Horizon Line -->
+                  <line x1="-40" y1="100" x2="240" y2="100" stroke="#ffffff" stroke-width="1.5" />
+                  
+                  <!-- Pitch ladder lines -->
+                  <!-- Pitch +10 -->
+                  <line x1="85" y1="80" x2="115" y2="80" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" />
+                  <line x1="85" y1="80" x2="85" y2="83" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" />
+                  <line x1="115" y1="80" x2="115" y2="83" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" />
+                  <text x="74" y="83" fill="rgba(255,255,255,0.6)" font-size="7" font-family="var(--font-mono)">10</text>
+                  <text x="119" y="83" fill="rgba(255,255,255,0.6)" font-size="7" font-family="var(--font-mono)">10</text>
+
+                  <!-- Pitch +20 -->
+                  <line x1="90" y1="60" x2="110" y2="60" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" />
+                  <line x1="90" y1="60" x2="90" y2="63" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" />
+                  <line x1="110" y1="60" x2="110" y2="63" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" />
+                  <text x="79" y="63" fill="rgba(255,255,255,0.6)" font-size="7" font-family="var(--font-mono)">20</text>
+                  <text x="113" y="63" fill="rgba(255,255,255,0.6)" font-size="7" font-family="var(--font-mono)">20</text>
+
+                  <!-- Pitch -10 -->
+                  <line x1="85" y1="120" x2="115" y2="120" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" stroke-dasharray="3 2" />
+                  <line x1="85" y1="120" x2="85" y2="117" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" />
+                  <line x1="115" y1="120" x2="115" y2="117" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" />
+                  <text x="74" y="123" fill="rgba(255,255,255,0.6)" font-size="7" font-family="var(--font-mono)">10</text>
+                  <text x="119" y="123" fill="rgba(255,255,255,0.6)" font-size="7" font-family="var(--font-mono)">10</text>
+
+                  <!-- Pitch -20 -->
+                  <line x1="90" y1="140" x2="110" y2="140" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" stroke-dasharray="3 2" />
+                  <line x1="90" y1="140" x2="90" y2="137" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" />
+                  <line x1="110" y1="140" x2="110" y2="137" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" />
+                  <text x="79" y="143" fill="rgba(255,255,255,0.6)" font-size="7" font-family="var(--font-mono)">20</text>
+                  <text x="113" y="143" fill="rgba(255,255,255,0.6)" font-size="7" font-family="var(--font-mono)">20</text>
+                </g>
+              </g>
+
+              <!-- Fixed Airplane Miniature Symbol in foreground -->
+              <g filter="url(#neonGlow)">
+                <rect x="60" y="98" width="28" height="3" fill="var(--hud-amber)" rx="0.5" />
+                <rect x="112" y="98" width="28" height="3" fill="var(--hud-amber)" rx="0.5" />
+                <circle cx="100" cy="100" r="3" fill="var(--hud-amber)" />
+                <polygon points="100,95 97,100 103,100" fill="var(--hud-amber)" />
+              </g>
+            </g>
+          </svg>
         </div>
+      </section>
 
-        <!-- Pre-Flight Checklist Steps -->
-        <div class="landing-steps-section">
-          <div class="landing-section-title">How It Works</div>
-          <div class="landing-steps-grid">
-            <div class="landing-step-card">
-              <div class="landing-step-num">STEP 01 //</div>
-              <h4>Create Account</h4>
-              <p>Set up your pilot profile, choose your custom crew avatar, and get ready to study.</p>
-            </div>
-            
-            <div class="landing-step-card">
-              <div class="landing-step-num">STEP 02 //</div>
-              <h4>Select Study Book</h4>
-              <p>Choose your preferred books or mock papers for targeted preparation sessions.</p>
-            </div>
-            
-            <div class="landing-step-card">
-              <div class="landing-step-num">STEP 03 //</div>
-              <h4>Practice Mock Tests</h4>
-              <p>Answer questions in a clean, timed environment designed to mimic real exams.</p>
-            </div>
-            
-            <div class="landing-step-card">
-              <div class="landing-step-num">STEP 04 //</div>
-              <h4>Track Your Progress</h4>
-              <p>Review wrong answers and monitor your average score and study time stats.</p>
-            </div>
+      <!-- Subjects Grid Showcase -->
+      <div>
+        <div class="landing-section-title">Exam Subjects</div>
+        <div class="landing-features-grid">
+          <div class="card landing-feature-card">
+            <div class="landing-feature-icon">${metSVG}</div>
+            <h3>Meteorology</h3>
+            <p>Study weather reports (METAR/TAF), pressure structures, clouds, winds, and global climate patterns.</p>
           </div>
-        </div>
-
-        <!-- System Stats Telemetry Footer -->
-        <div class="landing-footer">
-          <span>EasyPL Ventures — Keep Learning. Fly Safe.</span>
-          <div style="margin-top: 0.5rem; font-size: 0.7rem;">
-            Built with ❤️ by <a href="https://www.hughjass.in" target="_blank">HughJass Foundation</a>.
+          
+          <div class="card landing-feature-card">
+            <div class="landing-feature-icon">${navSVG}</div>
+            <h3>Air Navigation</h3>
+            <p>Practice track plotting, wind triangles, chart scales, radio aids (VOR/ADF/ILS), and instruments.</p>
+          </div>
+          
+          <div class="card landing-feature-card">
+            <div class="landing-feature-icon">${techSVG}</div>
+            <h3>Technical General</h3>
+            <p>Understand jet turbine engines, airframe systems, aerodynamics, electrical grids, and hydraulics.</p>
+          </div>
+          
+          <div class="card landing-feature-card">
+            <div class="landing-feature-icon">${regSVG}</div>
+            <h3>Air Regulations</h3>
+            <p>Learn aviation law, airspace divisions, flight priority rules, and ICAO standards.</p>
           </div>
         </div>
       </div>
-    `;
 
-    // Hook clicks
-    document.getElementById('engageCockpitBtn').addEventListener('click', onEngage);
-    document.getElementById('landingLoginBtn').addEventListener('click', onEngage);
-    
-    document.getElementById('exploreSystemsBtn').addEventListener('click', () => {
-      const target = document.querySelector('.landing-section-title');
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      <!-- Pre-Flight Checklist Steps -->
+      <div class="landing-steps-section">
+        <div class="landing-section-title">How It Works</div>
+        <div class="landing-steps-grid">
+          <div class="landing-step-card">
+            <div class="landing-step-num">STEP 01 //</div>
+            <h4>Create Account</h4>
+            <p>Set up your pilot profile, choose your custom crew avatar, and get ready to study.</p>
+          </div>
+          
+          <div class="landing-step-card">
+            <div class="landing-step-num">STEP 02 //</div>
+            <h4>Select Study Book</h4>
+            <p>Choose your preferred books or mock papers for targeted preparation sessions.</p>
+          </div>
+          
+          <div class="landing-step-card">
+            <div class="landing-step-num">STEP 03 //</div>
+            <h4>Practice Mock Tests</h4>
+            <p>Answer questions in a clean, timed environment designed to mimic real exams.</p>
+          </div>
+          
+          <div class="landing-step-card">
+            <div class="landing-step-num">STEP 04 //</div>
+            <h4>Track Your Progress</h4>
+            <p>Review wrong answers and monitor your average score and study time stats.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- System Stats Telemetry Footer -->
+      <div class="landing-footer">
+        <span>EasyPL Ventures — Keep Learning. Fly Safe.</span>
+        <div style="margin-top: 0.5rem; font-size: 0.7rem;">
+          Built with ❤️ by <a href="https://www.hughjass.in" target="_blank">HughJass Foundation</a>.
+        </div>
+      </div>
+    </div>
+  `;
+
+  // Hook clicks
+  document.getElementById('engageCockpitBtn').addEventListener('click', onEngage);
+  document.getElementById('landingLoginBtn').addEventListener('click', onEngage);
+  
+  document.getElementById('exploreSystemsBtn').addEventListener('click', () => {
+    const target = document.querySelector('.landing-section-title');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+
+  // Interactive mouse move for background attitude indicator & parallax
+  const landingContainer = container.querySelector('.landing-container');
+  const bgHorizon = container.querySelector('.bg-horizon-group');
+  const bgAttitude = container.querySelector('.landing-bg-attitude');
+  const cards = container.querySelectorAll('.landing-feature-card');
+
+  if (landingContainer && bgHorizon) {
+    landingContainer.addEventListener('mousemove', (e) => {
+      const rect = landingContainer.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      
+      // Calculate smooth bank and pitch angles
+      const rollAngle = (x / rect.width) * 35; // max 35 deg bank
+      const pitchOffset = (y / rect.height) * 25; // max 25px translation
+      
+      bgHorizon.style.transform = `rotate(${rollAngle}deg) translate(0px, ${pitchOffset}px)`;
+
+      // Subtle parallax effect on the attitude instrument frame
+      if (bgAttitude) {
+        const parallaxX = (x / rect.width) * -15; // move slightly opposite to cursor
+        const parallaxY = (y / rect.height) * -15;
+        bgAttitude.style.transform = `translate(calc(-50% + ${parallaxX}px), calc(-50% + ${parallaxY}px))`;
       }
     });
 
-    // Interactive mouse move rotation effect on the gyro widget
-    const glassWidget = container.querySelector('.glass-widget');
-    const gyroRotator = container.querySelector('.gyro-rotator');
-    if (glassWidget && gyroRotator) {
-      glassWidget.addEventListener('mousemove', (e) => {
-        const rect = glassWidget.getBoundingClientRect();
-        const x = e.clientX - rect.left - rect.width / 2;
-        const y = e.clientY - rect.top - rect.height / 2;
-        // Tilt the card slightly
-        glassWidget.style.transform = `translateY(-5px) rotateX(${-y / 15}deg) rotateY(${x / 15}deg) scale(1.02)`;
-        // Rotate the gyro line inside slightly
-        gyroRotator.style.transform = `rotate(${x / 4}deg)`;
-      });
-      glassWidget.addEventListener('mouseleave', () => {
-        glassWidget.style.transform = '';
-        gyroRotator.style.transform = '';
-      });
-    }
-  },
+    landingContainer.addEventListener('mouseleave', () => {
+      bgHorizon.style.transform = 'rotate(0deg) translate(0px, 0px)';
+      if (bgAttitude) {
+        bgAttitude.style.transform = 'translate(-50%, -50%)';
+      }
+    });
+  }
+
+  // Card mousemove spotlight tracker
+  cards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
+    });
+  });
+},
 
   // 1. Render Authentication Screen (Pre-Flight BRIEFING Terminal)
   renderAuth(container, isLogin, onToggle, onSubmit, onBackToSplash) {
