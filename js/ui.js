@@ -255,9 +255,9 @@ export const ui = {
 
         <!-- System Stats Telemetry Footer -->
         <div class="landing-footer">
-          <span>EasyPL Ventures keep learning fly safe.</span>
+          <span>EasyPL Ventures — Keep Learning. Fly Safe.</span>
           <div style="margin-top: 0.5rem; font-size: 0.7rem;">
-            built with love by <a href="http://www.hughjass.in" target="_blank">HughJass Foundation</a>
+            Built with ❤️ by <a href="https://www.hughjass.in" target="_blank">HughJass Foundation</a>.
           </div>
         </div>
       </div>
@@ -518,9 +518,9 @@ export const ui = {
 
       <!-- Footer -->
       <div class="landing-footer">
-        <span>EasyPL Ventures keep learning fly safe.</span>
+        <span>EasyPL Ventures — Keep Learning. Fly Safe.</span>
         <div style="margin-top: 0.5rem; font-size: 0.7rem;">
-          built with love by <a href="http://www.hughjass.in" target="_blank">HughJass Foundation</a>
+          Built with ❤️ by <a href="https://www.hughjass.in" target="_blank">HughJass Foundation</a>.
         </div>
       </div>
     `;
@@ -603,9 +603,9 @@ export const ui = {
 
       <!-- Footer -->
       <div class="landing-footer">
-        <span>EasyPL Ventures keep learning fly safe.</span>
+        <span>EasyPL Ventures — Keep Learning. Fly Safe.</span>
         <div style="margin-top: 0.5rem; font-size: 0.7rem;">
-          built with love by <a href="http://www.hughjass.in" target="_blank">HughJass Foundation</a>
+          Built with ❤️ by <a href="https://www.hughjass.in" target="_blank">HughJass Foundation</a>.
         </div>
       </div>
     `;
@@ -679,9 +679,9 @@ export const ui = {
 
       <!-- Footer -->
       <div class="landing-footer">
-        <span>EasyPL Ventures keep learning fly safe.</span>
+        <span>EasyPL Ventures — Keep Learning. Fly Safe.</span>
         <div style="margin-top: 0.5rem; font-size: 0.7rem;">
-          built with love by <a href="http://www.hughjass.in" target="_blank">HughJass Foundation</a>
+          Built with ❤️ by <a href="https://www.hughjass.in" target="_blank">HughJass Foundation</a>.
         </div>
       </div>
     `;
@@ -928,9 +928,9 @@ export const ui = {
 
       <!-- Footer -->
       <div class="landing-footer">
-        <span>EasyPL Ventures keep learning fly safe.</span>
+        <span>EasyPL Ventures — Keep Learning. Fly Safe.</span>
         <div style="margin-top: 0.5rem; font-size: 0.7rem;">
-          built with love by <a href="http://www.hughjass.in" target="_blank">HughJass Foundation</a>
+          Built with ❤️ by <a href="https://www.hughjass.in" target="_blank">HughJass Foundation</a>.
         </div>
       </div>
     `;
