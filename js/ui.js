@@ -176,7 +176,7 @@ export const ui = {
             <span class="logo-text">EasyPL</span>
           </div>
           <div class="landing-nav-actions">
-            <button class="btn btn-outline" id="landingLoginBtn" style="padding: 0.5rem 1.2rem; font-size: 0.8rem;">Log In</button>
+            <button class="btn btn-outline" id="landingLoginBtn" style="padding: 0.5rem 1.2rem; font-size: 0.8rem;">Get started</button>
           </div>
         </header>
 
@@ -300,7 +300,6 @@ export const ui = {
     container.innerHTML = `
       <div class="auth-split-layout">
         <div class="auth-info-pane">
-          <div class="hero-badge animate-fade-in-left">PRE-FLIGHT BRIEFING</div>
           <h1 class="auth-info-title animate-fade-in-left">Clear Your DGCA Exams with Ease</h1>
           <p class="auth-info-desc animate-fade-in-left">
             Study smart and clear your DGCA CPL papers. EasyPL provides high-quality mock tests, performance logs, and real exam conditions for Indian CPL candidates.

@@ -16,7 +16,7 @@ class App {
     
     // View state
     this.currentView = 'landing'; // landing, auth, dashboard, books, chapters, quiz, results
-    this.isLoginView = true;
+    this.isLoginView = false;
     
     // Active selections
     this.activeCategory = null;
@@ -159,7 +159,7 @@ class App {
       this.container,
       // Engage callback
       () => {
-        this.isLoginView = true;
+        this.isLoginView = false;
         this.navigate('auth');
       }
     );
@@ -218,7 +218,7 @@ class App {
       () => {
         auth.logout();
         this.currentUser = null;
-        this.isLoginView = true;
+        this.isLoginView = false;
         this.navigate('landing');
       },
       // Reattempt callback
