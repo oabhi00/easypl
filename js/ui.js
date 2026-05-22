@@ -169,20 +169,6 @@ export const ui = {
 
     container.innerHTML = `
       <div class="landing-container animate-fade-in">
-        <!-- Dynamic Sky Background with Moving Clouds -->
-        <div class="landing-sky-bg">
-          <div class="sky-sun-moon"></div>
-          <div class="cloud cloud-1">
-            <svg viewBox="0 0 100 60"><path d="M 25 45 A 15 15 0 0 1 38 25 A 22 22 0 0 1 72 25 A 15 15 0 0 1 85 45 A 10 10 0 0 1 75 55 L 25 55 A 10 10 0 0 1 25 45 Z" /></svg>
-          </div>
-          <div class="cloud cloud-2">
-            <svg viewBox="0 0 100 60"><path d="M 25 45 A 15 15 0 0 1 38 25 A 22 22 0 0 1 72 25 A 15 15 0 0 1 85 45 A 10 10 0 0 1 75 55 L 25 55 A 10 10 0 0 1 25 45 Z" /></svg>
-          </div>
-          <div class="cloud cloud-3">
-            <svg viewBox="0 0 100 60"><path d="M 25 45 A 15 15 0 0 1 38 25 A 22 22 0 0 1 72 25 A 15 15 0 0 1 85 45 A 10 10 0 0 1 75 55 L 25 55 A 10 10 0 0 1 25 45 Z" /></svg>
-          </div>
-        </div>
-
         <!-- Top Navigation Bar -->
         <header class="landing-header">
           <div class="landing-logo">

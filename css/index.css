@@ -500,6 +500,11 @@ body.light-mode .theme-toggle-btn .moon-icon {
 
 /* Dynamic Day/Night Sky & Clouds */
 .landing-sky-bg {
+  display: none; /* Hidden on other views */
+}
+
+body.landing-view .landing-sky-bg {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -510,6 +515,15 @@ body.light-mode .theme-toggle-btn .moon-icon {
   overflow: hidden;
   background: linear-gradient(180deg, #020617 0%, #0b1329 100%);
   transition: background 1s ease;
+}
+
+/* Remove old cockpit backgrounds on splash page */
+body.landing-view::before,
+body.landing-view::after,
+body.landing-view .decor-glow-1,
+body.landing-view .decor-glow-2,
+body.landing-view .hud-background-overlay {
+  display: none !important;
 }
 
 body.light-mode .landing-sky-bg {

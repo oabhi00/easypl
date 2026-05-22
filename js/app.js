@@ -65,6 +65,13 @@ class App {
     this.currentView = view;
     this.container.innerHTML = ''; // Clear container
 
+    // Add landing-view class if viewing landing page
+    if (view === 'landing') {
+      document.body.classList.add('landing-view');
+    } else {
+      document.body.classList.remove('landing-view');
+    }
+
     switch (view) {
       case 'landing':
         this.renderLandingView();
