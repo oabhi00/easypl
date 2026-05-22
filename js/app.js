@@ -297,12 +297,18 @@ class App {
           this.activeQuizPlayer.submit();
         }
       },
-      // Quit callback
+      // Quit & Discard callback
       () => {
-        if (confirm('Are you sure you want to quit? Your progress for this attempt will not be saved.')) {
+        if (confirm('Are you sure you want to quit? Your progress for this attempt will be lost.')) {
           this.activeQuizPlayer.stopTimer();
           this.activeQuizPlayer = null;
           this.navigate('chapters');
+        }
+      },
+      // Quit & Submit callback
+      () => {
+        if (confirm('Are you sure you want to end the test early and submit your current score? Unanswered questions will be marked as incorrect.')) {
+          this.activeQuizPlayer.submit();
         }
       }
     );

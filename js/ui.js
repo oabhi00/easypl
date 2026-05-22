@@ -672,7 +672,7 @@ export const ui = {
   },
 
   // 4. Render active quiz playing interface (Cockpit HUD Terminal)
-  renderQuiz(container, quizData, onOptionClick, onPrev, onNext, onSubmit, onQuit) {
+  renderQuiz(container, quizData, onOptionClick, onPrev, onNext, onSubmit, onQuitDiscard, onQuitSubmit) {
     const { questionNumber, totalQuestions, questionText, options, imageSrc, selectedAnswerIndex, isAnswered, correctAnswerIndex } = quizData;
     
     // Generate options HTML list
@@ -738,7 +738,11 @@ export const ui = {
         <!-- Controls buttons -->
         <div class="quiz-controls">
           <button class="btn btn-outline" id="quizPrevBtn" ${questionNumber === 1 ? 'disabled style="opacity:0.25; pointer-events:none;"' : ''}>&larr; Prev Question</button>
-          <button class="btn btn-outline" id="quizQuitBtn" style="border-color: rgba(255, 74, 118, 0.4); color: var(--wrong-light)">Quit Exam</button>
+          
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center;">
+            <button class="btn btn-outline" id="quizQuitDiscardBtn" style="border-color: rgba(255, 74, 118, 0.4); color: var(--wrong-light)">Quit & Discard</button>
+            <button class="btn btn-outline" id="quizQuitSubmitBtn" style="border-color: rgba(5, 243, 173, 0.4); color: var(--correct-light)">Quit & Submit</button>
+          </div>
           
           ${questionNumber === totalQuestions ? `
             <button class="btn btn-primary" id="quizSubmitBtn" ${!isAnswered ? 'disabled style="opacity:0.3; pointer-events:none;"' : ''}>Submit Exam</button>
@@ -758,7 +762,8 @@ export const ui = {
     });
 
     document.getElementById('quizPrevBtn').addEventListener('click', onPrev);
-    document.getElementById('quizQuitBtn').addEventListener('click', onQuit);
+    document.getElementById('quizQuitDiscardBtn').addEventListener('click', onQuitDiscard);
+    document.getElementById('quizQuitSubmitBtn').addEventListener('click', onQuitSubmit);
     
     if (questionNumber === totalQuestions) {
       document.getElementById('quizSubmitBtn').addEventListener('click', onSubmit);

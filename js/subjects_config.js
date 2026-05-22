@@ -191,10 +191,40 @@ export const subjects = {
     "category": "Navigation",
     "chapters": [
       {
-        "file": "questions.json",
-        "id": "questions",
-        "displayName": "Full Navigation Mock Exam",
-        "questionsCount": 598
+        "file": "part-1.json",
+        "id": "part-1",
+        "displayName": "Navigation Mock Test - Part 1",
+        "questionsCount": 100
+      },
+      {
+        "file": "part-2.json",
+        "id": "part-2",
+        "displayName": "Navigation Mock Test - Part 2",
+        "questionsCount": 100
+      },
+      {
+        "file": "part-3.json",
+        "id": "part-3",
+        "displayName": "Navigation Mock Test - Part 3",
+        "questionsCount": 100
+      },
+      {
+        "file": "part-4.json",
+        "id": "part-4",
+        "displayName": "Navigation Mock Test - Part 4",
+        "questionsCount": 100
+      },
+      {
+        "file": "part-5.json",
+        "id": "part-5",
+        "displayName": "Navigation Mock Test - Part 5",
+        "questionsCount": 100
+      },
+      {
+        "file": "part-6.json",
+        "id": "part-6",
+        "displayName": "Navigation Mock Test - Part 6",
+        "questionsCount": 98
       }
     ]
   },
