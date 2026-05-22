@@ -234,6 +234,29 @@ class App {
             });
           }
         }
+      },
+      // Profile click callback
+      () => {
+        const allUsers = auth.getAllUsers();
+        const userFullDetails = allUsers[this.currentUser.username.toLowerCase()] || this.currentUser;
+        
+        ui.showProfileEditModal(
+          userFullDetails,
+          // onSave
+          (updatedDetails) => {
+            try {
+              auth.updateProfile(this.currentUser.username, updatedDetails);
+              this.currentUser = auth.getCurrentUser();
+              this.navigate('dashboard');
+            } catch (err) {
+              alert(err.message);
+            }
+          },
+          // onCancel
+          () => {
+            // No action needed on cancel
+          }
+        );
       }
     );
   }

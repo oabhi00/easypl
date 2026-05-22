@@ -399,7 +399,7 @@ export const ui = {
   },
 
   // 2. Render Study Dashboard View (Flight Command Console)
-  renderDashboard(container, user, stats, subjects, onSubjectClick, onLogout, onReattempt) {
+  renderDashboard(container, user, stats, subjects, onSubjectClick, onLogout, onReattempt, onProfile) {
     const avatarUrl = this.getAvatarUrl(user.avatar);
     
     // Format total time: e.g. "12m 30s" or "1h 5m"
@@ -481,11 +481,14 @@ export const ui = {
         <div class="profile-card">
           <img class="profile-avatar" src="${avatarUrl}" alt="User Avatar">
           <div class="profile-info">
-            <h3>Welcome, ${user.username}</h3>
+            <h3>Welcome, ${user.fullName || user.username}</h3>
             <p>STUDENT PILOT</p>
           </div>
         </div>
-        <button class="btn btn-outline" id="logoutBtn">Log Out</button>
+        <div class="header-actions" style="display: flex; gap: 0.75rem;">
+          <button class="btn btn-outline" id="profileBtn">Profile</button>
+          <button class="btn btn-outline" id="logoutBtn">Log Out</button>
+        </div>
       </div>
 
       <!-- General Statistics -->
@@ -536,6 +539,7 @@ export const ui = {
 
     // Hook listeners
     document.getElementById('logoutBtn').addEventListener('click', onLogout);
+    document.getElementById('profileBtn').addEventListener('click', onProfile);
     
     const cards = document.querySelectorAll('.subject-card');
     cards.forEach(card => {
@@ -647,8 +651,15 @@ export const ui = {
     subject.chapters.forEach(ch => {
       const chProgress = progressMap[ch.id];
       const hasAttempted = chProgress && chProgress.attemptsCount > 0;
-      const statusClass = hasAttempted ? 'status-completed' : 'status-not-started';
-      const statusText = hasAttempted ? `Passed (${chProgress.highScore}% score)` : 'NOT STARTED';
+      
+      let statusClass = 'status-not-started';
+      let statusText = 'NOT STARTED';
+      
+      if (hasAttempted) {
+        const passed = chProgress.highScore >= 70;
+        statusClass = passed ? 'status-completed' : 'status-failed';
+        statusText = passed ? `PASS (${chProgress.highScore}% SCORE)` : `FAIL (${chProgress.highScore}% SCORE)`;
+      }
       
       chapterRowsHTML += `
         <div class="chapter-row animate-fade-in">
@@ -719,6 +730,66 @@ export const ui = {
   renderQuiz(container, quizData, onOptionClick, onPrev, onNext, onSubmit, onQuitDiscard, onQuitSubmit) {
     const { questionNumber, totalQuestions, questionText, options, imageSrc, selectedAnswerIndex, isAnswered, correctAnswerIndex, mode } = quizData;
     
+    // Check if we can perform a partial update instead of rebuilding the entire DOM
+    const activeQNumEl = container.querySelector('#activeQuestionNum');
+    if (activeQNumEl && parseInt(activeQNumEl.dataset.qnum) === questionNumber) {
+      // Same question (just option selection or state change for the same question)
+      const optionBtns = container.querySelectorAll('.option-btn');
+      optionBtns.forEach((btn) => {
+        const idx = parseInt(btn.dataset.idx);
+        
+        // Reset classes
+        btn.className = 'option-btn';
+        btn.removeAttribute('disabled');
+        
+        if (mode === 'test') {
+          if (selectedAnswerIndex === idx) {
+            btn.classList.add('selected-test');
+          }
+        } else {
+          if (isAnswered) {
+            if (idx === correctAnswerIndex) {
+              btn.classList.add('show-correct');
+            }
+            if (selectedAnswerIndex === idx) {
+              btn.classList.add(selectedAnswerIndex === correctAnswerIndex ? 'selected-correct' : 'selected-wrong');
+            }
+            btn.setAttribute('disabled', 'true');
+          }
+        }
+      });
+      
+      // Update next/submit button states
+      const nextBtn = container.querySelector('#quizNextBtn');
+      const submitBtn = container.querySelector('#quizSubmitBtn');
+      const canNavigate = (mode === 'test') || isAnswered;
+      
+      if (nextBtn) {
+        if (canNavigate) {
+          nextBtn.removeAttribute('disabled');
+          nextBtn.style.opacity = '';
+          nextBtn.style.pointerEvents = '';
+        } else {
+          nextBtn.setAttribute('disabled', 'true');
+          nextBtn.style.opacity = '0.3';
+          nextBtn.style.pointerEvents = 'none';
+        }
+      }
+      
+      if (submitBtn) {
+        if (canNavigate) {
+          submitBtn.removeAttribute('disabled');
+          submitBtn.style.opacity = '';
+          submitBtn.style.pointerEvents = '';
+        } else {
+          submitBtn.setAttribute('disabled', 'true');
+          submitBtn.style.opacity = '0.3';
+          submitBtn.style.pointerEvents = 'none';
+        }
+      }
+      return;
+    }
+
     // Generate options HTML list
     const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
     let optionsHTML = '';
@@ -766,7 +837,7 @@ export const ui = {
       <!-- Question Progress Bar -->
       <div class="quiz-progress-wrapper animate-fade-in">
         <div class="quiz-progress-text">
-          <span>Question <strong>${questionNumber}</strong> of <strong>${totalQuestions}</strong></span>
+          <span>Question <strong id="activeQuestionNum" data-qnum="${questionNumber}">${questionNumber}</strong> of <strong>${totalQuestions}</strong></span>
           <span>Exam progress: <strong>${progressPercent}%</strong></span>
         </div>
         <div class="progress-bar-bg" style="height: 8px;">
@@ -825,7 +896,7 @@ export const ui = {
     }
   },
 
-  // 5. Render final scorecard results (Cockpit ATTITUDE INDICATOR Theme)
+  // 5. Render final scorecard results (Sleek Cockpit Progress Bar Theme)
   renderResults(container, results, onRestart, onDashboard) {
     const { score, totalQuestions, timeTaken, accuracy, questionsReviewed } = results;
     
@@ -834,50 +905,59 @@ export const ui = {
     const timeDisplay = `${minutes}m ${seconds}s`;
     
     const isPassing = accuracy >= 70;
-    const pitchOffset = isPassing ? -15 : 20; // altitude pitch adjustments
-    const rollAngle = isPassing ? -8 : 12;    // bank angle rotation
 
-    // Dynamic flight instrument: Attitude Indicator (Sky/Ground HUD dial)
-    const attitudeSVG = `
+    const passMessages = [
+      "Woohoo! You nailed it!",
+      "Hooray! Clear for Takeoff!",
+      "Fantastic Job! Test Cleared!",
+      "Excellent! Mission Accomplished!",
+      "Awesome! You passed with flying colors!",
+      "Brilliant! Perfect Flight Path!"
+    ];
+
+    const failMessages = [
+      "Keep climbing! Try again.",
+      "Study harder! Check the manuals.",
+      "Checklist incomplete. Study and retry!",
+      "Almost there! Run another briefing.",
+      "Failure is just a learning loop. Try again!",
+      "Adjust your trim and try again!"
+    ];
+
+    const headerText = isPassing 
+      ? passMessages[Math.floor(Math.random() * passMessages.length)]
+      : failMessages[Math.floor(Math.random() * failMessages.length)];
+    const headerColor = isPassing ? 'var(--correct)' : 'var(--wrong)';
+    const headerGlow = isPassing ? 'var(--correct-glow)' : 'var(--wrong-glow)';
+
+    // Sleek minimal round progress bar
+    const strokeDashOffset = 276 - (276 * accuracy) / 100;
+    const progressColor = isPassing ? 'var(--correct)' : 'var(--wrong)';
+    const progressSVG = `
       <svg class="result-circle-svg" viewBox="0 0 100 100" style="position: absolute; top:0; left:0; width:100%; height:100%; z-index: 1;">
         <defs>
-          <clipPath id="aiCircleClip">
-            <circle cx="50" cy="50" r="45" />
-          </clipPath>
+          <filter id="progressArcGlow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="2" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
         </defs>
         
-        <g clip-path="url(#aiCircleClip)">
-          <!-- Sky region -->
-          <rect x="-10" y="-10" width="120" height="120" fill="#0069a5"/>
-          <!-- Ground region rotated by Bank angle and translated by Pitch -->
-          <g transform="translate(50, 50) rotate(${rollAngle}) translate(-50, -50)">
-            <rect x="-20" y="${50 + pitchOffset}" width="140" height="100" fill="#4d320c" stroke="#fff" stroke-width="0.5" />
-            <!-- Horizon white line -->
-            <line x1="-20" y1="${50 + pitchOffset}" x2="120" y2="${50 + pitchOffset}" stroke="#fff" stroke-width="1.5"/>
-            
-            <!-- Pitch Grid Indicators -->
-            <line x1="42" y1="${35 + pitchOffset}" x2="58" y2="${35 + pitchOffset}" stroke="rgba(255,255,255,0.7)" stroke-width="0.75" />
-            <text x="35" y="${37 + pitchOffset}" fill="rgba(255,255,255,0.7)" font-size="5" font-family="var(--font-mono)">10</text>
-            <text x="61" y="${37 + pitchOffset}" fill="rgba(255,255,255,0.7)" font-size="5" font-family="var(--font-mono)">10</text>
-            
-            <line x1="42" y1="${65 + pitchOffset}" x2="58" y2="${65 + pitchOffset}" stroke="rgba(255,255,255,0.7)" stroke-width="0.75" />
-            <text x="35" y="${67 + pitchOffset}" fill="rgba(255,255,255,0.7)" font-size="5" font-family="var(--font-mono)">10</text>
-            <text x="61" y="${67 + pitchOffset}" fill="rgba(255,255,255,0.7)" font-size="5" font-family="var(--font-mono)">10</text>
-          </g>
-        </g>
+        <!-- Track Circle (Grey background ring) -->
+        <circle cx="50" cy="50" r="44" fill="none" stroke="rgba(255, 255, 255, 0.05)" stroke-width="4"></circle>
         
-        <!-- Arc Progress Gauge -->
-        <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="3"></circle>
-        <circle cx="50" cy="50" r="45" fill="none" stroke="${isPassing ? 'var(--correct)' : 'var(--wrong)'}" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="283" stroke-dashoffset="${283 - (283 * accuracy) / 100}" transform="rotate(-90 50 50)"></circle>
-        
-        <!-- Standard markings -->
-        <path d="M50,9 L50,13 M35,11 L37,14 M65,11 L63,14 M21,17 L24,19 M79,17 L76,19" stroke="#fff" stroke-width="0.75" opacity="0.6" />
-        <polygon points="50,13 48,17 52,17" fill="var(--hud-amber)" />
-        
-        <!-- Airplane silhouette reference mark -->
-        <rect x="33" y="49" width="13" height="2" fill="#ff4a76" stroke="#000" stroke-width="0.5" />
-        <rect x="54" y="49" width="13" height="2" fill="#ff4a76" stroke="#000" stroke-width="0.5" />
-        <circle cx="50" cy="50" r="2" fill="#ff4a76" stroke="#000" stroke-width="0.5" />
+        <!-- Progress Arc -->
+        <circle cx="50" cy="50" r="44" fill="none" 
+                stroke="${progressColor}" 
+                stroke-width="5" 
+                stroke-linecap="round" 
+                stroke-dasharray="276" 
+                stroke-dashoffset="${strokeDashOffset}" 
+                transform="rotate(-90 50 50)"
+                filter="url(#progressArcGlow)">
+        </circle>
       </svg>
     `;
 
@@ -939,15 +1019,15 @@ export const ui = {
 
     container.innerHTML = `
       <div class="results-wrapper card animate-fade-in">
-        <h1 class="text-gradient" style="font-size: 2.2rem; margin-bottom: 0.5rem; text-transform: uppercase;">Exam Results</h1>
+        <h1 style="font-size: 2rem; margin-bottom: 0.5rem; text-transform: uppercase; color: ${headerColor}; text-shadow: 0 0 15px ${headerGlow}; font-weight: 800;">${headerText}</h1>
         <p style="color: var(--text-secondary); font-family: var(--font-mono); font-size: 0.85rem; margin-bottom: 1.5rem; text-transform: uppercase;">
           MODE: <span style="color: var(--accent); font-weight: bold;">${results.mode === 'test' ? 'MOCK TEST EXAM' : 'PRACTICE MODE'}</span> &bull; 
           STATUS: <span style="color: ${isPassing ? 'var(--correct)' : 'var(--wrong)'}; font-weight: bold;">${isPassing ? 'SUCCESS' : 'FAILED'}</span>
         </p>
         
-        <!-- Cockpit Attitude Indicator score display -->
+        <!-- Sleek round progress bar score display -->
         <div class="result-circle-box">
-          ${attitudeSVG}
+          ${progressSVG}
           <div class="result-percentage" style="z-index: 10;">${accuracy}%</div>
           <div class="result-score" style="z-index: 10;">${score} / ${totalQuestions} QUESTIONS</div>
         </div>
@@ -962,10 +1042,6 @@ export const ui = {
             <span class="result-stat-value" style="color: ${isPassing ? 'var(--correct)' : 'var(--wrong)'}; text-shadow: 0 0 8px ${isPassing ? 'var(--correct-glow)' : 'var(--wrong-glow)'};">
               ${isPassing ? 'PASS' : 'FAIL'}
             </span>
-          </div>
-          <div class="result-stat-item">
-            <span class="result-stat-label">Target Minimum</span>
-            <span class="result-stat-value">70%</span>
           </div>
         </div>
 
@@ -1030,15 +1106,13 @@ export const ui = {
         
         <div class="mode-options-container">
           <div class="mode-option-box" data-mode="practice">
-            <span class="mode-icon">🛠️</span>
             <span class="mode-name">Practice Mode</span>
             <span class="mode-detail">Instant correctness feedback. Questions lock upon answer. Ideal for learning.</span>
           </div>
           
           <div class="mode-option-box" data-mode="test">
-            <span class="mode-icon">⚡</span>
             <span class="mode-name">Test Mode</span>
-            <span class="mode-detail">No correctness cues. Answers can be changed. Report summary at the end. (Pass: 70%)</span>
+            <span class="mode-detail">No correctness cues. Answers can be changed. Report summary at the end.</span>
           </div>
         </div>
         
@@ -1046,7 +1120,7 @@ export const ui = {
       </div>
     `;
     
-    container.appendChild(overlay);
+    document.body.appendChild(overlay);
     
     // Trigger transition animation
     setTimeout(() => {
@@ -1073,6 +1147,128 @@ export const ui = {
       setTimeout(() => {
         overlay.remove();
         onCancel();
+      }, 300);
+    });
+  },
+
+  // 7. Show profile edit modal overlay
+  showProfileEditModal(user, onSave, onCancel) {
+    const overlay = document.createElement('div');
+    overlay.className = 'profile-modal-overlay';
+    overlay.id = 'profileEditModal';
+
+    const avatarUrl1 = this.getAvatarUrl('avatar1.png');
+    const avatarUrl2 = this.getAvatarUrl('avatar2.png');
+    const isAvatar1 = user.avatar === 'avatar1.png';
+    const isAvatar2 = user.avatar === 'avatar2.png';
+
+    overlay.innerHTML = `
+      <div class="profile-modal-card">
+        <h2 class="profile-modal-title">PILOT CREW PROFILE</h2>
+        <p class="profile-modal-desc">Update your credentials and select your pilot avatar</p>
+        
+        <form id="profileEditForm" style="display: flex; flex-direction: column; gap: 1rem; width: 100%;">
+          <div class="form-group" style="text-align: left; margin-bottom: 0.75rem;">
+            <label class="form-label" for="profileFullName">Full Name</label>
+            <input class="form-input" type="text" id="profileFullName" placeholder="Enter full name" value="${user.fullName || ''}" autocomplete="off">
+          </div>
+          
+          <div class="form-group" style="text-align: left; margin-bottom: 0.75rem;">
+            <label class="form-label" for="profileEmail">Email Address</label>
+            <input class="form-input" type="email" id="profileEmail" placeholder="Enter email address" value="${user.email || ''}" autocomplete="off">
+          </div>
+
+          <div class="form-group" style="text-align: left; margin-bottom: 0.75rem;">
+            <label class="form-label">Password Settings</label>
+            <button class="btn btn-outline" type="button" id="updatePasswordBtn" style="width: 100%; font-size: 0.8rem; padding: 0.6rem 1rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+              🔑 Update Password
+            </button>
+          </div>
+          
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label class="form-label">Select Pilot Avatar</label>
+            <div class="avatar-selector" style="grid-template-columns: repeat(2, 1fr); max-width: 240px; margin: 0.5rem auto 0 auto;">
+              <div class="avatar-option ${isAvatar1 ? 'selected' : ''}" data-avatar="avatar1.png" title="Male Pilot (Felix)">
+                <img src="${avatarUrl1}" alt="Male Pilot">
+              </div>
+              <div class="avatar-option ${isAvatar2 ? 'selected' : ''}" data-avatar="avatar2.png" title="Female Pilot (Sara)">
+                <img src="${avatarUrl2}" alt="Female Pilot">
+              </div>
+            </div>
+          </div>
+          
+          <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 0.5rem;">
+            <button class="btn btn-outline" type="button" id="profileCancelBtn" style="padding: 0.6rem 1.5rem; font-size: 0.85rem;">Cancel</button>
+            <button class="btn btn-primary" type="submit" style="padding: 0.6rem 1.5rem; font-size: 0.85rem;">Save Changes</button>
+          </div>
+        </form>
+      </div>
+    `;
+
+    document.body.appendChild(overlay);
+    
+    // Trigger transition animation
+    setTimeout(() => {
+      overlay.classList.add('show');
+    }, 10);
+
+    let tempPassword = '';
+    const updatePasswordBtn = overlay.querySelector('#updatePasswordBtn');
+    updatePasswordBtn.addEventListener('click', () => {
+      const newPassword = prompt("Enter new password (minimum 6 characters):");
+      if (newPassword === null) return; // User cancelled
+      if (newPassword.trim().length < 6) {
+        alert("Password must be at least 6 characters long.");
+        return;
+      }
+      tempPassword = newPassword.trim();
+      updatePasswordBtn.textContent = '✅ Password Updated';
+      updatePasswordBtn.style.borderColor = 'var(--correct)';
+      updatePasswordBtn.style.color = 'var(--correct-light)';
+    });
+
+    // Handle avatar selection clicks
+    const options = overlay.querySelectorAll('.avatar-option');
+    options.forEach(opt => {
+      opt.addEventListener('click', () => {
+        options.forEach(o => o.classList.remove('selected'));
+        opt.classList.add('selected');
+      });
+    });
+
+    // Handle cancel click
+    const cancelBtn = overlay.querySelector('#profileCancelBtn');
+    cancelBtn.addEventListener('click', () => {
+      overlay.classList.remove('show');
+      setTimeout(() => {
+        overlay.remove();
+        onCancel();
+      }, 300);
+    });
+
+    // Handle form submit
+    const form = overlay.querySelector('#profileEditForm');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const fullName = document.getElementById('profileFullName').value;
+      const email = document.getElementById('profileEmail').value;
+      
+      let avatar = user.avatar;
+      const selected = overlay.querySelector('.avatar-option.selected');
+      if (selected) {
+        avatar = selected.dataset.avatar;
+      }
+
+      const updatedDetails = { fullName, email, avatar };
+      if (tempPassword) {
+        updatedDetails.password = tempPassword;
+      }
+
+      overlay.classList.remove('show');
+      setTimeout(() => {
+        overlay.remove();
+        onSave(updatedDetails);
       }, 300);
     });
   }

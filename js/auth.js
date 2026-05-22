@@ -58,7 +58,9 @@ export const auth = {
 
     const sessionUser = {
       username: user.username,
-      avatar: user.avatar
+      avatar: user.avatar,
+      fullName: user.fullName || '',
+      email: user.email || ''
     };
 
     this.setCurrentUser(sessionUser);
@@ -75,8 +77,43 @@ export const auth = {
     // We don't want to store the password in the active session
     const sessionData = {
       username: user.username,
-      avatar: user.avatar
+      avatar: user.avatar,
+      fullName: user.fullName || '',
+      email: user.email || ''
     };
     localStorage.setItem(STORAGE_SESSION_KEY, JSON.stringify(sessionData));
+  },
+
+  // Update user profile details
+  updateProfile(username, details) {
+    username = username.trim().toLowerCase();
+    const users = this.getAllUsers();
+    const user = users[username];
+
+    if (!user) {
+      throw new Error('User not found.');
+    }
+
+    // Update details
+    if (details.fullName !== undefined) {
+      user.fullName = details.fullName.trim();
+    }
+    if (details.email !== undefined) {
+      user.email = details.email.trim();
+    }
+    if (details.avatar !== undefined) {
+      user.avatar = details.avatar;
+    }
+    if (details.password) {
+      user.password = details.password;
+    }
+
+    users[username] = user;
+    localStorage.setItem(STORAGE_USERS_KEY, JSON.stringify(users));
+
+    // Update the active session details
+    this.setCurrentUser(user);
+    return user;
   }
 };
+
