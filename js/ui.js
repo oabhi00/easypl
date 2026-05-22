@@ -334,10 +334,10 @@ export const ui = {
                   <label class="form-label">Select Pilot Avatar</label>
                   <div class="avatar-selector" style="grid-template-columns: repeat(2, 1fr); max-width: 240px; margin: 0 auto;">
                     <div class="avatar-option selected" data-avatar="avatar1.png" title="Male Pilot (Felix)">
-                      <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&clothing=blazerAndShirt&clothingColor=091a36&accessories=sunglasses" alt="Male Pilot">
+                      <img src="images/avatar1.png" alt="Male Pilot">
                     </div>
                     <div class="avatar-option" data-avatar="avatar2.png" title="Female Pilot (Sara)">
-                      <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sara&clothing=blazerAndShirt&clothingColor=091a36&accessories=sunglasses" alt="Female Pilot">
+                      <img src="images/avatar2.png" alt="Female Pilot">
                     </div>
                   </div>
                 </div>
@@ -393,9 +393,9 @@ export const ui = {
 
   // Get avatar image URL based on selected avatar value
   getAvatarUrl(avatar) {
-    if (avatar === 'avatar1.png') return 'https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&clothing=blazerAndShirt&clothingColor=091a36&accessories=sunglasses';
-    if (avatar === 'avatar2.png') return 'https://api.dicebear.com/7.x/avataaars/svg?seed=Sara&clothing=blazerAndShirt&clothingColor=091a36&accessories=sunglasses';
-    return 'https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&clothing=blazerAndShirt&clothingColor=091a36&accessories=sunglasses';
+    if (avatar === 'avatar1.png') return 'images/avatar1.png';
+    if (avatar === 'avatar2.png') return 'images/avatar2.png';
+    return 'images/avatar1.png';
   },
 
   // 2. Render Study Dashboard View (Flight Command Console)

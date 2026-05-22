@@ -300,7 +300,6 @@ body.light-mode .auth-info-title {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  filter: hue-rotate(180deg) brightness(1.2); /* matches cyan theme */
 }
 
 .avatar-option:hover {

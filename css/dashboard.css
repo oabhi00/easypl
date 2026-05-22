@@ -24,7 +24,6 @@
   box-shadow: 0 0 15px 0 var(--accent-glow);
   object-fit: cover;
   background: rgba(11, 17, 33, 0.8);
-  filter: hue-rotate(180deg) brightness(1.2);
 }
 
 .profile-info h3 {
