@@ -171,6 +171,18 @@ class App {
         this.currentUser = null;
         this.isLoginView = true;
         this.navigate('landing');
+      },
+      // Reattempt callback
+      (subjectId, chapterId) => {
+        this.activeSubjectId = subjectId;
+        const subject = subjects[subjectId];
+        if (subject) {
+          const chapter = subject.chapters.find(c => c.id === chapterId);
+          if (chapter) {
+            this.activeChapter = chapter;
+            this.startQuiz();
+          }
+        }
       }
     );
   }

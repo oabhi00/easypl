@@ -518,7 +518,7 @@ export const ui = {
   },
 
   // 2. Render Study Dashboard View (Flight Command Console)
-  renderDashboard(container, user, stats, subjects, onSubjectClick, onLogout) {
+  renderDashboard(container, user, stats, subjects, onSubjectClick, onLogout, onReattempt) {
     const avatarUrl = this.getAvatarUrl(user.avatar);
     
     // Format total time: e.g. "12m 30s" or "1h 5m"
@@ -581,6 +581,11 @@ export const ui = {
             <div class="history-info">
               <span class="history-subject">${subTitle} - ${chTitle}</span>
               <span class="history-meta">${formattedDate} &bull; ${Math.floor(att.timeTaken / 60)}m ${att.timeTaken % 60}s</span>
+            </div>
+            <div class="history-actions" style="margin-left: auto; margin-right: 1.5rem;">
+              <button class="btn btn-secondary btn-reattempt" data-subject-id="${att.subjectId}" data-chapter-id="${att.chapterId}" style="padding: 0.35rem 0.85rem; font-size: 0.72rem; letter-spacing: 0.03em;">
+                Reattempt
+              </button>
             </div>
             <div class="history-score ${att.accuracy >= 70 ? 'score-pass' : 'score-fail'}">
               ${att.score}/${att.totalQuestions} (${att.accuracy}%)
@@ -655,6 +660,14 @@ export const ui = {
     cards.forEach(card => {
       card.addEventListener('click', () => {
         onSubjectClick(card.dataset.id);
+      });
+    });
+
+    const reattemptBtns = container.querySelectorAll('.btn-reattempt');
+    reattemptBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        onReattempt(btn.dataset.subjectId, btn.dataset.chapterId);
       });
     });
   },
