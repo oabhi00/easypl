@@ -47,6 +47,18 @@
   --radar-beam-bg: radial-gradient(circle at 50% 50%, rgba(0, 210, 255, 0.015) 0%, transparent 60%);
   --glow-1: radial-gradient(circle, rgba(0, 210, 255, 0.08) 0%, transparent 70%);
   --glow-2: radial-gradient(circle, rgba(255, 159, 28, 0.04) 0%, transparent 70%);
+
+  /* Attitude Indicator Variables (Dark Mode Default) */
+  --ai-sky-1: #051937;
+  --ai-sky-2: #005d8f;
+  --ai-sky-3: #00d2ff;
+  --ai-ground-1: #3c1e08;
+  --ai-ground-2: #1b0b00;
+  --ai-pitch-line: rgba(255, 255, 255, 0.6);
+  --ai-horizon-line: #ffffff;
+  --ai-bezel: var(--accent);
+  --ai-bezel-opacity: 0.3;
+  --ai-ticks: var(--text-secondary);
 }
 
 body.light-mode {
@@ -86,6 +98,18 @@ body.light-mode {
   --radar-beam-bg: radial-gradient(circle at 50% 50%, rgba(2, 132, 199, 0.008) 0%, transparent 60%);
   --glow-1: radial-gradient(circle, rgba(2, 132, 199, 0.04) 0%, transparent 70%);
   --glow-2: radial-gradient(circle, rgba(234, 88, 12, 0.02) 0%, transparent 70%);
+
+  /* Attitude Indicator Variables (Light Mode / Day) */
+  --ai-sky-1: #bae6fd;
+  --ai-sky-2: #7dd3fc;
+  --ai-sky-3: #38bdf8;
+  --ai-ground-1: #fed7aa;
+  --ai-ground-2: #fdba74;
+  --ai-pitch-line: rgba(15, 23, 42, 0.35);
+  --ai-horizon-line: #0f172a;
+  --ai-bezel: var(--accent);
+  --ai-bezel-opacity: 0.5;
+  --ai-ticks: var(--text-primary);
 }
 
 /* Reset & Base Styles */
@@ -471,6 +495,97 @@ body.light-mode .theme-toggle-btn .moon-icon {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  position: relative;
+}
+
+/* Dynamic Day/Night Sky & Clouds */
+.landing-sky-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -3; /* Behind elements */
+  pointer-events: none;
+  overflow: hidden;
+  background: linear-gradient(180deg, #020617 0%, #0b1329 100%);
+  transition: background 1s ease;
+}
+
+body.light-mode .landing-sky-bg {
+  background: linear-gradient(180deg, #bae6fd 0%, #e0f2fe 100%);
+}
+
+.sky-sun-moon {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.light-mode .sky-sun-moon {
+  background: #fbbf24;
+  box-shadow: 0 0 35px rgba(251, 191, 36, 0.6);
+  transform: translate(-50px, -20px) scale(1.1);
+}
+
+/* Clouds styling */
+.cloud {
+  position: absolute;
+  fill: rgba(255, 255, 255, 0.12);
+  pointer-events: none;
+  animation: driftCloud linear infinite;
+  opacity: 0.8;
+  transition: fill 1s ease, opacity 1s ease;
+}
+
+body.light-mode .cloud {
+  fill: rgba(255, 255, 255, 0.85);
+  filter: drop-shadow(0 4px 6px rgba(15, 23, 42, 0.05));
+  opacity: 0.95;
+}
+
+.cloud svg {
+  width: 100%;
+  height: 100%;
+}
+
+.cloud-1 {
+  top: 10%;
+  width: 180px;
+  height: 110px;
+  animation-duration: 75s;
+  animation-delay: -10s;
+}
+
+.cloud-2 {
+  top: 25%;
+  width: 250px;
+  height: 150px;
+  animation-duration: 110s;
+  animation-delay: -45s;
+}
+
+.cloud-3 {
+  top: 45%;
+  width: 150px;
+  height: 90px;
+  animation-duration: 90s;
+  animation-delay: -20s;
+}
+
+@keyframes driftCloud {
+  from {
+    transform: translateX(-280px);
+  }
+  to {
+    transform: translateX(100vw);
+  }
 }
 
 .landing-header {
@@ -679,7 +794,7 @@ body.light-mode .hero-title {
 }
 
 body.light-mode .landing-bg-attitude {
-  opacity: 0.22;
+  opacity: 0.35;
   filter: drop-shadow(0 0 30px rgba(2, 132, 199, 0.05));
 }
 
@@ -690,7 +805,7 @@ body.light-mode .landing-bg-attitude {
     opacity: 0.15;
   }
   body.light-mode .landing-bg-attitude {
-    opacity: 0.12;
+    opacity: 0.22;
   }
 }
 @media (max-width: 480px) {

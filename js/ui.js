@@ -169,6 +169,20 @@ export const ui = {
 
     container.innerHTML = `
       <div class="landing-container animate-fade-in">
+        <!-- Dynamic Sky Background with Moving Clouds -->
+        <div class="landing-sky-bg">
+          <div class="sky-sun-moon"></div>
+          <div class="cloud cloud-1">
+            <svg viewBox="0 0 100 60"><path d="M 25 45 A 15 15 0 0 1 38 25 A 22 22 0 0 1 72 25 A 15 15 0 0 1 85 45 A 10 10 0 0 1 75 55 L 25 55 A 10 10 0 0 1 25 45 Z" /></svg>
+          </div>
+          <div class="cloud cloud-2">
+            <svg viewBox="0 0 100 60"><path d="M 25 45 A 15 15 0 0 1 38 25 A 22 22 0 0 1 72 25 A 15 15 0 0 1 85 45 A 10 10 0 0 1 75 55 L 25 55 A 10 10 0 0 1 25 45 Z" /></svg>
+          </div>
+          <div class="cloud cloud-3">
+            <svg viewBox="0 0 100 60"><path d="M 25 45 A 15 15 0 0 1 38 25 A 22 22 0 0 1 72 25 A 15 15 0 0 1 85 45 A 10 10 0 0 1 75 55 L 25 55 A 10 10 0 0 1 25 45 Z" /></svg>
+          </div>
+        </div>
+
         <!-- Top Navigation Bar -->
         <header class="landing-header">
           <div class="landing-logo">
@@ -184,7 +198,6 @@ export const ui = {
         <section class="landing-hero-centered">
           <!-- Hero Text & CTAs -->
           <div class="hero-content">
-            <div class="hero-badge">✈️ DGCA Exam Preparation</div>
             <h1 class="hero-title text-gradient">Clear Your DGCA Exams with Ease</h1>
             <p class="hero-description">
               Study smart and clear your DGCA CPL papers. EasyPL provides high-quality mock tests, performance logs, and real exam conditions for Indian CPL candidates.
@@ -199,10 +212,6 @@ export const ui = {
             </div>
           </div>
 
-          <!-- Dynamic Ambient Background Glow Orbs for visual sexiness -->
-          <div class="landing-glow-orb-1"></div>
-          <div class="landing-glow-orb-2"></div>
-
           <!-- Centered: Interactive Background Attitude Indicator -->
           <div class="landing-bg-attitude">
             <svg class="bg-attitude-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -211,13 +220,13 @@ export const ui = {
                   <circle cx="100" cy="100" r="85" />
                 </clipPath>
                 <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stop-color="#051937" />
-                  <stop offset="60%" stop-color="#005d8f" />
-                  <stop offset="100%" stop-color="#00d2ff" />
+                  <stop offset="0%" stop-color="var(--ai-sky-1)" />
+                  <stop offset="60%" stop-color="var(--ai-sky-2)" />
+                  <stop offset="100%" stop-color="var(--ai-sky-3)" />
                 </linearGradient>
                 <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stop-color="#3c1e08" />
-                  <stop offset="100%" stop-color="#1b0b00" />
+                  <stop offset="0%" stop-color="var(--ai-ground-1)" />
+                  <stop offset="100%" stop-color="var(--ai-ground-2)" />
                 </linearGradient>
                 <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
                   <feGaussianBlur stdDeviation="2.5" result="blur" />
@@ -229,11 +238,11 @@ export const ui = {
               </defs>
 
               <!-- Outer Bezel Ring -->
-              <circle cx="100" cy="100" r="92" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.3" filter="url(#neonGlow)"/>
-              <circle cx="100" cy="100" r="87" fill="none" stroke="var(--accent)" stroke-width="0.8" opacity="0.25"/>
+              <circle cx="100" cy="100" r="92" fill="none" stroke="var(--ai-bezel)" stroke-width="2" opacity="var(--ai-bezel-opacity)" filter="url(#neonGlow)"/>
+              <circle cx="100" cy="100" r="87" fill="none" stroke="var(--ai-bezel)" stroke-width="0.8" opacity="0.25"/>
 
               <!-- Bank Angle Markings -->
-              <g transform="translate(100, 100)" stroke="var(--text-secondary)" stroke-width="1" opacity="0.5">
+              <g transform="translate(100, 100)" stroke="var(--ai-ticks)" stroke-width="1" opacity="0.6">
                 <polygon points="0,-87 -4,-80 4,-80" fill="var(--hud-amber)" stroke="none" />
                 <line x1="0" y1="-87" x2="0" y2="-83" transform="rotate(10)" />
                 <line x1="0" y1="-87" x2="0" y2="-83" transform="rotate(20)" />
@@ -257,37 +266,37 @@ export const ui = {
                 <g class="bg-horizon-group" style="transform-origin: 100px 100px; transition: transform 0.1s ease-out;">
                   <!-- Ground -->
                   <rect x="-40" y="100" width="280" height="200" fill="url(#groundGrad)" />
-                  <!-- White Horizon Line -->
-                  <line x1="-40" y1="100" x2="240" y2="100" stroke="#ffffff" stroke-width="1.5" />
+                  <!-- Horizon Line -->
+                  <line x1="-40" y1="100" x2="240" y2="100" stroke="var(--ai-horizon-line)" stroke-width="1.5" />
                   
                   <!-- Pitch ladder lines -->
                   <!-- Pitch +10 -->
-                  <line x1="85" y1="80" x2="115" y2="80" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" />
-                  <line x1="85" y1="80" x2="85" y2="83" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" />
-                  <line x1="115" y1="80" x2="115" y2="83" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" />
-                  <text x="74" y="83" fill="rgba(255,255,255,0.6)" font-size="7" font-family="var(--font-mono)">10</text>
-                  <text x="119" y="83" fill="rgba(255,255,255,0.6)" font-size="7" font-family="var(--font-mono)">10</text>
+                  <line x1="85" y1="80" x2="115" y2="80" stroke="var(--ai-pitch-line)" stroke-width="0.75" />
+                  <line x1="85" y1="80" x2="85" y2="83" stroke="var(--ai-pitch-line)" stroke-width="0.75" />
+                  <line x1="115" y1="80" x2="115" y2="83" stroke="var(--ai-pitch-line)" stroke-width="0.75" />
+                  <text x="74" y="83" fill="var(--ai-pitch-line)" font-size="7" font-family="var(--font-mono)">10</text>
+                  <text x="119" y="83" fill="var(--ai-pitch-line)" font-size="7" font-family="var(--font-mono)">10</text>
 
                   <!-- Pitch +20 -->
-                  <line x1="90" y1="60" x2="110" y2="60" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" />
-                  <line x1="90" y1="60" x2="90" y2="63" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" />
-                  <line x1="110" y1="60" x2="110" y2="63" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" />
-                  <text x="79" y="63" fill="rgba(255,255,255,0.6)" font-size="7" font-family="var(--font-mono)">20</text>
-                  <text x="113" y="63" fill="rgba(255,255,255,0.6)" font-size="7" font-family="var(--font-mono)">20</text>
+                  <line x1="90" y1="60" x2="110" y2="60" stroke="var(--ai-pitch-line)" stroke-width="0.75" />
+                  <line x1="90" y1="60" x2="90" y2="63" stroke="var(--ai-pitch-line)" stroke-width="0.75" />
+                  <line x1="110" y1="60" x2="110" y2="63" stroke="var(--ai-pitch-line)" stroke-width="0.75" />
+                  <text x="79" y="63" fill="var(--ai-pitch-line)" font-size="7" font-family="var(--font-mono)">20</text>
+                  <text x="113" y="63" fill="var(--ai-pitch-line)" font-size="7" font-family="var(--font-mono)">20</text>
 
                   <!-- Pitch -10 -->
-                  <line x1="85" y1="120" x2="115" y2="120" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" stroke-dasharray="3 2" />
-                  <line x1="85" y1="120" x2="85" y2="117" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" />
-                  <line x1="115" y1="120" x2="115" y2="117" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" />
-                  <text x="74" y="123" fill="rgba(255,255,255,0.6)" font-size="7" font-family="var(--font-mono)">10</text>
-                  <text x="119" y="123" fill="rgba(255,255,255,0.6)" font-size="7" font-family="var(--font-mono)">10</text>
+                  <line x1="85" y1="120" x2="115" y2="120" stroke="var(--ai-pitch-line)" stroke-width="0.75" stroke-dasharray="3 2" />
+                  <line x1="85" y1="120" x2="85" y2="117" stroke="var(--ai-pitch-line)" stroke-width="0.75" />
+                  <line x1="115" y1="120" x2="115" y2="117" stroke="var(--ai-pitch-line)" stroke-width="0.75" />
+                  <text x="74" y="123" fill="var(--ai-pitch-line)" font-size="7" font-family="var(--font-mono)">10</text>
+                  <text x="119" y="123" fill="var(--ai-pitch-line)" font-size="7" font-family="var(--font-mono)">10</text>
 
                   <!-- Pitch -20 -->
-                  <line x1="90" y1="140" x2="110" y2="140" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" stroke-dasharray="3 2" />
-                  <line x1="90" y1="140" x2="90" y2="137" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" />
-                  <line x1="110" y1="140" x2="110" y2="137" stroke="rgba(255,255,255,0.6)" stroke-width="0.75" />
-                  <text x="79" y="143" fill="rgba(255,255,255,0.6)" font-size="7" font-family="var(--font-mono)">20</text>
-                  <text x="113" y="143" fill="rgba(255,255,255,0.6)" font-size="7" font-family="var(--font-mono)">20</text>
+                  <line x1="90" y1="140" x2="110" y2="140" stroke="var(--ai-pitch-line)" stroke-width="0.75" stroke-dasharray="3 2" />
+                  <line x1="90" y1="140" x2="90" y2="137" stroke="var(--ai-pitch-line)" stroke-width="0.75" />
+                  <line x1="110" y1="140" x2="110" y2="137" stroke="var(--ai-pitch-line)" stroke-width="0.75" />
+                  <text x="79" y="143" fill="var(--ai-pitch-line)" font-size="7" font-family="var(--font-mono)">20</text>
+                  <text x="113" y="143" fill="var(--ai-pitch-line)" font-size="7" font-family="var(--font-mono)">20</text>
                 </g>
               </g>
 
@@ -458,18 +467,12 @@ export const ui = {
           ${!isLogin ? `
             <div class="form-group">
               <label class="form-label">Select Pilot Avatar</label>
-              <div class="avatar-selector">
-                <div class="avatar-option selected" data-avatar="avatar1.png">
-                  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=CaptainJack&accessories=sunglasses&top=shortHair" alt="Captain">
+              <div class="avatar-selector" style="grid-template-columns: repeat(2, 1fr); max-width: 240px; margin: 0 auto;">
+                <div class="avatar-option selected" data-avatar="avatar1.png" title="Male Pilot (Felix)">
+                  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&clothing=blazerAndShirt&clothingColor=091a36&accessories=sunglasses" alt="Male Pilot">
                 </div>
-                <div class="avatar-option" data-avatar="avatar2.png">
-                  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=PilotSarah&accessories=sunglasses&top=longHair" alt="Aviator">
-                </div>
-                <div class="avatar-option" data-avatar="avatar3.png">
-                  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=NavigatorTom&accessories=prescription01" alt="Airman">
-                </div>
-                <div class="avatar-option" data-avatar="avatar4.png">
-                  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=OfficerEmily&accessories=wayfarers" alt="Crew">
+                <div class="avatar-option" data-avatar="avatar2.png" title="Female Pilot (Sara)">
+                  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sara&clothing=blazerAndShirt&clothingColor=091a36&accessories=sunglasses" alt="Female Pilot">
                 </div>
               </div>
             </div>
@@ -523,11 +526,9 @@ export const ui = {
 
   // Get avatar image URL based on selected avatar value
   getAvatarUrl(avatar) {
-    if (avatar === 'avatar1.png') return 'https://api.dicebear.com/7.x/avataaars/svg?seed=CaptainJack&accessories=sunglasses&top=shortHair';
-    if (avatar === 'avatar2.png') return 'https://api.dicebear.com/7.x/avataaars/svg?seed=PilotSarah&accessories=sunglasses&top=longHair';
-    if (avatar === 'avatar3.png') return 'https://api.dicebear.com/7.x/avataaars/svg?seed=NavigatorTom&accessories=prescription01';
-    if (avatar === 'avatar4.png') return 'https://api.dicebear.com/7.x/avataaars/svg?seed=OfficerEmily&accessories=wayfarers';
-    return 'https://api.dicebear.com/7.x/avataaars/svg?seed=CaptainJack&accessories=sunglasses&top=shortHair';
+    if (avatar === 'avatar1.png') return 'https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&clothing=blazerAndShirt&clothingColor=091a36&accessories=sunglasses';
+    if (avatar === 'avatar2.png') return 'https://api.dicebear.com/7.x/avataaars/svg?seed=Sara&clothing=blazerAndShirt&clothingColor=091a36&accessories=sunglasses';
+    return 'https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&clothing=blazerAndShirt&clothingColor=091a36&accessories=sunglasses';
   },
 
   // 2. Render Study Dashboard View (Flight Command Console)
