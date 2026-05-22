@@ -33,6 +33,9 @@ class App {
     // Wire up light/dark mode theme selector
     this.initTheme();
 
+    // Initialize global parallax for landing/auth backgrounds
+    this.initParallax();
+
     // Check existing session
     this.currentUser = auth.getCurrentUser();
     
@@ -60,13 +63,57 @@ class App {
     });
   }
 
+  // Initialize global attitude indicator parallax & tilt effect
+  initParallax() {
+    document.addEventListener('mousemove', (e) => {
+      if (!document.body.classList.contains('landing-view')) return;
+      
+      const bgHorizon = document.querySelector('.bg-horizon-group');
+      const bgAttitude = document.querySelector('.landing-bg-attitude');
+      
+      if (bgHorizon) {
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        const x = e.clientX - width / 2;
+        const y = e.clientY - height / 2;
+        
+        // Calculate smooth bank and pitch angles
+        const rollAngle = (x / width) * 35; // max 35 deg bank
+        const pitchOffset = (y / height) * 25; // max 25px translation
+        
+        bgHorizon.style.transform = `rotate(${rollAngle}deg) translate(0px, ${pitchOffset}px)`;
+
+        // Subtle parallax effect on the attitude instrument frame
+        if (bgAttitude) {
+          const parallaxX = (x / width) * -15; // move slightly opposite to cursor
+          const parallaxY = (y / height) * -15;
+          bgAttitude.style.transform = `translate(calc(-50% + ${parallaxX}px), calc(-50% + ${parallaxY}px))`;
+        }
+      }
+    });
+
+    document.addEventListener('mouseleave', () => {
+      if (!document.body.classList.contains('landing-view')) return;
+      
+      const bgHorizon = document.querySelector('.bg-horizon-group');
+      const bgAttitude = document.querySelector('.landing-bg-attitude');
+      
+      if (bgHorizon) {
+        bgHorizon.style.transform = 'rotate(0deg) translate(0px, 0px)';
+      }
+      if (bgAttitude) {
+        bgAttitude.style.transform = 'translate(-50%, -50%)';
+      }
+    });
+  }
+
   // Router / Navigation Controller
   navigate(view) {
     this.currentView = view;
     this.container.innerHTML = ''; // Clear container
 
-    // Add landing-view class if viewing landing page
-    if (view === 'landing') {
+    // Add landing-view class if viewing landing page or auth page
+    if (view === 'landing' || view === 'auth') {
       document.body.classList.add('landing-view');
     } else {
       document.body.classList.remove('landing-view');

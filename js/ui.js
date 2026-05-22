@@ -198,104 +198,7 @@ export const ui = {
             </div>
           </div>
 
-          <!-- Centered: Interactive Background Attitude Indicator -->
-          <div class="landing-bg-attitude">
-            <svg class="bg-attitude-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <clipPath id="bgAiClip">
-                  <circle cx="100" cy="100" r="85" />
-                </clipPath>
-                <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stop-color="var(--ai-sky-1)" />
-                  <stop offset="60%" stop-color="var(--ai-sky-2)" />
-                  <stop offset="100%" stop-color="var(--ai-sky-3)" />
-                </linearGradient>
-                <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stop-color="var(--ai-ground-1)" />
-                  <stop offset="100%" stop-color="var(--ai-ground-2)" />
-                </linearGradient>
-                <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
-                  <feGaussianBlur stdDeviation="2.5" result="blur" />
-                  <feMerge>
-                    <feMergeNode in="blur" />
-                    <feMergeNode in="SourceGraphic" />
-                  </feMerge>
-                </filter>
-              </defs>
-
-              <!-- Outer Bezel Ring -->
-              <circle cx="100" cy="100" r="92" fill="none" stroke="var(--ai-bezel)" stroke-width="2" opacity="var(--ai-bezel-opacity)" filter="url(#neonGlow)"/>
-              <circle cx="100" cy="100" r="87" fill="none" stroke="var(--ai-bezel)" stroke-width="0.8" opacity="0.25"/>
-
-              <!-- Bank Angle Markings -->
-              <g transform="translate(100, 100)" stroke="var(--ai-ticks)" stroke-width="1" opacity="0.6">
-                <polygon points="0,-87 -4,-80 4,-80" fill="var(--hud-amber)" stroke="none" />
-                <line x1="0" y1="-87" x2="0" y2="-83" transform="rotate(10)" />
-                <line x1="0" y1="-87" x2="0" y2="-83" transform="rotate(20)" />
-                <line x1="0" y1="-87" x2="0" y2="-83" transform="rotate(30)" />
-                <line x1="0" y1="-87" x2="0" y2="-81" stroke-width="1.5" transform="rotate(45)" />
-                <line x1="0" y1="-87" x2="0" y2="-81" stroke-width="1.5" transform="rotate(60)" />
-                
-                <line x1="0" y1="-87" x2="0" y2="-83" transform="rotate(-10)" />
-                <line x1="0" y1="-87" x2="0" y2="-83" transform="rotate(-20)" />
-                <line x1="0" y1="-87" x2="0" y2="-83" transform="rotate(-30)" />
-                <line x1="0" y1="-87" x2="0" y2="-81" stroke-width="1.5" transform="rotate(-45)" />
-                <line x1="0" y1="-87" x2="0" y2="-81" stroke-width="1.5" transform="rotate(-60)" />
-              </g>
-
-              <!-- Clipped Horizon Ball -->
-              <g clip-path="url(#bgAiClip)">
-                <!-- Sky -->
-                <rect x="-20" y="-20" width="240" height="240" fill="url(#skyGrad)"/>
-                
-                <!-- Rotatable/Translatable Horizon Group -->
-                <g class="bg-horizon-group" style="transform-origin: 100px 100px; transition: transform 0.1s ease-out;">
-                  <!-- Ground -->
-                  <rect x="-40" y="100" width="280" height="200" fill="url(#groundGrad)" />
-                  <!-- Horizon Line -->
-                  <line x1="-40" y1="100" x2="240" y2="100" stroke="var(--ai-horizon-line)" stroke-width="1.5" />
-                  
-                  <!-- Pitch ladder lines -->
-                  <!-- Pitch +10 -->
-                  <line x1="85" y1="80" x2="115" y2="80" stroke="var(--ai-pitch-line)" stroke-width="0.75" />
-                  <line x1="85" y1="80" x2="85" y2="83" stroke="var(--ai-pitch-line)" stroke-width="0.75" />
-                  <line x1="115" y1="80" x2="115" y2="83" stroke="var(--ai-pitch-line)" stroke-width="0.75" />
-                  <text x="74" y="83" fill="var(--ai-pitch-line)" font-size="7" font-family="var(--font-mono)">10</text>
-                  <text x="119" y="83" fill="var(--ai-pitch-line)" font-size="7" font-family="var(--font-mono)">10</text>
-
-                  <!-- Pitch +20 -->
-                  <line x1="90" y1="60" x2="110" y2="60" stroke="var(--ai-pitch-line)" stroke-width="0.75" />
-                  <line x1="90" y1="60" x2="90" y2="63" stroke="var(--ai-pitch-line)" stroke-width="0.75" />
-                  <line x1="110" y1="60" x2="110" y2="63" stroke="var(--ai-pitch-line)" stroke-width="0.75" />
-                  <text x="79" y="63" fill="var(--ai-pitch-line)" font-size="7" font-family="var(--font-mono)">20</text>
-                  <text x="113" y="63" fill="var(--ai-pitch-line)" font-size="7" font-family="var(--font-mono)">20</text>
-
-                  <!-- Pitch -10 -->
-                  <line x1="85" y1="120" x2="115" y2="120" stroke="var(--ai-pitch-line)" stroke-width="0.75" stroke-dasharray="3 2" />
-                  <line x1="85" y1="120" x2="85" y2="117" stroke="var(--ai-pitch-line)" stroke-width="0.75" />
-                  <line x1="115" y1="120" x2="115" y2="117" stroke="var(--ai-pitch-line)" stroke-width="0.75" />
-                  <text x="74" y="123" fill="var(--ai-pitch-line)" font-size="7" font-family="var(--font-mono)">10</text>
-                  <text x="119" y="123" fill="var(--ai-pitch-line)" font-size="7" font-family="var(--font-mono)">10</text>
-
-                  <!-- Pitch -20 -->
-                  <line x1="90" y1="140" x2="110" y2="140" stroke="var(--ai-pitch-line)" stroke-width="0.75" stroke-dasharray="3 2" />
-                  <line x1="90" y1="140" x2="90" y2="137" stroke="var(--ai-pitch-line)" stroke-width="0.75" />
-                  <line x1="110" y1="140" x2="110" y2="137" stroke="var(--ai-pitch-line)" stroke-width="0.75" />
-                  <text x="79" y="143" fill="var(--ai-pitch-line)" font-size="7" font-family="var(--font-mono)">20</text>
-                  <text x="113" y="143" fill="var(--ai-pitch-line)" font-size="7" font-family="var(--font-mono)">20</text>
-                </g>
-              </g>
-
-              <!-- Fixed Airplane Miniature Symbol in foreground -->
-              <g filter="url(#neonGlow)">
-                <rect x="60" y="98" width="28" height="3" fill="var(--hud-amber)" rx="0.5" />
-                <rect x="112" y="98" width="28" height="3" fill="var(--hud-amber)" rx="0.5" />
-                <circle cx="100" cy="100" r="3" fill="var(--hud-amber)" />
-                <polygon points="100,95 97,100 103,100" fill="var(--hud-amber)" />
-              </g>
-            </g>
-          </svg>
-        </div>
+          <!-- Background Attitude Indicator is now globally rendered in index.html -->
       </section>
 
       <!-- Subjects Grid Showcase -->
@@ -379,41 +282,8 @@ export const ui = {
     }
   });
 
-  // Interactive mouse move for background attitude indicator & parallax
-  const landingContainer = container.querySelector('.landing-container');
-  const bgHorizon = container.querySelector('.bg-horizon-group');
-  const bgAttitude = container.querySelector('.landing-bg-attitude');
-  const cards = container.querySelectorAll('.landing-feature-card');
-
-  if (landingContainer && bgHorizon) {
-    landingContainer.addEventListener('mousemove', (e) => {
-      const rect = landingContainer.getBoundingClientRect();
-      const x = e.clientX - rect.left - rect.width / 2;
-      const y = e.clientY - rect.top - rect.height / 2;
-      
-      // Calculate smooth bank and pitch angles
-      const rollAngle = (x / rect.width) * 35; // max 35 deg bank
-      const pitchOffset = (y / rect.height) * 25; // max 25px translation
-      
-      bgHorizon.style.transform = `rotate(${rollAngle}deg) translate(0px, ${pitchOffset}px)`;
-
-      // Subtle parallax effect on the attitude instrument frame
-      if (bgAttitude) {
-        const parallaxX = (x / rect.width) * -15; // move slightly opposite to cursor
-        const parallaxY = (y / rect.height) * -15;
-        bgAttitude.style.transform = `translate(calc(-50% + ${parallaxX}px), calc(-50% + ${parallaxY}px))`;
-      }
-    });
-
-    landingContainer.addEventListener('mouseleave', () => {
-      bgHorizon.style.transform = 'rotate(0deg) translate(0px, 0px)';
-      if (bgAttitude) {
-        bgAttitude.style.transform = 'translate(-50%, -50%)';
-      }
-    });
-  }
-
   // Card mousemove spotlight tracker
+  const cards = container.querySelectorAll('.landing-feature-card');
   cards.forEach(card => {
     card.addEventListener('mousemove', (e) => {
       const rect = card.getBoundingClientRect();
