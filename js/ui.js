@@ -298,49 +298,61 @@ export const ui = {
   // 1. Render Authentication Screen (Pre-Flight BRIEFING Terminal)
   renderAuth(container, isLogin, onToggle, onSubmit, onBackToSplash) {
     container.innerHTML = `
-      <div class="auth-wrapper card animate-fade-in">
-        ${onBackToSplash ? `
-          <div class="auth-back" id="authBackBtn" title="Back to Home">
-            ✕ BACK TO HOME
-          </div>
-        ` : ''}
-        <div class="auth-header">
-          <h1 class="text-gradient">EasyPL</h1>
-          <p>${isLogin ? 'LOG IN TO YOUR ACCOUNT' : 'CREATE YOUR PILOT PROFILE'}</p>
+      <div class="auth-split-layout">
+        <div class="auth-info-pane">
+          <div class="hero-badge animate-fade-in-left">PRE-FLIGHT BRIEFING</div>
+          <h1 class="auth-info-title animate-fade-in-left">Clear Your DGCA Exams with Ease</h1>
+          <p class="auth-info-desc animate-fade-in-left">
+            Study smart and clear your DGCA CPL papers. EasyPL provides high-quality mock tests, performance logs, and real exam conditions for Indian CPL candidates.
+          </p>
         </div>
         
-        <form id="authForm">
-          <div class="form-group">
-            <label class="form-label" for="username">Username</label>
-            <input class="form-input" type="text" id="username" required placeholder="Enter username" autocomplete="off">
-          </div>
-          
-          <div class="form-group">
-            <label class="form-label" for="password">Password</label>
-            <input class="form-input" type="password" id="password" required placeholder="Enter password">
-          </div>
-          
-          ${!isLogin ? `
-            <div class="form-group">
-              <label class="form-label">Select Pilot Avatar</label>
-              <div class="avatar-selector" style="grid-template-columns: repeat(2, 1fr); max-width: 240px; margin: 0 auto;">
-                <div class="avatar-option selected" data-avatar="avatar1.png" title="Male Pilot (Felix)">
-                  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&clothing=blazerAndShirt&clothingColor=091a36&accessories=sunglasses" alt="Male Pilot">
-                </div>
-                <div class="avatar-option" data-avatar="avatar2.png" title="Female Pilot (Sara)">
-                  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sara&clothing=blazerAndShirt&clothingColor=091a36&accessories=sunglasses" alt="Female Pilot">
-                </div>
+        <div class="auth-form-pane">
+          <div class="auth-wrapper card animate-fade-in">
+            ${onBackToSplash ? `
+              <div class="auth-back" id="authBackBtn" title="Back to Home">
+                ✕ BACK TO HOME
               </div>
+            ` : ''}
+            <div class="auth-header">
+              <h1 class="text-gradient">EasyPL</h1>
+              <p>${isLogin ? 'LOG IN TO YOUR ACCOUNT' : 'CREATE YOUR PILOT PROFILE'}</p>
             </div>
-          ` : ''}
-          
-          <button class="btn btn-primary" type="submit" style="width: 100%; margin-top: 1rem;">
-            ${isLogin ? 'Log In' : 'Register'}
-          </button>
-        </form>
-        
-        <div class="auth-toggle">
-          ${isLogin ? "Don't have a profile? <span id='toggleAuth'>Create Profile</span>" : "Already have a profile? <span id='toggleAuth'>Log In</span>"}
+            
+            <form id="authForm">
+              <div class="form-group">
+                <label class="form-label" for="username">Username</label>
+                <input class="form-input" type="text" id="username" required placeholder="Enter username" autocomplete="off">
+              </div>
+              
+              <div class="form-group">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-input" type="password" id="password" required placeholder="Enter password">
+              </div>
+              
+              ${!isLogin ? `
+                <div class="form-group">
+                  <label class="form-label">Select Pilot Avatar</label>
+                  <div class="avatar-selector" style="grid-template-columns: repeat(2, 1fr); max-width: 240px; margin: 0 auto;">
+                    <div class="avatar-option selected" data-avatar="avatar1.png" title="Male Pilot (Felix)">
+                      <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&clothing=blazerAndShirt&clothingColor=091a36&accessories=sunglasses" alt="Male Pilot">
+                    </div>
+                    <div class="avatar-option" data-avatar="avatar2.png" title="Female Pilot (Sara)">
+                      <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sara&clothing=blazerAndShirt&clothingColor=091a36&accessories=sunglasses" alt="Female Pilot">
+                    </div>
+                  </div>
+                </div>
+              ` : ''}
+              
+              <button class="btn btn-primary" type="submit" style="width: 100%; margin-top: 1rem;">
+                ${isLogin ? 'Log In' : 'Register'}
+              </button>
+            </form>
+            
+            <div class="auth-toggle">
+              ${isLogin ? "Don't have a profile? <span id='toggleAuth'>Create Profile</span>" : "Already have a profile? <span id='toggleAuth'>Log In</span>"}
+            </div>
+          </div>
         </div>
       </div>
     `;

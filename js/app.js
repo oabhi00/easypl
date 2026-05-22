@@ -113,8 +113,10 @@ class App {
     this.container.innerHTML = ''; // Clear container
 
     // Add landing-view class if viewing landing page or auth page
+    document.body.classList.remove('view-landing', 'view-auth');
     if (view === 'landing' || view === 'auth') {
       document.body.classList.add('landing-view');
+      document.body.classList.add(`view-${view}`);
     } else {
       document.body.classList.remove('landing-view');
     }

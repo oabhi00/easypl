@@ -798,7 +798,28 @@ body.light-mode .hero-title {
   opacity: 0.25;
   display: block;
   filter: drop-shadow(0 0 50px rgba(0, 210, 255, 0.12));
-  transition: transform 0.2s cubic-bezier(0.1, 0.8, 0.3, 1), opacity var(--transition-normal);
+  transition: transform 0.2s cubic-bezier(0.1, 0.8, 0.3, 1), left 0.8s cubic-bezier(0.25, 1, 0.5, 1), opacity var(--transition-normal);
+}
+
+/* Shift attitude indicator to left on auth screen */
+body.view-auth .landing-bg-attitude {
+  left: 28%;
+}
+
+@media (max-width: 992px) {
+  body.view-auth .landing-bg-attitude {
+    left: 20%;
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* On mobile/tablet, keep it centered behind the card */
+  body.view-auth .landing-bg-attitude {
+    left: 50%;
+    opacity: 0.12;
+  }
 }
 
 .bg-attitude-svg {
