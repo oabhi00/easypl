@@ -10,24 +10,40 @@ const getSubjectGraphic = (category) => {
   const normCat = (category || '').toUpperCase();
   
   if (normCat.includes('METEOROLOGY') || normCat.includes('MET')) {
-    // Meteorology Radar display
+    // Meteorology Weather Cloud, Sun and Lightning
     return `
       <svg viewBox="0 0 100 100" style="width: 100%; height: 100%;">
-        <circle cx="50" cy="50" r="45" fill="none" stroke="var(--correct)" stroke-width="1.5" opacity="0.3"/>
-        <circle cx="50" cy="50" r="30" fill="none" stroke="var(--correct)" stroke-width="0.75" stroke-dasharray="3, 3" opacity="0.25"/>
-        <circle cx="50" cy="50" r="15" fill="none" stroke="var(--correct)" stroke-width="0.75" stroke-dasharray="3, 3" opacity="0.25"/>
-        <line x1="5" y1="50" x2="95" y2="50" stroke="var(--correct)" stroke-width="0.5" opacity="0.2"/>
-        <line x1="50" y1="5" x2="50" y2="95" stroke="var(--correct)" stroke-width="0.5" opacity="0.2"/>
-        <path d="M50,50 L50,6 A44,44 0 0,1 81,18 Z" fill="url(#radarGradient)" class="met-radar-sweep" />
-        <path d="M63,33 Q67,29 70,34 Q73,39 67,41 Z" fill="var(--correct)" opacity="0.5" />
-        <path d="M28,62 Q31,60 33,63 Q35,66 30,68 Z" fill="var(--correct)" opacity="0.3" />
         <defs>
-          <radialGradient id="radarGradient" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="var(--correct)" stop-opacity="0.35"/>
-            <stop offset="90%" stop-color="var(--correct)" stop-opacity="0.05"/>
-            <stop offset="100%" stop-color="var(--correct)" stop-opacity="0"/>
-          </radialGradient>
+          <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="var(--accent-light)" stop-opacity="0.8" />
+            <stop offset="100%" stop-color="var(--accent)" stop-opacity="0.2" />
+          </linearGradient>
+          <filter id="hudGlowMet" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="1.5" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
         </defs>
+        <!-- Concentric range ring -->
+        <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent)" stroke-width="1.2" opacity="0.2" />
+        
+        <!-- Stylized Sun outline behind cloud -->
+        <circle cx="65" cy="35" r="12" fill="none" stroke="var(--hud-amber)" stroke-width="1.5" opacity="0.6" stroke-dasharray="2,2" class="met-sun" />
+        
+        <!-- Cloud body -->
+        <path d="M 28 62 A 12 12 0 0 1 32 38 A 15 15 0 0 1 65 35 A 12 12 0 0 1 76 50 A 10 10 0 0 1 70 62 Z" fill="url(#cloudGrad)" stroke="var(--accent)" stroke-width="1.5" filter="url(#hudGlowMet)" class="met-cloud" />
+        
+        <!-- Lightning Bolt -->
+        <path d="M 48 48 L 38 65 L 46 65 L 40 82 L 56 60 L 48 60 Z" fill="var(--hud-amber)" opacity="0.9" filter="url(#hudGlowMet)" class="met-lightning" />
+        
+        <!-- Raindrops -->
+        <g stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" class="met-rain">
+          <line x1="28" y1="70" x2="25" y2="76" opacity="0.6" />
+          <line x1="68" y1="70" x2="65" y2="76" opacity="0.6" />
+          <line x1="60" y1="74" x2="57" y2="80" opacity="0.6" />
+        </g>
       </svg>
     `;
   } else if (normCat.includes('NAVIGATION') || normCat.includes('NAV')) {
@@ -70,19 +86,49 @@ const getSubjectGraphic = (category) => {
       </svg>
     `;
   } else {
-    // Air Regulations landing chart / runway indicator
+    // Air Regulations Scales of Justice (Law)
     return `
       <svg viewBox="0 0 100 100" style="width: 100%; height: 100%;">
-        <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.2"/>
-        <line x1="50" y1="12" x2="50" y2="88" stroke="var(--accent)" stroke-width="5" opacity="0.15" />
-        <line x1="50" y1="12" x2="50" y2="88" stroke="var(--accent)" stroke-width="1.2" stroke-dasharray="4,4" class="runway-guidance" />
-        <line x1="43" y1="20" x2="43" y2="80" stroke="var(--accent)" stroke-width="1.5" opacity="0.3" />
-        <line x1="57" y1="20" x2="57" y2="80" stroke="var(--accent)" stroke-width="1.5" opacity="0.3" />
-        <circle cx="50" cy="50" r="9" fill="none" stroke="var(--accent)" stroke-width="1.5" />
-        <line x1="22" y1="50" x2="78" y2="50" stroke="var(--accent)" stroke-width="0.75" stroke-dasharray="3, 3" />
-        <line x1="50" y1="22" x2="50" y2="78" stroke="var(--accent)" stroke-width="0.75" stroke-dasharray="3, 3" />
-        <line x1="38" y1="80" x2="62" y2="80" stroke="var(--accent)" stroke-width="1" opacity="0.5" />
-        <line x1="40" y1="84" x2="60" y2="84" stroke="var(--accent)" stroke-width="1" opacity="0.5" />
+        <defs>
+          <filter id="hudGlowReg" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="1.5" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+        <!-- Concentric range ring -->
+        <circle cx="50" cy="50" r="45" fill="none" stroke="var(--correct)" stroke-width="1.2" opacity="0.2" />
+        
+        <!-- Scales of Justice -->
+        <g class="reg-scales" stroke="var(--correct)" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#hudGlowReg)">
+          <!-- Center Pillar -->
+          <line x1="50" y1="20" x2="50" y2="78" stroke-width="2.5" />
+          <path d="M 42 78 L 58 78" stroke-width="3" />
+          <path d="M 46 74 L 54 74" stroke-width="2" />
+          <circle cx="50" cy="18" r="3.5" fill="var(--correct)" />
+          
+          <!-- Balance Crossbar (Tiltable) -->
+          <g class="reg-crossbar" style="transform-origin: 50px 26px;">
+            <line x1="22" y1="26" x2="78" y2="26" stroke-width="2" />
+            <circle cx="50" cy="26" r="2" fill="var(--bg-primary)" />
+            
+            <!-- Left Pan -->
+            <g class="reg-left-pan">
+              <line x1="22" y1="26" x2="14" y2="52" stroke-width="1" opacity="0.7" />
+              <line x1="22" y1="26" x2="30" y2="52" stroke-width="1" opacity="0.7" />
+              <path d="M 10 52 L 34 52 A 12 12 0 0 0 22 64 A 12 12 0 0 0 10 52" fill="var(--correct-glow)" stroke-width="1.5" />
+            </g>
+            
+            <!-- Right Pan -->
+            <g class="reg-right-pan">
+              <line x1="78" y1="26" x2="70" y2="52" stroke-width="1" opacity="0.7" />
+              <line x1="78" y1="26" x2="86" y2="52" stroke-width="1" opacity="0.7" />
+              <path d="M 66 52 L 90 52 A 12 12 0 0 0 78 64 A 12 12 0 0 0 66 52" fill="var(--correct-glow)" stroke-width="1.5" />
+            </g>
+          </g>
+        </g>
       </svg>
     `;
   }
@@ -139,7 +185,7 @@ export const ui = {
           <!-- Hero Text & CTAs -->
           <div class="hero-content">
             <div class="hero-badge">✈️ DGCA Exam Preparation</div>
-            <h1 class="hero-title text-gradient">Clear Your DGCA CPL Papers</h1>
+            <h1 class="hero-title text-gradient">Clear Your DGCA Exams with Ease</h1>
             <p class="hero-description">
               Study smart and clear your DGCA CPL papers. EasyPL provides high-quality mock tests, performance logs, and real exam conditions for Indian CPL candidates.
             </p>
@@ -414,16 +460,16 @@ export const ui = {
               <label class="form-label">Select Pilot Avatar</label>
               <div class="avatar-selector">
                 <div class="avatar-option selected" data-avatar="avatar1.png">
-                  <img src="https://api.dicebear.com/7.x/bottts/svg?seed=captain" alt="Captain">
+                  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=CaptainJack&accessories=sunglasses&top=shortHair" alt="Captain">
                 </div>
                 <div class="avatar-option" data-avatar="avatar2.png">
-                  <img src="https://api.dicebear.com/7.x/bottts/svg?seed=aviator" alt="Aviator">
+                  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=PilotSarah&accessories=sunglasses&top=longHair" alt="Aviator">
                 </div>
                 <div class="avatar-option" data-avatar="avatar3.png">
-                  <img src="https://api.dicebear.com/7.x/bottts/svg?seed=airman" alt="Airman">
+                  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=NavigatorTom&accessories=prescription01" alt="Airman">
                 </div>
                 <div class="avatar-option" data-avatar="avatar4.png">
-                  <img src="https://api.dicebear.com/7.x/bottts/svg?seed=flightdesk" alt="Crew">
+                  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=OfficerEmily&accessories=wayfarers" alt="Crew">
                 </div>
               </div>
             </div>
@@ -477,11 +523,11 @@ export const ui = {
 
   // Get avatar image URL based on selected avatar value
   getAvatarUrl(avatar) {
-    if (avatar === 'avatar1.png') return 'https://api.dicebear.com/7.x/bottts/svg?seed=captain';
-    if (avatar === 'avatar2.png') return 'https://api.dicebear.com/7.x/bottts/svg?seed=aviator';
-    if (avatar === 'avatar3.png') return 'https://api.dicebear.com/7.x/bottts/svg?seed=airman';
-    if (avatar === 'avatar4.png') return 'https://api.dicebear.com/7.x/bottts/svg?seed=flightdesk';
-    return 'https://api.dicebear.com/7.x/bottts/svg?seed=captain';
+    if (avatar === 'avatar1.png') return 'https://api.dicebear.com/7.x/avataaars/svg?seed=CaptainJack&accessories=sunglasses&top=shortHair';
+    if (avatar === 'avatar2.png') return 'https://api.dicebear.com/7.x/avataaars/svg?seed=PilotSarah&accessories=sunglasses&top=longHair';
+    if (avatar === 'avatar3.png') return 'https://api.dicebear.com/7.x/avataaars/svg?seed=NavigatorTom&accessories=prescription01';
+    if (avatar === 'avatar4.png') return 'https://api.dicebear.com/7.x/avataaars/svg?seed=OfficerEmily&accessories=wayfarers';
+    return 'https://api.dicebear.com/7.x/avataaars/svg?seed=CaptainJack&accessories=sunglasses&top=shortHair';
   },
 
   // 2. Render Study Dashboard View (Flight Command Console)

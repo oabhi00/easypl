@@ -666,7 +666,7 @@ body.light-mode .hero-title {
   height: 640px;
   pointer-events: none;
   z-index: -1;
-  opacity: 0.15;
+  opacity: 0.25;
   display: block;
   filter: drop-shadow(0 0 50px rgba(0, 210, 255, 0.12));
   transition: transform 0.2s cubic-bezier(0.1, 0.8, 0.3, 1), opacity var(--transition-normal);
@@ -679,7 +679,7 @@ body.light-mode .hero-title {
 }
 
 body.light-mode .landing-bg-attitude {
-  opacity: 0.06;
+  opacity: 0.22;
   filter: drop-shadow(0 0 30px rgba(2, 132, 199, 0.05));
 }
 
@@ -687,10 +687,10 @@ body.light-mode .landing-bg-attitude {
   .landing-bg-attitude {
     width: 480px;
     height: 480px;
-    opacity: 0.1;
+    opacity: 0.15;
   }
   body.light-mode .landing-bg-attitude {
-    opacity: 0.04;
+    opacity: 0.12;
   }
 }
 @media (max-width: 480px) {
@@ -826,15 +826,71 @@ body.light-mode .landing-bg-attitude {
   transform: scale(1.08);
 }
 
-/* Meteorology radar sweep animation */
-.met-radar-sweep {
-  transform-origin: 50px 50px;
-  animation: radarSweep 10s infinite linear;
+/* Meteorology animations */
+.met-sun {
+  transform-origin: 65px 35px;
+  animation: metSunRotate 20s infinite linear;
   transition: filter 0.3s;
 }
-.landing-feature-card:hover .met-radar-sweep {
-  animation: radarSweep 3.5s infinite linear;
-  filter: drop-shadow(0 0 6px rgba(255, 0, 127, 0.6));
+.landing-feature-card:hover .met-sun {
+  animation: metSunRotate 6s infinite linear;
+  filter: drop-shadow(0 0 4px var(--hud-amber));
+}
+@keyframes metSunRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.met-cloud {
+  transition: transform 0.3s, filter 0.3s;
+}
+.landing-feature-card:hover .met-cloud {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 0 5px var(--accent-light));
+}
+
+.met-lightning {
+  opacity: 0.3;
+  transition: opacity 0.3s, filter 0.3s;
+}
+.landing-feature-card:hover .met-lightning {
+  animation: lightningFlash 1.2s infinite ease-in-out;
+  filter: drop-shadow(0 0 8px var(--hud-amber));
+}
+@keyframes lightningFlash {
+  0%, 20%, 80%, 100% { opacity: 0.3; }
+  10%, 14%, 22% { opacity: 1; }
+  12%, 18% { opacity: 0.5; }
+}
+
+.met-rain line {
+  transform-origin: bottom;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.landing-feature-card:hover .met-rain line {
+  animation: metRainDrop 0.8s infinite linear;
+}
+.landing-feature-card:hover .met-rain line:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.landing-feature-card:hover .met-rain line:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.landing-feature-card:hover .met-rain line:nth-child(3) {
+  animation-delay: 0s;
+}
+@keyframes metRainDrop {
+  0% {
+    transform: translate(0, -6px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-3px, 6px);
+    opacity: 0;
+  }
 }
 
 /* Compass rose rotation */
@@ -858,21 +914,43 @@ body.light-mode .landing-bg-attitude {
   filter: drop-shadow(0 0 6px var(--hud-amber));
 }
 
-/* Runway lights marching dash animation */
-.runway-guidance {
-  transition: stroke-width 0.3s, filter 0.3s, stroke 0.3s;
+/* Regulations scales animations */
+.reg-crossbar {
+  transform-origin: 50px 26px;
+  transition: transform 0.8s ease-in-out;
 }
-.landing-feature-card:hover .runway-guidance {
-  animation: runwayDash 0.8s infinite linear;
-  stroke-width: 1.5px;
-  stroke: var(--correct);
-  filter: drop-shadow(0 0 5px var(--correct));
+.landing-feature-card:hover .reg-crossbar {
+  animation: scalesRock 2.5s infinite ease-in-out;
+}
+@keyframes scalesRock {
+  0%, 100% { transform: rotate(0deg); }
+  33% { transform: rotate(-5deg); }
+  66% { transform: rotate(5deg); }
 }
 
-@keyframes runwayDash {
-  to {
-    stroke-dashoffset: -20;
-  }
+.reg-left-pan {
+  transform-origin: 22px 26px;
+  transition: transform 0.8s ease-in-out;
+}
+.reg-right-pan {
+  transform-origin: 78px 26px;
+  transition: transform 0.8s ease-in-out;
+}
+.landing-feature-card:hover .reg-left-pan {
+  animation: leftPanSwing 2.5s infinite ease-in-out;
+}
+.landing-feature-card:hover .reg-right-pan {
+  animation: rightPanSwing 2.5s infinite ease-in-out;
+}
+@keyframes leftPanSwing {
+  0%, 100% { transform: rotate(0deg); }
+  33% { transform: rotate(5deg); }
+  66% { transform: rotate(-5deg); }
+}
+@keyframes rightPanSwing {
+  0%, 100% { transform: rotate(0deg); }
+  33% { transform: rotate(5deg); }
+  66% { transform: rotate(-5deg); }
 }
 
 .landing-feature-card h3 {
