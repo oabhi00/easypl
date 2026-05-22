@@ -4,10 +4,11 @@
  */
 
 export class QuizPlayer {
-  constructor(subjectId, chapter, username, callbacks) {
+  constructor(subjectId, chapter, username, mode = 'practice', callbacks) {
     this.subjectId = subjectId;
     this.chapter = chapter;
     this.username = username;
+    this.mode = mode; // 'practice' or 'test'
     this.callbacks = callbacks; // { onQuestion, onComplete, onTick }
     
     this.questions = [];
@@ -120,7 +121,8 @@ export class QuizPlayer {
       imageSrc: q.image ? this.resolveImagePath(q.image) : null,
       correctAnswerIndex: q.answer,
       selectedAnswerIndex: prevAnswer ? prevAnswer.selectedAnswer : null,
-      isAnswered: prevAnswer !== null
+      isAnswered: prevAnswer !== null,
+      mode: this.mode
     };
 
     if (this.callbacks.onQuestion) {
@@ -130,15 +132,13 @@ export class QuizPlayer {
 
   // Handle option selection
   selectOption(optionIndex) {
-    // If already answered, ignore
-    if (this.answers[this.currentIndex] !== null) return;
+    if (this.mode === 'practice') {
+      // If already answered, ignore
+      if (this.answers[this.currentIndex] !== null) return;
+    }
     
     const q = this.questions[this.currentIndex];
     const isCorrect = optionIndex === q.answer;
-    
-    if (isCorrect) {
-      this.score++;
-    }
     
     this.answers[this.currentIndex] = {
       questionIndex: this.currentIndex,
@@ -171,21 +171,30 @@ export class QuizPlayer {
   submit() {
     this.stopTimer();
     
+    let finalScore = 0;
+    const questionsReviewed = this.questions.map((q, idx) => {
+      const ans = this.answers[idx];
+      const selectedAnswerIndex = ans ? ans.selectedAnswer : null;
+      const isCorrect = ans ? (selectedAnswerIndex === q.answer) : false;
+      if (isCorrect) {
+        finalScore++;
+      }
+      return {
+        questionText: q.question,
+        options: q.options,
+        correctAnswerIndex: q.answer,
+        selectedAnswerIndex: selectedAnswerIndex,
+        isCorrect: isCorrect
+      };
+    });
+    
     const results = {
-      score: this.score,
+      score: finalScore,
       totalQuestions: this.questions.length,
       timeTaken: this.elapsedTime,
-      accuracy: Math.round((this.score / this.questions.length) * 100),
-      questionsReviewed: this.questions.map((q, idx) => {
-        const ans = this.answers[idx];
-        return {
-          questionText: q.question,
-          options: q.options,
-          correctAnswerIndex: q.answer,
-          selectedAnswerIndex: ans ? ans.selectedAnswer : null,
-          isCorrect: ans ? ans.isCorrect : false
-        };
-      })
+      accuracy: Math.round((finalScore / this.questions.length) * 100),
+      questionsReviewed: questionsReviewed,
+      mode: this.mode
     };
 
     if (this.callbacks.onComplete) {

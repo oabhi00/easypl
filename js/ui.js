@@ -717,26 +717,33 @@ export const ui = {
 
   // 4. Render active quiz playing interface (Cockpit HUD Terminal)
   renderQuiz(container, quizData, onOptionClick, onPrev, onNext, onSubmit, onQuitDiscard, onQuitSubmit) {
-    const { questionNumber, totalQuestions, questionText, options, imageSrc, selectedAnswerIndex, isAnswered, correctAnswerIndex } = quizData;
+    const { questionNumber, totalQuestions, questionText, options, imageSrc, selectedAnswerIndex, isAnswered, correctAnswerIndex, mode } = quizData;
     
     // Generate options HTML list
     const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
     let optionsHTML = '';
     options.forEach((opt, idx) => {
       let stateClass = '';
+      let isDisabledAttr = '';
       
-      // If user answered, display color codes
-      if (isAnswered) {
-        if (idx === correctAnswerIndex) {
-          stateClass = 'show-correct';
-        }
+      if (mode === 'test') {
         if (selectedAnswerIndex === idx) {
-          stateClass = selectedAnswerIndex === correctAnswerIndex ? 'selected-correct' : 'selected-wrong';
+          stateClass = 'selected-test';
+        }
+      } else {
+        if (isAnswered) {
+          if (idx === correctAnswerIndex) {
+            stateClass = 'show-correct';
+          }
+          if (selectedAnswerIndex === idx) {
+            stateClass = selectedAnswerIndex === correctAnswerIndex ? 'selected-correct' : 'selected-wrong';
+          }
+          isDisabledAttr = 'disabled';
         }
       }
       
       optionsHTML += `
-        <button class="option-btn ${stateClass}" data-idx="${idx}" ${isAnswered ? 'disabled' : ''}>
+        <button class="option-btn ${stateClass}" data-idx="${idx}" ${isDisabledAttr}>
           <div class="option-letter">${letters[idx] || (idx + 1)}</div>
           <div class="option-text">${opt}</div>
         </button>
@@ -744,11 +751,13 @@ export const ui = {
     });
 
     const progressPercent = Math.round((questionNumber / totalQuestions) * 100);
+    const canNavigate = (mode === 'test') || isAnswered;
+    const navDisabledAttr = canNavigate ? '' : 'disabled style="opacity:0.3; pointer-events:none;"';
 
     container.innerHTML = `
       <div class="quiz-header animate-fade-in">
         <div class="quiz-title-box">
-          <span class="quiz-subtitle" id="quizSubTitle">EXAM IN PROGRESS</span>
+          <span class="quiz-subtitle" id="quizSubTitle">${mode === 'test' ? 'MOCK TEST EXAM' : 'PRACTICE SESSION'}</span>
           <h2 style="font-size: 1.3rem; text-transform: uppercase;" id="quizMainTitle">Question</h2>
         </div>
         <div class="timer-box" id="quizTimer">⏱️ Time: 00:00</div>
@@ -789,9 +798,9 @@ export const ui = {
           </div>
           
           ${questionNumber === totalQuestions ? `
-            <button class="btn btn-primary" id="quizSubmitBtn" ${!isAnswered ? 'disabled style="opacity:0.3; pointer-events:none;"' : ''}>Submit Exam</button>
+            <button class="btn btn-primary" id="quizSubmitBtn" ${navDisabledAttr}>Submit Exam</button>
           ` : `
-            <button class="btn btn-secondary" id="quizNextBtn" ${!isAnswered ? 'disabled style="opacity:0.3; pointer-events:none;"' : ''}>Next Question &rarr;</button>
+            <button class="btn btn-secondary" id="quizNextBtn" ${navDisabledAttr}>Next Question &rarr;</button>
           `}
         </div>
       </div>
@@ -872,43 +881,68 @@ export const ui = {
       </svg>
     `;
 
-    // Build list of reviewed wrong answers
-    const wrongAnswers = questionsReviewed.filter(q => !q.isCorrect);
-    let reviewHTML = '';
-    if (wrongAnswers.length > 0) {
-      reviewHTML = `
-        <div class="review-answers-section animate-fade-in">
-          <h2 class="section-title">Incorrect Answers (${wrongAnswers.length})</h2>
-          <div style="display: flex; flex-direction: column; gap: 1rem;">
-            ${wrongAnswers.map(q => {
-              const correctText = q.options[q.correctAnswerIndex];
-              const selectedText = q.selectedAnswerIndex !== null ? q.options[q.selectedAnswerIndex] : 'NO ANSWER SELECTED';
-              return `
-                <div class="review-question-card wrong-item">
-                  <div class="review-question-title">${q.questionText.replace(/\n/g, '<br>')}</div>
-                  <div class="review-details">
-                    <span>❌ Your Answer: <strong style="color: var(--wrong-light);">${selectedText}</strong></span>
-                    <span>✅ Correct Answer: <strong style="color: var(--correct-light);">${correctText}</strong></span>
-                  </div>
-                </div>
-              `;
-            }).join('')}
+    // Filter questions based on activeTab
+    const renderFilteredQuestions = (tab) => {
+      let filtered = [];
+      if (tab === 'all') {
+        filtered = questionsReviewed;
+      } else if (tab === 'incorrect') {
+        filtered = questionsReviewed.filter(q => !q.isCorrect);
+      } else if (tab === 'correct') {
+        filtered = questionsReviewed.filter(q => q.isCorrect);
+      }
+
+      if (filtered.length === 0) {
+        return `<p style="text-align: center; color: var(--text-secondary); padding: 2.5rem; font-family: var(--font-mono); font-size: 0.9rem;">NO QUESTIONS TO DISPLAY FOR THIS FILTER.</p>`;
+      }
+
+      return filtered.map((q) => {
+        // Find index of the question in the original array
+        const originalIdx = questionsReviewed.indexOf(q);
+        const qNum = originalIdx + 1;
+        
+        const isCorrect = q.isCorrect;
+        const hasAnswered = q.selectedAnswerIndex !== null;
+        
+        let cardClass = 'wrong-item';
+        let badgeClass = 'badge-wrong';
+        let statusText = 'Incorrect';
+        
+        if (isCorrect) {
+          cardClass = 'correct-item';
+          badgeClass = 'badge-correct';
+          statusText = 'Correct';
+        } else if (!hasAnswered) {
+          cardClass = 'wrong-item';
+          badgeClass = 'badge-unanswered';
+          statusText = 'Unanswered';
+        }
+
+        const selectedText = hasAnswered ? q.options[q.selectedAnswerIndex] : 'NO ANSWER SELECTED';
+        const correctText = q.options[q.correctAnswerIndex];
+
+        return `
+          <div class="review-question-card ${cardClass} animate-fade-in" style="position: relative;">
+            <span class="review-status-badge ${badgeClass}">${statusText}</span>
+            <div class="review-question-title">
+              <strong style="color: var(--accent); font-family: var(--font-mono); margin-right: 0.5rem;">Q${qNum} //</strong>
+              ${q.questionText.replace(/\n/g, '<br>')}
+            </div>
+            <div class="review-details">
+              <span>Your Answer: <strong style="color: ${isCorrect ? 'var(--correct-light)' : (hasAnswered ? 'var(--wrong-light)' : 'var(--hud-amber)')};">${selectedText}</strong></span>
+              ${!isCorrect ? `<span>Correct Answer: <strong style="color: var(--correct-light);">${correctText}</strong></span>` : ''}
+            </div>
           </div>
-        </div>
-      `;
-    } else {
-      reviewHTML = `
-        <div class="review-answers-section animate-fade-in" style="text-align: center;">
-          <h3 style="color: var(--correct-light); font-size: 1.3rem; text-shadow: 0 0 10px var(--correct-glow);">🎉 CONGRATULATIONS! ALL QUESTIONS ANSWERED CORRECTLY.</h3>
-        </div>
-      `;
-    }
+        `;
+      }).join('');
+    };
 
     container.innerHTML = `
       <div class="results-wrapper card animate-fade-in">
         <h1 class="text-gradient" style="font-size: 2.2rem; margin-bottom: 0.5rem; text-transform: uppercase;">Exam Results</h1>
-        <p style="color: var(--text-secondary); font-family: var(--font-mono); font-size: 0.85rem;">
-          ${isPassing ? 'SUCCESS: PASS MARK EXCEEDED.' : 'FAILED: PASS MARK NOT MET. RETRY REQUIRED.'}
+        <p style="color: var(--text-secondary); font-family: var(--font-mono); font-size: 0.85rem; margin-bottom: 1.5rem; text-transform: uppercase;">
+          MODE: <span style="color: var(--accent); font-weight: bold;">${results.mode === 'test' ? 'MOCK TEST EXAM' : 'PRACTICE MODE'}</span> &bull; 
+          STATUS: <span style="color: ${isPassing ? 'var(--correct)' : 'var(--wrong)'}; font-weight: bold;">${isPassing ? 'SUCCESS' : 'FAILED'}</span>
         </p>
         
         <!-- Cockpit Attitude Indicator score display -->
@@ -940,7 +974,20 @@ export const ui = {
           <button class="btn btn-secondary" id="returnDashBtn">Back to Dashboard</button>
         </div>
 
-        ${reviewHTML}
+        <!-- Dynamic Questions Review Analysis -->
+        <div class="review-answers-section animate-fade-in">
+          <h2 class="section-title">Question Review & Analysis</h2>
+          
+          <div class="report-tabs">
+            <button class="tab-btn active" data-tab="all">All (${questionsReviewed.length})</button>
+            <button class="tab-btn" data-tab="incorrect">Incorrect (${questionsReviewed.filter(q => !q.isCorrect).length})</button>
+            <button class="tab-btn" data-tab="correct">Correct (${questionsReviewed.filter(q => q.isCorrect).length})</button>
+          </div>
+          
+          <div id="review-list-container" style="display: flex; flex-direction: column; gap: 1rem;">
+            ${renderFilteredQuestions('all')}
+          </div>
+        </div>
       </div>
 
       <!-- Footer -->
@@ -955,5 +1002,78 @@ export const ui = {
     // Hook listeners
     document.getElementById('restartTestBtn').addEventListener('click', onRestart);
     document.getElementById('returnDashBtn').addEventListener('click', onDashboard);
+
+    const tabs = container.querySelectorAll('.tab-btn');
+    const listContainer = container.querySelector('#review-list-container');
+    if (tabs && listContainer) {
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          listContainer.innerHTML = renderFilteredQuestions(tab.dataset.tab);
+        });
+      });
+    }
+  },
+
+  // 6. Show overlay modal for practice/test mode selection
+  showModeSelectionModal(container, chapterName, onSelect, onCancel) {
+    // Create the overlay container
+    const overlay = document.createElement('div');
+    overlay.className = 'mode-modal-overlay';
+    overlay.id = 'modeSelectionModal';
+    
+    overlay.innerHTML = `
+      <div class="mode-modal-card">
+        <h2 class="mode-title">Flight Mode Briefing</h2>
+        <p class="mode-desc">Select operational mode for <strong>${chapterName}</strong></p>
+        
+        <div class="mode-options-container">
+          <div class="mode-option-box" data-mode="practice">
+            <span class="mode-icon">🛠️</span>
+            <span class="mode-name">Practice Mode</span>
+            <span class="mode-detail">Instant correctness feedback. Questions lock upon answer. Ideal for learning.</span>
+          </div>
+          
+          <div class="mode-option-box" data-mode="test">
+            <span class="mode-icon">⚡</span>
+            <span class="mode-name">Test Mode</span>
+            <span class="mode-detail">No correctness cues. Answers can be changed. Report summary at the end. (Pass: 70%)</span>
+          </div>
+        </div>
+        
+        <button class="btn btn-outline" id="modeCancelBtn" style="align-self: center; padding: 0.5rem 1.5rem; font-size: 0.85rem;">Cancel</button>
+      </div>
+    `;
+    
+    container.appendChild(overlay);
+    
+    // Trigger transition animation
+    setTimeout(() => {
+      overlay.classList.add('show');
+    }, 10);
+    
+    // Bind option box clicks
+    const options = overlay.querySelectorAll('.mode-option-box');
+    options.forEach(opt => {
+      opt.addEventListener('click', () => {
+        const mode = opt.dataset.mode;
+        overlay.classList.remove('show');
+        setTimeout(() => {
+          overlay.remove();
+          onSelect(mode);
+        }, 300);
+      });
+    });
+    
+    // Bind cancel click
+    const cancelBtn = overlay.querySelector('#modeCancelBtn');
+    cancelBtn.addEventListener('click', () => {
+      overlay.classList.remove('show');
+      setTimeout(() => {
+        overlay.remove();
+        onCancel();
+      }, 300);
+    });
   }
 };

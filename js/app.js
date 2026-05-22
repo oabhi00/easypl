@@ -229,7 +229,9 @@ class App {
           const chapter = subject.chapters.find(c => c.id === chapterId);
           if (chapter) {
             this.activeChapter = chapter;
-            this.startQuiz();
+            this.promptModeSelection(() => {
+              this.navigate('dashboard');
+            });
           }
         }
       }
@@ -285,7 +287,9 @@ class App {
       // Chapter clicked callback
       (chapter) => {
         this.activeChapter = chapter;
-        this.startQuiz();
+        this.promptModeSelection(() => {
+          this.navigate('chapters');
+        });
       },
       // Back button callback
       () => {
@@ -294,14 +298,33 @@ class App {
     );
   }
 
+  // Prompt the user for mode selection before starting the mock test
+  promptModeSelection(onCancel = null) {
+    ui.showModeSelectionModal(
+      this.container,
+      this.activeChapter.displayName,
+      (mode) => {
+        this.startQuiz(mode);
+      },
+      () => {
+        if (onCancel) {
+          onCancel();
+        } else {
+          this.navigate('chapters');
+        }
+      }
+    );
+  }
+
   // Start the quiz player
-  startQuiz() {
+  startQuiz(mode = 'practice') {
     const subject = subjects[this.activeSubjectId];
     
     this.activeQuizPlayer = new QuizPlayer(
       this.activeSubjectId,
       this.activeChapter,
       this.currentUser.username,
+      mode,
       {
         // On question load/reload callback
         onQuestion: (quizData) => {
@@ -402,7 +425,9 @@ class App {
       this.activeResults,
       // Retry callback
       () => {
-        this.startQuiz();
+        this.promptModeSelection(() => {
+          this.navigate('chapters');
+        });
       },
       // Go to dashboard callback
       () => {
