@@ -85,7 +85,7 @@ const getSubjectGraphic = (category) => {
         </g>
       </svg>
     `;
-  } else {
+  } else if (normCat.includes('REGULATION') || normCat.includes('REG')) {
     // Air Regulations Scales of Justice (Law)
     return `
       <svg viewBox="0 0 100 100" style="width: 100%; height: 100%;">
@@ -131,6 +131,149 @@ const getSubjectGraphic = (category) => {
         </g>
       </svg>
     `;
+  } else if (normCat.includes('A320') || normCat.includes('AIRBUS')) {
+    // Airbus A320 PFD Flight Director
+    return `
+      <svg viewBox="0 0 100 100" style="width: 100%; height: 100%;">
+        <defs>
+          <filter id="hudGlowA320" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="1.5" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+        <!-- Concentric range ring -->
+        <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent)" stroke-width="1.2" opacity="0.2" />
+        
+        <!-- PFD frame / box -->
+        <rect x="22" y="22" width="56" height="56" rx="6" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity="0.5" />
+        
+        <!-- Speed scale left -->
+        <line x1="28" y1="28" x2="28" y2="72" stroke="var(--accent)" stroke-width="1.2" opacity="0.4" />
+        <line x1="24" y1="36" x2="28" y2="36" stroke="var(--accent)" stroke-width="1" opacity="0.4" />
+        <line x1="24" y1="50" x2="28" y2="50" stroke="var(--accent)" stroke-width="1.5" opacity="0.7" />
+        <line x1="24" y1="64" x2="28" y2="64" stroke="var(--accent)" stroke-width="1" opacity="0.4" />
+        
+        <!-- Altitude scale right -->
+        <line x1="72" y1="28" x2="72" y2="72" stroke="var(--accent)" stroke-width="1.2" opacity="0.4" />
+        <line x1="72" y1="36" x2="76" y2="36" stroke="var(--accent)" stroke-width="1" opacity="0.4" />
+        <line x1="72" y1="50" x2="76" y2="50" stroke="var(--accent)" stroke-width="1.5" opacity="0.7" />
+        <line x1="72" y1="64" x2="76" y2="64" stroke="var(--accent)" stroke-width="1" opacity="0.4" />
+        
+        <!-- Cyan Flight Director Crosshair -->
+        <line x1="36" y1="50" x2="64" y2="50" stroke="#00e5ff" stroke-width="2" class="pfd-fd-h" filter="url(#hudGlowA320)" />
+        <line x1="50" y1="36" x2="50" y2="64" stroke="#00e5ff" stroke-width="2" class="pfd-fd-v" filter="url(#hudGlowA320)" />
+        
+        <!-- Aircraft symbol (fixed) -->
+        <path d="M 41 50 L 46 50 L 48 53 L 52 53 L 54 50 L 59 50" fill="none" stroke="var(--hud-amber)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    `;
+  } else if (normCat.includes('C172') || normCat.includes('CESSNA')) {
+    // Cessna 172 Propeller Spinner
+    return `
+      <svg viewBox="0 0 100 100" style="width: 100%; height: 100%;">
+        <!-- Range ring -->
+        <circle cx="50" cy="50" r="45" fill="none" stroke="var(--hud-amber)" stroke-width="1.2" opacity="0.2"/>
+        <circle cx="50" cy="50" r="41" fill="none" stroke="var(--hud-amber)" stroke-width="0.75" stroke-dasharray="2, 2" opacity="0.2"/>
+        
+        <!-- Cessna propeller spinner -->
+        <g class="tech-turbofan" style="transform-origin: 50px 50px;">
+          <!-- Propeller spinner hub -->
+          <circle cx="50" cy="50" r="10" fill="var(--hud-amber)" opacity="0.9" />
+          
+          <!-- 2 Blades -->
+          <path d="M 50 40 C 47 26 44 12 50 5 C 56 12 53 26 50 40 Z" fill="var(--hud-amber)" opacity="0.75" />
+          <path d="M 50 60 C 53 74 56 88 50 95 C 44 88 47 74 50 60 Z" fill="var(--hud-amber)" opacity="0.75" />
+          
+          <!-- Center screw -->
+          <circle cx="50" cy="50" r="3" fill="var(--bg-secondary)" />
+        </g>
+      </svg>
+    `;
+  } else if (normCat.includes('ATPL') || normCat.includes('AIRLINE')) {
+    // Airline Exams Captain Epaulet
+    return `
+      <svg viewBox="0 0 100 100" style="width: 100%; height: 100%;">
+        <defs>
+          <filter id="hudGlowAirline" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="1.5" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+        <!-- Concentric range ring -->
+        <circle cx="50" cy="50" r="45" fill="none" stroke="var(--hud-amber)" stroke-width="1.2" opacity="0.2" />
+        
+        <g class="airline-epaulet" filter="url(#hudGlowAirline)">
+          <!-- Epaulet base shape -->
+          <path d="M 32 80 L 32 26 C 32 23 37 19 50 19 C 63 19 68 23 68 26 L 68 80 Z" fill="var(--bg-tertiary)" stroke="var(--hud-amber)" stroke-width="1.5" />
+          
+          <!-- 4 Gold Stripes -->
+          <rect x="36" y="69" width="28" height="4" fill="var(--hud-amber)" />
+          <rect x="36" y="61" width="28" height="4" fill="var(--hud-amber)" />
+          <rect x="36" y="53" width="28" height="4" fill="var(--hud-amber)" />
+          <rect x="36" y="45" width="28" height="4" fill="var(--hud-amber)" />
+          
+          <!-- Gold Captain Star at the top -->
+          <polygon points="50,25 52,30 57,30 53,33 55,38 50,35 45,38 47,33 43,30 48,30" fill="var(--hud-amber)" />
+        </g>
+      </svg>
+    `;
+  } else if (normCat.includes('RADIO') || normCat.includes('RTR') || normCat.includes('TELEPHONY')) {
+    // Radio Telephony RTR-A Antenna
+    return `
+      <svg viewBox="0 0 100 100" style="width: 100%; height: 100%;">
+        <defs>
+          <filter id="hudGlowRtr" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="1.5" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+        <!-- Concentric range ring -->
+        <circle cx="50" cy="50" r="45" fill="none" stroke="var(--correct)" stroke-width="1.2" opacity="0.2" />
+        
+        <g class="rtr-antenna" filter="url(#hudGlowRtr)">
+          <!-- Antenna Tower legs -->
+          <line x1="50" y1="35" x2="36" y2="85" stroke="var(--correct)" stroke-width="2" stroke-linecap="round" />
+          <line x1="50" y1="35" x2="64" y2="85" stroke="var(--correct)" stroke-width="2" stroke-linecap="round" />
+          
+          <!-- Cross bracing -->
+          <line x1="43" y1="60" x2="57" y2="60" stroke="var(--correct)" stroke-width="1.5" />
+          <line x1="39" y1="72" x2="61" y2="72" stroke="var(--correct)" stroke-width="1.5" />
+          <line x1="46.5" y1="48" x2="53.5" y2="48" stroke="var(--correct)" stroke-width="1.5" />
+          
+          <!-- Diagonal bracing -->
+          <line x1="46.5" y1="48" x2="57" y2="60" stroke="var(--correct)" stroke-width="1" opacity="0.7" />
+          <line x1="53.5" y1="48" x2="43" y2="60" stroke="var(--correct)" stroke-width="1" opacity="0.7" />
+          <line x1="43" y1="60" x2="61" y2="72" stroke="var(--correct)" stroke-width="1" opacity="0.7" />
+          <line x1="57" y1="60" x2="39" y2="72" stroke="var(--correct)" stroke-width="1" opacity="0.7" />
+          
+          <!-- Tower top beacon -->
+          <circle cx="50" cy="32" r="3" fill="var(--correct)" />
+          
+          <!-- Radio waves (arcs) -->
+          <path d="M 44 26 A 8 8 0 0 1 56 26" fill="none" stroke="var(--correct)" stroke-width="1.5" stroke-linecap="round" class="rtr-wave rtr-wave-1" />
+          <path d="M 38 20 A 16 16 0 0 1 62 20" fill="none" stroke="var(--correct)" stroke-width="1.5" stroke-linecap="round" class="rtr-wave rtr-wave-2" />
+          <path d="M 32 14 A 24 24 0 0 1 68 14" fill="none" stroke="var(--correct)" stroke-width="1.5" stroke-linecap="round" class="rtr-wave rtr-wave-3" />
+        </g>
+      </svg>
+    `;
+  } else {
+    // Fallback/Generic Aviation Wings
+    return `
+      <svg viewBox="0 0 100 100" style="width: 100%; height: 100%;">
+        <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent)" stroke-width="1.2" opacity="0.2" />
+        <path d="M 15 48 C 25 35, 45 42, 50 48 C 55 42, 75 35, 85 48 C 75 55, 55 52, 50 50 C 45 52, 25 55, 15 48 Z" fill="none" stroke="var(--accent)" stroke-width="1.5" />
+        <circle cx="50" cy="48" r="5" fill="var(--accent)" opacity="0.8" />
+      </svg>
+    `;
   }
 };
 
@@ -166,6 +309,10 @@ export const ui = {
     const navSVG = getSubjectGraphic('Navigation');
     const techSVG = getSubjectGraphic('Technical');
     const regSVG = getSubjectGraphic('Regulations');
+    const a320SVG = getSubjectGraphic('A320');
+    const c172SVG = getSubjectGraphic('C172');
+    const airlineSVG = getSubjectGraphic('Airline');
+    const rtrSVG = getSubjectGraphic('Radio');
 
     container.innerHTML = `
       <div class="landing-container animate-fade-in">
@@ -184,9 +331,9 @@ export const ui = {
         <section class="landing-hero-centered">
           <!-- Hero Text & CTAs -->
           <div class="hero-content">
-            <h1 class="hero-title text-gradient">Clear Your DGCA Exams with Ease</h1>
+            <h1 class="hero-title text-gradient">Clear Your DGCA & Airline Exams</h1>
             <p class="hero-description">
-              Study smart and clear your DGCA CPL papers. EasyPL provides high-quality mock tests, performance logs, and real exam conditions for Indian CPL candidates.
+              Access over <strong>30,000+ questions</strong> covering every aviation topic. From core DGCA pilot subjects to type ratings like Airbus A320, Cessna 172, Radio Telephony (RTR-A), and comprehensive airline preparation exams.
             </p>
             <div class="hero-actions">
               <button class="btn btn-primary" id="engageCockpitBtn" style="padding: 0.9rem 2.2rem; font-size: 1rem; letter-spacing: 0.05em; box-shadow: 0 0 20px var(--accent-glow);">
@@ -227,6 +374,30 @@ export const ui = {
             <div class="landing-feature-icon">${regSVG}</div>
             <h3>Air Regulations</h3>
             <p>Learn aviation law, airspace divisions, flight priority rules, and ICAO standards.</p>
+          </div>
+
+          <div class="card landing-feature-card">
+            <div class="landing-feature-icon">${a320SVG}</div>
+            <h3>Airbus A320</h3>
+            <p>Master the A320 type rating syllabus, FBW systems, FMGS navigation, auto-flight modes, and ECAM actions.</p>
+          </div>
+
+          <div class="card landing-feature-card">
+            <div class="landing-feature-icon">${c172SVG}</div>
+            <h3>Cessna 172</h3>
+            <p>Understand piston engine operations, basic airframe systems, flight instruments, and weight & balance guidelines.</p>
+          </div>
+
+          <div class="card landing-feature-card">
+            <div class="landing-feature-icon">${airlineSVG}</div>
+            <h3>Airline Exams</h3>
+            <p>Prepare for airline recruitment tests, simulator prep, ATPL theory questions, and compass tests.</p>
+          </div>
+
+          <div class="card landing-feature-card">
+            <div class="landing-feature-icon">${rtrSVG}</div>
+            <h3>Radio Telephony (RTR)</h3>
+            <p>Perfect transmission procedures, phraseology, emergency communication, and frequency management skills.</p>
           </div>
         </div>
       </div>

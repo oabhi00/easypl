@@ -877,7 +877,7 @@ body.light-mode .hero-title {
 .landing-bg-attitude {
   position: absolute;
   left: 50%;
-  top: 290px; /* Pushed up to center perfectly behind the hero text */
+  top: 50vh; /* Aligned to the center of the viewport */
   transform: translate(-50%, -50%);
   width: 640px;
   height: 640px;
@@ -1054,6 +1054,92 @@ body.light-mode .landing-bg-attitude {
 }
 .landing-feature-card:nth-child(4)::before {
   background: linear-gradient(90deg, #00f5a0, #00b8ff); /* Air Regulations */
+}
+
+.landing-feature-card:nth-child(5):hover {
+  background: radial-gradient(80% 80% circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(0, 245, 212, 0.05) 0%, var(--glass) 80%);
+  border-color: rgba(0, 245, 212, 0.35);
+  box-shadow: 0 12px 30px rgba(0, 245, 212, 0.15);
+}
+.landing-feature-card:nth-child(5)::before {
+  background: linear-gradient(90deg, #00f5d4, #7b2cbf); /* Airbus A320 */
+}
+
+.landing-feature-card:nth-child(6):hover {
+  background: radial-gradient(80% 80% circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 170, 0, 0.05) 0%, var(--glass) 80%);
+  border-color: rgba(255, 170, 0, 0.35);
+  box-shadow: 0 12px 30px rgba(255, 170, 0, 0.15);
+}
+.landing-feature-card:nth-child(6)::before {
+  background: linear-gradient(90deg, #ffaa00, #ff5500); /* Cessna 172 */
+}
+
+.landing-feature-card:nth-child(7):hover {
+  background: radial-gradient(80% 80% circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 215, 0, 0.05) 0%, var(--glass) 80%);
+  border-color: rgba(255, 215, 0, 0.35);
+  box-shadow: 0 12px 30px rgba(255, 215, 0, 0.15);
+}
+.landing-feature-card:nth-child(7)::before {
+  background: linear-gradient(90deg, #ffd700, #1e3a8a); /* Airline Exams */
+}
+
+.landing-feature-card:nth-child(8):hover {
+  background: radial-gradient(80% 80% circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(5, 243, 173, 0.05) 0%, var(--glass) 80%);
+  border-color: rgba(5, 243, 173, 0.35);
+  box-shadow: 0 12px 30px rgba(5, 243, 173, 0.15);
+}
+.landing-feature-card:nth-child(8)::before {
+  background: linear-gradient(90deg, #05f3ad, #00d2ff); /* Radio Telephony */
+}
+
+/* Custom interactive Micro-animations for new subjects */
+.pfd-fd-h, .pfd-fd-v {
+  transition: transform 0.3s ease-out, filter 0.3s;
+}
+
+.landing-feature-card:hover .pfd-fd-h {
+  animation: pfdHDrift 2.5s infinite alternate ease-in-out;
+}
+
+.landing-feature-card:hover .pfd-fd-v {
+  animation: pfdVDrift 2.5s infinite alternate ease-in-out;
+}
+
+@keyframes pfdHDrift {
+  0% { transform: translateY(-2px); }
+  100% { transform: translateY(2px); }
+}
+
+@keyframes pfdVDrift {
+  0% { transform: translateX(-2px); }
+  100% { transform: translateX(2px); }
+}
+
+.landing-feature-card:hover .airline-epaulet {
+  filter: drop-shadow(0 0 8px var(--hud-amber));
+}
+
+.rtr-wave {
+  opacity: 0.35;
+  transition: opacity 0.3s, stroke 0.3s;
+}
+
+.landing-feature-card:hover .rtr-wave-1 {
+  animation: radioPulse 1.2s infinite 0s;
+}
+
+.landing-feature-card:hover .rtr-wave-2 {
+  animation: radioPulse 1.2s infinite 0.3s;
+}
+
+.landing-feature-card:hover .rtr-wave-3 {
+  animation: radioPulse 1.2s infinite 0.6s;
+}
+
+@keyframes radioPulse {
+  0% { opacity: 0.3; stroke-width: 1.5px; }
+  50% { opacity: 1; stroke-dasharray: 2 1; stroke-width: 2.2px; filter: drop-shadow(0 0 3px var(--correct)); }
+  100% { opacity: 0.3; stroke-width: 1.5px; }
 }
 
 /* Custom Interactive Micro-animations for Subject Icons on Hover */
