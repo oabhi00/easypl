@@ -1817,6 +1817,7 @@ const generateExplanation = (questionText, options, answerIndex, subjectTitle) =
   const answerText = options[answerIndex];
   const qStr = questionText.toLowerCase();
   
+  // Specific high-fidelity aviation explanations
   if (qStr.includes('gym') || qStr.includes('workout') || qStr.includes('hyperventilation')) {
     return "During physical exertion, muscle activity increases carbon dioxide (CO₂) production. The rising CO₂ concentration in the blood triggers the brain's respiratory center to increase breathing depth and frequency. If this response is excessive, it leads to hyperventilation (over-breathing), which expels carbon dioxide and can cause respiratory alkalosis.";
   }
@@ -1831,6 +1832,12 @@ const generateExplanation = (questionText, options, answerIndex, subjectTitle) =
   }
   if (qStr.includes('dew point') || qStr.includes('relative humidity') || qStr.includes('dewpoint')) {
     return "Dew point is the temperature at which air becomes fully saturated and condensation begins. When the air temperature cools to the dew point temperature, the relative humidity reaches 100%, leading to condensation, dew, or cloud formation.";
+  }
+  if (qStr.includes('radiation fog')) {
+    return "Radiation fog forms over land on clear, calm nights when the Earth's surface cools rapidly by longwave radiation. It requires light wind (2–5 knots) to mix the cold air and high relative humidity near the surface.";
+  }
+  if (qStr.includes('advection fog')) {
+    return "Advection fog forms when warm, moist air moves horizontally over a cold surface, cooling the air to its dew point. Unlike radiation fog, it can form under stronger winds and is common in coastal/maritime areas.";
   }
   if (qStr.includes('fog') || qStr.includes('haze')) {
     return "Fog is defined as water droplets suspended in the air near the surface that reduce horizontal visibility to less than 1 km. It typically forms when the temperature-dewpoint spread is narrow (within 2°C) and condensation nuclei are present.";
@@ -1856,25 +1863,37 @@ const generateExplanation = (questionText, options, answerIndex, subjectTitle) =
   if (qStr.includes('static port') && (qStr.includes('block') || qStr.includes('clog')) && qStr.includes('altimeter')) {
     return "When the static port is blocked, pressure inside the altimeter casing remains sealed at the altitude where the blockage occurred. The altimeter will freeze and continue to show that altitude, regardless of climbs or descents.";
   }
+  if (qStr.includes('pitot') && (qStr.includes('block') || qStr.includes('clog')) && (qStr.includes('airspeed') || qStr.includes('indicator') || qStr.includes('asi'))) {
+    return "If the pitot tube's pressure entry port blocks while its drain hole remains open, dynamic pressure drops to zero and the airspeed indicator (ASI) drops to zero. If both entry and drain block, the ASI will act like an altimeter, reading higher as the aircraft climbs and lower as it descends.";
+  }
+  if (qStr.includes('gyro') || qStr.includes('precession') || qStr.includes('rigidity')) {
+    return "Gyroscopic flight instruments rely on two fundamental properties: Rigidity in Space (resisting forces to maintain axis direction) and Precession (the deflection of the rotor axis 90 degrees in the direction of rotation when a force is applied).";
+  }
   if (qStr.includes('qnh') || qStr.includes('qfe') || qStr.includes('qne') || qStr.includes('altimeter setting') || qStr.includes('subscale')) {
     return "QNH is the barometric pressure setting which, when dialed into the altimeter subscale, causes the altimeter to indicate altitude above mean sea level. Standard altimeter setting for transitioning into flight levels is 1013.2 hPa / 29.92 inHg.";
   }
 
-  // Generic fallbacks based on subjectTitle
+  // Clean up question text for synthesis display
+  let cleanQ = questionText.trim();
+  if (!cleanQ.endsWith('?') && !cleanQ.endsWith('.') && !cleanQ.endsWith(':')) {
+    cleanQ += '...';
+  }
+
+  // Subject-specific fallbacks dynamically matching the question and correct answer
   const subTitleLower = (subjectTitle || '').toLowerCase();
   
   if (subTitleLower.includes('met')) {
-    return `In aviation meteorology, the correct answer is "${answerText}". Atmospheric physics dictate that pressure gradients, temperature variations, and air density directly control wind patterns, cloud formations, and local weather phenomena.`;
+    return `For the meteorology question: <em>"${cleanQ}"</em>, the correct answer is <strong>"${answerText}"</strong>. Atmospheric physics dictate that pressure gradients, temperature variations, and air density directly control wind patterns, cloud formations, and local weather patterns.`;
   }
   if (subTitleLower.includes('reg') || subTitleLower.includes('rule') || subTitleLower.includes('law')) {
-    return `Under Civil Aviation Regulations, the correct answer is "${answerText}". These regulations are established to coordinate safe aircraft separation, clear air traffic control procedures, and standardized operating rules.`;
+    return `For the regulations question: <em>"${cleanQ}"</em>, the correct answer is <strong>"${answerText}"</strong>. Under Civil Aviation Regulations, these rules are established to coordinate safe air traffic separation, clear operational boundaries, and standardized procedures.`;
   }
   if (subTitleLower.includes('nav') || subTitleLower.includes('plot') || subTitleLower.includes('rkb') || subTitleLower.includes('bali')) {
-    return `For flight planning and air navigation, "${answerText}" is correct. Precise calculations adjusting headings for wind drift, magnetic variation, and instrument errors are critical to maintain the aircraft along its intended ground track.`;
+    return `For the navigation question: <em>"${cleanQ}"</em>, the correct answer is <strong>"${answerText}"</strong>. Flight planning, path tracking, heading corrections for wind drift, and navigation instruments rely on these exact calculations to maintain the aircraft along its ground track.`;
   }
   if (subTitleLower.includes('tech') || subTitleLower.includes('engine') || subTitleLower.includes('system') || subTitleLower.includes('aircraft')) {
-    return `In aircraft technical systems, "${answerText}" is correct. Aircraft powerplants, electrical grids, fuel lines, and mechanical/hydraulic linkages follow strict engineering design principles to ensure airworthiness and operational safety.`;
+    return `For the technical systems question: <em>"${cleanQ}"</em>, the correct answer is <strong>"${answerText}"</strong>. Mechanical powerplants, electrical grids, fuel flow control, and hydraulic/pneumatic linkages follow strict design principles to ensure airworthiness and flight safety.`;
   }
   
-  return `Based on aviation flight theory principles, the correct answer is "${answerText}". Understanding this core concept is essential for pilots to ensure flight safety, make sound operational decisions, and pass the licensing examinations.`;
+  return `Regarding the aviation question: <em>"${cleanQ}"</em>, the correct choice is <strong>"${answerText}"</strong>. Understanding this core concept is essential for pilots to ensure flight safety, make sound operational decisions, and pass the license examinations.`;
 };
