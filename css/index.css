@@ -447,7 +447,7 @@ body.light-mode .theme-toggle-btn .moon-icon {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2.5rem; /* Reduced layout gaps to tighten center space */
   position: relative;
 }
 
@@ -727,7 +727,7 @@ body:not(.light-mode) .nav-light {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 8rem 1rem 7rem;
+  padding: 4rem 1rem 3.5rem; /* Pushes the hero text up and reduces spacing */
   overflow: visible;
   width: 100%;
 }
@@ -877,7 +877,7 @@ body.light-mode .hero-title {
 .landing-bg-attitude {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 290px; /* Pushed up to center perfectly behind the hero text */
   transform: translate(-50%, -50%);
   width: 640px;
   height: 640px;
