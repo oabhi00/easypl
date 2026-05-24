@@ -1823,22 +1823,22 @@ const generateExplanation = (questionText, options, answerIndex, subjectTitle) =
   if (qStr.includes('density') && qStr.includes('poles')) {
     return "Air density is inversely proportional to temperature. Since polar regions are significantly colder than equatorial regions, the air at the poles is colder, heavier, and more compressed. Therefore, at sea level, air density is higher at the poles than at the equator.";
   }
-  if (qStr.includes('altitude') || qStr.includes('density altitude')) {
+  if (qStr.includes('density altitude') || qStr.includes('density-altitude')) {
     return "Density altitude is pressure altitude corrected for non-standard temperature. High temperatures expand the air, reducing its density. This corresponds to a higher density altitude, which degrades aerodynamic lift and engine performance.";
   }
   if (qStr.includes('coriolis')) {
     return "The Coriolis force is an apparent deflection of moving air caused by the Earth's rotation. It deflects air flow to the right in the Northern Hemisphere and to the left in the Southern Hemisphere. The force is directly proportional to wind speed and sine of latitude, making it maximum at the poles and zero at the equator.";
   }
-  if (qStr.includes('humidity') || qStr.includes('dew point')) {
+  if (qStr.includes('dew point') || qStr.includes('relative humidity') || qStr.includes('dewpoint')) {
     return "Dew point is the temperature at which air becomes fully saturated and condensation begins. When the air temperature cools to the dew point temperature, the relative humidity reaches 100%, leading to condensation, dew, or cloud formation.";
   }
-  if (qStr.includes('fog') || qStr.includes('visibility')) {
+  if (qStr.includes('fog') || qStr.includes('haze')) {
     return "Fog is defined as water droplets suspended in the air near the surface that reduce horizontal visibility to less than 1 km. It typically forms when the temperature-dewpoint spread is narrow (within 2°C) and condensation nuclei are present.";
   }
   if (qStr.includes('thunderstorm') || qStr.includes('cumulonimbus')) {
     return "A thunderstorm (cumulonimbus cloud) requires three essential ingredients: instability (to allow rising air), abundant moisture, and a lifting mechanism (like a frontal boundary, mountain, or solar heating) to trigger the updraft.";
   }
-  if (qStr.includes('icao') || qStr.includes('regulation') || qStr.includes('annex')) {
+  if (qStr.includes('icao') || qStr.includes('annex') || qStr.includes('chicago convention')) {
     return "International air regulations are standardized under the ICAO (International Civil Aviation Organization) Chicago Convention. Member states align their national aviation laws (such as DGCA requirements in India) with ICAO Annexes to ensure global safety and inter-operability.";
   }
   if (qStr.includes('hypoxia')) {
@@ -1847,7 +1847,16 @@ const generateExplanation = (questionText, options, answerIndex, subjectTitle) =
   if (qStr.includes('carbon monoxide') || qStr.includes('co poisoning')) {
     return "Carbon monoxide (CO) is a highly toxic, colorless, and odorless gas. It binds to the hemoglobin in red blood cells with an affinity roughly 200 times greater than oxygen, blocking oxygen transport and causing rapid, subtle hypoxia.";
   }
-  if (qStr.includes('altimeter') || qStr.includes('qnh') || qStr.includes('qfe')) {
+  if (qStr.includes('vibrat') && (qStr.includes('altimeter') || qStr.includes('linkage') || qStr.includes('friction') || qStr.includes('stiction'))) {
+    return "The vibrating device (or vibrator) in a mechanical altimeter is designed to continuously tap the instrument casing or internal gear linkages. This reduces static friction (stiction) in the mechanical pivots, enabling the pointers to move smoothly and respond immediately to slight changes in static pressure.";
+  }
+  if (qStr.includes('hysteresis') || qStr.includes('elastic lag') || qStr.includes('elastic lag error')) {
+    return "Hysteresis (elastic lag) in an altimeter is caused by the delay in the expansion or contraction of the aneroid capsule after a rapid change in altitude. Because the capsule metal takes time to return to its equilibrium shape, the altimeter displays a small lag error.";
+  }
+  if (qStr.includes('static port') && (qStr.includes('block') || qStr.includes('clog')) && qStr.includes('altimeter')) {
+    return "When the static port is blocked, pressure inside the altimeter casing remains sealed at the altitude where the blockage occurred. The altimeter will freeze and continue to show that altitude, regardless of climbs or descents.";
+  }
+  if (qStr.includes('qnh') || qStr.includes('qfe') || qStr.includes('qne') || qStr.includes('altimeter setting') || qStr.includes('subscale')) {
     return "QNH is the barometric pressure setting which, when dialed into the altimeter subscale, causes the altimeter to indicate altitude above mean sea level. Standard altimeter setting for transitioning into flight levels is 1013.2 hPa / 29.92 inHg.";
   }
 
