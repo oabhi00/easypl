@@ -3,6 +3,8 @@
  * Manages gameplay state, timer, shuffling, and option checking
  */
 
+import { ui } from './ui.js';
+
 export class QuizPlayer {
   constructor(subjectId, chapter, username, mode = 'practice', callbacks) {
     this.subjectId = subjectId;
@@ -34,8 +36,13 @@ export class QuizPlayer {
       if (trimmed.startsWith('[') || trimmed.startsWith('{')) {
         data = JSON.parse(trimmed);
       } else {
-        // Decode base64 obfuscated content
-        const decoded = atob(trimmed);
+        // Decode base64 obfuscated content (with UTF-8 support)
+        const binaryString = atob(trimmed);
+        const bytes = new Uint8Array(binaryString.length);
+        for (let i = 0; i < binaryString.length; i++) {
+          bytes[i] = binaryString.charCodeAt(i);
+        }
+        const decoded = new TextDecoder('utf-8').decode(bytes);
         data = JSON.parse(decoded);
       }
       
@@ -60,7 +67,7 @@ export class QuizPlayer {
       this.loadQuestion();
     } catch (err) {
       console.error(err);
-      alert('Error loading quiz data: ' + err.message);
+      ui.showAlertModal('Error Loading Quiz', err.message);
     }
   }
 

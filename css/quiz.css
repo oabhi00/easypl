@@ -572,3 +572,28 @@
   color: var(--hud-amber);
   border: 1px solid rgba(255, 159, 28, 0.25);
 }
+
+/* Quiz exit close button */
+.quiz-exit-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 38px;
+  height: 38px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-fast);
+  line-height: 1;
+}
+
+.quiz-exit-btn:hover {
+  background: var(--wrong-glow);
+  border-color: var(--wrong);
+  color: var(--wrong-light);
+  box-shadow: 0 0 12px var(--wrong-glow);
+}

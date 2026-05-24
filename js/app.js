@@ -66,43 +66,70 @@ class App {
   // Initialize global attitude indicator parallax & tilt effect
   initParallax() {
     document.addEventListener('mousemove', (e) => {
-      if (!document.body.classList.contains('landing-view')) return;
-      
-      const bgHorizon = document.querySelector('.bg-horizon-group');
-      const bgAttitude = document.querySelector('.landing-bg-attitude');
-      
-      if (bgHorizon) {
-        const width = window.innerWidth;
-        const height = window.innerHeight;
-        const x = e.clientX - width / 2;
-        const y = e.clientY - height / 2;
-        
-        // Calculate smooth bank and pitch angles
-        const rollAngle = (x / width) * 35; // max 35 deg bank
-        const pitchOffset = (y / height) * 25; // max 25px translation
-        
-        bgHorizon.style.transform = `rotate(${rollAngle}deg) translate(0px, ${pitchOffset}px)`;
+      // Update cursor coordinates globally for background spotlight
+      const percentX = (e.clientX / window.innerWidth) * 100;
+      const percentY = (e.clientY / window.innerHeight) * 100;
+      document.documentElement.style.setProperty('--cursor-x', `${percentX}%`);
+      document.documentElement.style.setProperty('--cursor-y', `${percentY}%`);
 
-        // Subtle parallax effect on the attitude instrument frame
-        if (bgAttitude) {
-          const parallaxX = (x / width) * -15; // move slightly opposite to cursor
-          const parallaxY = (y / height) * -15;
-          bgAttitude.style.transform = `translate(calc(-50% + ${parallaxX}px), calc(-50% + ${parallaxY}px))`;
+      if (document.body.classList.contains('landing-view')) {
+        const bgHorizon = document.querySelector('.bg-horizon-group');
+        const bgAttitude = document.querySelector('.landing-bg-attitude');
+        
+        if (bgHorizon) {
+          const width = window.innerWidth;
+          const height = window.innerHeight;
+          const x = e.clientX - width / 2;
+          const y = e.clientY - height / 2;
+          
+          // Calculate smooth bank and pitch angles
+          const rollAngle = (x / width) * 35; // max 35 deg bank
+          const pitchOffset = (y / height) * 25; // max 25px translation
+          
+          bgHorizon.style.transform = `rotate(${rollAngle}deg) translate(0px, ${pitchOffset}px)`;
+
+          // Subtle parallax effect on the attitude instrument frame
+          if (bgAttitude) {
+            const parallaxX = (x / width) * -15; // move slightly opposite to cursor
+            const parallaxY = (y / height) * -15;
+            bgAttitude.style.transform = `translate(calc(-50% + ${parallaxX}px), calc(-50% + ${parallaxY}px))`;
+          }
+        }
+      } else {
+        // Dashboard HUD parallax
+        const hudOverlay = document.querySelector('.hud-background-overlay');
+        if (hudOverlay) {
+          const width = window.innerWidth;
+          const height = window.innerHeight;
+          const x = e.clientX - width / 2;
+          const y = e.clientY - height / 2;
+          
+          // HUD shift (up to 20px translation and 1.5deg rotation)
+          const translateX = (x / width) * 20;
+          const translateY = (y / height) * 20;
+          const rotateAngle = (x / width) * 1.5;
+          
+          hudOverlay.style.transform = `translate(calc(-50% + ${translateX}px), calc(-50% + ${translateY}px)) rotate(${rotateAngle}deg)`;
         }
       }
     });
 
     document.addEventListener('mouseleave', () => {
-      if (!document.body.classList.contains('landing-view')) return;
-      
-      const bgHorizon = document.querySelector('.bg-horizon-group');
-      const bgAttitude = document.querySelector('.landing-bg-attitude');
-      
-      if (bgHorizon) {
-        bgHorizon.style.transform = 'rotate(0deg) translate(0px, 0px)';
-      }
-      if (bgAttitude) {
-        bgAttitude.style.transform = 'translate(-50%, -50%)';
+      if (document.body.classList.contains('landing-view')) {
+        const bgHorizon = document.querySelector('.bg-horizon-group');
+        const bgAttitude = document.querySelector('.landing-bg-attitude');
+        
+        if (bgHorizon) {
+          bgHorizon.style.transform = 'rotate(0deg) translate(0px, 0px)';
+        }
+        if (bgAttitude) {
+          bgAttitude.style.transform = 'translate(-50%, -50%)';
+        }
+      } else {
+        const hudOverlay = document.querySelector('.hud-background-overlay');
+        if (hudOverlay) {
+          hudOverlay.style.transform = 'translate(-50%, -50%) rotate(0deg)';
+        }
       }
     });
   }
@@ -184,8 +211,9 @@ class App {
             this.currentUser = auth.register(username, password, avatar);
           }
           this.navigate('dashboard');
+          this.triggerRandomQuestionChallenge();
         } catch (err) {
-          alert(err.message);
+          ui.showAlertModal('Authentication Error', err.message);
         }
       },
       // Back to splash callback
@@ -249,7 +277,7 @@ class App {
               this.currentUser = auth.getCurrentUser();
               this.navigate('dashboard');
             } catch (err) {
-              alert(err.message);
+              ui.showAlertModal('Profile Update Error', err.message);
             }
           },
           // onCancel
@@ -257,6 +285,11 @@ class App {
             // No action needed on cancel
           }
         );
+      },
+      // Clear attempts callback
+      () => {
+        progress.clearAttempts(this.currentUser.username);
+        this.navigate('dashboard');
       }
     );
   }
@@ -407,23 +440,23 @@ class App {
       },
       // Submit callback
       () => {
-        if (confirm('Are you sure you want to submit your answers?')) {
-          this.activeQuizPlayer.submit();
-        }
+        ui.showConfirmModal(
+          'Submit Exam',
+          'Are you sure you want to submit your answers?',
+          () => {
+            this.activeQuizPlayer.submit();
+          }
+        );
       },
       // Quit & Discard callback
       () => {
-        if (confirm('Are you sure you want to quit? Your progress for this attempt will be lost.')) {
-          this.activeQuizPlayer.stopTimer();
-          this.activeQuizPlayer = null;
-          this.navigate('chapters');
-        }
+        this.activeQuizPlayer.stopTimer();
+        this.activeQuizPlayer = null;
+        this.navigate('chapters');
       },
       // Quit & Submit callback
       () => {
-        if (confirm('Are you sure you want to end the test early and submit your current score? Unanswered questions will be marked as incorrect.')) {
-          this.activeQuizPlayer.submit();
-        }
+        this.activeQuizPlayer.submit();
       }
     );
     
@@ -459,6 +492,64 @@ class App {
         this.navigate('dashboard');
       }
     );
+  }
+
+  // Trigger a random question challenge for the pilot upon login
+  async triggerRandomQuestionChallenge() {
+    try {
+      const subjectKeys = Object.keys(subjects);
+      if (subjectKeys.length === 0) return;
+      
+      const randomSubjId = subjectKeys[Math.floor(Math.random() * subjectKeys.length)];
+      const subject = subjects[randomSubjId];
+      
+      if (!subject.chapters || subject.chapters.length === 0) return;
+      const randomChapter = subject.chapters[Math.floor(Math.random() * subject.chapters.length)];
+      
+      const response = await fetch(`data/${randomSubjId}/${randomChapter.file}`);
+      if (!response.ok) throw new Error('Failed to fetch challenge question.');
+      
+      const text = await response.text();
+      let questions;
+      const trimmed = text.trim();
+      if (trimmed.startsWith('[') || trimmed.startsWith('{')) {
+        questions = JSON.parse(trimmed);
+      } else {
+        // Decode base64 obfuscated content (with UTF-8 support)
+        const binaryString = atob(trimmed);
+        const bytes = new Uint8Array(binaryString.length);
+        for (let i = 0; i < binaryString.length; i++) {
+          bytes[i] = binaryString.charCodeAt(i);
+        }
+        const decoded = new TextDecoder('utf-8').decode(bytes);
+        questions = JSON.parse(decoded);
+      }
+      
+      if (!Array.isArray(questions) || questions.length === 0) return;
+      
+      const randomQuestion = questions[Math.floor(Math.random() * questions.length)];
+      
+      const questionData = {
+        subjectTitle: subject.title,
+        chapterTitle: randomChapter.displayName,
+        questionText: randomQuestion.question,
+        options: randomQuestion.options,
+        correctAnswerIndex: randomQuestion.answer,
+        imageSrc: randomQuestion.image ? `data/${randomSubjId}/${randomQuestion.image}` : null
+      };
+      
+      ui.showRandomQuestionModal(
+        questionData,
+        (isCorrect) => {
+          console.log("Random challenge answered. Correct?", isCorrect);
+        },
+        () => {
+          console.log("Random challenge dismissed.");
+        }
+      );
+    } catch (err) {
+      console.error("Error launching random question challenge:", err);
+    }
   }
 }
 

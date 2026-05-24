@@ -399,7 +399,7 @@ export const ui = {
   },
 
   // 2. Render Study Dashboard View (Flight Command Console)
-  renderDashboard(container, user, stats, subjects, onSubjectClick, onLogout, onReattempt, onProfile) {
+  renderDashboard(container, user, stats, subjects, onSubjectClick, onLogout, onReattempt, onProfile, onClearAttempts) {
     const avatarUrl = this.getAvatarUrl(user.avatar);
     
     // Format total time: e.g. "12m 30s" or "1h 5m"
@@ -523,7 +523,14 @@ export const ui = {
       </div>
 
       <!-- Recent Attempts -->
-      <h2 class="section-title animate-fade-in">Recent Attempts</h2>
+      <div class="animate-fade-in" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; margin-top: 1.5rem;">
+        <h2 class="section-title" style="margin-bottom: 0;">Recent Attempts</h2>
+        ${stats.recentAttempts.length > 0 ? `
+          <button class="btn btn-outline" id="clearAttemptsBtn" style="padding: 0.4rem 0.8rem; font-size: 0.72rem; display: flex; align-items: center; gap: 0.35rem; color: var(--wrong-light); border-color: rgba(255, 74, 118, 0.25); background: rgba(255, 74, 118, 0.02);">
+            🗑️ Clear History
+          </button>
+        ` : ''}
+      </div>
       <div class="card history-list animate-fade-in">
         ${historyHTML}
       </div>
@@ -540,6 +547,17 @@ export const ui = {
     // Hook listeners
     document.getElementById('logoutBtn').addEventListener('click', onLogout);
     document.getElementById('profileBtn').addEventListener('click', onProfile);
+    
+    const clearBtn = document.getElementById('clearAttemptsBtn');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        this.showConfirmModal(
+          "Clear Flight History",
+          "Are you sure you want to permanently clear all your recent exam attempts?",
+          onClearAttempts
+        );
+      });
+    }
     
     const cards = document.querySelectorAll('.subject-card');
     cards.forEach(card => {
@@ -831,7 +849,10 @@ export const ui = {
           <span class="quiz-subtitle" id="quizSubTitle">${mode === 'test' ? 'MOCK TEST EXAM' : 'PRACTICE SESSION'}</span>
           <h2 style="font-size: 1.3rem; text-transform: uppercase;" id="quizMainTitle">Question</h2>
         </div>
-        <div class="timer-box" id="quizTimer">⏱️ Time: 00:00</div>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <div class="timer-box" id="quizTimer">⏱️ Time: 00:00</div>
+          <button class="quiz-exit-btn" id="quizExitBtn" aria-label="Exit Quiz">&times;</button>
+        </div>
       </div>
 
       <!-- Question Progress Bar -->
@@ -863,11 +884,6 @@ export const ui = {
         <div class="quiz-controls">
           <button class="btn btn-outline" id="quizPrevBtn" ${questionNumber === 1 ? 'disabled style="opacity:0.25; pointer-events:none;"' : ''}>&larr; Prev Question</button>
           
-          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center;">
-            <button class="btn btn-outline" id="quizQuitDiscardBtn" style="border-color: rgba(255, 74, 118, 0.4); color: var(--wrong-light)">Quit & Discard</button>
-            <button class="btn btn-outline" id="quizQuitSubmitBtn" style="border-color: rgba(5, 243, 173, 0.4); color: var(--correct-light)">Quit & Submit</button>
-          </div>
-          
           ${questionNumber === totalQuestions ? `
             <button class="btn btn-primary" id="quizSubmitBtn" ${navDisabledAttr}>Submit Exam</button>
           ` : `
@@ -886,8 +902,10 @@ export const ui = {
     });
 
     document.getElementById('quizPrevBtn').addEventListener('click', onPrev);
-    document.getElementById('quizQuitDiscardBtn').addEventListener('click', onQuitDiscard);
-    document.getElementById('quizQuitSubmitBtn').addEventListener('click', onQuitSubmit);
+    
+    document.getElementById('quizExitBtn').addEventListener('click', () => {
+      this.showQuitConfirmModal(onQuitSubmit, onQuitDiscard, () => {});
+    });
     
     if (questionNumber === totalQuestions) {
       document.getElementById('quizSubmitBtn').addEventListener('click', onSubmit);
@@ -1215,16 +1233,24 @@ export const ui = {
     let tempPassword = '';
     const updatePasswordBtn = overlay.querySelector('#updatePasswordBtn');
     updatePasswordBtn.addEventListener('click', () => {
-      const newPassword = prompt("Enter new password (minimum 6 characters):");
-      if (newPassword === null) return; // User cancelled
-      if (newPassword.trim().length < 6) {
-        alert("Password must be at least 6 characters long.");
-        return;
-      }
-      tempPassword = newPassword.trim();
-      updatePasswordBtn.textContent = '✅ Password Updated';
-      updatePasswordBtn.style.borderColor = 'var(--correct)';
-      updatePasswordBtn.style.color = 'var(--correct-light)';
+      this.showPromptModal(
+        'Update Password',
+        'Enter new password (minimum 6 characters)',
+        (newPassword) => {
+          if (!newPassword || newPassword.trim().length < 6) {
+            this.showAlertModal(
+              'Password Error',
+              'Password must be at least 6 characters long.'
+            );
+            return;
+          }
+          tempPassword = newPassword.trim();
+          updatePasswordBtn.textContent = '✅ Password Updated';
+          updatePasswordBtn.style.borderColor = 'var(--correct)';
+          updatePasswordBtn.style.color = 'var(--correct-light)';
+        },
+        () => {} // User cancelled
+      );
     });
 
     // Handle avatar selection clicks
@@ -1271,5 +1297,393 @@ export const ui = {
         onSave(updatedDetails);
       }, 300);
     });
+  },
+
+  // 8. Show confirmation modal (Yes/No)
+  showConfirmModal(title, message, onYes, onNo) {
+    const overlay = document.createElement('div');
+    overlay.className = 'mode-modal-overlay';
+    overlay.id = 'confirmModal';
+    overlay.style.zIndex = '1200';
+
+    overlay.innerHTML = `
+      <div class="mode-modal-card" style="max-width: 400px; gap: 1.25rem;">
+        <h2 class="mode-title" style="color: var(--wrong-light); font-size: 1.35rem;">${title}</h2>
+        <p class="mode-desc" style="color: var(--text-primary); font-family: var(--font-mono); font-size: 0.8rem; line-height: 1.5; text-transform: uppercase; margin: 0;">${message}</p>
+        
+        <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 0.5rem;">
+          <button class="btn btn-outline" id="confirmNoBtn" style="padding: 0.6rem 1.5rem; font-size: 0.85rem;">No</button>
+          <button class="btn btn-primary" id="confirmYesBtn" style="padding: 0.6rem 1.5rem; font-size: 0.85rem; background: var(--wrong); border-color: var(--wrong);">Yes</button>
+        </div>
+      </div>
+    `;
+
+    document.body.appendChild(overlay);
+
+    setTimeout(() => {
+      overlay.classList.add('show');
+    }, 10);
+
+    overlay.querySelector('#confirmYesBtn').addEventListener('click', () => {
+      overlay.classList.remove('show');
+      setTimeout(() => {
+        overlay.remove();
+        onYes();
+      }, 300);
+    });
+
+    const handleClose = () => {
+      overlay.classList.remove('show');
+      setTimeout(() => {
+        overlay.remove();
+        if (onNo) onNo();
+      }, 300);
+    };
+
+    overlay.querySelector('#confirmNoBtn').addEventListener('click', handleClose);
+  },
+
+  // 8.5. Show quit confirmation modal with Save, Discard, and Cancel options
+  showQuitConfirmModal(onSave, onDiscard, onCancel) {
+    const overlay = document.createElement('div');
+    overlay.className = 'mode-modal-overlay';
+    overlay.id = 'quitConfirmModal';
+    overlay.style.zIndex = '1200';
+
+    overlay.innerHTML = `
+      <div class="mode-modal-card" style="max-width: 420px; gap: 1.25rem; position: relative;">
+        <button id="modalCloseBtn" style="position: absolute; top: 1rem; right: 1rem; background: transparent; border: none; cursor: pointer; color: var(--text-secondary); font-size: 1.2rem;">✕</button>
+        <h2 class="mode-title" style="color: var(--accent); font-size: 1.35rem;">Quit Session</h2>
+        <p class="mode-desc" style="color: var(--text-primary); font-family: var(--font-mono); font-size: 0.8rem; line-height: 1.5; text-transform: uppercase; margin: 0;">
+          Do you want to save your current score and submit the exam, or discard your progress entirely?
+        </p>
+        
+        <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.5rem; width: 100%;">
+          <button class="btn btn-primary" id="quitSaveBtn" style="padding: 0.75rem 1.5rem; font-size: 0.95rem; width: 100%; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+            💾 Save & Submit
+          </button>
+          <button class="btn btn-outline" id="quitDiscardBtn" style="padding: 0.75rem 1.5rem; font-size: 0.95rem; border-color: rgba(255, 74, 118, 0.4); color: var(--wrong-light); width: 100%; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+            🗑️ Discard Progress
+          </button>
+          <button class="btn btn-outline" id="quitCancelBtn" style="padding: 0.75rem 1.5rem; font-size: 0.95rem; width: 100%; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+            ↩️ Resume Quiz
+          </button>
+        </div>
+      </div>
+    `;
+
+    document.body.appendChild(overlay);
+
+    setTimeout(() => {
+      overlay.classList.add('show');
+    }, 10);
+
+    const closeOverlay = (callback) => {
+      overlay.classList.remove('show');
+      setTimeout(() => {
+        overlay.remove();
+        if (callback) callback();
+      }, 300);
+    };
+
+    overlay.querySelector('#quitSaveBtn').addEventListener('click', () => {
+      closeOverlay(onSave);
+    });
+
+    overlay.querySelector('#quitDiscardBtn').addEventListener('click', () => {
+      closeOverlay(onDiscard);
+    });
+
+    overlay.querySelector('#quitCancelBtn').addEventListener('click', () => {
+      closeOverlay(onCancel);
+    });
+    
+    overlay.querySelector('#modalCloseBtn').addEventListener('click', () => {
+      closeOverlay(onCancel);
+    });
+  },
+
+  // 8.6. Show alert modal
+  showAlertModal(title, message, onClose) {
+    const overlay = document.createElement('div');
+    overlay.className = 'mode-modal-overlay';
+    overlay.id = 'alertModal';
+    overlay.style.zIndex = '1400'; // High z-index to overlay on top of any other modal
+
+    overlay.innerHTML = `
+      <div class="mode-modal-card" style="max-width: 400px; gap: 1.25rem;">
+        <h2 class="mode-title" style="color: var(--wrong-light); font-size: 1.35rem;">${title}</h2>
+        <p class="mode-desc" style="color: var(--text-primary); font-family: var(--font-mono); font-size: 0.8rem; line-height: 1.5; text-transform: uppercase; margin: 0;">${message}</p>
+        
+        <div style="display: flex; justify-content: center; margin-top: 0.5rem;">
+          <button class="btn btn-primary" id="alertOkBtn" style="padding: 0.6rem 2rem; font-size: 0.85rem;">OK</button>
+        </div>
+      </div>
+    `;
+
+    document.body.appendChild(overlay);
+
+    setTimeout(() => {
+      overlay.classList.add('show');
+    }, 10);
+
+    overlay.querySelector('#alertOkBtn').addEventListener('click', () => {
+      overlay.classList.remove('show');
+      setTimeout(() => {
+        overlay.remove();
+        if (onClose) onClose();
+      }, 300);
+    });
+  },
+
+  // 8.7. Show prompt modal
+  showPromptModal(title, placeholder, onSubmit, onCancel) {
+    const overlay = document.createElement('div');
+    overlay.className = 'mode-modal-overlay';
+    overlay.id = 'promptModal';
+    overlay.style.zIndex = '1300'; // High z-index to overlay on profile edit modal
+
+    overlay.innerHTML = `
+      <div class="mode-modal-card" style="max-width: 400px; gap: 1.25rem;">
+        <h2 class="mode-title" style="color: var(--accent); font-size: 1.35rem;">${title}</h2>
+        <div class="form-group" style="text-align: left; width: 100%;">
+          <input class="form-input" type="password" id="promptInput" placeholder="${placeholder}" style="width: 100%;" autocomplete="new-password">
+        </div>
+        
+        <div style="display: flex; gap: 1rem; justify-content: center; width: 100%;">
+          <button class="btn btn-outline" id="promptCancelBtn" style="padding: 0.6rem 1.5rem; font-size: 0.85rem;">Cancel</button>
+          <button class="btn btn-primary" id="promptSubmitBtn" style="padding: 0.6rem 1.5rem; font-size: 0.85rem;">Submit</button>
+        </div>
+      </div>
+    `;
+
+    document.body.appendChild(overlay);
+    
+    // Focus the input
+    setTimeout(() => {
+      overlay.classList.add('show');
+      overlay.querySelector('#promptInput').focus();
+    }, 10);
+
+    const closeOverlay = (callback) => {
+      overlay.classList.remove('show');
+      setTimeout(() => {
+        overlay.remove();
+        if (callback) callback();
+      }, 300);
+    };
+
+    overlay.querySelector('#promptSubmitBtn').addEventListener('click', () => {
+      const val = overlay.querySelector('#promptInput').value;
+      closeOverlay(() => onSubmit(val));
+    });
+
+    overlay.querySelector('#promptCancelBtn').addEventListener('click', () => {
+      closeOverlay(onCancel);
+    });
+
+    // Support enter key on input
+    overlay.querySelector('#promptInput').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        const val = overlay.querySelector('#promptInput').value;
+        closeOverlay(() => onSubmit(val));
+      }
+    });
+  },
+
+  // 9. Show daily random question briefing challenge (Aviation Trivia)
+  showRandomQuestionModal(questionData, onAnswer, onClose) {
+    const overlay = document.createElement('div');
+    overlay.className = 'mode-modal-overlay';
+    overlay.id = 'challengeModal';
+    overlay.style.zIndex = '1150';
+
+    overlay.innerHTML = `
+      <div class="mode-modal-card" style="max-width: 550px; text-align: left; padding: 2rem; max-height: 90vh; overflow-y: auto; gap: 1rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dashed var(--border); padding-bottom: 0.75rem; margin-bottom: 0.25rem;">
+          <h2 class="mode-title" style="font-size: 1.15rem; color: var(--accent); display: flex; align-items: center; gap: 0.5rem; margin: 0;">
+            ✈️ Aviation Trivia
+          </h2>
+          <button class="btn btn-outline" id="challengeCloseBtn" style="padding: 0.25rem 0.5rem; font-size: 0.75rem; border-color: transparent; background: transparent; cursor: pointer; color: var(--text-secondary);">
+            ✕
+          </button>
+        </div>
+        
+        <p style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-secondary); margin: 0; text-transform: uppercase; letter-spacing: 0.05em;">
+          Subject: <span style="color: var(--accent); font-weight: bold;">${questionData.subjectTitle}</span> &bull; Chapter: <span>${questionData.chapterTitle}</span>
+        </p>
+        
+        <div style="font-size: 0.98rem; color: var(--text-highlight); font-weight: 600; line-height: 1.45; margin-bottom: 0.25rem; font-family: var(--font-body);">
+          ${questionData.questionText}
+        </div>
+        
+        ${questionData.imageSrc ? `
+          <div style="text-align: center; margin-bottom: 0.5rem; max-height: 180px; overflow: hidden; border: 1px solid var(--border); border-radius: 6px; background: rgba(0, 0, 0, 0.2);">
+            <img src="${questionData.imageSrc}" alt="Challenge Reference" style="max-height: 180px; max-width: 100%; object-fit: contain;">
+          </div>
+        ` : ''}
+        
+        <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 0.5rem; width: 100%;">
+          ${questionData.options.map((opt, idx) => `
+            <button class="option-btn" data-idx="${idx}" style="padding: 0.75rem 1.1rem; font-size: 0.85rem; width: 100%;">
+              <span class="option-letter" style="display: inline-block; width: 20px; height: 20px; line-height: 20px; text-align: center; border-radius: 4px; background: rgba(255,255,255,0.05); border: 1px solid var(--border); font-family: var(--font-mono); font-size: 0.75rem; font-weight: bold; margin-right: 0.5rem;">
+                ${['A', 'B', 'C', 'D', 'E', 'F'][idx]}
+              </span>
+              <span class="option-text">${opt}</span>
+            </button>
+          `).join('')}
+        </div>
+
+        <!-- Explanation Container (Initially Hidden) -->
+        <div id="challengeExplanationBox" style="display: none; margin-top: 0.5rem; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.02); font-family: var(--font-body); font-size: 0.88rem; line-height: 1.5; animation: fadeIn 0.4s ease-out;">
+        </div>
+        
+        <div style="display: flex; justify-content: flex-end; gap: 0.75rem; border-top: 1px dashed var(--border); padding-top: 1rem; margin-top: 0.5rem; width: 100%;">
+          <button class="btn btn-outline" id="challengeSkipBtn" style="padding: 0.5rem 1.2rem; font-size: 0.8rem;">Skip Challenge</button>
+          <button class="btn btn-primary" id="challengeSubmitBtn" style="padding: 0.5rem 1.2rem; font-size: 0.8rem;" disabled>Submit Answer</button>
+          <button class="btn btn-primary" id="challengeDoneBtn" style="padding: 0.5rem 1.2rem; font-size: 0.8rem; display: none;">Continue</button>
+        </div>
+      </div>
+    `;
+
+    document.body.appendChild(overlay);
+
+    setTimeout(() => {
+      overlay.classList.add('show');
+    }, 10);
+
+    let selectedIdx = null;
+    const optionBtns = overlay.querySelectorAll('.option-btn');
+    const submitBtn = overlay.querySelector('#challengeSubmitBtn');
+
+    // Handle option selection
+    optionBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (submitBtn.style.display === 'none') return; // Already submitted
+
+        selectedIdx = parseInt(btn.dataset.idx);
+
+        optionBtns.forEach(b => b.classList.remove('selected-test'));
+        btn.classList.add('selected-test');
+
+        submitBtn.removeAttribute('disabled');
+      });
+    });
+
+    // Handle submit answer
+    submitBtn.addEventListener('click', () => {
+      if (selectedIdx === null) return;
+
+      const correctIdx = questionData.correctAnswerIndex;
+      const isCorrect = selectedIdx === correctIdx;
+
+      optionBtns.forEach(b => {
+        b.setAttribute('disabled', 'true');
+        b.classList.remove('selected-test');
+        const bIdx = parseInt(b.dataset.idx);
+        if (bIdx === correctIdx) {
+          b.classList.add('show-correct');
+        }
+      });
+
+      if (isCorrect) {
+        optionBtns[selectedIdx].classList.add('selected-correct');
+      } else {
+        optionBtns[selectedIdx].classList.add('selected-wrong');
+      }
+
+      // Generate explanation dynamically based on context/keywords
+      const explanation = generateExplanation(
+        questionData.questionText,
+        questionData.options,
+        correctIdx,
+        questionData.subjectTitle
+      );
+
+      const expBox = overlay.querySelector('#challengeExplanationBox');
+      expBox.innerHTML = `
+        <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent); font-weight: bold; text-transform: uppercase; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.35rem;">
+          💡 Explanation
+        </div>
+        <div style="color: var(--text-primary);">${explanation}</div>
+      `;
+      expBox.style.display = 'block';
+
+      // Toggle action buttons
+      submitBtn.style.display = 'none';
+      overlay.querySelector('#challengeSkipBtn').style.display = 'none';
+      overlay.querySelector('#challengeDoneBtn').style.display = 'block';
+
+      onAnswer(isCorrect);
+    });
+
+    const handleClose = () => {
+      overlay.classList.remove('show');
+      setTimeout(() => {
+        overlay.remove();
+        onClose();
+      }, 300);
+    };
+
+    overlay.querySelector('#challengeCloseBtn').addEventListener('click', handleClose);
+    overlay.querySelector('#challengeSkipBtn').addEventListener('click', handleClose);
+    overlay.querySelector('#challengeDoneBtn').addEventListener('click', handleClose);
   }
+};
+
+// Helper function to generate explanations dynamically for the random question challenge
+const generateExplanation = (questionText, options, answerIndex, subjectTitle) => {
+  const answerText = options[answerIndex];
+  const qStr = questionText.toLowerCase();
+  
+  if (qStr.includes('gym') || qStr.includes('workout') || qStr.includes('hyperventilation')) {
+    return "During physical exertion, muscle activity increases carbon dioxide (CO₂) production. The rising CO₂ concentration in the blood triggers the brain's respiratory center to increase breathing depth and frequency. If this response is excessive, it leads to hyperventilation (over-breathing), which expels carbon dioxide and can cause respiratory alkalosis.";
+  }
+  if (qStr.includes('density') && qStr.includes('poles')) {
+    return "Air density is inversely proportional to temperature. Since polar regions are significantly colder than equatorial regions, the air at the poles is colder, heavier, and more compressed. Therefore, at sea level, air density is higher at the poles than at the equator.";
+  }
+  if (qStr.includes('altitude') || qStr.includes('density altitude')) {
+    return "Density altitude is pressure altitude corrected for non-standard temperature. High temperatures expand the air, reducing its density. This corresponds to a higher density altitude, which degrades aerodynamic lift and engine performance.";
+  }
+  if (qStr.includes('coriolis')) {
+    return "The Coriolis force is an apparent deflection of moving air caused by the Earth's rotation. It deflects air flow to the right in the Northern Hemisphere and to the left in the Southern Hemisphere. The force is directly proportional to wind speed and sine of latitude, making it maximum at the poles and zero at the equator.";
+  }
+  if (qStr.includes('humidity') || qStr.includes('dew point')) {
+    return "Dew point is the temperature at which air becomes fully saturated and condensation begins. When the air temperature cools to the dew point temperature, the relative humidity reaches 100%, leading to condensation, dew, or cloud formation.";
+  }
+  if (qStr.includes('fog') || qStr.includes('visibility')) {
+    return "Fog is defined as water droplets suspended in the air near the surface that reduce horizontal visibility to less than 1 km. It typically forms when the temperature-dewpoint spread is narrow (within 2°C) and condensation nuclei are present.";
+  }
+  if (qStr.includes('thunderstorm') || qStr.includes('cumulonimbus')) {
+    return "A thunderstorm (cumulonimbus cloud) requires three essential ingredients: instability (to allow rising air), abundant moisture, and a lifting mechanism (like a frontal boundary, mountain, or solar heating) to trigger the updraft.";
+  }
+  if (qStr.includes('icao') || qStr.includes('regulation') || qStr.includes('annex')) {
+    return "International air regulations are standardized under the ICAO (International Civil Aviation Organization) Chicago Convention. Member states align their national aviation laws (such as DGCA requirements in India) with ICAO Annexes to ensure global safety and inter-operability.";
+  }
+  if (qStr.includes('hypoxia')) {
+    return "Hypoxia is a physiological state where the body's tissues are deprived of adequate oxygen supply. At altitude, this is caused by the reduced partial pressure of oxygen in the ambient air, making it harder for hemoglobin to bind and transport oxygen.";
+  }
+  if (qStr.includes('carbon monoxide') || qStr.includes('co poisoning')) {
+    return "Carbon monoxide (CO) is a highly toxic, colorless, and odorless gas. It binds to the hemoglobin in red blood cells with an affinity roughly 200 times greater than oxygen, blocking oxygen transport and causing rapid, subtle hypoxia.";
+  }
+  if (qStr.includes('altimeter') || qStr.includes('qnh') || qStr.includes('qfe')) {
+    return "QNH is the barometric pressure setting which, when dialed into the altimeter subscale, causes the altimeter to indicate altitude above mean sea level. Standard altimeter setting for transitioning into flight levels is 1013.2 hPa / 29.92 inHg.";
+  }
+
+  // Generic fallbacks based on subject
+  if (subjectTitle.toLowerCase().includes('met') || qStr.includes('wind') || qStr.includes('pressure') || qStr.includes('cloud')) {
+    return `In aviation meteorology, the correct answer is "${answerText}". Atmospheric physics dictate that pressure gradients, temperature variations, and air density directly control wind patterns, cloud formations, and altimeter errors.`;
+  }
+  if (subjectTitle.toLowerCase().includes('reg') || qStr.includes('rules') || qStr.includes('law') || qStr.includes('icao')) {
+    return `Under Civil Aviation Regulations, the correct answer is "${answerText}". These rules are established to coordinate safe separation, clear operational boundaries, and standard procedures across commercial and private flight operations.`;
+  }
+  if (subjectTitle.toLowerCase().includes('nav') || qStr.includes('heading') || qStr.includes('track') || qStr.includes('chart') || qStr.includes('latitude')) {
+    return `For flight planning and navigation, "${answerText}" is correct. Precise calculations adjusting headings for wind drift and magnetic variation are critical to maintain the aircraft along its intended ground track.`;
+  }
+  if (qStr.includes('engine') || qStr.includes('system') || qStr.includes('propeller') || qStr.includes('fuel')) {
+    return `In aircraft technical systems, "${answerText}" is correct. Powerplants, fuel lines, electrical systems, and hydraulic linkages follow strict engineering design principles to guarantee mechanical reliability and flight airworthiness.`;
+  }
+  
+  return `Based on aviation flight theory principles, the correct answer is "${answerText}". Understanding this core concept is essential for pilots to ensure flight safety, make sound operational decisions, and pass the licensing examinations.`;
 };

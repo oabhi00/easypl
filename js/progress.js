@@ -39,6 +39,10 @@ export const progress = {
   // Get aggregated stats for the dashboard
   getUserStats(username) {
     const attempts = this.getUserAttempts(username);
+    const clearedAtKey = 'easypl_cleared_at_' + username.toLowerCase();
+    const clearedAt = localStorage.getItem(clearedAtKey);
+    const clearedTime = clearedAt ? new Date(clearedAt).getTime() : 0;
+
     if (attempts.length === 0) {
       return {
         totalAttempts: 0,
@@ -63,8 +67,9 @@ export const progress = {
       ? Math.round((totalCorrectAnswers / totalQuestionsAnswered) * 100) 
       : 0;
       
-    // Return recent attempts (last 5) sorted by date descending
-    const recentAttempts = [...attempts]
+    // Only display attempts taken after the last clear action in the dashboard history list
+    const activeAttempts = attempts.filter(att => new Date(att.date).getTime() > clearedTime);
+    const recentAttempts = [...activeAttempts]
       .sort((a, b) => new Date(b.date) - new Date(a.date))
       .slice(0, 5);
       
@@ -163,5 +168,12 @@ export const progress = {
       percentComplete,
       avgAccuracy
     };
+  },
+
+  // Clear attempts for a user (hides history but preserves overall stats)
+  clearAttempts(username) {
+    if (!username) return;
+    const clearedAtKey = 'easypl_cleared_at_' + username.toLowerCase();
+    localStorage.setItem(clearedAtKey, new Date().toISOString());
   }
 };
