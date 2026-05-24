@@ -177,13 +177,37 @@ export const subjects = {
     "title": "Meteorology Full Mock Tests",
     "category": "Meteorology",
     "chapters": [
-      {
-        "file": "questions.json",
-        "id": "questions",
-        "displayName": "Full Meteorology Mock Exam",
-        "questionsCount": 494
-      }
-    ]
+        {
+                "file": "part-1.json",
+                "id": "part-1",
+                "displayName": "Meteorology Mock Test - Part 1",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-2.json",
+                "id": "part-2",
+                "displayName": "Meteorology Mock Test - Part 2",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-3.json",
+                "id": "part-3",
+                "displayName": "Meteorology Mock Test - Part 3",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-4.json",
+                "id": "part-4",
+                "displayName": "Meteorology Mock Test - Part 4",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-5.json",
+                "id": "part-5",
+                "displayName": "Meteorology Mock Test - Part 5",
+                "questionsCount": 94
+        }
+      ]
   },
   "NAV TEST": {
     "id": "NAV TEST",
@@ -989,13 +1013,79 @@ export const subjects = {
     "title": "Regulations Full Mock Tests",
     "category": "Regulations",
     "chapters": [
-      {
-        "file": "questions.json",
-        "id": "questions",
-        "displayName": "Full Air Regulations Mock Exam",
-        "questionsCount": 1145
-      }
-    ]
+        {
+                "file": "part-1.json",
+                "id": "part-1",
+                "displayName": "Regulations Mock Test - Part 1",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-2.json",
+                "id": "part-2",
+                "displayName": "Regulations Mock Test - Part 2",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-3.json",
+                "id": "part-3",
+                "displayName": "Regulations Mock Test - Part 3",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-4.json",
+                "id": "part-4",
+                "displayName": "Regulations Mock Test - Part 4",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-5.json",
+                "id": "part-5",
+                "displayName": "Regulations Mock Test - Part 5",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-6.json",
+                "id": "part-6",
+                "displayName": "Regulations Mock Test - Part 6",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-7.json",
+                "id": "part-7",
+                "displayName": "Regulations Mock Test - Part 7",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-8.json",
+                "id": "part-8",
+                "displayName": "Regulations Mock Test - Part 8",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-9.json",
+                "id": "part-9",
+                "displayName": "Regulations Mock Test - Part 9",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-10.json",
+                "id": "part-10",
+                "displayName": "Regulations Mock Test - Part 10",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-11.json",
+                "id": "part-11",
+                "displayName": "Regulations Mock Test - Part 11",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-12.json",
+                "id": "part-12",
+                "displayName": "Regulations Mock Test - Part 12",
+                "questionsCount": 45
+        }
+      ]
   },
   "RKBALI-NAV": {
     "id": "RKBALI-NAV",
@@ -1352,12 +1442,84 @@ export const subjects = {
     "title": "Technical Full Mock Tests",
     "category": "Technical",
     "chapters": [
-      {
-        "file": "questions.json",
-        "id": "questions",
-        "displayName": "Full Technical Mock Exam",
-        "questionsCount": 1262
-      }
-    ]
+        {
+                "file": "part-1.json",
+                "id": "part-1",
+                "displayName": "Technical Mock Test - Part 1",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-2.json",
+                "id": "part-2",
+                "displayName": "Technical Mock Test - Part 2",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-3.json",
+                "id": "part-3",
+                "displayName": "Technical Mock Test - Part 3",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-4.json",
+                "id": "part-4",
+                "displayName": "Technical Mock Test - Part 4",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-5.json",
+                "id": "part-5",
+                "displayName": "Technical Mock Test - Part 5",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-6.json",
+                "id": "part-6",
+                "displayName": "Technical Mock Test - Part 6",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-7.json",
+                "id": "part-7",
+                "displayName": "Technical Mock Test - Part 7",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-8.json",
+                "id": "part-8",
+                "displayName": "Technical Mock Test - Part 8",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-9.json",
+                "id": "part-9",
+                "displayName": "Technical Mock Test - Part 9",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-10.json",
+                "id": "part-10",
+                "displayName": "Technical Mock Test - Part 10",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-11.json",
+                "id": "part-11",
+                "displayName": "Technical Mock Test - Part 11",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-12.json",
+                "id": "part-12",
+                "displayName": "Technical Mock Test - Part 12",
+                "questionsCount": 100
+        },
+        {
+                "file": "part-13.json",
+                "id": "part-13",
+                "displayName": "Technical Mock Test - Part 13",
+                "questionsCount": 62
+        }
+      ]
   }
 };
