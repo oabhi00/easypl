@@ -1854,6 +1854,24 @@ const generateExplanation = (questionText, options, answerIndex, subjectTitle) =
   if (qStr.includes('carbon monoxide') || qStr.includes('co poisoning')) {
     return "Carbon monoxide (CO) is a highly toxic, colorless, and odorless gas. It binds to the hemoglobin in red blood cells with an affinity roughly 200 times greater than oxygen, blocking oxygen transport and causing rapid, subtle hypoxia.";
   }
+  if (qStr.includes('spool') || qStr.includes('twin-spool') || qStr.includes('compressor spool')) {
+    return "In a multi-spool (twin-spool) gas turbine engine, each spool consists of a turbine stage connected to a compressor stage via concentric, independently rotating shafts. The Low Pressure (LP) Turbine is connected to and drives the LP Compressor, while the High Pressure (HP) Turbine is connected to and drives the HP Compressor. This optimizes compressor efficiency across different RPMs.";
+  }
+  if (qStr.includes('constant speed') || qStr.includes('constant-speed') || qStr.includes('governor') || qStr.includes('propeller blade pitch')) {
+    return "A constant-speed propeller system uses a governor (CSU) to automatically adjust the blade pitch using oil pressure. This maintains a constant engine RPM selected by the pilot, allowing the engine to operate at its most efficient speed throughout all flight phases.";
+  }
+  if (qStr.includes('supercharger') || qStr.includes('turbocharger') || qStr.includes('wastegate')) {
+    return "Superchargers and turbochargers compress intake air to maintain engine manifold pressure at high altitudes. A supercharger is mechanically driven by the crankshaft, whereas a turbocharger is driven by engine exhaust gases and regulated by a wastegate.";
+  }
+  if (qStr.includes('octane') || qStr.includes('detonation') || qStr.includes('pre-ignition') || qStr.includes('preignition')) {
+    return "Detonation is the uncontrolled, explosive ignition of the fuel-air mixture inside the cylinder, usually caused by low octane fuel or excessive temperatures. Pre-ignition is the premature ignition of the mixture before the spark plug fires, typically caused by hot spots like carbon deposits.";
+  }
+  if (qStr.includes('carburetor icing') || qStr.includes('carb icing') || qStr.includes('venturi')) {
+    return "Carburetor icing occurs inside the venturi due to fuel vaporization cooling and pressure drops. It can occur in temperatures up to +30°C under high humidity, and is indicated by a drop in manifold pressure (constant speed prop) or RPM (fixed pitch prop).";
+  }
+  if (qStr.includes('fuel injection') || qStr.includes('injector')) {
+    return "Fuel injection systems spray vaporized fuel directly into the intake port or cylinder head, eliminating the carburetor venturi throat and its associated icing risk, while providing more uniform fuel distribution and improved efficiency.";
+  }
   if (qStr.includes('vibrat') && (qStr.includes('altimeter') || qStr.includes('linkage') || qStr.includes('friction') || qStr.includes('stiction'))) {
     return "The vibrating device (or vibrator) in a mechanical altimeter is designed to continuously tap the instrument casing or internal gear linkages. This reduces static friction (stiction) in the mechanical pivots, enabling the pointers to move smoothly and respond immediately to slight changes in static pressure.";
   }
@@ -1883,17 +1901,17 @@ const generateExplanation = (questionText, options, answerIndex, subjectTitle) =
   const subTitleLower = (subjectTitle || '').toLowerCase();
   
   if (subTitleLower.includes('met')) {
-    return `For the meteorology question: <em>"${cleanQ}"</em>, the correct answer is <strong>"${answerText}"</strong>. Atmospheric physics dictate that pressure gradients, temperature variations, and air density directly control wind patterns, cloud formations, and local weather patterns.`;
+    return `For the meteorology question: <em>"${cleanQ}"</em>, the correct answer is <strong>"${answerText}"</strong>. This concept relates to atmospheric dynamics, pressure gradients, and meteorological reporting procedures.`;
   }
   if (subTitleLower.includes('reg') || subTitleLower.includes('rule') || subTitleLower.includes('law')) {
-    return `For the regulations question: <em>"${cleanQ}"</em>, the correct answer is <strong>"${answerText}"</strong>. Under Civil Aviation Regulations, these rules are established to coordinate safe air traffic separation, clear operational boundaries, and standardized procedures.`;
+    return `For the regulations question: <em>"${cleanQ}"</em>, the correct answer is <strong>"${answerText}"</strong>. This is a regulatory standard established to coordinate flight safety, air traffic operations, and pilot licensing requirements.`;
   }
   if (subTitleLower.includes('nav') || subTitleLower.includes('plot') || subTitleLower.includes('rkb') || subTitleLower.includes('bali')) {
-    return `For the navigation question: <em>"${cleanQ}"</em>, the correct answer is <strong>"${answerText}"</strong>. Flight planning, path tracking, heading corrections for wind drift, and navigation instruments rely on these exact calculations to maintain the aircraft along its ground track.`;
+    return `For the navigation question: <em>"${cleanQ}"</em>, the correct answer is <strong>"${answerText}"</strong>. This governs flight planning calculations, courses, heading correction, or chart coordinates.`;
   }
   if (subTitleLower.includes('tech') || subTitleLower.includes('engine') || subTitleLower.includes('system') || subTitleLower.includes('aircraft')) {
-    return `For the technical systems question: <em>"${cleanQ}"</em>, the correct answer is <strong>"${answerText}"</strong>. Mechanical powerplants, electrical grids, fuel flow control, and hydraulic/pneumatic linkages follow strict design principles to ensure airworthiness and flight safety.`;
+    return `For the technical systems question: <em>"${cleanQ}"</em>, the correct answer is <strong>"${answerText}"</strong>. This is a technical design requirement for aircraft powerplants, structural systems, or instruments to verify airworthiness.`;
   }
   
-  return `Regarding the aviation question: <em>"${cleanQ}"</em>, the correct choice is <strong>"${answerText}"</strong>. Understanding this core concept is essential for pilots to ensure flight safety, make sound operational decisions, and pass the license examinations.`;
+  return `Regarding the aviation question: <em>"${cleanQ}"</em>, the correct choice is <strong>"${answerText}"</strong>. This concept is essential to support flight safety, operational decision-making, and pilot theory preparation.`;
 };
