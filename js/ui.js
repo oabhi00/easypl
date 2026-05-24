@@ -1860,18 +1860,20 @@ const generateExplanation = (questionText, options, answerIndex, subjectTitle) =
     return "QNH is the barometric pressure setting which, when dialed into the altimeter subscale, causes the altimeter to indicate altitude above mean sea level. Standard altimeter setting for transitioning into flight levels is 1013.2 hPa / 29.92 inHg.";
   }
 
-  // Generic fallbacks based on subject
-  if (subjectTitle.toLowerCase().includes('met') || qStr.includes('wind') || qStr.includes('pressure') || qStr.includes('cloud')) {
-    return `In aviation meteorology, the correct answer is "${answerText}". Atmospheric physics dictate that pressure gradients, temperature variations, and air density directly control wind patterns, cloud formations, and altimeter errors.`;
+  // Generic fallbacks based on subjectTitle
+  const subTitleLower = (subjectTitle || '').toLowerCase();
+  
+  if (subTitleLower.includes('met')) {
+    return `In aviation meteorology, the correct answer is "${answerText}". Atmospheric physics dictate that pressure gradients, temperature variations, and air density directly control wind patterns, cloud formations, and local weather phenomena.`;
   }
-  if (subjectTitle.toLowerCase().includes('reg') || qStr.includes('rules') || qStr.includes('law') || qStr.includes('icao')) {
-    return `Under Civil Aviation Regulations, the correct answer is "${answerText}". These rules are established to coordinate safe separation, clear operational boundaries, and standard procedures across commercial and private flight operations.`;
+  if (subTitleLower.includes('reg') || subTitleLower.includes('rule') || subTitleLower.includes('law')) {
+    return `Under Civil Aviation Regulations, the correct answer is "${answerText}". These regulations are established to coordinate safe aircraft separation, clear air traffic control procedures, and standardized operating rules.`;
   }
-  if (subjectTitle.toLowerCase().includes('nav') || qStr.includes('heading') || qStr.includes('track') || qStr.includes('chart') || qStr.includes('latitude')) {
-    return `For flight planning and navigation, "${answerText}" is correct. Precise calculations adjusting headings for wind drift and magnetic variation are critical to maintain the aircraft along its intended ground track.`;
+  if (subTitleLower.includes('nav') || subTitleLower.includes('plot') || subTitleLower.includes('rkb') || subTitleLower.includes('bali')) {
+    return `For flight planning and air navigation, "${answerText}" is correct. Precise calculations adjusting headings for wind drift, magnetic variation, and instrument errors are critical to maintain the aircraft along its intended ground track.`;
   }
-  if (qStr.includes('engine') || qStr.includes('system') || qStr.includes('propeller') || qStr.includes('fuel')) {
-    return `In aircraft technical systems, "${answerText}" is correct. Powerplants, fuel lines, electrical systems, and hydraulic linkages follow strict engineering design principles to guarantee mechanical reliability and flight airworthiness.`;
+  if (subTitleLower.includes('tech') || subTitleLower.includes('engine') || subTitleLower.includes('system') || subTitleLower.includes('aircraft')) {
+    return `In aircraft technical systems, "${answerText}" is correct. Aircraft powerplants, electrical grids, fuel lines, and mechanical/hydraulic linkages follow strict engineering design principles to ensure airworthiness and operational safety.`;
   }
   
   return `Based on aviation flight theory principles, the correct answer is "${answerText}". Understanding this core concept is essential for pilots to ensure flight safety, make sound operational decisions, and pass the licensing examinations.`;
