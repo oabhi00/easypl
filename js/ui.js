@@ -132,42 +132,51 @@ const getSubjectGraphic = (category) => {
       </svg>
     `;
   } else if (normCat.includes('A320') || normCat.includes('AIRBUS')) {
-    // Airbus A320 PFD Flight Director
+    // Airbus A320 Overhead Silhouette
     return `
       <svg viewBox="0 0 100 100" style="width: 100%; height: 100%;">
         <defs>
-          <filter id="hudGlowA320" x="-20%" y="-20%" width="140%" height="140%">
-            <feGaussianBlur stdDeviation="1.5" result="blur" />
+          <filter id="hudGlowA320New" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="1.2" result="blur" />
             <feMerge>
               <feMergeNode in="blur" />
               <feMergeNode in="SourceGraphic" />
             </feMerge>
           </filter>
         </defs>
-        <!-- Concentric range ring -->
-        <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent)" stroke-width="1.2" opacity="0.2" />
+        <!-- Concentric HUD rings -->
+        <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.15" />
+        <circle cx="50" cy="50" r="35" fill="none" stroke="var(--accent)" stroke-width="1.2" stroke-dasharray="2 3" opacity="0.3" />
         
-        <!-- PFD frame / box -->
-        <rect x="22" y="22" width="56" height="56" rx="6" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity="0.5" />
+        <!-- HUD Flight path guidelines / alignment marks -->
+        <line x1="15" y1="50" x2="30" y2="50" stroke="var(--accent)" stroke-width="1" opacity="0.4" />
+        <line x1="70" y1="50" x2="85" y2="50" stroke="var(--accent)" stroke-width="1" opacity="0.4" />
+        <line x1="50" y1="15" x2="50" y2="25" stroke="var(--accent)" stroke-width="1" opacity="0.4" />
+        <line x1="50" y1="75" x2="50" y2="85" stroke="var(--accent)" stroke-width="1" opacity="0.4" />
         
-        <!-- Speed scale left -->
-        <line x1="28" y1="28" x2="28" y2="72" stroke="var(--accent)" stroke-width="1.2" opacity="0.4" />
-        <line x1="24" y1="36" x2="28" y2="36" stroke="var(--accent)" stroke-width="1" opacity="0.4" />
-        <line x1="24" y1="50" x2="28" y2="50" stroke="var(--accent)" stroke-width="1.5" opacity="0.7" />
-        <line x1="24" y1="64" x2="28" y2="64" stroke="var(--accent)" stroke-width="1" opacity="0.4" />
-        
-        <!-- Altitude scale right -->
-        <line x1="72" y1="28" x2="72" y2="72" stroke="var(--accent)" stroke-width="1.2" opacity="0.4" />
-        <line x1="72" y1="36" x2="76" y2="36" stroke="var(--accent)" stroke-width="1" opacity="0.4" />
-        <line x1="72" y1="50" x2="76" y2="50" stroke="var(--accent)" stroke-width="1.5" opacity="0.7" />
-        <line x1="72" y1="64" x2="76" y2="64" stroke="var(--accent)" stroke-width="1" opacity="0.4" />
-        
-        <!-- Cyan Flight Director Crosshair -->
-        <line x1="36" y1="50" x2="64" y2="50" stroke="#00e5ff" stroke-width="2" class="pfd-fd-h" filter="url(#hudGlowA320)" />
-        <line x1="50" y1="36" x2="50" y2="64" stroke="#00e5ff" stroke-width="2" class="pfd-fd-v" filter="url(#hudGlowA320)" />
-        
-        <!-- Aircraft symbol (fixed) -->
-        <path d="M 41 50 L 46 50 L 48 53 L 52 53 L 54 50 L 59 50" fill="none" stroke="var(--hud-amber)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+        <!-- Airbus A320 Overhead Silhouette -->
+        <g class="a320-silhouette" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" filter="url(#hudGlowA320New)">
+          <!-- Fuselage -->
+          <path d="M 50 18 C 47.5 22, 46.5 28, 46.5 45 L 46.5 75 C 46.5 78, 48.5 82, 50 82 C 51.5 82, 53.5 78, 53.5 75 L 53.5 45 C 53.5 28, 52.5 22, 50 18 Z" fill="var(--bg-tertiary)" stroke-width="1.8" />
+                   
+          <!-- Left Swept Wing & Winglet -->
+          <path d="M 46.5 42 L 12 62 L 10 60 L 11 57 L 46.5 38 Z" fill="var(--bg-tertiary)" />
+                   
+          <!-- Right Swept Wing & Winglet -->
+          <path d="M 53.5 42 L 88 62 L 90 60 L 89 57 L 53.5 38 Z" fill="var(--bg-tertiary)" />
+                   
+          <!-- Left Engine Nacelle -->
+          <rect x="29" y="44" width="6" height="12" rx="3" fill="var(--bg-secondary)" stroke="var(--accent)" stroke-width="1.2" />
+          <line x1="32" y1="44" x2="32" y2="38" stroke="var(--accent)" stroke-width="1" /> <!-- Pylon connection -->
+          
+          <!-- Right Engine Nacelle -->
+          <rect x="65" y="44" width="6" height="12" rx="3" fill="var(--bg-secondary)" stroke="var(--accent)" stroke-width="1.2" />
+          <line x1="68" y1="44" x2="68" y2="38" stroke="var(--accent)" stroke-width="1" /> <!-- Pylon connection -->
+          
+          <!-- Horizontal Stabilizers (Tailplanes) -->
+          <path d="M 46.5 74 L 32 80 L 32 77 L 46.5 72 Z" fill="var(--bg-tertiary)" />
+          <path d="M 53.5 74 L 68 80 L 68 77 L 53.5 72 Z" fill="var(--bg-tertiary)" />
+        </g>
       </svg>
     `;
   } else if (normCat.includes('C172') || normCat.includes('CESSNA')) {

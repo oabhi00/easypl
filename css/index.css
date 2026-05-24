@@ -1093,26 +1093,18 @@ body.light-mode .landing-bg-attitude {
 }
 
 /* Custom interactive Micro-animations for new subjects */
-.pfd-fd-h, .pfd-fd-v {
+.a320-silhouette {
+  transform-origin: 50px 50px;
   transition: transform 0.3s ease-out, filter 0.3s;
 }
 
-.landing-feature-card:hover .pfd-fd-h {
-  animation: pfdHDrift 2.5s infinite alternate ease-in-out;
+.landing-feature-card:hover .a320-silhouette {
+  animation: a320Float 3s infinite alternate ease-in-out;
 }
 
-.landing-feature-card:hover .pfd-fd-v {
-  animation: pfdVDrift 2.5s infinite alternate ease-in-out;
-}
-
-@keyframes pfdHDrift {
-  0% { transform: translateY(-2px); }
-  100% { transform: translateY(2px); }
-}
-
-@keyframes pfdVDrift {
-  0% { transform: translateX(-2px); }
-  100% { transform: translateX(2px); }
+@keyframes a320Float {
+  0% { transform: translateY(0px) scale(1); filter: drop-shadow(0 0 3px var(--accent)); }
+  100% { transform: translateY(-3px) scale(1.03); filter: drop-shadow(0 0 8px rgba(0, 210, 255, 0.45)); }
 }
 
 .landing-feature-card:hover .airline-epaulet {
