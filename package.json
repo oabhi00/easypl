@@ -1,0 +1,22 @@
+{
+  "name": "easypl",
+  "version": "1.0.0",
+  "description": "EasyPL - Aviation Mock Exam Practice Platform",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "aviation",
+    "mock-exams",
+    "dgca",
+    "pilot"
+  ],
+  "author": "EasyPL Team",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

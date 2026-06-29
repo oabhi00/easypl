@@ -128,6 +128,10 @@ body {
   min-height: 100vh;
   position: relative;
   transition: background-color var(--transition-normal), color var(--transition-normal);
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 /* HUD Navigation Chart / Radar Grid Background (Dot Matrix) - Disabled for clean sky theme */
@@ -1021,7 +1025,8 @@ body.light-mode .landing-bg-attitude {
 
 /* Custom themed gradient spotlight and borders on hover for subjects */
 .landing-feature-card:nth-child(1):hover {
-  background: radial-gradient(80% 80% circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 0, 127, 0.05) 0%, var(--glass) 80%);
+  background-color: var(--bg-secondary);
+  background-image: radial-gradient(80% 80% circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 0, 127, 0.1) 0%, transparent 100%);
   border-color: rgba(255, 0, 127, 0.35);
   box-shadow: 0 12px 30px rgba(255, 0, 127, 0.15);
 }
@@ -1030,7 +1035,8 @@ body.light-mode .landing-bg-attitude {
 }
 
 .landing-feature-card:nth-child(2):hover {
-  background: radial-gradient(80% 80% circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(0, 210, 255, 0.05) 0%, var(--glass) 80%);
+  background-color: var(--bg-secondary);
+  background-image: radial-gradient(80% 80% circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(0, 210, 255, 0.1) 0%, transparent 100%);
   border-color: rgba(0, 210, 255, 0.35);
   box-shadow: 0 12px 30px rgba(0, 210, 255, 0.15);
 }
@@ -1039,7 +1045,8 @@ body.light-mode .landing-bg-attitude {
 }
 
 .landing-feature-card:nth-child(3):hover {
-  background: radial-gradient(80% 80% circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 159, 28, 0.05) 0%, var(--glass) 80%);
+  background-color: var(--bg-secondary);
+  background-image: radial-gradient(80% 80% circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 159, 28, 0.1) 0%, transparent 100%);
   border-color: rgba(255, 159, 28, 0.35);
   box-shadow: 0 12px 30px rgba(255, 159, 28, 0.15);
 }
@@ -1048,7 +1055,8 @@ body.light-mode .landing-bg-attitude {
 }
 
 .landing-feature-card:nth-child(4):hover {
-  background: radial-gradient(80% 80% circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(5, 243, 173, 0.05) 0%, var(--glass) 80%);
+  background-color: var(--bg-secondary);
+  background-image: radial-gradient(80% 80% circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(5, 243, 173, 0.1) 0%, transparent 100%);
   border-color: rgba(5, 243, 173, 0.35);
   box-shadow: 0 12px 30px rgba(5, 243, 173, 0.15);
 }
@@ -1057,7 +1065,8 @@ body.light-mode .landing-bg-attitude {
 }
 
 .landing-feature-card:nth-child(5):hover {
-  background: radial-gradient(80% 80% circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(0, 245, 212, 0.05) 0%, var(--glass) 80%);
+  background-color: var(--bg-secondary);
+  background-image: radial-gradient(80% 80% circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(0, 245, 212, 0.1) 0%, transparent 100%);
   border-color: rgba(0, 245, 212, 0.35);
   box-shadow: 0 12px 30px rgba(0, 245, 212, 0.15);
 }
@@ -1066,7 +1075,8 @@ body.light-mode .landing-bg-attitude {
 }
 
 .landing-feature-card:nth-child(6):hover {
-  background: radial-gradient(80% 80% circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 170, 0, 0.05) 0%, var(--glass) 80%);
+  background-color: var(--bg-secondary);
+  background-image: radial-gradient(80% 80% circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 170, 0, 0.1) 0%, transparent 100%);
   border-color: rgba(255, 170, 0, 0.35);
   box-shadow: 0 12px 30px rgba(255, 170, 0, 0.15);
 }
@@ -1075,7 +1085,8 @@ body.light-mode .landing-bg-attitude {
 }
 
 .landing-feature-card:nth-child(7):hover {
-  background: radial-gradient(80% 80% circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 215, 0, 0.05) 0%, var(--glass) 80%);
+  background-color: var(--bg-secondary);
+  background-image: radial-gradient(80% 80% circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 215, 0, 0.1) 0%, transparent 100%);
   border-color: rgba(255, 215, 0, 0.35);
   box-shadow: 0 12px 30px rgba(255, 215, 0, 0.15);
 }
@@ -1084,7 +1095,8 @@ body.light-mode .landing-bg-attitude {
 }
 
 .landing-feature-card:nth-child(8):hover {
-  background: radial-gradient(80% 80% circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(5, 243, 173, 0.05) 0%, var(--glass) 80%);
+  background-color: var(--bg-secondary);
+  background-image: radial-gradient(80% 80% circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(5, 243, 173, 0.1) 0%, transparent 100%);
   border-color: rgba(5, 243, 173, 0.35);
   box-shadow: 0 12px 30px rgba(5, 243, 173, 0.15);
 }
@@ -1369,5 +1381,166 @@ body.light-mode .landing-bg-attitude {
   color: var(--accent-light);
   border-bottom-color: var(--accent-light);
   text-shadow: 0 0 8px var(--accent-glow);
+}
+
+/* ==========================================================================
+   Poster Parallax Background System
+   ========================================================================== */
+
+.poster-parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2; /* Set to 2 to render above day sky background gradient */
+  overflow: hidden;
+  display: none;
+}
+
+body.landing-view .poster-parallax-bg {
+  display: block;
+}
+
+/* Base styles for individual layers */
+.parallax-element {
+  position: absolute;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.parallax-element img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Clouds Drift Keyframes & Animations (Drifting all the way across the screen) */
+@keyframes cloudDriftL {
+  0% { transform: translateX(-35vw); }
+  100% { transform: translateX(105vw); }
+}
+
+@keyframes cloudDriftR {
+  0% { transform: translateX(35vw); }
+  100% { transform: translateX(-105vw); }
+}
+
+@keyframes cloudDriftCenter {
+  0% { transform: translateX(-25vw); }
+  100% { transform: translateX(105vw); }
+}
+
+.cloud-left .cloud-drift {
+  animation: cloudDriftL 28s linear infinite;
+}
+
+.cloud-right .cloud-drift {
+  animation: cloudDriftR 38s linear infinite;
+}
+
+.cloud-center .cloud-drift {
+  animation: cloudDriftCenter 48s linear infinite;
+}
+
+/* Clouds Positioning & Scroll Transformations */
+.cloud-left {
+  left: 0;
+  top: 6%;
+  width: 32vw;
+  opacity: 0.25;
+  transform: translateY(calc(var(--scroll-y, 0) * 0.05px));
+}
+
+.cloud-right {
+  right: 0;
+  top: 18%;
+  width: 35vw;
+  opacity: 0.3;
+  transform: translateY(calc(var(--scroll-y, 0) * 0.08px));
+}
+
+.cloud-center {
+  left: 0;
+  top: 36%;
+  width: 22vw;
+  opacity: 0.2;
+  transform: translateY(calc(var(--scroll-y, 0) * 0.04px));
+}
+
+/* Jets Positioning: Start offscreen and fly in on scroll */
+.jet-right {
+  left: 0;
+  bottom: 0;
+  width: 58vw; /* Made bigger */
+  opacity: 0.85;
+  z-index: 3;
+  /* Starts shifted 58vw off-screen left and 45vh off-screen down, flies up-right on scroll (flipped horizontally to fly forward) */
+  transform: translate(calc(var(--scroll-y, 0) * 0.95px - 58vw), calc(var(--scroll-y, 0) * -0.7px + 45vh)) scaleX(-1);
+}
+
+/* Side Ornaments / Pilot Wings */
+.wing-left {
+  left: 2%;
+  top: 48%;
+  width: 12vw;
+  opacity: 0.7;
+  transform: translateY(calc(var(--scroll-y, 0) * 0.03px));
+}
+
+.wing-right {
+  right: 2%;
+  top: 48%;
+  width: 12vw;
+  opacity: 0.7;
+  transform: translateY(calc(var(--scroll-y, 0) * 0.03px));
+}
+
+/* Header sweeps & top decorations */
+.header-sweep {
+  left: 50%;
+  top: 0;
+  width: 25vw;
+  opacity: 0.75;
+  transform: translate(-50%, calc(var(--scroll-y, 0) * -0.12px));
+}
+
+/* Smooth opacity adjustments for light mode (Day settings) */
+body.light-mode .parallax-element {
+  filter: brightness(1.05) contrast(0.95);
+}
+
+body.light-mode .cloud-left,
+body.light-mode .cloud-right,
+body.light-mode .cloud-center {
+  opacity: 0.8; /* Made more opaque for day sky */
+}
+
+body.light-mode .jet-right {
+  filter: saturate(1.1) brightness(0.95); /* Keep vector colors clear and crisp in day setting */
+}
+
+/* Fix header positioning relative to viewport */
+body.landing-view .landing-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}/* High-contrast Login Button styling to prevent blending with the moon */
+#landingLoginBtn {
+  color: #000000 !important;
+  border-color: rgba(0, 0, 0, 0.35) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+#landingLoginBtn:hover {
+  background: #ffffff !important;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8) !important;
+  transform: translateY(-1px);
 }
 

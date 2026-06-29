@@ -313,7 +313,7 @@ const statIcons = {
 
 export const ui = {
   // 0. Render Cockpit Landing/Splash Screen
-  renderLanding(container, onEngage) {
+  renderLanding(container, onStart, onLogin) {
     const metSVG = getSubjectGraphic('Meteorology');
     const navSVG = getSubjectGraphic('Navigation');
     const techSVG = getSubjectGraphic('Technical');
@@ -332,12 +332,12 @@ export const ui = {
             <span class="logo-text">EasyPL</span>
           </div>
           <div class="landing-nav-actions">
-            <button class="btn btn-outline" id="landingLoginBtn" style="padding: 0.5rem 1.2rem; font-size: 0.8rem;">Get started</button>
+            <button class="btn btn-outline" id="landingLoginBtn" style="padding: 0.5rem 1.2rem; font-size: 0.8rem;">Login</button>
           </div>
         </header>
 
         <!-- Hero Section (Centered with Attitude BG) -->
-        <section class="landing-hero-centered">
+        <section class="landing-hero-centered landing-section-snap">
           <!-- Hero Text & CTAs -->
           <div class="hero-content">
             <h1 class="hero-title text-gradient">Clear Your DGCA & Airline Exams</h1>
@@ -358,7 +358,7 @@ export const ui = {
       </section>
 
       <!-- Subjects Grid Showcase -->
-      <div>
+      <section class="subjects-section landing-section-snap">
         <div class="landing-section-title">Exam Subjects</div>
         <div class="landing-features-grid">
           <div class="card landing-feature-card">
@@ -409,16 +409,16 @@ export const ui = {
             <p>Perfect transmission procedures, phraseology, emergency communication, and frequency management skills.</p>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Pre-Flight Checklist Steps -->
-      <div class="landing-steps-section">
+      <section class="landing-steps-section landing-section-snap">
         <div class="landing-section-title">How It Works</div>
         <div class="landing-steps-grid">
           <div class="landing-step-card">
             <div class="landing-step-num">STEP 01 //</div>
             <h4>Create Account</h4>
-            <p>Set up your pilot profile, choose your custom crew avatar, and get ready to study.</p>
+            <p>Enter your details, make an account, and start practicing in no time.</p>
           </div>
           
           <div class="landing-step-card">
@@ -439,7 +439,7 @@ export const ui = {
             <p>Review wrong answers and monitor your average score and study time stats.</p>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- System Stats Telemetry Footer -->
       <div class="landing-footer">
@@ -452,8 +452,8 @@ export const ui = {
   `;
 
   // Hook clicks
-  document.getElementById('engageCockpitBtn').addEventListener('click', onEngage);
-  document.getElementById('landingLoginBtn').addEventListener('click', onEngage);
+  document.getElementById('engageCockpitBtn').addEventListener('click', onStart);
+  document.getElementById('landingLoginBtn').addEventListener('click', onLogin);
   
   document.getElementById('exploreSystemsBtn').addEventListener('click', () => {
     const target = document.querySelector('.landing-section-title');
@@ -477,12 +477,43 @@ export const ui = {
 
   // 1. Render Authentication Screen (Pre-Flight BRIEFING Terminal)
   renderAuth(container, isLogin, onToggle, onSubmit, onBackToSplash) {
+    let infoTitle = "Clear Your DGCA Exams with Ease";
+    let infoDesc = "Study smart and clear your DGCA CPL papers. EasyPL provides high-quality mock tests, performance logs, and real exam conditions for Indian CPL candidates.";
+
+    if (isLogin) {
+      const welcomeMessages = [
+        {
+          title: "Welcome Back, Captain!",
+          desc: "Your runway to success is clear. Log in to continue your pre-flight preparation and log those study hours!"
+        },
+        {
+          title: "Clear Skies Ahead",
+          desc: "Consistency is key to mastering the airspace. Log in now, review your logs, and clear your next DGCA paper."
+        },
+        {
+          title: "Ready for Departure?",
+          desc: "The cockpit is prepped and the engines are starting. Let's practice some mock questions and sharpen those pilot skills!"
+        },
+        {
+          title: "Aim High, Study Smart",
+          desc: "Every successful flight begins with a thorough briefing. Log in to study Meteorology, Regulations, and Air Navigation today."
+        },
+        {
+          title: "Log Your Progress",
+          desc: "A great pilot never stops learning. Let's get back to the books and push that quiz accuracy closer to 100%!"
+        }
+      ];
+      const randomMsg = welcomeMessages[Math.floor(Math.random() * welcomeMessages.length)];
+      infoTitle = randomMsg.title;
+      infoDesc = randomMsg.desc;
+    }
+
     container.innerHTML = `
       <div class="auth-split-layout">
         <div class="auth-info-pane">
-          <h1 class="auth-info-title animate-fade-in-left">Clear Your DGCA Exams with Ease</h1>
+          <h1 class="auth-info-title animate-fade-in-left">${infoTitle}</h1>
           <p class="auth-info-desc animate-fade-in-left">
-            Study smart and clear your DGCA CPL papers. EasyPL provides high-quality mock tests, performance logs, and real exam conditions for Indian CPL candidates.
+            ${infoDesc}
           </p>
         </div>
         

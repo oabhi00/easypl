@@ -51,6 +51,22 @@ class App {
     const toggleBtn = document.getElementById('theme-toggle');
     if (!toggleBtn) return;
 
+    // Check system preference if no manual setting exists
+    const savedTheme = localStorage.getItem('easypl_theme');
+    if (!savedTheme) {
+      const mediaQuery = window.matchMedia('(prefers-color-scheme: light)');
+      const handleThemeChange = (e) => {
+        if (!localStorage.getItem('easypl_theme')) {
+          if (e.matches) {
+            document.body.classList.add('light-mode');
+          } else {
+            document.body.classList.remove('light-mode');
+          }
+        }
+      };
+      mediaQuery.addEventListener('change', handleThemeChange);
+    }
+
     toggleBtn.addEventListener('click', () => {
       const isLight = document.body.classList.contains('light-mode');
       if (isLight) {
@@ -132,6 +148,13 @@ class App {
         }
       }
     });
+
+    // Track vertical scroll position for parallax backgrounds
+    window.addEventListener('scroll', () => {
+      if (document.body.classList.contains('landing-view')) {
+        document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}`);
+      }
+    }, { passive: true });
   }
 
   // Router / Navigation Controller
@@ -184,9 +207,14 @@ class App {
   renderLandingView() {
     ui.renderLanding(
       this.container,
-      // Engage callback
+      // Start callback (leads to Register)
       () => {
         this.isLoginView = false;
+        this.navigate('auth');
+      },
+      // Login callback (leads to Login)
+      () => {
+        this.isLoginView = true;
         this.navigate('auth');
       }
     );
