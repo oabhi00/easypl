@@ -328,6 +328,13 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
+body.light-mode .text-gradient {
+  background: linear-gradient(135deg, #0f172a 0%, #0369a1 60%, #1d4ed8 100%);
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
 .text-gradient-amber {
   background: linear-gradient(135deg, var(--text-highlight) 0%, var(--hud-amber) 100%);
   -webkit-background-clip: text;
@@ -705,12 +712,9 @@ body:not(.light-mode) .nav-light {
 .landing-logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: -0.02em;
+  position: relative;
+  height: 60px; /* Restrict container height to keep header aligned */
+  width: 360px; /* Give visual horizontal breathing room */
 }
 
 .logo-text {
@@ -723,6 +727,76 @@ body:not(.light-mode) .nav-light {
   font-size: 1.4rem;
 }
 
+.logo-img {
+  height: 360px;
+  width: auto;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.logo-img-auth {
+  height: 275px; /* 5x size increase */
+  width: auto;
+  margin: -50px auto -60px auto; /* Negative margins to crop out empty SVG canvas padding */
+  display: block;
+}
+
+.logo-img-splash {
+  height: 768px; /* Extra huge splash logo (1.6x larger) */
+  width: auto;
+  margin: -150px auto -150px auto; /* Scaled negative margins to crop out canvas padding */
+  display: block;
+  animation: logoPulse 2.5s infinite ease-in-out;
+}
+
+@keyframes logoPulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.1));
+  }
+  50% {
+    transform: scale(1.06);
+    filter: drop-shadow(0 0 35px var(--accent-glow));
+  }
+}
+
+/* In dark mode, invert logo colors so dark paths turn bright and stand out against the night sky */
+body:not(.light-mode) .logo-img,
+body:not(.light-mode) .logo-img-auth,
+body:not(.light-mode) .logo-img-splash,
+body:not(.light-mode) .floating-logo {
+  filter: invert(1) brightness(1.2);
+}
+
+/* Floating Logo (Bottom Right) */
+.floating-logo-container {
+  position: fixed;
+  bottom: -40px; /* Shifted down to counter canvas margin/padding */
+  right: 10px;
+  z-index: 999;
+  pointer-events: none; /* Let clicks pass through */
+  opacity: 0;
+  transform: translateY(20px) scale(0.9);
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.floating-logo-container.visible {
+  opacity: 0.8;
+  transform: translateY(0) scale(1);
+}
+
+.floating-logo {
+  height: 180px; /* 3x the previous size */
+  width: auto;
+  display: block;
+}
+
+
+
+
 /* Centered Hero Section Layout */
 .landing-hero-centered {
   position: relative;
@@ -731,7 +805,7 @@ body:not(.light-mode) .nav-light {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 4rem 1rem 3.5rem; /* Pushes the hero text up and reduces spacing */
+  padding: 9rem 1rem 3.5rem; /* Moved up a notch (was 12rem) */
   overflow: visible;
   width: 100%;
 }
@@ -770,16 +844,18 @@ body:not(.light-mode) .nav-light {
   margin-bottom: 1.8rem;
   text-transform: uppercase;
   letter-spacing: -0.03em;
-  background: linear-gradient(135deg, #ffffff 10%, #00d2ff 50%, #8b5cf6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), #ffffff 10%, #00d2ff 50%, #8b5cf6 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
   text-shadow: 0 0 45px rgba(0, 210, 255, 0.15);
 }
 
 body.light-mode .hero-title {
-  background: linear-gradient(135deg, #0f172a 10%, #0284c7 60%, #6d28d9 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), #0f172a 10%, #0284c7 60%, #6d28d9 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
   text-shadow: none;
 }
 
@@ -1235,6 +1311,32 @@ body.light-mode .landing-bg-attitude {
   filter: drop-shadow(0 0 6px var(--accent));
 }
 
+/* Custom subject graphics (Navigation and Technical General) styling inside landing feature cards */
+.landing-feature-icon img.subject-graphic-svg {
+  display: block !important;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(1.5); /* Scale up to crop wide blank margins */
+  transform-origin: center;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.landing-feature-card:hover .subject-graphic-svg {
+  transition: none !important; /* Disable transitions to prevent keyframe conflict */
+  animation: landingGraphicSpin 6s infinite linear !important;
+}
+
+@keyframes landingGraphicSpin {
+  0% { transform: scale(1.65) rotate(0deg); }
+  100% { transform: scale(1.65) rotate(360deg); }
+}
+
+/* Dark mode contrast enhancement for landing page custom graphics */
+body:not(.light-mode) .landing-feature-icon img.subject-graphic-svg {
+  filter: invert(1) brightness(1.5) drop-shadow(0 0 10px var(--accent-glow)) !important;
+}
+
 /* Turbofan spin animation */
 .tech-turbofan {
   transform-origin: 50px 50px;
@@ -1455,7 +1557,6 @@ body.view-dashboard .jet-right {
   top: 6%;
   width: 32vw;
   opacity: 0.25;
-  transform: translateY(calc(var(--scroll-y, 0) * 0.05px));
 }
 
 .cloud-right {
@@ -1463,7 +1564,6 @@ body.view-dashboard .jet-right {
   top: 18%;
   width: 35vw;
   opacity: 0.3;
-  transform: translateY(calc(var(--scroll-y, 0) * 0.08px));
 }
 
 .cloud-center {
@@ -1471,7 +1571,6 @@ body.view-dashboard .jet-right {
   top: 36%;
   width: 22vw;
   opacity: 0.2;
-  transform: translateY(calc(var(--scroll-y, 0) * 0.04px));
 }
 
 /* Jets Positioning: Start offscreen and fly in on scroll */
@@ -1481,8 +1580,8 @@ body.view-dashboard .jet-right {
   width: 58vw; /* Made bigger */
   opacity: 0.85;
   z-index: 3;
-  /* Starts shifted 58vw off-screen left and 45vh off-screen down, flies up-right on scroll (flipped horizontally to fly forward) */
-  transform: translate(calc(var(--scroll-y, 0) * 0.95px - 58vw), calc(var(--scroll-y, 0) * -0.7px + 45vh)) scaleX(-1);
+  /* Starts shifted 58vw off-screen left and 58vh off-screen down (moved down), flies up-right on scroll */
+  transform: translate(calc(var(--scroll-y, 0) * 0.95px - 58vw), calc(var(--scroll-y, 0) * -0.7px + 58vh));
 }
 
 /* Side Ornaments / Pilot Wings */

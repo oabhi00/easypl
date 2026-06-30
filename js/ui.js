@@ -47,43 +47,14 @@ const getSubjectGraphic = (category) => {
       </svg>
     `;
   } else if (normCat.includes('NAVIGATION') || normCat.includes('NAV')) {
-    // Air Navigation Compass Rose
+    // Custom Navigation SVG icon used for Air Navigation
     return `
-      <svg viewBox="0 0 100 100" class="nav-compass-rose" style="width: 100%; height: 100%;">
-        <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity="0.3"/>
-        <circle cx="50" cy="50" r="41" fill="none" stroke="var(--accent)" stroke-dasharray="1, 3" stroke-width="1" opacity="0.4"/>
-        <line x1="50" y1="5" x2="50" y2="10" stroke="var(--accent)" stroke-width="2" />
-        <line x1="50" y1="90" x2="50" y2="95" stroke="var(--accent)" stroke-width="1.5" />
-        <line x1="5" y1="50" x2="10" y2="50" stroke="var(--accent)" stroke-width="1.5" />
-        <line x1="90" y1="50" x2="95" y2="50" stroke="var(--accent)" stroke-width="1.5" />
-        <text x="50" y="16" fill="var(--accent-light)" font-size="9" font-family="var(--font-mono)" text-anchor="middle" font-weight="bold">N</text>
-        <text x="50" y="89" fill="var(--accent-light)" font-size="8" font-family="var(--font-mono)" text-anchor="middle">S</text>
-        <text x="17" y="53" fill="var(--accent-light)" font-size="8" font-family="var(--font-mono)" text-anchor="middle">W</text>
-        <text x="83" y="53" fill="var(--accent-light)" font-size="8" font-family="var(--font-mono)" text-anchor="middle">E</text>
-        <path d="M50,28 L53,42 L66,46 L53,50 L53,64 L59,68 L50,66 L41,68 L47,64 L47,50 L34,46 L47,42 Z" fill="var(--accent)" opacity="0.85" />
-        <line x1="50" y1="28" x2="50" y2="18" stroke="var(--accent)" stroke-width="1" stroke-dasharray="2,2" />
-      </svg>
+      <img src="images/navigation.svg" class="subject-graphic-svg" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 0 8px var(--accent-glow));" />
     `;
   } else if (normCat.includes('TECHNICAL') || normCat.includes('TECH')) {
-    // Technical jet turbine icon
+    // Custom Technical SVG icon used for Technical General
     return `
-      <svg viewBox="0 0 100 100" style="width: 100%; height: 100%;">
-        <circle cx="50" cy="50" r="45" fill="none" stroke="var(--hud-amber)" stroke-width="2" opacity="0.3"/>
-        <circle cx="50" cy="50" r="41" fill="none" stroke="var(--hud-amber)" stroke-width="0.75" stroke-dasharray="2, 2" opacity="0.25"/>
-        <g class="tech-turbofan">
-          <circle cx="50" cy="50" r="12" fill="none" stroke="var(--hud-amber)" stroke-width="1.5" />
-          <path d="M50,38 C52,24 43,14 43,14 C43,14 56,24 50,38 Z" fill="var(--hud-amber)" opacity="0.7"/>
-          <path d="M50,62 C48,76 57,86 57,86 C57,86 44,76 50,62 Z" fill="var(--hud-amber)" opacity="0.7"/>
-          <path d="M38,50 C24,48 14,57 14,57 C14,57 24,44 38,50 Z" fill="var(--hud-amber)" opacity="0.7"/>
-          <path d="M62,50 C76,52 86,43 86,43 C86,43 76,57 62,50 Z" fill="var(--hud-amber)" opacity="0.7"/>
-          <path d="M41,41 C30,30 22,38 22,38 C22,38 35,35 41,41 Z" fill="var(--hud-amber)" opacity="0.7"/>
-          <path d="M59,59 C70,70 78,62 78,62 C78,62 65,65 59,59 Z" fill="var(--hud-amber)" opacity="0.7"/>
-          <path d="M41,59 C30,70 38,78 38,78 C38,78 35,65 41,59 Z" fill="var(--hud-amber)" opacity="0.7"/>
-          <path d="M59,41 C70,30 62,22 62,22 C62,22 65,35 59,41 Z" fill="var(--hud-amber)" opacity="0.7"/>
-          <circle cx="50" cy="50" r="6" fill="var(--bg-secondary)"/>
-          <path d="M50,47 C52,47 53,49 50,53 C48,51 48,47 50,47 Z" fill="var(--hud-amber)"/>
-        </g>
-      </svg>
+      <img src="images/technical.svg" class="subject-graphic-svg" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 0 8px var(--accent-glow));" />
     `;
   } else if (normCat.includes('REGULATION') || normCat.includes('REG')) {
     // Air Regulations Scales of Justice (Law)
@@ -328,8 +299,7 @@ export const ui = {
         <!-- Top Navigation Bar -->
         <header class="landing-header">
           <div class="landing-logo">
-            <span class="logo-icon">✈️</span>
-            <span class="logo-text">EasyPL</span>
+            <img src="images/easypl_logo.svg" alt="EasyPL Logo" class="logo-img">
           </div>
           <div class="landing-nav-actions">
             <button class="btn btn-outline" id="landingLoginBtn" style="padding: 0.5rem 1.2rem; font-size: 0.8rem;">Login</button>
@@ -525,7 +495,7 @@ export const ui = {
               </div>
             ` : ''}
             <div class="auth-header">
-              <h1 class="text-gradient">EasyPL</h1>
+              <img src="images/easypl_logo.svg" alt="EasyPL Logo" class="logo-img-auth">
               <p>${isLogin ? 'LOG IN TO YOUR ACCOUNT' : 'CREATE YOUR PILOT PROFILE'}</p>
             </div>
             

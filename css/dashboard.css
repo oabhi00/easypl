@@ -187,6 +187,32 @@
   justify-content: center;
   width: 100px;
   height: 100px;
+  overflow: visible; /* Prevent scaled vector from clipping */
+}
+
+.subject-graphic img.subject-graphic-svg {
+  display: block !important; /* Forces block format to enable transforms */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(1.5); /* Scale up to crop blank coordinate canvas margin */
+  transform-origin: center;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.subject-card:hover .subject-graphic-svg {
+  transition: none !important; /* Disables transitions to avoid keyframe animation conflicts */
+  animation: customGraphicSpin 6s infinite linear !important;
+}
+
+@keyframes customGraphicSpin {
+  0% { transform: scale(1.65) rotate(0deg); }
+  100% { transform: scale(1.65) rotate(360deg); }
+}
+
+/* Invert black vectors to white/cyan in dark mode to prevent blending with the dark sky */
+body:not(.light-mode) .subject-graphic img.subject-graphic-svg {
+  filter: invert(1) brightness(1.5) drop-shadow(0 0 10px var(--accent-glow)) !important;
 }
 
 /* Animations for Subject Graphic on Hover */
@@ -259,7 +285,7 @@
   height: 10px;
   background: var(--bg-tertiary);
   border-radius: 5px;
-  overflow: hidden;
+  overflow: visible; /* Allow aircraft overflow */
   margin-bottom: 0.4rem;
   border: 1px solid var(--border);
   position: relative;
@@ -286,19 +312,28 @@
   width: 0%;
   transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
+  overflow: visible !important; /* Allow the aircraft to overflow */
 }
 
-/* Runway touchdown zone bars on progress completion */
+/* Custom aircraft progress indicator at the tip of the progress bar */
 .progress-bar-fill::after {
   content: '';
   position: absolute;
-  top: 0;
-  right: 2px;
-  bottom: 0;
-  width: 4px;
-  background: #fff;
-  opacity: 0.8;
-  box-shadow: 0 0 8px #fff;
+  top: 50%;
+  right: -16px; /* Centered on the tip edge (half of width) */
+  width: 32px;
+  height: 32px;
+  background-image: url('../images/aircraft_progress.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  z-index: 10;
+  pointer-events: none;
+  filter: invert(1) brightness(2) drop-shadow(0 0 4px var(--accent)); /* Bright white/cyan plane in dark mode */
+}
+
+body.light-mode .progress-bar-fill::after {
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5)); /* Solid contrast plane in light mode */
 }
 
 .progress-text {
@@ -317,10 +352,42 @@
 .chapter-list-header {
   display: flex;
   align-items: center;
+  justify-content: center; /* Centered content */
+  text-align: center;
+  position: relative;
+  min-height: 60px;
   gap: 1.5rem;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
   border-bottom: 1px dashed var(--border);
+}
+
+.chapter-list-header button {
+  position: absolute;
+  left: 0;
+}
+
+.chapter-list-header h2 {
+  font-size: 2.5rem !important; /* Significantly enlarged title */
+  margin: 0;
+}
+
+.chapter-list-header span {
+  font-size: 1rem !important; /* Enlarged subtext */
+  letter-spacing: 0.1em;
+}
+
+/* Light mode high-contrast overrides */
+body.light-mode .chapter-list-header h2.text-gradient {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: #0f172a !important;
+  color: #0f172a !important;
+}
+
+body.light-mode .chapter-list-header span {
+  color: #1e3a8a !important; /* Rich deep blue contrast subtext */
 }
 
 .chapter-grid {

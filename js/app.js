@@ -23,6 +23,16 @@ class App {
     this.activeSubjectId = null;
     this.activeChapter = null;
     this.activeQuizPlayer = null;
+    
+    // Parallax animation state variables
+    this.virtualScrollY = 0;
+    this.animatedScrollY = 0;
+
+    // Interactive title cursor gradient state
+    this.targetMouseX = 50;
+    this.targetMouseY = 50;
+    this.currentMouseX = 50;
+    this.currentMouseY = 50;
   }
 
   // Initialize the application
@@ -36,14 +46,16 @@ class App {
     // Initialize global parallax for landing/auth backgrounds
     this.initParallax();
 
-    // Check existing session
-    this.currentUser = auth.getCurrentUser();
-    
-    if (this.currentUser) {
-      this.navigate('dashboard');
-    } else {
-      this.navigate('landing');
-    }
+    // Check existing session after a 5 second splash load delay
+    setTimeout(() => {
+      this.currentUser = auth.getCurrentUser();
+      
+      if (this.currentUser) {
+        this.navigate('dashboard');
+      } else {
+        this.navigate('landing');
+      }
+    }, 5000);
   }
 
   // Bind click listener for theme toggle
@@ -149,18 +161,56 @@ class App {
       }
     });
 
-    // Track vertical scroll position for parallax backgrounds
-    window.addEventListener('scroll', () => {
-      if (document.body.classList.contains('landing-view') || document.body.classList.contains('view-dashboard')) {
-        document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}`);
+    // Maintain a virtual scroll tracker for stationary views (like auth page)
+    this.virtualScrollY = 0;
+
+    window.addEventListener('wheel', (e) => {
+      if (document.body.classList.contains('view-auth')) {
+        // Only allow scrolling DOWN (plane flies UP/FORWARD, e.deltaY > 0)
+        if (e.deltaY > 0) {
+          this.virtualScrollY += e.deltaY * 0.45;
+          this.updateFloatingLogo();
+        }
       }
     }, { passive: true });
+
+    let touchStartY = 0;
+    window.addEventListener('touchstart', (e) => {
+      if (document.body.classList.contains('view-auth')) {
+        touchStartY = e.touches[0].clientY;
+      }
+    }, { passive: true });
+
+    window.addEventListener('touchmove', (e) => {
+      if (document.body.classList.contains('view-auth')) {
+        const touchY = e.touches[0].clientY;
+        const deltaY = touchStartY - touchY;
+        touchStartY = touchY;
+        // Only allow scrolling DOWN (plane flies UP/FORWARD, deltaY > 0)
+        if (deltaY > 0) {
+          this.virtualScrollY += deltaY * 1.2;
+          this.updateFloatingLogo();
+        }
+      }
+    }, { passive: true });
+
+    window.addEventListener('scroll', () => {
+      this.updateFloatingLogo();
+    }, { passive: true });
+
+    // Start the requestAnimationFrame animation frame loop
+    this.initParallaxLoop();
   }
 
   // Router / Navigation Controller
   navigate(view) {
     this.currentView = view;
     this.container.innerHTML = ''; // Clear container
+
+    // Reset scroll values on transition
+    this.virtualScrollY = 0;
+    this.animatedScrollY = 0;
+    document.documentElement.style.setProperty('--scroll-y', '0');
 
     // Add landing-view class if viewing landing page or auth page
     document.body.classList.remove('view-landing', 'view-auth', 'view-dashboard', 'view-books', 'view-chapters', 'view-quiz', 'view-results');
@@ -201,6 +251,23 @@ class App {
     
     // Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    // Update floating logo visibility
+    this.updateFloatingLogo();
+  }
+
+  // Toggle floating logo visibility based on view context and scroll offset
+  updateFloatingLogo() {
+    const floatingLogo = document.querySelector('.floating-logo-container');
+    if (floatingLogo) {
+      const isLanding = document.body.classList.contains('view-landing');
+      const scrollY = window.scrollY;
+      if (!isLanding || scrollY > 150) {
+        floatingLogo.classList.add('visible');
+      } else {
+        floatingLogo.classList.remove('visible');
+      }
+    }
   }
 
   // Render the cockpit landing/splash view
@@ -218,6 +285,17 @@ class App {
         this.navigate('auth');
       }
     );
+
+    // Wire up interactive cursor-following title gradient
+    const title = this.container.querySelector('.hero-title');
+    if (title) {
+      title.addEventListener('mousemove', (e) => {
+        const rect = title.getBoundingClientRect();
+        this.targetMouseX = ((e.clientX - rect.left) / rect.width) * 100;
+        this.targetMouseY = ((e.clientY - rect.top) / rect.height) * 100;
+      });
+      // Removed mouseleave listener entirely so the gradient coordinates persist!
+    }
   }
 
   // Render registration or login view
@@ -578,6 +656,48 @@ class App {
     } catch (err) {
       console.error("Error launching random question challenge:", err);
     }
+  }
+
+  // Animation frame loop for physics-based smooth (lerped) scroll parallax
+  initParallaxLoop() {
+    const tick = () => {
+      const isLanding = document.body.classList.contains('view-landing');
+      const isAuth = document.body.classList.contains('view-auth');
+      const isDashboard = document.body.classList.contains('view-dashboard');
+
+      if (isAuth) {
+        // Smooth transition toward virtual scroll target
+        this.animatedScrollY += (this.virtualScrollY - this.animatedScrollY) * 0.08;
+        if (Math.abs(this.virtualScrollY - this.animatedScrollY) < 0.1) {
+          this.animatedScrollY = this.virtualScrollY;
+        }
+        // Continuous loop every 1200px
+        const loopScrollY = this.animatedScrollY % 1200;
+        document.documentElement.style.setProperty('--scroll-y', `${loopScrollY}`);
+      } else if (isLanding || isDashboard) {
+        // Smooth transition toward actual scroll offset
+        const targetScroll = window.scrollY;
+        this.animatedScrollY += (targetScroll - this.animatedScrollY) * 0.12;
+        if (Math.abs(targetScroll - this.animatedScrollY) < 0.1) {
+          this.animatedScrollY = targetScroll;
+        }
+        document.documentElement.style.setProperty('--scroll-y', `${this.animatedScrollY}`);
+
+        // Gradually ease cursor spotlight coordinates
+        if (isLanding) {
+          this.currentMouseX += (this.targetMouseX - this.currentMouseX) * 0.07;
+          this.currentMouseY += (this.targetMouseY - this.currentMouseY) * 0.07;
+          const title = document.querySelector('.hero-title');
+          if (title) {
+            title.style.setProperty('--mouse-x', `${this.currentMouseX}%`);
+            title.style.setProperty('--mouse-y', `${this.currentMouseY}%`);
+          }
+        }
+      }
+
+      requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
   }
 }
 

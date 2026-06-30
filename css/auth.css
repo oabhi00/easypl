@@ -27,7 +27,7 @@
 }
 
 .auth-wrapper {
-  max-width: 450px;
+  max-width: 420px;
   width: 100%;
   margin: 0 0 0 auto;
   border: 1px solid rgba(0, 210, 255, 0.25);
@@ -36,7 +36,7 @@
   backdrop-filter: blur(24px) saturate(180%);
   -webkit-backdrop-filter: blur(24px) saturate(180%);
   border-radius: 16px;
-  padding: 2.5rem;
+  padding: 1.25rem;
   animation: authGlitchIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   opacity: 0;
 }
@@ -223,8 +223,8 @@ body.light-mode .auth-info-title {
 
 .auth-header {
   text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
 }
 
 .auth-header h1 {
@@ -240,7 +240,7 @@ body.light-mode .auth-info-title {
 }
 
 .form-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .form-label {
@@ -256,7 +256,7 @@ body.light-mode .auth-info-title {
 
 .form-input {
   width: 100%;
-  padding: 0.8rem 1rem;
+  padding: 0.6rem 0.8rem;
   background: rgba(0, 210, 255, 0.02);
   border: 1px solid rgba(0, 210, 255, 0.15);
   border-radius: 8px;
@@ -315,7 +315,7 @@ body.light-mode .auth-info-title {
 
 .auth-toggle {
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 0.75rem;
   font-size: 0.85rem;
   color: var(--text-secondary);
   font-family: var(--font-mono);
@@ -351,3 +351,28 @@ body.light-mode .auth-info-title {
   opacity: 1;
   color: var(--wrong);
 }
+
+/* Force stationary screen layout (No scrolling on Login/Register screen) */
+body.view-auth {
+  height: 100vh !important;
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+body.view-auth #app {
+  height: 100vh !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+body.view-auth .auth-split-layout {
+  min-height: auto !important;
+  height: auto !important;
+  max-height: 90vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  align-items: center !important;
+}
+
