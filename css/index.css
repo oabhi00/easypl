@@ -1399,8 +1399,13 @@ body.light-mode .landing-bg-attitude {
   display: none;
 }
 
-body.landing-view .poster-parallax-bg {
+body.landing-view .poster-parallax-bg,
+body.view-dashboard .poster-parallax-bg {
   display: block;
+}
+
+body.view-dashboard .jet-right {
+  display: none;
 }
 
 /* Base styles for individual layers */

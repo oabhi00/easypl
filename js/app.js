@@ -151,7 +151,7 @@ class App {
 
     // Track vertical scroll position for parallax backgrounds
     window.addEventListener('scroll', () => {
-      if (document.body.classList.contains('landing-view')) {
+      if (document.body.classList.contains('landing-view') || document.body.classList.contains('view-dashboard')) {
         document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}`);
       }
     }, { passive: true });
@@ -163,10 +163,10 @@ class App {
     this.container.innerHTML = ''; // Clear container
 
     // Add landing-view class if viewing landing page or auth page
-    document.body.classList.remove('view-landing', 'view-auth');
+    document.body.classList.remove('view-landing', 'view-auth', 'view-dashboard', 'view-books', 'view-chapters', 'view-quiz', 'view-results');
+    document.body.classList.add(`view-${view}`);
     if (view === 'landing' || view === 'auth') {
       document.body.classList.add('landing-view');
-      document.body.classList.add(`view-${view}`);
     } else {
       document.body.classList.remove('landing-view');
     }
