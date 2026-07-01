@@ -284,7 +284,7 @@ const statIcons = {
 
 export const ui = {
   // 0. Render Cockpit Landing/Splash Screen
-  renderLanding(container, onStart, onLogin, onToolsClick) {
+  renderLanding(container, onStart, onLogin, onToolsClick, onCX3Click) {
     const metSVG = getSubjectGraphic('Meteorology');
     const navSVG = getSubjectGraphic('Navigation');
     const techSVG = getSubjectGraphic('Technical');
@@ -536,7 +536,14 @@ export const ui = {
     const toolCards = container.querySelectorAll('.tool-card');
     toolCards.forEach(card => {
       card.addEventListener('click', () => {
-        onToolsClick();
+        const toolId = card.dataset.tool || '';
+        if (toolId === 'cx3') {
+          const popupLeft = screen.width - 410;
+          window.open('cx3.html', 'CX3_Calculator', `width=380,height=750,left=${popupLeft},top=50,status=no,menubar=no,toolbar=no,location=no,scrollbars=yes,resizable=yes`);
+          if (onCX3Click) onCX3Click();
+        } else {
+          onToolsClick();
+        }
       });
     });
   }
@@ -1072,7 +1079,7 @@ export const ui = {
   },
 
   // 2b. Render Dedicated Aviation Tools Dashboard View
-  renderToolsDashboard(container, user, onSubjectClick, onLogout, onProfile, onDashboardClick) {
+  renderToolsDashboard(container, user, onSubjectClick, onLogout, onProfile, onDashboardClick, onCX3Click) {
     const avatarUrl = this.getAvatarUrl(user.avatar);
 
     container.innerHTML = `
@@ -1290,13 +1297,147 @@ export const ui = {
     const toolDashboardCards = container.querySelectorAll('.tool-dashboard-card');
     toolDashboardCards.forEach(card => {
       card.addEventListener('click', () => {
+        const toolId = card.dataset.tool || '';
         const toolName = card.querySelector('h3').textContent;
-        this.showAlertModal(
-          toolName,
-          `${toolName} tool will be fully integrated as an interactive utility in a later flight training phase.`
-        );
+        if (toolId === 'cx3') {
+          const popupLeft = screen.width - 410;
+          window.open('cx3.html', 'CX3_Calculator', `width=380,height=750,left=${popupLeft},top=50,status=no,menubar=no,toolbar=no,location=no,scrollbars=yes,resizable=yes`);
+          if (onCX3Click) onCX3Click();
+        } else {
+          this.showAlertModal(
+            toolName,
+            `${toolName} tool will be fully integrated as an interactive utility in a later flight training phase.`
+          );
+        }
       });
     });
+  },
+
+  // 2b-2. Render Dedicated CX-3 Info View
+  renderCX3Info(container, user, onBack) {
+    container.innerHTML = `
+      <div class="dashboard-header animate-fade-in">
+        <div style="display: flex; align-items: center; gap: 1.25rem;">
+          <button class="btn btn-outline" id="cx3InfoBackBtn" style="padding: 0.5rem 1.25rem; display: flex; align-items: center; gap: 0.5rem; font-weight: 600;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Back
+          </button>
+        </div>
+      </div>
+
+      <div class="cx3-info-content animate-fade-in" style="max-width: 640px; margin: 2rem 0 2rem 3rem; padding: 0 1rem; color: var(--text-primary);">
+        <header style="margin-bottom: 2.5rem; border-bottom: 1px solid var(--border); padding-bottom: 2rem;">
+          <h1 style="font-size: 2.5rem; font-weight: 800; font-family: var(--font-display); color: var(--text-highlight); margin-bottom: 0.75rem;">CX-3 Flight Computer</h1>
+          <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">
+            The CX-3 is the electronic version of the classic E6B flight computer. It replaces the manual whiz-wheel with a button-driven calculator that produces the same answers faster and with fewer user errors. It is the calculator most Indian and international flight schools recommend for new students learning navigation and flight planning.
+          </p>
+        </header>
+
+        <!-- What is the CX-3 -->
+        <div class="card" style="padding: 2rem; margin-bottom: 2rem; border-radius: 12px;">
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-highlight); display: flex; align-items: center; gap: 0.75rem;">
+            <span>🧮</span> What is the CX-3?
+          </h3>
+          <p style="line-height: 1.6; color: var(--text-secondary); margin: 0; font-size: 0.95rem;">
+            The CX-3 is an electronic flight computer manufactured and sold by Sporty's, one of the oldest pilot-supply companies in the world. It is the modern, button-driven successor to the analogue E6B that pilots have used for flight planning since the Second World War.
+          </p>
+        </div>
+
+        <!-- What can the CX-3 calculate -->
+        <div class="card" style="padding: 2rem; margin-bottom: 2rem; border-radius: 12px;">
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-highlight); display: flex; align-items: center; gap: 0.75rem;">
+            <span>⚡</span> What can the CX-3 calculate?
+          </h3>
+          <p style="line-height: 1.6; color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">
+            The CX-3 covers the full standard flight-planning syllabus in a single device. Each capability below is a separate mode on the calculator.
+          </p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.25rem;">
+            <div style="background: var(--bg-secondary); border: 1px solid var(--border); padding: 1.25rem; border-radius: 8px;">
+              <h4 style="margin: 0 0 0.5rem 0; color: var(--text-highlight); font-weight: 600; font-size: 1rem;">Time, Speed, Distance</h4>
+              <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.45;">Solve any TSD leg in either direction—find time-en-route from groundspeed and distance, or work backwards from the time you have available.</p>
+            </div>
+            <div style="background: var(--bg-secondary); border: 1px solid var(--border); padding: 1.25rem; border-radius: 8px;">
+              <h4 style="margin: 0 0 0.5rem 0; color: var(--text-highlight); font-weight: 600; font-size: 1rem;">Fuel planning</h4>
+              <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.45;">Compute fuel burn, endurance, and range from fuel flow. Useful for route planning and working through DGCA navigation problems on paper.</p>
+            </div>
+            <div style="background: var(--bg-secondary); border: 1px solid var(--border); padding: 1.25rem; border-radius: 8px;">
+              <h4 style="margin: 0 0 0.5rem 0; color: var(--text-highlight); font-weight: 600; font-size: 1rem;">Wind triangle</h4>
+              <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.45;">Resolve heading, ground speed, wind correction angle, or the true wind itself when you only know the other components.</p>
+            </div>
+            <div style="background: var(--bg-secondary); border: 1px solid var(--border); padding: 1.25rem; border-radius: 8px;">
+              <h4 style="margin: 0 0 0.5rem 0; color: var(--text-highlight); font-weight: 600; font-size: 1rem;">Density altitude & TAS</h4>
+              <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.45;">Calculate density altitude from pressure altitude and OAT, and turn calibrated airspeed into true airspeed for cruise performance work.</p>
+            </div>
+            <div style="background: var(--bg-secondary); border: 1px solid var(--border); padding: 1.25rem; border-radius: 8px;">
+              <h4 style="margin: 0 0 0.5rem 0; color: var(--text-highlight); font-weight: 600; font-size: 1rem;">Mach & ISA deviation</h4>
+              <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.45;">Useful for ATPL-level questions—convert between Mach number and TAS, and check ISA deviation against a temperature lapse rate.</p>
+            </div>
+            <div style="background: var(--bg-secondary); border: 1px solid var(--border); padding: 1.25rem; border-radius: 8px;">
+              <h4 style="margin: 0 0 0.5rem 0; color: var(--text-highlight); font-weight: 600; font-size: 1rem;">Weight & balance</h4>
+              <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.45;">Run a centre-of-gravity calculation given station moments and weights. Same answers you would get from an aircraft loading sheet.</p>
+            </div>
+            <div style="background: var(--bg-secondary); border: 1px solid var(--border); padding: 1.25rem; border-radius: 8px;">
+              <h4 style="margin: 0 0 0.5rem 0; color: var(--text-highlight); font-weight: 600; font-size: 1rem;">Unit conversions</h4>
+              <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.45;">Distance, weight, volume, pressure, temperature—every conversion the syllabus expects, without juggling separate formulas or tables.</p>
+            </div>
+            <div style="background: var(--bg-secondary); border: 1px solid var(--border); padding: 1.25rem; border-radius: 8px;">
+              <h4 style="margin: 0 0 0.5rem 0; color: var(--text-highlight); font-weight: 600; font-size: 1rem;">Cross-country planning</h4>
+              <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.45;">Stitch the individual modes together to build a full cross-country plan: leg distance, ETE, fuel, wind correction, and arrival time.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Who uses the CX-3 -->
+        <div class="card" style="padding: 2rem; margin-bottom: 2rem; border-radius: 12px;">
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1.25rem; color: var(--text-highlight); display: flex; align-items: center; gap: 0.75rem;">
+            <span>👨‍✈️</span> Who uses the CX-3?
+          </h3>
+          <div style="display: grid; grid-template-columns: 1fr; gap: 1rem;">
+            <div style="background: var(--bg-secondary); border: 1px solid var(--border); padding: 1rem 1.25rem; border-radius: 8px; font-size: 0.95rem; line-height: 1.5; color: var(--text-secondary);">
+              Student pilots learning navigation and flight planning for the first time, who need a faster way to check their manual whiz-wheel work.
+            </div>
+            <div style="background: var(--bg-secondary); border: 1px solid var(--border); padding: 1rem 1.25rem; border-radius: 8px; font-size: 0.95rem; line-height: 1.5; color: var(--text-secondary);">
+              CPL and ATPL trainees preparing for DGCA Navigation, Air Navigation, and Flight Planning papers where speed of calculation matters.
+            </div>
+            <div style="background: var(--bg-secondary); border: 1px solid var(--border); padding: 1rem 1.25rem; border-radius: 8px; font-size: 0.95rem; line-height: 1.5; color: var(--text-secondary);">
+              Instructors who want a shared online calculator they can demo on a screen during ground school.
+            </div>
+          </div>
+        </div>
+
+        <!-- Frequently Asked Questions -->
+        <div class="card" style="padding: 2rem; border-radius: 12px; margin-bottom: 4rem;">
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--text-highlight); display: flex; align-items: center; gap: 0.75rem;">
+            <span>❓</span> Frequently Asked Questions
+          </h3>
+          
+          <div style="margin-bottom: 1.5rem;">
+            <h4 style="margin: 0 0 0.5rem 0; color: var(--text-highlight); font-weight: 600; font-size: 1.05rem;">Is the online CX-3 the same as the physical handheld unit?</h4>
+            <p style="margin: 0; color: var(--text-secondary); line-height: 1.5; font-size: 0.92rem;">Yes—the calculator wrapper hosted on this site runs the official CX-3 web emulator hosted by Sporty's. The interface, buttons, modes, and answers are identical to the handheld unit.</p>
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <h4 style="margin: 0 0 0.5rem 0; color: var(--text-highlight); font-weight: 600; font-size: 1.05rem;">Can I use this calculator on a mobile phone?</h4>
+            <p style="margin: 0; color: var(--text-secondary); line-height: 1.5; font-size: 0.92rem;">Yes. When launched, the browser sizes the popup window perfectly for a standard mobile layout, so it stays responsive and easy to tap.</p>
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <h4 style="margin: 0 0 0.5rem 0; color: var(--text-highlight); font-weight: 600; font-size: 1.05rem;">Does it cost anything?</h4>
+            <p style="margin: 0; color: var(--text-secondary); line-height: 1.5; font-size: 0.92rem;">No. The E6B CX-3 integration is completely free to use directly in your browser on EasyPL.</p>
+          </div>
+
+          <div>
+            <h4 style="margin: 0 0 0.5rem 0; color: var(--text-highlight); font-weight: 600; font-size: 1.05rem;">Can I use the CX-3 in the DGCA exam?</h4>
+            <p style="margin: 0; color: var(--text-secondary); line-height: 1.5; font-size: 0.92rem;">DGCA Computer Based Exams currently allow the CX-3 (and equivalent electronic flight computers) for the navigation and flight planning papers. Always check the latest DGCA exam guidelines to confirm.</p>
+          </div>
+        </div>
+      </div>
+    `;
+
+    document.getElementById('cx3InfoBackBtn').addEventListener('click', onBack);
   },
 
   // 2c. Render Books selector list (sub-databases under a major subject)

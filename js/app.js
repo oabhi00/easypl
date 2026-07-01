@@ -240,6 +240,9 @@ class App {
       case 'tools':
         this.renderToolsView();
         break;
+      case 'cx3-info':
+        this.renderCX3InfoView();
+        break;
       case 'books':
         this.renderBooksView();
         break;
@@ -296,6 +299,10 @@ class App {
       // Tools click callback
       () => {
         this.navigate('tools');
+      },
+      // CX-3 click callback
+      () => {
+        this.navigate('cx3-info');
       }
     );
 
@@ -463,6 +470,25 @@ class App {
       // Dashboard click callback (leads back to main dashboard)
       () => {
         this.navigate('dashboard');
+      },
+      // CX-3 info navigation callback
+      () => {
+        this.navigate('cx3-info');
+      }
+    );
+  }
+
+  // Render the CX-3 information view
+  renderCX3InfoView() {
+    ui.renderCX3Info(
+      this.container,
+      this.currentUser || { username: 'Guest', avatar: 'avatar1' },
+      () => {
+        if (this.currentUser) {
+          this.navigate('tools');
+        } else {
+          this.navigate('landing');
+        }
       }
     );
   }
