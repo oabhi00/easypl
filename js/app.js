@@ -212,8 +212,14 @@ class App {
     this.animatedScrollY = 0;
     document.documentElement.style.setProperty('--scroll-y', '0');
 
+    // Clean up sidebar drawer elements from document.body on navigate
+    const activeDrawer = document.body.querySelector('#toolsDrawerBackdrop');
+    if (activeDrawer) {
+      activeDrawer.remove();
+    }
+
     // Add landing-view class if viewing landing page or auth page
-    document.body.classList.remove('view-landing', 'view-auth', 'view-dashboard', 'view-books', 'view-chapters', 'view-quiz', 'view-results');
+    document.body.classList.remove('view-landing', 'view-auth', 'view-dashboard', 'view-tools', 'view-books', 'view-chapters', 'view-quiz', 'view-results');
     document.body.classList.add(`view-${view}`);
     if (view === 'landing' || view === 'auth') {
       document.body.classList.add('landing-view');
@@ -230,6 +236,9 @@ class App {
         break;
       case 'dashboard':
         this.renderDashboardView();
+        break;
+      case 'tools':
+        this.renderToolsView();
         break;
       case 'books':
         this.renderBooksView();
@@ -283,6 +292,10 @@ class App {
       () => {
         this.isLoginView = true;
         this.navigate('auth');
+      },
+      // Tools click callback
+      () => {
+        this.navigate('tools');
       }
     );
 
@@ -395,6 +408,60 @@ class App {
       // Clear attempts callback
       () => {
         progress.clearAttempts(this.currentUser.username);
+        this.navigate('dashboard');
+      },
+      // Tools navigation callback
+      () => {
+        this.navigate('tools');
+      }
+    );
+  }
+
+  // Render the tools dashboard view
+  renderToolsView() {
+    if (!this.currentUser) {
+      this.navigate('auth');
+      return;
+    }
+
+    ui.renderToolsDashboard(
+      this.container,
+      this.currentUser,
+      // Subject category clicked callback
+      (categoryName) => {
+        this.activeCategory = categoryName;
+        this.navigate('books');
+      },
+      // Logout callback
+      () => {
+        auth.logout();
+        this.currentUser = null;
+        this.isLoginView = false;
+        this.navigate('landing');
+      },
+      // Profile click callback
+      () => {
+        const allUsers = auth.getAllUsers();
+        const userFullDetails = allUsers[this.currentUser.username.toLowerCase()] || this.currentUser;
+        
+        ui.showProfileEditModal(
+          userFullDetails,
+          // onSave
+          (updatedDetails) => {
+            try {
+              auth.updateProfile(this.currentUser.username, updatedDetails);
+              this.currentUser = auth.getCurrentUser();
+              this.navigate('tools');
+            } catch (err) {
+              ui.showAlertModal('Profile Update Error', err.message);
+            }
+          },
+          // onCancel
+          () => {}
+        );
+      },
+      // Dashboard click callback (leads back to main dashboard)
+      () => {
         this.navigate('dashboard');
       }
     );

@@ -167,19 +167,7 @@ a {
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-::-webkit-scrollbar-track {
-  background: var(--bg-primary);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--bg-tertiary);
-  border-radius: 3px;
-  border: 1px solid var(--border);
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--accent);
+  display: none;
 }
 
 /* Main Layout Shell */
@@ -1502,7 +1490,8 @@ body:not(.light-mode) .landing-feature-icon img.subject-graphic-svg {
 }
 
 body.landing-view .poster-parallax-bg,
-body.view-dashboard .poster-parallax-bg {
+body.view-dashboard .poster-parallax-bg,
+body.view-tools .poster-parallax-bg {
   display: block;
 }
 

@@ -284,7 +284,7 @@ const statIcons = {
 
 export const ui = {
   // 0. Render Cockpit Landing/Splash Screen
-  renderLanding(container, onStart, onLogin) {
+  renderLanding(container, onStart, onLogin, onToolsClick) {
     const metSVG = getSubjectGraphic('Meteorology');
     const navSVG = getSubjectGraphic('Navigation');
     const techSVG = getSubjectGraphic('Technical');
@@ -381,6 +381,112 @@ export const ui = {
         </div>
       </section>
 
+      <!-- Tools Section -->
+      <section class="tools-section landing-section-snap">
+        <div class="landing-section-title">Aviation Tools</div>
+        <div class="landing-features-grid">
+          <div class="card card-interactive landing-feature-card tool-card" data-tool="metar">
+            <div class="landing-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                <path d="M17.5 19A3.5 3.5 0 0 0 13 15.7V8.3a3 3 0 1 0-2 0v7.4A3.5 3.5 0 1 0 6.5 19Z" />
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+              </svg>
+            </div>
+            <h3>METAR Decoder</h3>
+            <p>Decode real-time weather reports, including winds, visibility, clouds, temperature, and altimeter settings.</p>
+          </div>
+          
+          <div class="card card-interactive landing-feature-card tool-card" data-tool="taf">
+            <div class="landing-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+            </div>
+            <h3>TAF Decoder</h3>
+            <p>Translate Terminal Aerodrome Forecasts to understand future weather transitions and planning requirements.</p>
+          </div>
+
+          <div class="card card-interactive landing-feature-card tool-card" data-tool="cx3">
+            <div class="landing-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
+                <line x1="8" y1="6" x2="16" y2="6" />
+                <circle cx="8" cy="11" r="1" />
+                <circle cx="12" cy="11" r="1" />
+                <circle cx="16" cy="11" r="1" />
+                <circle cx="8" cy="15" r="1" />
+                <circle cx="12" cy="15" r="1" />
+                <circle cx="16" cy="15" r="1" />
+                <circle cx="8" cy="19" r="1" />
+                <circle cx="12" cy="19" r="1" />
+                <circle cx="16" cy="19" r="1" />
+              </svg>
+            </div>
+            <h3>CX-3 Calculator</h3>
+            <p>Perform essential flight computer calculations like wind correction angle, true airspeed, and fuel burn rate.</p>
+          </div>
+
+          <div class="card card-interactive landing-feature-card tool-card" data-tool="density-alt">
+            <div class="landing-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                <path d="M4 14.5L12 3l8 11.5H4z" />
+                <path d="M2 20h20M6 17h12" />
+              </svg>
+            </div>
+            <h3>Density Altitude</h3>
+            <p>Calculate aircraft performance altitude based on pressure altitude, temperature, and humidity settings.</p>
+          </div>
+
+          <div class="card card-interactive landing-feature-card tool-card" data-tool="crosswind">
+            <div class="landing-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                <line x1="12" y1="2" x2="12" y2="22" stroke-dasharray="3,3" />
+                <line x1="6" y1="5" x2="18" y2="5" />
+                <line x1="6" y1="19" x2="18" y2="19" />
+                <path d="M3 12h18M18 9l3 3-3 3" />
+              </svg>
+            </div>
+            <h3>Crosswind Calculator</h3>
+            <p>Resolve headwind and crosswind components quickly for any given runway heading and wind velocity vector.</p>
+          </div>
+
+          <div class="card card-interactive landing-feature-card tool-card" data-tool="ground-speed">
+            <div class="landing-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                <path d="M12 2a10 10 0 0 1 10 10c0 2.2-.7 4.2-1.9 5.9L12 12V3.1" />
+                <path d="M12 2A10 10 0 1 0 2 12c0 2.2.7 4.2 1.9 5.9L12 12" />
+                <polyline points="12 12 16.5 8.5" />
+              </svg>
+            </div>
+            <h3>Ground Speed</h3>
+            <p>Compute ground speed using True Airspeed (TAS), wind direction, wind velocity, and aircraft heading.</p>
+          </div>
+
+          <div class="card card-interactive landing-feature-card tool-card" data-tool="duration">
+            <div class="landing-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                <path d="M5 2h14M5 22h14M19 2v6c0 2.2-1.8 4-4 4h-6c-2.2 0-4-1.8-4-4V2M19 22v-6c0-2.2-1.8-4-4-4h-6c-2.2 0-4-1.8-4 4v6" />
+              </svg>
+            </div>
+            <h3>Flight Duration</h3>
+            <p>Determine estimated time en route (ETE) or endurance based on distance, speed, and fuel consumption rate.</p>
+          </div>
+
+          <div class="card card-interactive landing-feature-card tool-card" data-tool="holding">
+            <div class="landing-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                <rect x="2" y="6" width="20" height="12" rx="6" />
+                <path d="M12 6v12M15 9l3 3-3 3" />
+              </svg>
+            </div>
+            <h3>Holding Pattern</h3>
+            <p>Visualize holding pattern entries (Direct, Parallel, or Teardrop) based on aircraft heading and holding radial.</p>
+          </div>
+        </div>
+      </section>
+
       <!-- Pre-Flight Checklist Steps -->
       <section class="landing-steps-section landing-section-snap">
         <div class="landing-section-title">How It Works</div>
@@ -424,6 +530,16 @@ export const ui = {
   // Hook clicks
   document.getElementById('engageCockpitBtn').addEventListener('click', onStart);
   document.getElementById('landingLoginBtn').addEventListener('click', onLogin);
+
+  // Hook tool cards click
+  if (onToolsClick) {
+    const toolCards = container.querySelectorAll('.tool-card');
+    toolCards.forEach(card => {
+      card.addEventListener('click', () => {
+        onToolsClick();
+      });
+    });
+  }
   
   document.getElementById('exploreSystemsBtn').addEventListener('click', () => {
     const target = document.querySelector('.landing-section-title');
@@ -580,7 +696,7 @@ export const ui = {
   },
 
   // 2. Render Study Dashboard View (Flight Command Console)
-  renderDashboard(container, user, stats, subjects, onSubjectClick, onLogout, onReattempt, onProfile, onClearAttempts) {
+  renderDashboard(container, user, stats, subjects, onSubjectClick, onLogout, onReattempt, onProfile, onClearAttempts, onToolsClick) {
     const avatarUrl = this.getAvatarUrl(user.avatar);
     
     // Format total time: e.g. "12m 30s" or "1h 5m"
@@ -659,16 +775,147 @@ export const ui = {
 
     container.innerHTML = `
       <div class="dashboard-header animate-fade-in">
-        <div class="profile-card">
-          <img class="profile-avatar" src="${avatarUrl}" alt="User Avatar">
-          <div class="profile-info">
-            <h3>Welcome, ${user.fullName || user.username}</h3>
-            <p>STUDENT PILOT</p>
+        <div style="display: flex; align-items: center; gap: 1.25rem;">
+          <!-- High-Tech Cockpit Hamburger Menu Button -->
+          <button class="hamburger-menu-btn" id="dashboardMenuBtn" aria-label="Open Instrument Panel Menu">
+            <div class="hamburger-lines">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <div class="profile-card">
+            <img class="profile-avatar" src="${avatarUrl}" alt="User Avatar">
+            <div class="profile-info">
+              <h3>Welcome, ${user.fullName || user.username}</h3>
+              <p>STUDENT PILOT</p>
+            </div>
           </div>
         </div>
         <div class="header-actions" style="display: flex; gap: 0.75rem;">
-          <button class="btn btn-outline" id="profileBtn">Profile</button>
           <button class="btn btn-outline" id="logoutBtn">Log Out</button>
+        </div>
+      </div>
+
+      <!-- Navigation Sidebar Drawer Backdrop -->
+      <div class="tools-drawer-backdrop" id="toolsDrawerBackdrop">
+        <div class="tools-drawer">
+          <!-- Top Row: Logo Only -->
+          <div class="drawer-header-row" style="justify-content: center; margin-bottom: 1rem;">
+            <div class="drawer-brand" style="padding-left: 0;">
+              <img src="images/easypl_logo.svg" alt="EasyPL Logo" class="brand-logo-img" style="width: 230px; height: auto; display: block;" />
+            </div>
+          </div>
+
+          <div class="drawer-content">
+            <div class="drawer-nav-list" style="margin-top: 0.5rem;">
+              <!-- Active Dashboard Link -->
+              <div class="drawer-nav-item active-nav">
+                <svg class="nav-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                <span>Dashboard</span>
+              </div>
+
+              <!-- Tools Link -->
+              <div class="drawer-nav-item clickable" id="drawerToolsLink">
+                <svg class="nav-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+                <span>Aviation Tools</span>
+              </div>
+
+              <!-- Profile Link -->
+              <div class="drawer-nav-item clickable" id="drawerProfileLink">
+                <svg class="nav-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <span>Profile Settings</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Centered Tools Popup Modal Backdrop -->
+      <div class="tools-modal-backdrop" id="toolsModalBackdrop">
+        <div class="tools-modal-card">
+          <div class="tools-modal-header">
+            <h2>Aviation Instruments & Tools</h2>
+            <button id="closeToolsModalBtn" aria-label="Close Instruments">&times;</button>
+          </div>
+          <div class="tools-modal-body">
+            <div class="tools-modal-grid">
+              <!-- METAR Decoder -->
+              <div class="drawer-tool-card card card-interactive" data-tool="metar">
+                <span class="tool-emoji">🌩️</span>
+                <div>
+                  <h4>METAR Decoder</h4>
+                  <p>Decode weather reports</p>
+                </div>
+              </div>
+              <!-- TAF Decoder -->
+              <div class="drawer-tool-card card card-interactive" data-tool="taf">
+                <span class="tool-emoji">🌐</span>
+                <div>
+                  <h4>TAF Decoder</h4>
+                  <p>Translate aerodrome forecasts</p>
+                </div>
+              </div>
+              <!-- CX-3 Calculator -->
+              <div class="drawer-tool-card card card-interactive" data-tool="cx3">
+                <span class="tool-emoji">🧮</span>
+                <div>
+                  <h4>CX-3 Calculator</h4>
+                  <p>Perform flight computer math</p>
+                </div>
+              </div>
+              <!-- Density Altitude -->
+              <div class="drawer-tool-card card card-interactive" data-tool="density-alt">
+                <span class="tool-emoji">🏔️</span>
+                <div>
+                  <h4>Density Altitude</h4>
+                  <p>Resolve aircraft performance alt</p>
+                </div>
+              </div>
+              <!-- Crosswind Calculator -->
+              <div class="drawer-tool-card card card-interactive" data-tool="crosswind">
+                <span class="tool-emoji">💨</span>
+                <div>
+                  <h4>Crosswind Calculator</h4>
+                  <p>Compute wind velocity vectors</p>
+                </div>
+              </div>
+              <!-- Ground Speed -->
+              <div class="drawer-tool-card card card-interactive" data-tool="ground-speed">
+                <span class="tool-emoji">⏱️</span>
+                <div>
+                  <h4>Ground Speed</h4>
+                  <p>Calculate speed with wind offsets</p>
+                </div>
+              </div>
+              <!-- Flight Duration -->
+              <div class="drawer-tool-card card card-interactive" data-tool="duration">
+                <span class="tool-emoji">⏳</span>
+                <div>
+                  <h4>Flight Duration</h4>
+                  <p>Determine enroute endurance time</p>
+                </div>
+              </div>
+              <!-- Holding Pattern -->
+              <div class="drawer-tool-card card card-interactive" data-tool="holding">
+                <span class="tool-emoji">🔄</span>
+                <div>
+                  <h4>Holding Pattern</h4>
+                  <p>Visualize hold entries and radials</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -725,9 +972,77 @@ export const ui = {
       </div>
     `;
 
+    console.log("ui.js renderDashboard starting...");
+    // Clean up any old sidebar drawer backdrop from document.body to avoid duplicates
+    const oldBackdrop = document.querySelector('body > #toolsDrawerBackdrop');
+    console.log("oldBackdrop found on body:", oldBackdrop);
+    if (oldBackdrop) {
+      oldBackdrop.remove();
+      console.log("oldBackdrop removed.");
+    }
+    
+    // Find the new backdrop in the container and move it to document.body
+    const drawerBackdrop = container.querySelector('#toolsDrawerBackdrop');
+    console.log("drawerBackdrop query inside container:", drawerBackdrop);
+    if (drawerBackdrop) {
+      document.body.appendChild(drawerBackdrop);
+      console.log("drawerBackdrop appended to document.body");
+    }
+
     // Hook listeners
     document.getElementById('logoutBtn').addEventListener('click', onLogout);
-    document.getElementById('profileBtn').addEventListener('click', onProfile);
+
+    // Tools Drawer Toggle mechanics
+    const menuBtn = document.getElementById('dashboardMenuBtn');
+
+    if (menuBtn) {
+      // Toggle Drawer
+      menuBtn.addEventListener('click', (e) => {
+        console.log("Hamburger menu clicked!");
+        const backdrop = document.getElementById('toolsDrawerBackdrop');
+        console.log("Backdrop found:", backdrop);
+        if (backdrop) {
+          backdrop.classList.add('active');
+          console.log("Active class added to backdrop.");
+        }
+      });
+
+      const closeDrawer = () => {
+        console.log("Closing drawer...");
+        const backdrop = document.getElementById('toolsDrawerBackdrop');
+        if (backdrop) backdrop.classList.remove('active');
+      };
+
+      // Handle backdrop clicking to close
+      document.addEventListener('click', (e) => {
+        const backdrop = document.getElementById('toolsDrawerBackdrop');
+        if (backdrop && e.target === backdrop) {
+          closeDrawer();
+        }
+      });
+
+      // Redirect drawer "Tools" click to separate Tools Dashboard
+      const drawerToolsLink = document.getElementById('drawerToolsLink');
+      if (drawerToolsLink && onToolsClick) {
+        drawerToolsLink.addEventListener('click', () => {
+          closeDrawer();
+          setTimeout(() => {
+            onToolsClick();
+          }, 300); // Let drawer slide shut first
+        });
+      }
+
+      // Redirect drawer "Profile Settings" click
+      const drawerProfileLink = document.getElementById('drawerProfileLink');
+      if (drawerProfileLink && onProfile) {
+        drawerProfileLink.addEventListener('click', () => {
+          closeDrawer();
+          setTimeout(() => {
+            onProfile();
+          }, 300); // Let drawer slide shut first
+        });
+      }
+    }
     
     const clearBtn = document.getElementById('clearAttemptsBtn');
     if (clearBtn) {
@@ -756,7 +1071,235 @@ export const ui = {
     });
   },
 
-  // 2b. Render Books selector list (sub-databases under a major subject)
+  // 2b. Render Dedicated Aviation Tools Dashboard View
+  renderToolsDashboard(container, user, onSubjectClick, onLogout, onProfile, onDashboardClick) {
+    const avatarUrl = this.getAvatarUrl(user.avatar);
+
+    container.innerHTML = `
+      <div class="dashboard-header animate-fade-in">
+        <div style="display: flex; align-items: center; gap: 1.25rem;">
+          <!-- High-Tech Cockpit Hamburger Menu Button -->
+          <button class="hamburger-menu-btn" id="dashboardMenuBtn" aria-label="Open Instrument Panel Menu">
+            <div class="hamburger-lines">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <div class="profile-card">
+            <img class="profile-avatar" src="${avatarUrl}" alt="User Avatar">
+            <div class="profile-info">
+              <h3>Welcome, ${user.fullName || user.username}</h3>
+              <p>STUDENT PILOT</p>
+            </div>
+          </div>
+        </div>
+        <div class="header-actions" style="display: flex; gap: 0.75rem;">
+          <button class="btn btn-outline" id="logoutBtn">Log Out</button>
+        </div>
+      </div>
+
+      <!-- Navigation Sidebar Drawer Backdrop -->
+      <div class="tools-drawer-backdrop" id="toolsDrawerBackdrop">
+        <div class="tools-drawer">
+          <!-- Top Row: Logo Only -->
+          <div class="drawer-header-row" style="justify-content: center; margin-bottom: 1rem;">
+            <div class="drawer-brand" style="padding-left: 0;">
+              <img src="images/easypl_logo.svg" alt="EasyPL Logo" class="brand-logo-img" style="width: 230px; height: auto; display: block;" />
+            </div>
+          </div>
+
+          <div class="drawer-content">
+            <div class="drawer-nav-list" style="margin-top: 0.5rem;">
+              <!-- Clickable Dashboard Link -->
+              <div class="drawer-nav-item clickable" id="drawerDashboardLink">
+                <svg class="nav-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                <span>Dashboard</span>
+              </div>
+
+              <!-- Tools Link (Active in this view) -->
+              <div class="drawer-nav-item active-nav" id="drawerToolsLink">
+                <svg class="nav-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+                <span>Aviation Tools</span>
+              </div>
+
+              <!-- Profile Link -->
+              <div class="drawer-nav-item clickable" id="drawerProfileLink">
+                <svg class="nav-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <span>Profile Settings</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aviation Tools Grid Content Area -->
+      <h2 class="section-title animate-fade-in">Aviation Instruments & Tools</h2>
+      <div class="tools-grid animate-fade-in" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+        
+        <!-- METAR Decoder -->
+        <div class="card card-interactive tool-dashboard-card animate-fade-in" data-tool="metar" style="display: flex; flex-direction: column; gap: 0.75rem; padding: 1.5rem;">
+          <div style="font-size: 2.2rem;">🌩️</div>
+          <h3 style="margin: 0; font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--text-highlight);">METAR Decoder</h3>
+          <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Decode real-time METAR weather reports, winds, pressure, temp and clouds.</p>
+        </div>
+
+        <!-- TAF Decoder -->
+        <div class="card card-interactive tool-dashboard-card animate-fade-in" data-tool="taf" style="display: flex; flex-direction: column; gap: 0.75rem; padding: 1.5rem;">
+          <div style="font-size: 2.2rem;">🌐</div>
+          <h3 style="margin: 0; font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--text-highlight);">TAF Decoder</h3>
+          <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Translate Aerodrome Forecast reports to plan route weather trends.</p>
+        </div>
+
+        <!-- CX-3 Calculator -->
+        <div class="card card-interactive tool-dashboard-card animate-fade-in" data-tool="cx3" style="display: flex; flex-direction: column; gap: 0.75rem; padding: 1.5rem;">
+          <div style="font-size: 2.2rem;">🧮</div>
+          <h3 style="margin: 0; font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--text-highlight);">CX-3 Calculator</h3>
+          <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Solve heading wind corrections, airspeed calculations, and fuel burn metrics.</p>
+        </div>
+
+        <!-- Density Altitude -->
+        <div class="card card-interactive tool-dashboard-card animate-fade-in" data-tool="density-alt" style="display: flex; flex-direction: column; gap: 0.75rem; padding: 1.5rem;">
+          <div style="font-size: 2.2rem;">🏔️</div>
+          <h3 style="margin: 0; font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--text-highlight);">Density Altitude</h3>
+          <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Perform temperature and humidity offsets to determine density alt performance.</p>
+        </div>
+
+        <!-- Crosswind Calculator -->
+        <div class="card card-interactive tool-dashboard-card animate-fade-in" data-tool="crosswind" style="display: flex; flex-direction: column; gap: 0.75rem; padding: 1.5rem;">
+          <div style="font-size: 2.2rem;">💨</div>
+          <h3 style="margin: 0; font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--text-highlight);">Crosswind Calculator</h3>
+          <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Calculate headwind and crosswind components relative to runway heading.</p>
+        </div>
+
+        <!-- Ground Speed -->
+        <div class="card card-interactive tool-dashboard-card animate-fade-in" data-tool="ground-speed" style="display: flex; flex-direction: column; gap: 0.75rem; padding: 1.5rem;">
+          <div style="font-size: 2.2rem;">⏱️</div>
+          <h3 style="margin: 0; font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--text-highlight);">Ground Speed</h3>
+          <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Compute true ground speed by adjusting true airspeed for wind drift.</p>
+        </div>
+
+        <!-- Flight Duration -->
+        <div class="card card-interactive tool-dashboard-card animate-fade-in" data-tool="duration" style="display: flex; flex-direction: column; gap: 0.75rem; padding: 1.5rem;">
+          <div style="font-size: 2.2rem;">⏳</div>
+          <h3 style="margin: 0; font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--text-highlight);">Flight Duration</h3>
+          <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Resolve estimated time enroute (ETE) and fuel endurance calculations.</p>
+        </div>
+
+        <!-- Holding Pattern -->
+        <div class="card card-interactive tool-dashboard-card animate-fade-in" data-tool="holding" style="display: flex; flex-direction: column; gap: 0.75rem; padding: 1.5rem;">
+          <div style="font-size: 2.2rem;">🔄</div>
+          <h3 style="margin: 0; font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--text-highlight);">Holding Pattern</h3>
+          <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">Visualize hold entries (direct, teardrop, parallel) and timing parameters.</p>
+        </div>
+
+      </div>
+
+      <!-- Footer -->
+      <div class="landing-footer">
+        <span>EasyPL Ventures — Keep Learning. Fly Safe.</span>
+        <div style="margin-top: 0.5rem; font-size: 0.7rem;">
+          Built with ❤️ by <a href="https://www.hughjass.in" target="_blank">HughJass Foundation</a>.
+        </div>
+      </div>
+    `;
+
+    console.log("ui.js renderToolsDashboard starting...");
+    // Clean up any old sidebar drawer backdrop from document.body to avoid duplicates
+    const oldBackdrop = document.querySelector('body > #toolsDrawerBackdrop');
+    console.log("oldBackdrop found on Tools body:", oldBackdrop);
+    if (oldBackdrop) {
+      oldBackdrop.remove();
+      console.log("oldBackdrop removed on Tools view.");
+    }
+    
+    // Find the new backdrop in the container and move it to document.body
+    const drawerBackdrop = container.querySelector('#toolsDrawerBackdrop');
+    console.log("drawerBackdrop query inside Tools container:", drawerBackdrop);
+    if (drawerBackdrop) {
+      document.body.appendChild(drawerBackdrop);
+      console.log("drawerBackdrop appended to document.body on Tools view.");
+    }
+
+    // Hook listeners
+    document.getElementById('logoutBtn').addEventListener('click', onLogout);
+
+    // Tools Drawer Toggle mechanics
+    const menuBtn = document.getElementById('dashboardMenuBtn');
+
+    if (menuBtn) {
+      // Toggle Drawer
+      menuBtn.addEventListener('click', (e) => {
+        console.log("Tools Dashboard hamburger menu clicked!");
+        const backdrop = document.getElementById('toolsDrawerBackdrop');
+        console.log("Backdrop found:", backdrop);
+        if (backdrop) {
+          backdrop.classList.add('active');
+          console.log("Active class added to backdrop on Tools view.");
+        }
+      });
+
+      const closeDrawer = () => {
+        console.log("Closing Tools drawer...");
+        const backdrop = document.getElementById('toolsDrawerBackdrop');
+        if (backdrop) backdrop.classList.remove('active');
+      };
+
+      // Handle backdrop clicking to close
+      document.addEventListener('click', (e) => {
+        const backdrop = document.getElementById('toolsDrawerBackdrop');
+        if (backdrop && e.target === backdrop) {
+          closeDrawer();
+        }
+      });
+
+      // Redirect drawer "Dashboard" click back to Study Dashboard
+      const drawerDashboardLink = document.getElementById('drawerDashboardLink');
+      if (drawerDashboardLink && onDashboardClick) {
+        drawerDashboardLink.addEventListener('click', () => {
+          closeDrawer();
+          setTimeout(() => {
+            onDashboardClick();
+          }, 300); // Let drawer slide shut first
+        });
+      }
+
+      // Redirect drawer "Profile Settings" click
+      const drawerProfileLink = document.getElementById('drawerProfileLink');
+      if (drawerProfileLink && onProfile) {
+        drawerProfileLink.addEventListener('click', () => {
+          closeDrawer();
+          setTimeout(() => {
+            onProfile();
+          }, 300); // Let drawer slide shut first
+        });
+      }
+    }
+
+    // Bind alerts on clicking tools grid cards in Tools Dashboard
+    const toolDashboardCards = container.querySelectorAll('.tool-dashboard-card');
+    toolDashboardCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const toolName = card.querySelector('h3').textContent;
+        this.showAlertModal(
+          toolName,
+          `${toolName} tool will be fully integrated as an interactive utility in a later flight training phase.`
+        );
+      });
+    });
+  },
+
+  // 2c. Render Books selector list (sub-databases under a major subject)
   renderBooks(container, categoryName, subjectsConfig, user, onBookSelect, onBack) {
     const configCategory = categoryName === "Technical General" ? "Technical" : categoryName;
     const matchingSubjects = Object.values(subjectsConfig).filter(sub => sub.category === configCategory);
