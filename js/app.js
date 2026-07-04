@@ -243,6 +243,15 @@ class App {
       case 'cx3-info':
         this.renderCX3InfoView();
         break;
+      case 'metar':
+        this.renderMETARDecoderView();
+        break;
+      case 'taf':
+        this.renderTAFDecoderView();
+        break;
+      case 'holding':
+        this.renderHoldingPatternView();
+        break;
       case 'books':
         this.renderBooksView();
         break;
@@ -303,6 +312,18 @@ class App {
       // CX-3 click callback
       () => {
         this.navigate('cx3-info');
+      },
+      // METAR Decoder click callback
+      () => {
+        this.navigate('metar');
+      },
+      // TAF Decoder click callback
+      () => {
+        this.navigate('taf');
+      },
+      // Holding Pattern Click callback
+      () => {
+        this.navigate('holding');
       }
     );
 
@@ -474,6 +495,18 @@ class App {
       // CX-3 info navigation callback
       () => {
         this.navigate('cx3-info');
+      },
+      // METAR Decoder navigation callback
+      () => {
+        this.navigate('metar');
+      },
+      // TAF Decoder navigation callback
+      () => {
+        this.navigate('taf');
+      },
+      // Holding Pattern navigation callback
+      () => {
+        this.navigate('holding');
       }
     );
   }
@@ -481,6 +514,51 @@ class App {
   // Render the CX-3 information view
   renderCX3InfoView() {
     ui.renderCX3Info(
+      this.container,
+      this.currentUser || { username: 'Guest', avatar: 'avatar1' },
+      () => {
+        if (this.currentUser) {
+          this.navigate('tools');
+        } else {
+          this.navigate('landing');
+        }
+      }
+    );
+  }
+
+  // Render the METAR weather decoder view
+  renderMETARDecoderView() {
+    ui.renderMETARDecoder(
+      this.container,
+      this.currentUser || { username: 'Guest', avatar: 'avatar1' },
+      () => {
+        if (this.currentUser) {
+          this.navigate('tools');
+        } else {
+          this.navigate('landing');
+        }
+      }
+    );
+  }
+
+  // Render the TAF forecast decoder view
+  renderTAFDecoderView() {
+    ui.renderTAFDecoder(
+      this.container,
+      this.currentUser || { username: 'Guest', avatar: 'avatar1' },
+      () => {
+        if (this.currentUser) {
+          this.navigate('tools');
+        } else {
+          this.navigate('landing');
+        }
+      }
+    );
+  }
+
+  // Render the Holding Pattern calculator view
+  renderHoldingPatternView() {
+    ui.renderHoldingPatternCalculator(
       this.container,
       this.currentUser || { username: 'Guest', avatar: 'avatar1' },
       () => {

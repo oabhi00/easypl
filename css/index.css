@@ -738,16 +738,19 @@ body:not(.light-mode) .nav-light {
   margin: -150px auto -150px auto; /* Scaled negative margins to crop out canvas padding */
   display: block;
   animation: logoPulse 2.5s infinite ease-in-out;
+  filter: invert(1) brightness(1.2) drop-shadow(0 0 25px var(--accent-glow)); /* Default to dark mode (yellow logo with cyan/purple glow) */
+}
+
+body.light-mode .logo-img-splash {
+  filter: drop-shadow(0 0 20px rgba(2, 132, 199, 0.15)) !important; /* Day mode (blue logo with light blue glow) */
 }
 
 @keyframes logoPulse {
   0%, 100% {
     transform: scale(1);
-    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.1));
   }
   50% {
     transform: scale(1.06);
-    filter: drop-shadow(0 0 35px var(--accent-glow));
   }
 }
 
@@ -756,7 +759,7 @@ body:not(.light-mode) .logo-img,
 body:not(.light-mode) .logo-img-auth,
 body:not(.light-mode) .logo-img-splash,
 body:not(.light-mode) .floating-logo {
-  filter: invert(1) brightness(1.2);
+  filter: invert(1) brightness(1.2) drop-shadow(0 0 10px var(--accent-glow));
 }
 
 /* Floating Logo (Bottom Right) */

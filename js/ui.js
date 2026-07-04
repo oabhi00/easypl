@@ -4,6 +4,9 @@
  */
 
 import { progress } from './progress.js';
+import { parseMETAR } from './metarParser.js';
+import { parseTAF, decodeTAFGroup } from './tafParser.js';
+import { calculateHoldingPattern } from './holdingCalculator.js';
 
 // Premium Aviation SVG Graphic Generator
 const getSubjectGraphic = (category) => {
@@ -284,7 +287,7 @@ const statIcons = {
 
 export const ui = {
   // 0. Render Cockpit Landing/Splash Screen
-  renderLanding(container, onStart, onLogin, onToolsClick, onCX3Click) {
+  renderLanding(container, onStart, onLogin, onToolsClick, onCX3Click, onMETARClick, onTAFClick, onHoldingClick) {
     const metSVG = getSubjectGraphic('Meteorology');
     const navSVG = getSubjectGraphic('Navigation');
     const techSVG = getSubjectGraphic('Technical');
@@ -541,6 +544,12 @@ export const ui = {
           const popupLeft = screen.width - 410;
           window.open('cx3.html', 'CX3_Calculator', `width=380,height=750,left=${popupLeft},top=50,status=no,menubar=no,toolbar=no,location=no,scrollbars=yes,resizable=yes`);
           if (onCX3Click) onCX3Click();
+        } else if (toolId === 'metar') {
+          if (onMETARClick) onMETARClick();
+        } else if (toolId === 'taf') {
+          if (onTAFClick) onTAFClick();
+        } else if (toolId === 'holding') {
+          if (onHoldingClick) onHoldingClick();
         } else {
           onToolsClick();
         }
@@ -1079,7 +1088,7 @@ export const ui = {
   },
 
   // 2b. Render Dedicated Aviation Tools Dashboard View
-  renderToolsDashboard(container, user, onSubjectClick, onLogout, onProfile, onDashboardClick, onCX3Click) {
+  renderToolsDashboard(container, user, onSubjectClick, onLogout, onProfile, onDashboardClick, onCX3Click, onMETARClick, onTAFClick, onHoldingClick) {
     const avatarUrl = this.getAvatarUrl(user.avatar);
 
     container.innerHTML = `
@@ -1291,6 +1300,34 @@ export const ui = {
           }, 300); // Let drawer slide shut first
         });
       }
+
+      // Bind click events on the drawer tool cards
+      const drawerToolCards = document.querySelectorAll('.drawer-tool-card');
+      drawerToolCards.forEach(card => {
+        card.addEventListener('click', () => {
+          const toolId = card.dataset.tool || '';
+          const toolName = card.querySelector('h4').textContent;
+          closeDrawer();
+          setTimeout(() => {
+            if (toolId === 'cx3') {
+              const popupLeft = screen.width - 410;
+              window.open('cx3.html', 'CX3_Calculator', `width=380,height=750,left=${popupLeft},top=50,status=no,menubar=no,toolbar=no,location=no,scrollbars=yes,resizable=yes`);
+              if (onCX3Click) onCX3Click();
+            } else if (toolId === 'metar') {
+              if (onMETARClick) onMETARClick();
+            } else if (toolId === 'taf') {
+              if (onTAFClick) onTAFClick();
+            } else if (toolId === 'holding') {
+              if (onHoldingClick) onHoldingClick();
+            } else {
+              this.showAlertModal(
+                toolName,
+                `${toolName} tool will be fully integrated as an interactive utility in a later flight training phase.`
+              );
+            }
+          }, 300);
+        });
+      });
     }
 
     // Bind alerts on clicking tools grid cards in Tools Dashboard
@@ -1303,6 +1340,12 @@ export const ui = {
           const popupLeft = screen.width - 410;
           window.open('cx3.html', 'CX3_Calculator', `width=380,height=750,left=${popupLeft},top=50,status=no,menubar=no,toolbar=no,location=no,scrollbars=yes,resizable=yes`);
           if (onCX3Click) onCX3Click();
+        } else if (toolId === 'metar') {
+          if (onMETARClick) onMETARClick();
+        } else if (toolId === 'taf') {
+          if (onTAFClick) onTAFClick();
+        } else if (toolId === 'holding') {
+          if (onHoldingClick) onHoldingClick();
         } else {
           this.showAlertModal(
             toolName,
@@ -1438,6 +1481,824 @@ export const ui = {
     `;
 
     document.getElementById('cx3InfoBackBtn').addEventListener('click', onBack);
+  },
+
+  // 2b-3. Render METAR Decoder View
+  renderMETARDecoder(container, user, onBack) {
+    container.innerHTML = `
+      <div class="dashboard-header animate-fade-in">
+        <div style="display: flex; align-items: center; gap: 1.25rem;">
+          <button class="btn btn-outline" id="metarDecoderBackBtn" style="padding: 0.5rem 1.25rem; display: flex; align-items: center; gap: 0.5rem; font-weight: 600;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Back
+          </button>
+        </div>
+      </div>
+
+      <div class="cx3-info-content animate-fade-in" style="max-width: 900px; margin: 2rem auto; padding: 0 1rem; color: var(--text-primary);">
+        <header style="margin-bottom: 2rem;">
+          <h1 style="font-size: 2.2rem; font-weight: 800; font-family: var(--font-display); color: var(--text-highlight); margin-bottom: 0.5rem;">METAR Weather Decoder</h1>
+          <p style="font-size: 1rem; color: var(--text-secondary); margin: 0;">
+            Enter an ICAO code (e.g. VIDP, KJFK, EGLL) to fetch live reports, or paste a raw METAR string to translate it instantly.
+          </p>
+        </header>
+
+        <!-- Decoder Input Box -->
+        <div class="card" style="padding: 1.5rem; margin-bottom: 2rem; border-radius: 12px;">
+          <div style="display: flex; gap: 0.75rem;">
+            <input type="text" id="metarInput" placeholder="e.g. VIDP or METAR KJFK 121651Z 18004KT..." style="flex: 1; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid var(--border); background: var(--bg-secondary); color: var(--text-primary); font-size: 0.95rem; outline: none;" />
+            <button class="btn btn-primary" id="metarDecodeBtn" style="padding: 0.75rem 1.5rem; font-weight: 600;">Decode</button>
+          </div>
+          <div id="metarError" style="color: var(--destructive); font-size: 0.85rem; margin-top: 0.5rem; display: none;"></div>
+        </div>
+
+        <!-- Decoder Results Area -->
+        <div id="metarResults" style="display: none; margin-bottom: 2rem;"></div>
+
+        <!-- What is a METAR -->
+        <div class="card" style="padding: 2rem; margin-bottom: 2rem; border-radius: 12px;">
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-highlight); display: flex; align-items: center; gap: 0.75rem;">
+            <span>🌩️</span> What is a METAR?
+          </h3>
+          <p style="line-height: 1.6; color: var(--text-secondary); margin: 0; font-size: 0.95rem;">
+            A METAR is a routine weather report updated hourly. It makes pilots and aviation professionals aware of the current weather situation at a specific airfield. It provides wind speed/direction, visibility, cloud cover, temperature, dew point, and atmospheric pressure.
+          </p>
+        </div>
+
+        <!-- Why Use a METAR Decoder -->
+        <div class="card" style="padding: 2rem; margin-bottom: 2rem; border-radius: 12px;">
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-highlight); display: flex; align-items: center; gap: 0.75rem;">
+            <span>💡</span> Why Use a METAR Decoder?
+          </h3>
+          <p style="line-height: 1.6; color: var(--text-secondary); margin-bottom: 1.25rem; font-size: 0.95rem;">
+            Reading METARs manually takes time and practice. A METAR decoder tool helps you:
+          </p>
+          <ul style="margin: 0; padding-left: 1.2rem; color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem;">
+            <li style="margin-bottom: 0.5rem;">Translate coded weather strings instantly into plain English.</li>
+            <li style="margin-bottom: 0.5rem;">Save time during route flight planning.</li>
+            <li style="margin-bottom: 0.5rem;">Avoid critical mistakes in interpreting severe weather conditions.</li>
+            <li>Learn the remarks codes by comparing side-by-side.</li>
+          </ul>
+        </div>
+
+        <!-- Frequently Asked Questions -->
+        <div class="card" style="padding: 2rem; border-radius: 12px; margin-bottom: 4rem;">
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--text-highlight); display: flex; align-items: center; gap: 0.75rem;">
+            <span>❓</span> Frequently Asked Questions
+          </h3>
+          
+          <div style="margin-bottom: 1.5rem;">
+            <h4 style="margin: 0 0 0.5rem 0; color: var(--text-highlight); font-weight: 600; font-size: 1.05rem;">How is a METAR different from a TAF?</h4>
+            <p style="margin: 0; color: var(--text-secondary); line-height: 1.5; font-size: 0.92rem;">A METAR reports what the weather is doing right now. A TAF (Terminal Aerodrome Forecast) is a forecast of expected weather conditions over the next 24 to 30 hours.</p>
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <h4 style="margin: 0 0 0.5rem 0; color: var(--text-highlight); font-weight: 600; font-size: 1.05rem;">What does the flight category (VFR / MVFR / IFR / LIFR) mean?</h4>
+            <p style="margin: 0; color: var(--text-secondary); line-height: 1.5; font-size: 0.92rem;">Flight category is a quick summary of an airfield's usability based on visibility and cloud ceilings. VFR indicates visibility > 5 SM and ceiling > 3,000 ft. LIFR is visibility < 1 SM or ceiling < 500 ft.</p>
+          </div>
+
+          <div>
+            <h4 style="margin: 0 0 0.5rem 0; color: var(--text-highlight); font-weight: 600; font-size: 1.05rem;">Where does live data come from?</h4>
+            <p style="margin: 0; color: var(--text-secondary); line-height: 1.5; font-size: 0.92rem;">Live METAR & TAF weather reports are fetched directly from NOAA's Aviation Weather Center (aviationweather.gov).</p>
+          </div>
+        </div>
+      </div>
+    `;
+
+    document.getElementById('metarDecoderBackBtn').addEventListener('click', onBack);
+
+    const metarInput = document.getElementById('metarInput');
+    const metarDecodeBtn = document.getElementById('metarDecodeBtn');
+    const metarResults = document.getElementById('metarResults');
+    const metarError = document.getElementById('metarError');
+
+    const handleDecode = async () => {
+      metarError.style.display = 'none';
+      const input = metarInput.value.trim();
+      if (!input) {
+        metarError.textContent = 'Please enter an ICAO code or paste a METAR string.';
+        metarError.style.display = 'block';
+        return;
+      }
+
+      // Check if it is a simple 4-letter code
+      if (/^[a-zA-Z]{4}$/.test(input)) {
+        // Fetch live report
+        metarResults.style.display = 'block';
+        metarResults.innerHTML = '<div style="color: var(--text-secondary);">Fetching live reports from NOAA...</div>';
+        try {
+          const metarRes = await fetch(`https://aviationweather.gov/api/data/metar?ids=${input.toUpperCase()}`);
+          const rawMetar = await metarRes.text();
+          if (!rawMetar || rawMetar.includes('No data') || rawMetar.trim().length < 5) {
+            throw new Error(`No active METAR reports found for ICAO code "${input.toUpperCase()}"`);
+          }
+          
+          let rawTaf = '';
+          try {
+            const tafRes = await fetch(`https://aviationweather.gov/api/data/taf?ids=${input.toUpperCase()}`);
+            rawTaf = await tafRes.text();
+          } catch(e) {
+            console.log("No TAF found");
+          }
+
+          renderDecodedReport(rawMetar.trim(), rawTaf.trim());
+        } catch(err) {
+          metarResults.style.display = 'none';
+          metarError.textContent = err.message || 'Failed to fetch METAR from NOAA. Try pasting a raw METAR string.';
+          metarError.style.display = 'block';
+        }
+      } else {
+        // Parse raw string locally
+        renderDecodedReport(input);
+      }
+    };
+
+    const renderDecodedReport = (rawMetar, rawTaf = '') => {
+      const decoded = parseMETAR(rawMetar);
+      if (!decoded) {
+        metarResults.style.display = 'none';
+        metarError.textContent = 'Failed to parse raw METAR string. Check format.';
+        metarError.style.display = 'block';
+        return;
+      }
+
+      // Category color variables
+      const catColors = {
+        VFR: '#10b981', // green
+        MVFR: '#3b82f6', // blue
+        IFR: '#ef4444', // red
+        LIFR: '#d946ef' // magenta
+      };
+      const catColor = catColors[decoded.flightCategory] || '#6b7280';
+
+      let cloudsHtml = decoded.clouds.length > 0
+        ? decoded.clouds.map(c => `<div style="margin-bottom: 0.25rem;">☁️ ${c.label}</div>`).join('')
+        : 'Sky Clear';
+
+      let remarksHtml = decoded.remarks.length > 0
+        ? decoded.remarks.join(' ')
+        : 'None';
+
+      metarResults.innerHTML = `
+        <div class="card" style="padding: 2rem; border-radius: 12px; border: 1.5px solid ${catColor}; background: var(--bg-primary);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+            <h3 style="margin: 0; font-size: 1.3rem; font-weight: 700; color: var(--text-highlight);">${decoded.stationId} Weather Report</h3>
+            <span style="background: ${catColor}; color: white; padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.05em;">
+              ${decoded.flightCategory}
+            </span>
+          </div>
+
+          <div style="margin-bottom: 1.25rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 6px; border: 1px solid var(--border); font-family: monospace; font-size: 0.9rem; word-break: break-all; color: var(--text-primary);">
+            <strong>RAW:</strong> ${decoded.raw}
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem; font-size: 0.9rem; color: var(--text-secondary);">
+            <div>
+              <div style="font-weight: 600; color: var(--text-highlight); margin-bottom: 0.25rem;">💨 Wind</div>
+              <div>Direction: ${decoded.wind.direction}</div>
+              <div>Speed: ${decoded.wind.speed} ${decoded.wind.unit} ${decoded.wind.gust ? `(Gusts up to ${decoded.wind.gust} ${decoded.wind.unit})` : ''}</div>
+            </div>
+            <div>
+              <div style="font-weight: 600; color: var(--text-highlight); margin-bottom: 0.25rem;">👁️ Visibility</div>
+              <div>${decoded.visibility.value} ${decoded.visibility.unit}</div>
+            </div>
+            <div>
+              <div style="font-weight: 600; color: var(--text-highlight); margin-bottom: 0.25rem;">☁️ Clouds & Ceiling</div>
+              <div>${cloudsHtml}</div>
+            </div>
+            <div>
+              <div style="font-weight: 600; color: var(--text-highlight); margin-bottom: 0.25rem;">🌡️ Temp & Dewpoint</div>
+              <div>Temp: ${decoded.tempDewpoint.temp !== null ? `${decoded.tempDewpoint.temp}°C` : 'N/A'}</div>
+              <div>Dewpoint: ${decoded.tempDewpoint.dewpoint !== null ? `${decoded.tempDewpoint.dewpoint}°C` : 'N/A'}</div>
+            </div>
+            <div>
+              <div style="font-weight: 600; color: var(--text-highlight); margin-bottom: 0.25rem;">🎛️ Altimeter</div>
+              <div>${decoded.altimeter.value !== null ? `${decoded.altimeter.value} ${decoded.altimeter.unit}` : 'N/A'}</div>
+            </div>
+            <div>
+              <div style="font-weight: 600; color: var(--text-highlight); margin-bottom: 0.25rem;">✏️ Remarks</div>
+              <div>${remarksHtml}</div>
+            </div>
+          </div>
+
+          ${rawTaf ? `
+            <div style="margin-top: 1.5rem; border-top: 1px solid var(--border); padding-top: 1.5rem;">
+              <h4 style="margin: 0 0 0.5rem 0; color: var(--text-highlight); font-weight: 700; font-size: 1rem;">Forecast (TAF)</h4>
+              <div style="padding: 0.75rem; background: var(--bg-secondary); border-radius: 6px; border: 1px solid var(--border); font-family: monospace; font-size: 0.85rem; word-break: break-all; white-space: pre-wrap; color: var(--text-primary);">${rawTaf}</div>
+            </div>
+          ` : ''}
+        </div>
+      `;
+      metarResults.style.display = 'block';
+    };
+
+    metarDecodeBtn.addEventListener('click', handleDecode);
+    metarInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') handleDecode();
+    });
+    metarDecodeBtn.addEventListener('click', handleDecode);
+    metarInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') handleDecode();
+    });
+  },
+
+  // 2b-4. Render TAF Decoder View
+  renderTAFDecoder(container, user, onBack) {
+    container.innerHTML = `
+      <div class="dashboard-header animate-fade-in">
+        <div style="display: flex; align-items: center; gap: 1.25rem;">
+          <button class="btn btn-outline" id="tafDecoderBackBtn" style="padding: 0.5rem 1.25rem; display: flex; align-items: center; gap: 0.5rem; font-weight: 600;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Back
+          </button>
+        </div>
+      </div>
+
+      <div class="cx3-info-content animate-fade-in" style="max-width: 900px; margin: 2rem auto; padding: 0 1rem; color: var(--text-primary);">
+        <header style="margin-bottom: 2rem;">
+          <h1 style="font-size: 2.2rem; font-weight: 800; font-family: var(--font-display); color: var(--text-highlight); margin-bottom: 0.5rem;">TAF Forecast Decoder</h1>
+          <p style="font-size: 1rem; color: var(--text-secondary); margin: 0;">
+            Enter an ICAO code (e.g. VIDP, KJFK, EGLL) to fetch live forecasts, or paste a raw TAF string to translate it instantly.
+          </p>
+        </header>
+
+        <!-- Decoder Input Box -->
+        <div class="card" style="padding: 1.5rem; margin-bottom: 2rem; border-radius: 12px;">
+          <div style="display: flex; gap: 0.75rem;">
+            <input type="text" id="tafInput" placeholder="e.g. VIDP or TAF VIDP 040900Z 0412/0518 28010KT..." style="flex: 1; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid var(--border); background: var(--bg-secondary); color: var(--text-primary); font-size: 0.95rem; outline: none;" />
+            <button class="btn btn-primary" id="tafDecodeBtn" style="padding: 0.75rem 1.5rem; font-weight: 600;">Decode</button>
+          </div>
+          <div id="tafError" style="color: var(--destructive); font-size: 0.85rem; margin-top: 0.5rem; display: none;"></div>
+        </div>
+
+        <!-- Decoder Results Area -->
+        <div id="tafResults" style="display: none; margin-bottom: 2rem;"></div>
+
+        <!-- What is a TAF -->
+        <div class="card" style="padding: 2rem; margin-bottom: 2rem; border-radius: 12px;">
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-highlight); display: flex; align-items: center; gap: 0.75rem;">
+            <span>📅</span> What is a TAF?
+          </h3>
+          <p style="line-height: 1.6; color: var(--text-secondary); margin: 0; font-size: 0.95rem;">
+            A TAF (Terminal Aerodrome Forecast) is a coded forecast of the weather expected at an airport, normally valid for 24 or 30 hours. It is the primary forecast product pilots use when planning a flight: the METAR tells you what the airport is doing right now, the TAF tells you what it will be doing when you arrive.
+          </p>
+        </div>
+
+        <!-- Understanding Change Groups -->
+        <div class="card" style="padding: 2rem; margin-bottom: 2rem; border-radius: 12px;">
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-highlight); display: flex; align-items: center; gap: 0.75rem;">
+            <span>⏱️</span> TAF Change Groups Explained
+          </h3>
+          <p style="line-height: 1.6; color: var(--text-secondary); margin-bottom: 1.25rem; font-size: 0.95rem;">
+            A TAF is broken down into base conditions and change groups representing transitions over time:
+          </p>
+          <ul style="margin: 0; padding-left: 1.2rem; color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem;">
+            <li style="margin-bottom: 0.5rem;"><strong>FM (From):</strong> Marks an instantaneous transition to a new set of conditions at a specific time.</li>
+            <li style="margin-bottom: 0.5rem;"><strong>BECMG (Becoming):</strong> Marks a gradual change ending in new conditions over a stated window.</li>
+            <li style="margin-bottom: 0.5rem;"><strong>TEMPO (Temporary):</strong> Marks short-lived temporary fluctuations during a window.</li>
+            <li><strong>PROB30 / PROB40:</strong> Indicates a 30% or 40% probability of the listed conditions during the window.</li>
+          </ul>
+        </div>
+
+        <!-- Frequently Asked Questions -->
+        <div class="card" style="padding: 2rem; border-radius: 12px; margin-bottom: 4rem;">
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--text-highlight); display: flex; align-items: center; gap: 0.75rem;">
+            <span>❓</span> Frequently Asked Questions
+          </h3>
+          
+          <div style="margin-bottom: 1.5rem;">
+            <h4 style="margin: 0 0 0.5rem 0; color: var(--text-highlight); font-weight: 600; font-size: 1.05rem;">Why does my TAF show CNL or AMD?</h4>
+            <p style="margin: 0; color: var(--text-secondary); line-height: 1.5; font-size: 0.92rem;">AMD means the TAF has been amended — a new forecast supersedes the previous one because weather conditions shifted. CNL means the forecast is cancelled.</p>
+          </div>
+
+          <div>
+            <h4 style="margin: 0 0 0.5rem 0; color: var(--text-highlight); font-weight: 600; font-size: 1.05rem;">Where does TAF data come from?</h4>
+            <p style="margin: 0; color: var(--text-secondary); line-height: 1.5; font-size: 0.92rem;">Live forecasts are fetched in real-time from NOAA's Aviation Weather Center API (aviationweather.gov).</p>
+          </div>
+        </div>
+      </div>
+    `;
+
+    document.getElementById('tafDecoderBackBtn').addEventListener('click', onBack);
+
+    const tafInput = document.getElementById('tafInput');
+    const tafDecodeBtn = document.getElementById('tafDecodeBtn');
+    const tafResults = document.getElementById('tafResults');
+    const tafError = document.getElementById('tafError');
+
+    const handleDecode = async () => {
+      tafError.style.display = 'none';
+      const input = tafInput.value.trim();
+      if (!input) {
+        tafError.textContent = 'Please enter an ICAO code or paste a TAF string.';
+        tafError.style.display = 'block';
+        return;
+      }
+
+      if (/^[a-zA-Z]{4}$/.test(input)) {
+        tafResults.style.display = 'block';
+        tafResults.innerHTML = '<div style="color: var(--text-secondary);">Fetching live forecast from NOAA...</div>';
+        try {
+          const tafRes = await fetch(`https://aviationweather.gov/api/data/taf?ids=${input.toUpperCase()}`);
+          const rawTaf = await tafRes.text();
+          if (!rawTaf || rawTaf.includes('No data') || rawTaf.trim().length < 5) {
+            throw new Error(`No active TAF forecast found for ICAO code "${input.toUpperCase()}"`);
+          }
+
+          let rawMetar = '';
+          try {
+            const metarRes = await fetch(`https://aviationweather.gov/api/data/metar?ids=${input.toUpperCase()}`);
+            rawMetar = await metarRes.text();
+          } catch(e) {}
+
+          renderDecodedForecast(rawTaf.trim(), rawMetar.trim());
+        } catch(err) {
+          tafResults.style.display = 'none';
+          tafError.textContent = err.message || 'Failed to fetch TAF from NOAA. Try pasting a raw TAF string.';
+          tafError.style.display = 'block';
+        }
+      } else {
+        renderDecodedForecast(input);
+      }
+    };
+
+    const renderDecodedForecast = (rawTaf, rawMetar = '') => {
+      const decoded = parseTAF(rawTaf);
+      if (!decoded) {
+        tafResults.style.display = 'none';
+        tafError.textContent = 'Failed to parse raw TAF string. Check format.';
+        tafError.style.display = 'block';
+        return;
+      }
+
+      const baseDecoded = decodeTAFGroup(decoded.baseForecast);
+
+      let groupsHtml = decoded.changeGroups.map(group => {
+        const decodedGroup = decodeTAFGroup(group.tokens);
+        let timeLabel = '';
+        
+        // Find validity token (contains /) or time identifier in tokens
+        const valToken = group.tokens.find(t => t.includes('/'));
+        if (valToken) {
+          timeLabel = `Period: ${valToken}`;
+        } else if (group.indicator.startsWith('FM')) {
+          const hours = group.indicator.slice(4, 6);
+          const mins = group.indicator.slice(6, 8);
+          timeLabel = `From time: ${hours}:${mins}Z`;
+        }
+
+        return `
+          <div style="padding: 1rem; border: 1px solid var(--border); background: var(--bg-secondary); border-radius: 8px; margin-bottom: 0.75rem;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+              <span style="font-weight: 700; color: var(--text-highlight); text-transform: uppercase;">
+                ⚠️ ${group.indicator} Group
+              </span>
+              <span style="font-size: 0.8rem; color: var(--text-secondary); font-family: monospace;">${timeLabel}</span>
+            </div>
+            <div style="font-size: 0.9rem; line-height: 1.5; color: var(--text-primary);">
+              <div>💨 ${decodedGroup.wind}</div>
+              <div>👁️ Visibility: ${decodedGroup.visibility !== 'Normal' ? decodedGroup.visibility : 'No change'}</div>
+              <div>☁️ Clouds: ${decodedGroup.clouds.length > 0 ? decodedGroup.clouds.join(', ') : 'No change'}</div>
+              ${decodedGroup.weather.length > 0 ? `<div>🌧️ Weather: ${decodedGroup.weather.join(', ')}</div>` : ''}
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      tafResults.innerHTML = `
+        <div class="card" style="padding: 2rem; border-radius: 12px; background: var(--bg-primary);">
+          <h3 style="margin: 0 0 1.5rem 0; font-size: 1.3rem; font-weight: 700; color: var(--text-highlight);">${decoded.stationId} Terminal Forecast</h3>
+          
+          <div style="margin-bottom: 1.25rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 6px; border: 1px solid var(--border); font-family: monospace; font-size: 0.85rem; word-break: break-all; color: var(--text-primary); white-space: pre-wrap;">
+            <strong>RAW:</strong> ${decoded.raw}
+          </div>
+
+          <div style="padding: 1rem; border: 1.5px solid var(--accent); background: var(--bg-secondary); border-radius: 8px; margin-bottom: 1.5rem;">
+            <h4 style="margin: 0 0 0.5rem 0; font-weight: 700; color: var(--text-highlight);">Initial Base Forecast</h4>
+            <div style="font-size: 0.9rem; line-height: 1.5; color: var(--text-primary);">
+              <div>💨 ${baseDecoded.wind}</div>
+              <div>👁️ Visibility: ${baseDecoded.visibility}</div>
+              <div>☁️ Clouds: ${baseDecoded.clouds.length > 0 ? baseDecoded.clouds.join(', ') : 'No significant cloud'}</div>
+              ${baseDecoded.weather.length > 0 ? `<div>🌧️ Weather: ${baseDecoded.weather.join(', ')}</div>` : ''}
+            </div>
+          </div>
+
+          ${groupsHtml ? `
+            <div style="margin-bottom: 1.5rem;">
+              <h4 style="margin: 0 0 0.75rem 0; font-weight: 700; color: var(--text-highlight);">Forecast Transitions & Changes</h4>
+              ${groupsHtml}
+            </div>
+          ` : ''}
+
+          ${rawMetar ? `
+            <div style="margin-top: 1.5rem; border-top: 1px solid var(--border); padding-top: 1.5rem;">
+              <h4 style="margin: 0 0 0.5rem 0; color: var(--text-highlight); font-weight: 700; font-size: 1rem;">Current Conditions (METAR)</h4>
+              <div style="padding: 0.75rem; background: var(--bg-secondary); border-radius: 6px; border: 1px solid var(--border); font-family: monospace; font-size: 0.85rem; word-break: break-all; color: var(--text-primary);">${rawMetar}</div>
+            </div>
+          ` : ''}
+        </div>
+      `;
+      tafResults.style.display = 'block';
+    };
+
+    tafDecodeBtn.addEventListener('click', handleDecode);
+    tafInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') handleDecode();
+    });
+  },
+
+  // 2b-5. Render Holding Pattern Calculator
+  renderHoldingPatternCalculator(container, user, onBack) {
+    container.innerHTML = `
+      <div class="dashboard-header animate-fade-in">
+        <div style="display: flex; align-items: center; gap: 1.25rem;">
+          <button class="btn btn-outline" id="holdingBackBtn" style="padding: 0.5rem 1.25rem; display: flex; align-items: center; gap: 0.5rem; font-weight: 600;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Back
+          </button>
+        </div>
+      </div>
+
+      <div class="cx3-info-content animate-fade-in" style="max-width: 1100px; margin: 2rem auto; padding: 0 1rem; color: var(--text-primary);">
+        <header style="margin-bottom: 2rem;">
+          <h1 style="font-size: 2.2rem; font-weight: 800; font-family: var(--font-display); color: var(--text-highlight); margin-bottom: 0.5rem;">Holding Pattern Calculator</h1>
+          <p style="font-size: 1rem; color: var(--text-secondary); margin: 0;">
+            Enter the inbound course, aircraft heading, and turn direction to instantly determine the correct entry (Direct, Parallel, or Teardrop) per FAA and ICAO rules.
+          </p>
+        </header>
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 2rem;" class="grid-calculator">
+          <!-- Inputs Column -->
+          <div class="card" style="padding: 1.5rem; border-radius: 12px; height: fit-content; display: flex; flex-direction: column; gap: 1.25rem;">
+            <h3 style="margin: 0; font-size: 1.15rem; color: var(--text-highlight); border-bottom: 1px solid var(--border); padding-bottom: 0.75rem;">Hold Parameters</h3>
+            
+            <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+              <label for="holdInbound" style="font-size: 0.9rem; font-weight: 600; color: var(--text-secondary);">Inbound Course (°)</label>
+              <input type="number" id="holdInbound" value="360" min="0" max="359" style="padding: 0.6rem; border-radius: 6px; border: 1px solid var(--border); background: var(--bg-secondary); color: var(--text-primary); outline: none; font-family: monospace;" />
+              <span style="font-size: 0.75rem; color: var(--text-secondary);">The published magnetic track flown to the fix on the inbound leg.</span>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+              <label for="holdHeading" style="font-size: 0.9rem; font-weight: 600; color: var(--text-secondary);">Aircraft Heading (°)</label>
+              <input type="number" id="holdHeading" value="200" min="0" max="359" style="padding: 0.6rem; border-radius: 6px; border: 1px solid var(--border); background: var(--bg-secondary); color: var(--text-primary); outline: none; font-family: monospace;" />
+              <span style="font-size: 0.75rem; color: var(--text-secondary);">Your current heading when arriving at the fix.</span>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+              <label style="font-size: 0.9rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 0.2rem;">Turn Direction</label>
+              <div style="display: flex; gap: 0.5rem;">
+                <button class="btn btn-outline" id="btnRightTurn" style="flex: 1; padding: 0.5rem; font-size: 0.85rem; font-weight: 600; border-color: var(--accent); background: rgba(0, 210, 255, 0.1);">Right (Standard)</button>
+                <button class="btn btn-outline" id="btnLeftTurn" style="flex: 1; padding: 0.5rem; font-size: 0.85rem; font-weight: 600;">Left (Non-Standard)</button>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem;">
+              <div style="flex: 1; display: flex; flex-direction: column; gap: 0.4rem;">
+                <label for="holdCategory" style="font-size: 0.9rem; font-weight: 600; color: var(--text-secondary);">Aircraft Cat</label>
+                <select id="holdCategory" style="padding: 0.6rem; border-radius: 6px; border: 1px solid var(--border); background: var(--bg-secondary); color: var(--text-primary); outline: none;">
+                  <option value="A">Cat A (Light)</option>
+                  <option value="B">Cat B (Medium)</option>
+                  <option value="C">Cat C (High)</option>
+                  <option value="D">Cat D (Military/Jet)</option>
+                </select>
+              </div>
+              <div style="flex: 1; display: flex; flex-direction: column; gap: 0.4rem;">
+                <label for="holdAltitude" style="font-size: 0.9rem; font-weight: 600; color: var(--text-secondary);">Altitude (ft)</label>
+                <input type="number" id="holdAltitude" value="8000" min="0" max="50000" step="500" style="padding: 0.6rem; border-radius: 6px; border: 1px solid var(--border); background: var(--bg-secondary); color: var(--text-primary); outline: none; font-family: monospace;" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Outputs & Diagram Column -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <!-- Recommended Entry Card -->
+            <div class="card" style="padding: 1.5rem; border-radius: 12px; display: flex; align-items: flex-start; gap: 1rem; border-left: 5px solid var(--accent);">
+              <div style="display: flex; height: 3rem; width: 3rem; min-width: 3rem; align-items: center; justify-content: center; border-radius: 50%; background: rgba(0, 210, 255, 0.1); border: 1px solid var(--accent); color: var(--accent);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                </svg>
+              </div>
+              <div style="flex: 1;">
+                <span style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary); letter-spacing: 0.05em;">Recommended Entry</span>
+                <h2 id="recommendedEntryTitle" style="margin: 0.1rem 0 0.5rem 0; font-size: 1.75rem; font-weight: 800; color: var(--text-highlight);">Teardrop Entry</h2>
+                <p id="recommendedEntryDesc" style="margin: 0; font-size: 0.95rem; line-height: 1.5; color: var(--text-secondary);">
+                  Cross the fix and turn right onto a heading 30° offset from the outbound course...
+                </p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 1rem; border-top: 1px solid var(--border); margin-top: 1rem; padding-top: 1rem;">
+                  <div>
+                    <div style="font-size: 0.75rem; color: var(--text-secondary);">Inbound Leg</div>
+                    <div id="outInboundVal" style="font-size: 1.1rem; font-weight: 700; font-family: monospace; color: var(--text-primary);">000°</div>
+                  </div>
+                  <div>
+                    <div style="font-size: 0.75rem; color: var(--text-secondary);">Heading</div>
+                    <div id="outHeadingVal" style="font-size: 1.1rem; font-weight: 700; font-family: monospace; color: var(--text-primary);">200°</div>
+                  </div>
+                  <div>
+                    <div style="font-size: 0.75rem; color: var(--text-secondary);">Leg Time</div>
+                    <div id="outLegTime" style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary);">1.0 min</div>
+                  </div>
+                  <div>
+                    <div style="font-size: 0.75rem; color: var(--text-secondary);">Max Speed</div>
+                    <div id="outMaxSpeed" style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary);">230 KIAS</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Diagram Card -->
+            <div class="card" style="padding: 1.5rem; border-radius: 12px; display: flex; flex-direction: column; align-items: center;">
+              <h3 style="margin: 0 0 1rem 0; font-size: 1.1rem; align-self: flex-start; color: var(--text-highlight);">Sector Visualizer</h3>
+              
+              <div id="diagramContainer" style="width: 100%; max-width: 450px; aspect-ratio: 1; margin: 0 auto; display: flex; justify-content: center;">
+                <!-- SVG injected dynamically -->
+              </div>
+
+              <!-- Legends -->
+              <div style="display: flex; gap: 1.5rem; margin-top: 1.5rem; flex-wrap: wrap; justify-content: center;">
+                <div style="display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; color: var(--text-secondary);">
+                  <span style="display: inline-block; width: 12px; height: 12px; border-radius: 3px; background: rgba(16, 185, 129, 0.25); border: 1px solid rgb(16, 185, 129);"></span>
+                  Direct Sector
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; color: var(--text-secondary);">
+                  <span style="display: inline-block; width: 12px; height: 12px; border-radius: 3px; background: rgba(245, 158, 11, 0.25); border: 1px solid rgb(245, 158, 11);"></span>
+                  Teardrop Sector
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; color: var(--text-secondary);">
+                  <span style="display: inline-block; width: 12px; height: 12px; border-radius: 3px; background: rgba(139, 92, 246, 0.25); border: 1px solid rgb(139, 92, 246);"></span>
+                  Parallel Sector
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Educational Reference Section -->
+        <section style="margin-top: 3rem;">
+          <h2 style="font-size: 1.75rem; font-weight: 800; font-family: var(--font-display); color: var(--text-highlight); margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">Understanding Holding Patterns</h2>
+          
+          <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;" class="grid-calculator">
+            <div class="card" style="padding: 1.5rem; border-radius: 12px;">
+              <h3 style="margin-top: 0; color: var(--accent); font-size: 1.2rem;">Standard vs Non-Standard Holds</h3>
+              <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary);">
+                A <strong>standard</strong> holding pattern uses right-hand turns. A <strong>non-standard</strong> pattern uses left-hand turns. Turn direction alters which side of the holding fix is considered the "holding side" versus the "non-holding side" (safe side), which determines entry sector geometry.
+              </p>
+              
+              <h4 style="color: var(--text-primary); margin-bottom: 0.5rem; font-size: 1rem;">Sector Angles (Right Turns)</h4>
+              <ul style="font-size: 0.9rem; color: var(--text-secondary); padding-left: 1.2rem; line-height: 1.6;">
+                <li><strong>Parallel Entry (Sector 1):</strong> 110° wide sector on the non-holding side (West).</li>
+                <li><strong>Teardrop Entry (Sector 2):</strong> 70° wide sector on the holding side (East).</li>
+                <li><strong>Direct Entry (Sector 3):</strong> 180° wide sector.</li>
+              </ul>
+            </div>
+
+            <div class="card" style="padding: 1.5rem; border-radius: 12px;">
+              <h3 style="margin-top: 0; color: var(--accent); font-size: 1.2rem;">Airspeed Limits</h3>
+              <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary);">
+                To keep aircraft within protected airspace, regulatory bodies set maximum holding speeds based on altitude:
+              </p>
+              
+              <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem; text-align: left; margin-top: 1rem;">
+                <thead>
+                  <tr style="border-bottom: 1px solid var(--border); color: var(--text-primary);">
+                    <th style="padding: 0.5rem;">Altitude MSL</th>
+                    <th style="padding: 0.5rem;">FAA Limit</th>
+                    <th style="padding: 0.5rem;">ICAO Limit</th>
+                  </tr>
+                </thead>
+                <tbody style="color: var(--text-secondary);">
+                  <tr style="border-bottom: 1px solid var(--border);">
+                    <td style="padding: 0.5rem;">Up to 6,000 ft</td>
+                    <td style="padding: 0.5rem;">200 KIAS</td>
+                    <td style="padding: 0.5rem;">230 KIAS</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid var(--border);">
+                    <td style="padding: 0.5rem;">6,001 to 14,000 ft</td>
+                    <td style="padding: 0.5rem;">230 KIAS</td>
+                    <td style="padding: 0.5rem;">230 KIAS</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 0.5rem;">Above 14,000 ft</td>
+                    <td style="padding: 0.5rem;">265 KIAS</td>
+                    <td style="padding: 0.5rem;">240 KIAS / 265 KIAS</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </div>
+    `;
+
+    // Dynamic Style insertion for grid layouts
+    if (!document.getElementById('grid-calculator-style')) {
+      const style = document.createElement('style');
+      style.id = 'grid-calculator-style';
+      style.innerHTML = `
+        @media (min-width: 768px) {
+          .grid-calculator {
+            grid-template-columns: 360px 1fr !important;
+          }
+        }
+      `;
+      document.head.appendChild(style);
+    }
+
+    // Wiring up input elements
+    const holdInbound = document.getElementById('holdInbound');
+    const holdHeading = document.getElementById('holdHeading');
+    const btnRightTurn = document.getElementById('btnRightTurn');
+    const btnLeftTurn = document.getElementById('btnLeftTurn');
+    const holdCategory = document.getElementById('holdCategory');
+    const holdAltitude = document.getElementById('holdAltitude');
+    const recommendedEntryTitle = document.getElementById('recommendedEntryTitle');
+    const recommendedEntryDesc = document.getElementById('recommendedEntryDesc');
+    const outInboundVal = document.getElementById('outInboundVal');
+    const outHeadingVal = document.getElementById('outHeadingVal');
+    const outLegTime = document.getElementById('outLegTime');
+    const outMaxSpeed = document.getElementById('outMaxSpeed');
+    const diagramContainer = document.getElementById('diagramContainer');
+
+    let isLeftTurn = false;
+
+    // Helper functions for Trig
+    function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
+      const angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
+      return {
+        x: centerX + (radius * Math.cos(angleInRadians)),
+        y: centerY + (radius * Math.sin(angleInRadians))
+      };
+    }
+
+    function describeArc(x, y, radius, startAngle, endAngle) {
+      const start = polarToCartesian(x, y, radius, endAngle);
+      const end = polarToCartesian(x, y, radius, startAngle);
+      const largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
+      return [
+        "M", x, y,
+        "L", start.x, start.y,
+        "A", radius, radius, 0, largeArcFlag, 0, end.x, end.y,
+        "Z"
+      ].join(" ");
+    }
+
+    const updateCalculator = () => {
+      const inbound = parseInt(holdInbound.value) || 0;
+      const heading = parseInt(holdHeading.value) || 0;
+      const altitude = parseInt(holdAltitude.value) || 0;
+      const cat = holdCategory.value;
+
+      const result = calculateHoldingPattern(inbound, heading, isLeftTurn, altitude);
+
+      // Update text outputs
+      recommendedEntryTitle.innerText = result.entryType;
+      recommendedEntryDesc.innerText = result.description;
+      outInboundVal.innerText = `${String(inbound).padStart(3, '0')}°`;
+      outHeadingVal.innerText = `${String(heading).padStart(3, '0')}°`;
+      outLegTime.innerText = result.legTime;
+      
+      const categoryLabel = `Cat ${cat}`;
+      outMaxSpeed.innerHTML = `${result.icaoSpeed} <span style="font-size: 0.75rem; color: var(--text-secondary);">ICAO</span> / ${result.faaSpeed} <span style="font-size: 0.75rem; color: var(--text-secondary);">FAA (${categoryLabel})</span>`;
+
+      // Set accent border color based on recommended entry
+      let entryColor = 'rgb(16, 185, 129)'; // Direct: Green
+      if (result.sectorClass === 'teardrop') {
+        entryColor = 'rgb(245, 158, 11)'; // Teardrop: Orange
+      } else if (result.sectorClass === 'parallel') {
+        entryColor = 'rgb(139, 92, 246)'; // Parallel: Purple
+      }
+      recommendedEntryTitle.parentElement.parentElement.style.borderLeftColor = entryColor;
+
+      // Draw dynamic SVG Diagram
+      const cx = 300;
+      const cy = 300;
+      const r = 240;
+
+      // Generate sector paths
+      let teardropPath = '';
+      let parallelPath = '';
+      let directPath = '';
+
+      if (!isLeftTurn) {
+        // Right turns:
+        // Teardrop: 0 to 70
+        teardropPath = describeArc(cx, cy, r, 0, 70);
+        // Direct: 70 to 250
+        directPath = describeArc(cx, cy, r, 70, 250);
+        // Parallel: 250 to 360
+        parallelPath = describeArc(cx, cy, r, 250, 360);
+      } else {
+        // Left turns:
+        // Parallel: 0 to 110
+        parallelPath = describeArc(cx, cy, r, 0, 110);
+        // Direct: 110 to 290
+        directPath = describeArc(cx, cy, r, 110, 290);
+        // Teardrop: 290 to 360
+        teardropPath = describeArc(cx, cy, r, 290, 360);
+      }
+
+      // Calculate aircraft position based on approach direction
+      const aircraftHdgDiff = (heading - inbound + 360) % 360;
+      const aircraftPos = polarToCartesian(cx, cy, 170, result.approachAngle);
+
+      // Render the full SVG
+      diagramContainer.innerHTML = `
+        <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+          <!-- Background Outer Circle -->
+          <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="var(--border)" stroke-width="1.5" stroke-opacity="0.3"></circle>
+          
+          <!-- Shaded Sectors -->
+          <path d="${directPath}" fill="rgba(16, 185, 129, 0.08)" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1.5"></path>
+          <path d="${teardropPath}" fill="rgba(245, 158, 11, 0.08)" stroke="rgba(245, 158, 11, 0.4)" stroke-width="1.5"></path>
+          <path d="${parallelPath}" fill="rgba(139, 92, 246, 0.08)" stroke="rgba(139, 92, 246, 0.4)" stroke-width="1.5"></path>
+
+          <!-- Vertical course centerline (Inbound / Outbound track line) -->
+          <line x1="${cx}" y1="${cy - r}" x2="${cx}" y2="${cy + r}" stroke="var(--text-secondary)" stroke-dasharray="6 4" stroke-opacity="0.4" stroke-width="1.5"></line>
+
+          <!-- Holding Fix and Race Track Preview -->
+          <circle cx="${cx}" cy="${cy}" r="6" fill="var(--text-highlight)"></circle>
+          <text x="${cx + 12}" y="${cy + 5}" font-size="14" font-weight="700" fill="var(--text-primary)">FIX</text>
+
+          <!-- Racetrack Outline -->
+          <!-- Standard holds go outbound right, Non-standard go outbound left -->
+          ${!isLeftTurn ? `
+            <!-- Standard Right Pattern -->
+            <path d="M 300 300 L 300 420 A 60 60 0 0 0 420 420 L 420 300 A 60 60 0 0 0 300 300 Z" fill="none" stroke="var(--text-primary)" stroke-opacity="0.5" stroke-width="2.5"></path>
+          ` : `
+            <!-- Non-Standard Left Pattern -->
+            <path d="M 300 300 L 300 420 A 60 60 0 0 1 180 420 L 180 300 A 60 60 0 0 1 300 300 Z" fill="none" stroke="var(--text-primary)" stroke-opacity="0.5" stroke-width="2.5"></path>
+          `}
+
+          <!-- Sector labels -->
+          ${!isLeftTurn ? `
+            <text x="300" y="500" font-size="12" font-weight="700" text-anchor="middle" fill="rgb(16, 185, 129)" class="uppercase">direct</text>
+            <text x="410" y="140" font-size="12" font-weight="700" text-anchor="middle" fill="rgb(245, 158, 11)" class="uppercase">teardrop</text>
+            <text x="190" y="140" font-size="12" font-weight="700" text-anchor="middle" fill="rgb(139, 92, 246)" class="uppercase">parallel</text>
+          ` : `
+            <text x="300" y="500" font-size="12" font-weight="700" text-anchor="middle" fill="rgb(16, 185, 129)" class="uppercase">direct</text>
+            <text x="190" y="140" font-size="12" font-weight="700" text-anchor="middle" fill="rgb(245, 158, 11)" class="uppercase">teardrop</text>
+            <text x="410" y="140" font-size="12" font-weight="700" text-anchor="middle" fill="rgb(139, 92, 246)" class="uppercase">parallel</text>
+          `}
+
+          <!-- Compass Rose Cardinal N -->
+          <g transform="translate(48 48)">
+            <circle r="22" fill="var(--bg-secondary)" stroke="var(--border)" stroke-width="1"></circle>
+            <path d="M 0 -14 L 5 4 L 0 1 L -5 4 Z" fill="var(--text-primary)"></path>
+            <text x="0" y="-22" font-size="10" font-weight="800" text-anchor="middle" fill="var(--text-primary)">N</text>
+          </g>
+
+          <!-- Aircraft Icon Positioned and Rotated -->
+          <g transform="translate(${aircraftPos.x} ${aircraftPos.y}) rotate(${aircraftHdgDiff})">
+            <circle r="20" fill="var(--bg-secondary)" opacity="0.9" stroke="${entryColor}" stroke-width="2"></circle>
+            <!-- Jet shape pointing straight up in its coordinate space -->
+            <path d="M 0 -14 L 11 9 L 0 4 L -11 9 Z" fill="${entryColor}" stroke="var(--text-primary)" stroke-width="1"></path>
+          </g>
+          <!-- Heading Tag text below aircraft -->
+          <text x="${aircraftPos.x}" y="${aircraftPos.y + 35}" font-size="11" font-weight="700" text-anchor="middle" fill="var(--text-primary)">
+            ${String(heading).padStart(3, '0')}° Hdg
+          </text>
+        </svg>
+      `;
+    };
+
+    // Event hooks
+    holdInbound.addEventListener('input', updateCalculator);
+    holdHeading.addEventListener('input', updateCalculator);
+    holdAltitude.addEventListener('input', updateCalculator);
+    holdCategory.addEventListener('change', updateCalculator);
+
+    btnRightTurn.addEventListener('click', () => {
+      isLeftTurn = false;
+      btnRightTurn.style.background = 'rgba(0, 210, 255, 0.1)';
+      btnRightTurn.style.borderColor = 'var(--accent)';
+      btnLeftTurn.style.background = 'transparent';
+      btnLeftTurn.style.borderColor = 'var(--border)';
+      updateCalculator();
+    });
+
+    btnLeftTurn.addEventListener('click', () => {
+      isLeftTurn = true;
+      btnLeftTurn.style.background = 'rgba(0, 210, 255, 0.1)';
+      btnLeftTurn.style.borderColor = 'var(--accent)';
+      btnRightTurn.style.background = 'transparent';
+      btnRightTurn.style.borderColor = 'var(--border)';
+      updateCalculator();
+    });
+
+    document.getElementById('holdingBackBtn').addEventListener('click', onBack);
+
+    // Initial render
+    updateCalculator();
   },
 
   // 2c. Render Books selector list (sub-databases under a major subject)
