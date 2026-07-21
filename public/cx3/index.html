@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
-  <head>
+  
+<!-- CX3 Flight Computer PWA -->
+<head>
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
@@ -8,130 +10,132 @@
       name="viewport"
       content="user-scalable=no, minimum-scale=1, width=device-width, height=device-height"
     />
-    <link rel="stylesheet" type="text/css" href="https://prepware.com/cx3e/css/cx3.css" />
-    <link rel="stylesheet" type="text/css" href="https://prepware.com/cx3e/css/widgets.css" />
-    <link rel="stylesheet" type="text/css" href="https://prepware.com/cx3e/css/themes/standard.css" />
-    <link rel="stylesheet" type="text/css" href="https://prepware.com/cx3e/css/themes/night.css" />
-    <link rel="stylesheet" type="text/css" href="https://prepware.com/cx3e/css/themes/daylight.css" />
-    <link rel="stylesheet" type="text/css" href="https://prepware.com/cx3e/css/misc.css" />
-    <title>EasyPL :: CX-3</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" type="text/css" href="css/cx3.css" />
+    <link rel="stylesheet" type="text/css" href="css/widgets.css" />
+    <link rel="stylesheet" type="text/css" href="css/themes/standard.css" />
+    <link rel="stylesheet" type="text/css" href="css/themes/night.css" />
+    <link rel="stylesheet" type="text/css" href="css/themes/daylight.css" />
+    <link rel="stylesheet" type="text/css" href="css/misc.css" />
+    <title>ASA :: CX-3</title>
     <script type="text/javascript">
       var DEBUG = false;
       var DEBUG_EVENTS = false;
     </script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/backend/calculator.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/backend/formatHmsDms.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/backend/units.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/backend/StopWatch.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/model/definedUnits.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/model/defaultUnits.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/backend/observable.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/backend/variables.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/backend/equations.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/model/CX3Settings.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/model/definedVariables.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/model/LinearEquations.js"></script>
+    <script type="text/javascript" src="js/backend/calculator.js"></script>
+    <script type="text/javascript" src="js/backend/formatHmsDms.js"></script>
+    <script type="text/javascript" src="js/backend/units.js"></script>
+    <script type="text/javascript" src="js/backend/StopWatch.js"></script>
+    <script type="text/javascript" src="js/model/definedUnits.js"></script>
+    <script type="text/javascript" src="js/model/defaultUnits.js"></script>
+    <script type="text/javascript" src="js/backend/observable.js"></script>
+    <script type="text/javascript" src="js/backend/variables.js"></script>
+    <script type="text/javascript" src="js/backend/equations.js"></script>
+    <script type="text/javascript" src="js/model/CX3Settings.js"></script>
+    <script type="text/javascript" src="js/model/definedVariables.js"></script>
+    <script type="text/javascript" src="js/model/LinearEquations.js"></script>
     <script
       type="text/javascript"
-      src="https://prepware.com/cx3e/js/model/GroundSpeedEquations.js"
+      src="js/model/GroundSpeedEquations.js"
     ></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/model/AltitudeEquations.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/model/AirSpeedEquations.js"></script>
+    <script type="text/javascript" src="js/model/AltitudeEquations.js"></script>
+    <script type="text/javascript" src="js/model/AirSpeedEquations.js"></script>
     <script
       type="text/javascript"
-      src="https://prepware.com/cx3e/js/model/CloudBaseEquations.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://prepware.com/cx3e/js/model/StdAtmosphereEquations.js"
-    ></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/model/FuelEquations.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/model/GlideEquations.js"></script>
-    <script
-      type="text/javascript"
-      src="https://prepware.com/cx3e/js/model/WindCorrectionEquations.js"
+      src="js/model/CloudBaseEquations.js"
     ></script>
     <script
       type="text/javascript"
-      src="https://prepware.com/cx3e/js/model/CompassHeadingEquations.js"
+      src="js/model/StdAtmosphereEquations.js"
+    ></script>
+    <script type="text/javascript" src="js/model/FuelEquations.js"></script>
+    <script type="text/javascript" src="js/model/GlideEquations.js"></script>
+    <script
+      type="text/javascript"
+      src="js/model/WindCorrectionEquations.js"
     ></script>
     <script
       type="text/javascript"
-      src="https://prepware.com/cx3e/js/model/TripPlannerEquations.js"
+      src="js/model/CompassHeadingEquations.js"
     ></script>
     <script
       type="text/javascript"
-      src="https://prepware.com/cx3e/js/model/RhumbLineEquations.js"
+      src="js/model/TripPlannerEquations.js"
     ></script>
     <script
       type="text/javascript"
-      src="https://prepware.com/cx3e/js/model/WeightAndBalanceEquations.js"
-    ></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/model/CX3Equations.js"></script>
-    <script
-      type="text/javascript"
-      src="https://prepware.com/cx3e/js/model/CX3EquationsByUnits.js"
-    ></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/model/timezones.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/model/CX3UserData.js"></script>
-    <script
-      type="text/javascript"
-      src="https://prepware.com/cx3e/js/controller/CX3Calculator.js"
-    ></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/view/misc.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/controller/EventHandler.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/view/BoundUI.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/view/Panel.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/controller/System.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/controller/FileOps.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/controller/widgetIDs.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/controller/Widget.js"></script>
-    <script
-      type="text/javascript"
-      src="https://prepware.com/cx3e/js/controller/CX3MenuItemWidget.js"
+      src="js/model/RhumbLineEquations.js"
     ></script>
     <script
       type="text/javascript"
-      src="https://prepware.com/cx3e/js/controller/CalculatorFieldWidget.js"
+      src="js/model/WeightAndBalanceEquations.js"
+    ></script>
+    <script type="text/javascript" src="js/model/CX3Equations.js"></script>
+    <script
+      type="text/javascript"
+      src="js/model/CX3EquationsByUnits.js"
+    ></script>
+    <script type="text/javascript" src="js/model/timezones.js"></script>
+    <script type="text/javascript" src="js/model/CX3UserData.js"></script>
+    <script
+      type="text/javascript"
+      src="js/controller/CX3Calculator.js"
+    ></script>
+    <script type="text/javascript" src="js/view/misc.js"></script>
+    <script type="text/javascript" src="js/controller/EventHandler.js"></script>
+    <script type="text/javascript" src="js/view/BoundUI.js"></script>
+    <script type="text/javascript" src="js/view/Panel.js"></script>
+    <script type="text/javascript" src="js/controller/System.js"></script>
+    <script type="text/javascript" src="js/controller/FileOps.js"></script>
+    <script type="text/javascript" src="js/controller/widgetIDs.js"></script>
+    <script type="text/javascript" src="js/controller/Widget.js"></script>
+    <script
+      type="text/javascript"
+      src="js/controller/CX3MenuItemWidget.js"
     ></script>
     <script
       type="text/javascript"
-      src="https://prepware.com/cx3e/js/controller/CX3TripItemWidget.js"
+      src="js/controller/CalculatorFieldWidget.js"
     ></script>
     <script
       type="text/javascript"
-      src="https://prepware.com/cx3e/js/controller/CX3CalculatorWidget.js"
+      src="js/controller/CX3TripItemWidget.js"
     ></script>
     <script
       type="text/javascript"
-      src="https://prepware.com/cx3e/js/controller/TimerDisplayWidget.js"
-    ></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/controller/ListScreen.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/controller/TimerScreen.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/controller/keypad.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/controller/keyboard.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/view/screen.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/controller/MemoryScreen.js"></script>
-    <script
-      type="text/javascript"
-      src="https://prepware.com/cx3e/js/controller/equationScreen.js"
+      src="js/controller/CX3CalculatorWidget.js"
     ></script>
     <script
       type="text/javascript"
-      src="https://prepware.com/cx3e/js/controller/tripPlannerScreen.js"
+      src="js/controller/TimerDisplayWidget.js"
+    ></script>
+    <script type="text/javascript" src="js/controller/ListScreen.js"></script>
+    <script type="text/javascript" src="js/controller/TimerScreen.js"></script>
+    <script type="text/javascript" src="js/controller/keypad.js"></script>
+    <script type="text/javascript" src="js/controller/keyboard.js"></script>
+    <script type="text/javascript" src="js/view/screen.js"></script>
+    <script type="text/javascript" src="js/controller/MemoryScreen.js"></script>
+    <script
+      type="text/javascript"
+      src="js/controller/equationScreen.js"
     ></script>
     <script
       type="text/javascript"
-      src="https://prepware.com/cx3e/js/controller/calculatorScreen.js"
+      src="js/controller/tripPlannerScreen.js"
     ></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/controller/application.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/view/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/view/keyboard-effects.js"></script>
+    <script
+      type="text/javascript"
+      src="js/controller/calculatorScreen.js"
+    ></script>
+    <script type="text/javascript" src="js/controller/application.js"></script>
+    <script type="text/javascript" src="js/view/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/view/keyboard-effects.js"></script>
 
     <script type="text/javascript">
       //app.initialize();
     </script>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/backend/test.js"></script>
+    <script type="text/javascript" src="js/backend/test.js"></script>
 
     <script>
       //jQuery events (view/keyboard-effects.js)
@@ -141,21 +145,21 @@
     </script>
   </head>
   <body>
-    <script type="text/javascript" src="https://prepware.com/cx3e/js/index.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 
     <script type="text/javascript">
       function PreloadImages() {
         var preload_images = [
-          // "https://prepware.com/cx3e/img/calculator_keypad.png",
-          "https://prepware.com/cx3e/img/logo.png",
-          "https://prepware.com/cx3e/img/status_check_black.png",
-          "https://prepware.com/cx3e/img/status_check_white.png",
-          "https://prepware.com/cx3e/img/status_equals_black.png",
-          "https://prepware.com/cx3e/img/status_equals_white.png",
-          "https://prepware.com/cx3e/img/status_global_black.png",
-          "https://prepware.com/cx3e/img/status_global_white.png",
-          "https://prepware.com/cx3e/img/status_question_black.png",
-          "https://prepware.com/cx3e/img/status_question_white.png",
+          // "img/calculator_keypad.png",
+          "img/logo.png",
+          "img/status_check_black.png",
+          "img/status_check_white.png",
+          "img/status_equals_black.png",
+          "img/status_equals_white.png",
+          "img/status_global_black.png",
+          "img/status_global_white.png",
+          "img/status_question_black.png",
+          "img/status_question_white.png",
         ];
         var preload_image = new Image();
         for (i in preload_images) {
@@ -190,7 +194,6 @@
         <div id="cx3-window">
           <div id="status-bar">
             <div id="status-bar-title">E6-B</div>
-            <!-- Battery Indicator Rebranded to EasyPL -->
             <div id="status-bar-battery">EasyPL</div>
             <div id="status-bar-clock">12:00</div>
           </div>
@@ -422,5 +425,14 @@
         </div>
       </div>
     </div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js')
+            .then(reg => console.log('ServiceWorker registered'))
+            .catch(err => console.log('ServiceWorker registration failed: ', err));
+        });
+      }
+    </script>
   </body>
 </html>

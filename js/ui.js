@@ -322,7 +322,7 @@ export const ui = {
                 Start Practicing
               </button>
               <button class="btn btn-outline" id="exploreSystemsBtn" style="padding: 0.9rem 1.8rem; font-size: 0.9rem;">
-                Explore Subjects
+                Aviation Tools
               </button>
             </div>
           </div>
@@ -384,111 +384,7 @@ export const ui = {
         </div>
       </section>
 
-      <!-- Tools Section -->
-      <section class="tools-section landing-section-snap">
-        <div class="landing-section-title">Aviation Tools</div>
-        <div class="landing-features-grid">
-          <div class="card card-interactive landing-feature-card tool-card" data-tool="metar">
-            <div class="landing-feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
-                <path d="M17.5 19A3.5 3.5 0 0 0 13 15.7V8.3a3 3 0 1 0-2 0v7.4A3.5 3.5 0 1 0 6.5 19Z" />
-                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
-              </svg>
-            </div>
-            <h3>METAR Decoder</h3>
-            <p>Decode real-time weather reports, including winds, visibility, clouds, temperature, and altimeter settings.</p>
-          </div>
-          
-          <div class="card card-interactive landing-feature-card tool-card" data-tool="taf">
-            <div class="landing-feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
-                <circle cx="12" cy="12" r="10" />
-                <polyline points="12 6 12 12 16 14" />
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-              </svg>
-            </div>
-            <h3>TAF Decoder</h3>
-            <p>Translate Terminal Aerodrome Forecasts to understand future weather transitions and planning requirements.</p>
-          </div>
 
-          <div class="card card-interactive landing-feature-card tool-card" data-tool="cx3">
-            <div class="landing-feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
-                <rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
-                <line x1="8" y1="6" x2="16" y2="6" />
-                <circle cx="8" cy="11" r="1" />
-                <circle cx="12" cy="11" r="1" />
-                <circle cx="16" cy="11" r="1" />
-                <circle cx="8" cy="15" r="1" />
-                <circle cx="12" cy="15" r="1" />
-                <circle cx="16" cy="15" r="1" />
-                <circle cx="8" cy="19" r="1" />
-                <circle cx="12" cy="19" r="1" />
-                <circle cx="16" cy="19" r="1" />
-              </svg>
-            </div>
-            <h3>CX-3 Calculator</h3>
-            <p>Perform essential flight computer calculations like wind correction angle, true airspeed, and fuel burn rate.</p>
-          </div>
-
-          <div class="card card-interactive landing-feature-card tool-card" data-tool="density-alt">
-            <div class="landing-feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
-                <path d="M4 14.5L12 3l8 11.5H4z" />
-                <path d="M2 20h20M6 17h12" />
-              </svg>
-            </div>
-            <h3>Density Altitude</h3>
-            <p>Calculate aircraft performance altitude based on pressure altitude, temperature, and humidity settings.</p>
-          </div>
-
-          <div class="card card-interactive landing-feature-card tool-card" data-tool="crosswind">
-            <div class="landing-feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
-                <line x1="12" y1="2" x2="12" y2="22" stroke-dasharray="3,3" />
-                <line x1="6" y1="5" x2="18" y2="5" />
-                <line x1="6" y1="19" x2="18" y2="19" />
-                <path d="M3 12h18M18 9l3 3-3 3" />
-              </svg>
-            </div>
-            <h3>Crosswind Calculator</h3>
-            <p>Resolve headwind and crosswind components quickly for any given runway heading and wind velocity vector.</p>
-          </div>
-
-          <div class="card card-interactive landing-feature-card tool-card" data-tool="ground-speed">
-            <div class="landing-feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
-                <path d="M12 2a10 10 0 0 1 10 10c0 2.2-.7 4.2-1.9 5.9L12 12V3.1" />
-                <path d="M12 2A10 10 0 1 0 2 12c0 2.2.7 4.2 1.9 5.9L12 12" />
-                <polyline points="12 12 16.5 8.5" />
-              </svg>
-            </div>
-            <h3>Ground Speed</h3>
-            <p>Compute ground speed using True Airspeed (TAS), wind direction, wind velocity, and aircraft heading.</p>
-          </div>
-
-          <div class="card card-interactive landing-feature-card tool-card" data-tool="duration">
-            <div class="landing-feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
-                <path d="M5 2h14M5 22h14M19 2v6c0 2.2-1.8 4-4 4h-6c-2.2 0-4-1.8-4-4V2M19 22v-6c0-2.2-1.8-4-4-4h-6c-2.2 0-4-1.8-4 4v6" />
-              </svg>
-            </div>
-            <h3>Flight Duration</h3>
-            <p>Determine estimated time en route (ETE) or endurance based on distance, speed, and fuel consumption rate.</p>
-          </div>
-
-          <div class="card card-interactive landing-feature-card tool-card" data-tool="holding">
-            <div class="landing-feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
-                <rect x="2" y="6" width="20" height="12" rx="6" />
-                <path d="M12 6v12M15 9l3 3-3 3" />
-              </svg>
-            </div>
-            <h3>Holding Pattern</h3>
-            <p>Visualize holding pattern entries (Direct, Parallel, or Teardrop) based on aircraft heading and holding radial.</p>
-          </div>
-        </div>
-      </section>
 
       <!-- Pre-Flight Checklist Steps -->
       <section class="landing-steps-section landing-section-snap">
@@ -542,7 +438,7 @@ export const ui = {
         const toolId = card.dataset.tool || '';
         if (toolId === 'cx3') {
           const popupLeft = screen.width - 410;
-          window.open('cx3.html', 'CX3_Calculator', `width=380,height=750,left=${popupLeft},top=50,status=no,menubar=no,toolbar=no,location=no,scrollbars=yes,resizable=yes`);
+          window.open('cx3/index.html', 'CX3_Calculator', `width=380,height=750,left=${popupLeft},top=50,status=no,menubar=no,toolbar=no,location=no,scrollbars=yes,resizable=yes`);
           if (onCX3Click) onCX3Click();
         } else if (toolId === 'metar') {
           if (onMETARClick) onMETARClick();
@@ -558,10 +454,7 @@ export const ui = {
   }
   
   document.getElementById('exploreSystemsBtn').addEventListener('click', () => {
-    const target = document.querySelector('.landing-section-title');
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    ui.showAviationToolsModal(onCX3Click, onMETARClick, onTAFClick, onHoldingClick);
   });
 
   // Card mousemove spotlight tracker
@@ -844,6 +737,15 @@ export const ui = {
                 <span>Aviation Tools</span>
               </div>
 
+              <!-- Question Search Link -->
+              <div class="drawer-nav-item clickable" id="drawerSearchLink">
+                <svg class="nav-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <span>Search Questions</span>
+              </div>
+
               <!-- Profile Link -->
               <div class="drawer-nav-item clickable" id="drawerProfileLink">
                 <svg class="nav-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1048,6 +950,17 @@ export const ui = {
         });
       }
 
+      // Redirect drawer "Search Questions" click
+      const drawerSearchLink = document.getElementById('drawerSearchLink');
+      if (drawerSearchLink) {
+        drawerSearchLink.addEventListener('click', () => {
+          closeDrawer();
+          setTimeout(() => {
+            this.showQuestionSearchModal();
+          }, 300);
+        });
+      }
+
       // Redirect drawer "Profile Settings" click
       const drawerProfileLink = document.getElementById('drawerProfileLink');
       if (drawerProfileLink && onProfile) {
@@ -1144,6 +1057,15 @@ export const ui = {
                   <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
                 </svg>
                 <span>Aviation Tools</span>
+              </div>
+
+              <!-- Question Search Link -->
+              <div class="drawer-nav-item clickable" id="drawerSearchLink">
+                <svg class="nav-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <span>Search Questions</span>
               </div>
 
               <!-- Profile Link -->
@@ -1290,6 +1212,17 @@ export const ui = {
         });
       }
 
+      // Redirect drawer "Search Questions" click
+      const drawerSearchLink = document.getElementById('drawerSearchLink');
+      if (drawerSearchLink) {
+        drawerSearchLink.addEventListener('click', () => {
+          closeDrawer();
+          setTimeout(() => {
+            this.showQuestionSearchModal();
+          }, 300);
+        });
+      }
+
       // Redirect drawer "Profile Settings" click
       const drawerProfileLink = document.getElementById('drawerProfileLink');
       if (drawerProfileLink && onProfile) {
@@ -1311,7 +1244,7 @@ export const ui = {
           setTimeout(() => {
             if (toolId === 'cx3') {
               const popupLeft = screen.width - 410;
-              window.open('cx3.html', 'CX3_Calculator', `width=380,height=750,left=${popupLeft},top=50,status=no,menubar=no,toolbar=no,location=no,scrollbars=yes,resizable=yes`);
+              window.open('cx3/index.html', 'CX3_Calculator', `width=380,height=750,left=${popupLeft},top=50,status=no,menubar=no,toolbar=no,location=no,scrollbars=yes,resizable=yes`);
               if (onCX3Click) onCX3Click();
             } else if (toolId === 'metar') {
               if (onMETARClick) onMETARClick();
@@ -1338,7 +1271,7 @@ export const ui = {
         const toolName = card.querySelector('h3').textContent;
         if (toolId === 'cx3') {
           const popupLeft = screen.width - 410;
-          window.open('cx3.html', 'CX3_Calculator', `width=380,height=750,left=${popupLeft},top=50,status=no,menubar=no,toolbar=no,location=no,scrollbars=yes,resizable=yes`);
+          window.open('cx3/index.html', 'CX3_Calculator', `width=380,height=750,left=${popupLeft},top=50,status=no,menubar=no,toolbar=no,location=no,scrollbars=yes,resizable=yes`);
           if (onCX3Click) onCX3Click();
         } else if (toolId === 'metar') {
           if (onMETARClick) onMETARClick();
@@ -2571,12 +2504,14 @@ export const ui = {
 
     container.innerHTML = `
       <div class="quiz-header animate-fade-in">
+        <div style="position: absolute; left: 0; display: flex; align-items: center;">
+          <div class="timer-box" id="quizTimer">⏱️ Time: 00:00</div>
+        </div>
         <div class="quiz-title-box">
           <span class="quiz-subtitle" id="quizSubTitle">${mode === 'test' ? 'MOCK TEST EXAM' : 'PRACTICE SESSION'}</span>
           <h2 style="font-size: 1.3rem; text-transform: uppercase;" id="quizMainTitle">Question</h2>
         </div>
-        <div style="display: flex; align-items: center; gap: 1rem;">
-          <div class="timer-box" id="quizTimer">⏱️ Time: 00:00</div>
+        <div style="position: absolute; right: 0; display: flex; align-items: center;">
           <button class="quiz-exit-btn" id="quizExitBtn" aria-label="Exit Quiz">&times;</button>
         </div>
       </div>
@@ -3127,6 +3062,482 @@ export const ui = {
     overlay.querySelector('#modalCloseBtn').addEventListener('click', () => {
       closeOverlay(onCancel);
     });
+  },
+
+  // 8.5b. Show Aviation Tools list modal
+  showAviationToolsModal(onCX3Click, onMETARClick, onTAFClick, onHoldingClick) {
+    const overlay = document.createElement('div');
+    overlay.className = 'mode-modal-overlay';
+    overlay.id = 'aviationToolsModal';
+    overlay.style.zIndex = '1300';
+    
+    // Disable background scrolling
+    document.body.style.overflow = 'hidden';
+
+    overlay.innerHTML = `
+      <style>
+        #aviationToolsModal .mode-title {
+          font-family: var(--font-mono) !important;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+        }
+        #aviationToolsModal .tools-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 1rem;
+          width: 100%;
+        }
+        @media (max-width: 900px) {
+          #aviationToolsModal .tools-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+        #aviationToolsModal .modal-tool-card {
+          background: var(--bg-secondary);
+          border: 1px solid var(--border);
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          text-decoration: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 1.25rem 1rem;
+          border-radius: 12px;
+          cursor: pointer;
+          text-align: center;
+          gap: 0.5rem;
+          min-height: 110px;
+        }
+        #aviationToolsModal .modal-tool-card h4 {
+          font-family: var(--font-mono) !important;
+          font-size: 0.82rem !important;
+          font-weight: 700 !important;
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+          margin: 0;
+        }
+        #aviationToolsModal .modal-tool-card:hover {
+          transform: translateY(-4px) scale(1.02);
+          border-color: var(--accent);
+          box-shadow: 0 8px 24px rgba(0, 210, 255, 0.18);
+          background: var(--bg-tertiary);
+        }
+        #closeToolsModalBtn {
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: var(--bg-secondary);
+          border: 1px solid var(--border);
+          color: var(--text-secondary);
+          font-size: 1.4rem;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          line-height: 1;
+        }
+        #closeToolsModalBtn:hover {
+          background: rgba(239, 68, 68, 0.2);
+          color: rgb(239, 68, 68);
+          border-color: rgb(239, 68, 68);
+          transform: rotate(90deg);
+        }
+        #aviationToolsModal .landing-feature-icon {
+          width: 36px;
+          height: 36px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px;
+          background: rgba(0, 210, 255, 0.08);
+          padding: 6px;
+        }
+      </style>
+      <div class="mode-modal-card" style="max-width: 850px; width: 92%; gap: 1.25rem; padding: 2rem; background: var(--glass); border: 1px solid var(--glass-border); box-shadow: 0 10px 50px rgba(0, 210, 255, 0.15); border-radius: 16px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: 1rem; width: 100%;">
+          <h2 class="mode-title" style="color: var(--text-highlight); font-size: 1.6rem; margin: 0; font-family: var(--font-display); font-weight: 800; letter-spacing: -0.02em;">Aviation Flight Tools</h2>
+          <button id="closeToolsModalBtn" aria-label="Close tools panel">&times;</button>
+        </div>
+
+        <div class="tools-grid">
+          <!-- METAR Decoder -->
+          <div class="card card-interactive modal-tool-card" data-tool="metar">
+            <div class="landing-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                <path d="M17.5 19A3.5 3.5 0 0 0 13 15.7V8.3a3 3 0 1 0-2 0v7.4A3.5 3.5 0 1 0 6.5 19Z" />
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+              </svg>
+            </div>
+            <h4 style="margin: 0; font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--text-highlight);">METAR Decoder</h4>
+          </div>
+
+          <!-- TAF Decoder -->
+          <div class="card card-interactive modal-tool-card" data-tool="taf">
+            <div class="landing-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+            </div>
+            <h4 style="margin: 0; font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--text-highlight);">TAF Decoder</h4>
+          </div>
+
+          <!-- Holding Pattern -->
+          <div class="card card-interactive modal-tool-card" data-tool="holding">
+            <div class="landing-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                <rect x="2" y="6" width="20" height="12" rx="6" />
+                <path d="M12 6v12M15 9l3 3-3 3" />
+              </svg>
+            </div>
+            <h4 style="margin: 0; font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--text-highlight);">Holding Pattern</h4>
+          </div>
+
+          <!-- CX-3 Calculator -->
+          <div class="card card-interactive modal-tool-card" data-tool="cx3">
+            <div class="landing-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
+                <line x1="8" y1="6" x2="16" y2="6" />
+                <circle cx="8" cy="11" r="1" />
+                <circle cx="12" cy="11" r="1" />
+                <circle cx="16" cy="11" r="1" />
+                <circle cx="8" cy="15" r="1" />
+                <circle cx="12" cy="15" r="1" />
+                <circle cx="16" cy="15" r="1" />
+                <circle cx="8" cy="19" r="1" />
+                <circle cx="12" cy="19" r="1" />
+                <circle cx="16" cy="19" r="1" />
+              </svg>
+            </div>
+            <h4 style="margin: 0; font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--text-highlight);">CX-3 Calculator</h4>
+          </div>
+
+          <!-- Density Altitude -->
+          <div class="card card-interactive modal-tool-card" data-tool="density-alt" style="opacity: 0.6;">
+            <div class="landing-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                <path d="M4 14.5L12 3l8 11.5H4z" />
+                <path d="M2 20h20M6 17h12" />
+              </svg>
+            </div>
+            <h4 style="margin: 0; font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--text-highlight);">Density Altitude</h4>
+          </div>
+
+          <!-- Crosswind Calculator -->
+          <div class="card card-interactive modal-tool-card" data-tool="crosswind" style="opacity: 0.6;">
+            <div class="landing-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                <line x1="12" y1="2" x2="12" y2="22" stroke-dasharray="3,3" />
+                <line x1="6" y1="5" x2="18" y2="5" />
+                <line x1="6" y1="19" x2="18" y2="19" />
+                <path d="M3 12h18M18 9l3 3-3 3" />
+              </svg>
+            </div>
+            <h4 style="margin: 0; font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--text-highlight);">Crosswind Calculator</h4>
+          </div>
+
+          <!-- Ground Speed -->
+          <div class="card card-interactive modal-tool-card" data-tool="ground-speed" style="opacity: 0.6;">
+            <div class="landing-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                <path d="M12 2a10 10 0 0 1 10 10c0 2.2-.7 4.2-1.9 5.9L12 12V3.1" />
+                <path d="M12 2A10 10 0 1 0 2 12c0 2.2.7 4.2 1.9 5.9L12 12" />
+                <polyline points="12 12 16.5 8.5" />
+              </svg>
+            </div>
+            <h4 style="margin: 0; font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--text-highlight);">Ground Speed</h4>
+          </div>
+
+          <!-- Flight Duration -->
+          <div class="card card-interactive modal-tool-card" data-tool="duration" style="opacity: 0.6;">
+            <div class="landing-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                <path d="M5 2h14M5 22h14M19 2v6c0 2.2-1.8 4-4 4h-6c-2.2 0-4-1.8-4-4V2M19 22v-6c0-2.2-1.8-4-4-4h-6c-2.2 0-4-1.8-4 4v6" />
+              </svg>
+            </div>
+            <h4 style="margin: 0; font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--text-highlight);">Flight Duration</h4>
+          </div>
+        </div>
+      </div>
+    `;
+
+    document.body.appendChild(overlay);
+
+    setTimeout(() => {
+      overlay.classList.add('show');
+    }, 10);
+
+    const closeToolsModal = () => {
+      overlay.classList.remove('show');
+      document.body.style.overflow = ''; // Restore background scrolling
+      setTimeout(() => {
+        overlay.remove();
+      }, 300);
+    };
+
+    overlay.querySelector('#closeToolsModalBtn').addEventListener('click', closeToolsModal);
+    
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) {
+        closeToolsModal();
+      }
+    });
+
+    const modalToolCards = overlay.querySelectorAll('.modal-tool-card');
+    modalToolCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const toolId = card.dataset.tool || '';
+        const toolName = card.querySelector('h4').textContent;
+        
+        if (toolId === 'cx3') {
+          closeToolsModal();
+          const popupLeft = screen.width - 410;
+          window.open('cx3/index.html', 'CX3_Calculator', `width=380,height=750,left=${popupLeft},top=50,status=no,menubar=no,toolbar=no,location=no,scrollbars=yes,resizable=yes`);
+          if (onCX3Click) onCX3Click();
+        } else if (toolId === 'metar') {
+          closeToolsModal();
+          if (onMETARClick) onMETARClick();
+        } else if (toolId === 'taf') {
+          closeToolsModal();
+          if (onTAFClick) onTAFClick();
+        } else if (toolId === 'holding') {
+          closeToolsModal();
+          if (onHoldingClick) onHoldingClick();
+        } else {
+          this.showAlertModal(
+            toolName,
+            `${toolName} tool will be fully integrated as an interactive utility in a later flight training phase.`
+          );
+        }
+      });
+    });
+  },
+
+  // 8.5c. Show Question Search Modal
+  showQuestionSearchModal() {
+    // 1. Remove existing backdrop to prevent duplicates
+    const oldModal = document.getElementById('questionSearchModalBackdrop');
+    if (oldModal) oldModal.remove();
+
+    // 2. Disable body overflow scroll
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    // 3. Create the backdrop element
+    const backdrop = document.createElement('div');
+    backdrop.className = 'search-modal-backdrop';
+    backdrop.id = 'questionSearchModalBackdrop';
+
+    backdrop.innerHTML = `
+      <div class="search-modal-card">
+        <div class="search-modal-header">
+          <h2>Search Questions</h2>
+          <button id="closeSearchModalBtn" aria-label="Close Search">&times;</button>
+        </div>
+        <div class="search-modal-body">
+          <!-- Left Column: Search & Results -->
+          <div class="search-sidebar">
+            <div class="search-input-container">
+              <input type="text" class="search-bar-input" id="searchBarInput" placeholder="Type keywords to search..." autocomplete="off">
+            </div>
+            <div class="search-meta-results" id="searchMetaResults">
+              Enter keywords to search across all topics
+            </div>
+            <div class="search-results-list" id="searchResultsList">
+              <div class="preview-empty-state" style="padding-top: 2rem;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <span>Type above to start looking up questions</span>
+              </div>
+            </div>
+          </div>
+          <!-- Right Column: Question Preview -->
+          <div class="search-preview-pane" id="searchPreviewPane">
+            <div class="preview-empty-state">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <span>Select a question from the list to preview details</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    document.body.appendChild(backdrop);
+    // Trigger transition
+    setTimeout(() => backdrop.classList.add('active'), 50);
+
+    const closeSearchModal = () => {
+      backdrop.classList.remove('active');
+      document.body.style.overflow = originalOverflow;
+      setTimeout(() => backdrop.remove(), 300);
+    };
+
+    backdrop.querySelector('#closeSearchModalBtn').addEventListener('click', closeSearchModal);
+    backdrop.addEventListener('click', (e) => {
+      if (e.target === backdrop) closeSearchModal();
+    });
+
+    const searchInput = backdrop.querySelector('#searchBarInput');
+    const resultsList = backdrop.querySelector('#searchResultsList');
+    const metaResults = backdrop.querySelector('#searchMetaResults');
+    const previewPane = backdrop.querySelector('#searchPreviewPane');
+
+    let allQuestions = [];
+
+    // Load static search index
+    const loadSearchIndex = async () => {
+      if (window.searchIndexCache) {
+        allQuestions = window.searchIndexCache;
+        return;
+      }
+      try {
+        metaResults.textContent = "Loading questions database...";
+        const res = await fetch('search_index.json');
+        if (!res.ok) throw new Error('Search index load failed');
+        allQuestions = await res.json();
+        window.searchIndexCache = allQuestions;
+        metaResults.textContent = `Indexed ${allQuestions.length} total questions`;
+      } catch (err) {
+        console.error(err);
+        metaResults.textContent = "Failed to load questions database";
+      }
+    };
+
+    loadSearchIndex();
+
+    // Render results
+    const renderResults = (results, query) => {
+      if (results.length === 0) {
+        metaResults.textContent = `0 matches found`;
+        resultsList.innerHTML = `
+          <div class="preview-empty-state" style="padding-top: 2rem;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <span>No questions matched "${query}"</span>
+          </div>
+        `;
+        return;
+      }
+
+      metaResults.textContent = `${results.length} matches found`;
+      resultsList.innerHTML = '';
+
+      results.forEach((item) => {
+        const itemCard = document.createElement('div');
+        itemCard.className = 'search-item-card animate-fade-in';
+        itemCard.innerHTML = `
+          <div class="search-item-meta">
+            <span class="tag-subject">${item.subjectTitle}</span>
+            <span class="tag-chapter">&gt; ${item.chapterTitle}</span>
+          </div>
+          <div class="search-item-text">${highlightText(item.questionText, query)}</div>
+        `;
+
+        itemCard.addEventListener('click', () => {
+          // Highlight selected card
+          resultsList.querySelectorAll('.search-item-card').forEach(c => c.classList.remove('selected'));
+          itemCard.classList.add('selected');
+          
+          // Render preview
+          renderPreview(item);
+        });
+
+        resultsList.appendChild(itemCard);
+      });
+    };
+
+    const highlightText = (text, query) => {
+      if (!query) return text;
+      const escapedQuery = query.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+      const regex = new RegExp(`(${escapedQuery})`, 'gi');
+      return text.replace(regex, '<mark style="background: rgba(0, 210, 255, 0.25); color: inherit; padding: 0.1rem 0.2rem; border-radius: 2px;">$1</mark>');
+    };
+
+    const renderPreview = (item) => {
+      const letters = ['A', 'B', 'C', 'D'];
+      const optionsHTML = (item.options || []).map((opt, oIdx) => {
+        const isCorrect = oIdx === item.answer;
+        return `
+          <div class="preview-option-item ${isCorrect ? 'correct-answer' : ''}">
+            <div class="preview-option-letter">${letters[oIdx] || (oIdx + 1)}</div>
+            <div class="preview-option-text">${opt}</div>
+          </div>
+        `;
+      }).join('');
+
+      previewPane.innerHTML = `
+        <div class="preview-meta-section">
+          <span class="preview-meta-badge">${item.subjectTitle}</span>
+          <span class="preview-meta-chapter">${item.chapterTitle}</span>
+        </div>
+        <div class="preview-question-box">
+          ${item.questionText}
+        </div>
+        <div class="preview-options-list">
+          ${optionsHTML}
+        </div>
+      `;
+    };
+
+    // Filter listener
+    let searchDebounce;
+    searchInput.addEventListener('input', (e) => {
+      clearTimeout(searchDebounce);
+      const query = e.target.value.trim().toLowerCase();
+      
+      if (!query) {
+        metaResults.textContent = `Indexed ${allQuestions.length} total questions`;
+        resultsList.innerHTML = `
+          <div class="preview-empty-state" style="padding-top: 2rem;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <span>Type above to start looking up questions</span>
+          </div>
+        `;
+        previewPane.innerHTML = `
+          <div class="preview-empty-state">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span>Select a question from the list to preview details</span>
+          </div>
+        `;
+        return;
+      }
+
+      searchDebounce = setTimeout(() => {
+        const queryTerms = query.split(/\s+/).filter(t => t.length > 0);
+        const matches = allQuestions.filter(q => {
+          const qText = q.questionText.toLowerCase();
+          // Match all terms
+          return queryTerms.every(term => qText.includes(term));
+        });
+        // Limit to top 50 matches for performance/scrolling ease
+        renderResults(matches.slice(0, 50), query);
+      }, 200);
+    });
+
+    // Auto-focus search input
+    setTimeout(() => searchInput.focus(), 150);
   },
 
   // 8.6. Show alert modal

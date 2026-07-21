@@ -1,0 +1,16 @@
+{
+  "name": "CX-3 Flight Computer",
+  "short_name": "CX-3",
+  "description": "Flight Computer",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "img/button-calc.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

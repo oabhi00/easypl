@@ -726,9 +726,9 @@ body:not(.light-mode) .nav-light {
 }
 
 .logo-img-auth {
-  height: 275px; /* 5x size increase */
+  height: 140px; /* Highly optimized size */
   width: auto;
-  margin: -50px auto -60px auto; /* Negative margins to crop out empty SVG canvas padding */
+  margin: -20px auto -25px auto; /* Scaled negative margins to crop empty SVG canvas padding */
   display: block;
 }
 
@@ -1489,17 +1489,11 @@ body:not(.light-mode) .landing-feature-icon img.subject-graphic-svg {
   pointer-events: none;
   z-index: 2; /* Set to 2 to render above day sky background gradient */
   overflow: hidden;
-  display: none;
-}
-
-body.landing-view .poster-parallax-bg,
-body.view-dashboard .poster-parallax-bg,
-body.view-tools .poster-parallax-bg {
   display: block;
 }
 
-body.view-dashboard .jet-right {
-  display: none;
+body:not(.landing-view) .jet-right {
+  display: none !important;
 }
 
 /* Base styles for individual layers */
@@ -1549,6 +1543,8 @@ body.view-dashboard .jet-right {
   top: 6%;
   width: 32vw;
   opacity: 0.25;
+  transform: translateX(0);
+  transition: transform 2.5s cubic-bezier(0.25, 1, 0.5, 1), opacity 2.2s ease;
 }
 
 .cloud-right {
@@ -1556,6 +1552,8 @@ body.view-dashboard .jet-right {
   top: 18%;
   width: 35vw;
   opacity: 0.3;
+  transform: translateX(0);
+  transition: transform 2.5s cubic-bezier(0.25, 1, 0.5, 1), opacity 2.2s ease;
 }
 
 .cloud-center {
@@ -1563,6 +1561,22 @@ body.view-dashboard .jet-right {
   top: 36%;
   width: 22vw;
   opacity: 0.2;
+  transform: translateX(0);
+  transition: transform 2.5s cubic-bezier(0.25, 1, 0.5, 1), opacity 2.2s ease;
+}
+
+/* Gradually slide clouds off-screen when quiz starts (feels like climbing above clouds) */
+body.view-quiz .cloud-left {
+  transform: translateX(-100vw);
+  opacity: 0 !important;
+}
+body.view-quiz .cloud-right {
+  transform: translateX(100vw);
+  opacity: 0 !important;
+}
+body.view-quiz .cloud-center {
+  transform: translateX(-100vw);
+  opacity: 0 !important;
 }
 
 /* Jets Positioning: Start offscreen and fly in on scroll */
