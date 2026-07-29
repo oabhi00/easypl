@@ -70,25 +70,48 @@ class App {
       const handleThemeChange = (e) => {
         if (!localStorage.getItem('easypl_theme')) {
           if (e.matches) {
+            document.documentElement.classList.add('light-mode');
             document.body.classList.add('light-mode');
           } else {
+            document.documentElement.classList.remove('light-mode');
             document.body.classList.remove('light-mode');
           }
+          this.updateThemeMeta();
         }
       };
       mediaQuery.addEventListener('change', handleThemeChange);
     }
 
+    // Set initial theme meta tag color
+    this.updateThemeMeta();
+
     toggleBtn.addEventListener('click', () => {
       const isLight = document.body.classList.contains('light-mode');
       if (isLight) {
+        document.documentElement.classList.remove('light-mode');
         document.body.classList.remove('light-mode');
         localStorage.setItem('easypl_theme', 'dark');
       } else {
+        document.documentElement.classList.add('light-mode');
         document.body.classList.add('light-mode');
         localStorage.setItem('easypl_theme', 'light');
       }
+      this.updateThemeMeta();
     });
+  }
+
+  // Synchronize the iOS safe-area status bar colour dynamically.
+  // When user manually picks a theme we override both media-based theme-color tags
+  // so the status bar matches regardless of their system preference.
+  updateThemeMeta() {
+    const isLight = document.body.classList.contains('light-mode');
+    const color = isLight ? '#0ea5e9' : '#020617';
+
+    document.querySelectorAll('meta[name="theme-color"]').forEach(m => m.remove());
+    const meta = document.createElement('meta');
+    meta.name = 'theme-color';
+    meta.setAttribute('content', color);
+    document.head.appendChild(meta);
   }
 
   // Initialize global attitude indicator parallax & tilt effect

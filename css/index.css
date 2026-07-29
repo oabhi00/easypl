@@ -119,15 +119,30 @@ body.light-mode {
   padding: 0;
 }
 
+/* Solid background-color on html — gradients on html do NOT paint iOS safe areas
+   in regular Safari browsing. Only background-color works reliably.
+   #020617 dark / #0ea5e9 light matches the TOP of the sky gradient which is
+   what the notch area sees. */
+html {
+  background-color: #020617;
+  height: 100%;
+}
+
+html.light-mode {
+  background-color: #0ea5e9;
+}
+
 body {
-  background-color: var(--bg-primary);
+  background-color: transparent;
   color: var(--text-primary);
   font-family: var(--font-body);
   line-height: 1.5;
   overflow-x: hidden;
+  height: 100%;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   position: relative;
-  transition: background-color var(--transition-normal), color var(--transition-normal);
+  transition: color var(--transition-normal);
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -176,6 +191,7 @@ a {
   margin: 0 auto;
   padding: 2.5rem 1.5rem;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   display: flex;
   flex-direction: column;
 }
@@ -450,36 +466,27 @@ body.light-mode .theme-toggle-btn .moon-icon {
   position: relative;
 }
 
-/* Dynamic Day/Night Sky & Clouds */
+/* Dynamic Day/Night Sky & Clouds.
+   inset: 0 stretches the element to ALL four screen edges for a
+   position:fixed element — this includes safe areas (notch + home indicator)
+   without needing env() calculations or calc(100vh + ...) hacks. */
 .global-sky-bg {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -3; /* Behind elements */
+  inset: 0;
+  z-index: -3;
   pointer-events: none;
   overflow: hidden;
-  /* Night sky gradient (Default dark mode) */
   background: linear-gradient(180deg, #020617 0%, #0b1329 50%, #111e36 100%);
+  transition: background 1.5s ease-in-out;
+}
+
+/* Switch to day sky when light-mode is active */
+body.light-mode .global-sky-bg {
+  background: linear-gradient(180deg, #0ea5e9 0%, #38bdf8 60%, #bae6fd 100%);
 }
 
 .global-sky-bg::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* Day sky gradient (Light mode) */
-  background: linear-gradient(180deg, #0ea5e9 0%, #38bdf8 60%, #bae6fd 100%);
-  opacity: 0;
-  transition: opacity 1.5s ease-in-out;
-  z-index: -1;
-}
-
-body.light-mode .global-sky-bg::before {
-  opacity: 1;
+  display: none;
 }
 
 .sky-sun-moon {
@@ -853,12 +860,12 @@ body.light-mode .hero-title {
 
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 3.2rem;
+    font-size: 3.8rem;
   }
 }
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -1653,5 +1660,52 @@ body.landing-view .landing-header {
   background: #ffffff !important;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.8) !important;
   transform: translateY(-1px);
+}
+
+/* Mobile & Portrait Tablet Responsive Overrides */
+@media (max-width: 768px) {
+  /* Scale down splash screen logo */
+  .logo-img-splash {
+    height: 280px !important;
+    margin: -40px auto -30px auto !important;
+    max-width: 90vw;
+  }
+
+  /* Landing page logo: larger, shifted to the left */
+  .logo-img {
+    height: 220px !important;      /* was 180px — slightly bigger */
+    width: auto !important;
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+    display: block !important;
+    margin: 0 0 1.5rem -12px !important; /* negative left margin pushes it left */
+    max-width: 90vw;
+  }
+
+  /* Scale down authentication card logo */
+  .logo-img-auth {
+    height: 90px !important;
+    margin: -10px auto -15px auto !important;
+  }
+
+  /* Hide Exam Subjects section on mobile — feels pointless on small screens */
+  .subjects-section {
+    display: none !important;
+  }
+
+  /* Adjust homepage background aircraft sizing and trajectory */
+  .jet-right {
+    width: 65vw !important;
+    transform: translate(calc(var(--scroll-y, 0) * 0.6px - 65vw), calc(var(--scroll-y, 0) * -0.45px + 45vh)) !important;
+  }
+}
+
+/* Hide floating logo in mobile/portrait layouts */
+@media (max-width: 768px), (orientation: portrait) {
+  .floating-logo-container {
+    display: none !important;
+  }
 }
 

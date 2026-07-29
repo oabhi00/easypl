@@ -161,24 +161,36 @@ body.light-mode .auth-info-title {
 @media (max-width: 768px) {
   .auth-split-layout {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 1.5rem;
     min-height: auto;
     text-align: center;
-    padding-top: 1rem;
+    padding: 1rem 0 3rem 0;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
   }
   .auth-info-pane {
     align-items: center;
     text-align: center;
     margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
   }
   .auth-info-title {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .auth-form-pane {
     justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
   }
   .auth-wrapper {
     margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -352,7 +364,7 @@ body.light-mode .auth-info-title {
   color: var(--wrong);
 }
 
-/* Force stationary screen layout (No scrolling on Login/Register screen) */
+/* Force stationary screen layout (No scrolling on Login/Register screen for desktop) */
 body.view-auth {
   height: 100vh !important;
   overflow: hidden !important;
@@ -374,5 +386,29 @@ body.view-auth .auth-split-layout {
   margin: 0 !important;
   padding: 0 !important;
   align-items: center !important;
+}
+
+/* Allow scrolling and prevent cut-off on mobile devices */
+@media (max-width: 768px) {
+  body.view-auth {
+    height: auto !important;
+    min-height: 100vh !important;
+    overflow: auto !important;
+    overflow-x: hidden !important;
+  }
+  body.view-auth #app {
+    height: auto !important;
+    min-height: 100vh !important;
+    overflow: auto !important;
+    overflow-x: hidden !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+  }
+  body.view-auth .auth-split-layout {
+    max-height: none !important;
+    height: auto !important;
+    padding: 1.5rem 0 3rem 0 !important;
+  }
 }
 

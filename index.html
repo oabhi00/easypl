@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#020617" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#0ea5e9" media="(prefers-color-scheme: light)">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   
   <!-- SEO Meta Tags -->
   <title>EasyPL - Aviation Mock Exam Practice Platform</title>
@@ -24,9 +27,12 @@
 <body>
   <script>
     (function() {
-      // System Theme Sync
+      // System Theme Sync — applied to BOTH html and body so CSS selectors
+      // like html.light-mode and body.light-mode both work from the very first paint.
       const savedTheme = localStorage.getItem('easypl_theme');
-      if (savedTheme === 'light' || (!savedTheme && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+      const isLight = savedTheme === 'light' || (!savedTheme && window.matchMedia('(prefers-color-scheme: light)').matches);
+      if (isLight) {
+        document.documentElement.classList.add('light-mode');
         document.body.classList.add('light-mode');
       }
 
