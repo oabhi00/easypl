@@ -4289,4 +4289,156 @@ const generateExplanation = (questionText, options, answerIndex, subjectTitle) =
   }
   
   return `Regarding the aviation question: <em>"${cleanQ}"</em>, the correct choice is <strong>"${answerText}"</strong>. This concept is essential to support flight safety, operational decision-making, and pilot theory preparation.`;
+},
+
+  // 8.7. Render Admin Dashboard View
+  renderAdminDashboard(container, usersData, onToggleSubscription, onLogout) {
+    let usersHTML = "";
+    
+    let totalUsersCount = 0;
+    let premiumUsersCount = 0;
+
+    const formatTime = (secs) => {
+      const h = Math.floor(secs / 3600);
+      const m = Math.floor((secs % 3600) / 60);
+      if (h > 0) return `${h}h ${m}m`;
+      if (m > 0) return `${m}m`;
+      return `${secs}s`;
+    };
+
+    Object.values(usersData).forEach(u => {
+      if (u.username.toLowerCase() === 'admin') return; // Skip admin stats
+      totalUsersCount++;
+      const isPaid = u.subscription && u.subscription.status === 'paid';
+      if (isPaid) premiumUsersCount++;
+
+      // Retrieve user stats
+      const stats = progress.getUserStats(u.username);
+      const totalTimeFormatted = formatTime(stats.totalTime);
+
+      usersHTML += `
+        <tr class="admin-table-row" style="border-bottom: 1px solid var(--glass-border);">
+          <td style="padding: 1rem 1.25rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <img src="${this.getAvatarUrl(u.avatar)}" alt="Avatar" style="width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--glass-border);" />
+              <div>
+                <strong style="color: var(--text-primary); font-size: 0.95rem;">${u.fullName || u.username}</strong>
+                <div style="font-size: 0.72rem; color: var(--text-secondary); font-family: var(--font-mono);">@${u.username}</div>
+              </div>
+            </div>
+          </td>
+          <td style="padding: 1rem 1.25rem;">
+            <span style="font-size: 0.8rem; color: var(--text-primary);">${u.email || 'N/A'}</span>
+          </td>
+          <td style="padding: 1rem 1.25rem;">
+            <span class="badge-role" style="font-size: 0.7rem; padding: 0.2rem 0.5rem; border-radius: 4px; background: rgba(0, 210, 255, 0.12); color: var(--accent); border: 1px solid rgba(0, 210, 255, 0.25); font-family: var(--font-mono); text-transform: uppercase;">
+              ${u.role || 'user'}
+            </span>
+          </td>
+          <td style="padding: 1rem 1.25rem;">
+            <button class="btn btn-outline btn-sub-toggle" data-username="${u.username}" data-status="${isPaid ? 'free' : 'paid'}" style="font-size: 0.75rem; padding: 0.35rem 0.75rem; border-radius: 6px; display: inline-flex; align-items: center; gap: 0.35rem; font-family: var(--font-mono); font-weight: 700; ${isPaid ? 'color: #10b981; border-color: rgba(16,185,129,0.3); background: rgba(16,185,129,0.06);' : 'color: var(--text-secondary); border-color: var(--glass-border);'}">
+              <span style="display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: ${isPaid ? '#10b981' : 'var(--text-secondary)'};"></span>
+              ${isPaid ? 'PREMIUM (ACTIVE)' : 'BASIC (FREE)'}
+            </button>
+          </td>
+          <td style="padding: 1rem 1.25rem;">
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; text-align: center; font-family: var(--font-mono); font-size: 0.78rem;">
+              <div>
+                <div style="color: var(--text-secondary); font-size: 0.65rem; text-transform: uppercase;">Tests</div>
+                <strong style="color: var(--accent);">${stats.totalAttempts}</strong>
+              </div>
+              <div>
+                <div style="color: var(--text-secondary); font-size: 0.65rem; text-transform: uppercase;">Avg</div>
+                <strong style="color: var(--wrong-light);">${stats.averageAccuracy}%</strong>
+              </div>
+              <div>
+                <div style="color: var(--text-secondary); font-size: 0.65rem; text-transform: uppercase;">Time</div>
+                <strong style="color: var(--text-primary);">${totalTimeFormatted}</strong>
+              </div>
+            </div>
+          </td>
+        </tr>
+      `;
+    });
+
+    if (totalUsersCount === 0) {
+      usersHTML = `
+        <tr>
+          <td colspan="5" style="text-align: center; color: var(--text-secondary); font-family: var(--font-mono); font-size: 0.85rem; padding: 3rem;">
+            NO REGISTERED PILOT ACCOUNTS FOUND.
+          </td>
+        </tr>
+      `;
+    }
+
+    container.innerHTML = `
+      <div class="dashboard-header animate-fade-in">
+        <div class="profile-card">
+          <img class="profile-avatar" src="images/avatar1.png" alt="Admin Avatar">
+          <div class="profile-info">
+            <h3>Welcome, System Administrator</h3>
+            <p style="color: var(--accent); font-family: var(--font-mono); letter-spacing: 0.05em; font-weight: 700;">COMMAND & CONTROL CENTER</p>
+          </div>
+        </div>
+        <div class="header-actions">
+          <button class="btn btn-outline" id="adminLogoutBtn">Log Out</button>
+        </div>
+      </div>
+
+      <!-- Admin stats grid summaries -->
+      <div class="stats-grid animate-fade-in" style="margin-bottom: 2rem;">
+        <div class="card stat-card" style="cursor: default;">
+          <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          <div class="stat-value">${totalUsersCount}</div>
+          <div class="stat-label">Registered Pilots</div>
+        </div>
+        <div class="card stat-card" style="cursor: default;">
+          <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #10b981;">
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+            <line x1="12" y1="4" x2="12" y2="20"></line>
+            <line x1="2" y1="10" x2="22" y2="10"></line>
+          </svg>
+          <div class="stat-value" style="color: #10b981;">${premiumUsersCount}</div>
+          <div class="stat-label">Active Premium Licenses</div>
+        </div>
+      </div>
+
+      <!-- Main Directory Table -->
+      <h2 class="section-title animate-fade-in">Pilot Registry Directory</h2>
+      <div class="card animate-fade-in" style="padding: 0; overflow-x: auto; border: 1px solid var(--glass-border); border-radius: 12px; background: rgba(2,6,23,0.3);">
+        <table style="width: 100%; border-collapse: collapse; text-align: left; font-family: var(--font-sans);">
+          <thead>
+            <tr style="border-bottom: 1px solid var(--glass-border); background: rgba(255,255,255,0.02); font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; color: var(--text-secondary);">
+              <th style="padding: 1rem 1.25rem;">Pilot Account</th>
+              <th style="padding: 1rem 1.25rem;">Email Address</th>
+              <th style="padding: 1rem 1.25rem;">System Role</th>
+              <th style="padding: 1rem 1.25rem;">Subscription Tier</th>
+              <th style="padding: 1rem 1.25rem; text-align: center;">Performance Stats</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${usersHTML}
+          </tbody>
+        </table>
+      </div>
+    `;
+
+    // Event listener bindings
+    document.getElementById('adminLogoutBtn').addEventListener('click', onLogout);
+
+    const toggleBtns = container.querySelectorAll('.btn-sub-toggle');
+    toggleBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const username = btn.dataset.username;
+        const newStatus = btn.dataset.status;
+        onToggleSubscription(username, newStatus);
+      });
+    });
+  }
 };

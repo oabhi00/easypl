@@ -1814,4 +1814,27 @@ body.light-mode .stats-detail-book-row.clickable-book-row:hover {
   border-color: rgba(0, 0, 0, 0.12);
 }
 
+/* Admin Cockpit Dashboard Styling */
+.admin-table-row {
+  transition: background-color 0.15s ease;
+}
+
+.admin-table-row:hover {
+  background: rgba(255, 255, 255, 0.015) !important;
+}
+
+.btn-sub-toggle {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-sub-toggle:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+body.light-mode .admin-table-row:hover {
+  background: rgba(0, 0, 0, 0.01) !important;
+}
+
 
