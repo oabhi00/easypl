@@ -4184,112 +4184,7 @@ export const ui = {
     overlay.querySelector('#challengeCloseBtn').addEventListener('click', handleClose);
     overlay.querySelector('#challengeSkipBtn').addEventListener('click', handleClose);
     overlay.querySelector('#challengeDoneBtn').addEventListener('click', handleClose);
-  }
-};
-
-// Helper function to generate explanations dynamically for the random question challenge
-const generateExplanation = (questionText, options, answerIndex, subjectTitle) => {
-  const answerText = options[answerIndex];
-  const qStr = questionText.toLowerCase();
-  
-  // Specific high-fidelity aviation explanations
-  if (qStr.includes('gym') || qStr.includes('workout') || qStr.includes('hyperventilation')) {
-    return "During physical exertion, muscle activity increases carbon dioxide (CO₂) production. The rising CO₂ concentration in the blood triggers the brain's respiratory center to increase breathing depth and frequency. If this response is excessive, it leads to hyperventilation (over-breathing), which expels carbon dioxide and can cause respiratory alkalosis.";
-  }
-  if (qStr.includes('density') && qStr.includes('poles')) {
-    return "Air density is inversely proportional to temperature. Since polar regions are significantly colder than equatorial regions, the air at the poles is colder, heavier, and more compressed. Therefore, at sea level, air density is higher at the poles than at the equator.";
-  }
-  if (qStr.includes('density altitude') || qStr.includes('density-altitude')) {
-    return "Density altitude is pressure altitude corrected for non-standard temperature. High temperatures expand the air, reducing its density. This corresponds to a higher density altitude, which degrades aerodynamic lift and engine performance.";
-  }
-  if (qStr.includes('coriolis')) {
-    return "The Coriolis force is an apparent deflection of moving air caused by the Earth's rotation. It deflects air flow to the right in the Northern Hemisphere and to the left in the Southern Hemisphere. The force is directly proportional to wind speed and sine of latitude, making it maximum at the poles and zero at the equator.";
-  }
-  if (qStr.includes('dew point') || qStr.includes('relative humidity') || qStr.includes('dewpoint')) {
-    return "Dew point is the temperature at which air becomes fully saturated and condensation begins. When the air temperature cools to the dew point temperature, the relative humidity reaches 100%, leading to condensation, dew, or cloud formation.";
-  }
-  if (qStr.includes('radiation fog')) {
-    return "Radiation fog forms over land on clear, calm nights when the Earth's surface cools rapidly by longwave radiation. It requires light wind (2–5 knots) to mix the cold air and high relative humidity near the surface.";
-  }
-  if (qStr.includes('advection fog')) {
-    return "Advection fog forms when warm, moist air moves horizontally over a cold surface, cooling the air to its dew point. Unlike radiation fog, it can form under stronger winds and is common in coastal/maritime areas.";
-  }
-  if (qStr.includes('fog') || qStr.includes('haze')) {
-    return "Fog is defined as water droplets suspended in the air near the surface that reduce horizontal visibility to less than 1 km. It typically forms when the temperature-dewpoint spread is narrow (within 2°C) and condensation nuclei are present.";
-  }
-  if (qStr.includes('thunderstorm') || qStr.includes('cumulonimbus')) {
-    return "A thunderstorm (cumulonimbus cloud) requires three essential ingredients: instability (to allow rising air), abundant moisture, and a lifting mechanism (like a frontal boundary, mountain, or solar heating) to trigger the updraft.";
-  }
-  if (qStr.includes('icao') || qStr.includes('annex') || qStr.includes('chicago convention')) {
-    return "International air regulations are standardized under the ICAO (International Civil Aviation Organization) Chicago Convention. Member states align their national aviation laws (such as DGCA requirements in India) with ICAO Annexes to ensure global safety and inter-operability.";
-  }
-  if (qStr.includes('hypoxia')) {
-    return "Hypoxia is a physiological state where the body's tissues are deprived of adequate oxygen supply. At altitude, this is caused by the reduced partial pressure of oxygen in the ambient air, making it harder for hemoglobin to bind and transport oxygen.";
-  }
-  if (qStr.includes('carbon monoxide') || qStr.includes('co poisoning')) {
-    return "Carbon monoxide (CO) is a highly toxic, colorless, and odorless gas. It binds to the hemoglobin in red blood cells with an affinity roughly 200 times greater than oxygen, blocking oxygen transport and causing rapid, subtle hypoxia.";
-  }
-  if (qStr.includes('spool') || qStr.includes('twin-spool') || qStr.includes('compressor spool')) {
-    return "In a multi-spool (twin-spool) gas turbine engine, each spool consists of a turbine stage connected to a compressor stage via concentric, independently rotating shafts. The Low Pressure (LP) Turbine is connected to and drives the LP Compressor, while the High Pressure (HP) Turbine is connected to and drives the HP Compressor. This optimizes compressor efficiency across different RPMs.";
-  }
-  if (qStr.includes('constant speed') || qStr.includes('constant-speed') || qStr.includes('governor') || qStr.includes('propeller blade pitch')) {
-    return "A constant-speed propeller system uses a governor (CSU) to automatically adjust the blade pitch using oil pressure. This maintains a constant engine RPM selected by the pilot, allowing the engine to operate at its most efficient speed throughout all flight phases.";
-  }
-  if (qStr.includes('supercharger') || qStr.includes('turbocharger') || qStr.includes('wastegate')) {
-    return "Superchargers and turbochargers compress intake air to maintain engine manifold pressure at high altitudes. A supercharger is mechanically driven by the crankshaft, whereas a turbocharger is driven by engine exhaust gases and regulated by a wastegate.";
-  }
-  if (qStr.includes('octane') || qStr.includes('detonation') || qStr.includes('pre-ignition') || qStr.includes('preignition')) {
-    return "Detonation is the uncontrolled, explosive ignition of the fuel-air mixture inside the cylinder, usually caused by low octane fuel or excessive temperatures. Pre-ignition is the premature ignition of the mixture before the spark plug fires, typically caused by hot spots like carbon deposits.";
-  }
-  if (qStr.includes('carburetor icing') || qStr.includes('carb icing') || qStr.includes('venturi')) {
-    return "Carburetor icing occurs inside the venturi due to fuel vaporization cooling and pressure drops. It can occur in temperatures up to +30°C under high humidity, and is indicated by a drop in manifold pressure (constant speed prop) or RPM (fixed pitch prop).";
-  }
-  if (qStr.includes('fuel injection') || qStr.includes('injector')) {
-    return "Fuel injection systems spray vaporized fuel directly into the intake port or cylinder head, eliminating the carburetor venturi throat and its associated icing risk, while providing more uniform fuel distribution and improved efficiency.";
-  }
-  if (qStr.includes('vibrat') && (qStr.includes('altimeter') || qStr.includes('linkage') || qStr.includes('friction') || qStr.includes('stiction'))) {
-    return "The vibrating device (or vibrator) in a mechanical altimeter is designed to continuously tap the instrument casing or internal gear linkages. This reduces static friction (stiction) in the mechanical pivots, enabling the pointers to move smoothly and respond immediately to slight changes in static pressure.";
-  }
-  if (qStr.includes('hysteresis') || qStr.includes('elastic lag') || qStr.includes('elastic lag error')) {
-    return "Hysteresis (elastic lag) in an altimeter is caused by the delay in the expansion or contraction of the aneroid capsule after a rapid change in altitude. Because the capsule metal takes time to return to its equilibrium shape, the altimeter displays a small lag error.";
-  }
-  if (qStr.includes('static port') && (qStr.includes('block') || qStr.includes('clog')) && qStr.includes('altimeter')) {
-    return "When the static port is blocked, pressure inside the altimeter casing remains sealed at the altitude where the blockage occurred. The altimeter will freeze and continue to show that altitude, regardless of climbs or descents.";
-  }
-  if (qStr.includes('pitot') && (qStr.includes('block') || qStr.includes('clog')) && (qStr.includes('airspeed') || qStr.includes('indicator') || qStr.includes('asi'))) {
-    return "If the pitot tube's pressure entry port blocks while its drain hole remains open, dynamic pressure drops to zero and the airspeed indicator (ASI) drops to zero. If both entry and drain block, the ASI will act like an altimeter, reading higher as the aircraft climbs and lower as it descends.";
-  }
-  if (qStr.includes('gyro') || qStr.includes('precession') || qStr.includes('rigidity')) {
-    return "Gyroscopic flight instruments rely on two fundamental properties: Rigidity in Space (resisting forces to maintain axis direction) and Precession (the deflection of the rotor axis 90 degrees in the direction of rotation when a force is applied).";
-  }
-  if (qStr.includes('qnh') || qStr.includes('qfe') || qStr.includes('qne') || qStr.includes('altimeter setting') || qStr.includes('subscale')) {
-    return "QNH is the barometric pressure setting which, when dialed into the altimeter subscale, causes the altimeter to indicate altitude above mean sea level. Standard altimeter setting for transitioning into flight levels is 1013.2 hPa / 29.92 inHg.";
-  }
-
-  // Clean up question text for synthesis display
-  let cleanQ = questionText.trim();
-  if (!cleanQ.endsWith('?') && !cleanQ.endsWith('.') && !cleanQ.endsWith(':')) {
-    cleanQ += '...';
-  }
-
-  // Subject-specific fallbacks dynamically matching the question and correct answer
-  const subTitleLower = (subjectTitle || '').toLowerCase();
-  
-  if (subTitleLower.includes('met')) {
-    return `For the meteorology question: <em>"${cleanQ}"</em>, the correct answer is <strong>"${answerText}"</strong>. This concept relates to atmospheric dynamics, pressure gradients, and meteorological reporting procedures.`;
-  }
-  if (subTitleLower.includes('reg') || subTitleLower.includes('rule') || subTitleLower.includes('law')) {
-    return `For the regulations question: <em>"${cleanQ}"</em>, the correct answer is <strong>"${answerText}"</strong>. This is a regulatory standard established to coordinate flight safety, air traffic operations, and pilot licensing requirements.`;
-  }
-  if (subTitleLower.includes('nav') || subTitleLower.includes('plot') || subTitleLower.includes('rkb') || subTitleLower.includes('bali')) {
-    return `For the navigation question: <em>"${cleanQ}"</em>, the correct answer is <strong>"${answerText}"</strong>. This governs flight planning calculations, courses, heading correction, or chart coordinates.`;
-  }
-  if (subTitleLower.includes('tech') || subTitleLower.includes('engine') || subTitleLower.includes('system') || subTitleLower.includes('aircraft')) {
-    return `For the technical systems question: <em>"${cleanQ}"</em>, the correct answer is <strong>"${answerText}"</strong>. This is a technical design requirement for aircraft powerplants, structural systems, or instruments to verify airworthiness.`;
-  }
-  
-  return `Regarding the aviation question: <em>"${cleanQ}"</em>, the correct choice is <strong>"${answerText}"</strong>. This concept is essential to support flight safety, operational decision-making, and pilot theory preparation.`;
-},
+  },
 
   // 8.7. Render Admin Dashboard View
   renderAdminDashboard(container, usersData, onToggleSubscription, onLogout) {
@@ -4441,4 +4336,108 @@ const generateExplanation = (questionText, options, answerIndex, subjectTitle) =
       });
     });
   }
+};
+
+// Helper function to generate explanations dynamically for the random question challenge
+const generateExplanation = (questionText, options, answerIndex, subjectTitle) => {
+  const answerText = options[answerIndex];
+  const qStr = questionText.toLowerCase();
+  
+  // Specific high-fidelity aviation explanations
+  if (qStr.includes('gym') || qStr.includes('workout') || qStr.includes('hyperventilation')) {
+    return "During physical exertion, muscle activity increases carbon dioxide (CO₂) production. The rising CO₂ concentration in the blood triggers the brain's respiratory center to increase breathing depth and frequency. If this response is excessive, it leads to hyperventilation (over-breathing), which expels carbon dioxide and can cause respiratory alkalosis.";
+  }
+  if (qStr.includes('density') && qStr.includes('poles')) {
+    return "Air density is inversely proportional to temperature. Since polar regions are significantly colder than equatorial regions, the air at the poles is colder, heavier, and more compressed. Therefore, at sea level, air density is higher at the poles than at the equator.";
+  }
+  if (qStr.includes('density altitude') || qStr.includes('density-altitude')) {
+    return "Density altitude is pressure altitude corrected for non-standard temperature. High temperatures expand the air, reducing its density. This corresponds to a higher density altitude, which degrades aerodynamic lift and engine performance.";
+  }
+  if (qStr.includes('coriolis')) {
+    return "The Coriolis force is an apparent deflection of moving air caused by the Earth's rotation. It deflects air flow to the right in the Northern Hemisphere and to the left in the Southern Hemisphere. The force is directly proportional to wind speed and sine of latitude, making it maximum at the poles and zero at the equator.";
+  }
+  if (qStr.includes('dew point') || qStr.includes('relative humidity') || qStr.includes('dewpoint')) {
+    return "Dew point is the temperature at which air becomes fully saturated and condensation begins. When the air temperature cools to the dew point temperature, the relative humidity reaches 100%, leading to condensation, dew, or cloud formation.";
+  }
+  if (qStr.includes('radiation fog')) {
+    return "Radiation fog forms over land on clear, calm nights when the Earth's surface cools rapidly by longwave radiation. It requires light wind (2–5 knots) to mix the cold air and high relative humidity near the surface.";
+  }
+  if (qStr.includes('advection fog')) {
+    return "Advection fog forms when warm, moist air moves horizontally over a cold surface, cooling the air to its dew point. Unlike radiation fog, it can form under stronger winds and is common in coastal/maritime areas.";
+  }
+  if (qStr.includes('fog') || qStr.includes('haze')) {
+    return "Fog is defined as water droplets suspended in the air near the surface that reduce horizontal visibility to less than 1 km. It typically forms when the temperature-dewpoint spread is narrow (within 2°C) and condensation nuclei are present.";
+  }
+  if (qStr.includes('thunderstorm') || qStr.includes('cumulonimbus')) {
+    return "A thunderstorm (cumulonimbus cloud) requires three essential ingredients: instability (to allow rising air), abundant moisture, and a lifting mechanism (like a frontal boundary, mountain, or solar heating) to trigger the updraft.";
+  }
+  if (qStr.includes('icao') || qStr.includes('annex') || qStr.includes('chicago convention')) {
+    return "International air regulations are standardized under the ICAO (International Civil Aviation Organization) Chicago Convention. Member states align their national aviation laws (such as DGCA requirements in India) with ICAO Annexes to ensure global safety and inter-operability.";
+  }
+  if (qStr.includes('hypoxia')) {
+    return "Hypoxia is a physiological state where the body's tissues are deprived of adequate oxygen supply. At altitude, this is caused by the reduced partial pressure of oxygen in the ambient air, making it harder for hemoglobin to bind and transport oxygen.";
+  }
+  if (qStr.includes('carbon monoxide') || qStr.includes('co poisoning')) {
+    return "Carbon monoxide (CO) is a highly toxic, colorless, and odorless gas. It binds to the hemoglobin in red blood cells with an affinity roughly 200 times greater than oxygen, blocking oxygen transport and causing rapid, subtle hypoxia.";
+  }
+  if (qStr.includes('spool') || qStr.includes('twin-spool') || qStr.includes('compressor spool')) {
+    return "In a multi-spool (twin-spool) gas turbine engine, each spool consists of a turbine stage connected to a compressor stage via concentric, independently rotating shafts. The Low Pressure (LP) Turbine is connected to and drives the LP Compressor, while the High Pressure (HP) Turbine is connected to and drives the HP Compressor. This optimizes compressor efficiency across different RPMs.";
+  }
+  if (qStr.includes('constant speed') || qStr.includes('constant-speed') || qStr.includes('governor') || qStr.includes('propeller blade pitch')) {
+    return "A constant-speed propeller system uses a governor (CSU) to automatically adjust the blade pitch using oil pressure. This maintains a constant engine RPM selected by the pilot, allowing the engine to operate at its most efficient speed throughout all flight phases.";
+  }
+  if (qStr.includes('supercharger') || qStr.includes('turbocharger') || qStr.includes('wastegate')) {
+    return "Superchargers and turbochargers compress intake air to maintain engine manifold pressure at high altitudes. A supercharger is mechanically driven by the crankshaft, whereas a turbocharger is driven by engine exhaust gases and regulated by a wastegate.";
+  }
+  if (qStr.includes('octane') || qStr.includes('detonation') || qStr.includes('pre-ignition') || qStr.includes('preignition')) {
+    return "Detonation is the uncontrolled, explosive ignition of the fuel-air mixture inside the cylinder, usually caused by low octane fuel or excessive temperatures. Pre-ignition is the premature ignition of the mixture before the spark plug fires, typically caused by hot spots like carbon deposits.";
+  }
+  if (qStr.includes('carburetor icing') || qStr.includes('carb icing') || qStr.includes('venturi')) {
+    return "Carburetor icing occurs inside the venturi due to fuel vaporization cooling and pressure drops. It can occur in temperatures up to +30°C under high humidity, and is indicated by a drop in manifold pressure (constant speed prop) or RPM (fixed pitch prop).";
+  }
+  if (qStr.includes('fuel injection') || qStr.includes('injector')) {
+    return "Fuel injection systems spray vaporized fuel directly into the intake port or cylinder head, eliminating the carburetor venturi throat and its associated icing risk, while providing more uniform fuel distribution and improved efficiency.";
+  }
+  if (qStr.includes('vibrat') && (qStr.includes('altimeter') || qStr.includes('linkage') || qStr.includes('friction') || qStr.includes('stiction'))) {
+    return "The vibrating device (or vibrator) in a mechanical altimeter is designed to continuously tap the instrument casing or internal gear linkages. This reduces static friction (stiction) in the mechanical pivots, enabling the pointers to move smoothly and respond immediately to slight changes in static pressure.";
+  }
+  if (qStr.includes('hysteresis') || qStr.includes('elastic lag') || qStr.includes('elastic lag error')) {
+    return "Hysteresis (elastic lag) in an altimeter is caused by the delay in the expansion or contraction of the aneroid capsule after a rapid change in altitude. Because the capsule metal takes time to return to its equilibrium shape, the altimeter displays a small lag error.";
+  }
+  if (qStr.includes('static port') && (qStr.includes('block') || qStr.includes('clog')) && qStr.includes('altimeter')) {
+    return "When the static port is blocked, pressure inside the altimeter casing remains sealed at the altitude where the blockage occurred. The altimeter will freeze and continue to show that altitude, regardless of climbs or descents.";
+  }
+  if (qStr.includes('pitot') && (qStr.includes('block') || qStr.includes('clog')) && (qStr.includes('airspeed') || qStr.includes('indicator') || qStr.includes('asi'))) {
+    return "If the pitot tube's pressure entry port blocks while its drain hole remains open, dynamic pressure drops to zero and the airspeed indicator (ASI) drops to zero. If both entry and drain block, the ASI will act like an altimeter, reading higher as the aircraft climbs and lower as it descends.";
+  }
+  if (qStr.includes('gyro') || qStr.includes('precession') || qStr.includes('rigidity')) {
+    return "Gyroscopic flight instruments rely on two fundamental properties: Rigidity in Space (resisting forces to maintain axis direction) and Precession (the deflection of the rotor axis 90 degrees in the direction of rotation when a force is applied).";
+  }
+  if (qStr.includes('qnh') || qStr.includes('qfe') || qStr.includes('qne') || qStr.includes('altimeter setting') || qStr.includes('subscale')) {
+    return "QNH is the barometric pressure setting which, when dialed into the altimeter subscale, causes the altimeter to indicate altitude above mean sea level. Standard altimeter setting for transitioning into flight levels is 1013.2 hPa / 29.92 inHg.";
+  }
+
+  // Clean up question text for synthesis display
+  let cleanQ = questionText.trim();
+  if (!cleanQ.endsWith('?') && !cleanQ.endsWith('.') && !cleanQ.endsWith(':')) {
+    cleanQ += '...';
+  }
+
+  // Subject-specific fallbacks dynamically matching the question and correct answer
+  const subTitleLower = (subjectTitle || '').toLowerCase();
+  
+  if (subTitleLower.includes('met')) {
+    return `For the meteorology question: <em>"${cleanQ}"</em>, the correct answer is <strong>"${answerText}"</strong>. This concept relates to atmospheric dynamics, pressure gradients, and meteorological reporting procedures.`;
+  }
+  if (subTitleLower.includes('reg') || subTitleLower.includes('rule') || subTitleLower.includes('law')) {
+    return `For the regulations question: <em>"${cleanQ}"</em>, the correct answer is <strong>"${answerText}"</strong>. This is a regulatory standard established to coordinate flight safety, air traffic operations, and pilot licensing requirements.`;
+  }
+  if (subTitleLower.includes('nav') || subTitleLower.includes('plot') || subTitleLower.includes('rkb') || subTitleLower.includes('bali')) {
+    return `For the navigation question: <em>"${cleanQ}"</em>, the correct answer is <strong>"${answerText}"</strong>. This governs flight planning calculations, courses, heading correction, or chart coordinates.`;
+  }
+  if (subTitleLower.includes('tech') || subTitleLower.includes('engine') || subTitleLower.includes('system') || subTitleLower.includes('aircraft')) {
+    return `For the technical systems question: <em>"${cleanQ}"</em>, the correct answer is <strong>"${answerText}"</strong>. This is a technical design requirement for aircraft powerplants, structural systems, or instruments to verify airworthiness.`;
+  }
+  
+  return `Regarding the aviation question: <em>"${cleanQ}"</em>, the correct choice is <strong>"${answerText}"</strong>. This concept is essential to support flight safety, operational decision-making, and pilot theory preparation.`;
 };
