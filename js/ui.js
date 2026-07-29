@@ -4187,7 +4187,7 @@ export const ui = {
   },
 
   // 8.7. Render Admin Dashboard View
-  renderAdminDashboard(container, usersData, onToggleSubscription, onLogout) {
+  renderAdminDashboard(container, usersData, onToggleSubscription, onDeleteUser, onBanUser, onLogout) {
     let usersHTML = "";
     
     let totalUsersCount = 0;
@@ -4212,7 +4212,7 @@ export const ui = {
       const totalTimeFormatted = formatTime(stats.totalTime);
 
       usersHTML += `
-        <tr class="admin-table-row" style="border-bottom: 1px solid var(--glass-border);">
+        <tr class="admin-table-row" id="user-row-${u.username}" style="border-bottom: 1px solid var(--glass-border);">
           <td style="padding: 1rem 1.25rem;">
             <div style="display: flex; align-items: center; gap: 0.75rem;">
               <img src="${this.getAvatarUrl(u.avatar)}" alt="Avatar" style="width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--glass-border);" />
@@ -4231,9 +4231,9 @@ export const ui = {
             </span>
           </td>
           <td style="padding: 1rem 1.25rem;">
-            <button class="btn btn-outline btn-sub-toggle" data-username="${u.username}" data-status="${isPaid ? 'free' : 'paid'}" style="font-size: 0.75rem; padding: 0.35rem 0.75rem; border-radius: 6px; display: inline-flex; align-items: center; gap: 0.35rem; font-family: var(--font-mono); font-weight: 700; ${isPaid ? 'color: #10b981; border-color: rgba(16,185,129,0.3); background: rgba(16,185,129,0.06);' : 'color: var(--text-secondary); border-color: var(--glass-border);'}">
-              <span style="display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: ${isPaid ? '#10b981' : 'var(--text-secondary)'};"></span>
-              ${isPaid ? 'PREMIUM (ACTIVE)' : 'BASIC (FREE)'}
+            <button class="btn btn-outline btn-sub-toggle" data-username="${u.username}" style="font-size: 0.75rem; padding: 0.35rem 0.75rem; border-radius: 6px; display: inline-flex; align-items: center; gap: 0.35rem; font-family: var(--font-mono); font-weight: 700; ${isPaid ? 'color: #10b981; border-color: rgba(16,185,129,0.3); background: rgba(16,185,129,0.06);' : 'color: var(--text-secondary); border-color: var(--glass-border);'}">
+              <span class="sub-status-dot" style="display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: ${isPaid ? '#10b981' : 'var(--text-secondary)'};"></span>
+              <span class="sub-status-text">${isPaid ? 'PREMIUM (ACTIVE)' : 'BASIC (FREE)'}</span>
             </button>
           </td>
           <td style="padding: 1rem 1.25rem;">
@@ -4252,6 +4252,12 @@ export const ui = {
               </div>
             </div>
           </td>
+          <td style="padding: 1rem 1.25rem; text-align: center;">
+            <div style="display: flex; gap: 0.5rem; justify-content: center;">
+              <button class="btn btn-outline btn-action-delete" data-username="${u.username}" style="color: var(--wrong); border-color: rgba(239, 68, 68, 0.25); background: rgba(239, 68, 68, 0.05); font-size: 0.75rem; padding: 0.35rem 0.6rem; border-radius: 6px; font-weight: 700; font-family: var(--font-mono);">DELETE</button>
+              <button class="btn btn-outline btn-action-ban" data-username="${u.username}" style="color: var(--hud-amber); border-color: rgba(217, 119, 6, 0.25); background: rgba(217, 119, 6, 0.05); font-size: 0.75rem; padding: 0.35rem 0.6rem; border-radius: 6px; font-weight: 700; font-family: var(--font-mono);">BAN</button>
+            </div>
+          </td>
         </tr>
       `;
     });
@@ -4259,7 +4265,7 @@ export const ui = {
     if (totalUsersCount === 0) {
       usersHTML = `
         <tr>
-          <td colspan="5" style="text-align: center; color: var(--text-secondary); font-family: var(--font-mono); font-size: 0.85rem; padding: 3rem;">
+          <td colspan="6" style="text-align: center; color: var(--text-secondary); font-family: var(--font-mono); font-size: 0.85rem; padding: 3rem;">
             NO REGISTERED PILOT ACCOUNTS FOUND.
           </td>
         </tr>
@@ -4289,7 +4295,7 @@ export const ui = {
             <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
             <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
           </svg>
-          <div class="stat-value">${totalUsersCount}</div>
+          <div class="stat-value" id="adminTotalUsersVal">${totalUsersCount}</div>
           <div class="stat-label">Registered Pilots</div>
         </div>
         <div class="card stat-card" style="cursor: default;">
@@ -4298,7 +4304,7 @@ export const ui = {
             <line x1="12" y1="4" x2="12" y2="20"></line>
             <line x1="2" y1="10" x2="22" y2="10"></line>
           </svg>
-          <div class="stat-value" style="color: #10b981;">${premiumUsersCount}</div>
+          <div class="stat-value" id="adminPremiumUsersVal" style="color: #10b981;">${premiumUsersCount}</div>
           <div class="stat-label">Active Premium Licenses</div>
         </div>
       </div>
@@ -4314,6 +4320,7 @@ export const ui = {
               <th style="padding: 1rem 1.25rem;">System Role</th>
               <th style="padding: 1rem 1.25rem;">Subscription Tier</th>
               <th style="padding: 1rem 1.25rem; text-align: center;">Performance Stats</th>
+              <th style="padding: 1rem 1.25rem; text-align: center;">Controls</th>
             </tr>
           </thead>
           <tbody>
@@ -4331,9 +4338,164 @@ export const ui = {
       btn.addEventListener('click', (e) => {
         e.stopPropagation();
         const username = btn.dataset.username;
-        const newStatus = btn.dataset.status;
-        onToggleSubscription(username, newStatus);
+        const userObj = usersData[username.toLowerCase()];
+        
+        this.showManageSubscriptionModal(username, userObj ? userObj.subscription : null, (uname, tierStatus, durationDays) => {
+          // Direct DOM Update to prevent flashing/refreshing
+          onToggleSubscription(uname, tierStatus, durationDays);
+          
+          const isPaid = tierStatus === 'paid';
+          
+          // Recalculate Premium Licenses total in UI
+          let currentPremiumCount = parseInt(document.getElementById('adminPremiumUsersVal').textContent, 10);
+          const wasPaid = btn.style.color.includes('16, 185, 129') || btn.style.color.includes('#10b981');
+          if (isPaid && !wasPaid) {
+            document.getElementById('adminPremiumUsersVal').textContent = currentPremiumCount + 1;
+          } else if (!isPaid && wasPaid) {
+            document.getElementById('adminPremiumUsersVal').textContent = Math.max(0, currentPremiumCount - 1);
+          }
+          
+          // Apply instant layout styles to button
+          btn.style.color = isPaid ? '#10b981' : 'var(--text-secondary)';
+          btn.style.borderColor = isPaid ? 'rgba(16,185,129,0.3)' : 'var(--glass-border)';
+          btn.style.background = isPaid ? 'rgba(16,185,129,0.06)' : 'none';
+          
+          const dot = btn.querySelector('.sub-status-dot');
+          const txt = btn.querySelector('.sub-status-text');
+          if (dot) dot.style.background = isPaid ? '#10b981' : 'var(--text-secondary)';
+          if (txt) txt.textContent = isPaid ? 'PREMIUM (ACTIVE)' : 'BASIC (FREE)';
+          
+          // Update local copy so consecutive edits work
+          if (usersData[uname.toLowerCase()]) {
+            usersData[uname.toLowerCase()].subscription = { status: tierStatus };
+          }
+        });
       });
+    });
+
+    // Delete triggers
+    const deleteBtns = container.querySelectorAll('.btn-action-delete');
+    deleteBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const username = btn.dataset.username;
+        const row = document.getElementById(`user-row-${username}`);
+        
+        this.showConfirmModal(
+          "Delete Pilot Account",
+          `Are you sure you want to permanently delete pilot @${username}? This action is irreversible.`,
+          () => {
+            onDeleteUser(username, row);
+            
+            // Update total registered pilots counter in stats card
+            const totalCounter = document.getElementById('adminTotalUsersVal');
+            if (totalCounter) {
+              totalCounter.textContent = Math.max(0, parseInt(totalCounter.textContent, 10) - 1);
+            }
+          }
+        );
+      });
+    });
+
+    // Ban triggers
+    const banBtns = container.querySelectorAll('.btn-action-ban');
+    banBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const username = btn.dataset.username;
+        const row = document.getElementById(`user-row-${username}`);
+        
+        this.showConfirmModal(
+          "Ban Pilot Account",
+          `Are you sure you want to permanently ban pilot @${username}? Their account will be deleted and their email/username blacklisted.`,
+          () => {
+            onBanUser(username, row);
+            
+            const totalCounter = document.getElementById('adminTotalUsersVal');
+            if (totalCounter) {
+              totalCounter.textContent = Math.max(0, parseInt(totalCounter.textContent, 10) - 1);
+            }
+          }
+        );
+      });
+    });
+  },
+
+  // 8.8. Show Subscription Management Modal (Day Timer Dropdown Picker)
+  showManageSubscriptionModal(username, subscription, onConfirm) {
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    const backdrop = document.createElement('div');
+    backdrop.className = 'confirm-modal-backdrop active'; // styled layout backdrop
+    backdrop.id = 'manageSubscriptionModalBackdrop';
+    backdrop.style.position = 'fixed';
+    backdrop.style.top = '0';
+    backdrop.style.left = '0';
+    backdrop.style.width = '100%';
+    backdrop.style.height = '100%';
+    backdrop.style.background = 'rgba(2, 6, 23, 0.8)';
+    backdrop.style.backdropFilter = 'blur(4px)';
+    backdrop.style.zIndex = '12000';
+    backdrop.style.display = 'flex';
+    backdrop.style.alignItems = 'center';
+    backdrop.style.justifyContent = 'center';
+
+    const currentStatus = subscription ? subscription.status : 'free';
+    const isPremium = currentStatus === 'paid';
+
+    backdrop.innerHTML = `
+      <div class="confirm-modal-card animate-fade-in" style="max-width: 420px; width: 90%; border: 1px solid var(--glass-border); border-radius: 12px; background: #0b1329; color: var(--text-primary); padding: 1.75rem; text-align: left; box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent); margin-bottom: 0.5rem; text-transform: uppercase;">License Administration</div>
+        <h3 style="margin: 0 0 1.25rem 0; font-size: 1.25rem;">Manage @${username}</h3>
+        
+        <div style="margin-bottom: 1.25rem;">
+          <label style="display: block; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem; font-family: var(--font-sans);">Subscription Tier</label>
+          <select id="subTierSelect" style="width: 100%; padding: 0.65rem; border-radius: 6px; border: 1px solid var(--glass-border); background: rgba(2,6,23,0.8); color: var(--text-primary); outline: none; font-family: var(--font-sans);">
+            <option value="free" ${!isPremium ? 'selected' : ''}>Basic (Free / Cancelled)</option>
+            <option value="paid" ${isPremium ? 'selected' : ''}>Premium (Paid License)</option>
+          </select>
+        </div>
+
+        <div id="subDurationGroup" style="margin-bottom: 1.75rem; display: ${isPremium ? 'block' : 'none'};">
+          <label style="display: block; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem; font-family: var(--font-sans);">License Duration</label>
+          <select id="subDurationSelect" style="width: 100%; padding: 0.65rem; border-radius: 6px; border: 1px solid var(--glass-border); background: rgba(2,6,23,0.8); color: var(--text-primary); outline: none; font-family: var(--font-sans);">
+            <option value="30">1 Month (30 Days)</option>
+            <option value="90">3 Months (90 Days)</option>
+            <option value="180">6 Months (180 Days)</option>
+            <option value="365">1 Year (365 Days)</option>
+          </select>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; justify-content: flex-end;">
+          <button id="cancelSubModalBtn" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.5rem 1rem;">Cancel</button>
+          <button id="saveSubModalBtn" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.5rem 1.25rem; background: var(--accent); color: #000; font-weight: 700; border: none; border-radius: 6px;">Update License</button>
+        </div>
+      </div>
+    `;
+
+    document.body.appendChild(backdrop);
+
+    const tierSelect = backdrop.querySelector('#subTierSelect');
+    const durationGroup = backdrop.querySelector('#subDurationGroup');
+    const durationSelect = backdrop.querySelector('#subDurationSelect');
+
+    tierSelect.addEventListener('change', () => {
+      durationGroup.style.display = tierSelect.value === 'paid' ? 'block' : 'none';
+    });
+
+    const closeModal = () => {
+      backdrop.style.opacity = '0';
+      document.body.style.overflow = originalOverflow;
+      setTimeout(() => backdrop.remove(), 300);
+    };
+
+    backdrop.querySelector('#cancelSubModalBtn').addEventListener('click', closeModal);
+    backdrop.querySelector('#saveSubModalBtn').addEventListener('click', () => {
+      const selectedTier = tierSelect.value;
+      const selectedDays = parseInt(durationSelect.value, 10);
+      onConfirm(username, selectedTier, selectedDays);
+      closeModal();
     });
   }
 };

@@ -219,7 +219,7 @@ class App {
     }
 
     // Add landing-view class if viewing landing page or auth page
-    document.body.classList.remove('view-landing', 'view-auth', 'view-dashboard', 'view-tools', 'view-books', 'view-chapters', 'view-quiz', 'view-results');
+    document.body.classList.remove('view-landing', 'view-auth', 'view-dashboard', 'view-tools', 'view-books', 'view-chapters', 'view-quiz', 'view-results', 'view-admin');
     document.body.classList.add(`view-${view}`);
     if (view === 'landing' || view === 'auth') {
       document.body.classList.add('landing-view');
@@ -236,6 +236,9 @@ class App {
         break;
       case 'dashboard':
         this.renderDashboardView();
+        break;
+      case 'admin':
+        this.renderAdminView();
         break;
       case 'tools':
         this.renderToolsView();
@@ -377,6 +380,11 @@ class App {
       return;
     }
 
+    if (this.currentUser.role === 'admin') {
+      this.navigate('admin');
+      return;
+    }
+
     const stats = progress.getUserStats(this.currentUser.username);
     
     ui.renderDashboard(
@@ -441,6 +449,63 @@ class App {
       // Tools navigation callback
       () => {
         this.navigate('tools');
+      }
+    );
+  }
+
+  // Render the administrative dashboard view
+  renderAdminView() {
+    if (!this.currentUser || this.currentUser.role !== 'admin') {
+      this.navigate('landing');
+      return;
+    }
+
+    const allUsers = auth.getAllUsers();
+    
+    ui.renderAdminDashboard(
+      this.container,
+      allUsers,
+      // onToggleSubscription callback
+      (username, newStatus, newDays) => {
+         try {
+           auth.updateSubscription(username, newStatus, newDays);
+           // No full refresh is needed now because ui.js updates the DOM directly!
+         } catch (err) {
+           ui.showAlertModal('Error Updating Subscription', err.message);
+         }
+      },
+      // onDeleteUser callback
+      (username, rowElement) => {
+         try {
+           auth.deleteUser(username);
+           // Smooth fade out animation
+           rowElement.style.transition = 'all 0.4s ease';
+           rowElement.style.opacity = '0';
+           rowElement.style.transform = 'translateX(25px)';
+           setTimeout(() => rowElement.remove(), 400);
+         } catch (err) {
+           ui.showAlertModal('Error Deleting User', err.message);
+         }
+      },
+      // onBanUser callback
+      (username, rowElement) => {
+         try {
+           auth.banUser(username);
+           // Smooth fade out animation
+           rowElement.style.transition = 'all 0.4s ease';
+           rowElement.style.opacity = '0';
+           rowElement.style.transform = 'translateX(25px)';
+           setTimeout(() => rowElement.remove(), 400);
+         } catch (err) {
+           ui.showAlertModal('Error Banning User', err.message);
+         }
+      },
+      // onLogout callback
+      () => {
+         auth.logout();
+         this.currentUser = null;
+         this.isLoginView = false;
+         this.navigate('landing');
       }
     );
   }

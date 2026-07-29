@@ -15,8 +15,23 @@ export const auth = {
 
   // Get all registered users
   getAllUsers() {
-    const users = localStorage.getItem(STORAGE_USERS_KEY);
-    return users ? JSON.parse(users) : {};
+    const usersRaw = localStorage.getItem(STORAGE_USERS_KEY);
+    const users = usersRaw ? JSON.parse(usersRaw) : {};
+    
+    // Ensure system administrator account is seeded
+    if (!users['admin']) {
+      users['admin'] = {
+        username: 'admin',
+        avatar: 'avatar1.png',
+        password: 'password', // Default administration password
+        fullName: 'System Administrator',
+        email: 'admin@easypl.com',
+        role: 'admin',
+        subscription: { status: 'unlimited', expiresAt: null }
+      };
+      localStorage.setItem(STORAGE_USERS_KEY, JSON.stringify(users));
+    }
+    return users;
   },
 
   // Register a new user
@@ -26,19 +41,28 @@ export const auth = {
       throw new Error('Username and password are required.');
     }
     
+    const normalizedUsername = username.toLowerCase();
+    const bannedRaw = localStorage.getItem('easypl_banned_list');
+    const bannedList = bannedRaw ? JSON.parse(bannedRaw) : [];
+    
+    if (bannedList.includes(normalizedUsername)) {
+      throw new Error('This account/email has been permanently banned from EasyPL.');
+    }
+    
     const users = this.getAllUsers();
-    if (users[username.toLowerCase()]) {
+    if (users[normalizedUsername]) {
       throw new Error('Username already exists.');
     }
 
     const newUser = {
       username,
       avatar: avatar || 'avatar1.png',
-      // Store a simple hash or just plain password for local demo
-      password: password 
+      password: password,
+      role: 'user',
+      subscription: { status: 'free', expiresAt: null }
     };
 
-    users[username.toLowerCase()] = newUser;
+    users[normalizedUsername] = newUser;
     localStorage.setItem(STORAGE_USERS_KEY, JSON.stringify(users));
     
     // Log the user in immediately
@@ -60,7 +84,9 @@ export const auth = {
       username: user.username,
       avatar: user.avatar,
       fullName: user.fullName || '',
-      email: user.email || ''
+      email: user.email || '',
+      role: user.role || 'user',
+      subscription: user.subscription || { status: 'free', expiresAt: null }
     };
 
     this.setCurrentUser(sessionUser);
@@ -74,12 +100,13 @@ export const auth = {
 
   // Set the current user session
   setCurrentUser(user) {
-    // We don't want to store the password in the active session
     const sessionData = {
       username: user.username,
       avatar: user.avatar,
       fullName: user.fullName || '',
-      email: user.email || ''
+      email: user.email || '',
+      role: user.role || 'user',
+      subscription: user.subscription || { status: 'free', expiresAt: null }
     };
     localStorage.setItem(STORAGE_SESSION_KEY, JSON.stringify(sessionData));
   },
@@ -114,6 +141,77 @@ export const auth = {
     // Update the active session details
     this.setCurrentUser(user);
     return user;
+  },
+
+  // Administratively toggle or update user subscription
+  updateSubscription(username, status, days = 30) {
+    username = username.trim().toLowerCase();
+    const users = this.getAllUsers();
+    const user = users[username];
+
+    if (!user) {
+      throw new Error('User not found.');
+    }
+
+    user.subscription = {
+      status: status,
+      expiresAt: status === 'paid' ? new Date(Date.now() + days * 24 * 60 * 60 * 1000).toISOString() : null
+    };
+
+    users[username] = user;
+    localStorage.setItem(STORAGE_USERS_KEY, JSON.stringify(users));
+    return user;
+  },
+
+  // Administratively delete pilot account
+  deleteUser(username) {
+    username = username.trim().toLowerCase();
+    if (username === 'admin') {
+      throw new Error('Cannot delete the system administrator.');
+    }
+    const users = this.getAllUsers();
+    if (!users[username]) {
+      throw new Error('User not found.');
+    }
+    delete users[username];
+    localStorage.setItem(STORAGE_USERS_KEY, JSON.stringify(users));
+    
+    // Purge progress logs as well
+    localStorage.removeItem(`easypl_attempts_${username}`);
+    return true;
+  },
+
+  // Administratively ban pilot account and blacklist username/email
+  banUser(username) {
+    username = username.trim().toLowerCase();
+    if (username === 'admin') {
+      throw new Error('Cannot ban the system administrator.');
+    }
+    const users = this.getAllUsers();
+    const user = users[username];
+    if (!user) {
+      throw new Error('User not found.');
+    }
+    
+    const bannedRaw = localStorage.getItem('easypl_banned_list');
+    const bannedList = bannedRaw ? JSON.parse(bannedRaw) : [];
+    
+    if (!bannedList.includes(username)) {
+      bannedList.push(username);
+    }
+    
+    if (user.email) {
+      const emailLower = user.email.trim().toLowerCase();
+      if (!bannedList.includes(emailLower)) {
+        bannedList.push(emailLower);
+      }
+    }
+    
+    localStorage.setItem('easypl_banned_list', JSON.stringify(bannedList));
+    
+    // Purge the account
+    this.deleteUser(username);
+    return true;
   }
 };
 
