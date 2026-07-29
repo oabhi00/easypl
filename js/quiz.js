@@ -198,6 +198,7 @@ export class QuizPlayer {
     const results = {
       score: finalScore,
       totalQuestions: this.questions.length,
+      questionsAnsweredCount: questionsReviewed.filter(q => q.selectedAnswerIndex !== null).length,
       timeTaken: this.elapsedTime,
       accuracy: Math.round((finalScore / this.questions.length) * 100),
       questionsReviewed: questionsReviewed,

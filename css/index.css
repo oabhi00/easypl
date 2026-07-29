@@ -758,6 +758,7 @@ body.light-mode .logo-img-splash {
 body:not(.light-mode) .logo-img,
 body:not(.light-mode) .logo-img-auth,
 body:not(.light-mode) .logo-img-splash,
+body:not(.light-mode) .brand-logo-img,
 body:not(.light-mode) .floating-logo {
   filter: invert(1) brightness(1.2) drop-shadow(0 0 10px var(--accent-glow));
 }

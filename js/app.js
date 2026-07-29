@@ -673,7 +673,8 @@ class App {
             this.activeChapter.id,
             results.score,
             results.totalQuestions,
-            results.timeTaken
+            results.timeTaken,
+            results.questionsAnsweredCount
           );
           
           this.activeResults = results;

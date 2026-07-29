@@ -1598,4 +1598,220 @@ body.light-mode .preview-empty-state svg {
   color: rgba(15, 23, 42, 0.12);
 }
 
+/* Stats Detail Modal styling */
+.stats-detail-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(2, 6, 23, 0.88);
+  backdrop-filter: blur(12px);
+  z-index: 1200;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stats-detail-modal-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.stats-detail-modal-card {
+  width: 780px;
+  max-width: 95vw;
+  height: 520px;
+  max-height: 85vh;
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+  border-radius: 14px;
+  box-sizing: border-box;
+  transform: scale(0.95);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.stats-detail-modal-backdrop.active .stats-detail-modal-card {
+  transform: scale(1);
+}
+
+.stats-detail-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--glass-border);
+  padding: 1.25rem 1.75rem;
+}
+
+.stats-detail-modal-header h2 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+  color: var(--accent-light);
+  text-shadow: 0 0 10px var(--accent-glow);
+}
+
+.stats-detail-modal-body {
+  flex: 1;
+  padding: 1.75rem;
+  overflow-y: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.stats-detail-modal-body::-webkit-scrollbar {
+  width: 4px;
+}
+.stats-detail-modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+.stats-detail-modal-body::-webkit-scrollbar-thumb {
+  background: var(--glass-border);
+  border-radius: 2px;
+}
+
+.stats-detail-book-row {
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.01);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: left;
+}
+
+.stats-detail-book-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+  padding-bottom: 0.5rem;
+}
+
+.stats-detail-book-title h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.stats-detail-book-category {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-top: 0.15rem;
+}
+
+.stats-detail-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+  margin-top: 0.25rem;
+}
+
+.stats-detail-metric-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stats-detail-metric-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.stats-detail-metric-value {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.stats-detail-attempts-sublist {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stats-detail-attempt-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+}
+
+.stats-detail-attempt-chapter {
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+.stats-detail-attempt-score {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* Light mode overrides for Stats Detail Modal */
+body.light-mode .stats-detail-modal-backdrop {
+  background: rgba(15, 23, 42, 0.85);
+}
+
+body.light-mode .stats-detail-modal-card {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .stats-detail-book-row {
+  background: #f8fafc;
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+body.light-mode .stats-detail-book-header {
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+body.light-mode .stats-detail-book-title h3 {
+  color: #0f172a;
+}
+
+body.light-mode .stats-detail-attempts-sublist {
+  background: #f1f5f9;
+}
+
+body.light-mode .stats-detail-attempt-item {
+  color: #334155;
+}
+
+.stats-detail-book-row.clickable-book-row:hover {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(0, 210, 255, 0.2);
+}
+
+body.light-mode .stats-detail-book-row.clickable-book-row:hover {
+  background: #f1f5f9;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
 

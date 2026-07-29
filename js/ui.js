@@ -297,6 +297,16 @@ export const ui = {
     const airlineSVG = getSubjectGraphic('Airline');
     const rtrSVG = getSubjectGraphic('Radio');
 
+    const titles = [
+      "Clear Your DGCA & Airline Exams",
+      "Ace Your DGCA & CPL Exams",
+      "Master Your Aviation Theory Exams",
+      "Your Flight Deck to Pass DGCA",
+      "Command Your Aviation Pilot Exams",
+      "Prep Smart, Fly Safe, Pass Easy"
+    ];
+    const randomTitle = titles[Math.floor(Math.random() * titles.length)];
+
     container.innerHTML = `
       <div class="landing-container animate-fade-in">
         <!-- Top Navigation Bar -->
@@ -313,7 +323,7 @@ export const ui = {
         <section class="landing-hero-centered landing-section-snap">
           <!-- Hero Text & CTAs -->
           <div class="hero-content">
-            <h1 class="hero-title text-gradient">Clear Your DGCA & Airline Exams</h1>
+            <h1 class="hero-title text-gradient">${randomTitle}</h1>
             <p class="hero-description">
               Access over <strong>30,000+ questions</strong> covering every aviation topic. From core DGCA pilot subjects to type ratings like Airbus A320, Cessna 172, Radio Telephony (RTR-A), and comprehensive airline preparation exams.
             </p>
@@ -754,6 +764,17 @@ export const ui = {
                 </svg>
                 <span>Profile Settings</span>
               </div>
+
+              <!-- Clear Stats Link -->
+              <div class="drawer-nav-item clickable" id="drawerClearStatsLink" style="margin-top: 2rem; border-top: 1px dashed rgba(255, 255, 255, 0.08); padding-top: 1rem; color: var(--wrong-light);">
+                <svg class="nav-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--wrong);">
+                  <polyline points="3 6 5 6 21 6"></polyline>
+                  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                  <line x1="10" y1="11" x2="10" y2="17"></line>
+                  <line x1="14" y1="11" x2="14" y2="17"></line>
+                </svg>
+                <span>Clear Stats</span>
+              </div>
             </div>
           </div>
         </div>
@@ -840,22 +861,22 @@ export const ui = {
       <!-- General Statistics -->
       <h2 class="section-title animate-fade-in">Performance Stats</h2>
       <div class="stats-grid animate-fade-in">
-        <div class="card stat-card">
+        <div class="card stat-card card-interactive" data-stat="attempts">
           ${statIcons.attempts}
           <div class="stat-value">${stats.totalAttempts}</div>
           <div class="stat-label">Tests Attempted</div>
         </div>
-        <div class="card stat-card">
+        <div class="card stat-card card-interactive" data-stat="accuracy">
           ${statIcons.accuracy}
           <div class="stat-value">${stats.averageAccuracy}%</div>
           <div class="stat-label">Average Score</div>
         </div>
-        <div class="card stat-card">
+        <div class="card stat-card card-interactive" data-stat="time">
           ${statIcons.time}
           <div class="stat-value">${timeDisplay}</div>
           <div class="stat-label">Study Time</div>
         </div>
-        <div class="card stat-card">
+        <div class="card stat-card card-interactive" data-stat="questions">
           ${statIcons.questions}
           <div class="stat-value">${stats.totalQuestionsAnswered}</div>
           <div class="stat-label">Questions Answered</div>
@@ -971,6 +992,21 @@ export const ui = {
           }, 300); // Let drawer slide shut first
         });
       }
+
+      // Redirect drawer "Clear Stats" click
+      const drawerClearStatsLink = document.getElementById('drawerClearStatsLink');
+      if (drawerClearStatsLink && onClearAttempts) {
+        drawerClearStatsLink.addEventListener('click', () => {
+          closeDrawer();
+          setTimeout(() => {
+            this.showConfirmModal(
+              "Clear Flight History",
+              "Are you sure you want to permanently clear all your recent exam attempts?",
+              onClearAttempts
+            );
+          }, 300);
+        });
+      }
     }
     
     const clearBtn = document.getElementById('clearAttemptsBtn');
@@ -991,6 +1027,14 @@ export const ui = {
       });
     });
 
+    const statCards = container.querySelectorAll('.stat-card');
+    statCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const statType = card.dataset.stat;
+        this.showStatsDetailModal(statType, user.username, subjects);
+      });
+    });
+
     const reattemptBtns = container.querySelectorAll('.btn-reattempt');
     reattemptBtns.forEach(btn => {
       btn.addEventListener('click', (e) => {
@@ -998,6 +1042,37 @@ export const ui = {
         onReattempt(btn.dataset.subjectId, btn.dataset.chapterId);
       });
     });
+
+    // Setup global listeners and automatic scheduling for the flying jet easter egg
+    window.triggerJetFlyby = () => this.triggerJetFlyby();
+
+    if (!window.hasFlyingJetListeners) {
+      window.hasFlyingJetListeners = true;
+      
+      document.addEventListener('keydown', (e) => {
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+        if (e.key === 'f' || e.key === 'F') {
+          if (document.body.classList.contains('view-dashboard') || document.body.classList.contains('view-tools')) {
+            if (typeof window.triggerJetFlyby === 'function') {
+              window.triggerJetFlyby();
+            }
+          }
+        }
+      });
+      
+      const scheduleNextFlyby = () => {
+        const delay = Math.floor(Math.random() * 20000) + 20000; // random 20s to 40s interval
+        setTimeout(() => {
+          if (document.body.classList.contains('view-dashboard') || document.body.classList.contains('view-tools')) {
+            if (typeof window.triggerJetFlyby === 'function') {
+              window.triggerJetFlyby();
+            }
+          }
+          scheduleNextFlyby();
+        }, delay);
+      };
+      scheduleNextFlyby();
+    }
   },
 
   // 2b. Render Dedicated Aviation Tools Dashboard View
@@ -3314,6 +3389,349 @@ export const ui = {
         }
       });
     });
+  },
+
+  // 8.5bb. Show detailed stats modal when clicking performance stat card
+  showStatsDetailModal(statType, username, subjectsConfig) {
+    const oldModal = document.getElementById('statsDetailModalBackdrop');
+    if (oldModal) oldModal.remove();
+
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    const backdrop = document.createElement('div');
+    backdrop.className = 'stats-detail-modal-backdrop';
+    backdrop.id = 'statsDetailModalBackdrop';
+
+    // Fetch user attempts
+    const attempts = progress.getUserAttempts(username);
+
+    // Group attempts by book/subjectId
+    const bookStats = {};
+    attempts.forEach(att => {
+      const bookId = att.subjectId;
+      if (!bookStats[bookId]) {
+        const bookConf = subjectsConfig[bookId] || { title: bookId, category: 'Unknown', chapters: [] };
+        bookStats[bookId] = {
+          id: bookId,
+          title: bookConf.title,
+          category: bookConf.category,
+          chaptersCount: bookConf.chapters ? bookConf.chapters.length : 0,
+          attemptsCount: 0,
+          totalQuestions: 0,
+          totalCorrect: 0,
+          totalTime: 0,
+          attemptsList: []
+        };
+      }
+      const bs = bookStats[bookId];
+      bs.attemptsCount++;
+      bs.totalQuestions += att.totalQuestions;
+      bs.totalCorrect += att.score;
+      bs.totalTime += att.timeTaken;
+      bs.attemptsList.push(att);
+    });
+
+    let titleText = "Performance Details";
+    let bodyHTML = "";
+
+    const formatTime = (secs) => {
+      const h = Math.floor(secs / 3600);
+      const m = Math.floor((secs % 3600) / 60);
+      const s = secs % 60;
+      if (h > 0) return `${h}h ${m}m ${s}s`;
+      if (m > 0) return `${m}m ${s}s`;
+      return `${s}s`;
+    };
+
+    const keys = Object.keys(bookStats);
+    if (keys.length === 0) {
+      bodyHTML = `
+        <div class="preview-empty-state" style="padding-top: 4rem; text-align: center;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 48px; height: 48px; opacity: 0.25; margin-bottom: 1rem;">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+          <div style="font-family: var(--font-mono); font-size: 0.9rem; color: var(--text-secondary);">No attempts logged yet. Start a quiz to track statistics!</div>
+        </div>
+      `;
+    } else {
+      if (statType === 'attempts') {
+        titleText = "Tests Attempted Log";
+        keys.forEach(bookId => {
+          const bs = bookStats[bookId];
+          const subProg = progress.getSubjectProgress(username, bs.id, bs.chaptersCount);
+          
+          // Generate detailed list of attempts
+          const attemptsHTML = bs.attemptsList.map(att => {
+            const chConf = (subjectsConfig[bs.id].chapters || []).find(c => c.id === att.chapterId) || { displayName: att.chapterId };
+            const formattedDate = new Date(att.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+            return `
+              <div class="stats-detail-attempt-item">
+                <span class="stats-detail-attempt-chapter">${chConf.displayName}</span>
+                <span class="stats-detail-attempt-score">${att.score} / ${att.totalQuestions} (${att.accuracy}%) &bull; ${formattedDate}</span>
+              </div>
+            `;
+          }).join('');
+
+          bodyHTML += `
+            <div class="stats-detail-book-row clickable-book-row" style="cursor: pointer;">
+              <div class="stats-detail-book-header" style="border-bottom: none; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <div class="stats-detail-book-title">
+                  <h3 style="font-size: 0.9rem; color: var(--accent); text-transform: uppercase; font-family: var(--font-mono); font-weight: 700; margin-bottom: 0.25rem;">${bs.category}</h3>
+                  <div style="font-size: 1.1rem; color: var(--text-primary); font-family: var(--font-display); font-weight: 600;">${bs.title}</div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                  <span class="stats-detail-high-level-value" style="font-size: 1.15rem; font-weight: 700; color: var(--accent); font-family: var(--font-mono);">${bs.attemptsCount} tests</span>
+                  <span class="stats-detail-chevron" style="transition: transform 0.25s ease; color: var(--text-secondary); font-size: 0.75rem;">▼</span>
+                </div>
+              </div>
+              
+              <div class="stats-detail-book-collapse" style="display: none; padding-top: 1rem; border-top: 1px dashed rgba(255, 255, 255, 0.08); margin-top: 0.25rem;">
+                <div class="stats-detail-metrics-grid">
+                  <div class="stats-detail-metric-item">
+                    <div class="stats-detail-metric-label">Completion</div>
+                    <div class="stats-detail-metric-value">${subProg.percentComplete}%</div>
+                  </div>
+                  <div class="stats-detail-metric-item">
+                    <div class="stats-detail-metric-label">Tests Taken</div>
+                    <div class="stats-detail-metric-value">${bs.attemptsCount}</div>
+                  </div>
+                </div>
+                <div class="stats-detail-attempts-sublist">
+                  <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent); margin-bottom: 0.25rem; font-weight: 700; text-transform: uppercase;">Attempts History</div>
+                  ${attemptsHTML}
+                </div>
+              </div>
+            </div>
+          `;
+        });
+      } else if (statType === 'accuracy') {
+        titleText = "Average Score Breakdown";
+        keys.forEach(bookId => {
+          const bs = bookStats[bookId];
+          const avgScore = bs.totalQuestions > 0 ? Math.round((bs.totalCorrect / bs.totalQuestions) * 100) : 0;
+          const accuracies = bs.attemptsList.map(a => a.accuracy);
+          const maxAccuracy = accuracies.length > 0 ? Math.max(...accuracies) : 0;
+
+          bodyHTML += `
+            <div class="stats-detail-book-row clickable-book-row" style="cursor: pointer;">
+              <div class="stats-detail-book-header" style="border-bottom: none; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <div class="stats-detail-book-title">
+                  <h3 style="font-size: 0.9rem; color: var(--accent); text-transform: uppercase; font-family: var(--font-mono); font-weight: 700; margin-bottom: 0.25rem;">${bs.category}</h3>
+                  <div style="font-size: 1.1rem; color: var(--text-primary); font-family: var(--font-display); font-weight: 600;">${bs.title}</div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                  <span class="stats-detail-high-level-value" style="font-size: 1.15rem; font-weight: 700; color: var(--wrong-light); font-family: var(--font-mono);">${avgScore}%</span>
+                  <span class="stats-detail-chevron" style="transition: transform 0.25s ease; color: var(--text-secondary); font-size: 0.75rem;">▼</span>
+                </div>
+              </div>
+              
+              <div class="stats-detail-book-collapse" style="display: none; padding-top: 1rem; border-top: 1px dashed rgba(255, 255, 255, 0.08); margin-top: 0.25rem;">
+                <div class="stats-detail-metrics-grid">
+                  <div class="stats-detail-metric-item">
+                    <div class="stats-detail-metric-label">Average Score</div>
+                    <div class="stats-detail-metric-value" style="color: var(--wrong-light);">${avgScore}%</div>
+                  </div>
+                  <div class="stats-detail-metric-item">
+                    <div class="stats-detail-metric-label">Highest Score</div>
+                    <div class="stats-detail-metric-value" style="color: #10b981;">${maxAccuracy}%</div>
+                  </div>
+                  <div class="stats-detail-metric-item">
+                    <div class="stats-detail-metric-label">Correct Answers</div>
+                    <div class="stats-detail-metric-value">${bs.totalCorrect} / ${bs.totalQuestions}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+        });
+      } else if (statType === 'time') {
+        titleText = "Study Time Breakdown";
+        keys.forEach(bookId => {
+          const bs = bookStats[bookId];
+          const avgTime = Math.round(bs.totalTime / bs.attemptsCount);
+
+          bodyHTML += `
+            <div class="stats-detail-book-row clickable-book-row" style="cursor: pointer;">
+              <div class="stats-detail-book-header" style="border-bottom: none; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <div class="stats-detail-book-title">
+                  <h3 style="font-size: 0.9rem; color: var(--accent); text-transform: uppercase; font-family: var(--font-mono); font-weight: 700; margin-bottom: 0.25rem;">${bs.category}</h3>
+                  <div style="font-size: 1.1rem; color: var(--text-primary); font-family: var(--font-display); font-weight: 600;">${bs.title}</div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                  <span class="stats-detail-high-level-value" style="font-size: 1.15rem; font-weight: 700; color: var(--accent); font-family: var(--font-mono);">${formatTime(bs.totalTime)}</span>
+                  <span class="stats-detail-chevron" style="transition: transform 0.25s ease; color: var(--text-secondary); font-size: 0.75rem;">▼</span>
+                </div>
+              </div>
+              
+              <div class="stats-detail-book-collapse" style="display: none; padding-top: 1rem; border-top: 1px dashed rgba(255, 255, 255, 0.08); margin-top: 0.25rem;">
+                <div class="stats-detail-metrics-grid">
+                  <div class="stats-detail-metric-item">
+                    <div class="stats-detail-metric-label">Total Time Spent</div>
+                    <div class="stats-detail-metric-value">${formatTime(bs.totalTime)}</div>
+                  </div>
+                  <div class="stats-detail-metric-item">
+                    <div class="stats-detail-metric-label">Average Time / Test</div>
+                    <div class="stats-detail-metric-value">${formatTime(avgTime)}</div>
+                  </div>
+                  <div class="stats-detail-metric-item">
+                    <div class="stats-detail-metric-label">Active Modules</div>
+                    <div class="stats-detail-metric-value">${bs.attemptsCount}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+        });
+      } else if (statType === 'questions') {
+        titleText = "Questions Answered Breakdown";
+        keys.forEach(bookId => {
+          const bs = bookStats[bookId];
+          const avgScore = bs.totalQuestions > 0 ? Math.round((bs.totalCorrect / bs.totalQuestions) * 100) : 0;
+
+          bodyHTML += `
+            <div class="stats-detail-book-row clickable-book-row" style="cursor: pointer;">
+              <div class="stats-detail-book-header" style="border-bottom: none; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <div class="stats-detail-book-title">
+                  <h3 style="font-size: 0.9rem; color: var(--accent); text-transform: uppercase; font-family: var(--font-mono); font-weight: 700; margin-bottom: 0.25rem;">${bs.category}</h3>
+                  <div style="font-size: 1.1rem; color: var(--text-primary); font-family: var(--font-display); font-weight: 600;">${bs.title}</div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                  <span class="stats-detail-high-level-value" style="font-size: 1.15rem; font-weight: 700; color: var(--accent); font-family: var(--font-mono);">${bs.totalQuestions} Qs</span>
+                  <span class="stats-detail-chevron" style="transition: transform 0.25s ease; color: var(--text-secondary); font-size: 0.75rem;">▼</span>
+                </div>
+              </div>
+              
+              <div class="stats-detail-book-collapse" style="display: none; padding-top: 1rem; border-top: 1px dashed rgba(255, 255, 255, 0.08); margin-top: 0.25rem;">
+                <div class="stats-detail-metrics-grid">
+                  <div class="stats-detail-metric-item">
+                    <div class="stats-detail-metric-label">Questions Answered</div>
+                    <div class="stats-detail-metric-value">${bs.totalQuestions}</div>
+                  </div>
+                  <div class="stats-detail-metric-item">
+                    <div class="stats-detail-metric-label">Correct Answers</div>
+                    <div class="stats-detail-metric-value" style="color: #10b981;">${bs.totalCorrect}</div>
+                  </div>
+                  <div class="stats-detail-metric-item">
+                    <div class="stats-detail-metric-label">Incorrect Answers</div>
+                    <div class="stats-detail-metric-value" style="color: var(--wrong);">${bs.totalQuestions - bs.totalCorrect}</div>
+                  </div>
+                  <div class="stats-detail-metric-item">
+                    <div class="stats-detail-metric-label">Average Accuracy</div>
+                    <div class="stats-detail-metric-value">${avgScore}%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+        });
+      }
+    }
+
+    backdrop.innerHTML = `
+      <div class="stats-detail-modal-card">
+        <div class="stats-detail-modal-header">
+          <h2>${titleText}</h2>
+          <button id="closeStatsModalBtn" aria-label="Close details" class="close-btn" style="background: none; border: none; color: var(--text-secondary); font-size: 2.2rem; cursor: pointer; line-height: 1; display: flex; align-items: center; justify-content: center; transition: color 0.2s, transform 0.2s;">&times;</button>
+        </div>
+        <div class="stats-detail-modal-body">
+          ${bodyHTML}
+        </div>
+      </div>
+    `;
+
+    document.body.appendChild(backdrop);
+    setTimeout(() => backdrop.classList.add('active'), 50);
+
+    const closeStatsModal = () => {
+      backdrop.classList.remove('active');
+      document.body.style.overflow = originalOverflow;
+      setTimeout(() => backdrop.remove(), 300);
+    };
+
+    backdrop.querySelector('#closeStatsModalBtn').addEventListener('click', closeStatsModal);
+    backdrop.addEventListener('click', (e) => {
+      if (e.target === backdrop) closeStatsModal();
+    });
+
+    // Accordion interaction logic
+    const bookRows = backdrop.querySelectorAll('.clickable-book-row');
+    bookRows.forEach(row => {
+      row.addEventListener('click', (e) => {
+        const collapseBody = row.querySelector('.stats-detail-book-collapse');
+        const chevron = row.querySelector('.stats-detail-chevron');
+        const header = row.querySelector('.stats-detail-book-header');
+        const isCollapsed = collapseBody.style.display === 'none';
+
+        // Collapse all others
+        bookRows.forEach(otherRow => {
+          otherRow.querySelector('.stats-detail-book-collapse').style.display = 'none';
+          otherRow.querySelector('.stats-detail-chevron').style.transform = 'rotate(0deg)';
+          otherRow.querySelector('.stats-detail-book-header').style.borderBottom = 'none';
+          otherRow.querySelector('.stats-detail-book-header').style.paddingBottom = '0';
+        });
+
+        // Toggle selected
+        if (isCollapsed) {
+          collapseBody.style.display = 'block';
+          chevron.style.transform = 'rotate(180deg)';
+          header.style.borderBottom = '1px dashed rgba(255, 255, 255, 0.08)';
+          header.style.paddingBottom = '0.5rem';
+          if (document.body.classList.contains('light-mode')) {
+            header.style.borderBottomColor = 'rgba(0, 0, 0, 0.06)';
+          }
+        }
+      });
+    });
+  },
+
+  // 8.5bb-2. Trigger Flying Jet Easter Egg
+  triggerJetFlyby() {
+    let jet = document.getElementById('dashboardFlyingJet');
+    if (!jet) {
+      jet = document.createElement('img');
+      jet.id = 'dashboardFlyingJet';
+      jet.src = '/images/easypl_aircraft.png';
+      jet.style.position = 'absolute';
+      jet.style.pointerEvents = 'none';
+      jet.style.zIndex = '2'; // placed relative to background layers/clouds
+      jet.style.width = '240px'; // 2x larger
+      jet.style.height = 'auto';
+      jet.style.opacity = '0';
+      jet.style.filter = 'drop-shadow(0 12px 24px rgba(0,0,0,0.45))';
+      
+      const bg = document.querySelector('.poster-parallax-bg') || document.querySelector('.global-sky-bg') || document.body;
+      bg.appendChild(jet);
+    }
+    
+    if (jet.dataset.flying === 'true') return;
+    jet.dataset.flying = 'true';
+    
+    const startY = Math.floor(Math.random() * (window.innerHeight - 350)) + 100;
+    const endY = startY + (Math.random() * 200 - 100);
+    
+    jet.style.transition = 'none';
+    jet.style.opacity = '0';
+    
+    // Always fly left to right (facing forward naturally)
+    jet.style.left = '-300px';
+    jet.style.top = `${startY}px`;
+    jet.style.transform = 'scaleX(1) rotate(5deg)';
+    
+    setTimeout(() => {
+      jet.style.transition = 'left 8.0s linear, top 8.0s linear, opacity 0.8s ease';
+      jet.style.opacity = '0.9'; // blend into background
+      jet.style.left = `${window.innerWidth + 300}px`;
+      jet.style.top = `${endY}px`;
+      jet.style.transform = 'scaleX(1) rotate(10deg)';
+    }, 50);
+    
+    setTimeout(() => {
+      jet.style.opacity = '0';
+      jet.dataset.flying = 'false';
+    }, 8500);
   },
 
   // 8.5c. Show Question Search Modal

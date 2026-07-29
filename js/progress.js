@@ -7,7 +7,7 @@ const STORAGE_ATTEMPTS_PREFIX = 'easypl_attempts_';
 
 export const progress = {
   // Save a quiz attempt
-  saveAttempt(username, subjectId, chapterId, score, totalQuestions, timeTaken) {
+  saveAttempt(username, subjectId, chapterId, score, totalQuestions, timeTaken, questionsAnswered) {
     if (!username) return;
     
     const key = STORAGE_ATTEMPTS_PREFIX + username.toLowerCase();
@@ -20,6 +20,7 @@ export const progress = {
       totalQuestions,
       accuracy: totalQuestions > 0 ? Math.round((score / totalQuestions) * 100) : 0,
       timeTaken, // in seconds
+      questionsAnswered: typeof questionsAnswered === 'number' ? questionsAnswered : totalQuestions,
       date: new Date().toISOString()
     };
     
@@ -58,7 +59,7 @@ export const progress = {
     let totalTime = 0;
     
     attempts.forEach(att => {
-      totalQuestionsAnswered += att.totalQuestions;
+      totalQuestionsAnswered += typeof att.questionsAnswered === 'number' ? att.questionsAnswered : att.totalQuestions;
       totalCorrectAnswers += att.score;
       totalTime += att.timeTaken;
     });
@@ -170,10 +171,12 @@ export const progress = {
     };
   },
 
-  // Clear attempts for a user (hides history but preserves overall stats)
+  // Clear attempts for a user (fully resets all stats and history)
   clearAttempts(username) {
     if (!username) return;
+    const key = STORAGE_ATTEMPTS_PREFIX + username.toLowerCase();
+    localStorage.removeItem(key);
     const clearedAtKey = 'easypl_cleared_at_' + username.toLowerCase();
-    localStorage.setItem(clearedAtKey, new Date().toISOString());
+    localStorage.removeItem(clearedAtKey);
   }
 };
